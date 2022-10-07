@@ -1,0 +1,3 @@
+government = republic
+technology_group = western
+primary_culture = filipino

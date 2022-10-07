@@ -1,0 +1,17 @@
+#1084 - Wadjuk
+
+add_core = MDT
+owner = MDT
+controller = MDT
+culture = nyoongah
+religion = dreamtime
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = gold
+base_manpower = 1
+capital = "Kalgoorlie"
+is_city = yes
+
+discovered_by = aboriginal_tech
+1619.1.10 = { discovered_by = NED }

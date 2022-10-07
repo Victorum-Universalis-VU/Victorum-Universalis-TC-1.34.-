@@ -1,0 +1,24 @@
+#BT's Western Europe Overhaul in 12.0
+
+owner = POR
+controller = POR
+add_core = POR
+culture = portugese
+religion = catholic
+capital = "Leiria"
+base_tax = 1
+base_production = 3
+base_manpower = 3
+trade_goods = paper
+is_city = yes
+hre = no
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+
+#Province history completed by - Draiocht
+
+#1444 on

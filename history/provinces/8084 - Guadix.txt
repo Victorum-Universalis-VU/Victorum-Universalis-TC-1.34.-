@@ -1,0 +1,28 @@
+#8084 - Guadix
+
+owner = GRA
+controller = GRA
+add_core = GRA
+culture = andalusi_arabic
+religion = sunni
+capital = "Guadix"
+base_tax = 2
+base_production = 2
+base_manpower = 1
+trade_goods = iron
+is_city = yes
+hre = no
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+
+1489.6.1 = {
+	owner = CAS
+	controller = CAS
+	add_core = CAS
+} #Conquered
+1495.1.1 = { religion = catholic }
+1500.1.1 = { culture = andalucian } #Arab presence deminishes

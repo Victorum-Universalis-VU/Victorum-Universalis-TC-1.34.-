@@ -1,0 +1,32 @@
+#8020 - Tournai
+
+owner = TOA
+controller = TOA
+add_core = TOA
+culture = flemish			#Picard speaking today, like Lille, but I'm finding little to clearly argue anything for the 15th century, much less the 13th. Lille, though, appears to have been Germanic, id est Flemish, in the period, so I'm saying Tournai was, too. Note the town does appear to have had a French identity in the period. This is not at odds with a Germanic identity in the period.
+religion = catholic
+capital = "Tournai"
+base_tax = 8
+base_production = 8
+base_manpower = 5
+trade_goods = cloth			#major cloth center
+is_city = yes
+hre = no
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = FLA
+	controller = FLA
+	add_core = FLA
+	remove_core = TOA
+} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+	owner = TOA
+	controller = TOA
+	add_core = TOA
+	remove_core = FLA
+} #Return to proper mod added owners and cuts vanilla core, typically.

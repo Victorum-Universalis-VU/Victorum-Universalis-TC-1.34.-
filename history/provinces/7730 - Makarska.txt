@@ -1,0 +1,25 @@
+#7730 - Makarska
+
+owner = HRZ
+controller = HRZ
+add_core = HRZ
+culture = serbian
+religion = orthodox
+capital = "Makarska"
+base_tax = 3
+base_production = 3
+base_manpower = 1
+trade_goods = lumber
+is_city = yes
+hre = no
+
+1444.1.1 = { discovered_by = KAZ } 1444.1.1 = { discovered_by = CRI } 1444.1.1 = { discovered_by = GOL } 1444.1.1 = { discovered_by = AST } 1444.1.1 = { discovered_by = QAS } 
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western
+
+add_permanent_province_modifier = {
+	name = neretva_estuary_modifier
+	duration = -1
+}

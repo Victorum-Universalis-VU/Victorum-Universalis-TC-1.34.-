@@ -1,0 +1,24 @@
+#BT's Western Europe Overhaul in 12.0
+
+owner = PRO
+controller = PRO
+add_core = PRO
+culture = angevin_culture
+religion = catholic
+capital = "Saumur"
+base_tax = 5
+base_production = 5
+base_manpower = 3
+trade_goods = iron			#Apparently production of small metal objects, including rosaries and medals.
+is_city = yes
+hre = no
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+
+#Province history completed by - Draiocht
+
+#1444 on

@@ -1,0 +1,6 @@
+#6593 - Upper_Lower_Nile_River
+
+discovered_by = muslim
+discovered_by = east_african
+discovered_by = ottoman
+

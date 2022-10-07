@@ -1,0 +1,44 @@
+#6391 - Zwiefalten
+#Region - Germany
+#Area - Lower Swabia
+
+owner = WER
+controller = WER
+add_core = WER
+culture = swabian
+religion = catholic
+base_tax = 2
+base_production = 3
+trade_goods = cloth
+base_manpower = 2
+capital = "Zwiefalten"
+is_city = yes
+hre = yes
+
+discovered_by = english
+discovered_by = french
+discovered_by = german_group
+discovered_by = italian
+discovered_by = russian
+discovered_by = scandinavian
+discovered_by = spanish
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Documented 904 AD
+1530.1.1 = { religion = protestant }
+1803.1.1 = {
+	add_core = BAV
+	owner = BAV
+	controller = BAV
+	remove_core = ULM
+}
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1810.1.1 = {
+	add_core = WUR
+	owner = WUR
+	controller = WUR
+	remove_core = BAV
+}

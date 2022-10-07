@@ -1,0 +1,33 @@
+government = republic
+add_government_reform = merchants_reform
+government_rank = 1
+technology_group = western
+primary_culture = umbrian
+religion = catholic
+capital = 6935
+fixed_capital = 6935
+set_estate_privilege = estate_church_papal_emissary
+
+#historical_friend = XXX
+#historical_rival = XXX
+
+
+#History, currently empty.
+1255.1.1 = {
+	add_country_modifier = {
+		name = bt_guelph_nation
+		duration = -1
+	}
+}
+1199.1.1 = {
+	monarch = {
+		name = "Consiglio dei Consoli"
+		adm = 3
+		dip = 3
+		mil = 3
+		regent = yes
+	}
+}
+1260.1.1 = {
+	remove_country_modifier = bt_guelph_nation
+}

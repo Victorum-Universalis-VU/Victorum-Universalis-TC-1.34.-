@@ -1,0 +1,20 @@
+#Adds Scramble for Africa mechanic and such. Makes so that certain provinces cannot be 
+#colonized unless X conditions are met.
+
+can_colonize_province = {
+	condition = { 						#Condition - disables colonize button for situations included in potential
+		tooltip = "VU_province_cant_be_colonized_1"
+		potential = {					#Potential - what causes the button to be disabled?
+			has_province_modifier = vu_malaria_present
+		}
+		allow = {					#Allow - what conditons must be met for the button to be enabled again?
+			OR = {
+				FROM = { dip_tech = 35 }	#Default for all, year 1856
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african } #Native African nations are naturally resiliant
+				FROM = { technology_group = sub_saharan }
+			}
+		}
+	}
+	#If you want to add another mechanic that restricts colonization, add new condition = { } entry below; don't edit entry above.
+}

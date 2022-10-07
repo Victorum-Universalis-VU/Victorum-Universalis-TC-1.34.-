@@ -1,0 +1,21 @@
+#8215 - Régen
+
+capital = "Szászrégen"
+is_city = yes
+owner = TRA
+controller = TRA
+culture = romanian
+religion = orthodox
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = livestock
+add_core = HUN
+add_core = TRA
+hre = no
+
+1444.1.1 = { discovered_by = KAZ } 1444.1.1 = { discovered_by = CRI } 1444.1.1 = { discovered_by = GOL } 1444.1.1 = { discovered_by = AST } 1444.1.1 = { discovered_by = QAS } 
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman

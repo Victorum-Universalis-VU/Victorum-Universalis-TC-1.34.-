@@ -1,0 +1,26 @@
+#BT's Western Europe Overhaul in 12.0
+
+owner = FRA
+controller = FRA
+add_core = FRA
+add_core = CHP
+culture = cosmopolitan_french
+religion = catholic
+capital = "Sens"
+base_tax = 4
+base_production = 4
+base_manpower = 2
+trade_goods = lumber
+is_city = yes
+hre = no
+center_of_trade = 1
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+
+#Province history completed by - Draiocht
+
+#1444 on

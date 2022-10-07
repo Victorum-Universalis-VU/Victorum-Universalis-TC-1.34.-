@@ -1,0 +1,389 @@
+#This decision should remove most tags added by the mod and carve up the land for the remaining vanilla tags, restoring the vanilla setup. Realism is to be sacrifised for game performance.
+
+country_decisions = {
+	restore_vanilla_status = {
+		major = yes
+		potential = {
+			NOT = { is_year = 1445 }
+			NOT = { has_global_flag = restored_vanilla_mapmode }
+			ai = no
+		}
+		
+		allow = {
+			ai = no
+		}
+		
+		effect = {
+			set_global_flag = restored_vanilla_mapmode
+			hidden_effect = {
+			    #Britain
+			    WLS = { inherit = WMC }
+			    ENG = {
+			    	inherit = DUR
+			    	inherit = ARC
+			    	inherit = JER
+			    	inherit = MNE
+			    	inherit = ALE
+			    }
+			    #Ireland
+			    THO = { inherit = GLW }
+			    ECO = {
+			    	inherit = MYO
+			    	inherit = WCO
+			    }
+			    SLN = { 
+			    	inherit = BIF 
+			    	inherit = FGH
+			    }
+			    TYR = { inherit = MGH }
+			    CLN = {
+			    	inherit = ANR
+			    	inherit = IVE
+			    }
+			    #France
+			    FRA = {
+			    	inherit = NEM
+			    	inherit = RHM
+			    	inherit = LAO
+			    	inherit = VNE
+			    	inherit = LGR
+			    	inherit = ONG
+			    }
+			    NEV = { inherit = RET }
+			    BOU = { inherit = FOR }
+			    BUR = {
+			    	inherit = BSA
+			    	inherit = LXL
+			    	inherit = PIC
+			    	inherit = ATS
+			    	inherit = HAI
+			    	inherit = TOA
+			    }
+			    PRO = {
+			    	inherit = BAR
+			    	inherit = TOL
+			    	inherit = CMB
+			    }
+			    #Lowlands
+			    FLA = { inherit = SPO }
+			    HOL = { inherit = ZEE }
+			    BRB = { inherit = LBG }
+			    LIE = { inherit = STV }
+			    FRI = { inherit = GRN }
+			    #Italy
+			    PAP = {
+			    	inherit = VLT
+			    	inherit = CMR
+			    	inherit = ORV
+			    	inherit = MRC
+			    }
+			    PGA = { inherit = CDC }
+			    URB = { 
+			    	inherit = CRP 
+			    	inherit = MTS
+			    }
+			    FRL = { inherit = FNZ }
+			    SIE = { inherit = SVN }
+			    LAN = {
+			    	inherit = SGM
+			    	inherit = VLR
+			    }
+			    MAN = { inherit = CRR }
+			    MLO = { inherit = BOB }
+			    MFA = { 
+			    	inherit = CEV 
+			    	inherit = MNO
+			    }
+			    SZO = { inherit = TND }
+			    GEN = {
+			    	inherit = FNL
+			    	inherit = MNC
+			    }
+			    VEN = { 
+			    	inherit = CEN 
+			    	inherit = CDA
+			    }
+			    #Balkans
+			    BYZ = { inherit = LES }
+			    TRA = { inherit = SZE }
+			    #North Africa
+			    MOR = { inherit = DBD }
+			    MZB = { inherit = LGH }
+			    TGT = { inherit = OGL }
+			    FZA = { inherit = BSM }
+			    #Anatolia & Middle East
+			    KAR = { inherit = ALI }
+			    BTL = { inherit = BHT }
+			    QAR = { inherit = SIN }
+			    HAK = { inherit = SRN }
+			    #Baltic
+			    LIV = {
+			    	inherit = OSL
+			    	inherit = DRP
+			    	inherit = KUR
+			    }
+			    TEU = {
+			    	inherit = PMS
+			    	inherit = KLL
+			    	inherit = SGA
+			    	inherit = WRM
+			    }
+			    #Eastern Europe
+			    KIE = { inherit = BSV }
+			    LIT = { inherit = SMG }
+			    OKA = {
+			    	inherit = BLV
+			    	inherit = MSL
+			    	inherit = VTN
+			    }
+			    4251 = {
+			    	add_core = GLC
+			    	cede_province = GLC
+			    }
+			    RYA = {
+			    	inherit = MOZ
+			    	inherit = SPK
+			    	inherit = PRS
+			    }
+			    TVE = { inherit = ZBT }
+			    GLC = { inherit = MLL }
+			    CIR = {
+			    	inherit = BKS 
+			    	inherit = QRC
+			    }
+			    GOL = { inherit = KBD }
+			    AVR = { inherit = DID }
+			    GAZ = { inherit = DRZ }
+			    #Bohemia
+			    GLG = {
+			    	inherit = LEG
+			    	inherit = OLE
+			    	inherit = BEG
+			    	inherit = NIE
+			    }
+			    OPL = { inherit = TRO }
+			    RAC = {
+			    	inherit = TES
+			    	inherit = ASC
+			    }
+			    BOH = { inherit = DOH }
+			    #Germany
+			    MKL = {
+			    	inherit = STR
+			    	inherit = BSW
+			    	inherit = RAT
+			    }
+			    BRA = { inherit = RUP }
+			    MAG = { inherit = HVL }
+			    HAM = { inherit = PNN }
+			    SAX = {
+			    	inherit = HRF
+			    	inherit = SWZ
+			    	inherit = MNF
+			    	inherit = BSB
+			    	inherit = WIN
+			    }
+			    7644 = {
+			    	add_core = SAX
+			    	cede_province = SAX
+			    }
+			    THU = { inherit = VGT }
+			    BYT = { inherit = KMB }
+			    GOS = { 
+			    	inherit = HOS 
+			    	inherit = BHS
+			    }
+			    7693 = {
+			    	add_core = HAB
+			    	cede_province = HAB
+			    }
+			    BRU = {
+			    	inherit = HSH
+			    	inherit = COP
+			    	inherit = EVS
+			    	inherit = SHF
+			    	inherit = MND
+			    }
+			    7524 = {
+			    	add_core = LPP
+			    	cede_province = LPP
+			    }
+			    OLD = {
+			    	inherit = DPZ
+			    	inherit = BCH
+			    }
+			    OSN = { inherit = AHS }
+			    BRG = {
+			    	inherit = ELW 
+			    	inherit = MKK
+			    }
+			    MUN = {
+			    	inherit = TCK
+			    	inherit = SCH
+			    }
+			    NSA = {
+			    	inherit = WIE
+			    	inherit = SAY
+			    }
+			    MAI = {
+			    	inherit = FKS
+			    	inherit = WRT
+			    }
+			    PAD = { inherit = WLD }
+			    FLD = { inherit = ZGM }
+			    DRM = { inherit = KTZ }
+			    PAL = {
+			    	inherit = LEU
+			    	inherit = ERB
+			    	inherit = LWN
+			    	inherit = HEL
+			    	inherit = LIN
+			    	inherit = SPY
+			    	inherit = VEL
+			    }
+			    TRI = {
+			    	inherit = SPN
+			    	inherit = RHE
+			    }
+			    MTZ = {
+			    	inherit = SAA
+			    	inherit = ZWE
+			    	inherit = LIC
+			    }
+			    ALS = {
+			    	inherit = HAG
+			    	inherit = BMN
+			    	inherit = FEN
+			    	inherit = HOM
+			    }
+			    MLH = { inherit = RPL }
+			    7556 = {
+			    	add_core = BAD
+			    	cede_province = BAD
+			    }
+			    7561 = {
+			    	add_core = HOH
+			    	cede_province = HOH
+			    }
+			    7566 = {
+			    	add_core = HAB
+			    	cede_province = HAB
+			    }
+			    WUR = { inherit = FUR }
+			    WER = {
+			    	inherit = HHB 
+			    	inherit = NEL
+			    }
+			    ULM = { inherit = HLF }
+			    MBZ = { inherit = RVA }
+			    7597 = {
+			    	add_core = MBZ
+			    	cede_province = MBZ
+			    }
+			    MEM = {
+			    	inherit = WLB
+			    	inherit = KMP
+			    	inherit = KRH
+			    }
+			    AUG = { inherit = MGB }
+			    ROT = {
+			    	inherit = LMP
+			    	inherit = OET
+			    }
+			    7571 = {
+			    	add_core = ROT
+			    	cede_province = ROT
+			    }
+			    7509 = {
+			    	add_core = OSN
+			    	cede_province = OSN
+			    }
+			    WBG = { 
+			    	inherit = BBH
+			    	inherit = HEN
+			    }
+			    BAM = { inherit = CTL }
+			    7655 = {
+			    	add_core = BYT
+			    	cede_province = BYT
+			    }
+			    ANS = { inherit = TRU }
+			    ING = { inherit = FRG }
+			    REG = { inherit = BET }
+			    LBV = { inherit = BAV }
+			    HAB = { inherit = BRX }
+			    #India
+			    JFN = { inherit = VNI }
+			    #Indochina
+			    KHM = { inherit = DMA }
+			    RHA = { inherit = MNN }
+			    SUN = { inherit = GLU }
+			    BLI = { inherit = SPR }
+			    BMA = { inherit = SBW }
+			    BEI = { inherit = SGG }
+			    SMB = {
+			    	inherit = SKD 
+			    	inherit = LDA
+			    	inherit = STG
+			    }
+			    MKS = { inherit = SPP }
+			    BNE = { inherit = WJO }
+			    MAS = { inherit = RMB }
+			    PGS = { inherit = IFG }
+			    #Japan
+			    KKC = {
+			    	inherit = SGR
+			    	inherit = ASO
+			    }
+			    6449 = {
+			    	add_core = KKC
+			    	cede_province = KKC
+			    }
+			    6464 = {
+			    	add_core = HSK
+			    	cede_province = HSK
+			    }
+			    SHN = { inherit = OMR }
+			    ITO = { inherit = KHR }
+			    OTM = { inherit = TSU }
+			    OUC = { inherit = MRI }
+			    YMN = { inherit = YSM }
+			    HSK = { inherit = MYI }
+			    TTI = { inherit = OTI }
+			    ASK = { inherit = KYO }
+			    SBA = {
+			    	inherit = TKD
+			    	inherit = MOG
+			    }
+			    HTK = { inherit = TGS }
+			    UES = { inherit = HNM }
+			    CBA = { inherit = STM }
+			    DTE = {
+			    	inherit = ASN 
+			    	inherit = OSK
+			    }
+			    5704 = {
+			    	add_core = DTE
+			    	cede_province = DTE
+			    }
+			    RFR = { inherit = KSA }
+			    #North Africa
+			    MAK = { 
+			    	inherit = HWW
+			    	inherit = MKR
+			    	inherit = KUU
+			    }
+			    ALO = { 
+			    	inherit = FNJ
+			    	inherit = KNM
+			    	inherit = SLK
+			    }
+			    ABB = { inherit = ABD }
+			    MED = { inherit = DKK }
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+}

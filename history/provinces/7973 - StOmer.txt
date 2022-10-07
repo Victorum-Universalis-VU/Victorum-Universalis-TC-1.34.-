@@ -1,0 +1,29 @@
+#7973 - StOmer
+
+owner = SPO
+controller = SPO
+add_core = SPO
+add_core = ATS
+culture = flemish
+religion = catholic
+capital = "St. Omer"
+base_tax = 6
+base_production = 6
+base_manpower = 3
+trade_goods = apiculture
+is_city = yes
+hre = no
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Province history completed by - Draiocht
+
+1678.8.10 = { #BeyondTypus batch edit shortcut second performance start begins
+	owner = FRA
+	controller = FRA
+	add_core = FRA
+	remove_core = SPA
+} 

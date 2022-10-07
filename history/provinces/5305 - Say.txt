@@ -1,0 +1,16 @@
+#5305 - Say
+
+owner = SON
+controller = SON
+add_core = SON
+culture = songhai
+is_city = yes
+religion = sunni
+capital = "Lulama"
+trade_goods = grain
+hre = no
+base_tax = 6 
+base_production = 6
+base_manpower = 3
+
+discovered_by = sub_saharan

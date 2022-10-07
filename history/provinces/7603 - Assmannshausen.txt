@@ -1,0 +1,32 @@
+#7603 - Assmannshausen
+#Region - Germany
+#Area - North Rhine
+
+owner = SAY
+controller = SAY
+add_core = SAY
+culture = hessian
+religion = catholic
+trade_goods = cloth
+capital = "Assmannshausen"
+base_tax = 2
+base_production = 3
+base_manpower = 1 
+is_city = yes
+hre = yes
+
+discovered_by = english
+discovered_by = french
+discovered_by = german_group
+discovered_by = italian
+discovered_by = russian
+discovered_by = scandinavian
+discovered_by = spanish
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Documented 1230 AD
+1529.1.1 = { religion = protestant }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved. Grand Duchy of Berg

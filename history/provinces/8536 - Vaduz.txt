@@ -1,0 +1,38 @@
+#6467 - Vaduz
+#Region - Germany
+#Area - Switzerland
+
+owner = SWI
+controller = SWI
+culture = swiss
+religion = catholic
+capital = "Vaduz"
+trade_goods = sweet_confectioneries
+hre = yes
+base_tax = 2
+base_production = 3
+base_manpower = 1
+is_city = yes
+add_core = SWI
+
+discovered_by = english
+discovered_by = french
+discovered_by = german_group
+discovered_by = italian
+discovered_by = russian
+discovered_by = scandinavian
+discovered_by = spanish
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+#Founded in 1322 AD
+1513.7.3 = { unrest = 7 } # Luzern Peasant War
+1515.1.1 = { unrest = 0 }
+1526.1.1 = { religion = reformed }
+1653.1.1 = { unrest = 5 } # Peasant rebellion against overtaxation
+1654.1.1 = { unrest = 0 }
+1656.1.1 = { unrest = 7 } # Protestants are expelled from Schwyz which lead to the First War of Villmergen
+1657.1.1 = { unrest = 2 } # An agreement is concluded at Villmergren but tensions remain
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

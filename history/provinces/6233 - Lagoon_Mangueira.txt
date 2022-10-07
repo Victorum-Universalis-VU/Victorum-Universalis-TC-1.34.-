@@ -1,0 +1,6 @@
+#6233 - Lagoon_Mangueira
+
+discovered_by = south_american
+discovered_by = andean
+1534.1.1 = { discovered_by = SPA }
+

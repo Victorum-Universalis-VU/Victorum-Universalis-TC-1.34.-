@@ -1,0 +1,6 @@
+#6594 - Lower_Central_Nile_River
+
+discovered_by = muslim
+discovered_by = east_african
+discovered_by = ottoman
+

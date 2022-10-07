@@ -1,0 +1,27 @@
+#7967 - Eu
+
+owner = PIC
+controller = PIC
+add_core = PIC
+add_core = NEV
+add_core = NRM
+add_core = FRA
+culture = normand
+religion = catholic
+capital = "Eu"
+base_tax = 4
+base_production = 4
+base_manpower = 2
+trade_goods = seafood
+is_city = yes
+hre = no
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+
+#Province history completed by - Draiocht
+
+#1444 on

@@ -1,0 +1,34 @@
+#6489 - Annaberg
+#Region - Germany
+#Area - Thuringia
+
+owner = SAX
+controller = SAX
+add_core = SAX
+culture = saxon
+religion = catholic
+capital = "Annaberg"
+trade_goods = lace #Changed to lace from cloth as it was well-known for making it in 1561 after lace-making techniques were introduced (by San Felipe).
+hre = yes
+base_tax = 3
+base_production = 4
+base_manpower = 2 
+is_city = yes
+
+discovered_by = english
+discovered_by = french
+discovered_by = german_group
+discovered_by = italian
+discovered_by = russian
+discovered_by = scandinavian
+discovered_by = spanish
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Settled between 12th and 13th century AD
+1539.1.1 = { religion = protestant }
+1790.8.1 = { unrest = 5 } # Peasant revolt
+1791.1.1 = { unrest = 0 }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

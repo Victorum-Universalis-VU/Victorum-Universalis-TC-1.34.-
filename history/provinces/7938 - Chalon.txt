@@ -1,0 +1,26 @@
+#7938 - Chalon
+
+latent_trade_goods = {
+	coal
+}
+
+owner = BUR
+controller = BUR
+add_core = BUR
+culture = burgundian
+religion = catholic
+capital = "Chalon"
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = fruit
+is_city = yes
+hre = no
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+1477.1.5 = { owner = HAB controller = HAB add_core = HAB }	#from vanilla. Mary of Burgundy, an heiress, passes all Burgundian holdings in the Low Countries to the Habsburgs
+1481.1.1 = { owner = FRA controller = FRA add_core = FRA } # Provence added to France after the death of Duke Charles

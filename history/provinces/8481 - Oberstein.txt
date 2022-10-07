@@ -1,0 +1,31 @@
+#8481 - Oberstein
+#Region - Germany
+#Area - Lower Rhineland
+
+owner = SPN
+controller = SPN
+add_core = SPN
+culture = hessian
+religion = catholic
+trade_goods = lumber
+capital = "Oberstein"
+base_tax = 3
+base_production = 3
+is_city = yes
+base_manpower = 2
+hre = yes
+
+discovered_by = english
+discovered_by = french
+discovered_by = german_group
+discovered_by = italian
+discovered_by = russian
+discovered_by = scandinavian
+discovered_by = spanish
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Documented 870 AD
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

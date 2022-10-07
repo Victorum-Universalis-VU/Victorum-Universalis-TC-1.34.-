@@ -1,0 +1,17 @@
+#6666 - Kidima
+
+owner = KSJ
+controller = KSJ
+add_core = KSJ
+culture = mbangala
+religion = shamanism #Fetishism
+capital = "Kidima"
+trade_goods = palm_oil
+hre = no
+base_tax = 2
+base_production = 3
+base_manpower = 1
+is_city = yes
+
+discovered_by = central_african
+discovered_by = sub_saharan

@@ -1,0 +1,1758 @@
+# 12 Active CR's (Please update this when you add in a new CR)
+# Alaska
+colonial_alaska = {
+	color = { 225 225 225 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 8
+	native_ferocity = 1
+	native_hostileness = 4
+	
+	trade_goods = {
+		fur = 10
+		fish = 3
+		naval_supplies = 2
+		gold = 2
+	}
+	
+	culture = {
+		inuit = 10
+		aleutian = 8
+	}
+	
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		976 977 978 979 1810 2611 2612 2613 4924 4925 4928 4929 4930 4932 4931 4933 4968 4969 4970 4971 4926 4927 5076 5077 5173 5174 5175 5176 5177 
+		5178 5184 5185 5186 5187 5188 5189 5190 5191 5194 5533 5535 5536 5722 5723 5724 5726 5727 5728 5778 5095 5111 5112 5725 5863 5864 5866 5905 
+		5906 5907 5908 5909 5910 5911 5912 5913 5914 5915 5916 5917 5918 5919 8000 8001 8002 8003 8004 8005 8006 8007 8008 8009 8011 8012 
+	}
+	
+	# Specific
+	names = {
+		trigger = { primary_culture = russian }
+		name = "COLONIAL_ALASKA_Alyeska"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		name = "COLONIAL_ALASKA_BTP_Halaskaland"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_ALASKA_BTP_Denalien"
+	}
+	names = {
+		trigger = { 
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			} 
+		}
+		name = "COLONIAL_ALASKA_BTP_Alasca"
+	}
+	names = {
+		trigger = {	primary_culture = portugese }
+		name = "COLONIAL_ALASKA_LA"
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_ALASKA_Pacifico_Norte"
+	}
+	names = {
+		trigger = { culture_group = east_asian }
+		name = "COLONIAL_ALASKA_BT_EAST_ASIAN"
+	}
+	names = {
+		trigger = {	culture_group = latin }
+		name = "COLONIAL_ALASKA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_ALASKA_TU"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_ALASKA_Alaska"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		name = "COLONIAL_ALASKA_Aleutia"
+	}
+}
+
+# Canada
+colonial_canada = {
+	color = { 20 50 210 }
+
+	# Random New World
+	tax_income = 1
+	native_size = 4
+	native_ferocity = 1
+	native_hostileness = 4
+	
+	trade_goods = {
+		fur = 20
+		fish = 10
+		naval_supplies = 3
+		grain = 1
+	}
+
+	culture = {
+	    laurentian = 10
+		huron = 10
+		cree = 10
+		anishinabe = 5
+		algonquin = 5
+		mikmaq = 5
+		petun = 1
+		tionontate = 1
+		ottawa = 1
+	}
+	
+	religion = {
+		shamanism = 10
+	}
+	
+	provinces = {
+		986 987 988 989 990 991 992 993 994 995 996 1001 1002 1007 1490 2012 2015 2576 2577 2578 2579 2580 2581 2582 2583 2584 2585 2586 2587 2588 
+		2589 2590 2591 2670 2671 4890 4892 4893 4894 4895 4897 4973 5009 5010 5011 5012 5037 5038 5039 5053 5054 5055 5056 5057 5060 5904 
+	}
+	
+	# Specific
+	names = {
+		trigger = { primary_culture = swedish }
+		name = "COLONIAL_CANADA_SWE"
+	}
+	names = {
+		trigger = {			#The Saint Lawrence valleys culture is French but owned by the British, as historically 1763 to 1791
+			OR = {
+				tag = GBR
+				tag = ENG
+				culture_group = british
+			}
+			owns = 994
+			owns = 2583
+			owns = 2584
+			994 = { culture_group = french }
+			2583 = { culture_group = french }
+			2584 = { culture_group = french }
+		}
+		name = "COLONIAL_CANADA_BTP_QUEBEC_NAME"
+	}
+	names = {
+		trigger = {			#New name, just plain Canada. I was getting tired of French Canada and British Canada everywhere, that is more of a modern thing
+			OR = {
+				tag = FRA
+				tag = GBR
+				tag = ENG
+			}
+		}
+		name = "COLONIAL_CANADA_BTP_CANADA_NAME"
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_CANADA_Lavrador"
+	}
+	names = {
+		trigger = {	tag = IRO }		#Why do we need this... it is a good name though 
+		name = "COLONIAL_CANADA_Kanata"
+	}
+	names = {
+		trigger = {			#Backup french culture but not France tag
+			NOT = { tag = FRA }
+			culture_group = french
+		}
+		name = "COLONIAL_CANADA_BTP_QUEBEC_FR_NAME"
+	}
+	names = {
+		trigger = {	culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		name = "COLONIAL_CANADA_BTP_Markland"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_CANADA_BTP_Kanata"
+	}
+	names = {
+		trigger = { culture_group = byzantine }
+		name = "COLONIAL_CANADA_BTP_Kanadas"
+	}
+	names = {
+		trigger = { 
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			} 
+		}
+		name = "COLONIAL_CANADA_BTP_Ceanada"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_CANADA_CY"
+	}
+	names = {
+		trigger = { tag = BRU }
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_CANADA_LA"
+	}	
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_CANADA_TU"
+	}
+	
+	# Generic
+	names = {
+		trigger = {
+			OR = {			#Owns something in the Labrador
+				owns = 997
+				owns = 2575
+				owns = 2574
+				owns = 5015
+				owns = 5014
+			}
+			NOT = { owns = 994 }			#Doesnt own Saint Lawrence Valley
+			NOT = { owns = 2583 }
+			NOT = { owns = 2584 }
+		}
+		name = "COLONIAL_CANADA_Labrador"
+	}
+	names = {
+		trigger = {
+			OR = {			#Owns something in the Laurentides
+				owns = 993
+				owns = 990
+				owns = 2580
+				owns = 2579
+				owns = 5010
+			}
+			NOT = { owns = 994 }			#Doesnt own Saint Lawrence Valley
+			NOT = { owns = 2583 }
+			NOT = { owns = 2584 }
+		}
+		name = "COLONIAL_CANADA_Laurentia"
+	}
+	names = {
+		name = "COLONIAL_CANADA_Root_Culture_GetName_Canada"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		name = "COLONIAL_CANADA_Root_Culture_GetName_Quebec"
+	}
+	names = {
+		name = "COLONIAL_CANADA_Labrador"
+	}
+	names = {
+		name = "COLONIAL_CANADA_Laurentia"
+	}
+	
+	#Beyond Typus scrapping these by giving generic higher priority, dont like any of them
+	names = {
+		trigger = {			#French or British culture but not normal tags give French Canada or British Canada
+			NOT = { tag = FRA }
+			NOT = { tag = GBR }
+			NOT = { tag = ENG }
+			OR = {
+				culture_group = french
+				culture_group = british
+			}
+		}
+		name = "COLONIAL_CANADA_Root_Culture_GetGroupName_Canada"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		name = "COLONIAL_CANADA_Root_Culture_GetName_Quebec"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		name = "COLONIAL_CANADA_Borealia"
+	}
+}
+
+# Eastern America
+colonial_eastern_america = {
+	color = { 176 42 80 }
+
+	# Random New World
+	tax_income = 2
+	native_size = 8
+	native_ferocity = 2
+	native_hostileness = 5
+	
+	trade_goods = {
+		fur = 15
+		fish = 3
+		naval_supplies = 4
+		grain = 4
+		tobacco = 8
+		cotton = 10
+		sugar = 1
+	}
+	
+	culture = {
+		powhatan = 10
+		delaware = 10
+		susquehannock = 5
+		abenaki = 5
+		pequot = 5
+		catawba = 5
+		massachusset = 5
+		creek = 5
+		yamasee = 2
+		tuscarora = 2
+		meherrin = 2
+		nottoway = 2
+		cherokee = 2
+		onondaga = 2
+		cayugan = 2
+		oneida = 2
+		iroquois = 2
+		mahican = 2
+	}
+	
+	religion = {
+		shamanism = 10
+	}
+	
+	provinces = {
+		929 931 932 933 936 937 938 949 950 952 953 955 956 957 962 963 965 966 967 968 970 971 930 959 960 961 964 969 2010 2011 2013 2023 2537 
+		2538 2539 2540 2541 2542 2543 2544 2545 2546 2547 2548 2549 2550 2552 2553 2554 2556 2557 2558 2559 2560 2561 2562 2563 2564 2565 2566 2567 
+		2639 4871 4873 4874 4876 4877 4878 4879 4880 4881 4882 4912 5052 5711 5712 5713 5714 5920 5921 5922 5923 5935 5936 5937 5938 5939 5940 5951 
+		5952 5953 5954 5955 5956 5957 5958 5959 5960 5969 5970 5971 5972 5973 5974 5975 5976 5977 5978 5979 5980 5981 5982 5984 5986 5987 5988 5989 
+		5924 5925 5990 5991 5992 6007 6008 6009 6019 6020 6039 6040
+	}
+	
+	# Specific
+	names = {
+		trigger = { tag = SWE }
+		name = "COLONIAL_EASTERN_AMERICA_SWE"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		name = "COLONIAL_EASTERN_AMERICA_Thirteen_Colonies"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+			owns = 90 # Vlaanderen
+		}
+		name = "COLONIAL_EASTERN_AMERICA_Nouvelle_Flandre"
+	}
+	# names = {
+		# trigger = {
+			# culture_group = scandinavian			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		# }
+		# name = "COLONIAL_EASTERN_AMERICA_BTP_Vinland"
+	# }
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_EASTERN_AMERICA_BTP_Neudeutschland"
+	}
+	names = {
+		trigger = { culture_group = byzantine }
+		name = "COLONIAL_EASTERN_AMERICA_BTP_Nea_Attike"
+	}
+	names = {
+		trigger = { 
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			} 
+		}
+		name = "COLONIAL_EASTERN_AMERICA_BTP_Eire_Nua"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_EASTERN_AMERICA_CY"
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_EASTERN_AMERICA_PT"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_EASTERN_AMERICA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_EASTERN_AMERICA_TU"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		trigger = {
+			owns = 968
+		}
+		name = "PROV968" # Massachusets
+	}
+	names = {
+		trigger = {
+			owns = 2010
+		}
+		name = "PROV2010" # Connecticut
+	}
+	names = {
+		trigger = {
+			owns = 965
+		}
+		name = "PROV965" # Manhattan
+	}
+	names = {
+		trigger = {
+			owns = 957
+		}
+		name = "PROV957" # Delaware
+	}
+	names = {
+		trigger = {
+			owns = 953
+		}
+		name = "PROV953" # Conoy
+	}
+	names = {
+		trigger = {
+			owns = 924
+		}
+		name = "PROV924" # Alabama
+	}
+	names = {
+		name = "COLONIAL_EASTERN_AMERICA_Virginia"
+	}
+}
+
+# Louisiana
+colonial_louisiana = {
+	color = { 33 87 161 }
+
+	# Random New World
+	tax_income = 1
+	native_size = 18
+	native_ferocity = 2
+	native_hostileness = 6
+	
+	trade_goods = {
+		fur = 10
+		fish = 1
+		grain = 11
+		cotton = 7
+		iron = 1
+	}
+	
+	culture = {
+		nakota = 2
+		dakota = 8
+		chiwere = 3
+		pawnee = 10
+		osage = 3
+		caddo = 6
+		cheyenne = 1
+		shoshone = 1
+	}
+	
+	religion = {
+		shamanism = 20
+		animism = 20
+	}
+	
+	provinces = {
+		889 890 891 892 894 895 896 897 898 899 900 901 902 903 904 905 907 908 909 1809 2006 2008 2009 2014 2501 2502 2503 2504 2505 2507 2508 2509 
+		2512 2513 2514 2515 2516 2598 2625 2672 2506 4885 4886 4900 4901 4905 4906 4908 4914 4915 4916 4917 4918 4923 4959 5034 5065 5200 5614 5615 
+		5616 5617 5618 5619 5620 5622 5623 5625 5626 5627 5628 5629 5632 5633 5634 5635 5638 5786 5837 5846 5993
+	}
+	
+	# Specific
+	names = {
+		trigger = { primary_culture = swedish }
+		name = "COLONIAL_LOUISIANA_SWE"
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_LOUISIANA_PT"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_LOUISIANA_Root_Culture_GetGroupName_Louisiana"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_LOUISIANA_Manitounie"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+			OR = {
+				owns = 915 # Illinois
+				owns = 916 # Kaskaskia
+				owns = 917 # Cahokia
+			}
+		}
+		name = "PROV915"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		name = "COLONIAL_LOUISIANA_BTP_Konungrborg"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_LOUISIANA_BTP_Neufrankreich"
+	}
+	names = {
+		trigger = { culture_group = byzantine }
+		name = "COLONIAL_LOUISIANA_BTP_Komnenaia"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_LOUISIANA_CY"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_LOUISIANA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_LOUISIANA_TU"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_LOUISIANA_Root_Culture_GetName_Louisiana"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		name = "COLONIAL_LOUISIANA_Mississippi"
+	}
+	names = {
+		name = "COLONIAL_LOUISIANA_Manitounie"
+	}
+	names = {
+		trigger = {
+			owns = 948 # Ohio
+		}
+		name = "PROV948"
+	}
+	names = {
+		trigger = {
+			OR = {
+				owns = 915 # Illinois
+				owns = 916 # Kaskaskia
+				owns = 917 # Cahokia
+			}
+		}
+		name = "PROV915"
+	}
+	names = {
+		trigger = {
+			OR = {
+				owns = 900 # Tamaroa
+				owns = 902 # Missouri
+			}
+		}
+		name = "PROV902"
+	}
+	names = {
+		trigger = {
+			owns = 897 # Quapaw
+		}
+		name = "COLONIAL_LOUISIANA_Arkansas"
+	}
+	names = {
+		trigger = {
+			OR = {
+				owns = 945 # Michigan
+				owns = 944 # Potawatomi
+			}
+		}
+		name = "PROV945"
+	}
+	names = {
+		trigger = {
+			OR = {
+				owns = 912 # Sauk
+				owns = 913 # Fox
+				owns = 914 # Winnebago
+			}
+		}
+		name = "COLONIAL_LOUISIANA_Wisconsin"
+	}
+	names = {
+		trigger = {
+			owns = 905 # Iowa
+		}
+		name = "PROV905"
+	}
+	names = {
+		trigger = {
+			owns = 908 # Minnesota
+		}
+		name = "PROV908"
+	}
+	names = {
+		trigger = {
+			owns = 898 # Kansas
+		}
+		name = "PROV898"
+	}
+	names = {
+		trigger = {
+			OR = {
+				owns = 903 # Omaha
+				owns = 901 # Pawnee
+			}
+		}
+		name = "COLONIAL_LOUISIANA_Nebraska"
+	}
+	names = {
+		trigger = {
+			OR = {
+				owns = 906 # Yankton
+				owns = 907 # Dakota
+			}
+		}
+		name = "PROV907"
+	}
+}
+
+# California
+colonial_california = {
+	color = { 200 117 43 }
+
+	# Random New World
+	tax_income = 1
+	native_size = 8
+	native_ferocity = 1
+	native_hostileness = 3
+	
+	trade_goods = {
+		fish = 4
+		fur = 4
+		wool = 4
+		naval_supplies = 2
+		grain = 2
+		salt = 1
+		gold = 2
+	}
+	
+	culture = {
+		yokuts = 10
+		shoshone = 10
+		takic = 4
+		pueblo = 2
+		piman = 2
+		navajo = 2
+		yuman = 2
+		chumash = 2
+		plateau_penutian = 1
+		hupa = 1
+		washoe = 1
+		shastan = 1
+		pomoan = 1
+		salinan = 1
+		waikuri = 1
+		wiyot = 1
+		apache = 2
+	}
+	
+	religion = {
+		shamanism = 10
+		animism = 4
+	}
+	
+	provinces = {
+		867 868 869 870 871 875 876 877 878 879 880 881 882 1808 2021 2476 2477 2478 2479 2480 2490 2491 2492 2493 2494 2495 2496 2608 4630 4631 
+		4632 4634 4635 4636 4637 4638 4639 4950 4951 4952 4953 4954 4955 4956 4962 4963 4965 4966 4967 4975 4979 5016 5018 5030 5031 5032 5042 5044 
+		5045 5064 5066 5757 5763 5764 5765 5766 5767 5768 5769 5770 5771 5772 5773 5774 5775 5791 5792 5793 5794 5795 5796 5797 5798 5799 5800 5802 
+		5803 5017 5814 5815 5821 5822 5823 5826 5827 5830 5832 5833 5834 5835 5836 5838 5839 5840 5841 5843 5844 5845 5847 5848 5849 5850 5851 5852 
+		5853 5854 5855 5856 5857 5858
+	}
+
+	# Specific
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_CALIFORNIA_PT"
+	}
+	names = {
+		trigger = { culture_group = british	}
+		name = "COLONIAL_CALIFORNIA_New_Albion"
+	}
+	names = {
+		trigger = { culture_group = scandinavian } #Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		name = "COLONIAL_CALIFORNIA_BTP_Kalarheimr"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_CALIFORNIA_BTP_Kalifien"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+			any_owned_province = { #Avoiding silliness of not owning a province in Apulia but colony names itself New Apulia.
+				area = apulia_area
+			}
+		}
+		name = "COLONIAL_CALIFORNIA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_CALIFORNIA_TU"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_CALIFORNIA_California"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+# Mexico
+colonial_mexico = {
+	color = { 231 181 12 }
+
+	# Random New World
+	tax_income = 3
+	native_size = 8
+	native_ferocity = 2
+	native_hostileness = 5
+	
+	trade_goods = {
+		fur = 2
+		grain = 8
+		salt = 5
+		wool = 7
+		fish = 5
+		sugar = 8
+		gold = 5
+		cocoa = 6
+		naval_supplies = 1
+	}
+	
+	culture = {
+		pueblo = 2
+		navajo = 10
+		piman = 5
+		aztek = 8
+		zapotek = 6
+		mayan = 7
+	}
+	
+	religion = {
+		animism = 10
+	}
+	
+	provinces = {
+		844 845 846 847 848 849 850 851 852 853 854 855 856 857 858 859 860 861 862 863 864 865 866 2614 2615 2616 2617 2618 2619 2620 2621 2622 
+		2623 2624 2626 2627 2628 2629 2630 2631 2632 2633 2634 2635 2638 2641 2642 2643 2644 2645 2646 2647 2648 2649 2650 2651 2652 2657 2667 2668 
+		4573 4574 4575 4576 4577 4578 4579 4580 4572 4571 4570 4581 4583 4598 4582 4584 4585 4586 4588 4590 4591 4606 4633 4640 4641 4642 4643 4644 
+		4645 4646 4647 4648 4649 4650 4964 5020 5043 5061 5063 5859 5860 5861 5862
+	}
+	
+	# Specific
+	names = {
+		trigger = { primary_culture	= portugese }
+		name = "COLONIAL_MEXICO_PT"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = SPA
+				tag = BSP
+				tag = SPB
+				tag = BBS
+				tag = CSP
+			}
+		}
+		name = "COLONIAL_MEXICO_New_Spain"
+	}
+	names = {
+		trigger = { tag = CAS }
+		name = "COLONIAL_MEXICO_New_Castile"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		name = "COLONIAL_MEXICO_BTP_Meksavik"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_MEXICO_BTP_Mexicaland"
+	}
+	names = {
+		trigger = { 
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			} 
+		}
+		name = "COLONIAL_MEXICO_BTP_Meicsiceo"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_MEXICO_CY"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_MEXICO_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_MEXICO_TU"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_MEXICO_Root_Culture_GetName_Mexico"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		trigger = {
+			any_owned_province = { 
+				OR = {
+					area = yucatan_area
+					area = east_yucatan_area
+				}
+			}
+		}
+		name = "COLONIAL_MEXICO_Yucatan"
+	}
+	names = {
+		trigger = { owns = 841 } # Guatemala
+		name = "COLONIAL_MEXICO_Guatemala"
+	}
+	names = {
+		trigger = {
+			owns = 885 # Teyas
+		}
+		name = "COLONIAL_MEXICO_Texas"
+	}
+	names = {
+		trigger = {
+			owns = 843 # Belize
+		}
+		name = "PROV843"
+	}
+	names = {
+		trigger = {
+			owns = 837 # Nicaragua
+		}
+		name = "PROV837"
+	}
+	names = {
+		trigger = {
+			owns = 835 # Panama
+		}
+		name = "PROV835"
+	}
+	names = {
+		trigger = {
+			owns = 840 # Honduras
+		}
+		name = "PROV840"
+	}
+}
+
+# The Carribean	-note in BT this is limited to the lesser antilles plus Jamaica and Puerto Rico. Cuba, Florida, and Hispaniola all get their own CR
+colonial_the_carribean = {
+	color = { 254 117 9 }
+
+	# Random New World
+	tax_income = 1
+	native_size = 5
+	native_ferocity = 5
+	native_hostileness = 7
+	
+	trade_goods = {
+		sugar = 15
+		fish = 10
+		naval_supplies = 10
+	}
+	
+	culture = {
+		arawak = 15
+		carib = 8
+	}
+	
+	religion = {
+		animism = 10
+	}
+	
+	provinces = {
+		492 493 494 495 496 497 498 499 500 501 502 1881 5581 5582 5583 5584 5585 5586
+		482 483 5574 5575 5576 5577
+		6010 6011 6012 6013 6014 6015 6016 6017
+		487 3024 5709 5710
+	}
+	
+	# Specific
+	#names = {
+	#	trigger = {
+	#		OR = {
+	#			tag = FRA
+	#			culture_group = french
+	#		}
+	#	}
+	#	name = "COLONIAL_THE_CARRIBEAN_Antilles"
+	#}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_THE_CARRIBEAN_Caraibas"
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_THE_CARRIBEAN_Antilhas"
+	}
+	names = {
+		trigger = { primary_culture = swedish }
+		name = "COLONIAL_THE_CARRIBEAN_SWE"
+	}
+	names = {
+		trigger = { primary_culture = danish }
+		name = "COLONIAL_THE_CARRIBEAN_DAN"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_THE_CARRIBEAN_Westindien"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = dutch
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_THE_CARRIBEAN_NED"
+	}
+	names = {
+		trigger = { culture_group = byzantine }
+		name = "COLONIAL_THE_CARRIBEAN_Nea_Kyklades"
+	}
+	names = {
+		trigger = { 
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			} 
+		}
+		name = "COLONIAL_THE_CARRIBEAN_BTP_Aintilli"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_THE_CARRIBEAN_CY"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+			any_owned_province = { #To avoid a situation where you don't own Sicily yet still get New isles off the coast of Sicily.
+				area = sicily_area
+			}
+		}
+		name = "COLONIAL_THE_CARRIBEAN_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_THE_CARRIBEAN_TU"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_THE_CARRIBEAN_Root_Culture_GetName_West_Indies"
+	}
+	names = {
+		name = "COLONIAL_THE_CARRIBEAN_West_Indies"
+	}
+	names = {
+		name = "COLONIAL_THE_CARRIBEAN_The_Carribean"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+# Colombia
+colonial_colombia = {
+	color = { 227 40 40 }
+
+	# Random New World
+	tax_income = 3
+	native_size = 12
+	native_ferocity = 1
+	native_hostileness = 2
+	
+	trade_goods = {
+		fur = 3
+		cocoa = 7
+		gold = 3
+		grain = 4
+		naval_supplies = 1
+	}
+
+	culture = {
+		guajiro = 15
+		inca = 6
+	}
+	
+	religion = {
+		animism = 10
+	}
+	
+	provinces = {
+		822 823 824 825 826 827 828 829 832 835 838 2664 2806 2812 2814 2815 2816 2817 2818 2819 4595 4596 4599 4600 4601 4602 4603 4607 4608 4614 5140 5141 
+		6101 6102
+		
+		#Ecuador
+		#815 817 818 819 820 821 2820 3022 4604 4605 5336 6098 6099 6100
+		
+		#Venezuela
+		#491 741 742 830 831 834 2803 2804 2805 2807 2808 2809 2810 2811 2813 2939 4609 4610 4611 4612 4613 4615 4616 4617 5578 5579
+	}
+
+	# Specific
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_COLOMBIA_PT"
+	}
+	names = {
+		trigger = {
+			culture_group = iberian
+			owns = 223 # Granada
+		}
+		name = "COLONIAL_COLOMBIA_New_Granada"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }	 		#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		name = "COLONIAL_COLOMBIA_BTP_Karbumork"
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_COLOMBIA_EN"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_COLOMBIA_BTP_Welsien"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_COLOMBIA_CY"
+	}
+	names = {
+		trigger = { 
+			culture_group = latin
+			NOT = { #These cultures/nations hated Venetians/Venice.
+				primary_culture = ligurian
+				primary_culture = lombard
+			}
+		}
+		name = "COLONIAL_COLOMBIA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_COLOMBIA_TU"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_COLOMBIA_Root_Culture_GetName_Colombia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+# Peru
+colonial_peru = {
+	color = { 124 140 162 }
+
+	# Random New World
+	tax_income = 2
+	native_size = 12
+	native_ferocity = 1
+	native_hostileness = 1
+	
+	trade_goods = {
+		grain = 7
+		fish = 2
+		gold = 7
+		cocoa = 2
+		copper = 2
+	}
+
+	culture = {
+		inca = 10
+	}
+	religion = {
+		animism = 10
+	}
+
+	provinces = {
+		793 796 804 805 806 807 808 809 810 811 812 813 814 816 2821 2822 2823 2824 2825 2826 2827 2828 2829 2830 2833 2943 2944 2945 2947
+		
+		#Bolivia	
+		#795 797 800 801 802 803 2831 2832 2834 2835 2838 2839 2840 2841 2882 2906 2940 2941 2942 2946 7000
+	}
+
+#	# Specific
+#	names = {
+#		trigger = {
+#		}
+#		name = ""
+#	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_PERU_PT"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		name = "COLONIAL_PERU_BTP_Birurheimr"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_PERU_BTP_Pyrien"
+	}
+	names = {
+		trigger = { culture_group = byzantine }
+		name = "COLONIAL_PERU_BTP_Perou"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+			any_owned_province = {
+				OR = {
+					area = upper_peru
+					area = potosi_area
+					area = antisuyu_area
+				}
+			}
+		}
+		name = "COLONIAL_PERU_LA_2"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_PERU_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_PERU_TU"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_PERU_Root_Culture_GetName_Peru"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	
+	names = {
+		trigger = {
+			owns = 813 # Cajamarca
+		}
+		name = "PROV813"
+	}
+	names = {
+		trigger = {
+			owns = 809 # Lima
+		}
+		name = "PROV809"
+	}
+	names = {
+		trigger = {
+			owns = 808 # Cuzco
+		}
+		name = "PROV808"
+	}
+}
+
+# La Plata
+colonial_la_plata = {
+	color = { 101 102 163 }
+
+	# Random New World
+	tax_income = 3
+	native_size = 12
+	native_ferocity = 1
+	native_hostileness = 4
+	
+	trade_goods = {
+		grain = 15
+		fish = 5
+		gold = 2
+		copper = 2
+	}
+
+	culture = {
+		aimara = 6
+		patagonian = 10
+		chacoan = 2
+		guarani = 4
+	}
+	religion = {
+		animism = 10
+	}
+	
+	provinces = {
+		772 773 775 777 778 779 780 781 782 785 786 790 791 794 799 2836 2837 2842 2843 2844 2845 2847 2846 2848 2849 2850 2851 2852 2853 2854 2855 
+		2858 2859 2860 2861 2863 2865 2866 2867 2868 2869 2870 2871 2872 2875 2876 2877 2878 2883 5337
+		
+		#Chile
+		#783 784 787 792 2862 2873 2874
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			culture_group = british
+		}
+		name = "COLONIAL_LA_PLATA_Argentine"
+	}
+	names = { #Moved to take precedence based on if extra conditions are met.
+		trigger = { 
+			primary_culture = portugese
+			any_country = { #Brazil needs to own Cisplatina for this name to make sense.
+				capital_scope = {
+					colonial_region = colonial_brazil
+				}
+				is_colonial_nation_of = ROOT
+				any_owned_province = { #Cisplatina area
+					area = banda_oriental_area
+				}
+			}
+		}
+		name = "COLONIAL_LA_PLATA_Transplatina"
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_LA_PLATA_Rio_de_Prata"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		
+		name = "COLONIAL_LA_PLATA_BTP_Sylfrdalar"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_LA_PLATA_BTP_Silberland"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_LA_PLATA_CY"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_LA_PLATA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_LA_PLATA_TU"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_LA_PLATA_Root_Culture_GetName_La_Plata"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		trigger = {
+			any_owned_province = { 
+				area = paraguay_area
+			}
+		}
+		name = "COLONIAL_LA_PLATA_Root_Culture_GetName_Paraguay"
+	}
+	names = {
+		trigger = { # Amélioration la Pléiade
+			any_owned_province = { 
+				OR = {
+					area = southern_chile_area
+					area = central_chile_area
+					area = northern_chile_area 
+				}
+			}
+		}
+		name = "COLONIAL_LA_PLATA_Root_Culture_GetName_Chile"
+	}
+	names = {
+		name = "COLONIAL_LA_PLATA_Argentina"
+	}
+	names = {
+		trigger = {
+			owns = 772 # Uruguay
+		}
+		name = "PROV772"
+	}
+}
+
+# Brazil
+colonial_brazil = {
+	color = { 3 172 19 }
+
+	# Random New World
+	tax_income = 2
+	native_size = 8
+	native_ferocity = 1
+	native_hostileness = 4
+	
+	trade_goods = {
+		sugar = 13
+		grain = 4
+		fish = 1
+		gold = 4
+		tobacco = 3
+	}
+	
+	culture = {
+		guarani = 5
+		tupinamba = 12
+	}
+	
+	religion = {
+		animism = 10
+	}
+	
+	provinces = {
+		759 761 762 763 764 765 766 2891 2892 2894 2896 2897 2898 2899 3079 3082 3086 3088 3090 3093 3100 3106 3109 3141 3143 3163 3166 3171 3172
+		3173 3176 3184 3191 8751 8752 8753 8754 8755 8756 8757 8758 8759 8760 8761 8762 8763
+		
+		#From Amazonia
+		747 748 2889 2890 2928 2929 2930 2933 2934 2935 2938 6089 6090 6091 6092 6093 6094 6095 6096 6097 6103 6104 6105 6106 6107 6109 6110 6111 
+		6112 6113 6114 6115 6116 6117 6118 6119 6120 6121 6122 6123 6124 6125 8745 8748 8750
+		
+		#From Rio Grande
+		760 768 769 2857 2879 2884 2887 2895 3192 3205 3208 3210 3211 3212 3215 3216 3217 3249 3255 3257 3258 3259 3260
+		
+		#From Maranhão
+		749 750 751 752 753 754 755 756 757 2885 2886 2912 2913 2914 2915 2916 2917 2921 2922 2923 2924 2925 2926 2927 3269 3059 3061 3062 3065	
+		3067 3072 3074 3078 3080 3084 8741
+		
+		#From Mato Grosso
+		758 776 2881 2888 2893 2900 2901 2902 2903 2904 2905 2907 2908 2909 2910 2911 2919 2920 6126 8742
+	}
+	
+	# Specific
+	names = {
+		trigger = {
+			tag = FRA
+		}
+		name = "COLONIAL_BRAZIL_France_Antarctique"
+	}
+	names = {
+		trigger = {	primary_culture = portugese }
+		name = "COLONIAL_BRAZIL_Root_Culture_GetName_Brazil"
+	}
+	names = {
+		trigger = {
+			primary_culture = portugese
+			religion_group = christian
+		}
+		name = "COLONIAL_BRAZIL_Terra_de_Vera_Cruz"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = MOR
+				tag = GRA
+				tag = ALG
+			}
+			religion_group = muslim			
+		}
+		name = "COLONIAL_BRAZIL_new_granada"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		name = "COLONIAL_BRAZIL_BTP_Miklavidr"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_BRAZIL_BTP_Pernambien"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_BRAZIL_CY"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_BRAZIL_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_BRAZIL_TU"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_BRAZIL_Root_Culture_GetName_Brazil"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		trigger = {
+			owns = 753 # Rio Grande
+		}
+		name = "PROV753"
+	}
+	names = {
+		trigger = {
+			owns = 756 # Bahia
+		}
+		name = "PROV756"
+	}
+}
+
+
+# Australia
+colonial_australia = {
+	color = { 126 20 20 }
+
+	provinces = {
+		1084 1085 1086 1087 1088 1089 1090 1091 1092 1093 1094 1790 1791 2726 2727 2728 2729 2730 2731 2732 2733 2734 2735 2736 4846 4847 4848 4849 4850 4851 4852 4853 4854 4855 4856 4857 4858 4859 4860 4861 4862 4863 4864 4865 4866 4867 4868 4869 6174 6175 6176 6177 6178 6179 6180 6181 6182 6183 6184 6185 6186 6187 6188 6189 6191 6190 6192 6193 6194 6195 6196 6197 6297 6198 6199 6200 6201 6202 6203 6204 6205 6206 6207 6208 6209 6210 6211 6212 6213 6214 6215 6998 6999
+	}
+	
+	# Specific
+	names = {
+		trigger = { culture_group = british	}
+		name = "COLONIAL_AUSTRALIA_Australia"
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_AUSTRALIA_PT"
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_AUSTRALIA_Tierra_Austral"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_Terre_Australe"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = NED
+				tag = HOL
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_New_Holland"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		name = "COLONIAL_AUSTRALIA_BTP_Fjarejyar"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = {
+				primary_culture = dutch
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_AUSTRALIA_BTP_Suedland"
+	}
+	names = {
+		trigger = { culture_group = byzantine }
+		name = "COLONIAL_AUSTRALIA_BTP_Pankhaia"
+	}
+	names = {
+		trigger = { 
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			} 
+		}
+		name = "COLONIAL_AUSTRALIA_BTP_Astrail"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_AUSTRALIA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_AUSTRALIA_TU"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_AUSTRALIA_Root_Culture_GetName_Australia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		name = "COLONIAL_REGION_Terra_Australis"
+	}
+}
+
+# Used for RNW
+colonial_placeholder_1 = {
+	color = { 211 108 45 }
+}
+
+colonial_placeholder_2 = {
+	color = { 152 148 183 }
+}
+
+colonial_placeholder_3 = {
+	color = { 247 158 146 }
+}
+
+colonial_placeholder_4 = {
+	color = { 20 107 142 }
+}
+
+colonial_placeholder_5 = {
+	color = { 228 168 201 }
+}
+
+colonial_placeholder_6 = {
+	color = { 13 81 174 }
+}
+
+colonial_placeholder_7 = {
+	color = { 64 54 203 }
+}
+
+colonial_placeholder_8 = {
+	color = { 171 41 160 }
+}
+
+colonial_placeholder_9 = {
+	color = { 113 23 68 }
+}
+
+colonial_placeholder_10 = {
+	color = { 95 125 183 }
+}
+
+# Used for RNW, added to support bigger tiles
+colonial_placeholder_11 = {
+	color = { 50 150 45 }
+}
+
+colonial_placeholder_12 = {
+	color = { 200 190 20 }
+}
+
+colonial_placeholder_13 = {
+	color = { 20 220 90 }
+}
+
+colonial_placeholder_14 = {
+	color = { 100 50 50 }
+}
+
+colonial_placeholder_15 = {
+	color = { 200 50 50 }
+}
+
+colonial_placeholder_16 = {
+	color = { 30 30 60 }
+}
+
+colonial_placeholder_17 = {
+	color = { 90 70 100 }
+}
+
+colonial_placeholder_18 = {
+	color = { 90 140 30 }
+}
+
+colonial_placeholder_19 = {
+	color = { 140 60 30 }
+}

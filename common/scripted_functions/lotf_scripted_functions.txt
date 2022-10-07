@@ -1,0 +1,21 @@
+can_release_colonial_nation = {
+    condition = {
+        tooltip = "CAN_RELEASE_CN_WE_ARE_AT_WAR"
+        potential = {
+        }
+        allow = {
+            is_at_war = no
+        }
+    }
+    condition = {
+        tooltip = "no_release_gb"
+        potential = {
+        }
+        allow = {
+            NOT = {
+				tag = GBR
+				tag = ENG
+			}
+        }
+    }
+}

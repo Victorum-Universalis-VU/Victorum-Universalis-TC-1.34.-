@@ -1,0 +1,5 @@
+#8424 - Western Ghats
+
+discovered_by = indian
+discovered_by = nomad_group
+discovered_by = muslim

@@ -1,0 +1,21 @@
+#8436 - Mirande
+
+owner = FRA
+controller = FRA
+add_core = FRA
+add_core = GUY
+capital = "Mirande"
+is_city = yes
+culture = gascon
+religion = catholic
+hre = no
+base_tax = 2
+base_production = 1 
+trade_goods = cheese
+base_manpower = 1
+add_local_autonomy = 25
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

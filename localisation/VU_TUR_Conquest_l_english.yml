@@ -1,0 +1,48 @@
+﻿l_english:
+
+ #VU EVENTS
+ 
+ #Turkish Conquest of Mamluks
+ VU_TUR_Conquest_Events.1.t: "Collapse of the Mamluks"
+ VU_TUR_Conquest_Events.1.d: "Finally! With the help of Allah, our great Sultan has conquered Egypt and crushed the Mamluks."
+ VU_TUR_Conquest_Events.1.a: "Their lands now belong to the Sultan of Sultans."
+ VU_TUR_Conquest_Events.1.b: "We shall keep calm and push slowly."
+ 
+ #Turkish Conquest of Hungary
+ VU_TUR_Conquest_Events.2.t: "Collapse of the Kingdom of Hungary"
+ VU_TUR_Conquest_Events.2.d: "The Kindom of Hungary has collapsed and Buda was left undefended; only the French and Venetian ambassadors waited for our Sultan to congratulate him on his great victory."
+ VU_TUR_Conquest_Events.2.a: "Their lands now belong to the our Empire."
+ VU_TUR_Conquest_Events.2.b: "We shall not take it all at once."
+ 
+ #Aftermatch of the conquest - Collapse of Hungary
+ VU_TUR_Conquest_Events.3.t: "Destruction of strong Hungarian Kingdom"
+ VU_TUR_Conquest_Events.3.d: "Hungarian Kingdom suffered devastationg defeat from the Turks. Ottoman Empire shattered Hungarian army, destroyed their leadership and siezed a massive portion of its territory. With raging state of anarchy and disunity, Kingdom of Hungary has been declared a collapsed state. The lands have been weakened to the point of nation being vulnerable to foreign interests and remaining parts of central government won't hold this territory for much longer."
+ VU_TUR_Conquest_Events.3.a: "We must consolidate what core territory we can and let it shatter."
+ VU_TUR_Conquest_Events.3.b: "Decentralize what we can and pass the crown to foreign pretenders."
+ VU_TUR_Conquest_Events.3.c: "Kingdom has fallen fools! HRE is our last savior!"
+ 
+ #Fort in Eger
+ VU_TUR_Conquest_Events.4.t: "Fort in Eger resists!"
+ VU_TUR_Conquest_Events.4.d: "We have gloriously won our invasion into Hungary. We have conquered all the lands we had in mind after the Kingdom of Hungary has collapsed. All newly conquered lands accepted their new fate... all EXCEPT ONE. Fort and the town of Eger did not submit to our rule despite the treaty with Hungarians. Despite being severily outnumbered, the defenders of Eger castle somehow have managed to resist our great army. Wave after wave, mere 2200 defenders have repelled the massive Turkish assaults consisting of over 35 tousend soldiers. Shall we just give up this one town?"
+ VU_TUR_Conquest_Events.4.a: "Throw enough men at it until is falls"
+ VU_TUR_Conquest_Events.4.b: "It is not worth the casualties"
+ 
+ #March of Transylvania
+ VU_TUR_Conquest_Events.5.t: "Transylvanian March"
+ VU_TUR_Conquest_Events.5.d: "With the collapse of Hungary, vast lands in Transylvania have been left for us. We have made deals with the local Transylvanian lords, granting us their loyalty for protection. We could use our loyal subjects there and establish a proper march like we once promised to govern those forested lands more efficiently."
+ VU_TUR_Conquest_Events.5.a: "Establish Transylvanian march from the lands we can sieze"
+ VU_TUR_Conquest_Events.5.b: "We will occupy them directly"
+ VU_TUR_Conquest_Events.5.c: "We actually don't really care about those lands"
+ 
+ #Tooltips
+ tur_conquest_of_mam: "The @MAM Mamluks will collapse and all of their land will be ours."
+ tur_conquest_of_hun: "The @HUN Kingdom of Hungary will collapse and our raids into the Europe will begin."
+ tur_conquest_of_hun_2: "We will annex all Hungarian lands all the way to Balton Lake and Pest, roughly recreating historical borders where possible. The spoils of war will be brought home. The remaining husk of Hungary will be left to shatter and their central government will collapse."
+ tur_collapse_hun_1: "Remnants of our nation' powers will be consolidated and we will try to hold power in main Transdanubia area. We will give up the southern and eastern territories to focus all our remaining power on surviving and restoring basic power structure. Abandoned lands that had little use for us will be founding ground for many rump states and petty counties."
+ tur_collapse_hun_2: "We will establish autonomous vassal regions in northeastern lands in attempt to keep control over collapsing territories. With the central rule collapsing and monarchy crisis, crown of Hungary will be offered to foreign rulers and pretenders to save the nation from falling to Turkish hands. If Austria exists, we will offer their ruler to become our new king, else we will offer the same to Poland, Commonwealth, Bohemia and if none exist, local Habsburg will be invited."
+ tur_collapse_hun_3: "There is no help for this fallen nation. We will abandon the crown of Hungary now that it has collapsed. Country will be HRE-ified, splitting into many successor states and counties. In our last attempt of surviving Turkish menace, the newly broken confederation will ask Holy Roman Emperor for protection and states will join the HRE."
+ tur_collapse_tra: "Every province in Banat and Transylvania areas will be given directly to our control."
+
+ #Modifiers
+ tur_push_for_egypt_modifier: "Push for Egypt"
+ tur_push_for_europe_modifier: "Push for the Europe"

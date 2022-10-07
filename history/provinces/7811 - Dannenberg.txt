@@ -1,0 +1,23 @@
+#BT Scandinavia and Baltics reoverhaul
+
+owner = LUN
+controller = LUN
+add_core = LUN
+culture = polabian_culture	#Descendants of Drevani living in Dannenberg-Luchow were still speaking slavic language until 18th century
+religion = catholic
+capital = "Dannenberg"
+base_tax = 2
+base_production = 1 
+base_manpower = 1
+trade_goods = grain
+is_city = yes
+hre = yes
+
+
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western
+
+
+1700.1.1 = { culture = lower_saxon } #Slavic language vanishes

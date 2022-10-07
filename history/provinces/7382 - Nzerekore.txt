@@ -1,0 +1,17 @@
+#Nzerekore
+
+owner = MAL
+controller = MAL
+culture = loma_kpelle
+is_city = yes
+base_manpower = 6
+religion = shamanism #Fetishism
+capital = "Nzérékoré"
+trade_goods = ivory
+hre = no
+base_tax = 6
+base_production = 6
+add_core = MAL
+add_core = KBU #Subject province within the empire
+
+discovered_by = sub_saharan

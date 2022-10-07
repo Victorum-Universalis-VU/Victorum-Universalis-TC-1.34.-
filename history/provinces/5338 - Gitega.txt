@@ -1,0 +1,15 @@
+#5338 - Gitega
+
+owner = UBH
+controller = UBH
+add_core = UBH
+culture = rwandan #Ha
+religion = shamanism #Fetishism
+trade_goods = salt
+capital = "Gitega"
+hre = no
+base_tax = 3 
+base_production = 4
+base_manpower = 2
+
+discovered_by = central_african

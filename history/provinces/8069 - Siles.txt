@@ -1,0 +1,25 @@
+#8069 - Siles
+
+owner = CAS
+controller = CAS
+add_core = CAS
+add_core = MUR #BTB added: Castilian revolter tag.
+culture = andalucian
+religion = catholic
+capital = "Siles"
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = cotton		# Too much saffron in the region
+is_city = yes
+hre = no
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+
+#Province history completed by - Draiocht
+
+#1444 on

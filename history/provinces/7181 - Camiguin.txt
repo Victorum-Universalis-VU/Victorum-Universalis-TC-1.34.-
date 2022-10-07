@@ -1,0 +1,15 @@
+#Camiguin
+
+culture = visayan
+religion = animism
+capital = "Mambajao"
+trade_goods = pearls
+hre = no
+base_tax = 2 
+base_production = 2
+base_manpower = 2
+is_city = yes
+discovered_by = chinese
+owner = BTU
+controller = BTU
+add_core = BTU

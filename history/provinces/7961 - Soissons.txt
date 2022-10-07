@@ -1,0 +1,25 @@
+#7961 - Soissons
+
+owner = FRA			#Also under St. Pol, id est TRN, but this is a complicated situation of de jure vassals in one feudal holding but indepedent in another, so calling it France with estate. That is probably as close as we're going to get to reality.
+controller = FRA
+add_core = FRA
+culture = cosmopolitan_french
+religion = catholic
+capital = "Soissons"
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = wine
+is_city = yes
+hre = no
+
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+
+#Province history completed by - Draiocht
+
+#1444 on

@@ -1,0 +1,46 @@
+#5291 - Karpathos
+
+owner = CDA
+controller = CDA
+add_core = CDA
+add_core = CRT
+culture = greek
+religion = orthodox
+capital = "Karpathos"
+base_tax = 1
+base_production = 1
+base_manpower = 1
+trade_goods = cheese
+is_city = yes
+hre = no
+
+1444.1.1 = { discovered_by = KAZ } 1444.1.1 = { discovered_by = CRI } 1444.1.1 = { discovered_by = GOL } 1444.1.1 = { discovered_by = AST } 1444.1.1 = { discovered_by = QAS } 
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western
+
+1538.6.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+	remove_core = CDA
+} #Conquered by the Ottomans
+1800.1.1 = { add_core = GRE }
+1821.2.21 = {
+	owner = GRE
+	controller = GRE
+	add_core = GRE
+} #Independence war
+1822.6.1 = { controller = TUR }
+1829.9.12 = { 
+	owner = TUR
+	controller = TUR
+} #Independence war ends
+1835.1.1 = { base_tax = 2 } #Tax reforms
+1912.5.12 = { controller = ITA } #Italy occupies the Island
+1913.10.18 = {
+	owner = ITA
+	controller = ITA
+	add_core = ITA
+}

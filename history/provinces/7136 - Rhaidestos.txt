@@ -1,0 +1,21 @@
+#7136 - Rhaidestos
+
+owner = TUR
+controller = TUR
+add_core = TUR
+culture = greek
+religion = orthodox
+capital = "Rhaedestus"			#Or Rodoschuk under the Ottomans.
+base_tax = 2
+base_production = 3
+base_manpower = 2
+trade_goods = olive_oil			#Rich region, no real other logic here.
+is_city = yes
+hre = no
+add_local_autonomy = 10
+
+1444.1.1 = { discovered_by = KAZ } 1444.1.1 = { discovered_by = CRI } 1444.1.1 = { discovered_by = GOL } 1444.1.1 = { discovered_by = AST } 1444.1.1 = { discovered_by = QAS } 
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western

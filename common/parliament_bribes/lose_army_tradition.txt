@@ -1,0 +1,30 @@
+lose_army_tradition = {
+	trigger = {
+		army_tradition = 5
+	}
+	
+	effect = {
+		add_army_tradition = -5
+		if = {
+			limit = {
+				current_size_of_parliament = 20
+			}
+			every_owned_province = {
+				limit = { 
+					has_seat_in_parliament = yes
+					current_bribe = lose_army_tradition
+					NOT = { province_id = FROM }
+				}
+				back_current_issue = yes
+			}
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0.1
+			is_at_war = yes
+		}
+	}
+}
