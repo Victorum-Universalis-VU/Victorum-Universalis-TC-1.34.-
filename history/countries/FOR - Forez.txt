@@ -1,0 +1,9 @@
+government = monarchy
+add_government_reform = feudalism_reform
+government_rank = 1
+primary_culture = arpitan
+add_accepted_culture = cosmopolitan_french
+religion = catholic
+technology_group = western
+capital = 4777 # Montbrison
+fixed_capital = 4777 # Cannot move capital away from this province & no power cost to move to it

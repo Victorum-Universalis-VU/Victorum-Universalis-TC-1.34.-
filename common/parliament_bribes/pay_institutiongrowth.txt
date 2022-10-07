@@ -1,0 +1,30 @@
+pay_institutiongrowth = {
+	trigger = {
+		FROM = {
+			current_institution = 5
+			NOT = { current_institution = 100 }
+		}
+	}
+	
+	effect = {
+		FROM = { add_next_institution_embracement = -5 }
+		if = {
+			limit = {
+				current_size_of_parliament = 20
+			}
+			every_owned_province = {
+				limit = { 
+					has_seat_in_parliament = yes
+					current_bribe = pay_institutiongrowth
+					NOT = { province_id = FROM }
+				}
+				FROM = { add_next_institution_embracement = -5 }
+				back_current_issue = yes
+			}
+		}
+	}
+	
+	ai_will_do = {
+		factor = 1
+	}
+}

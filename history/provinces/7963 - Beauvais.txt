@@ -1,0 +1,25 @@
+#7963 - Beauvais
+
+owner = FRA
+controller = FRA
+add_core = FRA
+add_core = VRD
+culture = cosmopolitan_french
+religion = catholic
+capital = "Beauvais"
+base_tax = 5
+base_production = 4
+base_manpower = 2
+trade_goods = pottery #Known for producing pottery and ceramics (by San Felipe).
+is_city = yes
+hre = no
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+
+#Province history completed by - Draiocht
+
+#1444 on

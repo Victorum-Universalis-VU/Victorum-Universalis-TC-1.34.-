@@ -1,0 +1,18 @@
+#Babuyan Islands
+
+culture = ilocano
+religion = animism
+capital = "Calayan"
+trade_goods = cotton
+hre = no
+base_tax = 4  
+base_production = 4
+base_manpower = 4
+owner = IVT
+controller = IVT
+add_core = IVT
+extra_cost = 8
+
+discovered_by = chinese
+1444.1.1 = { discovered_by = RYU }
+1521.1.1 = { discovered_by = SPA } # Ferdinand Magellan

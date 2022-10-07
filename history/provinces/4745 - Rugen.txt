@@ -1,0 +1,31 @@
+#BT Scandinavia and Baltics reoverhaul
+
+owner = RUG
+controller = RUG			#Danish vassal until 1325
+add_core = RUG
+add_core = POM
+culture = polabian_culture		#last remnants of slavic culture
+religion = catholic
+capital = "Rugard"
+base_tax = 3 
+base_production = 3 
+base_manpower = 2 
+trade_goods = fish
+is_city = yes
+hre = no
+
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western
+
+
+1325.1.1 = {
+	owner = WOL
+	controller = WOL
+	add_core = WOL
+	remove_core = POM
+	hre = yes
+}	#House of Wizlaw dies out. Rugen inherited by the Griffins and goes with them to Pomerania. Specifically Wartislaw IV of Wolgast.
+#1350.1.1 = { culture = pommeranian }	#Ostsiedlung
+1450.1.1 = { culture = pommeranian } #Slavs outcompeted

@@ -1,0 +1,47 @@
+#7057 - Piacenza
+
+owner = PCZ
+controller = PCZ
+add_core = PCZ
+culture = romagnan
+religion = catholic
+capital = "Piacenza"
+base_tax = 6
+base_production = 6
+base_manpower = 4
+trade_goods = grain
+is_city = yes
+hre = yes
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+1335.1.1 = {
+	owner = MLO
+	controller = MLO
+	add_core = MLO
+} # Visconti take Piacenza
+
+1521.1.1 = {
+	owner = PAP
+	controller = PAP
+	remove_core = MLO
+}
+1541.1.1 = {
+	owner = PAR
+	controller = PAR
+	remove_core = PAP
+}
+1801.3.21 = {
+	owner = FRA
+	controller = FRA
+	add_core = FRA
+} # Treaty of Aranjuez, ceded to France
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.11 = {
+	owner = PAR
+	controller = PAR
+	remove_core = FRA
+} # Treaty of Fontainebleau, Napoleon abdicates unconditionally

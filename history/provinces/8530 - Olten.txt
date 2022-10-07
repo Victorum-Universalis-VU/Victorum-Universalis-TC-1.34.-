@@ -1,0 +1,30 @@
+#6458 - Olten
+#Region - Germany
+#Area - Romandie
+
+owner = SWI
+controller = SWI
+add_core = SWI 
+culture = swiss
+religion = catholic
+capital = "Olten"
+trade_goods = wool
+hre = yes
+base_tax = 2
+base_production = 3
+base_manpower = 2 
+is_city = yes
+
+discovered_by = english
+discovered_by = french
+discovered_by = german_group
+discovered_by = italian
+discovered_by = russian
+discovered_by = scandinavian
+discovered_by = spanish
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#First mentioned in 1201 AD as "Oltun"

@@ -1,0 +1,24 @@
+#7977 - Maubeuge
+
+owner = HAI
+controller = HAI
+add_core = HAI
+culture = wallonian
+religion = catholic
+capital = "Maubeuge"
+base_tax = 4
+base_production = 4
+base_manpower = 3
+trade_goods = lumber
+is_city = yes
+hre = yes
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+
+#Province history completed by - Draiocht
+
+#1444 on

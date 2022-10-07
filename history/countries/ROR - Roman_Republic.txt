@@ -1,0 +1,23 @@
+government = republic
+add_government_reform = roman_diarchy_reform
+government_rank = 1
+technology_group = western
+primary_culture = romagnan
+religion = catholic
+capital = 118 #Rome
+
+#historical_friend = XXX
+#historical_rival = XXX
+
+
+#History, currently empty.
+
+1444.10.1 = {
+    monarch = {
+        name = "Duumvirate" #Diarchy is Duumvirate in Latin for 'Corule'.
+        dip = 3
+        adm = 3
+        mil = 3
+		regent = yes
+    }
+}

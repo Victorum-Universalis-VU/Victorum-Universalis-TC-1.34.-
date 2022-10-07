@@ -1,0 +1,21 @@
+#BT Balkans reoverhaul
+
+owner = VEN
+controller = VEN
+add_core = VEN
+culture = greek
+religion = orthodox
+capital = "Parga"
+base_tax = 1
+base_production = 1
+base_manpower = 2
+trade_goods = fruit
+is_city = yes
+hre = no
+fort_15th = yes
+
+1444.1.1 = { discovered_by = KAZ } 1444.1.1 = { discovered_by = CRI } 1444.1.1 = { discovered_by = GOL } 1444.1.1 = { discovered_by = AST } 1444.1.1 = { discovered_by = QAS } 
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western

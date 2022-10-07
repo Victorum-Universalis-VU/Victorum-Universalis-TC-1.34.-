@@ -1,0 +1,13 @@
+#6394 - Lake_Salto
+
+discovered_by = english
+discovered_by = french
+discovered_by = german_group
+discovered_by = italian
+discovered_by = russian
+discovered_by = scandinavian
+discovered_by = spanish
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

@@ -1,0 +1,29 @@
+#3183 - Bitola
+
+owner = TUR
+controller = TUR
+culture = bulgarian
+religion = orthodox
+capital = "Vitolia"			#Monastir in Ottoman Turkish
+trade_goods = livestock
+hre = no
+base_tax = 4 #3
+base_production = 3
+base_manpower = 4 #2
+is_city = yes
+add_core = TUR
+fort_15th = yes
+add_local_autonomy = 10
+center_of_trade = 1
+extra_cost = 8
+
+
+1444.1.1 = { discovered_by = KAZ } 1444.1.1 = { discovered_by = CRI } 1444.1.1 = { discovered_by = GOL } 1444.1.1 = { discovered_by = AST } 1444.1.1 = { discovered_by = QAS } 
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+1555.1.1  = { unrest = 5 } # General discontent with the Janissaries' dominance
+1556.1.1  = { unrest = 0 }
+

@@ -1,0 +1,18 @@
+#Mfoundi
+
+owner = YAO
+controller = YAO
+add_core = YAO
+add_core = KBO
+culture = kanuri 
+religion = shamanism #Fetishism
+capital = "Yaounde"
+trade_goods = ivory
+hre = no
+base_tax = 4  
+base_production = 4
+is_city = yes
+base_manpower = 2 
+center_of_trade = 1
+
+discovered_by = sub_saharan

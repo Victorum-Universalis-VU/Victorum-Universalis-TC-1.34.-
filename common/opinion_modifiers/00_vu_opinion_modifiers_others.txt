@@ -1,0 +1,211 @@
+#Beyond Typus work by Draiocht
+
+##################################################################################################
+##################################################################################################
+##################################################################################################
+# Old World Content
+##################################################################################################
+##################################################################################################
+##################################################################################################
+
+#New Papal subject stuff
+
+bt_is_papal_subject = {
+	opinion = 20
+}
+
+bt_temporal_authority_enforced = {
+	opinion = -60
+	yearly_decay = 2
+}
+bt_temporal_authority_enforced_on_other = {
+	opinion = -30
+	min = -60
+	yearly_decay = 3
+}
+
+#Italian Guelph Ghibelline drama
+
+bt_declared_for_guelphs = {
+	opinion = 25
+	max = 25
+	yearly_decay = 1
+}
+
+bt_declared_for_guelphs_unhappy = {
+	opinion = -25
+	min = -50
+	yearly_decay = 1
+}
+
+bt_declared_for_ghibellines = {
+	opinion = 25
+	max = 25
+	yearly_decay = 1
+}
+
+bt_declared_for_ghibellines_unhappy = {
+	opinion = -25
+	min = -50
+	yearly_decay = 1
+}
+
+bt_betrayed_guelph_or_ghibellines = {
+	opinion = -50
+	min = -100
+	yearly_decay = 1
+}
+
+bt_pope_is_pleased = {
+	opinion = 30
+	max = 60
+	yearly_decay = 3
+}
+
+bt_emperor_is_pleased = {
+	opinion = 30
+	max = 60
+	yearly_decay = 3
+}
+
+bt_loyal_subject = {
+	opinion = 20
+	max = 40
+	yearly_decay = 2
+}
+
+##################################################################################################
+##################################################################################################
+##################################################################################################
+# HR's work (original BtP dev)
+##################################################################################################
+##################################################################################################
+##################################################################################################
+
+#HR's original Denmark-Norway Scotland relations from BtP
+
+btp_opinion_accepted_proposal = {
+	opinion = 100
+	years = 25
+	yearly_decay = 4
+}
+
+btp_opinion_rejected_proposal = {
+	opinion = -25
+	years = 25
+	yearly_decay = 1
+}
+
+
+
+##################################################################################################
+##################################################################################################
+##################################################################################################
+# Cinnamon Ryce's work
+##################################################################################################
+##################################################################################################
+##################################################################################################
+
+signed_treaty = {
+	opinion = 50
+	yearly_decay = 1
+}
+
+rejected_treaty = {
+	opinion = -50
+	yearly_decay = 1
+}
+
+#########################
+# docRobert's additions #
+#########################
+
+turned_norse_pagan = {
+	opition = -30
+	yearly_decay = 1
+}
+
+vu_captured_east_rome = {
+	opinion = -75
+	yearly_decay = 3
+}
+
+avar_direct_invasion = {
+	opinion = -100
+	yearly_decay = 4
+}
+
+avar_invasion_worry = {
+	opinion = -50
+	yearly_decay = 2
+}
+
+############################
+# GE - Jay Double U's work #
+############################
+
+opinion_diplomatic_positions = {
+	opinion = 25
+	yearly_decay = 1
+	max = 50
+}
+opinion_diplomatic_positions_negative = {
+	opinion = -25
+	yearly_decay = 1
+	min = -50
+}
+opinion_order_of_the_swan = {
+	opinion = 50
+	yearly_decay = 1
+	max = 50
+}
+opinion_unrestricted_diplomacy = {
+	opinion = 25
+}
+opinion_papal_delegation = {
+	opinion = 25
+}
+opinion_lingua_franca = {
+	opinion = 20
+}
+opinion_opposite_ghuelpsghibbellines = {
+	opinion = -50
+}
+opinion_opposite_ghuelpsghibbellines_timed = {
+	opinion = -50
+	yearly_decay = 5
+}
+opinion_same_ghuelpsghibbellines = {
+	opinion = 25
+}
+opinion_same_ghuelpsghibbellines_timed = {
+	opinion = 25
+	yearly_decay = 2.5
+}
+GE_opinion_abuse_of_imperial_power = {
+	opinion = -50
+	yearly_decay = 5
+	min = -200
+	max = 0
+}
+GE_Cancel_Trade_Deal_Angry = {
+	opinion = -25
+	yearly_decay = 2.5
+}
+GE_peacefull_resolution = {
+	opinion = 50
+	yearly_decay = 2.5
+}
+GE_seized_unlawful_land = {
+	opinion = -50
+	yearly_decay = 2.5
+}
+
+################
+# ME Additions #
+################
+
+ME_HOL_Danzig_Amsterdam_Connection_3 = {
+	opinion = 100
+	yearly_decay = 2
+}

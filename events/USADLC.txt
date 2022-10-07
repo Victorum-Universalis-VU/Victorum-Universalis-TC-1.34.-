@@ -1,0 +1,861 @@
+########################################
+# USA DLC Events
+#
+# written by Sara Wendel-Örtqvist
+########################################
+
+namespace = usa_dlc
+normal_or_historical_nations = yes
+
+# Congress of the Confederation
+country_event = {
+	id = usa_dlc.1
+	title = "usa_dlc.EVTNAME1"
+	desc = "usa_dlc.EVTDESC1"
+	picture = CONGRESS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "American Dream"
+		OR = {
+			tag = USA
+			has_country_flag = usa_declaration_independence_flag
+		}
+		is_year = 1781
+	}
+	
+	mean_time_to_happen = { 
+		months = 100 
+	}
+	
+	option = {
+		name = "usa_dlc.EVTOPTA1"
+		country_event = {
+			id = usa_dlc.2 # Import Duties
+		}
+	}
+	option = {
+		name = "usa_dlc.EVTOPTB1"
+		trigger = {
+			any_owned_province = {
+				OR = {
+					region = great_lakes_region
+					region = canada_region
+				}
+			}
+		}
+		country_event = {
+			id = usa_dlc.3 # Northwest Ordinance
+		}
+	}
+}
+ 
+# 5% duty on imports
+country_event = {
+	id = usa_dlc.2
+	title = "usa_dlc.EVTNAME2"
+	desc = "usa_dlc.EVTDESC2"
+	picture = TEA_PARTY_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = import_duty_flag
+		}
+	}
+	
+	option = {
+		name = "usa_dlc.EVTOPTA2"
+		add_inflation = -2
+		add_years_of_income = -0.2
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = northwest_ordinance_flag
+				}
+				any_owned_province = {
+					OR = {
+						region = great_lakes_region
+						region = canada_region
+					}
+				}
+			}
+			country_event = {
+				id = usa_dlc.3
+			}
+		}
+	}
+	option = {
+		name = "usa_dlc.EVTOPTB2"
+		add_inflation = 2
+		add_years_of_income = 1
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = northwest_ordinance_flag
+				}
+				any_owned_province = {
+					OR = {
+						region = great_lakes_region
+						region = canada_region
+					}
+				}
+			}
+			country_event = {
+				id = usa_dlc.3
+			}
+		}
+	}
+}
+
+# Northwest Ordinance - Prohibit slavery there? 
+country_event = {
+	id = usa_dlc.3
+	title = "usa_dlc.EVTNAME3"
+	desc = "usa_dlc.EVTDESC3"
+	picture = CONGRESS_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = northwest_ordinance_flag
+		}
+	}
+	
+	option = {
+		name = "usa_dlc.EVTOPTA3" # Prohibit slavery!
+		every_owned_province = {
+			limit = {
+				OR = {
+					region = canada_region
+					region = great_lakes_region
+				}
+			}
+			add_province_modifier = {
+				name = northwest_ordinance_slavery_prohibited
+				duration = -1
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = import_duty_flag
+				}
+			}
+			country_event = {
+				id = usa_dlc.2
+			}
+		}
+	}
+	option = {
+		name = "usa_dlc.EVTOPTB3" # Let them decide for themselves
+		every_owned_province = {
+			limit = {
+				OR = {
+					region = canada_region
+					region = great_lakes_region
+				}
+			}
+			add_province_modifier = {
+				name = add_unrest_5_modifier
+				duration = 1825
+			}
+		}
+		if = {
+			limit = {
+				NOT = {
+					has_country_flag = import_duty_flag
+				}
+			}
+			country_event = {
+				id = usa_dlc.2
+			}
+		}
+	}
+}
+
+# Indians supplied with weapons from GBR
+country_event = {
+	id = usa_dlc.21
+	title = "usa_dlc.EVTNAME21"
+	desc = "usa_dlc.EVTDESC21"
+	picture = INDIAN_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "usa_dlc.EVTOPTA21"
+		USA = {
+			country_event = {
+				id = usa_dlc.22
+			}
+		}
+		GBR = {
+			add_opinion = {
+				who = ROOT
+				modifier = opinion_supplied_weapons
+				years = 20
+			}
+		}
+		add_country_modifier = {
+			name = gbr_weapons
+			duration = 3650
+		}
+	}
+}
+
+# USA learns about GBR supplying Indians with weapons
+country_event = {
+	id = usa_dlc.22
+	title = "usa_dlc.EVTNAME22"
+	desc = "usa_dlc.EVTDESC22"
+	picture = INDIAN_WARS_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "usa_dlc.EVTOPTA22"
+		add_opinion = {
+			who = GBR
+			modifier = opinion_supplied_indians
+			years = 50
+		}
+	}
+}
+
+# Fur Trade
+country_event = {
+	id = usa_dlc.26
+	title = "usa_dlc.EVTNAME26"
+	desc = "usa_dlc.EVTDESC26"
+	picture = FUR_TRADE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "American Dream"
+		OR = {
+			tag = USA
+			has_country_flag = usa_declaration_independence_flag
+		}
+		any_owned_province = { trade_goods = fur }
+		NOT = { 
+			any_owned_province = { 
+				trade_goods = fur 
+				has_province_modifier = north_american_fur_trade 
+			} 
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = "usa_dlc.EVTOPTA26"
+		add_years_of_income = -0.2
+		every_owned_province = { 
+			limit = { trade_goods = fur }
+			add_province_modifier = { 
+				name = north_american_fur_trade 
+				duration = 3650
+			} 
+		} 
+	}
+	option = {
+		name = "usa_dlc.EVTOPTB26"
+		add_prestige = -5
+	}
+}
+
+
+# Dunlap Broadside
+country_event = {
+	id = usa_dlc.31
+	title = "usa_dlc.EVTNAME31"
+	desc = "usa_dlc.EVTDESC31"
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "American Dream"
+		has_country_flag = usa_declaration_independence_flag
+	}
+	
+	mean_time_to_happen = { months = 200 }
+	
+	option = {
+		name = "usa_dlc.EVTOPTA31"
+		add_country_modifier = { 
+			name = dunlap_broadside 
+			duration = 7300
+		} 
+	}
+}
+
+# Nonintercourse Act
+country_event = {
+	id = usa_dlc.32
+	title = "usa_dlc.EVTNAME32"
+	desc = "usa_dlc.EVTDESC32"
+	picture = NATIVE_AMERICANS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "American Dream"
+		OR = {
+			tag = USA
+			has_country_flag = usa_declaration_independence_flag
+		}
+		is_year = 1790
+		NOT = { has_country_modifier = indian_trade_and_intercourse_act }
+	}
+	
+	mean_time_to_happen = { months = 200 }
+	
+	option = {
+		name = "usa_dlc.EVTOPTA32"
+		add_country_modifier = { 
+			name = indian_trade_and_intercourse_act 
+			duration = 18250 
+		}
+	}
+	option = {
+		name = "usa_dlc.EVTOPTB32"
+		add_country_modifier = { 
+			name = indian_trade 
+			duration = 18250 
+		}
+	}
+}
+
+
+# Boston Post Road
+country_event = {
+	id = usa_dlc.34
+	title = "usa_dlc.EVTNAME34"
+	desc = "usa_dlc.EVTDESC34"
+	picture = REFORM_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "American Dream"
+		OR = {
+			tag = USA
+			has_country_flag = usa_declaration_independence_flag
+		}
+		owns = 965 # Manhattan
+		owns = 966 # Berkshires
+		owns = 967 # Rhode Island
+		owns = 968 # Massachusetts
+  		owns = 2560 # New Haven
+		owns = 2010 # Connecticut
+		owns = 2561 # Plymouth
+	}
+	
+	mean_time_to_happen = { months = 200 }
+	
+	option = {
+		name = "usa_dlc.EVTOPTA34"
+		add_adm_power = 20
+	}
+	option = {
+		name = "usa_dlc.EVTOPTB34"
+		add_mil_power = 20
+		add_army_tradition = 10
+	}
+	option = {
+		name = "usa_dlc.EVTOPTC34"
+		add_dip_power = 40
+	}
+}
+
+# American Philosophical Society
+country_event = {
+	id = usa_dlc.35
+	title = "usa_dlc.EVTNAME35"
+	desc = "usa_dlc.EVTDESC35"
+	picture = LIBERUM_VETO_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "American Dream"
+		tag = USA
+		NOT = {
+			war_with = GBR
+		}
+		owns = 962 # Unami/Philadelphia
+		NOT = { has_country_modifier = american_philosophical_society }
+	}
+	
+	mean_time_to_happen = { months = 200 }
+	
+	option = {
+		name = "usa_dlc.EVTOPTA35"
+		add_country_modifier = { 
+			name = american_philosophical_society
+			duration = 7300
+		}
+		add_years_of_income = -0.25
+	}
+	option = {
+		name = "usa_dlc.EVTOPTB35"
+		add_adm_power = -20
+		add_prestige = 10
+	}
+	option = {
+		name = "usa_dlc.EVTOPTC35"
+	}
+}
+
+# Evacuation Day
+country_event = {
+	id = usa_dlc.36
+	title = "usa_dlc.EVTNAME36"
+	desc = "usa_dlc.EVTDESC36"
+	picture = BATTLE_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "American Dream"
+		tag = USA
+		is_year = 1783
+		is_month = 10 # November
+		truce_with = GBR
+		GBR = { 
+			NOT = { 
+				any_owned_province = { 
+					is_core = USA 
+				} 
+			} 
+		}
+	}
+	
+	mean_time_to_happen = { months = 200 }
+	
+	option = {
+		name = "usa_dlc.EVTOPTA36"
+		add_prestige = 20
+		set_country_flag = evacuation_day
+	}
+}
+
+# Massachusetts Humane Society
+country_event = {
+	id = usa_dlc.37
+	title = "usa_dlc.EVTNAME37"
+	desc = "usa_dlc.EVTDESC37"
+	picture = ELECTION_REPUBLICAN_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "American Dream"
+		owns = 968 # Massachusetts
+		is_year = 1786
+		NOT = { 
+			has_country_modifier = massachusetts_humane_society 
+		} 
+	}
+	
+	mean_time_to_happen = { 
+		months = 200 
+	}
+	
+	option = {
+		name = "usa_dlc.EVTOPTA37"
+		add_country_modifier = { 
+			name = massachusetts_humane_society 
+			duration = 7300 
+		}
+		add_adm_power = -20
+	}
+	option = {
+		name = "usa_dlc.EVTOPTB37"
+		add_adm_power = 10
+	}
+}
+
+# Committee of Safety
+country_event = {
+	id = usa_dlc.38
+	title = "usa_dlc.EVTNAME38"
+	desc = "usa_dlc.EVTDESC38"
+	picture = CONSTITUTION_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "American Dream"
+		has_country_flag = usa_declaration_independence_flag
+		NOT = { 
+			has_country_modifier = committee_of_safety 
+		} 
+	}
+	
+	mean_time_to_happen = { months = 200 }
+	
+	option = {
+		name = "usa_dlc.EVTOPTA38"
+		add_country_modifier = { 
+			name = committee_of_safety 
+			duration = 3650 
+		}
+		add_years_of_income = -0.1
+	}
+	option = {
+		name = "usa_dlc.EVTOPTB38"
+		add_prestige = 10
+	}
+}
+
+
+# The Netherlands recognise USA as an independent government?
+country_event = {
+	id = usa_dlc.48
+	title = "usa_dlc.EVTNAME48"
+	desc = "usa_dlc.EVTDESC48"
+	picture = DIPLOMACY_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "American Dream"
+		has_country_flag = usa_declaration_independence_flag
+		NOT = {
+			is_year = 1784
+		}
+		NOT = { war_with = NED }
+		NOT = {
+			has_country_flag = independence_acknowledged_flag
+		}
+	}
+	
+	mean_time_to_happen = { 
+		months = 200 
+	}
+	
+	immediate = {
+		hidden_effect = {
+			clr_country_flag = independence_acknowledged_flag
+		}
+	}
+	
+	option = {
+		name = "usa_dlc.EVTOPTA48"
+		NED = {
+			country_event = {
+				id = usa_dlc.49
+			}
+		}
+		add_dip_power = -10
+	}
+	option = {
+		name = "usa_dlc.EVTOPTB48"
+		add_prestige = 10
+	}
+}
+
+# Netherlands: Independent USA?
+country_event = {
+	id = usa_dlc.49
+	title = "usa_dlc.EVTNAME48"
+	desc = "usa_dlc.EVTDESC49"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "usa_dlc.EVTOPTA49"
+		ai_chance = {
+			factor = 80
+		}
+		random_country = {
+			limit = {
+				has_country_flag = usa_declaration_independence_flag
+			}
+			country_event = {
+				id = usa_dlc.50
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_acknowledged_independence
+				years = 20
+			}
+		}
+		GBR = {
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_disgruntled
+				years = 20
+			}
+		}
+	}
+	option = {
+		name = "usa_dlc.EVTOPTB49"
+		random_country = {
+			limit = {
+				has_country_flag = usa_declaration_independence_flag
+			}
+			country_event = {
+				id = usa_dlc.51
+			}
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_disgruntled
+				years = 20
+			}
+		}
+		GBR = {
+			reverse_add_opinion = {
+				who = ROOT
+				modifier = opinion_pleased
+				years = 20
+			}
+		}
+	}
+}
+
+# USA: Netherlands acknowledged independence
+country_event = {
+	id = usa_dlc.50
+	title = "usa_dlc.EVTNAME48"
+	desc = "usa_dlc.EVTDESC50"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "usa_dlc.EVTOPTA50"
+		tooltip = {
+			reverse_add_opinion = {
+				who = FROM
+				modifier = opinion_acknowledged_independence
+				years = 20
+			}
+		}
+	}
+}
+
+# USA: Netherlands rejected independence
+country_event = {
+	id = usa_dlc.51
+	title = "usa_dlc.EVTNAME48"
+	desc = "usa_dlc.EVTDESC51"
+	picture = DIPLOMACY_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = "usa_dlc.EVTOPTA51"
+		tooltip = {
+			reverse_add_opinion = {
+				who = FROM
+				modifier = opinion_disgruntled
+				years = 20
+			}
+		}
+	}
+}
+
+# The Louisiana Purchase
+country_event = {
+	id = usa_dlc.65
+	title = "usa_dlc.EVTNAME65"
+	desc = "usa_dlc.EVTDESC65"
+	picture = DIPLOMACY_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "American Dream"
+		OR = {
+			tag = USA
+			has_country_flag = usa_declaration_independence_flag
+		}
+		FRA = {
+			ai = yes
+		}
+		colonial_louisiana = {
+			OR = {
+				owned_by = FRA
+				owner = {
+					is_colonial_nation_of = FRA
+				}
+			}
+			any_neighbor_province = {
+				owned_by = root
+			}
+		}
+	}
+	
+	mean_time_to_happen = { months = 200 }
+	
+	option = {
+		name = "usa_dlc.EVTOPTA65" # Accept Offer
+		add_treasury = -1000
+		add_opinion = { 
+			who = FRA
+			modifier = opinion_louisiana
+			years = 50
+		}
+		every_province = {
+			limit = {
+				colonial_region = colonial_louisiana
+				OR = {
+					owned_by = FRA
+					owner = {
+						is_colonial_nation_of = FRA
+					}
+				}
+			}
+			owner = {
+				remove_core = PREV
+			}
+			add_core = ROOT
+			cede_province = ROOT
+		}
+		ai_chance = {
+			factor = 100
+			modifier = {
+				factor = 0
+				OR = {
+					is_bankrupt = yes
+					is_in_large_debt = yes
+					AND = {
+						NOT = { treasury = 500 }
+						NOT = { monthly_income = 10 }
+					}
+					AND = {
+						NOT = { treasury = 250 }
+						NOT = { monthly_income = 20 }
+					}
+				}
+			}
+		}
+	}
+
+	option = {
+		name = "usa_dlc.EVTOPTB65" # Decline Offer
+		add_opinion = { 
+			who = FRA 
+			modifier = opinion_disappointed
+			years = 20
+		}
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# Adam-Onís Treaty
+country_event = {
+	id = usa_dlc.71
+	title = "usa_dlc.EVTNAME71"
+	desc = "usa_dlc.EVTDESC71"
+	picture = CONGRESS_eventPicture
+	
+	fire_only_once = yes
+	
+	trigger = {
+		has_dlc = "American Dream"
+		tag = USA
+		SPA = {
+			ai = yes
+		}
+		any_province = {
+			colonial_region = colonial_eastern_america
+			OR = {
+				owned_by = SPA
+				owner = {
+					is_colonial_nation_of = SPA
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = { months = 200 }
+	
+	option = {
+		name = "usa_dlc.EVTOPTA71" # Accept Offer
+		reverse_add_opinion = { 
+			who = SPA 
+			modifier = opinion_florida
+			years = 50
+		}
+		every_province = {
+			limit = {
+				colonial_region = colonial_eastern_america
+				OR = {
+					owned_by = SPA
+					owner = {
+						is_colonial_nation_of = SPA
+					}
+				}
+			}
+			owner = {
+				remove_core = PREV
+			}
+			add_core = ROOT
+			cede_province = ROOT
+		}
+	}
+
+	option = {
+		name = "usa_dlc.EVTOPTB71" # Decline Offer
+		reverse_add_opinion = { 
+			who = SPA 
+			modifier = opinion_displeased
+			years = 20
+		}
+	}
+}
+
+
+# More buns for the people!
+country_event = {
+	id = usa_dlc.100
+	title = "usa_dlc.EVTNAME100"
+	desc = "usa_dlc.EVTDESC100"
+	picture = COMET_SIGHTED_eventPicture
+
+	fire_only_once = yes
+	
+	trigger = {
+		prestige = 100
+		OR = {
+			has_dlc = "American Dream"
+			has_dlc = "Star and Crescent"
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 500000
+	}
+	
+	option = {
+		name = "usa_dlc.EVTOPTA100"
+		add_prestige = 5
+	}
+	option = {
+		name = "usa_dlc.EVTOPTB100"
+		add_adm_power = 5
+	}
+	option = {
+		name = "usa_dlc.EVTOPTC100"
+		add_dip_power = 5
+	}
+	option = {
+		name = "usa_dlc.EVTOPTD100"
+		add_mil_power = 5
+	}
+}
+  

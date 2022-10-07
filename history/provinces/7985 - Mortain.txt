@@ -1,0 +1,26 @@
+#7985 - Mortain
+
+owner = ENG
+controller = ENG
+add_core = ENG
+add_core = FRA
+add_core = NRM
+culture = normand
+religion = catholic
+capital = "Mortain"
+base_tax = 4
+base_production = 4
+base_manpower = 2
+trade_goods = wool
+is_city = yes
+hre = no
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+
+#Province history completed by - Draiocht
+
+1449.1.1 = { owner = FRA controller = FRA add_core = FRA remove_core = ENG }

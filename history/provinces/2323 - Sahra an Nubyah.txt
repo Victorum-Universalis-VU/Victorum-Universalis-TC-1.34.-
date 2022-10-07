@@ -1,0 +1,17 @@
+#2323 - Bir Tawil
+
+owner = KUU
+controller = KUU
+add_core = KUU
+is_city = yes
+capital = "Bir Tawil"
+culture = rufaa_culture
+religion = sunni
+trade_goods = unknown
+hre = no
+base_tax = 1 
+base_production = 1 
+base_manpower = 1 
+
+discovered_by = muslim
+discovered_by = east_african

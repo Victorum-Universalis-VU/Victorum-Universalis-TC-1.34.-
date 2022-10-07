@@ -1,0 +1,61 @@
+vu_civilwar_full_annex = {
+	ae_base = 0.0
+	prestige_base = 0.5
+	warscore_cost = {
+		no_provinces = 100
+	}
+	is_visible = { 
+		OR = {
+			AND = {
+				ROOT = { tag = USA }
+				FROM = { tag = CSA }
+			}
+			AND = {
+				ROOT = { tag = CSA }
+				FROM = { tag = USA }
+			}
+		}
+	}
+	is_allowed = { always = yes }
+	effect = {
+		FROM = { every_owned_province = { cede_province = ROOT add_core = ROOT remove_core = from } }
+	}
+	category = 6
+	ai_weight = {
+		export_to_variable = {
+			variable_name = ai_value
+			value = 100
+		}
+	}
+}
+
+#New Additions by San Felipe
+#vu_engsco_full_annex = {
+#	ae_base = 0.0
+#	prestige_base = 0.5
+#	warscore_cost = {
+#		no_provinces = 100
+#	}
+#	is_visible = {
+#	    always = yes
+#	}
+#	is_allowed = { 
+#	    always = yes 
+#	}
+#	effect = {
+#		FROM = { 
+#		    every_owned_province = { 
+#			    cede_province = ENG 
+#				add_core = ENG 
+#				remove_core = SCO 
+#			} 
+#		}
+#	}
+#	category = 6
+#	ai_weight = {
+#		export_to_variable = {
+#			variable_name = ai_value
+#			value = 100
+#		}
+#	}
+#}

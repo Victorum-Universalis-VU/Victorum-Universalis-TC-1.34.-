@@ -1,0 +1,24 @@
+#BT's Western Europe Overhaul in 12.0
+
+owner = POR
+controller = POR
+add_core = POR
+culture = portugese
+religion = catholic
+capital = "Olivença"
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = olive_oil	# could capital name indicate something...
+is_city = yes
+hre = no
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+
+#Province history completed by - Draiocht
+
+#1444 on

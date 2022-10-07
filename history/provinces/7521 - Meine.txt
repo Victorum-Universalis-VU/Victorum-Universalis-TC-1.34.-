@@ -1,0 +1,30 @@
+#7521 - Meine
+
+owner = BRU
+controller = BRU
+add_core = BRU
+culture = eastphalian
+religion = catholic
+capital = "Meine"
+trade_goods = lead
+hre = yes
+base_tax = 3
+base_production = 3
+base_manpower = 2 
+is_city = yes
+
+discovered_by = english
+discovered_by = french
+discovered_by = german_group
+discovered_by = italian
+discovered_by = russian
+discovered_by = scandinavian
+discovered_by = spanish
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Documented 1007 AD
+1529.1.1 = { religion = protestant }
+# The kingdom is dissolved

@@ -1,0 +1,6 @@
+#6578 - Hwash al-Juraf Lake
+
+discovered_by = muslim
+discovered_by = east_african
+discovered_by = ottoman
+

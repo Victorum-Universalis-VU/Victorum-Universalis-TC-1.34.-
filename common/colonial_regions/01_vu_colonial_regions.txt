@@ -1,0 +1,7254 @@
+# 69 Active CR's (Please update this when you add in a new CR)
+# Cascadia
+colonial_cascadia = {
+	color = { 10 120 40 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 4
+	native_ferocity = 2
+	native_hostileness = 8
+
+	trade_goods = {
+		fish = 10
+		fur = 6
+		naval_supplies = 6
+		wool = 2
+		iron = 1
+		copper = 1
+	}
+
+	culture = {
+		salish = 10
+		interior_salish = 10
+		plateau_penutian = 10
+		chinook = 4
+		dakelh = 4
+		wakashan = 2
+		coast_penutian = 2
+		ktunaxa = 2
+		shoshone = 2
+		nuxalk = 1
+		umpqua = 1
+		tlingit = 1
+		haida = 1
+		quileute = 1
+		tsimshianic = 1
+	}
+
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		872 873 874 972 973 974 975 1913 2003 2004 2019 2020 2022 2481 2482 2483 2484 2485 2486 2487 2488 2489 2603 2604 2605 2606 2607 2609 2610 
+		4941 4949 4946 4958 4947 4948 4960 4940 4942 4943 4944 4945 4961 4957 4972 4982 4988 5116 5117 5142 5198 5612 5613 5630 5631 5729 5730 
+		5731 5732 5733 5734 5735 5736 5737 5738 5739 5740 5741 5742 5743 5744 5745 5746 5747 5748 5749 5750 5751 5752 5753 5754 5755 5756 5758 5759 
+		5760 5761 5762 5777 5779 5780 5781 5782 5776 5790 5801 5804 5805 5806 5807 5808 5809 5810 5811 5812 5813 5816 5819 5820	5824 5825 5867 5868 
+		5869 5870 5871 5872 5873 5874 5875 5876 5877 5878 5879 5880 5881 5882 5883 5884 5885 5886 5887 5888 5889 5890 5892 5893 6933 6934
+	}
+
+	# Specific
+	names = {
+		trigger = { tag = USA }
+		name = "COLONIAL_CALIFORNIA_Oregon"
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_CALIFORNIA_New_Albion"
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_CASCADIA_PT"
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_CALIFORNIA_Columbia"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		name = "COLONIAL_CASCADIA_Skraelmork"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
+		}
+		name = "COLONIAL_CASCADIA_Astorien"
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_CASCADIA_Tir_na_Easanna"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_CASCADIA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_CASCADIA_TU"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Cascadia"
+	}
+	names = {
+		name = "COLONIAL_CALIFORNIA_Root_Culture_GetGroupName_Columbia"
+	}
+	names = {
+		name = "COLONIAL_CALIFORNIA_Cascadia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+#NWT
+colonial_northwest_territories = {
+	color = { 95 65 35 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 4
+	native_ferocity = 2
+	native_hostileness = 8
+
+	trade_goods = {
+		fur = 10
+		naval_supplies = 6
+		wool = 6
+		iron = 2
+		copper = 2
+		gold = 1
+	}
+
+	culture = {
+		athabascan = 10
+		chipewyan = 3
+	}
+
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		1812 1814 2017 2018 2599 2600 2601 2602 4980 4983 4985 4986 4987 4989 4976 4977 4978 4981 4984 5000 5001 5033 5040 5041 5072 5073 5074 
+		5075 5078 5079 5080 5081 5082 5083 5084 5085 5086 5087 5126 5192 5193 5195 5196 5197 5783 5784 5785 5891 5894 5895 5896 5897 5898 5899 
+		5900 8010
+	}
+
+	# Specific
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_NWT_PT"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		name = "COLONIAL_NWT_Vanaheimr"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = { tag = NED }
+			NOT = { tag = HOL}
+		}
+		name = "COLONIAL_NWT_Nordwestkolonie"
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_NWT_Culchriocha_an_Iarthuaiscirt"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+			any_owned_province = { #Needs to have a province close to the Bernina Alps as they're referenced in the name
+				OR = {
+					area = lombardy_area
+					area = north_piedmont_area
+					area = po_valley_area
+				}
+			}
+		}
+		name = "COLONIAL_NWT_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_NWT_TU"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_NWT_Northwest_Territories"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+#HudsonBay
+colonial_hudson_bay = {
+	color = { 200 20 20 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 4
+	native_ferocity = 2
+	native_hostileness = 8
+
+	trade_goods = {
+		fur = 10
+		naval_supplies = 6
+		wool = 6
+		iron = 2
+		copper = 2
+		gold = 1
+	}
+
+	culture = {
+		cree = 10
+		inuit = 10
+		chipewyan = 10
+		ojicree = 5
+		crow_culture = 5
+		nakota = 2
+		chipewyan = 2
+		plains_cree = 2
+		arapaho = 2
+		cheyenne = 2
+		anishinabe = 1
+		dakota = 1
+		bungi = 1
+	}
+
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		906 999 1000 1003 1004 1005 1006 1008 1009 1010 1011 1805 1806 1811 1813 2005 2007 2016 2510 2511 2592 2593 2594 2596 2597 2595 4902 4919 
+		4920 4990 4991 4992 4993 4994 4995 4996 4997 4998 4999 5002 5003 5004 5005 5006 5007 5008 5035 5036 5067 5068 5069 5592 5593 5594 5595 5596 
+		5789 5088 5089 5573 5580 5587 5611 5624 5636 5637 5639 5640 5641 5787 5788 5901 5902 5903 5070 5071 998
+	}
+
+	# Specific
+	names = {
+		trigger = { culture_group = iberian }
+		name = "COLONIAL_HUDSON_BAY_PT"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		name = "COLONIAL_CANADA_Ruperts_Land"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }	 		#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		name = "COLONIAL_HUDSON_BAY_Helluland"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = { tag = NED }
+			NOT = { tag = HOL }
+		}
+		name = "COLONIAL_HUDSON_BAY_Ruprechtsland"
+	}
+	names = {
+		trigger = { culture_group = byzantine }
+		name = "COLONIAL_HUDSON_BAY_Pythaia"
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_HUDSON_BAY_Coillte_na_Craioch"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_HUDSON_BAY_CY"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_HUDSON_BAY_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_HUDSON_BAY_TU"
+	}
+	# Generic
+	names = {
+		trigger = {
+			owns = 1010 # Manitoba
+		}
+		name = "PROV1010"
+	}
+	names = {
+		name = "COLONIAL_CANADA_Borealia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+#Newfoundland
+colonial_newfoundland = {
+	color = { 120 100 80 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 4
+	native_ferocity = 2
+	native_hostileness = 8
+
+	trade_goods = {
+		fish = 10
+	}
+
+	culture = {
+		beothuk = 10
+		innu = 5
+	}
+
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		980 981 997 2573 2574 2575 4974 5013 5014 5015 5019 5058 5059
+	}
+
+	# Specific
+	names = {
+		trigger = {
+			culture_group = british
+			any_owned_province = {
+				area = wales_area
+			}
+		}
+		name = "COLONIAL_CANADA_Avalon"
+	}
+	names = {
+		trigger = { culture_group = british	}
+		name = "COLONIAL_CANADA_Newfoundland"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_CANADA_Vinland"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = { tag = NED }
+			NOT = { tag = HOL }
+		}
+		name = "COLONIAL_CANADA_BTP_Neuland"
+	}
+	# names = { #Draiocht deprecated.
+		# trigger = { primary_culture = portugese }
+		# name = "COLONIAL_CANADA_Bacallao"
+	# }
+	names = {
+		trigger = { culture_group = iberian } #Simplified and added Portuguese to make for Iberian.
+		name = "COLONIAL_CANADA_Terra_Nova"
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_CANADA_Terre_Neuve"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = irish
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+			}
+		}
+		name = "COLONIAL_CANADA_Talamh_an_Eisc"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = highland_scottish
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_CANADA_Eilean_an_Truisg"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = breton
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_breton_culture
+			}
+		}
+		name = "COLONIAL_CANADA_Douar_Nevez"
+	}
+	names = {
+		trigger = { primary_culture = basque }
+		name = "COLONIAL_CANADA_Ternua"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				#BT Bugfixes added Celtic versions of Welsh.
+				primary_culture = celtic_welsh_culture
+			}
+		}
+		name = "COLONIAL_CANADA_Afallon"
+	}
+	names = {
+		trigger = { culture_group = byzantine }
+		name = "COLONIAL_CANADA_Nea_Taurike"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_NEWFOUNDLAND_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_NEWFOUNDLAND_TU"
+	}
+
+	# Generic
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+	names = {
+		name = "COLONIAL_CANADA_Newfoundland"
+	}
+}
+
+#Acadia
+colonial_acadia = {
+	color = { 120 40 160 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+
+	culture = {
+		mikmaq = 10
+		maliseet = 5
+		abenaki = 2
+	}
+
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		982 983 984 985 2568 2569 2570 2571 2572 4891 4896 5046 5047 5048 5049 5050 5051
+	}
+
+	# Specific
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_ACADIA_PT"
+	}
+	names = {
+		trigger = {
+			OR  ={
+				primary_culture = highland_scottish
+				primary_culture = gallgaidheil
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_CANADA_Alba_Nuadh"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = FRA
+				culture_group = french
+			}
+		}
+		name = "COLONIAL_CANADA_Acadia"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+			SCO = {
+				exists = no
+			}
+			any_owned_province = {
+				OR = {
+					area = highlands_area
+					area = lowlands_area
+					area = kingdom_of_the_isles_area
+				}
+			}
+		}
+		name = "COLONIAL_CANADA_Nova_Scotia"
+	}
+	names = {
+		trigger = { tag = SCO }
+		name = "COLONIAL_CANADA_Nova_Scotia"
+	}
+	names = {
+		trigger = {
+			OR = {
+				tag = NED
+				tag = HOL
+				primary_culture = dutch
+			}
+		}
+		name = "COLONIAL_CANADA_Nova_Hollandia"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+			owns = 4145 # Agder
+		}
+		name = "COLONIAL_ACADIA_Egdirnaes"
+	}
+	names = {
+		trigger = {
+			culture_group = scandinavian
+			any_owned_province = {
+				OR = {
+					area = highlands_area
+					area = lowlands_area
+					area = kingdom_of_the_isles_area
+				}
+			}
+		}
+		name = "COLONIAL_ACADIA_Nyja_Skotland"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_ACADIA_Nordr_Vinland"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = { tag = NED }
+			NOT = { tag = HOL }
+		}
+		name = "COLONIAL_ACADIA_Neu_Braunschweig"
+	}
+	names = {
+		trigger = { culture_group = byzantine }
+		name = "COLONIAL_ACADIA_Nea_Arkadia"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = irish
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+			}
+			any_owned_province = {
+				OR = {
+					area = highlands_area
+					area = lowlands_area
+					area = kingdom_of_the_isles_area
+				}
+			}
+		}
+		name = "COLONIAL_ACADIA_Albain_Nua"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = irish
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+			}
+		}
+		name = "COLONIAL_ACADIA_Acaid"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_ACADIA_CY"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+			any_owned_province = { #To avoid a situation where you don't own Tuscany yet still get New Tuscany.
+				OR = {
+					area = tuscany_area
+					area = south_tuscany_area
+				}
+			}
+		}
+		name = "COLONIAL_ACADIA_LA"
+	}
+	names = {
+		trigger = { culture_group = iberian }
+		name = "COLONIAL_ACADIA_ES"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_ACADIA_TU"
+	}
+#	names = {
+#		trigger = {
+#			tag = FRA
+#			OR = {
+#				any_owned_province = {
+#					OR = {
+#						area = highlands_area
+#						area = lowlands_area
+#					}
+#				}
+#				overlord_of = SCO
+#				alliance_with = SCO
+#			}
+#		}
+#		name = "COLONIAL_CANADA_Nouvelle_Ecosse"
+#	}
+#	names = {
+#		trigger = {
+#			tag = SCO
+#		}
+#		name = "COLONIAL_CANADA_Nouvelle_Ecosse"
+#	}
+
+	# Generic
+	names = {
+		name = "COLONIAL_CANADA_Acadia"
+	}
+	names = {
+		name = "COLONIAL_CANADA_Nova_Scotia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+#Cuba
+colonial_cuba = {
+	color = { 102 66 17 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+
+	culture = {
+		arawak = 10
+	}
+
+	religion = {
+		animism = 10
+	}
+
+	provinces = {
+		484 485 486 2654 2655 2656 4624 4622 4623 5572 5707
+	}
+
+	# Specific
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_CUBA_PT"
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_THE_CARRIBEAN_Isla_Juana"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		name = "COLONIAL_THE_CARRIBEAN_BTP_Kubejyar"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = { tag = NED }
+			NOT = { tag = HOL }
+		}
+		name = "COLONIAL_CUBA_Ferdinandien"
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_CUBA_Cuba_IE"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_CUBA_Cuba_CY"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = breton
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_breton_culture
+				AND = {
+					culture_group = germanic
+					NOT = { primary_culture = dutch }
+				}
+			}
+		}
+		name = "COLONIAL_CUBA_Kuba"
+	}
+	names = {
+		trigger = { culture_group = byzantine }
+		name = "COLONIAL_CUBA_Kouva"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_CUBA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_CUBA_TU"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_THE_CARRIBEAN_Cuba"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+
+}
+
+#Hispaniola
+colonial_hispaniola = {
+	color = { 99 46 218 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+
+	culture = {
+		arawak = 10
+	}
+
+	religion = {
+		animism = 10
+	}
+
+	provinces = {
+		488 489 490 2658 2659 4618 4619 4620 4621 5563 5565 5567 5706 5708
+	}
+
+	# Specific
+	names = {
+		trigger = {
+			primary_culture = portugese
+			owns = 4621 #Santo Domingo
+		}
+		name = "COLONIAL_HISPANIOLA_PT_2"
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_HISPANIOLA_PT"
+	}
+	names = {
+		trigger = { culture_group = iberian }
+		name = "COLONIAL_THE_CARRIBEAN_Hispaniola"
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_HISPANIOLA_Saint_Domingue"
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_HISPANIOLA_Haiti_IE"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_HISPANIOLA_Heitejyar"			#I don't speak Icelandic/OWN... let me know if this is crap -Draiocht
+	}
+	names = {
+		trigger = { culture_group = byzantine }
+		name = "COLONIAL_HISPANIOLA_Nea_Sikelia"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_HISPANIOLA_CY"
+	}
+	names = {
+		trigger = {
+			culture_group = latin
+		}
+		name = "COLONIAL_HISPANIOLA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_HISPANIOLA_TU"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_HISPANIOLA_Haiti"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+#Bahamas
+#colonial_bahamas = { #OBSOLETE, MERGED WITH ANTILLES (CARRIBEAN)
+#	color = { 230 251 99 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		fish = 10
+#		naval_supplies = 10
+#	}
+#
+#	culture = {
+#		arawak = 10
+#	}
+#
+#	religion = {
+#		animism = 10
+#	}
+#
+#	provinces = {
+#		482 483 5574 5575 5576 5577 
+#		
+#		#VU Additions by San Felipe
+#		6010 6011 6012 6013 6014 6015 6016 6017
+#	}
+#
+#	# Specific
+#	names = {
+#		trigger = {
+#			tag = POR
+#		}
+#		name = "COLONIAL_BAHAMAS_PT"
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = { tag = NED }
+#			NOT = { tag = HOL }
+#		}
+#		name = "COLONIAL_BAHAMAS_Flachmeer"
+#	}
+#	names = {
+#		trigger = { culture_group = byzantine }
+#		name = "COLONIAL_BAHAMAS_Bachames"
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_BAHAMAS_Bahamai"
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				primary_culture = welsh
+#				primary_culture = cornish
+#				#BT Bugfixes added Celtic versions of Brythonic.
+#				primary_culture = celtic_welsh_culture
+#				primary_culture = celtic_cornish_culture
+#			}
+#		}
+#		name = "COLONIAL_BAHAMAS_CY"
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_BAHAMAS_LA"
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_BAHAMAS_ES"
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_BAHAMAS_TU"
+#	}
+#
+#	# Generic
+#	names = {
+#		name = "COLONIAL_BAHAMAS_Bahamas"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+#Polynesia
+colonial_polynesia = {
+	color = { 29 172 194 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+
+	culture = {
+		maori = 10
+	}
+
+	religion = {
+		animism = 10
+	}
+
+	provinces = {
+		1106 1107 1108 1109 1246 2737 2738 2739 4939 5021 5022 5597 5598 5599 5600 5601 5602 5603 5604 5605 5606 5607 5608 5609 5610
+	}
+
+	# Specific
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_POLYNESIA_EN"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = dutch
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_POLYNESIA_NE"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = { tag = NED }
+			NOT = { tag = HOL }
+		}
+		name = "COLONIAL_POLYNESIA_DE"
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_POLYNESIA_FR"
+	}
+	#names = {
+	#	trigger = { culture_group = byzantine }
+	#	name = "COLONIAL_POLYNESIA_EL"
+	#}
+	#names = {
+	#	trigger = { culture_group = scandinavian }
+	#	name = "COLONIAL_POLYNESIA_NO"
+	#}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_POLYNESIA_IE"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_POLYNESIA_CY"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = breton
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_breton_culture
+			}
+		}
+		name = "COLONIAL_POLYNESIA_BR"
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = latin
+				culture_group = iberian
+			}
+		}
+		name = "COLONIAL_POLYNESIA_LA"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_POLYNESIA_TU"
+	}
+
+	# Generic
+	names = {
+		name = "COLONIAL_POLYNESIA_Default"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+#Cape Colony (Cape of Good Hope)
+colonial_cape = {
+	color = { 220 130 51 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+
+	culture = {
+		khoisan = 10
+	}
+
+	religion = {
+		animism = 10
+	}
+
+	provinces = {
+		789 833 1175 1176 1177 1178 1179 1181 5371 5372 5373 5374 2856 2864 2880 4781 4782 4783 4784 5347 5360 5362 5363 5365 5366 5367 5376 5378 5380 5381 5383 5384 5385 5408 5409 5410 5411 5412 5413 5414 5415 5416 5417 5418 5419 5420 5421 5422 5423 5424	5340 5341 5342 5343 5344 5345 5346 5348 5349 5350 5351 5352 5353 5354 5355 5356 5357 5361 5368 5428 5358 5359 1180 5370
+	}
+
+	# Specific
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_CAPE_COLONY_EN"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = dutch
+				tag = NED
+				tag = HOL
+			}
+		}
+		name = "COLONIAL_CAPE_COLONY_NE"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = { tag = NED }
+			NOT = { tag = HOL }
+		}
+		name = "COLONIAL_CAPE_COLONY_DE"
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_CAPE_COLONY_FR"
+	}
+	names = {
+		trigger = { culture_group = byzantine }
+		name = "COLONIAL_CAPE_COLONY_EL"
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_CAPE_COLONY_PT"
+	}
+	names = {
+		trigger = { culture_group = iberian }
+		name = "COLONIAL_CAPE_COLONY_ES"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_CAPE_COLONY_NO"
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_CAPE_COLONY_IE"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_CAPE_COLONY_CY"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = breton
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_breton_culture
+			}
+		}
+		name = "COLONIAL_CAPE_COLONY_BR"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_CAPE_COLONY_LA"
+	}
+	names = {
+		trigger = { culture_group = east_slavic }
+		name = "COLONIAL_CAPE_COLONY_EAST_SLAVIC"
+	}
+	names = {
+		trigger = { culture_group = west_slavic }
+		name = "COLONIAL_CAPE_COLONY_WEST_SLAVIC"
+	}
+	names = {
+		trigger = { culture_group = south_slavic }
+		name = "COLONIAL_CAPE_COLONY_SOUTH_SLAVIC"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_CAPE_COLONY_TU"
+	}
+	names = {
+		trigger = { culture_group = japanese_g }
+		name = "COLONIAL_CAPE_COLONY_NP"
+	}
+	names = {
+		trigger = { culture_group = east_asian }
+		name = "COLONIAL_CAPE_COLONY_CN"
+	}
+	names = {
+		trigger = { culture_group = korean_g }
+		name = "COLONIAL_CAPE_COLONY_KO"
+	}
+	names = {
+		trigger = { culture_group = turko_semitic }
+		name = "COLONIAL_CAPE_COLONY_AR"
+	}
+
+	# Generic
+	names = {
+		name = "COLONIAL_CAPE_COLONY_Default"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+# Greenland
+colonial_greenland = {
+	color = { 47 188 22 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 8
+	native_ferocity = 1
+	native_hostileness = 8
+
+	trade_goods = {
+		fish = 10
+	}
+
+	culture = {
+		kalaallisut = 10
+	}
+
+	religion = {
+		shamanism = 10
+	}
+
+	provinces = {
+		1104 1105 1804 3111 3112 3113 5588 5589 5590
+	}
+
+	# Specific
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_GREENLAND_PT"
+	}
+	names = {
+		trigger = { primary_culture = swedish }
+		name = "COLONIAL_GREENLAND_SWE"
+	}
+	names = {
+		trigger = { primary_culture = danish }
+		name = "COLONIAL_GREENLAND_DAN"
+	}
+	names = {
+		trigger = { culture_group = scandinavian }			#Actually OWN based, but any Swedes or Danes will have to suggest better if they dont like it
+		name = "COLONIAL_GREENLAND_BTP_Groenland"
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = { tag = NED }
+			NOT = { tag = HOL }
+		}
+		name = "COLONIAL_GREENLAND_BTP_Gruenland"
+	}
+	names = {
+		trigger = { culture_group = byzantine }
+		name = "COLONIAL_GREENLAND_BTP_Hupervoreios"
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_GREENLAND_BTP_IE"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = breton
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_breton_culture
+			}
+		}
+		name = "COLONIAL_GREENLAND_BTP_BR"
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = brythonic
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_GREENLAND_BTP_CY"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_GREENLAND_TU"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_GREENLAND_LA"
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_GREENLAND_Greenland"
+	}
+}
+
+# Formosa (Taiwan)
+#colonial_formosa = {
+#	color = { 56 16 32 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		fish = 10
+#		naval_supplies = 10
+#	}
+#
+#	culture = {
+#		formosan_culture = 10
+#	}
+#
+#	religion = {
+#		animism = 10
+#	}
+#
+#	provinces = {
+#		2154 2155 6757 6758 6759 6760 6761 6762 6763 6764 6765 6985 7162 738 8548 8549 8555
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_FORMOSA_GBR"
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				primary_culture = dutch
+#				tag = NED
+#				tag = HOL
+#			}
+#		}
+#		name = "COLONIAL_FORMOSA_NED"
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = { tag = NED }
+#			NOT = { tag = HOL }
+#		}
+#		name = "COLONIAL_FORMOSA_GER"
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_FORMOSA_FRA"
+#	}
+#	names = {
+#		trigger = { culture_group = byzantine }
+#		name = "COLONIAL_FORMOSA_BYZ"
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_FORMOSA_POR"
+#	}
+#	names = {
+#		trigger = { culture_group = iberian }
+#		name = "COLONIAL_FORMOSA_SPA"
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_FORMOSA_SCA"
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_FORMOSA_GLC"
+#	}
+#	names = {
+#		trigger = {	culture_group = brythonic }
+#		name = "COLONIAL_FORMOSA_BRYTHONIC"
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_FORMOSA_LAT"
+#	}
+#	names = {
+#		trigger = { culture_group = east_slavic }
+#		name = "COLONIAL_FORMOSA_EAST_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = west_slavic }
+#		name = "COLONIAL_FORMOSA_WEST_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = south_slavic }
+#		name = "COLONIAL_FORMOSA_SOUTH_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_FORMOSA_TUR"
+#	}
+#	names = {
+#		trigger = { culture_group = turko_semitic }
+#		name = "COLONIAL_FORMOSA_ARAB"
+#	}
+#	names = {
+#		trigger = { culture_group = east_asian }
+#		name = "COLONIAL_FORMOSA_CHINESE"
+#	}
+#	names = {
+#		trigger = { culture_group = japanese_g }
+#		name = "COLONIAL_FORMOSA_JAP"
+#	}
+#	names = {
+#		trigger = { culture_group = korean_g }
+#		name = "COLONIAL_FORMOSA_KOREAN"
+#	}
+#
+#	# Generic
+#	names = {
+#		name = "COLONIAL_FORMOSA_Default"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Philippines
+#colonial_philippines = {
+#	color = { 152 0 200 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		fish = 10
+#		naval_supplies = 10
+#	}
+#
+#	culture = {
+#		filipino = 10
+#	}
+#
+#	religion = {
+#		animism = 10
+#	}
+#
+#	provinces = {
+#		651 652 653 654 655 656 657 658 1397 2697 2698 2699 2700 2701 2702 4348 4349 4350 4351 4352 4353 4354 4355 4356 6981 6983 7160 7161 7165 
+#		7166 7167 7168 7169 7170 7171 7172 7173 7174 7175 7176 7177 7178 7179 7180 7181 7182 7183 7184 7185 7188 7189 8267 8268 8269 8270 8271 8272 
+#		8273 8274 8275 8276 8277 8278 8279 8280 8281 8282 8283 8284 8285 8286 8287 8288 8289 8290 8291 8292 8293 8294 8295 8296 8297 8298 8299 8709 
+#		8710 8711 8712 8713 8714 8715 8716 8720 8721
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_PHILIPPINES_GBR"
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				primary_culture = dutch
+#				tag = NED
+#				tag = HOL
+#			}
+#		}
+#		name = "COLONIAL_PHILIPPINES_NED"
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = { tag = NED }
+#			NOT = { tag = HOL }
+#		}
+#		name = "COLONIAL_PHILIPPINES_GER"
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_PHILIPPINES_FRA"
+#	}
+#	names = {
+#		trigger = { culture_group = byzantine }
+#		name = "COLONIAL_PHILIPPINES_BYZ"
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_PHILIPPINES_POR"
+#	}
+#	names = {
+#		trigger = { culture_group = iberian }
+#		name = "COLONIAL_PHILIPPINES_SPA"
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_PHILIPPINES_SCA"
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_PHILIPPINES_GLC"
+#	}
+#	names = {
+#		trigger = {	culture_group = brythonic }
+#		name = "COLONIAL_PHILIPPINES_BRYTHONIC"
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_PHILIPPINES_LAT"
+#	}
+#	names = {
+#		trigger = { culture_group = east_slavic }
+#		name = "COLONIAL_PHILIPPINES_EAST_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = west_slavic }
+#		name = "COLONIAL_PHILIPPINES_WEST_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = south_slavic }
+#		name = "COLONIAL_PHILIPPINES_SOUTH_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_PHILIPPINES_TUR"
+#	}
+#	names = {
+#		trigger = { culture_group = turko_semitic }
+#		name = "COLONIAL_PHILIPPINES_ARAB"
+#	}
+#	names = {
+#		trigger = { culture_group = east_asian }
+#		name = "COLONIAL_PHILIPPINES_CHINESE"
+#	}
+#	names = {
+#		trigger = { culture_group = japanese_g }
+#		name = "COLONIAL_PHILIPPINES_JAP"
+#	}
+#	names = {
+#		trigger = { culture_group = korean_g }
+#		name = "COLONIAL_PHILIPPINES_KOREAN"
+#	}
+#
+#	# Generic
+#	names = {
+#		name = "COLONIAL_PHILIPPINES_Default"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Burma
+#colonial_burma = {
+#	color = { 136 152 0 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		fish = 10
+#		naval_supplies = 10
+#	}
+#
+#	culture = {
+#		burmese = 10
+#	}
+#
+#	religion = {
+#		buddhism = 10
+#	}
+#
+#	provinces = {
+#		579 580 581 582 583 584 585 586 587 588 590 591 1815 2402 2403 2404 2041 2395 2396 2397 2398 2399 2400 2401 4393 4394 4395 4396 4397 4398 
+#		4399 4404 4405 4406 6940 6941 8551 8552 8553 8584 8585 8599 8600 8636 8638 8643 8644 8645 8650 8651 8676 8677 8678 8679
+#    }
+#	
+#	# Specific
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_BURMA_GBR"
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				primary_culture = dutch
+#				tag = NED
+#				tag = HOL
+#			}
+#		}
+#		name = "COLONIAL_BURMA_NED"
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = { tag = NED }
+#			NOT = { tag = HOL }
+#		}
+#		name = "COLONIAL_BURMA_GER"
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_BURMA_FRA"
+#	}
+#	names = {
+#		trigger = { culture_group = byzantine }
+#		name = "COLONIAL_BURMA_BYZ"
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_BURMA_POR"
+#	}
+#	names = {
+#		trigger = { culture_group = iberian }
+#		name = "COLONIAL_BURMA_SPA"
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_BURMA_SCA"
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_BURMA_GLC"
+#	}
+#	names = {
+#		trigger = {	culture_group = brythonic }
+#		name = "COLONIAL_BURMA_BRYTHONIC"
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_BURMA_LAT"
+#	}
+#	names = {
+#		trigger = { culture_group = east_slavic }
+#		name = "COLONIAL_BURMA_EAST_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = west_slavic }
+#		name = "COLONIAL_BURMA_WEST_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = south_slavic }
+#		name = "COLONIAL_BURMA_SOUTH_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_BURMA_TUR"
+#	}
+#	names = {
+#		trigger = { culture_group = turko_semitic }
+#		name = "COLONIAL_BURMA_ARAB"
+#	}
+#	names = {
+#		trigger = { culture_group = east_asian }
+#		name = "COLONIAL_BURMA_CHINESE"
+#	}
+#	names = {
+#		trigger = { culture_group = japanese_g }
+#		name = "COLONIAL_BURMA_JAP"
+#	}
+#	names = {
+#		trigger = { culture_group = korean_g }
+#		name = "COLONIAL_BURMA_KOREAN"
+#	}
+#
+#	# Generic
+#	names = {
+#		name = "COLONIAL_BURMA_Default"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Indochina
+#colonial_indochina = {
+#	color = { 88 152 96 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		fish = 10
+#		naval_supplies = 10
+#	}
+#
+#	culture = {
+#		vietnamese = 10
+#	}
+#
+#	religion = {
+#		mahayana = 10
+#	}
+#
+#	provinces = {
+#		589 592 593 594 600 601 602 603 604 605 606 607 608 609 610 611 612 613 614 615 616 1016 1022 1365 1817 1823 1844 2371 2372 2373 2374 2375 
+#		2376 2377 2378 2379 2380 2381 2382 2383 2384 2385 2386 2387 2388 2389 2390 2391 4812 4819 4820 4821 4822 4823 4824 4825 4826 4827 4828 4829 
+#		4830 4831 4832 4833 4834 4835 4836 4837 4838 4839 4840 4841 4842 6680 6681 6682 6683 6684 6913 6914 6915 6916 6917 6918 6919 6920 6921 6922 
+#		6923 6936 6937 6938 6939 6980 6982 8556 8566 8567 8568 8572 8573 8574 8575 8576 8577 8578 8580 8582 8583 8586 8587 8588 8589 8590 8591 8592 
+#		8593 8594 8596 8597 8598 8617 8618 8624 8625 8628 8629 8637 8639 8640 8641 8642 8646 8647 8648 8652 8653 8654 8655 8656 8657 8658 8659 8673 
+#		8681 8682 8683 8684 8685 8728 8729 8730 8731
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_INDOCHINA_GBR"
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				primary_culture = dutch
+#				tag = NED
+#				tag = HOL
+#			}
+#		}
+#		name = "COLONIAL_INDOCHINA_NED"
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = { tag = NED }
+#			NOT = { tag = HOL }
+#		}
+#		name = "COLONIAL_INDOCHINA_GER"
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_INDOCHINA_FRA"
+#	}
+#	names = {
+#		trigger = { culture_group = byzantine }
+#		name = "COLONIAL_INDOCHINA_BYZ"
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_INDOCHINA_POR"
+#	}
+#	names = {
+#		trigger = { culture_group = iberian }
+#		name = "COLONIAL_INDOCHINA_SPA"
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_INDOCHINA_SCA"
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_INDOCHINA_GLC"
+#	}
+#	names = {
+#		trigger = {	culture_group = brythonic }
+#		name = "COLONIAL_INDOCHINA_BRYTHONIC"
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_INDOCHINA_LAT"
+#	}
+#	names = {
+#		trigger = { culture_group = east_slavic }
+#		name = "COLONIAL_INDOCHINA_EAST_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = west_slavic }
+#		name = "COLONIAL_INDOCHINA_WEST_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = south_slavic }
+#		name = "COLONIAL_INDOCHINA_SOUTH_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_INDOCHINA_TUR"
+#	}
+#	names = {
+#		trigger = { culture_group = turko_semitic }
+#		name = "COLONIAL_INDOCHINA_ARAB"
+#	}
+#	names = {
+#		trigger = { culture_group = east_asian }
+#		name = "COLONIAL_INDOCHINA_CHINESE"
+#	}
+#	names = {
+#		trigger = { culture_group = japanese_g }
+#		name = "COLONIAL_INDOCHINA_JAP"
+#	}
+#	names = {
+#		trigger = { culture_group = korean_g }
+#		name = "COLONIAL_INDOCHINA_KOREAN"
+#	}
+#
+#	# Generic
+#	names = {
+#		name = "COLONIAL_INDOCHINA_Default"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Indonesia
+#colonial_indonesia = {
+#	color = { 61 141 255 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		fish = 10
+#		naval_supplies = 10
+#	}
+#
+#	culture = {
+#		javanese = 10
+#	}
+#
+#	religion = {
+#		hinduism = 10
+#	}
+#
+#	provinces = {
+#		617 618 619 620 621 622 623 624 625 626 627 628 629 630 631 632 633 634 635 638 639 640 641 642 643 644 645 646 647 648 649 650 659 1357 
+#		2673 2674 2675 2676 2677 2678 2679 2680 2681 2682 2683 2684 2685 2686 2687 2688 2689 2690 2691 2692 2693 2696 2695 2706 2707 2708 
+#		2709 2710 2711 2712 2713 2714 2715 2716 2717 2725 4790 4791 4792 4793 4794 4795 4796 4797 4798 4799 4800 4801 4802 4803 4809 4810 4811 4816 
+#		4817 4818 4845 5217 5438 5439 5440 5441 5442 5443 5444 5445 5446 5447 5448 5449 5450 5451 8544 8547 8550 8557 8558 8559 8563 8564 8565 8569 
+#		8571 8601 8602 8603 8604 8605 8606 8607 8611 8612 8613 8614 8615 8616 8619 8620 8621 8622 8623 8626 8627 8630 8631 8632 8633 8635 8634 8680 
+#		8686 8687 8688 8689 8690 8691 8692 8693 8694 8695 8696 8697 8698 8699 8702 8703 8704 8705 8706 8707 8708 8717 8718 8719 8722 8723 8724 8725 
+#		8726 8727
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_INDONESIA_GBR"
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				primary_culture = dutch
+#				tag = NED
+#				tag = HOL
+#			}
+#		}
+#		name = "COLONIAL_INDONESIA_NED"
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = { tag = NED }
+#			NOT = { tag = HOL }
+#		}
+#		name = "COLONIAL_INDONESIA_GER"
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_INDONESIA_FRA"
+#	}
+#	names = {
+#		trigger = { culture_group = byzantine }
+#		name = "COLONIAL_INDONESIA_BYZ"
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_INDONESIA_POR"
+#	}
+#	names = {
+#		trigger = { culture_group = iberian }
+#		name = "COLONIAL_INDONESIA_SPA"
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_INDONESIA_SCA"
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_INDONESIA_GLC"
+#	}
+#	names = {
+#		trigger = {	culture_group = brythonic }
+#		name = "COLONIAL_INDONESIA_BRYTHONIC"
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_INDONESIA_LAT"
+#	}
+#	names = {
+#		trigger = { culture_group = east_slavic }
+#		name = "COLONIAL_INDONESIA_EAST_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = west_slavic }
+#		name = "COLONIAL_INDONESIA_WEST_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = south_slavic }
+#		name = "COLONIAL_INDONESIA_SOUTH_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_INDONESIA_TUR"
+#	}
+#	names = {
+#		trigger = { culture_group = turko_semitic }
+#		name = "COLONIAL_INDONESIA_ARAB"
+#	}
+#	names = {
+#		trigger = { culture_group = east_asian }
+#		name = "COLONIAL_INDONESIA_CHINESE"
+#	}
+#	names = {
+#		trigger = { culture_group = japanese_g }
+#		name = "COLONIAL_INDONESIA_JAP"
+#	}
+#	names = {
+#		trigger = { culture_group = korean_g }
+#		name = "COLONIAL_INDONESIA_KOREAN"
+#	}
+#
+#	# Generic
+#	names = {
+#		name = "COLONIAL_INDONESIA_Default"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Malaysia
+#colonial_malaysia = {
+#	color = { 200 192 64 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		fish = 10
+#		naval_supplies = 10
+#	}
+#
+#	culture = {
+#		malayan = 10
+#	}
+#
+#	religion = {
+#		sunni = 10
+#	}
+#
+#	provinces = {
+#		595 596 597 598 599 636 637 1361 2392 2393 2394 2703 2704 2705 2740 4804 4805 4806 4813 4814 4815 8579 8546 8560 8561 8595 8562 8649 8667 
+#		8668 8669 8670 8671 8672 8674 8675 8700 8701
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_MALAYSIA_GBR"
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				primary_culture = dutch
+#				tag = NED
+#				tag = HOL
+#			}
+#		}
+#		name = "COLONIAL_MALAYSIA_NED"
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = { tag = NED }
+#			NOT = { tag = HOL }
+#		}
+#		name = "COLONIAL_MALAYSIA_GER"
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_MALAYSIA_FRA"
+#	}
+#	names = {
+#		trigger = { culture_group = byzantine }
+#		name = "COLONIAL_MALAYSIA_BYZ"
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_MALAYSIA_POR"
+#	}
+#	names = {
+#		trigger = { culture_group = iberian }
+#		name = "COLONIAL_MALAYSIA_SPA"
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_MALAYSIA_SCA"
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_MALAYSIA_GLC"
+#	}
+#	names = {
+#		trigger = {	culture_group = brythonic }
+#		name = "COLONIAL_MALAYSIA_BRYTHONIC"
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_MALAYSIA_LAT"
+#	}
+#	names = {
+#		trigger = { culture_group = east_slavic }
+#		name = "COLONIAL_MALAYSIA_EAST_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = west_slavic }
+#		name = "COLONIAL_MALAYSIA_WEST_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = south_slavic }
+#		name = "COLONIAL_MALAYSIA_SOUTH_SLAVIC"
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_MALAYSIA_TUR"
+#	}
+#	names = {
+#		trigger = { culture_group = turko_semitic }
+#		name = "COLONIAL_MALAYSIA_ARAB"
+#	}
+#	names = {
+#		trigger = { culture_group = east_asian }
+#		name = "COLONIAL_MALAYSIA_CHINESE"
+#	}
+#	names = {
+#		trigger = { culture_group = japanese_g }
+#		name = "COLONIAL_MALAYSIA_JAP"
+#	}
+#	names = {
+#		trigger = { culture_group = korean_g }
+#		name = "COLONIAL_MALAYSIA_KOREAN"
+#	}
+#
+#	# Generic
+#	names = {
+#		name = "COLONIAL_MALAYSIA_Default"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+#Colonial Great_Lakes
+colonial_great_lakes = {
+	color = { 69 157 208 }
+
+	# Random New World
+	tax_income = 2
+	native_size = 8
+	native_ferocity = 2
+	native_hostileness = 5
+	
+	trade_goods = {
+		fur = 10
+		fish = 5
+		naval_supplies = 5
+		grain = 2
+		tobacco = 2
+	}
+	
+	culture = {
+		illini = 10
+		chiwere = 5
+		shawnee = 5
+		huron = 2
+		anishinabe = 2
+		miami = 2
+		mesquakie = 2
+		kickapoo = 2
+		tionontate = 2
+		osage = 2
+		yuchi = 2
+		chickasaw = 2
+		natchez = 2
+		choctaw = 2
+		creek = 2
+	}
+	
+	religion = {
+		totemism = 10
+	}
+	
+	provinces = {
+		910 911 912 913 914 915 916 917 942 943 944 945 946 947 948 951 954 958 2517 2518 2519 2520 2521 2522 2523 2524 2525 2551 2555 4872 4875 
+		4889 4898 4899 4903 4904 4907 4922 5143 5621
+	}
+	
+	# Specific
+	names = {
+		trigger = { tag = USA }
+		name = "COLONIAL_GREAT_LAKES_USA" #Great Lakes
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_GREAT_LAKES_GBR" #Great Lakes
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_GREAT_LAKES_FRA" #Grands_Lacs
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_GREAT_LAKES_POR" #Grandes_Lagos
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_GREAT_LAKES_SPA" #Grandes_Lagos
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_GREAT_LAKES_SCA" #Stora_Sjöarna
+	}
+	names = {
+		trigger = { culture_group = dutch }
+		name = "COLONIAL_GREAT_LAKES_NED" #Grote Meren
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
+		}
+		name = "COLONIAL_GREAT_LAKES_GER" #Große_Seen
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_GREAT_LAKES_GLC" #Lochan_Mòra
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_GREAT_LAKES_LAT" #Magna_Lacus
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_GREAT_LAKES_TUR" #Büyük_Göller
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_GREAT_LAKES_Root_Culture_GetGroupName_Great_Lakes"
+	}
+	names = {
+		name = "COLONIAL_GREAT_LAKES_Root_Culture_GetGroupName_Grandes_Lagos"
+	}
+	names = {
+		name = "COLONIAL_GREAT_LAKES_Great_Lakes"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+#Colonial Florida
+colonial_florida = {
+	color = { 238 162 196 }
+
+	# Random New World
+	tax_income = 2
+	native_size = 8
+	native_ferocity = 2
+	native_hostileness = 5
+	
+	trade_goods = {
+		fur = 10
+		fish = 5
+		naval_supplies = 5
+		grain = 2
+		tobacco = 2
+		cotton = 2
+		sugar = 2
+	}
+	
+	culture = {
+	    seminole = 10
+		creek = 5
+		choctaw = 2
+	}
+	
+	religion = {
+		shamanism = 28
+	}
+	
+	provinces = {
+		893 921 922 923 926 927 928 2530 2533 2534 2535 2536 4625 4626 4884 5994 5995 5996 5997 5998 5999 6000 6001 6002 6003 6004 6005 6006 
+	}
+	
+	# Specific
+	names = {
+		trigger = { tag = USA }
+		name = "COLONIAL_FLORIDA_USA" #Florida
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_FLORIDA_GBR" #Florida
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_FLORIDA_FRA" #Floride
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_FLORIDA_POR" #Flórida
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_FLORIDA_SPA" #Florida
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_FLORIDA_SCA" #Florida
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
+		}
+		name = "COLONIAL_FLORIDA_GER" #Florida
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_FLORIDA_GLC" #Florida
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_FLORIDA_LAT" #Florida
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_FLORIDA_TUR" #Florida
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_FLORIDA_Root_Culture_GetGroupName_Florida"
+	}
+	names = {
+		name = "COLONIAL_FLORIDA_Florida"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+#Colonial Mississippi
+colonial_mississippi = {
+	color = { 245 226 231 }
+
+	# Random New World
+	tax_income = 2
+	native_size = 8
+	native_ferocity = 2
+	native_hostileness = 5
+	
+	trade_goods = {
+		cotton = 10
+		tobacco = 5
+		grain = 5
+		fish = 2
+	}
+	
+	culture = {
+		choctaw = 10
+		shawnee = 8
+		chickasaw = 5
+		creek = 5
+		natchez = 2
+		yuchi = 2
+	}
+	
+	religion = {
+		totemism = 10
+	}
+	
+	provinces = {
+		918 919 920 924 925 934 935 939 940 941 2526 2527 2528 2529 2531 2532 4883 4887 4888 4913 4921
+	}
+	
+	# Specific
+	names = {
+		trigger = { tag = USA }
+		name = "COLONIAL_MISSISSIPPI_USA" #Mississippi
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_MISSISSIPPI_GBR" #Mississippi
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_MISSISSIPPI_FRA" #Mississippi
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_MISSISSIPPI_POR" #Mississippi
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_MISSISSIPPI_SPA" #Misisipí
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_MISSISSIPPI_SCA" #Mississippi
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
+		}
+		name = "COLONIAL_MISSISSIPPI_GER" #Mississippi
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_MISSISSIPPI_GLC" #Mississippi
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_MISSISSIPPI_LAT" #Mississippi
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_MISSISSIPPI_TUR" #Mississippi
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_MISSISSIPPI_Root_Culture_GetGroupName_Mississippi"
+	}
+	names = {
+		name = "COLONIAL_MISSISSIPPI_Root_Culture_GetGroupName_Misisipi"
+	}
+	names = {
+		name = "COLONIAL_MISSISSIPPI_Mississippi"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+# Angola
+#colonial_angola = {
+#	color = { 79 67 140 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		palm_oil = 10
+#		diamonds = 10
+#	}
+#
+#	culture = {
+#		ovimbundu = 10
+#		nyaneka_humbe = 10
+#		mucubal = 10
+#		lunda = 4
+#		malwena = 4
+#		chokwe = 2
+#		malwimbi = 2
+#		mbunda = 2
+#		mbangala = 2
+#		mbundu = 1
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		798 1167 1168 1170 1171 1172 1801 2948 2949 4080 4082 4083 4084 4091 4093 4094 5266 5426 6517 6518 6520 6522 6523 6527 6528 6554 6557 6558 6567 6569 6570 6572 6586 6651 6652 6653 6654 6655 6656 6657 6658 6659 6660 6661 6662 6663 6664 6665 6666 6668 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_ANGOLA_USA" #Angola
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_ANGOLA_GBR" #Angola
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_ANGOLA_FRA" #Angola
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_ANGOLA_POR" #Angola
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_ANGOLA_SPA" #Angola
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_ANGOLA_SCA" #Angola
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_ANGOLA_GER" #Angola
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_ANGOLA_GLC" #Angola
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_ANGOLA_LAT" #Angola
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_ANGOLA_TUR" #Angola
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_ANGOLA_Root_Culture_GetGroupName_Angola"
+#	}
+#	names = {
+#		name = "COLONIAL_ANGOLA_Angola"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Namibia
+#colonial_namibia = {
+#	color = { 154 135 183 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		fish = 10
+#		diamonds = 10
+#	}
+#
+#	culture = {
+#		kama_culture = 10
+#		juu_culture = 4
+#		kwadi_culture = 2
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		1174 5388 5389 5390 5391 5392 5393 5394 5395 5396 5397 5398 5399 5400 5401 5402 5404 5405 5386 5425 5387 5403 5406 5407 5427 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_NAMIBIA_USA" #Namibia
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_NAMIBIA_GBR" #Namibia
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_NAMIBIA_FRA" #Namibie
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_NAMIBIA_POR" #Namibia
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_NAMIBIA_SPA" #Namibia
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_NAMIBIA_SCA" #Namibia
+#	}
+#	names = {
+#		trigger = { culture_group = dutch }
+#		name = "COLONIAL_NAMIBIA_NED" #Zuidwestafrika
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_NAMIBIA_GER" #Namibia
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_NAMIBIA_GLC" #Namibia
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_NAMIBIA_LAT" #Namibia
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_NAMIBIA_TUR" #Namibya
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_NAMIBIA_Root_Culture_GetGroupName_Namibia"
+#	}
+#	names = {
+#		name = "COLONIAL_NAMIBIA_Namibia"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Zambezi
+#colonial_zambezi = {
+#	color = { 216 68 109 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		gold = 10
+#		diamonds = 10
+#	}
+#
+#	culture = {
+#		bemba = 10
+#		shona = 10
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		1184 1185 1188 1189 1190 2950 4040 4044 4045 4046 4047 4050 4095 4102 4106 4107 4108 5369
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_ZAMBEZI_USA" #Zambezi
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_ZAMBEZI_GBR" #Zambezi
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_ZAMBEZI_FRA" #Zambèze
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_ZAMBEZI_POR" #Zambeze
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_ZAMBEZI_SPA" #Zambeze
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_ZAMBEZI_SCA" #Sambesi
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_ZAMBEZI_GER" #Sambesi
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_ZAMBEZI_GLC" #Zambezi
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_ZAMBEZI_LAT" #Zambezi
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_ZAMBEZI_TUR" #Zambezi
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_ZAMBEZI_Root_Culture_GetGroupName_Zambezi"
+#	}
+#	names = {
+#		name = "COLONIAL_ZAMBEZI_Zambezi"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Mozambique
+#colonial_mozambique = {
+#	color = { 219 217 147 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		fruit = 10
+#		cotton = 10
+#	}
+#
+#	culture = {
+#	    nguni = 10
+#		nyasa = 4
+#		makua = 4
+#		tsonga_culture = 2
+#		swahili = 1
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		788 1182 1183 1186 1187 1191 1192 1195 1800 1900 2951 2952 4034 4035 4036 4037 4038 4039 4048 4049 5382 6544
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_MOZAMBIQUE_USA" #Mozambique
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_MOZAMBIQUE_GBR" #Mozambique
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_MOZAMBIQUE_FRA" #Mozambique
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_MOZAMBIQUE_POR" #Moçambique
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_MOZAMBIQUE_SPA" #Mozambique
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_MOZAMBIQUE_SCA" #Moçambique
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_MOZAMBIQUE_GER" #Mosambik
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_MOZAMBIQUE_GLC" #Mozambique
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_MOZAMBIQUE_LAT" #Mozambique
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_MOZAMBIQUE_TUR" #Mozambik
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_MOZAMBIQUE_Root_Culture_GetGroupName_Mozambique"
+#	}
+#	names = {
+#		name = "COLONIAL_MOZAMBIQUE_Mozambique"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Tanganyika
+#colonial_tanganyika = {
+#	color = { 82 152 153 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		grain = 10
+#		fruit = 10
+#	}
+#
+#	culture = {
+#		swahili = 10
+#		nyasa = 4
+#		bena = 2
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		1273 1649 1798 1196 1197 1198 1199 1200 1201 1448 4041 4042 4043 4055 4056 4057 4058 4059 4061 4063 4067 4069 4070 4071 4072 4073 4076 4077 5144 5214 5215 5216 5338
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_TANGANYIKA_USA" #Tanzania
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_TANGANYIKA_GBR" #Tanzania
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_TANGANYIKA_FRA" #Tanzanie
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_TANGANYIKA_POR" #Tanzânia
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_TANGANYIKA_SPA" #Tanganica
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_TANGANYIKA_SCA" #Tanganyika
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_TANGANYIKA_GER" #Tanganjika
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_TANGANYIKA_GLC" #Tanganyika
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_TANGANYIKA_LAT" #Tanganyika
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_TANGANYIKA_TUR" #Tanganika
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_TANGANYIKA_Root_Culture_GetGroupName_Tanganyika"
+#	}
+#	names = {
+#		name = "COLONIAL_TANGANYIKA_Root_Culture_GetGroupName_Tanganica"
+#	}
+#	names = {
+#		name = "COLONIAL_TANGANYIKA_Tanganyika"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Kenya
+#colonial_kenya = {
+#	color = { 158 149 120 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		grain = 10
+#		fruit = 10
+#	}
+#
+#	culture = {
+#		bantu = 10
+#		masaba = 4
+#		acholi = 2
+#	}
+#
+#	religion = {
+#		sunni = 10
+#	}
+#
+#	provinces = {
+#		1202 1203 1204 1925 4051 4052 4053 4054 4060 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_KENYA_USA" #Kenya
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_KENYA_GBR" #Kenya
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_KENYA_FRA" #Kenya
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_KENYA_POR" #Quênia
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_KENYA_SPA" #Kenia
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_KENYA_SCA" #Kenia
+#	}
+#	names = {
+#		trigger = { primary_culture = dutch }
+#		name = "COLONIAL_KENYA_NED" #Kenia
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_KENYA_GER" #Kenia
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_KENYA_GLC" #Kenya
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_KENYA_LAT" #Kenya
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_KENYA_TUR" #Kenya
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_KENYA_Root_Culture_GetGroupName_Kenya"
+#	}
+#	names = {
+#		name = "COLONIAL_KENYA_Root_Culture_GetGroupName_Kenia"
+#	}
+#	names = {
+#		name = "COLONIAL_KENYA_Kenya"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Buganda / African Great Lakes
+#colonial_buganda = {
+#	color = { 245 171 121 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		grain = 10
+#		fruit = 10
+#	}
+#
+#	culture = {
+#		ganda = 10
+#		acholi = 4
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		4062 4064 4065 4066 4074 4075
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_BUGANDA_USA" #Buganda
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_BUGANDA_GBR" #Buganda
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_BUGANDA_FRA" #Buganda
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_BUGANDA_POR" #Buganda
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_BUGANDA_SPA" #Buganda
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_BUGANDA_SCA" #Buganda
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_BUGANDA_GER" #Buganda
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_BUGANDA_GLC" #Buganda
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_BUGANDA_LAT" #Buganda
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_BUGANDA_TUR" #Buganda
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_BUGANDA_Root_Culture_GetGroupName_Buganda"
+#	}
+#	names = {
+#		name = "COLONIAL_BUGANDA_Buganda"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Somalia
+#colonial_somalia = {
+#	color = { 5 159 123 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		grain = 10
+#		livestock = 10
+#	}
+#
+#	culture = {
+#		somali = 10
+#	}
+#
+#	religion = {
+#		sunni = 10
+#	}
+#
+#	provinces = {
+#		1205 1206 1209 1212 2024 2774 2775 2776 2777 2780 2781 2782 2783 2784 2785 2786 2788 2789 2790 2792 2793 2794 2795 2796 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_SOMALIA_USA" #Somalia
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_SOMALIA_GBR" #Somalia
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_SOMALIA_FRA" #Somalie
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_SOMALIA_POR" #Somália
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_SOMALIA_SPA" #Somalia
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_SOMALIA_SCA" #Somalia
+#	}
+#	names = {
+#		trigger = { primary_culture = dutch }
+#		name = "COLONIAL_SOMALIA_NED" #Somalië
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_SOMALIA_GER" #Somalia
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_SOMALIA_GLC" #Somalia
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_SOMALIA_LAT" #Somalia
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_SOMALIA_TUR" #Somali
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_SOMALIA_Root_Culture_GetGroupName_Somalia"
+#	}
+#	names = {
+#		name = "COLONIAL_SOMALIA_Somalia"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Ethiopia
+#colonial_ethiopia = {
+#	color = { 229 78 77 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		gold = 10
+#		ivory = 10
+#	}
+#
+#	culture = {
+#		amhara = 10
+#		sidamo = 10
+#		harari = 4
+#		afar = 2
+#	}
+#
+#	religion = {
+#		coptic = 10
+#	}
+#
+#	provinces = {
+#		1207 1208 1210 1211 1213 1214 1215 1218 1223 1224 1227 1230 1799 2756 2757 2758 2759 2760 2761 2762 2763 2764 2765 2766 2767 2787
+#		2768 2769 2770 2771 2772 2773 2778 2779 2791 3044 4158 5288 5297 5298 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_ETHIOPIA_USA" #Ethiopia
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_ETHIOPIA_GBR" #Ethiopia
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_ETHIOPIA_FRA" #Ethiopie
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_ETHIOPIA_POR" #Etiópia
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_ETHIOPIA_SPA" #Etiopía
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_ETHIOPIA_SCA" #Etiopien
+#	}
+#	names = {
+#		trigger = { primary_culture = dutch }
+#		name = "COLONIAL_ETHIOPIA_NED" #Ethiopië
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_ETHIOPIA_GER" #Äthiopien
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_ETHIOPIA_GLC" #Ethiopia
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_ETHIOPIA_LAT" #Aethiopia
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_ETHIOPIA_TUR" #Etiyopya
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_ETHIOPIA_Root_Culture_GetGroupName_Ethiopia"
+#	}
+#	names = {
+#		name = "COLONIAL_ETHIOPIA_Root_Culture_GetGroupName_Etiopia"
+#	}
+#	names = {
+#		name = "COLONIAL_ETHIOPIA_Ethiopia"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Kongo
+#colonial_kongo = {
+#	color = { 170 167 16 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		gold = 10
+#		ivory = 10
+#	}
+#
+#	culture = {
+#		kongolese = 10
+#		yaka = 4
+#		kuba = 4
+#		luba = 2
+#		lunda = 2
+#	}
+#
+#	religion = {
+#		coptic = 10
+#	}
+#
+#	provinces = {
+#		1796 1901 4068 4081 4085 4086 4087 4088 4089 4090 4092 4096 4097 4098 4099 4100 4101 4103 4104 4105 4109 6532 6534 6535 6536 6538 6539 6540 7494 7497
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_KONGO_USA" #Kongo
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_KONGO_GBR" #Kongo
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_KONGO_FRA" #Kongo
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_KONGO_POR" #Kongo
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_KONGO_SPA" #Kongo
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_KONGO_SCA" #Kongo
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_KONGO_GER" #Kongo
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_KONGO_GLC" #Kongo
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_KONGO_LAT" #Kongo
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_KONGO_TUR" #Kongo
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_KONGO_Root_Culture_GetGroupName_Kongo"
+#	}
+#	names = {
+#		name = "COLONIAL_KONGO_Root_Culture_GetGroupName_Kongo"
+#	}
+#	names = {
+#		name = "COLONIAL_KONGO_Kongo"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Gabon
+#colonial_gabon = {
+#	color = { 117 209 21 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		gold = 10
+#		ivory = 10
+#	}
+#
+#	culture = {
+#		kongolese = 10
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		1097 1165 1166 1169 1306 4078 4079 6669 7480 7481 7482 7483 7484 7485 7486 7487 7488 7489 7490 7491 7492 7493 7495 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_GABON_USA" #Gabon
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_GABON_GBR" #Gabon
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_GABON_FRA" #Gabon
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_GABON_POR" #Gabão
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_GABON_SPA" #Gabón
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_GABON_SCA" #Gabun
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_GABON_GER" #Gabun
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_GABON_GLC" #Gabon
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_GABON_LAT" #Gabon
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_GABON_TUR" #Gabon
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_GABON_Root_Culture_GetGroupName_Gabon"
+#	}
+#	names = {
+#		name = "COLONIAL_GABON_Gabon"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Bissau
+#colonial_bissau = {
+#	color = { 247 206 88 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		gold = 10
+#		ivory = 10
+#	}
+#
+#	culture = {
+#		senegambian = 10
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		1114 7368 7369 7370 7371 7372 7373 7374
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_BISSAU_USA" #Bissau
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_BISSAU_GBR" #Bissau
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_BISSAU_FRA" #Bissau
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_BISSAU_POR" #Bissau
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_BISSAU_SPA" #Bissau
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_BISSAU_SCA" #Bissau
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_BISSAU_GER" #Bissau
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_BISSAU_GLC" #Bissau
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_BISSAU_LAT" #Bissau
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_BISSAU_TUR" #Bissau
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_BISSAU_Root_Culture_GetGroupName_Bissau"
+#	}
+#	names = {
+#		name = "COLONIAL_BISSAU_Bissau"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Sudan
+#colonial_sudan = {
+#	color = { 244 198 98 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		grain = 10
+#		cotton = 10
+#	}
+#
+#	culture = {
+#		nubian = 10
+#		luo_culture = 10
+#		funj_culture = 4
+#		tegali_culture = 4
+#		berta_culture = 2
+#		rufaa_culture = 2
+#		tungur_culture = 2
+#	}
+#
+#	religion = {
+#		coptic = 10
+#	}
+#
+#	provinces = {
+#		774 1216 1217 1219 1220 1221 1222 1225 1226 1228 1229 1232 2323 2324 2797 2798 2799 2800 2801 2802 4033 4322 5277 5279 5280 5281 5282 5283 5284 5285 5286 5287 5289 5290 5300 5302 6503 6504 6506 6507 6508 6509 6510 6511 6512 6513 6514 6515 6516 6579 6580 6581 6582 6588 6589 6590 6972 6973
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_SUDAN_USA" #Sudan
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_SUDAN_GBR" #Sudan
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_SUDAN_FRA" #Soudan
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_SUDAN_POR" #Sudão
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_SUDAN_SPA" #Sudán
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_SUDAN_SCA" #Sudan
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_SUDAN_NED" #Soedan
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_SUDAN_GER" #Sudan
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_SUDAN_GLC" #Sudan
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_SUDAN_LAT" #Sudan
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_SUDAN_TUR" #Sudan
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_SUDAN_Root_Culture_GetGroupName_Sudan"
+#	}
+#	names = {
+#		name = "COLONIAL_SUDAN_Sudan"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Central Africa
+#colonial_central_africa = {
+#	color = { 5 188 57 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		fruit = 10
+#		grain = 10
+#	}
+#
+#	culture = {
+#		bilala = 10
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		2932 7131 7153 7477 7713 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_CENTRAL_AFRICA_USA" #Central_Africa
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_CENTRAL_AFRICA_GBR" #Central_Africa
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_CENTRAL_AFRICA_FRA" #Afrique_Centrale
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_CENTRAL_AFRICA_POR" #África_Central
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_CENTRAL_AFRICA_SPA" #África_Central
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_CENTRAL_AFRICA_SCA" #Centralafrika
+#	}
+#	names = {
+#		trigger = { primary_culture = dutch }
+#		name = "COLONIAL_CENTRAL_AFRICA_NED" #Centraalafrika
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_CENTRAL_AFRICA_GER" #Zentralafrika
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_CENTRAL_AFRICA_GLC" #Meadhan_Afraga
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_CENTRAL_AFRICA_LAT" #Africa_Centralis
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_CENTRAL_AFRICA_TUR" #Orta_Afrika
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_CENTRAL_AFRICA_Root_Culture_GetGroupName_Central_Africa"
+#	}
+#	names = {
+#		name = "COLONIAL_CENTRAL_AFRICA_Root_Culture_GetGroupName_África_Central"
+#	}
+#	names = {
+#		name = "COLONIAL_CENTRAL_AFRICA_Central_Africa"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Chad
+#colonial_chad = {
+#	color = { 205 147 187 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#		grain = 10
+#		fruit = 10
+#	}
+#
+#	culture = {
+#		bilala = 10
+#		kanuri = 4
+#	}
+#
+#	religion = {
+#		sunni = 10
+#	}
+#
+#	provinces = {
+#		1158 1159 2288 6505 6521 6529 6530 6531 6541 6542 6545 6546 6556 6571 6587 6667 6674 6675 6676 6957
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_CHAD_USA" #Chad
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_CHAD_GBR" #Chad
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_CHAD_FRA" #Tchad
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_CHAD_POR" #Chade
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_CHAD_SPA" #Chad
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_CHAD_SCA" #Tchad
+#	}
+#	names = {
+#		trigger = { primary_culture = dutch }
+#		name = "COLONIAL_CHAD_NED" #Tsjaad
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_CHAD_GER" #Tschad
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_CHAD_GLC" #Chad
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_CHAD_LAT"  #Chad
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_CHAD_TUR" #Çad
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_CHAD_Root_Culture_GetGroupName_Chad"
+#	}
+#	names = {
+#		name = "COLONIAL_CHAD_Chad"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Cameroon
+#colonial_cameroon = {
+#	color = { 239 139 21 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    fruit = 10
+#		palm_oil = 10
+#	}
+#
+#	culture = {
+#		kanuri = 10
+#		sawabantu = 4
+#		jukun = 2
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		1162 1163 1164 2286 2287 7473 7474 7475 7476 7478 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_CAMEROON_USA" #Cameroon
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_CAMEROON_GBR" #Cameroon
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_CAMEROON_FRA" #Cameroun
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_CAMEROON_POR" #Camarões
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_CAMEROON_SPA" #Camerún
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_CAMEROON_SCA" #Kamerun
+#	}
+#	names = {
+#		trigger = { primary_culture = dutch }
+#		name = "COLONIAL_CAMEROON_NED" #Kameroen
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_CAMEROON_GER" #Kamerun
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_CAMEROON_GLC" #Cameroon
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_CAMEROON_LAT"  #Cameroon
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_CAMEROON_TUR" #Kamerun
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_CAMEROON_Root_Culture_GetGroupName_Cameroon"
+#	}
+#	names = {
+#		name = "COLONIAL_CAMEROON_Root_Culture_GetGroupName_Camerun"
+#	}
+#	names = {
+#		name = "COLONIAL_CAMEROON_Cameroon"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Nigeria
+#colonial_nigeria = {
+#	color = { 168 154 47 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    grain = 10
+#		fruit = 10
+#	}
+#
+#	culture = {
+#		hausa = 10
+#		yorumba = 10
+#		nupe = 4
+#		kanuri = 4
+#		jukun = 2
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#		sunni = 4
+#	}
+#
+#	provinces = {
+#		1144 1145 1146 1147 1148 1149 1150 1151 1152 1153 1154 1155 1157 1160 1161 1249 2278 2280 2281 2283 2285 2289 2290 2293 2294 6591 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_NIGERIA_USA" #Nigeria
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_NIGERIA_GBR" #Nigeria
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_NIGERIA_FRA" #Nigeria
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_NIGERIA_POR" #Nigéria
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_NIGERIA_SPA" #Nigeria
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_NIGERIA_SCA" #Nigeria
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_NIGERIA_GER" #Nigeria
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_NIGERIA_GLC" #Nigeria
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_NIGERIA_LAT"  #Nigeria
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_NIGERIA_TUR" #Nijerya
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_NIGERIA_Root_Culture_GetGroupName_Nigeria"
+#	}
+#	names = {
+#		name = "COLONIAL_NIGERIA_Nigeria"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Niger
+#colonial_niger = {
+#	color = { 180 117 95 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    grain = 10
+#		salt = 10
+#	}
+#
+#	culture = {
+#		tuareg = 10
+#		songhai = 4
+#	}
+#
+#	religion = {
+#		sunni = 10
+#	}
+#
+#	provinces = {
+#		1142 1156 2268 2270 2272 2273 2274 2275 2276 2277 2279 2282 2284 5305
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_NIGER_USA" #Niger
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_NIGER_GBR" #Niger
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_NIGER_FRA" #Niger
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_NIGER_POR" #Niger
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_NIGER_SPA" #Níger
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_NIGER_SCA" #Niger
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_NIGER_GER" #Niger
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_NIGER_GLC" #Niger
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_NIGER_LAT"  #Niger
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_NIGER_TUR" #Nijer
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_NIGER_Root_Culture_GetGroupName_Niger"
+#	}
+#	names = {
+#		name = "COLONIAL_NIGER_Root_Culture_GetGroupName_Nijer"
+#	}
+#	names = {
+#		name = "COLONIAL_NIGER_Niger"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Mali
+#colonial_mali = {
+#	color = { 233 190 131 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    grain = 10
+#		livestock = 10
+#	}
+#
+#	culture = {
+#	    mali = 10
+#		songhai = 10
+#		bozo = 10
+#		bambara = 4
+#		soninke = 4
+#		tuareg = 4
+#	}
+#
+#	religion = {
+#		sunni = 10
+#	}
+#
+#	provinces = {
+#		1120 1122 1123 1124 1128 1129 1130 1131 1132 1133 1134 2243 2245 2247 2248 2249 2250 2259 2260 2261 2262 2263 2264 2269 2271 5335 6566
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_MALI_USA" #Mali
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_MALI_GBR" #Mali
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_MALI_FRA" #Mali
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_MALI_POR" #Mali
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_MALI_SPA" #Mali
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_MALI_SCA" #Mali
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_MALI_GER" #Mali
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_MALI_GLC" #Mali
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_MALI_LAT"  #Mali
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_MALI_TUR" #Mali
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_MALI_Root_Culture_GetGroupName_Mali"
+#	}
+#	names = {
+#		name = "COLONIAL_MALI_Mali"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Mauritania
+#colonial_mauritania = {
+#	color = { 165 219 130 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    grain = 10
+#		livestock = 10
+#	}
+#
+#	culture = {
+#	    mali = 10
+#		songhai = 10
+#		bozo = 10
+#		bambara = 4
+#		soninke = 4
+#		tuareg = 4
+#	}
+#
+#	religion = {
+#		sunni = 10
+#	}
+#
+#	provinces = {
+#		1112 1793 2244 2246 3032 3038 3041 6953 6961 6966 6967 6969 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_MAURITANIA_USA" #Mauritania
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_MAURITANIA_GBR" #Mauritania
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_MAURITANIA_FRA" #Mauritanie
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_MAURITANIA_POR" #Mauritânia
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_MAURITANIA_SPA" #Mauritania
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_MAURITANIA_SCA" #Mauretanien
+#	}
+#	names = {
+#		trigger = { primary_culture = dutch }
+#		name = "COLONIAL_MAURITANIA_NED" #Mauritanië
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_MAURITANIA_GER" #Mauretanien
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_MAURITANIA_GLC" #Mauritania
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_MAURITANIA_LAT"  #Mauretania
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_MAURITANIA_TUR" #Moritanya
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_MAURITANIA_Root_Culture_GetGroupName_Mauritania"
+#	}
+#	names = {
+#		name = "COLONIAL_MAURITANIA_Root_Culture_GetGroupName_Mauritania"
+#	}
+#	names = {
+#		name = "COLONIAL_MAURITANIA_Mauritania"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Burkina Faso
+#colonial_burkina = {
+#	color = { 38 71 138 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    grain = 10
+#		livestock = 10
+#	}
+#
+#	culture = {
+#	    mossi = 10
+#		dyola = 4
+#	}
+#
+#	religion = {
+#		sunni = 10
+#	}
+#
+#	provinces = {
+#		1135 1136 1137 2252 2253 2265 2266 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_BURKINA_USA" #Burkina
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_BURKINA_GBR" #Burkina
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_BURKINA_FRA" #Burkina
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_BURKINA_POR" #Burkina
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_BURKINA_SPA" #Burkina
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_BURKINA_SCA" #Burkina
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_BURKINA_GER" #Burkina
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_BURKINA_GLC" #Burkina
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_BURKINA_LAT"  #Burkina
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_BURKINA_TUR" #Burkina
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_BURKINA_Root_Culture_GetGroupName_Burkina"
+#	}
+#	names = {
+#		name = "COLONIAL_BURKINA_Burkina"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Ivory Coast
+#colonial_ivory_coast = {
+#	color = { 26 110 183 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    grain = 10
+#		gold = 10
+#	}
+#
+#	culture = {
+#		aka = 10
+#		dyola = 10
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		1125 1126 2251 5339 7247 7260 7261 7265 7471 7472 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_IVORY_COAST_USA" #Ivory_Coast
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_IVORY_COAST_GBR" #Ivory_Coast
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_IVORY_COAST_FRA" #Côte_d'Ivoire
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_IVORY_COAST_POR" #Costa_do_Marfim
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_IVORY_COAST_SPA" #Costa_de_Marfil
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_IVORY_COAST_SCA" #Elfenbenskusten
+#	}
+#	names = {
+#		trigger = { primary_culture = dutch }
+#		name = "COLONIAL_IVORY_COAST_NED" #Ivoorkust
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_IVORY_COAST_GER" #Elfenbeinküste
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_IVORY_COAST_GLC" #Oirthir_ìbhri
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_IVORY_COAST_LAT"  #Litus_Eburneum
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_IVORY_COAST_TUR" #Fildişi_Sahili
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_IVORY_COAST_Root_Culture_GetGroupName_Ivory_Coast"
+#	}
+#	names = {
+#		name = "COLONIAL_IVORY_COAST_Ivory_Coast"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Ghana
+#colonial_ghana = {
+#	color = { 73 210 109 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    grain = 10
+#		gold = 10
+#	}
+#
+#	culture = {
+#		aka = 10
+#		mossi = 2
+#		dagomba = 2
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#	
+#	provinces = {
+#		1138 1139 2254 2255 2256 2257 2258 2267 5546 5718 5719
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_GHANA_USA" #Ghana
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_GHANA_GBR" #Ghana
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_GHANA_FRA" #Ghana
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_GHANA_POR" #Gana
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_GHANA_SPA" #Ghana
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_GHANA_SCA" #Ghana
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_GHANA_GER" #Ghana
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_GHANA_GLC" #Ghana
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_GHANA_LAT"  #Gana
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_GHANA_TUR" #Gana
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_GHANA_Root_Culture_GetGroupName_Ghana"
+#	}
+#	names = {
+#		name = "COLONIAL_GHANA_Ghana"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Togo
+#colonial_togo = {
+#	color = { 115 137 49 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    grain = 10
+#		gold = 10
+#	}
+#
+#	culture = {
+#		dagomba = 10
+#		fon = 10
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		1140 2295 7069 7073 7116
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_TOGO_USA" #Togoland
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_TOGO_GBR" #Togoland
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_TOGO_FRA" #Togoterre
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_TOGO_POR" #Togoterra
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_TOGO_SPA" #Togotierra
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_TOGO_SCA" #Togolanda
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_TOGO_GER" #Togoland
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_TOGO_GLC" #Togofearann
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_TOGO_LAT"  #Ireterra
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_TOGO_TUR" #Gitmekarazi
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_TOGO_Root_Culture_GetGroupName_Togo"
+#	}
+#	names = {
+#		name = "COLONIAL_TOGO_Togo"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Benin
+#colonial_benin = {
+#	color = { 82 169 3 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    grain = 10
+#		gold = 10
+#	}
+#
+#	culture = {
+#		yorumba = 10
+#		dagomba = 2
+#		fon = 2
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		1141 1143 2291 2292 5720 5721 7103 7104 7105 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_BENIN_USA" #Benin
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_BENIN_GBR" #Benin
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_BENIN_FRA" #Bénin
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_BENIN_POR" #Benin
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_BENIN_SPA" #Benin
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_BENIN_SCA" #Benin
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_BENIN_GER" #Benin
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_BENIN_GLC" #Benin
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_BENIN_LAT"  #Benin
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_BENIN_TUR" #Benin
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_BENIN_Root_Culture_GetGroupName_Benin"
+#	}
+#	names = {
+#		name = "COLONIAL_BENIN_Benin"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Guinea
+#colonial_guinea = {
+#	color = { 246 103 103 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    grain = 10
+#		gold = 10
+#	}
+#
+#	culture = {
+#		senegambian = 10
+#		fulani = 4
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		1117 1121 2241 5715 5716 7119 7121 7375 7376 7378 7382 7719
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_GUINEA_USA" #Guinea
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_GUINEA_GBR" #Guinea
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_GUINEA_FRA" #Guinée
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_GUINEA_POR" #Guiné
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_GUINEA_SPA" #Guinea
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_GUINEA_SCA" #Guinea
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_GUINEA_GER" #Guinea
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_GUINEA_GLC" #Guinea
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_GUINEA_LAT"  #Guinea
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_GUINEA_TUR" #Gine
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_GUINEA_Root_Culture_GetGroupName_Guinea"
+#	}
+#	names = {
+#		name = "COLONIAL_GUINEA_Guinea"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Liberia
+#colonial_liberia = {
+#	color = { 58 30 186 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    grain = 10
+#		gold = 10
+#	}
+#
+#	culture = {
+#		dyola = 10
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		1119 2242 7383 7384 7469 7470 7720
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_LIBERIA_USA" #Liberia
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_LIBERIA_GBR" #Liberia
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_LIBERIA_FRA" #Libéria
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_LIBERIA_POR" #Libéria
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_LIBERIA_SPA" #Liberia
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_LIBERIA_SCA" #Liberia
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_LIBERIA_GER" #Liberia
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_LIBERIA_GLC" #Liberia
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_LIBERIA_LAT"  #Liberia
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_LIBERIA_TUR" #Liberya
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_LIBERIA_Root_Culture_GetGroupName_Liberia"
+#	}
+#	names = {
+#		name = "COLONIAL_LIBERIA_Liberia"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Sierra Leone
+#colonial_sierra_leone = {
+#	color = { 56 72 47 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    grain = 10
+#		gold = 10
+#	}
+#
+#	culture = {
+#		dyola = 10
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		1118 5717 7379 7380 7381 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_SIERRA_LEONE_USA" #Sierra_Leone
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_SIERRA_LEONE_GBR" #Sierra_Leone
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_SIERRA_LEONE_FRA" #Vu_Lionne
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_SIERRA_LEONE_POR" #Serra_Leoa
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_SIERRA_LEONE_SPA" #Sierra_Leona
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_SIERRA_LEONE_SCA" #Såg_Lioness
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_SIERRA_LEONE_GER" #Sah_Löwin
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_SIERRA_LEONE_GLC" #Chunnaic_Leòmhann
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_SIERRA_LEONE_LAT"  #Videns_leaena
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_SIERRA_LEONE_TUR" #Dişi_Aslan_Gördüm
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_SIERRA_LEONE_Root_Culture_GetGroupName_Sierra_Leone"
+#	}
+#	names = {
+#		name = "COLONIAL_SIERRA_LEONE_Sierra_Leone"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Senegal
+#colonial_senegal = {
+#	color = { 253 125 18 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    grain = 10
+#		gold = 10
+#	}
+#
+#	culture = {
+#		fulani = 10
+#		senegambian = 4
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		1113 1115 1116 2237 2238 2240 3047 5430 5431 5432 7357 7358 7359 7360 7361 7367 7742
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_SENEGAL_USA" #Senegal
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_SENEGAL_GBR" #Senegal
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_SENEGAL_FRA" #Sénégal
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_SENEGAL_POR" #Senegal
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_SENEGAL_SPA" #Senegal
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_SENEGAL_SCA" #Senegal
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_SENEGAL_GER" #Senegal
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_SENEGAL_GLC" #Senegal
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_SENEGAL_LAT"  #Senegal
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_SENEGAL_TUR" #Senegal
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_SENEGAL_Root_Culture_GetGroupName_Senegal"
+#	}
+#	names = {
+#		name = "COLONIAL_SENEGAL_Senegal"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Gambia
+#colonial_gambia = {
+#	color = { 206 143 156 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    grain = 10
+#		gold = 10
+#	}
+#
+#	culture = {
+#		senegambian = 10
+#	}
+#
+#	religion = {
+#		shamanism = 10
+#	}
+#
+#	provinces = {
+#		2239 7362 7363 7364 7365 7366 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_GAMBIA_USA" #The_Gambia
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_GAMBIA_GBR" #The_Gambia
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_GAMBIA_FRA" #La_Gambie
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_GAMBIA_POR" #A_Gâmbia
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_GAMBIA_SPA" #La_Gambia
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_GAMBIA_SCA" #De_Gambia
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_GAMBIA_GER" #Das_Gambia
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_GAMBIA_GLC" #Gambia
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_GAMBIA_LAT"  #Gambia
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_GAMBIA_TUR" #Gambiya
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_GAMBIA_Root_Culture_GetGroupName_Gambia"
+#	}
+#	names = {
+#		name = "COLONIAL_GAMBIA_Gambia"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Madagascar
+#colonial_madagascar = {
+#	color = { 104 102 35 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    grain = 10
+#	    fruit = 10
+#	}
+#
+#	culture = {
+#		madagasque = 10
+#	}
+#
+#	religion = {
+#		sunni = 10
+#	}
+#
+#	provinces = {
+#		1193 1194 1792 4021 4022 4023 4024 4025 4026 4027 4028 4029 4030 4031 4032 
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_MADAGASCAR_USA" #Madagascar
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_MADAGASCAR_GBR" #Madagascar
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_MADAGASCAR_FRA" #Madagascar
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_MADAGASCAR_POR" #São_Lourenço
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_MADAGASCAR_SPA" #Madagascar
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_MADAGASCAR_SCA" #Madagaskar
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_MADAGASCAR_GER" #Madagaskar
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_MADAGASCAR_GLC" #Madagascar
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_MADAGASCAR_LAT"  #Madageiscar
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_MADAGASCAR_TUR" #Madagaskar
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_MADAGASCAR_Root_Culture_GetGroupName_Madagascar"
+#	}
+#	names = {
+#		name = "COLONIAL_MADAGASCAR_Madagascar"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Papua New Guinea
+colonial_papua = {
+	color = { 171 89 12 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+
+	trade_goods = {
+	    grain = 10
+	    fruit = 10
+	}
+
+	culture = {
+		papuan = 10
+	}
+
+	religion = {
+		animism = 10
+	}
+
+	provinces = {
+		1236 1237 1245 2718 2719 2720 2721 2722 2723 2724 5090 5099 5132 5133 5136 5148 5149 5153 5159 5160 5166 5169 5179 5183 5199 5276 5433 5434 5435 5436 5437
+	}
+	
+	# Specific
+	names = {
+		trigger = { tag = USA }
+		name = "COLONIAL_PAPUA_USA" #New_Guinea
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_PAPUA_GBR" #New_Guinea
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_PAPUA_FRA" #Nouvelle_Guinée
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_PAPUA_POR" #Nova_Guiné
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_PAPUA_SPA" #Papuasia
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_PAPUA_SCA" #Nya_Guinea
+	}
+	names = {
+		trigger = { primary_culture = dutch }
+		name = "COLONIAL_PAPUA_NED" #Nieuw-Guinea
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
+		}
+		name = "COLONIAL_PAPUA_GER" #Neu-Guinea
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_PAPUA_GLC" #Guinea_ùr
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_PAPUA_LAT"  #Nova_Guinea
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_PAPUA_TUR" #Yeni_Gine
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_PAPUA_Root_Culture_GetGroupName_Papua"
+	}
+	names = {
+		name = "COLONIAL_PAPUA_Root_Culture_GetGroupName_Papuasia"
+	}
+	names = {
+		name = "COLONIAL_PAPUA_Papua"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+# Solomon Islands
+colonial_solomons = {
+	color = { 62 221 165 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+
+	trade_goods = {
+	    grain = 10
+	    fruit = 10
+	}
+
+	culture = {
+		polynesian = 10
+	}
+
+	religion = {
+		animism = 10
+	}
+
+	provinces = {
+		1238 5202 5204 5234 5236 5237 5238 5240 5242 5245 5247 5248
+	}
+	
+	# Specific
+	names = {
+		trigger = { tag = USA }
+		name = "COLONIAL_SOLOMONS_USA" #Solomons
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_SOLOMONS_GBR" #Solomons
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_SOLOMONS_FRA" #Salomon
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_SOLOMONS_POR" #Solomons
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_SOLOMONS_SPA" #Salomón
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_SOLOMONS_SCA" #Solomoner
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
+		}
+		name = "COLONIAL_SOLOMONS_GER" #Salomonen
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_SOLOMONS_GLC" #Solomons
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_SOLOMONS_LAT"  #Salomonis
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_SOLOMONS_TUR" #Süleymanlar
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_SOLOMONS_Root_Culture_GetGroupName_Solomons"
+	}
+	names = {
+		name = "COLONIAL_SOLOMONS_Root_Culture_GetGroupName_Salomon"
+	}
+	names = {
+		name = "COLONIAL_SOLOMONS_Solomons"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+# Vanuatu Islands
+colonial_vanuatu = {
+	color = { 156 15 43 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+
+	trade_goods = {
+	    grain = 10
+	    fruit = 10
+	}
+
+	culture = {
+		polynesian = 10
+	}
+
+	religion = {
+		animism = 10
+	}
+
+	provinces = {
+		1239 5252 5253 5254 5257 5258 5259 5260
+	}
+	
+	# Specific
+	names = {
+		trigger = { tag = USA }
+		name = "COLONIAL_VANUATU_USA" #New_Hebrides
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_VANUATU_GBR" #New_Hebrides
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_VANUATU_FRA" #Nouvelles_Hébrides
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_VANUATU_POR" #Novas_Hébridas
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_VANUATU_SPA" #Espíritu_Santo
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_VANUATU_SCA" #Nya_Hebriderna
+	}
+	names = {
+		trigger = { primary_culture = dutch }
+		name = "COLONIAL_VANUATU_NED" #Nieuwe Hebriden
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
+		}
+		name = "COLONIAL_VANUATU_GER" #Neue_Hebriden
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_VANUATU_GLC" #Innse_Gall_ùra
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_VANUATU_LAT"  #Novi_Hebrides
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_VANUATU_TUR" #Yeni_Hebridler
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_VANUATU_Root_Culture_GetGroupName_Vanuatu"
+	}
+	names = {
+		name = "COLONIAL_VANUATU_Vanuatu"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+# New Caledonia
+colonial_new_caledonia = {
+	color = { 157 198 36 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+
+	trade_goods = {
+	    grain = 10
+	    fruit = 10
+	}
+
+	culture = {
+		polynesian = 10
+	}
+
+	religion = {
+		animism = 10
+	}
+
+	provinces = {
+		1986 5262 5263 5265 5268
+	}
+	
+	# Specific
+	names = {
+		trigger = { tag = USA }
+		name = "COLONIAL_NEW_CALEDONIA_USA" #New_Caledonia
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_NEW_CALEDONIA_GBR" #New_Caledonia
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_NEW_CALEDONIA_FRA" #Nova_Caledônia
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_NEW_CALEDONIA_POR" #Nova_Caledônia
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_NEW_CALEDONIA_SPA" #Nueva_Caledonia
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_NEW_CALEDONIA_SCA" #Nya_Kaledonien
+	}
+	names = {
+		trigger = { primary_culture = dutch }
+		name = "COLONIAL_NEW_CALEDONIA_NED" #Nieuw-Caledonië
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
+		}
+		name = "COLONIAL_NEW_CALEDONIA_GER" #Neu-Kaledonien
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_NEW_CALEDONIA_GLC" #Hardonia_ùr
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_NEW_CALEDONIA_LAT"  #Nova_Caledonia
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_NEW_CALEDONIA_TUR" #Yeni_Kaledonya
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_NEW_CALEDONIA_Root_Culture_GetGroupName_New_Caledonia"
+	}
+	names = {
+		name = "COLONIAL_NEW_CALEDONIA_New_Caledonia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+# Fiji
+colonial_fiji = {
+	color = { 79 9 245 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+
+	trade_goods = {
+	    grain = 10
+	    fruit = 10
+	}
+
+	culture = {
+		polynesian = 10
+	}
+
+	religion = {
+		animism = 10
+	}
+
+	provinces = {
+		1242 4937 4938 5269 5270 5275
+	}
+	
+	# Specific
+	names = {
+		trigger = { tag = USA }
+		name = "COLONIAL_FIJI_USA" #Fiji
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_FIJI_GBR" #Fiji
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_FIJI_FRA" #Fidji
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_FIJI_POR" #Fiji
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_FIJI_SPA" #Fiji
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_FIJI_SCA" #Fiji
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
+		}
+		name = "COLONIAL_FIJI_GER" #Fiji
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_FIJI_GLC" #Fiji
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_FIJI_LAT"  #Fiji
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_FIJI_TUR" #Fiji
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_FIJI_Root_Culture_GetGroupName_Fiji"
+	}
+	names = {
+		name = "COLONIAL_FIJI_Fiji"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+# Jamaica
+#colonial_jamaica = { #OBSOLETE, MERGED WITH ANTILLES (CARIBBEAN)
+#	color = { 237 1 64 }
+#
+#	# Random New World
+#	tax_income = 0
+#	native_size = 10
+#	native_ferocity = 1
+#	native_hostileness = 3
+#
+#	trade_goods = {
+#	    sugar = 10
+#	    fish = 10
+#	}
+#
+#	culture = {
+#		west_taino = 10
+#	}
+#
+#	religion = {
+#		animism = 10
+#	}
+#
+#	provinces = {
+#		487 843 3023 3024 4589 5709 5710
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_JAMAICA_USA" #Jamaica
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_JAMAICA_GBR" #Jamaica
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_JAMAICA_FRA" #Jamaïque
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_JAMAICA_POR" #Nascentes
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_JAMAICA_SPA" #Xamaica
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_JAMAICA_SCA" #Källor
+#	}
+#	names = {
+#		trigger = { primary_culture = dutch }
+#		name = "COLONIAL_JAMAICA_NED" #Bronnen
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_JAMAICA_GER" #Quellen
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_JAMAICA_GLC" #Tìr_Fuarain
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_JAMAICA_LAT"  #Fontium
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_JAMAICA_TUR" #Jamaika
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_JAMAICA_Root_Culture_GetGroupName_Jamaica"
+#	}
+#	names = {
+#		name = "COLONIAL_JAMAICA_Root_Culture_GetGroupName_Xamaica"
+#	}
+#	names = {
+#		name = "COLONIAL_JAMAICA_Jamaica"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Guyana
+colonial_guyana = {
+	color = { 0 160 192 }
+
+	# Random New World
+	tax_income = 0
+	native_size = 10
+	native_ferocity = 1
+	native_hostileness = 3
+
+	trade_goods = {
+		fish = 10
+		naval_supplies = 10
+	}
+
+	culture = {
+		guajiro = 10
+		carib = 2
+	}
+
+	religion = {
+		animism = 10
+	}
+
+	provinces = {
+		743 744 2931 3025 3026 #Guyana
+		745 2937 3027 3029 3030 #Suriname
+		746 3033 3031 3035 3037 #Guiana
+	}
+
+	# Specific
+	names = {
+		trigger = {
+			tag = POR
+		}
+		name = "COLONIAL_GUYANA_PT"
+	}
+	names = {
+		trigger = { primary_culture = dutch }
+		name = "COLONIAL_GUYANA_Suriname"
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_GUYANA_Guiana"
+	}
+	names = {
+		trigger = { culture_group = byzantine }
+		name = "COLONIAL_GUYANA_Gouiana"
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_GUYANA_Guyanas"
+	}
+	names = {
+		trigger = {
+			OR = {
+				primary_culture = welsh
+				primary_culture = cornish
+				#BT Bugfixes added Celtic versions of Brythonic.
+				primary_culture = celtic_welsh_culture
+				primary_culture = celtic_cornish_culture
+			}
+		}
+		name = "COLONIAL_GUYANA_CY"
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_GUYANA_LA"
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_GUYANA_ES"
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_GUYANA_TU"
+	}
+
+	# Generic
+	names = {
+		name = "COLONIAL_GUYANA_Guyana"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+#Ecuador
+colonial_ecuador = {
+	color = { 221 74 26 }
+
+	# Random New World
+	tax_income = 3
+	native_size = 12
+	native_ferocity = 1
+	native_hostileness = 2
+	
+	trade_goods = {
+		alpaca_wool = 6
+		potato = 2
+		cloth = 2
+		fish = 1
+		cocoa = 1
+	}
+
+	culture = {
+		cara = 10
+		jivaro = 1
+		chimuan = 1
+	}
+	
+	religion = {
+		inti = 10
+		animism = 1
+	}
+
+	provinces = {
+		815 817 818 819 820 821 2820 3022 4604 4605 5336 6098 6099 6100
+	}
+	
+	# Specific
+	names = {
+		trigger = { tag = USA }
+		name = "COLONIAL_ECUADOR_USA" #Equator
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_ECUADOR_GBR" #Equator
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_ECUADOR_FRA" #Équateur
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_ECUADOR_POR" #Equador
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_ECUADOR_SPA" #Ecuador
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_ECUADOR_SCA" #Ekvator
+	}
+	names = {
+		trigger = { primary_culture = dutch }
+		name = "COLONIAL_ECUADOR_NED" #Evenaar
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
+		}
+		name = "COLONIAL_ECUADOR_GER" #Äquator
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_ECUADOR_GLC" #Crios-Meadhain
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_ECUADOR_LAT"  #Aequatoriana
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_ECUADOR_TUR" #Ekvador
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_ECUADOR_Root_Culture_GetGroupName_Equator"
+	}
+	names = {
+		name = "COLONIAL_ECUADOR_Root_Culture_GetGroupName_Ecuador"
+	}
+	names = {
+		name = "COLONIAL_ECUADOR_Equator"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+#Venezuela
+colonial_venezuela = {
+	color = { 105 157 243 }
+
+	# Random New World
+	tax_income = 3
+	native_size = 12
+	native_ferocity = 1
+	native_hostileness = 2
+	
+	trade_goods = {
+		sugar = 5
+		fish = 2
+		cocoa = 1
+		coffee = 1
+	}
+
+	culture = {
+		guajiro = 10
+		carib = 5
+	}
+	
+	religion = {
+		animism = 10
+	}
+
+	provinces = {
+		491 741 742 830 831 834 2803 2804 2805 2807 2808 2809 2810 2811 2813 2939 4609 4610 4611 4612 4613 4615 4616 4617 5578 5579
+	}
+	
+	# Specific
+	names = {
+		trigger = { tag = USA }
+		name = "COLONIAL_VENEZUELA_USA" #Little_Venice
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_VENEZUELA_GBR" #Little_Venice
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_VENEZUELA_FRA" #Petite_Venise
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_VENEZUELA_POR" #Pequena_Veneza
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_VENEZUELA_SPA" #Venezuela
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_VENEZUELA_SCA" #Lilla_Venedig
+	}
+	names = {
+		trigger = { primary_culture = dutch }
+		name = "COLONIAL_VENEZUELA_NED" #Klein-Venetië
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
+		}
+		name = "COLONIAL_VENEZUELA_GER" #Klein-Venedig
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_VENEZUELA_GLC" #Venice_Beag
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_VENEZUELA_LAT"  #Venetiola
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_VENEZUELA_TUR" #Kücük_Venedik
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_VENEZUELA_Root_Culture_GetGroupName_Little_Venice"
+	}
+	names = {
+		name = "COLONIAL_VENEZUELA_Root_Culture_GetGroupName_Venezuela"
+	}
+	names = {
+		name = "COLONIAL_VENEZUELA_Little_Venice"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+#Bolivia
+colonial_bolivia = {
+	color = { 60 192 94 }
+
+	# Random New World
+	tax_income = 3
+	native_size = 12
+	native_ferocity = 1
+	native_hostileness = 2
+	
+	trade_goods = {
+		gold = 5
+		silver = 2
+		fish = 2
+	}
+
+	culture = {
+		aimara = 10
+		guarani = 2
+		maipurean = 1
+	}
+	
+	religion = {
+		animism = 10
+		inti = 2
+	}
+
+	provinces = {
+		795 797 800 801 802 803 2831 2832 2834 2835 2838 2839 2840 2841 2882 2906 2940 2941 2942 2946 7000
+	}
+	
+	# Specific
+	names = {
+		trigger = { tag = USA }
+		name = "COLONIAL_BOLIVIA_USA" #Bolivia
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_BOLIVIA_GBR" #Bolivia
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_BOLIVIA_FRA" #Bolivie
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_BOLIVIA_POR" #Bolívia
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_BOLIVIA_SPA" #Bolivia
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_BOLIVIA_SCA" #Bolivia
+	}
+	names = {
+		trigger = { primary_culture = dutch }
+		name = "COLONIAL_BOLIVIA_NED" #Bolivia
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
+		}
+		name = "COLONIAL_BOLIVIA_GER" #Bolivien
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_BOLIVIA_GLC" #Bolivia
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_BOLIVIA_LAT"  #Bolivia
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_BOLIVIA_TUR" #Bolivya
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_BOLIVIA_Root_Culture_GetGroupName_Bolivia"
+	}
+	names = {
+		name = "COLONIAL_BOLIVIA_Bolivia"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+#Chile
+colonial_chile = {
+	color = { 207 34 24 }
+
+	# Random New World
+	tax_income = 3
+	native_size = 12
+	native_ferocity = 1
+	native_hostileness = 2
+	
+	trade_goods = {
+		gold = 5
+		silver = 2
+		fish = 2
+	}
+
+	culture = {
+		mapuche = 10
+		diaguita = 5
+		patagonian = 2
+		yahgan = 1
+		aimara = 1
+	}
+	
+	religion = {
+		animism = 10
+		inti = 1
+	}
+
+	provinces = {
+		783 784 787 792 2862 2873 2874
+	}
+	
+	# Specific
+	names = {
+		trigger = { tag = USA }
+		name = "COLONIAL_CHILE_USA" #Chili
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_CHILE_GBR" #Chili
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_CHILE_FRA" #Chili
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_CHILE_POR" #Pimenta
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_CHILE_SPA" #Chile
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_CHILE_SCA" #Chili
+	}
+	names = {
+		trigger = { primary_culture = dutch }
+		name = "COLONIAL_CHILE_NED" #Chili
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
+		}
+		name = "COLONIAL_CHILE_GER" #Chili
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_CHILE_GLC" #Chili
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_CHILE_LAT"  #Purus
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_CHILE_TUR" #Sili
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_CHILE_Root_Culture_GetGroupName_Chile"
+	}
+	names = {
+		name = "COLONIAL_CHILE_Chile"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+# Patagonia
+#colonial_patagonia = {
+#	color = { 224 198 180 }
+#
+#	# Random New World
+#	tax_income = 3
+#	native_size = 12
+#	native_ferocity = 1
+#	native_hostileness = 2
+#	
+#	trade_goods = {
+#		livestock = 10
+#		fish = 5
+#		whaling = 2
+#		silver = 1
+#	}
+#
+#	culture = {
+#		patagonian = 10
+#		het = 1
+#		ranquel = 1
+#		mapuche = 1
+#	}
+#	
+#	religion = {
+#		animism = 10
+#	}
+#
+#	provinces = {
+#		780 781 782 785 786 2863 2867 2868 2869 2870 2871 2872 2875 2876
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_PATAGONIA_USA" #Patagonia
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_PATAGONIA_GBR" #Patagonia
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_PATAGONIA_FRA" #Patagonie
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_PATAGONIA_POR" #Patagônia
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_PATAGONIA_SPA" #Patayonja
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_PATAGONIA_SCA" #Patagonien
+#	}
+#	names = {
+#		trigger = { primary_culture = dutch }
+#		name = "COLONIAL_PATAGONIA_NED" #Patagonië
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_PATAGONIA_GER" #Patagonien
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_PATAGONIA_GLC" #Patagonia
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_PATAGONIA_LAT"  #Patagonia
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_PATAGONIA_TUR" #Patagonya
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_PATAGONIA_Root_Culture_GetGroupName_Patagonia"
+#	}
+#	names = {
+#		name = "COLONIAL_PATAGONIA_Root_Culture_GetGroupName_Patayonja"
+#	}
+#	names = {
+#		name = "COLONIAL_PATAGONIA_Patagonia"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Amazonia
+#colonial_amazonia = {
+#	color = { 70 109 29 }
+#
+#	# Random New World
+#	tax_income = 3
+#	native_size = 12
+#	native_ferocity = 1
+#	native_hostileness = 2
+#	
+#	trade_goods = {
+#		tropical_wood = 10
+#		copra = 10
+#		fish = 5
+#		gems = 5
+#		fruit = 5
+#		diamonds = 2
+#		exotic_animals = 1
+#	}
+#
+#	culture = {
+#		tupinamba = 10
+#	}
+#	
+#	religion = {
+#		animism = 10
+#	}
+#
+#	provinces = {
+#		747 748 2889 2890 2928 2929 2930 2933 2934 2935 2938 6089 6090 6091 6092 6093 6094 6095 6096 6097 6103 6104 6105 6106 6107 6109 6110 6111 6112 6113 6114 6115 6116 6117 6118 6119 6120 6121 6122 6123 6124 6125 8745 8748 8750
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_AMAZONIA_USA" #Amazonia
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_AMAZONIA_GBR" #Amazonia
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_AMAZONIA_FRA" #Amazonie
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_AMAZONIA_POR" #Amazonas
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_AMAZONIA_SPA" #Amazonas
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_AMAZONIA_SCA" #Amazone
+#	}
+#	names = {
+#		trigger = { primary_culture = dutch }
+#		name = "COLONIAL_AMAZONIA_NED" #Amazonië
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_AMAZONIA_GER" #Amazonien
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_AMAZONIA_GLC" #Amazonia
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_AMAZONIA_LAT"  #Amazonia
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_AMAZONIA_TUR" #Amazonya
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_AMAZONIA_Root_Culture_GetGroupName_Amazonia"
+#	}
+#	names = {
+#		name = "COLONIAL_AMAZONIA_Root_Culture_GetGroupName_Amazonas"
+#	}
+#	names = {
+#		name = "COLONIAL_AMAZONIA_Amazonia"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Rio Grande
+#colonial_rio_grande = {
+#	color = { 228 205 5 }
+#
+#	# Random New World
+#	tax_income = 3
+#	native_size = 12
+#	native_ferocity = 1
+#	native_hostileness = 2
+#	
+#	trade_goods = {
+#	    lumber = 10
+#		livestock = 10
+#		tropical_wood = 10
+#		copra = 10
+#		sugar = 5
+#		fish = 5
+#		gems = 5
+#		fruit = 5
+#		diamonds = 2
+#		gold = 2
+#		silver = 2
+#		exotic_animals = 1
+#	}
+#
+#	culture = {
+#	    ge = 10
+#		tupinamba = 10
+#	}
+#	
+#	religion = {
+#		animism = 10
+#	}
+#
+#	provinces = {
+#		760 768 769 2857 2879 2884 2887 2895 3192 3205 3208 3210 3211 3212 3215 3216 3217 3249 3255 3257 3258 3259 3260
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_RIO_GRANDE_USA" #Great_River
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_RIO_GRANDE_GBR" #Great_River
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_RIO_GRANDE_FRA" #Grande_Rivière
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_RIO_GRANDE_POR" #Grande_Rio
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_RIO_GRANDE_SPA" #Rio_Grande
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_RIO_GRANDE_SCA" #Stora_Floden
+#	}
+#	names = {
+#		trigger = { primary_culture = dutch }
+#		name = "COLONIAL_RIO_GRANDE_NED" #Grote Rivier
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_RIO_GRANDE_GER" #Groser_Fluss
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_RIO_GRANDE_Abhainn_Mhor" #Abhainn_Mhor
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_RIO_GRANDE_LAT" #Magnum_Flumen
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_RIO_GRANDE_TUR" #Büyük_Nehir
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_RIO_GRANDE_Root_Culture_GetGroupName_Rio_Grande"
+#	}
+#	names = {
+#		name = "COLONIAL_RIO_GRANDE_Root_Culture_GetGroupName_Rio_Grande"
+#	}
+#	names = {
+#		name = "COLONIAL_RIO_GRANDE_Rio_Grande"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Texas
+colonial_texas = {
+	color = { 120 20 55 }
+
+	# Random New World
+	tax_income = 3
+	native_size = 12
+	native_ferocity = 1
+	native_hostileness = 2
+	
+	trade_goods = {
+	    bison_hides = 10
+		livestock = 10
+		fur = 5
+		agave = 2
+	}
+
+	culture = {
+	    navajo = 10
+	    caddo = 10
+		wichita = 5
+	}
+	
+	religion = {
+		totemism = 10
+	}
+
+	provinces = {
+		883 884 885 886 887 888 2497 2498 2499 2500 2665 2666 2669 4627 4628 4629 4909 4910 4911
+	}
+	
+	# Specific
+	names = {
+		trigger = { tag = USA }
+		name = "COLONIAL_TEXAS_USA" #Texas
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_TEXAS_GBR" #Texas
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_TEXAS_FRA" #Texas
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_TEXAS_POR" #Texas
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_TEXAS_SPA" #Tejas
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_TEXAS_SCA" #Texas
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
+		}
+		name = "COLONIAL_TEXAS_GER" #Texas
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_TEXAS_GLC" #Texas
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_TEXAS_LAT" #Texas
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_TEXAS_TUR" #Teksas
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_TEXAS_Root_Culture_GetGroupName_Texas"
+	}
+	names = {
+		name = "COLONIAL_TEXAS_Root_Culture_GetGroupName_Tejas"
+	}
+	names = {
+		name = "COLONIAL_TEXAS_Texas"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+# Central America
+colonial_central_america = {
+	color = { 102 194 232 }
+
+	# Random New World
+	tax_income = 3
+	native_size = 12
+	native_ferocity = 1
+	native_hostileness = 2
+	
+	trade_goods = {
+	    bison_hides = 10
+		livestock = 10
+		fur = 5
+		agave = 2
+	}
+
+	culture = {
+	    miskito = 10
+	    highland_mayan = 5
+		muisca = 2
+		putun = 2
+	}
+	
+	religion = {
+		mesoamerican_religion = 10
+		animism = 5
+	}
+
+	provinces = {
+		836 837 839 840 841 842 843 2636 2637 2640 2653 2660 2661 2662 2663 3023 4587 4589 4592 4593 4594 4597
+	}
+	
+	# Specific
+	names = {
+		trigger = { tag = USA }
+		name = "COLONIAL_CENTRAL_AMERICA_USA" #Central_America
+	}
+	names = {
+		trigger = { culture_group = british }
+		name = "COLONIAL_CENTRAL_AMERICA_GBR" #Central_America
+	}
+	names = {
+		trigger = { culture_group = french }
+		name = "COLONIAL_CENTRAL_AMERICA_FRA" #Amérique_Centrale
+	}
+	names = {
+		trigger = { primary_culture = portugese }
+		name = "COLONIAL_CENTRAL_AMERICA_POR" #America_Central
+	}
+	names = {
+		trigger = { culture_group = iberian	}
+		name = "COLONIAL_CENTRAL_AMERICA_SPA" #Centroamerica
+	}
+	names = {
+		trigger = { culture_group = scandinavian }
+		name = "COLONIAL_CENTRAL_AMERICA_SCA" #Centralamerika
+	}
+	names = {
+		trigger = { primary_culture = dutch }
+		name = "COLONIAL_CENTRAL_AMERICA_NED" #Centraalamerika
+	}
+	names = {
+		trigger = {
+			culture_group = germanic
+			NOT = { primary_culture = dutch }
+			NOT = {	tag = NED }
+			NOT = {	tag = HOL }
+		}
+		name = "COLONIAL_CENTRAL_AMERICA_GER" #Zentralamerika
+	}
+	names = {
+		trigger = {
+			OR = {
+				culture_group = gaelic
+				#BT Bugfixes added Celtic versions of Gaelic.
+				primary_culture = celtic_irish_culture
+				primary_culture = celtic_highland_scottish_culture
+			}
+		}
+		name = "COLONIAL_CENTRAL_AMERICA_GLC" #Meadhan_Ameireagaidh
+	}
+	names = {
+		trigger = { culture_group = latin }
+		name = "COLONIAL_CENTRAL_AMERICA_LAT"  #Amerigo_Centralis
+	}
+	names = {
+		trigger = { culture_group = turkish_g }
+		name = "COLONIAL_CENTRAL_AMERICA_TUR" #Orta_Amerika
+	}
+	# Generic
+	names = {
+		name = "COLONIAL_CENTRAL_AMERICA_Root_Culture_GetGroupName_Central_America"
+	}
+	names = {
+		name = "COLONIAL_CENTRAL_AMERICA_Root_Culture_GetGroupName_Centroamerica"
+	}
+	names = {
+		name = "COLONIAL_CENTRAL_AMERICA_Central_America"
+	}
+	names = {
+		name = "COLONIAL_REGION_New_Root_GetName"
+	}
+}
+
+# Maranhão
+#colonial_maranhao = {
+#	color = { 252 106 3 }
+#
+#	# Random New World
+#	tax_income = 2
+#	native_size = 8
+#	native_ferocity = 1
+#	native_hostileness = 4
+#	
+#	trade_goods = {
+#		sugar = 13
+#		fish = 1
+#	}
+#	
+#	culture = {
+#		guarani = 5
+#		tupinamba = 12
+#	}
+#	
+#	religion = {
+#		animism = 10
+#	}
+#	
+#	provinces = {
+#		749 750 751 752 753 754 755 756 757 2885 2886 2912 2913 2914 2915 2916 2917 2921 2922 2923 2924 2925 2926 2927 3269 3059 3061 3062 3065
+#		3067 3072 3074 3078 3080 3084 8741
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_MARANHAO_USA" #Amazon_River
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_MARANHAO_GBR" #Amazon_River
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_MARANHAO_FRA" #La_rivière_Amazone
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_MARANHAO_POR" #Maranhão
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_MARANHAO_SPA" #Rio_Amazonas
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_MARANHAO_SCA" #Amazonfloden
+#	}
+#	names = {
+#		trigger = { primary_culture = dutch }
+#		name = "COLONIAL_MARANHAO_NED" #Amazone_Rivier
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_MARANHAO_GER" #Amazonas
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_MARANHAO_Abhainn_GLC" #Amazon
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_MARANHAO_LAT" #Amazon_Flumen
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_MARANHAO_TUR" #Amazon_Nehri
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_MARANHAO_Root_Culture_GetGroupName_Maranhao"
+#	}
+#	names = {
+#		name = "COLONIAL_MARANHAO_Root_Culture_GetGroupName_Rio_Amazonas"
+#	}
+#	names = {
+#		name = "COLONIAL_MARANHAO_Maranhao"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}
+
+# Mato Grosso
+#colonial_mato_grosso = {
+#	color = { 35 79 30 }
+#
+#	# Random New World
+#	tax_income = 3
+#	native_size = 12
+#	native_ferocity = 1
+#	native_hostileness = 2
+#	
+#	trade_goods = {
+#		tropical_wood = 10
+#		fish = 5
+#		fruit = 5
+#		exotic_animals = 1
+#	}
+#
+#	culture = {
+#		tupinamba = 10
+#	}
+#	
+#	religion = {
+#		animism = 10
+#	}
+#
+#	provinces = {
+#		758 776 2881 2888 2893 2900 2901 2902 2903 2904 2905 2907 2908 2909 2910 2911 2919 2920 6126 8742
+#	}
+#	
+#	# Specific
+#	names = {
+#		trigger = { tag = USA }
+#		name = "COLONIAL_MATO_GROSSO_USA" #Thick_Bush
+#	}
+#	names = {
+#		trigger = { culture_group = british }
+#		name = "COLONIAL_MATO_GROSSO_GBR" #Thick_Bush
+#	}
+#	names = {
+#		trigger = { culture_group = french }
+#		name = "COLONIAL_MATO_GROSSO_FRA" #Buisson_épais
+#	}
+#	names = {
+#		trigger = { primary_culture = portugese }
+#		name = "COLONIAL_MATO_GROSSO_POR" #Matto_Grosso
+#	}
+#	names = {
+#		trigger = { culture_group = iberian	}
+#		name = "COLONIAL_MATO_GROSSO_SPA" #Arbusto_Espeso
+#	}
+#	names = {
+#		trigger = { culture_group = scandinavian }
+#		name = "COLONIAL_MATO_GROSSO_SCA" #Tjock_Buske
+#	}
+#	names = {
+#		trigger = { primary_culture = dutch }
+#		name = "COLONIAL_MATO_GROSSO_NED" #Dikke_Struik
+#	}
+#	names = {
+#		trigger = {
+#			culture_group = germanic
+#			NOT = { primary_culture = dutch }
+#			NOT = {	tag = NED }
+#			NOT = {	tag = HOL }
+#		}
+#		name = "COLONIAL_MATO_GROSSO_GER" #Dicker_Busch
+#	}
+#	names = {
+#		trigger = {
+#			OR = {
+#				culture_group = gaelic
+#				#BT Bugfixes added Celtic versions of Gaelic.
+#				primary_culture = celtic_irish_culture
+#				primary_culture = celtic_highland_scottish_culture
+#			}
+#		}
+#		name = "COLONIAL_MATO_GROSSO_GLC" #Preas_Tiugh
+#	}
+#	names = {
+#		trigger = { culture_group = latin }
+#		name = "COLONIAL_MATO_GROSSO_LAT" #Densissima_Rubi
+#	}
+#	names = {
+#		trigger = { culture_group = turkish_g }
+#		name = "COLONIAL_MATO_GROSSO_TUR" #Kalın_Cali
+#	}
+#	# Generic
+#	names = {
+#		name = "COLONIAL_MATO_GROSSO_Root_Culture_GetGroupName_Mato_Grosso"
+#	}
+#	names = {
+#		name = "COLONIAL_MATO_GROSSO_Root_Culture_GetGroupName_Arbusto_Espeso"
+#	}
+#	names = {
+#		name = "COLONIAL_MATO_GROSSO_Mato_Grosso"
+#	}
+#	names = {
+#		name = "COLONIAL_REGION_New_Root_GetName"
+#	}
+#}

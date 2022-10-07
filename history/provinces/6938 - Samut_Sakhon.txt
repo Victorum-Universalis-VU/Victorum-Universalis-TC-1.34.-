@@ -1,0 +1,23 @@
+#6938 - Samut_Sakhon
+
+owner = AYU
+controller = AYU
+add_core = AYU
+culture = central_thai
+religion = buddhism
+capital = "Samut Sakhon"
+trade_goods = rice
+hre = no
+base_tax = 1
+base_production = 3
+base_manpower = 2
+is_city = yes
+add_core = AYU
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1535.1.1 = { discovered_by = POR }
+

@@ -1,0 +1,19 @@
+#1094 - Gubbi Gubbi
+
+add_core = WLP
+owner = WLP
+controller = WLP
+culture = gunwinyguan
+religion = dreamtime
+hre = no
+base_tax = 2
+base_production = 2
+trade_goods = gold
+base_manpower = 1
+capital = "Alice Springs"
+is_city = yes
+
+1444.1.1 = { discovered_by = MKS } 1444.1.1 = { discovered_by = TER } 1444.1.1 = { discovered_by = TID }
+discovered_by = aboriginal_tech
+
+1642.11.24 = { discovered_by = NED }

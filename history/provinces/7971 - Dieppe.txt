@@ -1,0 +1,30 @@
+#7971 - Dieppe
+
+owner = ENG
+controller = ENG
+add_core = FRA
+add_core = ENG
+add_core = NRM
+culture = normand
+religion = catholic
+capital = "Dieppe"
+base_tax = 5
+base_production = 5
+base_manpower = 3
+trade_goods = grain
+is_city = yes
+hre = no
+center_of_trade = 1
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+add_permanent_province_modifier = {
+    name = navalbase_modifier
+    duration = -1
+}
+
+#Province history completed by - Draiocht
+
+1435.28.10 = { owner = FRA controller = FRA add_core = FRA remove_core = ENG }

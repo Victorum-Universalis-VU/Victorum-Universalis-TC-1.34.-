@@ -1,0 +1,26 @@
+﻿l_english:
+ 
+ #free city alliance
+ FREECITY:0 "Free cities of the Empire can only ally other Free Cities!"
+ 
+ #Naval bases
+ navalbase_modifier_2:0 "Naval Base"
+ desc_navalbase_modifier_2:0 "Basic infrastructure for ship construction and repair"
+ navalbase_modifier_3:0 "Naval Base"
+ desc_navalbase_modifier_3:0 "Improved infrastructure for ship construction and repair"
+ navalbase_modifier_4:0 "Naval Base"
+ desc_navalbase_modifier_4:0 "Advanced infrastructure for ship construction and repair"
+
+ #Naval Base Events
+ nav_up.1.t:0 "Developments in Fleet Basing"
+ nav_up.1.d:0 "We have an oportunity to improve the naval infrustructure within our realm!"
+ nav_up.1.a:0 "Excellent! Assign the funds"
+ nav_up.1.b:0 "Now is not the time"
+ nav_up.1.c:0 "What's a navy?"
+ nav_up.2.a:0 "Excellent! Assign the funds"
+ nav_up.2.b:0 "Now is not the time"
+ nav_up.2.c:0 "What's a navy?"
+ nav_up.3.a:0 "Excellent! Assign the funds"
+ nav_up.3.b:0 "Now is not the time"
+ nav_up.3.c:0 "What's a navy?"
+ no_more:0 "This will prevent us from receiving any more base upgrade events!"

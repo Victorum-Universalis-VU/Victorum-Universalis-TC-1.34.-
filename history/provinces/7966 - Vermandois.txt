@@ -1,0 +1,21 @@
+#7966 - Vermandois
+
+owner = FRA
+controller = FRA
+add_core = FRA
+add_core = PIC
+add_core = VRD
+culture = picard_culture
+religion = catholic
+capital = "St. Quentin"
+base_tax = 4
+base_production = 4
+base_manpower = 3
+trade_goods = fruit
+is_city = yes
+hre = no
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

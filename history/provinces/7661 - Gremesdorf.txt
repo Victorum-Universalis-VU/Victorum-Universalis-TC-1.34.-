@@ -1,0 +1,50 @@
+#6338 - Altenmuhr
+#Region - Germany
+#Area - Franconia
+
+owner = ING
+controller = ING
+add_core = ING
+add_core = DWT
+capital = "Nördlingen"
+is_city = yes
+culture = bavarian
+religion = catholic
+hre = yes
+base_tax = 2 
+base_production = 2
+base_manpower = 2
+trade_goods = gunpowder
+
+discovered_by = english
+discovered_by = french
+discovered_by = german_group
+discovered_by = italian
+discovered_by = russian
+discovered_by = scandinavian
+discovered_by = spanish
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Last of the Ingolstadt Wittelsbachs dies
+1447.5.1 = {
+	owner = LBV
+	controller = LBV
+	add_core = LBV
+}
+
+#Last of the Landshuter Wittelsbachs dies, Bavaria reunited
+1503.12.1 = {
+	owner = BAV
+	controller = BAV
+	add_core = BAV
+}
+
+1704.8.13 = {
+	owner = HAB
+	controller = HAB
+} # Bavaria is conquered by the Emperor, is however later restored for the balance of power
+1714.9.7 = { owner = BAV controller = BAV }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

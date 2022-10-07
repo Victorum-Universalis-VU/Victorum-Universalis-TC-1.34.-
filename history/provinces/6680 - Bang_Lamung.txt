@@ -1,0 +1,22 @@
+#6680 - Bang Lamung
+
+owner = AYU
+controller = AYU
+add_core = AYU
+culture = central_thai
+religion = buddhism
+capital = "Bang Lamung"
+trade_goods = rice
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1535.1.1 = { discovered_by = POR }
+

@@ -1,0 +1,21 @@
+#7762 - UpperCarniola
+
+owner = CLI
+controller = CLI
+add_core = CLI
+culture = bavarian #was slovene
+religion = catholic
+capital = "Gottschee"			#Not founded until sometime between 1340 & 1360, but whatever
+base_tax = 2
+base_production = 3
+base_manpower = 2
+trade_goods = lumber			#a wooded plateau with significant spruce forests
+is_city = yes
+hre = yes
+add_core = CNL
+
+1444.1.1 = { discovered_by = KAZ } 1444.1.1 = { discovered_by = CRI } 1444.1.1 = { discovered_by = GOL } 1444.1.1 = { discovered_by = AST } 1444.1.1 = { discovered_by = QAS } 
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western

@@ -1,0 +1,23 @@
+#6923 - Ban_Mai
+
+owner = AYU
+controller = AYU
+add_core = AYU
+culture = central_thai
+religion = buddhism
+capital = "Ban Mai"
+trade_goods = elephants
+hre = no
+base_tax = 4
+base_production = 5
+base_manpower = 2
+is_city = yes
+center_of_trade = 1
+
+discovered_by = chinese
+discovered_by = indian
+discovered_by = muslim
+discovered_by = ottoman
+
+1535.1.1 = { discovered_by = POR }
+

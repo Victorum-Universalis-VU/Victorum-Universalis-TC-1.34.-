@@ -1,0 +1,50 @@
+#320 - Rhodes
+
+owner = KNI 		# Knights of St. John Hospitaler of Jerusalem
+controller = KNI
+culture = greek
+religion = orthodox
+capital = "Rhodes"
+trade_goods = saffron
+hre = no
+base_tax = 6
+base_production = 6
+base_manpower = 5
+is_city = yes
+fort_15th = yes
+add_core = KNI
+center_of_trade = 3
+
+add_permanent_province_modifier = {
+    name = navalbase_modifier_2
+    duration = -1
+}
+
+add_permanent_province_modifier = {
+	name = port_of_rhodes_modifier
+	duration = -1
+}
+
+add_permanent_province_modifier = {
+	name = gulf_of_satalia_estuary_modifier
+	duration = -1
+}
+
+1444.1.1 = { discovered_by = KAZ } 1444.1.1 = { discovered_by = CRI } 1444.1.1 = { discovered_by = GOL } 1444.1.1 = { discovered_by = AST } 1444.1.1 = { discovered_by = QAS } 
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western
+
+1522.12.21 = {	owner = TUR
+	controller = TUR
+	add_core = TUR
+	remove_core = KNI
+} # Part of the Ottoman Empire
+1821.2.21 = { add_core = GRE }
+1912.1.1 = { controller = ITA } #Ottoman war with Italy
+1912.10.18 = {
+	owner = ITA
+	add_core = ITA
+	remove_core = TUR
+}

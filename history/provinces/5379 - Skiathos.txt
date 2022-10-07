@@ -1,0 +1,46 @@
+#5379 - Skiathos
+
+owner = BYZ
+controller = BYZ
+culture = greek
+religion = orthodox
+capital = "Skiathos"
+trade_goods = livestock			#Lemnos became a crucial source of food and very important holding in the later days of the Byzantine empire, apparently, supplying grain and livestock to the capital. Going with livestock because of the famous cheese.
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = BYZ
+add_local_autonomy = 50
+
+
+1444.1.1 = { discovered_by = KAZ } 1444.1.1 = { discovered_by = CRI } 1444.1.1 = { discovered_by = GOL } 1444.1.1 = { discovered_by = AST } 1444.1.1 = { discovered_by = QAS } 
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western
+
+1453.5.29 = {
+	owner = VEN
+	controller = VEN
+	add_core = VEN
+} #Passed to Venetians
+1525.1.1 = { remove_core = BYZ }
+1538.6.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+	remove_core = VEN
+} #Conquered by Hayreddin Barbarossa
+1555.1.1 = { unrest = 5 } # General discontent with the Janissaries' dominance
+1556.1.1 = { unrest = 0 }
+1800.1.1 = { add_core = GRE }
+1807.1.1 = { unrest = 10 } #Independence effort
+1821.2.21 = {
+	owner = GRE
+	controller = GRE
+	unrest = 0
+} #Independence war
+1829.9.12 = { remove_core = TUR }
+1860.1.1 = { base_production = 3 } #Shipbuilding buisness

@@ -1,0 +1,16 @@
+#5404 - Otjivanda
+
+owner = KUN
+controller = KUN
+add_core = KUN
+culture = kung_culture
+religion = shamanism 
+capital = "Otjivanda" 
+trade_goods = unknown
+hre = no 
+base_tax = 1
+base_production = 1
+base_manpower = 1
+native_size = 7
+native_ferocity = 6
+native_hostileness = 2

@@ -1,0 +1,32 @@
+#6328 - Bartholoma
+#Region - Germany
+#Area - Lower Swabia
+
+owner = AUG
+controller = AUG
+add_core = AUG
+culture = austrian
+religion = catholic
+base_tax = 2
+base_production = 1
+trade_goods = cloth	#fustians
+base_manpower = 1
+capital = "Starnberg"
+is_city = yes
+hre = yes
+
+discovered_by = english
+discovered_by = french
+discovered_by = german_group
+discovered_by = italian
+discovered_by = russian
+discovered_by = scandinavian
+discovered_by = spanish
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Documented 1365 AD
+1530.1.1 = { religion = protestant }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

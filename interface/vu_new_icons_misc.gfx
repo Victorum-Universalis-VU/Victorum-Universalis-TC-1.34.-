@@ -1,0 +1,24 @@
+spriteTypes = {	
+
+	### Nestorian blessings icons ###
+	
+	spriteType = {
+		name = "GFX_nestorian_blessing_select"
+		texturefile = "gfx//interface//nestorian_blessing_select_glow.dds"
+		effectFile = "gfx/FX/buttonstate.lua"
+		loadType = "INGAME"
+	}	
+
+	spriteType = {
+		name = "GFX_nestorian_blessing_select_glow"
+		texturefile = "gfx//interface//nestorian_blessing_select_glow.dds"
+		loadType = "INGAME"
+	}
+	
+	### New Ingame Icons ###
+	
+	spriteType = {
+		name = "vu_malaria_icon"
+		texturefile = "gfx//interface//ideas_EU4//vu_malaria_icon.dds"
+	}
+}

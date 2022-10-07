@@ -1,0 +1,16 @@
+#7361 - Kaolack-Vert
+
+owner = JOL
+controller = JOL
+culture = fulani
+is_city = yes
+base_manpower = 6
+religion = shamanism #Fetishism
+capital = "Kaolack"
+trade_goods = slaves
+hre = no
+base_tax = 6
+base_production = 2
+add_core = JOL
+
+discovered_by = sub_saharan

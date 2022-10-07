@@ -1,0 +1,19 @@
+#8032 - Zutphen
+
+owner = GEL
+controller = GEL
+add_core = GEL
+culture = guelders
+religion = catholic
+capital = "Zutphen"
+base_tax = 4
+base_production = 4
+base_manpower = 2
+trade_goods = cloth
+is_city = yes
+hre = yes
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern

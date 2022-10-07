@@ -1,0 +1,11 @@
+#1408 - Arafuam Sea
+#VU Discovery Bug Fix
+
+# discovered_by = MKS
+# discovered_by = TER
+# discovered_by = TID
+
+1511.1.1 = { discovered_by = POR }
+1595.1.1 = { discovered_by = western }
+1620.1.1 = { discovered_by = eastern }
+

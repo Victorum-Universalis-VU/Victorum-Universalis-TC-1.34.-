@@ -1,0 +1,31 @@
+#6951 - Hoorn
+
+owner = HOL
+controller = HOL
+add_core = HOL
+culture = frisian
+religion = catholic
+capital = "Hoorn"
+base_tax = 2
+base_production = 3
+base_manpower = 2
+trade_goods = pottery #This region next to Amsterdam is known for producing pottery and ceramics (by San Felipe).
+is_city = yes
+hre = yes
+
+add_permanent_province_modifier = {
+	name = ijsselmeer_bay_modifier
+	duration = -1
+}
+
+add_permanent_province_modifier = {
+    name = navalbase_modifier
+    duration = -1
+}
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+extra_cost = 10

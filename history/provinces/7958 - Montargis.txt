@@ -1,0 +1,24 @@
+#BT's Western Europe Overhaul in 12.0
+
+owner = FRA
+controller = FRA
+add_core = FRA
+culture = cosmopolitan_french
+religion = catholic
+capital = "Montargis"
+base_tax = 3
+base_production = 3
+base_manpower = 2
+trade_goods = champagne		#Champagne region
+is_city = yes
+hre = no
+
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+
+#Province history completed by - Draiocht
+
+#1444 on

@@ -1,0 +1,12 @@
+#74s
+type = heavy_ship
+
+hull_size = 70
+base_cannons = 150
+blockade = 6
+
+sail_speed = 8
+
+sailors = 625
+
+sprite_level = 6

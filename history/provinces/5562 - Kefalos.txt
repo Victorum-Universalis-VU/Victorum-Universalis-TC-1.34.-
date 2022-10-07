@@ -1,0 +1,45 @@
+#5562 - Kefalos
+
+owner = GEN
+controller = GEN
+culture = greek
+religion = orthodox
+capital = "Kefalos"
+trade_goods = fish
+hre = no
+base_tax = 1
+base_production = 1
+base_manpower = 1
+is_city = yes
+add_core = GEN
+add_core = AYD
+add_local_autonomy = 75		#Island likely in the hands of Turkish corsairs
+
+1444.1.1 = { discovered_by = KAZ } 1444.1.1 = { discovered_by = CRI } 1444.1.1 = { discovered_by = GOL } 1444.1.1 = { discovered_by = AST } 1444.1.1 = { discovered_by = QAS } 
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+discovered_by = western
+
+#Possible province modifier for the Tears of Chios
+
+1500.1.1 = {
+	add_core = KNI
+	add_local_autonomy = -75
+} #Hospitaller hosted on the island in XVI century after defeating corsairs
+1523.6.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+} #Ottoman rule
+1535.11.17 = {
+	remove_core = KNI
+	remove_core = GEN
+} #Last Hospitaller governor dies - Piero de Ponte
+1821.2.21 = { add_core = GRE }
+1912.10.18 = {
+	owner = ITA
+	controller = ITA
+	add_core = ITA
+	remove_core = TUR
+} #Captured by Italy

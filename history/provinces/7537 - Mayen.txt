@@ -1,0 +1,44 @@
+#6480 - Mayen
+#Region - Germany
+#Area - Lower Rhineland
+
+owner = SAY
+controller = SAY
+add_core = SAY
+culture = hessian
+religion = catholic
+trade_goods = grain
+capital = "Brensbur"
+base_tax = 3
+base_production = 3
+is_city = yes
+base_manpower = 2
+hre = yes
+
+discovered_by = english
+discovered_by = french
+discovered_by = german_group
+discovered_by = italian
+discovered_by = russian
+discovered_by = scandinavian
+discovered_by = spanish
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Documented 954 AD
+1690.1.1 = { base_manpower = 2  } # Trier is repeatedly victim of French agression and population declines.
+1730.1.1 = { base_manpower = 4  } #
+1792.10.4 = { controller = FRA } # Occupied by French troops
+1797.10.17 = {
+	owner = FRA
+	add_core = FRA
+} # The Treaty of Campo Formio
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved
+1814.4.6 = {
+	owner = PRU
+	controller = PRU
+	add_core = PRU
+	remove_core = FRA
+} # Napoleon abdicates
