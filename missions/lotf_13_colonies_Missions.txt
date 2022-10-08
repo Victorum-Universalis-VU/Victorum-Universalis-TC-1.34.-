@@ -1,0 +1,317 @@
+13_colonies_missions_empty1 = {  
+	slot = 1
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		capital_scope = {
+			colonial_region = colonial_eastern_america
+		}
+		colonial_parent = {  
+			OR = {  		
+				tag = GBR
+				tag = ENG
+			}
+		}
+		NOT = { tag = USA }
+	}	
+}
+13_colonies_missions_empty2 = {
+	slot = 5
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		capital_scope = {
+			colonial_region = colonial_eastern_america
+		}
+		colonial_parent = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		NOT = { tag = USA }
+	}	
+}
+13_colonies_missions_1 = {
+	slot = 2
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		capital_scope = {
+			colonial_region = colonial_eastern_america
+		}
+		colonial_parent = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		NOT = { tag = USA }
+	}	
+
+	13_colonies_southern_colonies = {
+		icon = develop_provence
+		required_missions = { 13_colonies_establish_economy }
+		position = 3		
+		provinces_to_highlight = {
+			OR = {
+				area = chesapeake_area
+				area = carolinas_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+				
+		}
+		trigger = { 
+			chesapeake_area = {
+				type = all
+				owned_by = ROOT
+				is_city = yes
+			}
+			carolinas_area = {
+				type = all
+				owned_by = ROOT
+				is_city = yes
+			}				
+		}
+		effect = {
+			952 = {
+				change_trade_goods = tobacco
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
+				add_province_modifier = {
+					name = colonial_dev_modifier
+					duration = 3650
+				}
+			}
+			2547 = {
+				change_trade_goods = tobacco
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
+				add_province_modifier = {
+					name = colonial_dev_modifier
+					duration = 3650
+				}
+			}	
+		chesapeake_area = { add_prosperity = 100}
+		carolinas_area = { add_prosperity = 100 }
+		}
+	}
+}
+
+13_colonies_missions_2 = {
+	slot = 3
+	generic = no
+	ai = yes
+	has_country_shield = yes
+	potential = {
+		capital_scope = {
+			colonial_region = colonial_eastern_america
+		}
+		colonial_parent = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		NOT = { tag = USA }
+	}
+	13_colonies_weather_the_winter = {
+		icon = mission_protect_white_sea_trade
+		required_missions = { }
+		position = 1
+		provinces_to_highlight = { }
+		trigger = { 
+			num_of_cities = 10
+			army_size_percentage = 0.75
+		}
+		effect = {
+			add_prestige = 25
+			add_country_modifier = {
+				name = weather_the_winter_modifier
+				duration = 3650
+			}
+		}
+	}
+	13_colonies_establish_economy = {
+		icon = mission_african_gold
+		required_missions = { 13_colonies_weather_the_winter }
+		position = 2
+		provinces_to_highlight = { 			
+			owned_by = ROOT
+			NOT = { development = 10 }
+		}
+		trigger = { 
+			num_of_owned_provinces_with = {
+				value = 5
+				development = 10
+			}			
+		}
+		effect = {
+			add_country_modifier = {
+				name = establish_economy_modifier
+				duration = 7300
+			}
+		}
+	}
+	13_colonies_middle_colonies = {
+		icon = mission_rb_cod_wars
+		required_missions = { 13_colonies_establish_economy }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = hudson_valley_area
+				area = delaware_valley_area
+				area = south_iroquoisia_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+				
+		}
+		trigger = { 
+			hudson_valley_area = {
+				type = all
+				owned_by = ROOT
+				is_city = yes
+			}
+			delaware_valley_area = {
+				type = all
+				owned_by = ROOT
+				is_city = yes
+			}
+            south_iroquoisia_area = {
+				type = all
+				owned_by = ROOT
+				is_city = yes
+			}			
+		}
+		effect = {
+			965 = {
+				change_trade_goods = fur 
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
+				add_province_modifier = {
+					name = colonial_dev_modifier
+					duration = 3650
+				}
+			}
+			954 = {
+				change_trade_goods = fish
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
+				add_province_modifier = {
+					name = colonial_dev_modifier
+					duration = 3650
+				}
+			}	
+		hudson_valley_area = { add_prosperity = 100}
+		delaware_valley_area = { add_prosperity = 100 }
+		south_iroquoisia_area = { add_prosperity = 100 }
+		}
+	}
+	13_colonies_future_america = { #MISSION TO PROC REVOLUTIONARY WAR
+		icon = mission_cannons_firing
+		required_missions = { 13_colonies_middle_colonies 13_colonies_southern_colonies 13_colonies_new_england }
+		position = 4
+		provinces_to_highlight = {  }
+		trigger = {
+			hidden_trigger = { ai = no }
+			army_size_percentage = 1
+			manpower_percentage = 0.5
+		}
+		effect = {
+			hidden_effect = { change_primary_culture = american }
+			define_general = {
+				name = "George Washington"
+				fire = 5
+				shock = 5
+				manuever = 4
+				siege = 2
+				trait = inspirational_leader_general_personality
+			}
+			country_event = { id = lotf_events.6 } #BEGIN REVOLUTION EVENT CHAIN HERE
+		}
+	}
+}
+
+13_colonies_missions_3 = {
+	slot = 4
+	generic = no
+	has_country_shield = yes
+	ai = yes
+	potential = {
+		capital_scope = {
+			colonial_region = colonial_eastern_america
+		}
+		colonial_parent = {
+			OR = {
+				tag = GBR
+				tag = ENG
+			}
+		}
+		NOT = { tag = USA }
+	}
+	13_colonies_new_england = {
+		icon = mission_dominate_home_trade_node
+		required_missions = { 13_colonies_establish_economy }
+		position = 3
+		provinces_to_highlight = {
+			OR = {
+				area = connecticut_valley_area
+				area = massachusetts_bay_area
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				is_city = no
+			}
+				
+		}
+		trigger = { 
+			connecticut_valley_area = {
+				type = all
+				owned_by = ROOT
+				is_city = yes
+			}
+			massachusetts_bay_area = {
+				type = all
+				owned_by = ROOT
+				is_city = yes
+			}				
+		}
+		effect = {
+			2560 = {
+				change_trade_goods = fur
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
+				add_province_modifier = {
+					name = colonial_dev_modifier
+					duration = 3650
+				}
+			}
+			966 = {
+				change_trade_goods = fur
+				add_base_manpower = 1
+				add_base_production = 1
+				add_base_tax = 1
+				add_province_modifier = {
+					name = colonial_dev_modifier
+					duration = 3650
+				}
+			}	
+			connecticut_valley_area = { add_prosperity = 100}
+			massachusetts_bay_area = { add_prosperity = 100 }
+		}
+	}
+}

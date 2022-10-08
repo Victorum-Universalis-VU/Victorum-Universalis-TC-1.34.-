@@ -242,10 +242,10 @@ USA_republic_dec_modifier = {
 	vassal_forcelimit_bonus = 0.25
 	accept_vassalization_reasons = 20
 }
-#USA_missions_republican_values_modifier = {
-#	diplomatic_reputation = 2
-#	improve_relation_modifier = 0.33
-#}
+USA_missions_republican_values_modifier = {
+	diplomatic_reputation = 2
+	improve_relation_modifier = 0.33
+}
 cont_cong_election = {
 	election_cycle = 15
 }

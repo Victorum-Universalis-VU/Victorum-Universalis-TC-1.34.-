@@ -211,9 +211,7 @@ country_event = { #Thomas Edison
     title = lotf_flavor_event.11.t
     desc = lotf_flavor_event.11.d
     picture = INVENTION_eventPicture
-	trigger = { 
-	    tag = USA #Was mission_completed = USA_missions_great_lakes. Removed by San Felipe 
-	}
+	trigger = { mission_completed = USA_missions_great_lakes }
 	mean_time_to_happen = { months = 12 }
     fire_only_once = yes
     option = {
@@ -230,9 +228,7 @@ country_event = { #Lewis and Clark
     title = lotf_flavor_event.12.t
     desc = lotf_flavor_event.12.d
     picture = EXPLORERS_eventPicture
-	trigger = { 
-	    tag = USA #mission_completed = USA_missions_american_heartland. Removed by San Felipe
-	}
+	trigger = { mission_completed = USA_missions_american_heartland }
 	mean_time_to_happen = { months = 6 }
     fire_only_once = yes
     option = {
@@ -262,10 +258,7 @@ country_event = { #Cotton Gin
     title = lotf_flavor_event.13.t
     desc = lotf_flavor_event.13.d
     picture = INVENTION_eventPicture
-	trigger = { 
-	    tag = USA 
-		#mission_completed = USA_missions_cotton_king #Removed by San Felipe 
-	}
+	trigger = { mission_completed = USA_missions_cotton_king }
 	mean_time_to_happen = { months = 12 }
     fire_only_once = yes
     option = {
@@ -311,8 +304,7 @@ country_event = { #Cotton Price Boost
 	major = yes
 	is_triggered_only = yes
 	trigger = { 
-		tag = USA
-		#mission_completed = USA_missions_cotton_king #Removed by San Felipe
+		mission_completed = USA_missions_cotton_king
 		trading_bonus = { trade_goods = cotton value = yes }
 	}
 

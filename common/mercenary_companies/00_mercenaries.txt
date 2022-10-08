@@ -1977,7 +1977,7 @@ merc_swiss_canton_mercenaries = {
 	sprites = {  dlc103_swi_sprite_pack westerngfx_sprite_pack }
 	trigger = {
 		tag = SWI
-		#mission_completed = emp_swi_mercenaries #Removed by San Felipe
+		mission_completed = emp_swi_mercenaries
 	}
 	cost_modifier = 0.75
 	modifier = {

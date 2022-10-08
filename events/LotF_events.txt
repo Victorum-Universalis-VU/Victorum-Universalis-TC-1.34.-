@@ -223,7 +223,7 @@ country_event = { #CSA Gains Cores SC
 	picture = COUNTRY_COLLAPSE_eventPicture
 	trigger = {
 		tag = USA
-		#mission_completed = USA_missions_abolish_slavery
+		mission_completed = USA_missions_abolish_slavery
 	}
 	mean_time_to_happen = { months = 8 }
     fire_only_once = yes
@@ -715,9 +715,8 @@ country_event = { #Tobacco Price Boost
 	picture = TRADEGOODS_eventPicture
 	major = yes
 	trigger = { 
-		tag = USA
-		#mission_completed = USA_missions_cotton_king
-		#trading_bonus = { trade_goods = tobacco value = yes }
+		mission_completed = USA_missions_cotton_king
+		trading_bonus = { trade_goods = tobacco value = yes }
 		NOT = { has_global_flag = tobacy_boom_event }
 	}
 	mean_time_to_happen = { months = 6 }
