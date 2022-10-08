@@ -1,10 +1,10 @@
 country_decisions = {
 	lotf_navigation_acts_decision = {
 		potential = {
-			#OR = {
-			#    mission_completed = lotf_gb_invest_northern_colonies
-			#    mission_completed = lotf_gb_invest_southern_colonies
-			#}
+			OR = {
+			    mission_completed = lotf_gb_invest_northern_colonies
+			    mission_completed = lotf_gb_invest_southern_colonies
+			}
 			NOT = { has_country_flag = navigations_act_passed }
 		}	
 		provinces_to_highlight = { }
@@ -61,7 +61,7 @@ country_decisions = {
 	
 	lotf_release_canada = {
 		potential = { 
-			#mission_completed = USA_missions_republican_values
+			mission_completed = USA_missions_republican_values
 			NOT = { has_global_flag = released_canada }
 			NOT = { exists = CAN }
 			OR = {
@@ -157,7 +157,7 @@ country_decisions = {
 	}
 	lotf_release_mexico = {
 		potential = { 
-			#mission_completed = USA_missions_republican_values
+			mission_completed = USA_missions_republican_values
 			NOT = { has_global_flag = released_mexico }
 			NOT = { exists = MEX }
 			OR = {
@@ -310,7 +310,7 @@ country_decisions = {
 	}
 	lotf_release_colombia = {
 		potential = { 
-			#mission_completed = USA_missions_republican_values
+			mission_completed = USA_missions_republican_values
 			NOT = { has_global_flag = released_colombia }
 			NOT = { exists = COL }
 			OR = { colonial_colombia = { country_or_non_sovereign_subject_holds = ROOT } }
@@ -347,7 +347,7 @@ country_decisions = {
 	}
 	lotf_release_peru = {
 		potential = { 
-			#mission_completed = USA_missions_republican_values
+			mission_completed = USA_missions_republican_values
 			NOT = { has_global_flag = released_peru }
 			NOT = { exists = PEU }
 			OR = { colonial_peru = { country_or_non_sovereign_subject_holds = ROOT } }
@@ -383,7 +383,7 @@ country_decisions = {
 	}
 	lotf_release_cuba = {
 		potential = { 
-			#mission_completed = USA_missions_republican_values
+			mission_completed = USA_missions_republican_values
 			NOT = { has_global_flag = released_cuba }
 			NOT = { exists = CUB }
 			OR = { colonial_the_carribean = { country_or_non_sovereign_subject_holds = ROOT } }
@@ -420,7 +420,7 @@ country_decisions = {
 	}
 	lotf_USA_republic = {
 		potential = {
-			#mission_completed = USA_missions_stabilize_republic
+			mission_completed = USA_missions_stabilize_republic
 			NOT = { has_country_flag = USA_republic_dec }
 		}	
 		provinces_to_highlight = { }
@@ -437,13 +437,13 @@ country_decisions = {
 	lotf_USA_annex_hawaii = {
 		potential = {
 			tag = USA
-			#mission_completed = USA_missions_american_heartland
+			mission_completed = USA_missions_american_heartland
 			NOT = { has_country_flag = annexed_hawaii }
 		}	
 		provinces_to_highlight = { area = northern_polynesia_area }
 		allow = {
 			is_at_war = no
-			#mission_completed = USA_missions_cross_rockies
+			mission_completed = USA_missions_cross_rockies
 			northern_polynesia_area = {
 				owner = {
 					OR = {
