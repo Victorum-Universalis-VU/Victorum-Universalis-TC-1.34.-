@@ -29,9 +29,15 @@ spriteTypes = {
 
 	spriteType = {
 		name = "gfx_battlemodifiers"
-		texturefile = "gfx//interface//battle_modifiers.tga"
-		noOfFrames = 6
+		texturefile = "gfx//interface//battle_modifiers.dds"
+		noOfFrames = 8
 	}
+	
+	#spriteType = {
+	#	name = "gfx_battlemodifiers"
+	#	texturefile = "gfx//interface//battle_modifiers.tga"
+	#	noOfFrames = 6
+	#}
 
 	spriteType = {
 		name = "gfx_counters"
