@@ -782,14 +782,14 @@ country_event = {
 	
 	
 	trigger = {
-	    OR = {
-			tag = BFR
-		    tag = FRA
-		}
 		OR = {
 			has_country_flag = versailles_flag
 			AND = {
 				NOT = { has_mission = emp_fra_move_court_to_versailles }
+				OR = {
+				    tag = BFR
+					tag = FRA
+				}
 				is_year = 1650
 				NOT = { is_year = 1700 }
 				government = monarchy
@@ -1116,13 +1116,13 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-	    OR = {
-			tag = BFR
-			tag = FRA
-		}
 		OR = {
 			has_country_flag = fra_louis_mission
 			AND = {
+			    OR = {
+				    tag = BFR
+					tag = FRA
+				}
 				is_year = 1700
 				NOT = { is_year = 1750 }
 				colonial_louisiana = {
@@ -1711,14 +1711,14 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-	    OR = {
-			tag = BFR
-			tag = FRA
-		}
 		OR = {
 			has_country_flag = fra_musketeers_mission
 			AND = {
 				NOT = { has_mission = emp_fra_establish_the_musketeers }
+				OR = {
+				    tag = BFR
+					tag = FRA
+				}
 				government = monarchy
 				treasury = 300
 				183 = { # Ile-de-France
@@ -2378,16 +2378,16 @@ country_event = {
 				dynasty = "Bonaparte"
             }
             hidden_effect = {
-                exile_ruler_as = napoleon_in_exile
+				exile_ruler_as = { name = napoleon_in_exile }
             }		
             if = {
                 limit = {
                     exists = ELB 
-						ELB = {
-							is_subject = no
-						}	
+					ELB = {
+						is_subject = no
+					}
                 }
-                ELB = { country_event = { id = flavor_fra.9508 } }
+				ELB = { country_event = { id = flavor_fra.9508 } }
             }
         }
     }
@@ -2589,7 +2589,7 @@ country_event = {
 				dynasty = "Bonaparte"
             }
             hidden_effect = {
-                exile_ruler_as = napoleon_in_exile
+				exile_ruler_as = { name = napoleon_in_exile }
             }		
             if = {
                 limit = {
@@ -2598,9 +2598,7 @@ country_event = {
                         is_subject = no
                     }
                 }
-                NPF = { 
-                    country_event = { id = flavor_fra.9514 } 
-                }
+                NPF = { country_event = { id = flavor_fra.9514 } }
             }
         }
     }
@@ -2772,7 +2770,7 @@ country_event = {
 				dynasty = "de Bourbon"
             }
             hidden_effect = {
-                exile_ruler_as = louis-philippe_in_exile
+				exile_ruler_as = { name = louis-philippe_in_exile }
             }	
 		    OFR = { country_event = { id = flavor_fra.9517 } }
 		}
@@ -2947,7 +2945,7 @@ country_event = {
 		change_tag = FTR
 		if = {
             hidden_effect = {
-                exile_ruler_as = napoleon_iii_in_exile
+				exile_ruler_as = { name = napoleon_iii_in_exile }
             }		
             FTR = { 
                 add_government_reform = french_third_republic_reform

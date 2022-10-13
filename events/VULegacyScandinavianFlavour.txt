@@ -329,7 +329,7 @@ country_event = {
 		1 = {
 			change_controller = DAN
 		}
-		exile_ruler_as = swe_karl_knutsson_contender_pt_II
+		exile_ruler_as = { name = swe_karl_knutsson_contender_pt_II }
 		define_ruler = {
 			name = "Erik Axelsson"
 			dynasty = "Tott"
@@ -356,6 +356,8 @@ country_event = {
 	fire_only_once = yes
 
 	is_triggered_only = yes
+	
+	mean_time_to_happen = { days = 1 }
 	
 	trigger = {
 		tag = SWE
