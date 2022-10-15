@@ -3,7 +3,7 @@
 owner = TEU
 controller = TEU
 add_core = TEU
-culture = prussian
+culture = pruthenian #Was latvian but changed due to morsmessor's advice.
 religion = catholic
 capital = "Bartenstein"
 base_tax = 3 

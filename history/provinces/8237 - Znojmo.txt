@@ -9,7 +9,7 @@ owner = BOH
 controller = BOH
 
 #Demographics
-culture = czech
+culture = moravian #Was czech but changed by San Felipe on the advice of Morsmessor
 religion = catholic
 
 #Development and Trade

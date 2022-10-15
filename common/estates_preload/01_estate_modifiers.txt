@@ -58,12 +58,12 @@ estate_peasants = {
 			always = yes
 		}
 	}
-	#modifier_definition = { #VU - Comented out for now by San Felipe
-	#	key = plantage_goods_produced_modifier
-	#	trigger = {
-	#		always = yes
-	#	}
-	#}
+	modifier_definition = {
+		key = plantage_goods_produced_modifier
+		trigger = {
+			always = yes
+		}
+	}
 	modifier_definition = {
 		key = primary_development_cost
 		trigger = {
@@ -88,12 +88,12 @@ estate_peasants = {
 			always = yes
 		}
 	}
-	#modifier_definition = { #VU - Comented out for now by San Felipe
-	#	key = trade_deals_slots
-	#	trigger = {
-	#		always = yes
-	#	}
-	#}
+	modifier_definition = { #VU - Comented out for now by San Felipe
+		key = trade_deals_slots
+		trigger = {
+			always = yes
+		}
+	}
 }
 estate_ghulams = {
 	modifier_definition = {

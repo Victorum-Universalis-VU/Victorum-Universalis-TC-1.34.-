@@ -6156,7 +6156,10 @@ on_remove_pasha = {
 
 	area = {
 		limit = { owned_by = event_target:province_owner }
-		add_or_extend_province_modifier_effect = { MODIFIER = pasha_removed_modifier DURATION = 3650 }
+		add_or_extend_province_modifier_effect = { 
+		    MODIFIER = pasha_removed_modifier 
+		    DURATION = 3650 
+		}
 	}
 }
 
