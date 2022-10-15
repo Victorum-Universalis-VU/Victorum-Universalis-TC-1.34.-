@@ -12070,7 +12070,7 @@ bran_castle = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_missionary_strength = 0.15
+			global_missionary_strength = 0.015
 			defensiveness = 0.10
 		}
 
@@ -12100,7 +12100,7 @@ bran_castle = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_missionary_strength = 0.175
+			global_missionary_strength = 0.0175
 			defensiveness = 0.20
 		}
 
@@ -12130,7 +12130,7 @@ bran_castle = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_missionary_strength = 0.2
+			global_missionary_strength = 0.02
 			defensiveness = 0.30
 			army_tradition = 1
 		}

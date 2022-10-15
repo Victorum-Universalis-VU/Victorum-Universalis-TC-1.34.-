@@ -1,11 +1,11 @@
-#3228 - Valmiera	(using the old BtP file)
+#3228 - Valmiera
 #Region - Baltic
 #Area - Livonia
 
 owner = RIG
 controller = RIG
 add_core = RIG
-culture = estonian
+culture = livonian #Was estonian but changed by San Felipe on advice of Morsmessor
 religion = catholic
 capital = "Limbazi"
 trade_goods = amber

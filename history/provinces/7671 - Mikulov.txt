@@ -5,7 +5,7 @@
 owner = BOH
 controller = BOH
 capital = "Mikulov"
-culture = czech
+culture = moravian #Was czech but changed by San Felipe on the advice of Morsmessor
 religion = catholic
 trade_goods = beer
 hre = yes

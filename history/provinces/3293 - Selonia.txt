@@ -5,7 +5,7 @@
 owner = LIV
 controller = LIV
 add_core = LIV
-culture = latvian
+culture = selonian #Was latvian but changed by San Felipe on advice of Morsmessor
 religion = catholic
 hre = no
 base_tax = 2 

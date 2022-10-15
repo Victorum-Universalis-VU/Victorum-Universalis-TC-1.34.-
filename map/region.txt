@@ -26,6 +26,7 @@ bohemia_region = {
 	    moravia_area
 	    prague_area
 	    bohemian_forest_area
+		pradubice_area
 	}
 }
 

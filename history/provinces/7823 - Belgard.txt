@@ -3,7 +3,7 @@
 owner = POM
 controller = POM
 add_core = POM
-culture = pommeranian
+culture = kashubian_culture #Was pommeranian but changed by San Felipe on advice of Morsmessor
 religion = catholic
 capital = "Belgard"
 base_tax = 2 

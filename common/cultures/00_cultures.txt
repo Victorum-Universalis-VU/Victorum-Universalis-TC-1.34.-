@@ -3078,6 +3078,20 @@ finno_ugric = { #Ugric
 			Õnnela Ülle
 		}
 	}
+	livonian = {
+		male_names = {
+			Alo Asso Caupo Dabrel Gerweder Ilmedous Ilo Imme Kike Kovals Layanus Lembewalde Musts Paimis Peite Piške Sula Uldenago Usis Valke Vesiki Vietso Waldeko Ylo Ymaut 
+			Vandemeel Hüvatõiv Otelemb Hõimulemb Ilmar Aul Vilitõiv Arp Alar Niglas Arvo Manivald Heameel Kiurupelg Ohevald Arvet Kahrulemb Ilmalemb Uku Kahus Olev Kalev Toivo 
+			Vesse Alur Kaugemeel Pärt Aulemb Ahvo Hoovatõiv Kaalep
+		}
+		female_names = {
+			Elmede Use Valata Vasara Hiie Heli Killu Aita Helve Maija Kalli Ülane Ilme Tiiu Are Ilmi Linda Leili Päivi Kare Ülle
+		}
+		dynasty_names = {
+			"Karasi" "Ingrija" "Saaremaa" "Revala" "Virumaa" "Läänemaa" "Vaiga" "Ingeri" "Ingeri" "Livo" "Harjumaa" "Virumaa" 
+			"Ridala" "Saaremaa" "Vaiga" "Turaida" Hiiumaai Lembi Saaremaai Kuressaaru "kohta Soontagana" "kohta Järva" "kohta Pudiviru"
+		}
+	}
 	dynasty_names = {
 		# CKII - Lappish
 		Ubmeje Nuoráne Gájka Kaise Saiva Keite Sapmi Magga Guoládat
@@ -3365,6 +3379,42 @@ west_slavic = {
 		Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
 		Poniatowski Radziwill Zamoyski Potocki Lubomirski 
 		Premyslovci Podebrad 
+		# CKII
+		"Jankovský z Vla?imi" Chotek Lichnowsky
+		Kounic Vítkovec Zerotín Czernín "von Harrach"
+	}
+	male_names = {
+		# BOHEMIAN 
+		Albert Albert Albrecht Albert Ales Alexander Arnost Ernest Bavor Bedrich Frederick Benes 
+		Bocek Bohuslav Boguslaw Boleslav Boleslav Bores Borijov Borijov Bretislav Bretislaus Budivoj 
+		Castolov Cenek Vincent Chval Ctirad Diepold
+		Detrich Thierry Drslav Gerhard Hanus John Havel Gallus Heralt Herman Herman Hrabis Hynek Henry 
+		John Jaromír Jaromir Jaroslav Jaroslav Jesek Jindrich Henry Jirík George Karel Charles Kojata 
+		Konrád Konrad Kuník Litold
+		Markvart Matous Matthew Mikulás Nicholas Milic Mojmír Ojír Oldrich Ulrich Ondrej Andrew Ota 
+		Otakar Pelhrim Petr Peter Premysl Premysl Prokop Procopius Rajmund Raymond Rostislav Sezima 
+		Slavomír Smil Sobieslav Sobeslaus Spytihnev Strachkvas Svatobor Svatopluk Svatopluk Tobiás 
+		Václav Slavibor Otto Jan Benedict
+		Vaclav Viktorín Vítek Guy Vanek Vilém William Vladimír Vladimir Vladislav Vladislav Vojtech 
+		Vratislav Vratislav Vsebor Vsebor Závis Zbynek Zbynek Zdík Zdirad Zikmund Sigmund Albert
+	}
+	female_names = {
+		# BOHEMIAN 
+		Adléta Anezka Anna Anna Barbora Bedriska Blazena Bohuslava Boleslava Bozena Bozislava 
+		Dobromila Dobroslava Domaslava Dorota Dorothy Bretislava
+		Doubravka Drahomíra Drahoslava Eliska Eufemie Euphemia Gertruda Gertrude Guta Hedvika Helena 
+		Jana Jaroslava Jitka Johanka Judita Judith Justina Katerina Catherine
+		Klára Clara Konstancie Constance Kristyna Christina Kunhuta Libuse Ludmila Marie Maria Markéta 
+		Mlada Olga Perchta Pribyslava Richeza Skonka Stanislava Svatava Helen
+ 		Vilemína Viola Yolanda Vladislava Vojslava Zdislava Zdenka Zofie Sophia
+	}
+	moravian = {
+		graphical_culture = westerngfx
+	}
+	dynasty_names = {
+		Gryf Piast Jagiellon Wisniowiecki Sobieski Leszczynski 
+		Poniatowski Radziwill Zamoyski Potocki Lubomirski 
+		Premyslovci Podebrad Mojmirid
 		# CKII
 		"Jankovský z Vla?imi" Chotek Lichnowsky
 		Kounic Vítkovec Zerotín Czernín "von Harrach"
@@ -3705,7 +3755,7 @@ baltic	= {
 	}
 	#Moved from lost cultures
 	pruthenian = {
-            graphical_culture = westerngfx
+        graphical_culture = westerngfx
 		male_names = {
 		Algirdas Antanas Antavas Aras Arunas Azuolas Budrys Bukantas Butavas Butigeidis Butvydas 
 		Daugvilas Daumantas Dausprungas Dravenis Erdenis Erdvilas Gedigaudas
@@ -3733,7 +3783,7 @@ baltic	= {
 	}
 	#BtPLegacy Culture
 	yotvingian_culture = {
-            graphical_culture = westerngfx
+        graphical_culture = westerngfx
 		male_names = {
 			Zygimantas Kazimieras Aleksandras Jonas Albertas Zygimantas Augustas Vytautas Jogaila Vladislovas 
 			Algirdas Stanislovas Svitrigaila Mindaugas Albertas Andrius Antanas Aras Arturas Azuolas 
@@ -3774,6 +3824,73 @@ baltic	= {
 		# Ugric Baltic
 		Karasi Ingrija Saaremaa Revala Virumaa Läänemaa Vaiga Ingeri Ingeri Livo Harjumaa Virumaa 
 		Ridala Saaremaa Vaiga Turaida
+	}
+	sklavian = {
+        graphical_culture = westerngfx
+		male_names = {
+		Gerdautas Budo Glande Ulitis Ulinniks Prusas Galindas Karatas Ekkelis Milzas Kugis Jauguttis Auctune 
+		Dagonis Klukis Nomedas Gauronas Beidras Golding Bajoras Alvydas Sergonis
+		}
+		female_names = {
+			Gulbis Ziedas Dagas Gerkus Weslikan Milyuns Grasus Betten Gelennis Mila
+		}
+		dynasty_names = {
+			Penikis Tontegode Grobin Kurs Goštautas Priegliusas Kuilis Pregolyas Kalabijjan Dravantas
+		}
+	}
+	curonian = {
+        graphical_culture = westerngfx
+		male_names = {
+		Gerdautas Budo Glande Ulitis Ulinniks Prusas Galindas Karatas Ekkelis Milzas Kugis Jauguttis Auctune 
+		Dagonis Klukis Nomedas Gauronas Beidras Golding Bajoras Alvydas Sergonis
+		}
+		female_names = {
+			Gulbis Ziedas Dagas Gerkus Weslikan Milyuns Grasus Betten Gelennis Mila
+		}
+		dynasty_names = {
+			Penikis Tontegode Grobin Kurs Goštautas Priegliusas Kuilis Pregolyas Kalabijjan Dravantas
+		}
+	}
+	zemgalian = {
+        graphical_culture = westerngfx
+		male_names = {
+		Ekkelis Giemund Janis Vykantas Cirulis Ako Karijotas Golovke Jaunule Stegut Vaishvilkas Balodis Mendune 
+		Treniota Elmede Gunvald Manvydas Erdzivil Meinekinus Scurdo Yudki Shutr Lammekinus Imanta
+		}
+		female_names = {
+			Savna Gundega Agita Balba Viba Kordula Dardedze Brita Rasa Marite Ieva Daira Greze Dose Liga Galene
+		}
+		dynasty_names = {
+			Alnas Seli "gada Tervete" "gada Juras" "gada Sela" "gada Zagare"
+		}
+	}
+	selonian = {
+        graphical_culture = westerngfx
+		male_names = {
+		Sprudeik Erasts Lonkogveni Kaire Kage Karijotas Rushky Bikshe Manvydas Kuliens Scurdo Steikint Ringaudas 
+		Vishly Narvait Dangeruthe Likiik Ankad Aishno Pliksov Yudki Litto Shutr Lammekinus Gerden Vykantas Galeine 
+		Bulei
+		}
+		female_names = {
+			Bitens Dardedze Naula Dose Liga Darate Rasa Gunda Agita Maija Kordula Greze Savna
+		}
+		dynasty_names = {
+			"gada Aiviekstas" "gada Selija" "gada Silene" "gada Duobele" "gada Keklys"
+		}
+	}
+	latgalian = {
+        graphical_culture = westerngfx
+		male_names = {
+		Kaupo Pukuveras Lonkogveni Ringaudas Dzintis Jedetus Karijotas Sviendorog Steikint Valikaila Dausprungas Butovit 
+		Gastile Gerden Golovke Rusins Nameisis Sabe Pukiik Vishikut Ako Erdzivil Litto Kodere Viesturs Stegut Cirulis 
+		Gastile Dangeruthe Pliksov Talivaldis Meinekinus Sargun
+		}
+		female_names = {
+			Ausala Kordula Daira Darate Gunda Galene Dose Maija Naula Liga Ruta Greze Savna Bitens Zigne
+		}
+		dynasty_names = {
+			Ugandi Gediminai Gostautas Astikas Kesgaila Giedraiciai Pac Plater Tyzenhaus
+		}
 	}
 }
 
@@ -12767,18 +12884,6 @@ lost_cultures_group = {
 		dynasty_names = {
 			Áslaugsson Ástridharson Ásvaldsson Eindridhesson Eiríksson Gormsson Hákonarson Haraldsson Lothbrok Munsö Ragnarsson Sigurdharson Skjöldung Snorrason Thórgilsson Thórsteinsson Thórvaldsson Tryggvason Völsung 
 			Waegmunding Ylfing Yngling
-		}
-	}
-	livonian = {
-		male_names = {
-			Alo Asso Caupo Dabrel Gerweder Ilmedous Ilo Imme Kike Kovals Layanus Lembewalde Musts Paimis Peite Piške Sula Uldenago Usis Valke Vesiki Vietso Waldeko Ylo Ymaut
-		}
-		female_names = {
-			Elmede Use Valata Vasara
-		}
-		dynasty_names = {
-			"Karasi" "Ingrija" "Saaremaa" "Revala" "Virumaa" "Läänemaa" "Vaiga" "Ingeri" "Ingeri" "Livo" "Harjumaa" "Virumaa" 
-			"Ridala" "Saaremaa" "Vaiga" "Turaida"
 		}
 	}
 }
