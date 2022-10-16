@@ -3,7 +3,7 @@
 owner = SGA
 controller = SGA
 add_core = SGA
-culture = prussian
+culture = pruthenian #Was latvian but changed due to morsmessor's advice.
 religion = catholic
 capital = "Neuhausen"
 base_tax = 2

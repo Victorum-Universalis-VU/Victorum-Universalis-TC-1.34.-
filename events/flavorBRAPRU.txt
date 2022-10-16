@@ -620,61 +620,101 @@ country_event = {
 	}
 }
 
+#The fate of Neumark #Commenting this out for now by San Felipe
+#country_event = {
+#	id = flavor_brapru.16
+#	title = "flavor_brapru.16.t"
+#	desc = "flavor_brapru.16.d"
+#	picture = DIPLOMACY_eventPicture
+#
+#	fire_only_once = yes
+#
+#	is_triggered_only = yes
+#
+#	option = {
+#		name = "flavor_brapru.16.a" #We need the money.
+#		ai_chance = { factor = 100 }
+#		tooltip = {
+#			49 = {
+#				if = {
+#					limit = {
+#						owned_by = TEU
+#						controlled_by = TEU
+#					}
+#					cede_province = BRA
+#					add_core = BRA
+#					remove_core = TEU
+#				}
+#			}
+#			4747 = {
+#				if = {
+#					limit = {
+#						owned_by = TEU
+#						controlled_by = TEU
+#					}
+#					cede_province = BRA
+#					add_core = BRA
+#					remove_core = TEU
+#				}
+#			}
+#		}
+#		add_treasury = 100
+#		FROM = {
+#			country_event = { id = flavor_brapru.17 }
+#			add_opinion = {
+#				who = ROOT
+#				modifier = pawning_of_neumark
+#			}
+#		}
+#	}
+#	option = {
+#		name = "flavor_brapru.16.b" #Neumark shall remain ours!
+#		ai_chance = { factor = 0 }
+#		custom_tooltip = flavor_brapru.16.b.tt
+#		FROM = {
+#			country_event = { id = flavor_brapru.18 }
+#		}
+#	}
+#}
+
+#Taken from VU 1.33 by San Felipe
 #The fate of Neumark
 country_event = {
-	id = flavor_brapru.16
-	title = "flavor_brapru.16.t"
-	desc = "flavor_brapru.16.d"
-	picture = DIPLOMACY_eventPicture
+    id = flavor_brapru.16
+    title = "flavor_brapru.16.t"
+    desc = "flavor_brapru.16.d"
+    picture = DIPLOMACY_eventPicture
 
-	fire_only_once = yes
+    fire_only_once = yes
 
-	is_triggered_only = yes
+    is_triggered_only = yes
 
-	option = {
-		name = "flavor_brapru.16.a" #We need the money.
-		ai_chance = { factor = 100 }
-		tooltip = {
-			49 = {
-				if = {
-					limit = {
-						owned_by = TEU
-						controlled_by = TEU
-					}
-					cede_province = BRA
-					add_core = BRA
-					remove_core = TEU
-				}
-			}
-			4747 = {
-				if = {
-					limit = {
-						owned_by = TEU
-						controlled_by = TEU
-					}
-					cede_province = BRA
-					add_core = BRA
-					remove_core = TEU
-				}
-			}
-		}
-		add_treasury = 100
-		FROM = {
-			country_event = { id = flavor_brapru.17 }
-			add_opinion = {
-				who = ROOT
-				modifier = pawning_of_neumark
-			}
-		}
-	}
-	option = {
-		name = "flavor_brapru.16.b" #Neumark shall remain ours!
-		ai_chance = { factor = 0 }
-		custom_tooltip = flavor_brapru.16.b.tt
-		FROM = {
-			country_event = { id = flavor_brapru.18 }
-		}
-	}
+    option = {
+        name = "flavor_brapru.16.a" #We need the money.
+        ai_chance = { factor = 100 }
+        tooltip = {
+            neumark_area = {
+                limit = { owner = { tag = TEU } }
+                cede_province = BRA
+            }
+        }
+        add_treasury = 100
+        FROM = {
+            country_event = { id = flavor_brapru.17 }
+            add_opinion = {
+                who = ROOT
+                modifier = pawning_of_neumark
+            }
+        }
+    }
+    option = {
+        name = "flavor_brapru.16.b" #Neumark shall remain ours!
+        ai_chance = { factor = 0 }
+        custom_tooltip = flavor_brapru.16.b.tt
+        FROM = {
+            country_event = { id = flavor_brapru.18 }
+        }
+    }
 }
 
 #Treaty of Cölln

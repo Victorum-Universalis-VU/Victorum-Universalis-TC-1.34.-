@@ -1,9 +1,9 @@
-#BT Scandinavia and Baltics reoverhaul
+#8733 - Pyritz
 
 owner = POM
 controller = POM
 add_core = POM
-culture = pommeranian
+culture = kashubian_culture #Was pommeranian but changed by San Felipe on advice of Morsmessor
 religion = catholic
 capital = "Pyritz"
 base_tax = 1

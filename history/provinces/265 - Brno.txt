@@ -6,7 +6,7 @@
 owner = BOH
 controller = BOH
 capital = "Brno"
-culture = czech
+culture = moravian #Was czech but changed by San Felipe on the advice of Morsmessor
 religion = catholic
 trade_goods = wine
 hre = yes

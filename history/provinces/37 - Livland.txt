@@ -5,7 +5,7 @@
 owner = RIG
 controller = RIG
 add_core = RIG
-culture = latvian
+culture = latgalian #Was latvian but changed by San Felipe on advice of Morsmessor
 religion = baltic_pagan_reformed	# Livonian tribes were still present
 capital = "Jekabpils"			#DE Kreuzburg
 trade_goods = lumber
