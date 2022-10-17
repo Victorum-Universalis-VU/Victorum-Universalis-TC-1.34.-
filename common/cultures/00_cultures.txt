@@ -13751,7 +13751,7 @@ turkish_g = {
 		}
 	}
 	turkmeni = {
-            graphical_culture = persiangfx
+        graphical_culture = persiangfx
 		primary = KHI
 		dynasty_names = {
 			Arabshahid Qungrat "Bayan Arslan" "Mongke Cheren" "Mongke Bayar" "Suren Chinua" "Oyugun Nasan"
@@ -13772,7 +13772,7 @@ turkish_g = {
 		}
 	}
 	azerbaijani = {
-            graphical_culture = turkishgfx
+        graphical_culture = turkishgfx
 		primary = ARL
 		dynasty_names = {
 			"Qara Qoyunlu" "Aq Qoyunlu" Safavid Shirvanshah Javanshir Chupanid Ziyadoghlu Chalabi
@@ -13793,7 +13793,7 @@ egyptian_group = {
 	graphical_culture = muslimgfx
 
 	coptic_culture = {
-            graphical_culture = muslimgfx
+        graphical_culture = muslimgfx
 		primary = KEM
 		dynasty_names = {
 			Thinis Memphis Abydos Herakleopolis Thebes Itjtawy Avaris Bubastis Sais

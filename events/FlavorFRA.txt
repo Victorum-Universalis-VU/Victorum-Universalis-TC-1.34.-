@@ -2629,11 +2629,16 @@ country_event = {
 		    }
 			UNK = { set_ruler = napoleon_in_exile }
 		}
-		else = {
+		else_if = {
 		    limit = {
 			    exists = ENG
 			}
 			ENG = { set_ruler = napoleon_in_exile }
+		}
+		else = { #Napoleon is executed turning him into a martyr by San Felipe
+			kill_ruler = yes
+			add_nationalism = 50
+			add_unrest = 50
 		}
 		BFR = { 
 		    set_ruler = louis_xviii
@@ -2715,7 +2720,7 @@ country_event = {
 		random_owned_province = {
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 8
+				size = 6
 				leader = "Legitimist"
 			}
 		}

@@ -1433,7 +1433,6 @@ tribal = {
 				shaka_regime
 				matrilineal_system
 				feudal_tribe
-				great_man
 				#End of EU4 Leviathan Dlc additions
 				#GE
 				eghaevbo_administration_reform
