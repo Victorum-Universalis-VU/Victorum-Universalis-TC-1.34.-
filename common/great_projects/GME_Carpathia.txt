@@ -137,7 +137,7 @@ gme_eszterhaza = {
 	}
 }
 gme_reformatus_nagytemplom = {
-	start = 135
+	start = 8218
 	date = 1.01.01
 	time = { months = 120 }
 	build_cost = 1000
