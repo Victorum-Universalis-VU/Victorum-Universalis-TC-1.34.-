@@ -185,6 +185,7 @@ province_event = {
 			OR = {
 				NOT = { primary_culture = scottish }
 				tag = GBR
+				tag = UNK
 			}
 			is_at_war = no
 		}
@@ -202,6 +203,17 @@ province_event = {
 				NOT = {
 					owner = {
 						tag = GBR
+						primary_culture = scottish
+					}
+				}
+			}
+			add_core = SCO
+		}
+		if = {
+			limit = {
+				NOT = {
+					owner = {
+						tag = UNK
 						primary_culture = scottish
 					}
 				}

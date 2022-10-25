@@ -143,6 +143,7 @@
 				is_playing_custom_nation = yes
 				religion = protestant
 				religion = reformed
+				religion = hussite
 			}
 		}
 		valid_for_nation_designer = yes
@@ -7464,7 +7465,8 @@
 						junior_union_with = ROOT
 					}
 				}
-				tag = GBR	
+				tag = GBR
+				tag = UNK
 			}
 		}
 		modifiers = {
@@ -9422,12 +9424,14 @@
 		potential = {
 			OR = {
 				tag = GBR
+				tag = UNK
 				has_reform = redcoats_reform
 			}
 		}
 		trigger = {
 			OR = {
 				tag = GBR
+				tag = UNK
 				has_reform = redcoats_reform
 			}
 		}

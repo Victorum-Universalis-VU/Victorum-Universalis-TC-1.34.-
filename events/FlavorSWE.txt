@@ -1391,15 +1391,25 @@ country_event = {
 				was_tag = SWE
 				NOT = { exists = SWE }
 				tag = SCA
-			}		
+			}
+			war_with = RUS
+			war_with = TZR
 		}
 		is_free_or_tributary_trigger = yes
-		war_with = RUS
 		NOT = { exists = FIN }
 		any_owned_province = {
 			is_core = FIN
 		}
 		RUS = {
+			any_owned_province = {
+				OR = {
+					is_core = SCA
+					is_core = SWE
+				}
+			}
+		}
+		num_of_generals = 1
+		TZR = {
 			any_owned_province = {
 				OR = {
 					is_core = SCA
@@ -2020,8 +2030,11 @@ country_event = {
 		has_country_modifier = age_of_fredom
 		is_year = 1738
 		NOT = { is_year = 1739 }
-		exists = FRA
-		exists = RUS
+		OR = {
+		    exists = FRA
+			exists = BFR
+		    exists = RUS
+		}
 	}
 
 	mean_time_to_happen = {
@@ -2033,18 +2046,39 @@ country_event = {
 		name = "flavor_swe.EVTOPTA3254"
 		clr_country_flag = swedish_caps
 		set_country_flag = swedish_hats
-		FRA = { 
-			add_opinion = {
-				who = ROOT
-				modifier = swedish_hats
+		if = {
+		    limit = {
+			    exists = FRA
 			}
+		    FRA = { 
+		    	add_opinion = {
+		    		who = ROOT
+		    		modifier = swedish_hats
+		    	}
+		    }
 		}
-		RUS = {
-			add_casus_belli = {
-				target = ROOT
-				type = cb_insult
-				months = 36
+		if = {
+		    limit = {
+			    exists = BFR
 			}
+		    BFR = { 
+		    	add_opinion = {
+		    		who = ROOT
+		    		modifier = swedish_hats
+		    	}
+		    }
+		}
+		if = {
+		    limit = {
+			    exists = RUS
+			}
+		    RUS = {
+			    add_casus_belli = {
+				    target = ROOT
+				    type = cb_insult
+				    months = 36
+			    }
+		    }
 		}
 		add_dip_power = 100
 	}
@@ -2052,18 +2086,40 @@ country_event = {
 		name = "flavor_swe.EVTOPTB3254"
 		clr_country_flag = swedish_hats
 		set_country_flag = swedish_caps
-		RUS = { 
-			add_opinion = {
-				who = ROOT
-				modifier = swedish_caps
+		if = {
+		    limit = {
+			    exists = RUS
 			}
+		    RUS = { 
+			    add_opinion = {
+				    who = ROOT
+				    modifier = swedish_caps
+			    }
+		    }
 		}
-		FRA = {
-			add_casus_belli = {
-				target = ROOT
-				type = cb_insult
-				months = 36
+		if = {
+		    limit = {
+			    exists = FRA
 			}
+		    FRA = {
+			    add_casus_belli = {
+			    	target = ROOT
+			    	type = cb_insult
+			    	months = 36
+			    }
+		    }
+		}
+		if = {
+		    limit = {
+			    exists = FRA
+			}
+		    BFR = {
+			    add_casus_belli = {
+			    	target = ROOT
+			    	type = cb_insult
+			    	months = 36
+			    }
+		    }
 		}
 		add_mil_power = 100
 	}
@@ -2090,8 +2146,11 @@ country_event = {
 		has_country_modifier = age_of_fredom
 		is_year = 1746
 		NOT = { is_year = 1747 }
-		exists = FRA
-		exists = RUS
+		OR = {
+		    exists = FRA
+			exists = BFR
+		    exists = RUS
+		}
 	}
 
 	mean_time_to_happen = {
@@ -2104,18 +2163,39 @@ country_event = {
 		name = "flavor_swe.EVTOPTA3255"
 		clr_country_flag = swedish_caps
 		set_country_flag = swedish_hats
-		FRA = { 
-			add_opinion = {
-				who = ROOT
-				modifier = swedish_hats
+		if = {
+		    limit = {
+			    exists = FRA
 			}
+		    FRA = { 
+		    	add_opinion = {
+		    		who = ROOT
+		    		modifier = swedish_hats
+		    	}
+		    }
 		}
-		RUS = {
-			add_casus_belli = {
-				target = ROOT
-				type = cb_insult
-				months = 36
+		if = {
+		    limit = {
+			    exists = BFR
 			}
+		    BFR = { 
+		    	add_opinion = {
+		    		who = ROOT
+		    		modifier = swedish_hats
+		    	}
+		    }
+		}
+		if = {
+		    limit = {
+			    exists = RUS
+			}
+		    RUS = {
+		    	add_casus_belli = {
+		    		target = ROOT
+		    		type = cb_insult
+		    		months = 36
+		    	}
+		    }
 		}
 		add_dip_power = 100
 	}
@@ -2123,18 +2203,40 @@ country_event = {
 		name = "flavor_swe.EVTOPTB3255"
 		clr_country_flag = swedish_hats
 		set_country_flag = swedish_caps
-		RUS = { 
-			add_opinion = {
-				who = ROOT
-				modifier = swedish_caps
+		if = {
+		    limit = {
+			    exists = RUS
 			}
+		    RUS = { 
+			    add_opinion = {
+			    	who = ROOT
+			    	modifier = swedish_caps
+			    }
+		    }
 		}
-		FRA = {
-			add_casus_belli = {
-				target = ROOT
-				type = cb_insult
-				months = 36
+		if = {
+		    limit = {
+			    exists = FRA
 			}
+		    FRA = {
+			    add_casus_belli = {
+			    	target = ROOT
+			    	type = cb_insult
+			    	months = 36
+			    }
+		    }
+		}
+		if = {
+		    limit = {
+			    exists = BFR
+			}
+		    BFR = {
+			    add_casus_belli = {
+			    	target = ROOT
+			    	type = cb_insult
+			    	months = 36
+			    }
+		    }
 		}
 		add_mil_power = 100
 	}
@@ -2193,8 +2295,11 @@ country_event = {
 		has_country_modifier = age_of_fredom
 		is_year = 1760
 		NOT = { is_year = 1761 }
-		exists = FRA
-		exists = RUS
+		OR = {
+		    exists = FRA
+			exists = BFR
+		    exists = RUS
+		}
 	}
 
 	mean_time_to_happen = {
@@ -2205,18 +2310,39 @@ country_event = {
 		name = "flavor_swe.EVTOPTA3257"
 		clr_country_flag = swedish_caps
 		set_country_flag = swedish_hats
-		FRA = { 
-			add_opinion = {
-				who = ROOT
-				modifier = swedish_hats
+		if = {
+		    limit = {
+			    exists = FRA
 			}
+		    FRA = { 
+			    add_opinion = {
+			    	who = ROOT
+			    	modifier = swedish_hats
+			    }
+		    }
 		}
-		RUS = {
-			add_casus_belli = {
-				target = ROOT
-				type = cb_insult
-				months = 36
+		if = {
+		    limit = {
+			    exists = BFR
 			}
+		    BFR = { 
+			    add_opinion = {
+			    	who = ROOT
+			    	modifier = swedish_hats
+			    }
+		    }
+		}
+		if = {
+		    limit = {
+			    exists = RUS
+			}
+		    RUS = {
+			    add_casus_belli = {
+			    	target = ROOT
+			    	type = cb_insult
+			    	months = 36
+			    }
+		    }
 		}
 		add_dip_power = 100
 	}
@@ -2224,18 +2350,40 @@ country_event = {
 		name = "flavor_swe.EVTOPTB3257"
 		clr_country_flag = swedish_hats
 		set_country_flag = swedish_caps
-		RUS = { 
-			add_opinion = {
-				who = ROOT
-				modifier = swedish_caps
+		if = {
+		    limit = {
+			    exists = RUS
 			}
+		    RUS = {
+			    add_opinion = {
+			    	who = ROOT
+					modifier = swedish_caps
+			    }
+		    }
 		}
-		FRA = {
-			add_casus_belli = {
-				target = ROOT
-				type = cb_insult
-				months = 36
+		if = {
+		    limit = {
+			    exists = FRA
 			}
+		    FRA = { 
+			    add_casus_belli = {
+			    	target = ROOT
+					type = cb_insult
+					months = 36
+			    }
+		    }
+		}
+		if = {
+		    limit = {
+			    exists = BFR
+			}
+		    BFR = { 
+			    add_casus_belli = {
+			    	target = ROOT
+					type = cb_insult
+					months = 36
+			    }
+		    }
 		}
 		add_mil_power = 100
 	}
@@ -2262,8 +2410,11 @@ country_event = {
 		has_country_modifier = age_of_fredom
 		is_year = 1765
 		NOT = { is_year = 1766 }
-		exists = FRA
-		exists = RUS
+		OR = {
+		    exists = FRA
+			exists = BFR
+		    exists = RUS
+		}
 	}
 
 	mean_time_to_happen = {
@@ -2273,18 +2424,39 @@ country_event = {
 		name = "flavor_swe.EVTOPTB3258"
 		clr_country_flag = swedish_caps
 		set_country_flag = swedish_hats
-		FRA = { 
-			add_opinion = {
-				who = ROOT
-				modifier = swedish_hats
+		if = {
+		    limit = {
+			    exists = FRA
 			}
+		    FRA = { 
+		    	add_opinion = {
+		    		who = ROOT
+		    		modifier = swedish_hats
+		    	}
+		    }
 		}
-		RUS = {
-			add_casus_belli = {
-				target = ROOT
-				type = cb_insult
-				months = 36
+		if = {
+		    limit = {
+			    exists = BFR
 			}
+		    BFR = { 
+		    	add_opinion = {
+		    		who = ROOT
+		    		modifier = swedish_hats
+		    	}
+		    }
+		}
+		if = {
+		    limit = {
+			    exists = RUS
+			}
+		    RUS = {
+		    	add_casus_belli = {
+		    		target = ROOT
+		    		type = cb_insult
+		    		months = 36
+		    	}
+		    }
 		}
 		add_dip_power = 100
 	}
@@ -2292,18 +2464,40 @@ country_event = {
 		name = "flavor_swe.EVTOPTA3258"
 		clr_country_flag = swedish_hats
 		set_country_flag = swedish_caps
-		RUS = { 
-			add_opinion = {
-				who = ROOT
-				modifier = swedish_caps
+		if = {
+		    limit = {
+			    exists = RUS
 			}
+		    RUS = { 
+		    	add_opinion = {
+		    		who = ROOT
+		    		modifier = swedish_caps
+		    	}
+		    }
 		}
-		FRA = {
-			add_casus_belli = {
-				target = ROOT
-				type = cb_insult
-				months = 36
+		if = {
+		    limit = {
+			    exists = FRA
 			}
+		    FRA = {
+		    	add_casus_belli = {
+		    		target = ROOT
+		    		type = cb_insult
+		    		months = 36
+		    	}
+		    }
+		}
+		if = {
+		    limit = {
+			    exists = BFR
+			}
+		    BFR = {
+		    	add_casus_belli = {
+		    		target = ROOT
+		    		type = cb_insult
+		    		months = 36
+		    	}
+		    }
 		}
 		add_mil_power = 100
 	}

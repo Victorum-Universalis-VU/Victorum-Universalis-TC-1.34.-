@@ -327,6 +327,7 @@ country_event = {
 		tag = BNG
 		OR = {
 			exists = GBR
+			exists = UNK
 			exists = ENG
 		}
 		is_year = 1640 #Around the time the English started to try to get an Imperial Farman to establish themselves in Bengal.
@@ -335,6 +336,7 @@ country_event = {
 			region = bengal_region
 			OR = {
 				has_discovered = GBR
+				has_discovered = UNK
 				has_discovered = ENG
 			}
 		}
@@ -361,6 +363,7 @@ country_event = {
 			limit = {
 				OR = {
 					tag = GBR
+					tag = UNK
 					tag = ENG
 				}
 			}
@@ -407,6 +410,7 @@ country_event = {
 				exists = yes
 				OR = {
 					tag = GBR
+					tag = UNK
 					tag = ENG
 				}
 			}
@@ -431,6 +435,7 @@ country_event = {
 				exists = yes
 				OR = {
 					tag = GBR
+					tag = UNK
 					tag = ENG
 				}
 			}

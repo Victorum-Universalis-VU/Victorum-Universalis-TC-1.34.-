@@ -883,7 +883,10 @@ country_event = {
 			is_year = 1500
 		}
 		ENG = {
-			war_with = FRA
+		    OR = {
+			    war_with = FRA
+				war_with = BFR
+			}
 		}
 		OR = {	#Switzerland is renting condottiere to the winning side
 			AND = {
@@ -895,6 +898,12 @@ country_event = {
 			AND = {
 				is_renting_condottieri_to = FRA
 				FRA = {
+					war_score = 10
+				}
+			}
+			AND = {
+				is_renting_condottieri_to = BFR
+				BFR = {
 					war_score = 10
 				}
 			}

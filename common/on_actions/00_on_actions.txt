@@ -56,7 +56,13 @@ on_startup = {
 	}
 	if = {
 		limit = {
-			tag = FRA
+			OR = {
+			    tag = FRA
+			    tag = BFR
+			    tag = FSE
+			    tag = NPF
+			    tag = OFR
+			}
 			started_in = 1789.7.14
 			NOT = { is_year = 1790 }
 			NOT = { has_disaster = french_revolution }
@@ -347,7 +353,6 @@ on_startup = {
             }
             set_variable = { which = num_of_cavalry value = 0 }
 		}
-		
 		MAM = {
 			export_to_variable = { which = num_of_infantry value = trigger_value:num_of_infantry }
             while = {
@@ -797,7 +802,10 @@ on_colonial_liberation = {
                 # colonial_region = colonial_eastern_america
             # }
             # colonial_parent = {
-                # tag = GBR
+			      #OR = {
+                      #tag = GBR
+				      #tag = UNK
+				  #}
             # }
 			# is_subject = no
         # }
@@ -812,7 +820,10 @@ on_colonial_liberation = {
 						colonial_region = colonial_eastern_america
 					}
 					colonial_parent = {
-						tag = GBR
+						OR = {
+                            tag = GBR
+				            tag = UNK
+				        }
 					}
 					is_subject = no
 				}
@@ -1028,6 +1039,19 @@ on_main_war_won = {
 			is_subject = no
 			FROM = {
 				tag = GBR
+			}
+			colonial_parent = {
+				tag = FROM
+			}
+		}
+		country_event = { id = lotf_events.2 }
+	}
+	if = {
+		limit = {
+			has_country_flag = usarebel
+			is_subject = no
+			FROM = {
+				tag = UNK
 			}
 			colonial_parent = {
 				tag = FROM
@@ -2378,6 +2402,7 @@ on_government_change = {
 			OR = {
 				tag = ENG
 				tag = GBR
+				tag = UNK
 			}
 			any_owned_province = {
 				has_province_modifier = rotten_borough

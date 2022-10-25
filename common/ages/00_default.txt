@@ -760,7 +760,10 @@ age_of_revolutions = {
 		}
 		ab_gbr_fleet = {
 			allow = {
-				tag = GBR
+			    OR = {
+				    tag = GBR
+					tag = UNK
+				}
 			}
 			modifier = {
 				naval_maintenance_modifier = -0.33
@@ -1000,8 +1003,11 @@ age_of_change = {
 
 		ab_industrialisation_origins = {
 			allow = {
-				tag = GBR
-				tag = ENG
+				OR = {
+				    tag = GBR
+					tag = UNK
+				    tag = ENG
+				}
 			}
 			modifier = {
 				build_cost = -0.15
@@ -1015,8 +1021,10 @@ age_of_change = {
 
 		ab_meiji_restoration = {
 			allow = {
-				tag = JAP
-				tag = ASK
+			    OR = {
+				    tag = JAP
+				    tag = ASK
+				}
 			}
 			modifier = {
 				land_morale = 0.10
@@ -1043,10 +1051,12 @@ age_of_change = {
 
 		ab_italian_ambition = {
 			allow = {
-				tag = ITA
-				tag = NAP
-				tag = TUS
-				tag = PAP
+			    OR = {
+				    tag = ITA
+				    tag = NAP
+				    tag = TUS
+				    tag = PAP
+				}
 			}
 			modifier = {
 				reduced_liberty_desire = 25

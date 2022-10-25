@@ -3521,48 +3521,17 @@ mount_fuji = {
 		OR = {
 			AND = {
 		   
-		   
 				religion = shinto
 				has_owner_religion = yes
 			}
 			AND = {
-						
-							 
-	 
-		   
-		   
 				religion = state_shinto
-							  
-	  
-											 
-	 
-		   
-			  
-									  
-								 
-	  
-		   
-					   
 				has_owner_religion = yes
 			}
-	 
 			AND = {
 		   
 				religion = mahayana
-							  
-	  
-											   
-	 
-		   
-			  
-									  
-								   
-	  
-		   
-						 
 				has_owner_religion = yes
-	  
-	 
 			}
 		}
 	}
@@ -3581,106 +3550,39 @@ mount_fuji = {
 	can_use_modifiers_trigger = {
 		OR = {
 			AND = {
-		   
-		   
 				religion = shinto
 				has_owner_religion = yes
 			}
 			AND = {
-						
-							 
-	 
-		   
-		   
 				religion = state_shinto
-							  
-	  
-											 
-	 
-		   
-			  
-									  
-								 
-	  
-		   
-					   
 				has_owner_religion = yes
 			}
-	 
 			AND = {
 		   
 				religion = mahayana
-							  
-	  
-											   
-	 
-		   
-			  
-									  
-								   
-	  
-		   
-						 
 				has_owner_religion = yes
-	  
-	 
 			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		OR = {
-			AND = {
-		   
-		   
-				religion = shinto
-							 
-	 
-		   
-						
-				has_owner_religion = yes
-			}
-			AND = {
-		   
-					   
-							  
-	  
-											 
-	 
-		   
-			  
-				religion = mahayana
-								 
-	  
-		   
-					   
-							  
-	  
-	 
-		   
-		   
-						 
-							  
-	  
-											   
-	 
-		   
-			  
-									  
-								   
-	  
-		   
-						 
-				has_owner_religion = yes
-	  
-	 
-			}
-		}
+		always = no
+		#OR = {
+		#	AND = {
+		#		religion = shinto
+		#		has_owner_religion = yes
+		#	}
+		#	AND = {
+		#		religion = mahayana
+		#		has_owner_religion = yes
+		#	}
+		#}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+	    always = yes
 	}
 
 	#tier data
@@ -16677,7 +16579,7 @@ spiral_minaret_samarra = {
 
 sultan_ahmed_mosque = {
 	start = 151 #Constantinople
-	date = 1444.01.01	#1616.01.01
+	date = 1616.01.01	#Was 1444.01.01
 	time = { months = 0	}
 	build_cost = 0
 	can_be_moved = no

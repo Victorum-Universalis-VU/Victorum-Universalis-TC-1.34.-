@@ -227,6 +227,10 @@ country_event = {
 			remove_historical_friend = GBR
 		}
 		if = {
+			limit = { historical_friend_with = UNK }
+			remove_historical_friend = UNK
+		}
+		if = {
 			limit = {
 				NOT = { religion = catholic }
 				num_of_owned_provinces_with = {

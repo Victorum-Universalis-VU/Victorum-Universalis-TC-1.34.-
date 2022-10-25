@@ -180,7 +180,7 @@ GBR_ideas = {
 	trigger = {
 	    OR = {
 			tag = GBR
-			tag = UNK # BT
+			tag = UNK
 		}
 	}
 	free = yes		#will be added at load.

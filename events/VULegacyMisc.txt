@@ -332,7 +332,12 @@ country_event = {
 				tag = ENG
 				NOT = { exists = GBR }
 			}
+			AND = {
+				tag = ENG
+				NOT = { exists = UNK }
+			}
 			tag = GBR
+			tag = UNK
 		}
 		NOT = { advisor_exists = 7502 }
 		owns = 238 #Essex

@@ -295,6 +295,7 @@ country_decisions = {
 						tag = ENG
 						tag = GBR			#AI will not do unless one of the historical nations in Britain.
 						tag = SCO
+						tag = UNK
 					}
 				}
 			}

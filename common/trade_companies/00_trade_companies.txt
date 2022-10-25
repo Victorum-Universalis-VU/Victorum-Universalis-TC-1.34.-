@@ -334,6 +334,7 @@ trade_company_west_india = {
 		trigger = {
 			OR = {
 				tag = GBR
+				tag = UNK
 				tag = ENG
 			}
 			primary_culture = english
@@ -362,6 +363,7 @@ trade_company_east_india = {
 		trigger = {
 			OR = {
 				tag = GBR
+				tag = UNK
 				tag = ENG
 			}
 			primary_culture = english
@@ -400,6 +402,7 @@ trade_company_coromandel = {
 		trigger = {
 			OR = {
 				tag = GBR
+				tag = UNK
 				tag = ENG
 			}
 			primary_culture = english

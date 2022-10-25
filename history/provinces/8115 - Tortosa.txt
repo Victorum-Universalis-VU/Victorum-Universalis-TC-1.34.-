@@ -1,4 +1,4 @@
-#8115 - Tortosa
+#8115 - Reus
 
 owner = ARA
 controller = ARA
@@ -6,7 +6,7 @@ add_core = ARA
 add_core = CAT
 culture = catalan
 religion = catholic
-capital = "Tortosa"
+capital = "Reus"
 base_tax = 2
 base_production = 2
 base_manpower = 1
@@ -18,16 +18,3 @@ discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
-
-add_permanent_province_modifier = {
-    name = navalbase_modifier
-    duration = -1
-}
-
-center_of_trade = 1
-extra_cost = 15
-
-add_permanent_province_modifier = {
-	name = ebro_estuary_modifier
-	duration = -1
-}

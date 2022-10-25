@@ -2178,6 +2178,16 @@ country_event = {
 					size = 3
 				}
 			}
+			if = {
+				limit = {
+					exists = TZR
+				}
+				spawn_rebels = {
+					type = nationalist_rebels
+					friend = TZR
+					size = 3
+				}
+			}
 			else = {
 				spawn_rebels = {
 					type = nationalist_rebels

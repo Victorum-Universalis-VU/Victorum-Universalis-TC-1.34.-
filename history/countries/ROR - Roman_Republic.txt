@@ -2,7 +2,7 @@ government = republic
 add_government_reform = roman_diarchy_reform
 government_rank = 1
 technology_group = western
-primary_culture = romagnan
+primary_culture = roman
 religion = catholic
 capital = 118 #Rome
 
