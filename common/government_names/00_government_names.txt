@@ -1091,6 +1091,10 @@ french_kingdom = {
 		NOT = { has_reform = revolutionary_empire_reform }
 		OR = {
 			tag = FRA
+			tag = BFR
+			tag = FSE
+			tag = NPF
+			tag = OFR
 			tag = AUV
 		}
 	}

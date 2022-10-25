@@ -185,14 +185,32 @@ defined_text = {
 	text = {
         localisation_key = string_start_title_france
         trigger = {
-			tag = FRA
+			OR = {
+				tag = FRA
+				tag = BFR
+				tag = FSR
+				tag = FSE
+				tag = NPF
+				tag = OFR
+				tag = RVF
+				tag = TFR
+			}
 			NOT = { is_year = 1461 }
 		}
     }
 	text = {
         localisation_key = string_start_title_france_fallback
         trigger = {
-			tag = FRA
+			OR = {
+				tag = FRA
+				tag = BFR
+				tag = FSR
+				tag = FSE
+				tag = NPF
+				tag = OFR
+				tag = RVF
+				tag = TFR
+			}
 		}
     }
 	text = {
@@ -866,7 +884,16 @@ defined_text = {
 	text = { #France
 		localisation_key = string_start_france
 		trigger = {
-			tag = FRA
+			OR = {
+				tag = FRA
+				tag = BFR
+				tag = FSR
+				tag = FSE
+				tag = NPF
+				tag = OFR
+				tag = RVF
+				tag = TFR
+			}
 			NOT = { is_year = 1448 }
 		}
 	}

@@ -5,6 +5,10 @@ belgian_revolt_disaster = {
 		current_age = age_of_revolutions
 		NOT = { has_country_flag = dutch_belgian_integration }
 		NOT = { has_global_flag = belgian_revolt }
+		OR = {
+			tag = HOL
+			tag = NED
+		}
 		num_of_owned_provinces_with = {
 			value = 6
 			region = low_countries_region
@@ -14,12 +18,12 @@ belgian_revolt_disaster = {
 				culture = wallonian
 			}
 		}
-		NOT = {
-			OR = {
-				primary_culture = dutch
-				primary_culture = frisian
-			}
-		}
+		#NOT = {
+		#	OR = {
+		#		primary_culture = dutch
+		#		primary_culture = frisian
+		#	}
+		#}
 		NOT = { exists = BEL }
 		NOT = { capital_scope = { region = low_countries_region } }
 		is_free_or_tributary_trigger = yes

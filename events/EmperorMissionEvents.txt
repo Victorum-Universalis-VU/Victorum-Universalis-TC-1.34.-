@@ -444,7 +444,10 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = FRA
+		OR = {
+			tag = FRA
+			tag = BFR
+		}
 		has_estate_privilege = estate_nobles_french_strong_duchies
 		owns = 1879
 		1879 = { is_capital = no }
@@ -503,13 +506,21 @@ country_event = {
 			}
 		}
 		if = {
-			limit = {
-				1879 = {
-					is_core = FRA
+            limit = {
+                1879 = { 
+				    is_core = FRA 
 				}
-			}
-			1879 = { remove_core = FRA }
+            }
+            1879 = { remove_core = FRA }
 		}
+        if = {
+		    limit = {
+                1879 = { 
+				    is_core = BFR 
+				}
+            }
+            1879 = { remove_core = BFR }
+        }
 		add_estate_influence_modifier = {
 			estate = estate_nobles
 			desc = EST_VAL_DUKE_OF_ALENCON

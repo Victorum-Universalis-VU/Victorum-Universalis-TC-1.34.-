@@ -395,6 +395,7 @@ country_event = {
 		is_at_war = no
 		OR = {
 			exists = GBR
+			exists = UNK
 			exists = ENG
 		}
 		iberia_region = {
@@ -405,6 +406,8 @@ country_event = {
 		NOT = { is_rival = ENG }
 		NOT = { war_with = GBR }
 		NOT = { is_rival = GBR }
+		NOT = { war_with = UNK }
+		NOT = { is_rival = UNK }
 	}
 
 	mean_time_to_happen = {
@@ -420,6 +423,18 @@ country_event = {
 				exists = GBR
 			}
 			GBR = {
+				add_opinion = {
+					who = ROOT
+					modifier = accepted_meuthen_agreement
+				}
+			}
+			set_country_flag = meuthen_agreement
+		}
+		if = {
+			limit = {
+				exists = UNK
+			}
+			UNK = {
 				add_opinion = {
 					who = ROOT
 					modifier = accepted_meuthen_agreement
@@ -457,6 +472,18 @@ country_event = {
 				exists = GBR
 			}
 			GBR = {
+				add_opinion = {
+					who = ROOT
+					modifier = denounced_meuthen_agreement
+				}
+			}
+			set_country_flag = meuthen_agreement
+		}
+		if = {
+			limit = {
+				exists = UNK
+			}
+			UNK = {
 				add_opinion = {
 					who = ROOT
 					modifier = denounced_meuthen_agreement

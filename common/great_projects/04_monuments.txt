@@ -7407,11 +7407,12 @@ mount_aconcagua = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {	
-    always = no	
+        always = no	
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+	    always = yes
 	}
 
 	#tier data
@@ -7592,11 +7593,12 @@ mount_denali = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {	
-    always = no	
+        always = no	
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+	    always = yes
 	}
 
 	#tier data
@@ -7794,6 +7796,7 @@ mount_everest = {
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+	    always = yes
 	}
 
 	#tier data
@@ -8003,11 +8006,12 @@ mount_nemrut = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {	
-    always = no	
+        always = no	
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+	    always = yes
 	}
 
 	#tier data
@@ -8189,11 +8193,12 @@ mount_rainier = {
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {	
-    always = no	
+        always = no	
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+	    always = yes
 	}
 
 	#tier data
@@ -14140,6 +14145,7 @@ mount_belucha = {
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+	    always = yes
 	}
 
 	#tier data
@@ -14325,6 +14331,7 @@ mount_elbrus = {
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+	    always = yes
 	}
 
 	#tier data
@@ -14522,6 +14529,7 @@ mount_olympus = {
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+	    always = yes
 	}
 
 	#tier data
@@ -14720,6 +14728,7 @@ mount_sinai = {
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+	    always = yes
 	}
 
 	#tier data
@@ -14917,6 +14926,7 @@ mount_yamantau = {
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+	    always = yes
 	}
 
 	#tier data

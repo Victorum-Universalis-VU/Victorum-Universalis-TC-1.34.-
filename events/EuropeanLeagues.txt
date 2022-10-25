@@ -21,13 +21,22 @@ country_event = {
 	trigger = {
 		NOT = { has_dlc = "Art of War" }
 		religion_group = christian
-		exists = FRA
-		NOT = { tag = FRA }
-		FRA = {
-			has_country_flag = FRA_chambers_of_union
-			is_at_war = no
-			num_of_cities = 30
+		OR = {
+		    exists = FRA
+			exists = BFR
 		}
+		FRA = {
+		    has_country_flag = FRA_chambers_of_union
+		    is_at_war = no
+		    num_of_cities = 30
+		}
+		BFR = {
+		    has_country_flag = BFR_chambers_of_union
+		    is_at_war = no
+		    num_of_cities = 30
+		}
+		NOT = { tag = FRA }
+		NOT = { tag = BFR }
 		OR = {
 			culture_group = germanic
 			culture_group = latin
@@ -36,7 +45,8 @@ country_event = {
 			culture_group = iberian
 		}
 		is_free_or_tributary_trigger = yes
-		NOT = { alliance_with = FRA }		
+		NOT = { alliance_with = FRA }
+		NOT = { alliance_with = BFR }	
 		is_at_war = no
 		num_of_cities = 10
 		prestige = 75	
@@ -58,9 +68,11 @@ country_event = {
 				}
 				NOT = { tag = ROOT }
 				NOT = { tag = FRA }
+				NOT = { tag = BFR }
 				is_in_coalition = no
 				num_of_cities = 10
 				NOT = { alliance_with = FRA }
+				NOT = { alliance_with = BFR }
 				is_at_war = no
 				is_free_or_tributary_trigger = yes
 			}
@@ -98,14 +110,31 @@ country_event = {
 				days = 2
 				random = 5
 			}	
-		}	
-		FRA = {
-			add_opinion = {
-				who = ROOT
-				modifier = joined_league_of_augsburg
+		}
+		if = {
+		    limit = {
+			    exists = FRA
 			}
-		}		
+			FRA = {
+		        add_opinion = {
+		         	who = ROOT
+		         	modifier = joined_league_of_augsburg
+		        }
+			}
+		}
+		if = {
+		    limit = {
+			    exists = BFR
+			}
+			BFR = {
+		        add_opinion = {
+		         	who = ROOT
+		         	modifier = joined_league_of_augsburg
+		        }
+			}
+		}
 	}
+	
 	option = {	
 		name = league_events.2.b
 		
@@ -116,12 +145,29 @@ country_event = {
 				random = 4
 			}	
 		}
-		FRA = {
-			add_opinion = {
-				who = ROOT
-				modifier = not_league_of_augsburg
+		
+		if = {
+		    limit = {
+			    exists = FRA
 			}
-		}		
+			FRA = {
+		        add_opinion = {
+		         	who = ROOT
+		         	modifier = not_league_of_augsburg
+		        }
+			}
+		}
+		if = {
+		    limit = {
+			    exists = BFR
+			}
+			BFR = {
+		        add_opinion = {
+		         	who = ROOT
+		         	modifier = not_league_of_augsburg
+		        }
+			}
+		}
 	}
 }
 
@@ -136,10 +182,22 @@ country_event = {
 	
 	option = {	
 		name = league_events.3.a
-		FROM = {
-			form_coalition_against = FRA
+		if = {
+		    limit = {
+			    exists = FRA
+			}
+		    FROM = {
+			    form_coalition_against = FRA
+			}
 		}
-		
+		if = {
+		    limit = {
+			    exists = BFR
+			}
+		    FROM = {
+			    form_coalition_against = BFR
+			}
+		}
 	}
 }
 
@@ -368,8 +426,11 @@ country_event = {
 	trigger = {
 		NOT = { has_dlc = "Art of War" }
 		tag = PAP
-		exists = FRA
-		exists = VEN
+		OR = {
+		    exists = FRA
+		    exists = BFR
+			exists = VEN
+		}
 		is_at_war = no
 		is_free_or_tributary_trigger = yes
 		is_in_coalition = no
@@ -382,6 +443,14 @@ country_event = {
 		}
 
 		FRA = {
+			is_at_war = no
+			num_of_cities = 22
+			is_in_coalition = no
+			NOT = { alliance_with = VEN }
+			NOT = { has_opinion = { who = VEN value = 0 } }	
+		}
+		
+		BFR = {
 			is_at_war = no
 			num_of_cities = 22
 			is_in_coalition = no
@@ -414,6 +483,7 @@ country_event = {
 				NOT = { tag = VEN }
 				OR = {
 					tag = FRA
+					tag = BFR
 					tag = HAB
 					tag = TUS
 					tag = MLO

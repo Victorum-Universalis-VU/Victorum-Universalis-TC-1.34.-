@@ -4281,11 +4281,8 @@ bt_generic_can_form_potential_check = {
 	}
 	#Special tags we don't want forming anything else. These are top-level empire tags and should not try to switch unless a decision specifically is design to allow it.
 	NOT = { has_reform = celestial_empire }
-	NOT = { tag = UNK }
 	NOT = { tag = CEL }
 	NOT = { tag = LTE }			#Latin Empire, on Dub's request.
-	
-	NOT = { was_tag = UNK }
 	NOT = { was_tag = CEL }
 	NOT = { was_tag = LTE }			#Latin Empire, on Dub's request.
 	#Vanilla's list of exlusions from 1.26, when they copied my idea =D
@@ -4311,6 +4308,7 @@ bt_generic_can_form_potential_check = {
 	NOT = { was_tag = BBS }
 	NOT = { was_tag = CSP }
 	#NOT = { was_tag = GBR }			#Cut GBR, as I add the UK formable
+	NOT = { was_tag = UNK }
 	NOT = { was_tag = ITA }
 	NOT = { was_tag = GER }
 	NOT = { was_tag = MNG }
@@ -4341,6 +4339,7 @@ bt_generic_can_form_potential_check = {
 	NOT = { tag = BBS }
 	NOT = { tag = CSP }
 	#NOT = { tag = GBR }			#Cut GBR, as I add the UK formable
+	NOT = { tag = UNK }
 	NOT = { tag = ITA }
 	NOT = { tag = GER }
 	NOT = { tag = MNG }

@@ -93,9 +93,13 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		exists = FRA
-		exists = ENG
+		OR = {
+		   exists = FRA
+		   exists = BFR
+		   exists = ENG
+		}
 		NOT = { war_with = FRA }
+		NOT = { war_with = BFR }
 		tag = SCO
 		is_year = 1512
 		NOT = { is_year = 1550 }
@@ -105,23 +109,125 @@ country_event = {
 		months = 200
 	}
 	
-	option = {
-		name = "flavor_sco.EVTOPTA2" #Good relations with France
-		FRA = {
-			add_opinion = { who = SCO modifier = opinion_good_relations }
+	option = { 
+        name = "flavor_sco.EVTOPTA2" #Good relations with France
+        if = {
+		    limit = {
+                exists = FRA
+            }
+            add_opinion = { 
+			    who = SCO 
+			    modifier = opinion_good_relations
+			}
+        }
+		if = {
+		    limit = {
+			     exists = SCO
+			}
+			add_opinion = { 
+				 who = FRA 
+				 modifier = opinion_good_relations 
+			}
 		}
-		add_opinion = { who = FRA modifier = opinion_good_relations }
-		ENG = {
-			add_opinion = { who = SCO modifier = opinion_irritated }
+        if = {
+		    limit = {
+                exists = BFR
+            }
+            add_opinion = {
+                who = SCO 
+			    modifier = opinion_good_relations
+            }
+        }
+		if = {
+		    limit = {
+			     exists = SCO
+			}
+			add_opinion = { 
+				 who = BFR 
+				 modifier = opinion_good_relations 
+			}
 		}
-	}
+		if = {
+		    limit = {
+                exists = ENG
+            }
+            add_opinion = {
+                who = SCO 
+			    modifier = opinion_irritated 
+            }
+        }
+		if = {
+		    limit = {
+			     exists = SCO
+			}
+			add_opinion = { 
+				 who = ENG 
+				 modifier = opinion_irritated 
+			}
+		}
+		ai_chance = {
+			factor = 1
+		}
+    }
+	
 	option = {
 		name = "flavor_sco.EVTOPTB2" #Have nothing to do with France
-		ENG = {
-			add_opinion = { who = SCO modifier = opinion_pleased }
+		if = {
+		    limit = {
+                exists = FRA
+            }
+            add_opinion = { 
+			    who = SCO 
+			    modifier = opinion_mildly_displeased
+			}
+        }
+		if = {
+		    limit = {
+			     exists = SCO
+			}
+			add_opinion = { 
+				 who = FRA 
+				 modifier = opinion_mildly_displeased 
+			}
 		}
-		FRA = {
-			add_opinion = { who = SCO modifier = opinion_mildly_displeased }
+        if = {
+		    limit = {
+                exists = BFR
+            }
+            add_opinion = {
+                who = SCO 
+			    modifier = opinion_mildly_displeased
+            }
+        }
+		if = {
+		    limit = {
+			     exists = SCO
+			}
+			add_opinion = { 
+				 who = BFR 
+				 modifier = opinion_mildly_displeased 
+			}
+		}
+		if = {
+		    limit = {
+                exists = ENG
+            }
+            add_opinion = {
+                who = SCO 
+			    modifier = opinion_pleased 
+            }
+        }
+		if = {
+		    limit = {
+			     exists = SCO
+			}
+			add_opinion = { 
+				 who = ENG 
+				 modifier = opinion_pleased 
+			}
+		}
+		ai_chance = {
+			factor = 1
 		}
 	}
 }
@@ -137,8 +243,12 @@ country_event = {
 	
 	trigger = {
 		tag = SCO
-		exists = FRA
+		OR = {
+		   exists = FRA
+		   exists = BFR
+		}
 		NOT = { war_with = FRA }
+		NOT = { war_with = BFR }
 		is_year = 1529
 		NOT = { is_year = 1555 }
 		religion = catholic

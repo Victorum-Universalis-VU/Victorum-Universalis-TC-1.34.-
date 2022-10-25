@@ -107,6 +107,7 @@ country_event = {
 	desc = {
 		trigger = {
 			NOT = { tag = GBR }
+			NOT = { tag = UNK }
 			NOT = { tag = ENG }
 		}
 		desc = industrialization_events.2.d
@@ -115,6 +116,7 @@ country_event = {
 		trigger = {
 			OR = {
 				tag = GBR
+				tag = UNK
 				tag = ENG
 			}
 		}
@@ -176,6 +178,7 @@ country_event = {
 				OR = {
 					tag = ENG
 					tag = GBR
+					tag = UNK
 				}
 				owns = 240
 			}
@@ -213,6 +216,7 @@ country_event = {
 	desc = {
 		trigger = {
 			NOT = { tag = GBR }
+			NOT = { tag = UNK }
 			NOT = { tag = ENG }
 		}
 		desc = industrialization_events.3.d
@@ -221,6 +225,7 @@ country_event = {
 		trigger = {
 			OR = {
 				tag = GBR
+				tag = UNK
 				tag = ENG
 			}
 		}

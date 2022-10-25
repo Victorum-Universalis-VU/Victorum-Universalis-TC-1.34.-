@@ -769,6 +769,7 @@ exploration_ideas = {
 			factor = 2
 			OR = {
 				tag = GBR
+				tag = UNK
 				tag = NED
 				tag = ENG
 				tag = FRA

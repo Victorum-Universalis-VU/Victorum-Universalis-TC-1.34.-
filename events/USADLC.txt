@@ -177,7 +177,7 @@ country_event = {
 	}
 }
 
-# Indians supplied with weapons from GBR
+# Indians supplied with weapons from Great Britain
 country_event = {
 	id = usa_dlc.21
 	title = "usa_dlc.EVTNAME21"
@@ -193,12 +193,25 @@ country_event = {
 				id = usa_dlc.22
 			}
 		}
-		GBR = {
-			add_opinion = {
-				who = ROOT
-				modifier = opinion_supplied_weapons
-				years = 20
+		if = {
+		   limit = {
+		        exists = GBR
 			}
+		    add_opinion = {
+		    	who = ROOT
+		    	modifier = opinion_supplied_weapons
+		    	years = 20
+		    }
+		}
+		if = {
+		   limit = {
+		        exists = UNK
+			}
+		    add_opinion = {
+		    	who = ROOT
+		    	modifier = opinion_supplied_weapons
+		    	years = 20
+		    }
 		}
 		add_country_modifier = {
 			name = gbr_weapons
@@ -207,7 +220,7 @@ country_event = {
 	}
 }
 
-# USA learns about GBR supplying Indians with weapons
+# United States learns about Great Britain supplying Indians with weapons
 country_event = {
 	id = usa_dlc.22
 	title = "usa_dlc.EVTNAME22"
@@ -218,10 +231,25 @@ country_event = {
 	
 	option = {
 		name = "usa_dlc.EVTOPTA22"
-		add_opinion = {
-			who = GBR
-			modifier = opinion_supplied_indians
-			years = 50
+		if = {
+		   limit = {
+		      exists = GBR
+		   }
+		   add_opinion = {
+		      who = GBR
+		      modifier = opinion_supplied_indians
+		      years = 50
+		   }
+		}
+		if = {
+		   limit = {
+		      exists = UNK
+		   }
+		   add_opinion = {
+		      who = UNK
+		      modifier = opinion_supplied_indians
+		      years = 50
+		   }
 		}
 	}
 }
@@ -388,9 +416,8 @@ country_event = {
 	trigger = {
 		has_dlc = "American Dream"
 		tag = USA
-		NOT = {
-			war_with = GBR
-		}
+		NOT = { war_with = GBR }
+		NOT = { war_with = UNK }
 		owns = 962 # Unami/Philadelphia
 		NOT = { has_country_modifier = american_philosophical_society }
 	}
@@ -429,8 +456,18 @@ country_event = {
 		tag = USA
 		is_year = 1783
 		is_month = 10 # November
-		truce_with = GBR
+		OR = {
+		   truce_with = GBR
+		   truce_with = UNK
+		}
 		GBR = { 
+			NOT = { 
+				any_owned_province = { 
+					is_core = USA 
+				} 
+			} 
+		}
+		UNK = { 
 			NOT = { 
 				any_owned_province = { 
 					is_core = USA 
@@ -591,12 +628,25 @@ country_event = {
 				years = 20
 			}
 		}
-		GBR = {
-			reverse_add_opinion = {
-				who = ROOT
-				modifier = opinion_disgruntled
-				years = 20
+		if = {
+		   limit = {
+		        exists = GBR
 			}
+		    reverse_add_opinion = {
+		    	who = ROOT
+		    	modifier = opinion_disgruntled
+		    	years = 20
+		    }
+		}
+		if = {
+		   limit = {
+		        exists = UNK
+			}
+		    reverse_add_opinion = {
+		    	who = ROOT
+		    	modifier = opinion_disgruntled
+		    	years = 20
+		    }
 		}
 	}
 	option = {
@@ -614,12 +664,25 @@ country_event = {
 				years = 20
 			}
 		}
-		GBR = {
-			reverse_add_opinion = {
-				who = ROOT
-				modifier = opinion_pleased
-				years = 20
+		if = {
+		   limit = {
+		        exists = GBR
 			}
+		    reverse_add_opinion = {
+		    	who = ROOT
+		    	modifier = opinion_pleased
+		    	years = 20
+		    }
+		}
+		if = {
+		   limit = {
+		        exists = UNK
+			}
+		    reverse_add_opinion = {
+		    	who = ROOT
+		    	modifier = opinion_pleased
+		    	years = 20
+		    }
 		}
 	}
 }
@@ -681,14 +744,17 @@ country_event = {
 			tag = USA
 			has_country_flag = usa_declaration_independence_flag
 		}
-		FRA = {
-			ai = yes
-		}
+		BFR = {	ai = yes }
+		NPF = {	ai = yes }
 		colonial_louisiana = {
 			OR = {
-				owned_by = FRA
+				owned_by = BFR
+				owned_by = NPF
 				owner = {
-					is_colonial_nation_of = FRA
+					is_colonial_nation_of = BFR
+				}
+				owner = {
+					is_colonial_nation_of = NPF
 				}
 			}
 			any_neighbor_province = {
@@ -702,27 +768,56 @@ country_event = {
 	option = {
 		name = "usa_dlc.EVTOPTA65" # Accept Offer
 		add_treasury = -1000
-		add_opinion = { 
-			who = FRA
-			modifier = opinion_louisiana
-			years = 50
-		}
-		every_province = {
-			limit = {
-				colonial_region = colonial_louisiana
-				OR = {
-					owned_by = FRA
-					owner = {
-						is_colonial_nation_of = FRA
-					}
-				}
+		if = {
+            limit = {
+                exists = BFR
+            }
+			add_opinion = { 
+			    who = BFR 
+			    modifier = opinion_louisiana
+			    years = 50
 			}
-			owner = {
-				remove_core = PREV
+            colonial_louisiana = {
+                if = {
+                    limit = {
+                        OR = {
+                            owned_by = BFR
+                            owner = { is_colonial_nation_of = BFR }
+                        }
+                    }
+                    owner = {
+                        remove_core = PREV
+                    }
+                    add_core = ROOT
+                    cede_province = ROOT
+                }
+            }
+        }
+		if = {
+            limit = {
+                exists = NPF
+            }
+			add_opinion = { 
+			    who = NPF 
+			    modifier = opinion_louisiana
+			    years = 50
 			}
-			add_core = ROOT
-			cede_province = ROOT
-		}
+            colonial_louisiana = {
+                if = {
+                    limit = {
+                        OR = {
+                            owned_by = NPF
+                            owner = { is_colonial_nation_of = NPF }
+                        }
+                    }
+                    owner = {
+                        remove_core = PREV
+                    }
+                    add_core = ROOT
+                    cede_province = ROOT
+                }
+            }
+        }
 		ai_chance = {
 			factor = 100
 			modifier = {
@@ -742,18 +837,33 @@ country_event = {
 			}
 		}
 	}
-
-	option = {
-		name = "usa_dlc.EVTOPTB65" # Decline Offer
-		add_opinion = { 
-			who = FRA 
-			modifier = opinion_disappointed
-			years = 20
-		}
+	
+	option = { 
+        name = "usa_dlc.EVTOPTB65" # Decline Offer
+        if = {
+		    limit = {
+                exists = BFR
+            }
+            add_opinion = { 
+			    who = BFR 
+			    modifier = opinion_disappointed
+			    years = 20
+			}
+        }
+        if = {
+		    limit = {
+                exists = NPF
+            }
+            add_opinion = {
+                who = NPF 
+			    modifier = opinion_disappointed
+			    years = 20
+            }
+        }
 		ai_chance = {
 			factor = 1
 		}
-	}
+    }
 }
 
 # Adam-Onís Treaty
@@ -768,16 +878,24 @@ country_event = {
 	trigger = {
 		has_dlc = "American Dream"
 		tag = USA
-		SPA = {
-			ai = yes
-		}
+		SPA = { ai = yes }
+		BBS = { ai = yes }
+		BSP = { ai = yes }
+		CSP = { ai = yes }
+		SPB = { ai = yes }
 		any_province = {
 			colonial_region = colonial_eastern_america
 			OR = {
 				owned_by = SPA
-				owner = {
-					is_colonial_nation_of = SPA
-				}
+				owned_by = BBS
+				owned_by = BSP
+				owned_by = CSP
+				owned_by = SPB
+				owner = { is_colonial_nation_of = SPA }
+				owner = { is_colonial_nation_of = BBS }
+				owner = { is_colonial_nation_of = BSP }
+				owner = { is_colonial_nation_of = CSP }
+				owner = { is_colonial_nation_of = SPB }
 			}
 		}
 	}
@@ -786,39 +904,191 @@ country_event = {
 	
 	option = {
 		name = "usa_dlc.EVTOPTA71" # Accept Offer
-		reverse_add_opinion = { 
-			who = SPA 
-			modifier = opinion_florida
-			years = 50
+		
+		if = {
+            limit = {
+                exists = SPA
+            }
+			reverse_add_opinion = { 
+			    who = SPA 
+			    modifier = opinion_florida
+			    years = 50
+		    }
+			colonial_eastern_america = {
+                if = {
+                    limit = {
+                        OR = {
+                            owned_by = SPA
+                            owner = { is_colonial_nation_of = SPA }
+                        }
+                    }
+                    owner = {
+                        remove_core = PREV
+                    }
+                    add_core = ROOT
+                    cede_province = ROOT
+                }
+            }
 		}
-		every_province = {
-			limit = {
-				colonial_region = colonial_eastern_america
-				OR = {
-					owned_by = SPA
-					owner = {
-						is_colonial_nation_of = SPA
-					}
-				}
-			}
-			owner = {
-				remove_core = PREV
-			}
-			add_core = ROOT
-			cede_province = ROOT
-		}
+		if = {
+            limit = {
+                exists = BBS
+            }
+			reverse_add_opinion = { 
+			    who = BBS 
+			    modifier = opinion_florida
+			    years = 50
+		    }
+            colonial_eastern_america = {
+                if = {
+                    limit = {
+                        OR = {
+                            owned_by = BBS
+                            owner = { is_colonial_nation_of = BBS }
+                        }
+                    }
+                    owner = {
+                        remove_core = PREV
+                    }
+                    add_core = ROOT
+                    cede_province = ROOT
+                }
+            }
+        }
+		if = {
+            limit = {
+                exists = BSP
+            }
+			reverse_add_opinion = { 
+			    who = BSP 
+			    modifier = opinion_florida
+			    years = 50
+		    }
+            colonial_eastern_america = {
+                if = {
+                    limit = {
+                        OR = {
+                            owned_by = BSP
+                            owner = { is_colonial_nation_of = BSP }
+                        }
+                    }
+                    owner = {
+                        remove_core = PREV
+                    }
+                    add_core = ROOT
+                    cede_province = ROOT
+                }
+            }
+        }
+		if = {
+            limit = {
+                exists = CSP
+            }
+			reverse_add_opinion = { 
+			    who = CSP 
+			    modifier = opinion_florida
+			    years = 50
+		    }
+            colonial_eastern_america = {
+                if = {
+                    limit = {
+                        OR = {
+                            owned_by = CSP
+                            owner = { is_colonial_nation_of = CSP }
+                        }
+                    }
+                    owner = {
+                        remove_core = PREV
+                    }
+                    add_core = ROOT
+                    cede_province = ROOT
+                }
+            }
+        }
+		if = {
+            limit = {
+                exists = SPB
+            }
+			reverse_add_opinion = { 
+			    who = SPB 
+			    modifier = opinion_florida
+			    years = 50
+		    }
+            colonial_eastern_america = {
+                if = {
+                    limit = {
+                        OR = {
+                            owned_by = SPB
+                            owner = { is_colonial_nation_of = SPB }
+                        }
+                    }
+                    owner = {
+                        remove_core = PREV
+                    }
+                    add_core = ROOT
+                    cede_province = ROOT
+                }
+            }
+        }
 	}
-
-	option = {
-		name = "usa_dlc.EVTOPTB71" # Decline Offer
-		reverse_add_opinion = { 
-			who = SPA 
-			modifier = opinion_displeased
-			years = 20
+	
+	option = { 
+        name = "usa_dlc.EVTOPTB71" # Decline Offer
+        if = {
+		    limit = {
+                exists = SPA
+            }
+            reverse_add_opinion = { 
+			    who = SPA 
+			    modifier = opinion_displeased
+			    years = 20
+		    }
+        }
+        if = {
+		    limit = {
+                exists = BBS
+            }
+            reverse_add_opinion = { 
+			    who = BBS 
+			    modifier = opinion_displeased
+			    years = 20
+		    }
+        }
+		if = {
+		    limit = {
+                exists = BSP
+            }
+            reverse_add_opinion = { 
+			    who = BSP 
+			    modifier = opinion_displeased
+			    years = 20
+		    }
+        }
+		if = {
+		    limit = {
+                exists = CSP
+            }
+            reverse_add_opinion = { 
+			    who = CSP 
+			    modifier = opinion_displeased
+			    years = 20
+		    }
+        }
+		if = {
+		    limit = {
+                exists = SPB
+            }
+            reverse_add_opinion = { 
+			    who = SPB 
+			    modifier = opinion_displeased
+			    years = 20
+		    }
+        }
+		ai_chance = {
+			factor = 1
 		}
-	}
+    }
 }
-
 
 # More buns for the people!
 country_event = {

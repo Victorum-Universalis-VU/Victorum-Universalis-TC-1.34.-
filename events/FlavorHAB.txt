@@ -1494,18 +1494,27 @@ country_event = {
 	
 	trigger = {
 		tag = HAB
-		exists = FRA
+		OR = {
+		    exists = FRA
+			exists = BFR
+		}
 		is_year = 1490
 		NOT = { is_year = 1590 }
 		is_emperor = yes
 		NOT = { alliance_with = FRA }
+		NOT = { alliance_with = BFR }
 		NOT = { is_subject_of = FRA }
+		NOT = { is_subject_of = BFR }
 		NOT = { war_with = FRA }
+		NOT = { war_with = BFR }
 		italy_region = {
 			is_part_of_hre = yes
 		}
 		italy_region = {
-			owned_by = FRA
+			OR = {
+			    owned_by = FRA
+				owned_by = BFR
+			}
 		}
 	}
 
@@ -1513,24 +1522,48 @@ country_event = {
 		months = 100
 	}
 	
-
 	option = {		# Claim all French land in Italy!
 		name = "flavor_spa.EVTOPTA1007"
 		ai_chance = { factor = 90 }
-		FRA = {
-			add_opinion = {
-				who = ROOT
-				modifier = claimed_italy
+		if = {
+		    limit = {
+			    exists = FRA
 			}
-			every_owned_province = {
-				limit = {
-					region = italy_region
-				}
-				add_claim = ROOT
+		    FRA = {
+		    	add_opinion = {
+		    		who = ROOT
+		    		modifier = claimed_italy
+		    	}
+		    	every_owned_province = {
+		    		limit = {
+		    			region = italy_region
+		    		}
+		    		add_claim = ROOT
+		    	}
+		    	hidden_effect = {
+		    		country_event = { id = flavor_hab.1008 days = 10 }
+		    	}
+		    }
+		}
+		if = {
+		    limit = {
+			    exists = BFR
 			}
-			hidden_effect = {
-				country_event = { id = flavor_hab.1008 days = 10 }
-			}
+		    BFR = {
+		    	add_opinion = {
+		    		who = ROOT
+		    		modifier = claimed_italy
+		    	}
+		    	every_owned_province = {
+		    		limit = {
+		    			region = italy_region
+		    		}
+		    		add_claim = ROOT
+		    	}
+		    	hidden_effect = {
+		    		country_event = { id = flavor_hab.1008 days = 10 }
+		    	}
+		    }
 		}
 	}
 	option = {		# Italy lies outside our sphere of interest

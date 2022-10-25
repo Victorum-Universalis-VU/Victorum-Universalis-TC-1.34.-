@@ -555,7 +555,10 @@ country_event = {
 	option = {
 		name = "japan.7.b"
 		trigger = {
-			alliance_with = GBR
+		    OR = {
+			    alliance_with = GBR
+			    alliance_with = UNK
+		    }
 		}
 		add_country_modifier = {
 				name = "crossing_the_t"
