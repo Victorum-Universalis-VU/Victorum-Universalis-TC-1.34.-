@@ -3580,13 +3580,13 @@ country_event = {
 			8 = {
 				NOT = {
 					has_great_project = {
-						type = falun_copper_mine
+						type = stora_kopparberget
 						tier = 2
 					}
 				}
 				NOT = {
 					has_great_project = {
-						type = falun_copper_mine
+						type = stora_kopparberget
 						tier = 3
 					}
 				}
@@ -3594,7 +3594,7 @@ country_event = {
 		}
 		8 = {
 			set_great_project_tier_2 = {
-				type = falun_copper_mine
+				type = stora_kopparberget
 			}
 		}
 		add_treasury = -1500

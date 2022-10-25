@@ -2,7 +2,7 @@
 # VU - NEW MONUMENTS by Mellstrom    #
  ####################################
  
-stora_kopparberget = {
+stora_kopparberget = {			#Replaces vanilla monument there too
     start = 8
     
     date = 1011.01.01             #Earliest records of it is in the 11th Century
@@ -136,11 +136,11 @@ stora_kopparberget = {
         }
 
         cost_to_upgrade = {
-            factor = 3500
+            factor = 2000
         }
 
         province_modifiers = {
-		trade_goods_size = 5.0
+		    trade_goods_size = 3.0
         }
 
         area_modifier = {
@@ -163,17 +163,17 @@ stora_kopparberget = {
         }
 
         cost_to_upgrade = {
-            factor = 7000
+            factor = 5000
         }
 
         province_modifiers = {
-		trade_goods_size = 8.0
+		    trade_goods_size = 6.0
 		
         }
 
         area_modifier = {
 		    local_production_efficiency = 0.1
-			local_development_cost = -0.1
+			local_development_cost = -0.05
         }
 
         country_modifiers = {
@@ -193,17 +193,17 @@ stora_kopparberget = {
         }
 
         cost_to_upgrade = {
-            factor = 14000
+            factor = 10000
         }
 
         province_modifiers = {
-		trade_goods_size = 15.0
-		statewide_governing_cost = -0.25
+		    trade_goods_size = 9.0
+			statewide_governing_cost = -0.2
         }
 
         area_modifier = {
-		    local_production_efficiency = 0.2
-			local_development_cost = -0.15
+		    local_production_efficiency = 0.15
+			local_development_cost = -0.155
         }
 
         country_modifiers = {
