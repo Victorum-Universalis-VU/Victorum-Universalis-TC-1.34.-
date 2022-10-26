@@ -256,6 +256,7 @@ country_decisions = {
 			NOT = { has_country_flag = formed_tir_na_gceilteach_btp }
 			NOT = { tag = CEL }
 			NOT = { tag = GBR }
+			NOT = { tag = UNK }
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			OR = {
@@ -697,6 +698,7 @@ country_decisions = {
 			NOT = { tag = SCO }
 			NOT = { tag = ENG }
 			NOT = { tag = GBR }
+			NOT = { tag = UNK }
 			OR = {
 				primary_culture = anglo_irish
 				AND = {
@@ -794,7 +796,8 @@ country_decisions = {
 			bt_generic_can_form_potential_check = yes
 			NOT = { has_country_flag = formed_tir_na_ngael_flag_bt }
 			NOT = { tag = TNA }
-			NOT = { tag = GBR }			#Unlikely, but doesn't do any harm here
+			NOT = { tag = GBR }
+			NOT = { tag = UNK }
 			culture_group = gaelic
 			OR = {
 				tag = IRE
@@ -913,7 +916,8 @@ country_decisions = {
 			bt_generic_can_form_potential_check = yes
 			NOT = { has_country_flag = formed_ynys_y_cedyrn_flag_bt }
 			NOT = { tag = YYK }
-			NOT = { tag = GBR }			#Unlikely, but doesn't do any harm here
+			NOT = { tag = GBR }
+			NOT = { tag = UNK }
 			culture_group = brythonic
 			OR = {
 				tag = WLS
@@ -1157,7 +1161,7 @@ country_decisions = {
             NOT = { religion_group = muslim }
             culture_group = iberian
             NOT = { primary_culture = portugese }
-			marriage_with = FRA
+			marriage_with = BFR
         }
 		provinces_to_highlight = {
 			owned_by = BSP
@@ -1204,7 +1208,7 @@ country_decisions = {
             NOT = { religion_group = muslim }
             culture_group = iberian
             NOT = { primary_culture = portugese }
-			marriage_with = FRA
+			marriage_with = BFR
         }
 		provinces_to_highlight = {
 			owned_by = SPB

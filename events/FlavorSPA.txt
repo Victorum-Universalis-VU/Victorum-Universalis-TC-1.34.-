@@ -5,6 +5,48 @@
 namespace = flavor_spa
 normal_or_historical_nations = yes
 
+#Isabella of Castile
+#country_event = {
+#    id = flavor_spa.3715
+#	title = "flavor_spa.EVTNAME3715"
+#	desc = "flavor_spa.EVTDESC3715"
+#	picture = ISABELLA_OF_CASTILE_I_eventPicture
+#	
+#	fire_only_once = yes
+#	
+#	trigger = {
+#		tag = CAS
+#		is_subject = no
+#		is_year = 1468
+#		has_heir = no
+#		NOT = { exists = SPA }
+#		NOT = { exists = BSP }
+#		NOT = { exists = SPB }
+#		NOT = { exists = BBS }
+#		NOT = { exists = CSP }
+#	}
+#	
+#	mean_time_to_happen = {
+#		months = 1
+#	}
+#	
+#	option = { #Choose this if you want the Iberian Wedding
+#		name = "flavor_spa.EVTOPTA3715"
+#		define_heir = {
+#		    name = "Isabella"
+#			age = 17
+#			dynasty = "de Trastámara"
+#			culture = castillian
+#			claim = 100
+#			dip = 5
+#			adm = 5
+#			mil = 5
+#			female = yes
+#		}
+#		add_stability = -1
+#	}
+#}
+
 # The Iberian Wedding
 country_event = {
 	id = flavor_spa.3716
@@ -25,6 +67,7 @@ country_event = {
 		OR = {
 			AND = {
 				tag = CAS
+				num_of_cities = ARA            #Added this to test by San Felipe
 				NOT = { war_with = ARA }
 				is_subject = no
 				ARA = {
@@ -37,10 +80,11 @@ country_event = {
 					NOT = { is_in_war = { defender_leader = ARA } }
 					NOT = { is_in_war = { casus_belli = cb_independence_war } }
 				}
-				num_of_cities = 25
+				num_of_cities = 25 #Min of cities CAS has
 			}
 			AND = {
 				tag = ARA
+				num_of_cities = CAS            #Added this to test by San Felipe
 				NOT = { war_with = CAS }
 				is_subject = no
 				ai = no
@@ -54,13 +98,12 @@ country_event = {
 					NOT = { is_in_war = { defender_leader = CAS } }
 					NOT = { is_in_war = { casus_belli = cb_independence_war } }
 				}
-				num_of_cities = 16
+				num_of_cities = 16 #Max of cities ARA has
 			}
 		}
-		is_year = 1450
+		is_year = 1469 #Historical Date
 		NOT = { is_year = 1530 }
 		is_subject = no
-		num_of_cities = 10
 		OR = {
 			AND = {
 				CAS = { is_female = yes }
@@ -82,26 +125,25 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 120
+		days = 1
 		modifier = {
 			factor = 0.1
 			OR = {
 				AND = {
 					tag = CAS
 					ARA = {
-						has_regency = no 
+						has_regency = no
 					}
 				}
 				AND = {
 					tag = ARA
 					CAS = { 
-						has_regency = no 
+						has_regency = no
 					}
 				}
 			}
 		}
 	}
-	
 	
 	option = {		# Let us bind their Dynasty to ours
 		name = "flavor_spa.EVTOPTA3716"
@@ -129,6 +171,15 @@ country_event = {
 					modifier = spa_iberian_wedding_negative
 				}
 			}
+			#define_consort = {
+		    #    name = "Fernando"
+			#    age = 17
+			#    dynasty = "de Trastámara"
+			#    culture = aragonese
+			#    dip = 3
+			#    adm = 3
+			#    mil = 3
+			#}
 		}
 		if = {
 			limit = { tag = ARA }
@@ -1656,17 +1707,26 @@ country_event = {
 			tag = BBS
 			tag = CSP
 		}
-		exists = FRA
+		OR = {
+			exists = FRA
+			exists = BFR
+		}
 		is_year = 1490
 		NOT = { is_year = 1590 }
 		NOT = { alliance_with = FRA }
+		NOT = { alliance_with = BFR }
 		NOT = { is_subject_of = FRA }
+		NOT = { is_subject_of = BFR }
 		NOT = { war_with = FRA }
+		NOT = { war_with = BFR }
 		italy_region = {
 			is_part_of_hre = yes
 		}
 		italy_region = {
-			owned_by = FRA
+		    OR = {
+			    owned_by = FRA
+				owned_by = BFR
+			}
 		}
 	}
 	
@@ -1682,20 +1742,45 @@ country_event = {
 	option = {		# Claim all French land in Italy!
 		name = "flavor_spa.EVTOPTA1007"
 		ai_chance = { factor = 90 }
-		FRA = {
-			add_opinion = {
-				who = ROOT
-				modifier = claimed_italy
-			}
-			every_owned_province = {
-				limit = {
-					region = italy_region
-				}
-				add_claim = ROOT
-			}
-			hidden_effect = {
-				country_event = { id = flavor_spa.1008 days = 10 }
-			}
+		if = {
+		    limit = {
+		        exists = FRA
+		    }
+		    FRA = {
+		    	add_opinion = {
+		    		who = ROOT
+		    		modifier = claimed_italy
+		    	}
+		    	every_owned_province = {
+		    		limit = {
+		    			region = italy_region
+		    		}
+		    		add_claim = ROOT
+		    	}
+		    	hidden_effect = {
+		    		country_event = { id = flavor_spa.1008 days = 10 }
+		    	}
+		    }
+		}
+		if = {
+		    limit = {
+		        exists = BFR
+		    }
+		    BFR = {
+		    	add_opinion = {
+		    		who = ROOT
+		    		modifier = claimed_italy
+		    	}
+		    	every_owned_province = {
+		    		limit = {
+		    			region = italy_region
+		    		}
+		    		add_claim = ROOT
+		    	}
+		    	hidden_effect = {
+		    		country_event = { id = flavor_spa.1008 days = 10 }
+		    	}
+		    }
 		}
 	}
 	option = {		# Italy lies outside our sphere of interest
@@ -2771,6 +2856,10 @@ country_event = {
 			is_rival = HAB
 			is_rival = ROOT
 		}
+		BFR = {
+			is_rival = HAB
+			is_rival = ROOT
+		}
 		NOT = {
 			OR = {
 				is_rival = HAB
@@ -2782,9 +2871,8 @@ country_event = {
 				}
 			}
 		}
-		NOT = {
-			dynasty = FRA
-		}
+		NOT = {	dynasty = FRA }
+		NOT = {	dynasty = BFR }
 		ruler_age = 20
 		has_government_attribute = heir
 	}
@@ -2890,13 +2978,18 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.5
-			FRA = {
-				is_rival = HAB
-				is_rival = ROOT
+			OR = {
+			    FRA = {
+			    	is_rival = HAB
+			    	is_rival = ROOT
+			    }
+				BFR = {
+			    	is_rival = HAB
+			    	is_rival = ROOT
+			    }
 			}
-			NOT = {
-				dynasty = FRA
-			}
+			NOT = {	dynasty = FRA }
+			NOT = {	dynasty = BFR }
 		}
 		modifier = {
 			factor = 0.5
@@ -3142,14 +3235,17 @@ country_event = {
 	
 	trigger = {
         OR = {
-		    tag = SPA
-			tag = BSP
-			tag = SPB
-			tag = BBS
-			tag = CSP
+		   tag = SPA
+		   tag = BSP
+		   tag = SPB
+		   tag = BBS
+		   tag = CSP
 		}
         is_subject = no
-        exists = GBR
+        OR = {
+		   exists = GBR
+		   exists = UNK
+		}
 		is_year = 1701
         NOT = { alliance_with = GBR }
         NOT = { war_with = GBR }
@@ -3157,6 +3253,9 @@ country_event = {
         NOT = { truce_with = GBR }
         owns = 226
         GBR = {
+            is_subject = no
+        }
+		UNK = {
             is_subject = no
         }
     }
@@ -3171,12 +3270,27 @@ country_event = {
 			factor = 25
 		}
 		tooltip = {
-			226 = {
-				cede_province = GBR
+		    if = {
+			    limit = {
+				    exists = GBR
+				}
+				226 = {
+				       cede_province = GBR
+				}
+			       add_truce_with = GBR
 			}
-			add_truce_with = GBR
+			if = {
+			    limit = {
+				    exists = UNK
+				}
+				226 = {
+				       cede_province = UNK
+				}
+			       add_truce_with = UNK
+			}
 		}
 		GBR = { country_event = { id = flavor_spa.102 } }
+		UNK = { country_event = { id = flavor_spa.102 } }
 		add_prestige = -10
 		add_stability = -1
 		#set_country_flag = spa_gave_up_gibraltar
@@ -3196,6 +3310,7 @@ country_event = {
 		}
 		custom_tooltip = flavor_spa.100.a.tt
 		GBR = { country_event = { id = flavor_spa.101 } }
+		UNK = { country_event = { id = flavor_spa.101 } }
 	}
 }
 
@@ -3247,6 +3362,15 @@ country_event = {
 		if = {
 			limit = { exists = FRA }
 			FRA = {
+				add_opinion = {
+					who = ROOT
+					modifier = gbr_gave_up_on_gibraltar
+				}
+			}
+		}
+		if = {
+			limit = { exists = BFR }
+			BFR = {
 				add_opinion = {
 					who = ROOT
 					modifier = gbr_gave_up_on_gibraltar

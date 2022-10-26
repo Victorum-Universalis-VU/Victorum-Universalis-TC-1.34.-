@@ -256,6 +256,7 @@ colonial_hudson_bay = {
 			OR = {
 				tag = GBR
 				tag = ENG
+				tag = UNK
 			}
 		}
 		name = "COLONIAL_CANADA_Ruperts_Land"
@@ -502,8 +503,15 @@ colonial_acadia = {
 	}
 	names = {
 		trigger = {
-			OR = {
+		    OR = {
 				tag = FRA
+				tag = BFR
+				tag = FSR
+				tag = FSE
+				tag = NPF
+				tag = OFR
+				tag = RVF
+				tag = TFR
 				culture_group = french
 			}
 		}
@@ -514,6 +522,7 @@ colonial_acadia = {
 			OR = {
 				tag = GBR
 				tag = ENG
+				tag = UNK
 			}
 			SCO = {
 				exists = no
@@ -640,7 +649,16 @@ colonial_acadia = {
 	}
 #	names = {
 #		trigger = {
-#			tag = FRA
+#			OR = {
+#				tag = FRA
+#				tag = BFR
+#				tag = FSR
+#				tag = FSE
+#				tag = NPF
+#				tag = OFR
+#				tag = RVF
+#				tag = TFR
+#			}
 #			OR = {
 #				any_owned_province = {
 #					OR = {

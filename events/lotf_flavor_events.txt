@@ -488,17 +488,27 @@ country_event = { #FRANCE INTERVENTION REVOLUTIONARY WAR
     desc = lotf_flavor_event.18.d
     picture = INVENTION_eventPicture
 	trigger = {
-		tag = FRA
+	    OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		is_subject = no
 		NOT = { alliance_with = GBR }
+		NOT = { alliance_with = UNK }
 		any_country = {
 			capital_scope = {
 				colonial_region = colonial_eastern_america
 			}
 			colonial_parent = {
-				tag = GBR
+			    OR = {
+				    tag = GBR
+					tag = UNK
+				}
 			}
-			war_with = GBR
+			OR = {
+			    war_with = GBR
+				war_with = UNK
+			}
 			NOT = { war_with = ROOT }
 		}
 	}
@@ -517,18 +527,26 @@ country_event = { #FRANCE INTERVENTION REVOLUTIONARY WAR
 		}
 		add_treasury = -250
 		random_country = {
-			limit = {
-				capital_scope = {
-					colonial_region = colonial_eastern_america
-				}
-				colonial_parent = {
-					tag = GBR
-				}
-				war_with = GBR
-				NOT = { war_with = ROOT }
-			}
-			country_event = { id = lotf_flavor_event.19 }
-			reverse_add_opinion = { who = FROM modifier = assisted_in_revolution }
+		    if = {
+		    	limit = {
+		    		capital_scope = {
+		    			colonial_region = colonial_eastern_america
+		    		}
+		    		colonial_parent = {
+		    		    OR = {
+						    tag = GBR
+							tag = UNK
+						}
+		    		}
+		    		OR = {
+					    war_with = GBR
+						war_with = UNK
+					}
+		    		NOT = { war_with = ROOT }
+		    	}
+		    	country_event = { id = lotf_flavor_event.19 }
+		    	reverse_add_opinion = { who = FROM modifier = assisted_in_revolution }
+		    }
 		}
 	}   
 }
@@ -595,14 +613,21 @@ country_event = { #SPAIN INTERVENTION REVOLUTIONARY WAR
 		}
 		is_subject = no
 		NOT = { alliance_with = GBR }
+		NOT = { alliance_with = UNK }
 		any_country = {
 			capital_scope = {
 				colonial_region = colonial_eastern_america
 			}
 			colonial_parent = {
-				tag = GBR
+				OR = {
+				    tag = GBR
+					tag = UNK
+				}
 			}
-			war_with = GBR
+			OR = {
+			    war_with = GBR
+				war_with = UNK
+			}
 			NOT = { war_with = ROOT }
 		}
 	}
@@ -626,9 +651,15 @@ country_event = { #SPAIN INTERVENTION REVOLUTIONARY WAR
 					colonial_region = colonial_eastern_america
 				}
 				colonial_parent = {
-					tag = GBR
+					OR = {
+					    tag = GBR
+						tag = UNK
+					}
 				}
-				war_with = GBR
+				OR = {
+				    war_with = GBR
+					war_with = UNK
+				}
 				NOT = { war_with = ROOT }
 			}
 			country_event = { id = lotf_flavor_event.21 }
@@ -690,14 +721,21 @@ country_event = { #GERMANY INTERVENTION REVOLUTIONARY WAR
 		}
 		is_subject = no
 		NOT = { alliance_with = GBR }
+		NOT = { alliance_with = UNK }
 		any_country = {
 			capital_scope = {
 				colonial_region = colonial_eastern_america
 			}
 			colonial_parent = {
-				tag = GBR
+				OR = {
+				    tag = GBR
+				    tag = UNK
+				}
 			}
-			war_with = GBR
+			OR = {
+			    war_with = GBR
+				war_with = UNK
+			}
 			NOT = { war_with = ROOT }
 		}
 	}
@@ -714,9 +752,15 @@ country_event = { #GERMANY INTERVENTION REVOLUTIONARY WAR
 					colonial_region = colonial_eastern_america
 				}
 				colonial_parent = {
-					tag = GBR
+					OR = {
+				        tag = GBR
+				        tag = UNK
+					}
 				}
-				war_with = GBR
+				OR = {
+			        war_with = GBR
+				    war_with = UNK
+				}
 				NOT = { war_with = ROOT }
 			}
 			country_event = { id = lotf_flavor_event.23 }

@@ -21,8 +21,10 @@ country_event = {
 			AND = {
 				tag = MOS
 				NOT = { exists = RUS }
+				NOT = { exists = TZR }
 			}
 			tag = RUS
+			tag = TZR
 		}
 	}
 
@@ -79,8 +81,10 @@ country_event = {
 			AND = {
 				tag = MOS
 				NOT = { exists = RUS }
+				NOT = { exists = TZR }
 			}
 			tag = RUS
+			tag = TZR
 		}
 		owns = 295		# Moskva
 	}
@@ -331,8 +335,10 @@ country_event = {
 			AND = {
 				tag = MOS
 				NOT = { exists = RUS }
+				NOT = { exists = TZR }
 			}
 			tag = RUS
+			tag = TZR
 		}
 		owns = 295
 	}
@@ -424,8 +430,11 @@ country_event = {
 	
 	trigger = {
 		is_year = 1550
+		OR = {
+		    tag = RUS
+			tag = TZR
+		}
 		NOT = { is_year = 1650 }
-		tag = RUS
 	}
 	
 	mean_time_to_happen = {
@@ -566,11 +575,11 @@ country_event = {
 	
 	
 	trigger = {
+	    is_year = 1600
 	    OR = {
 		    tag = RUS
 			tag = TZR
 		}
-		is_year = 1600
 		NOT = { is_year = 1700 }
 	}
 	
@@ -606,10 +615,13 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = RUS
-		is_year = 1500
-		NOT = { is_year = 1600 }
+	    is_year = 1500
 		religion = orthodox
+		OR = {
+		    tag = RUS
+		    tag = TZR
+		}
+		NOT = { is_year = 1600 }
 	}
 
 	mean_time_to_happen = {
@@ -643,8 +655,11 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = RUS
-		is_year = 1620
+	    is_year = 1620
+		OR = {
+		    tag = RUS
+		    tag = TZR
+		}
 		NOT = { is_year = 1660 }
 		owns = 295		# Moskva
 	}

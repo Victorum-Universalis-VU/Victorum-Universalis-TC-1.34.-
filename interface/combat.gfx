@@ -5812,6 +5812,38 @@ spriteTypes = {
         name = "GFX_combat_terrain_urban_kohlm"
         texturefile = "gfx/interface/kohlm.dds"
     }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_aviles"
+        texturefile = "gfx/interface/aviles.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_cuenca"
+        texturefile = "gfx/interface/cuenca.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_soria"
+        texturefile = "gfx/interface/soria.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_zamora"
+        texturefile = "gfx/interface/zamora.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_carmona"
+        texturefile = "gfx/interface/carmona.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_alicante"
+        texturefile = "gfx/interface/alicante.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_barbastro"
+        texturefile = "gfx/interface/barbastro.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_tortosa"
+        texturefile = "gfx/interface/tortosa.dds"
+    }
 	
 #############################################
 

@@ -197,6 +197,7 @@
 3228 = { "Mallow" "Mallow" }
 3232 = { "Midleton" "Midleton" }
 3233 = { "Meath" "Navan" }
+8163 = { "Trim" "Trim" }
 3234 = { "Clare" "Corracatlin" }
 3236 = { "Leitrim" "Drumsna" }
 3237 = { "Inishowen" "Buncrana" }

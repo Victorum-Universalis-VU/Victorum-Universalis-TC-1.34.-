@@ -145,6 +145,19 @@ country_decisions = {
 			NOT = { tag = BEL }
 			NOT = { tag = NED }
 			NOT = { tag = FRA }
+			NOT = { tag = BFR }
+			NOT = { tag = CEL }
+			NOT = { tag = RVF }
+			NOT = { tag = FSR }
+			NOT = { tag = FSE }
+			NOT = { tag = NPF }
+			NOT = { tag = OFR }
+			NOT = { tag = TFR }
+			NOT = { tag = SPA }
+			NOT = { tag = BSP }
+			NOT = { tag = SPB }
+			NOT = { tag = BBS }
+			NOT = { tag = CSP }
 			NOT = { tag = BUR }
 			OR = {
 			    primary_culture = brabantian
@@ -334,7 +347,14 @@ country_decisions = {
 			bt_generic_can_form_potential_check = yes
 			NOT = { has_country_flag = formed_france_flag }
 			NOT = { tag = FRA }
+			NOT = { tag = BFR }
 			NOT = { tag = CEL }
+			NOT = { tag = RVF }
+			NOT = { tag = FSR }
+			NOT = { tag = FSE }
+			NOT = { tag = NPF }
+			NOT = { tag = OFR }
+			NOT = { tag = TFR }
 			NOT = { tag = SPA }
 			NOT = { tag = BSP }
 			NOT = { tag = SPB }
@@ -1440,7 +1460,10 @@ country_decisions = {
 				tag = MAZ
 				AND = {
 					dominant_culture = polish
-					accepted_culture = polish
+					OR = {
+						accepted_culture = polish
+						has_unified_culture_group = yes
+					}
 				}
 			}
 		}

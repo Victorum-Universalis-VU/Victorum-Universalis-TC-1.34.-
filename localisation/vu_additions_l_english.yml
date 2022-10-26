@@ -1549,6 +1549,14 @@
  urban_trakai:0 "Trakai"
  urban_siauliai:0 "Siauliai"
  urban_bilbao:0 "Bilbao"
+ urban_aviles:0 "Avilés"
+ urban_cuenca:0 "Cuenca"
+ urban_soria:0 "Soria"
+ urban_zamora:0 "Zamora"
+ urban_carmona:0 "Carmona"
+ urban_alicante:0 "Alicante"
+ urban_barbastro:0 "Barbastro"
+ urban_tortosa:0 "Tortosa"
  urban_mora:0 "Mora"
  urban_portland_me:0 "Portland"
  #New colonial region naming (Sidenote, I could not be arsed to do proper adjectives, so they're copy-pastes):
@@ -3676,4 +3684,9 @@
  napoleonic_sympathy_desc:0 "A small republic amongst a peninsula of larger, more militaristic nations, San Marino regularly sought diplomatic treaties to ensure their survival."
  refuge_of_the_unification:0 "Free Thinker's Refuge"
  refuge_of_the_unification_desc:0 "As the peninsula became embroiled in rebellion, with many Italians desiring a true Italian state, San Marino became a place of refuge for those who spoke the loudest."
+ 
+ #VU - New Castilian event
+ #flavor_spa.EVTNAME3715:0 "Isabella of Castile"
+ #flavor_spa.EVTDESC3715:0 "With King Enrique IV's reign coming to an end and the death of his half-brother Alfonso has left the kingdom with no other choice but to proclaime Isabella as heir presumptive and successor to the throne of Castile and although King Enrique remains doubtful of her abilities, the cortes are confident Isabela will usher in a new era that will see Castile triumph in splendor. Rumours have already begun to circulate court that an everlasting treaty or peace, stability and union with our long time rival Aragon maybe on the horizon and that the Aragonese King himself has already offerred the hand of his son Ferdinand to Isabella should she become Queen. Let us hope this is so."
+ #flavor_spa.EVTOPTA3715:0 "Let us go with Isabella"
  

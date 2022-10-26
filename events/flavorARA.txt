@@ -428,11 +428,19 @@ country_event = {
 	option = {
 		name = "flavor_ara.EVTOPTA9"
 		trigger = {
-			FRA = {
-				NOT = { has_country_flag = claimed_naples }
+		    OR = {
+			    FRA = {
+			    	NOT = { has_country_flag = claimed_naples }
+			    }
+			    BFR = {
+			    	NOT = { has_country_flag = claimed_naples }
+			    }
 			}
 		}
 		FRA = {
+			country_event = { id = flavor_fra.3105 days = 7 }
+		}
+		BFR = {
 			country_event = { id = flavor_fra.3105 days = 7 }
 		}
 		NAP = {
@@ -448,6 +456,9 @@ country_event = {
 		trigger = {
 			OR = {
 				FRA = {
+					has_country_flag = claimed_naples
+				}
+				BFR = {
 					has_country_flag = claimed_naples
 				}
 				ai = no
@@ -523,6 +534,30 @@ country_event = {
 			AND = {
 				NOT = { exists = ARA }
 				tag = SPA
+				government = monarchy
+				is_subject = no
+			}
+			AND = {
+				NOT = { exists = ARA }
+				tag = BBS
+				government = monarchy
+				is_subject = no
+			}
+			AND = {
+				NOT = { exists = ARA }
+				tag = BSP
+				government = monarchy
+				is_subject = no
+			}
+			AND = {
+				NOT = { exists = ARA }
+				tag = CSP
+				government = monarchy
+				is_subject = no
+			}
+			AND = {
+				NOT = { exists = ARA }
+				tag = SPB
 				government = monarchy
 				is_subject = no
 			}

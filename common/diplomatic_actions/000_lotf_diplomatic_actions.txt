@@ -7,7 +7,11 @@ declarewar = {
                 colonial_region = colonial_eastern_america
             }
             overlord = {
-				OR = { tag = GBR tag = ENG }
+				OR = { 
+				   tag = GBR
+				   tag = UNK
+				   tag = ENG 
+				}
             }
 		}
         allow = {

@@ -17,7 +17,10 @@ merc_lotf_minutemen = {
 					colonial_region = colonial_eastern_america
 				}
 				colonial_parent = {
-					tag = GBR
+					OR = {
+				       tag = GBR
+					   tag = UNK
+					}
 				}
 			}	
 		}

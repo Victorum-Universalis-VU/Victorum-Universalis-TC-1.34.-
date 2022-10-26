@@ -43,7 +43,7 @@ country_decisions = {
 		allow = {
 			LIT = { was_player = no }
 			LIT = {
-				NOT = { num_of_cities = 60 } #Keep this number the same as in potential. Original 38 +10
+				NOT = { num_of_cities = 156 } #Keep this number the same as in potential. Original 38 +10
 				NOT = { liberty_desire = 25 } 
 			}
 			if = {
