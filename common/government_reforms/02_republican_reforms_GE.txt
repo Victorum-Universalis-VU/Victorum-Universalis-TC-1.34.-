@@ -1184,7 +1184,6 @@ stadholder_reform = {
 		army_tradition = 1
 		nobles_influence_modifier = 0.15
 	}
-	royal_marriage = yes
 	ai = {
 		factor = 100
 	}

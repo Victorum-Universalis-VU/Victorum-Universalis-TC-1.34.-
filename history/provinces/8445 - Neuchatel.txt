@@ -15,14 +15,14 @@ base_production = 4
 base_manpower = 2 
 is_city = yes
 
+#Special Modifiers
+
+add_permanent_province_modifier = {
+    name = rich_black_soil
+    duration = -1
+}
+
 #Castle is founded 1011 AD 
-discovered_by = english
-discovered_by = french
-discovered_by = german_group
-discovered_by = italian
-discovered_by = russian
-discovered_by = scandinavian
-discovered_by = spanish
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman

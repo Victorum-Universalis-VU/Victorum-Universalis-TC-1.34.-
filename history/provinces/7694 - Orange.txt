@@ -14,6 +14,13 @@ base_manpower = 1
 add_core = ONG
 add_core = PRO
 
+#Special Modifiers
+
+add_permanent_province_modifier = {
+    name = rich_black_soil
+    duration = -1
+}
+
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
