@@ -1,0 +1,5 @@
+ten_years_eng_fra_country_modifier = {
+	global_prosperity_growth = 0.25
+	global_autonomy = -0.20
+	global_monthly_devastation = 0.1
+}

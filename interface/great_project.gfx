@@ -1085,10 +1085,10 @@ spriteTypes = {
 
 	### 1.34 MONUMENTS
 
-	spriteType = {
-		name = "GFX_great_project_falun_copper_mine"	
-		texturefile = "gfx//interface//great_projects//great_project_falun_copper_mine.dds"
-	}
+	#spriteType = {
+	#	name = "GFX_great_project_falun_copper_mine"	
+	#	texturefile = "gfx//interface//great_projects//great_project_falun_copper_mine.dds"
+	#}
 
 	spriteType = {
 		name = "GFX_great_project_kronborg"	

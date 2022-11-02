@@ -165,8 +165,18 @@
  moscow_trade:0 "Zalesye"           #Or Opolye, or simply Moscow
  namibia_trade:0 "Namibia"
  aegean_trade:0 "Aegean"
-
-
+ #VU Additions by San Felipe
+ gallipoli_trade:0 "Bursa"
+ izmir_trade:0 "Izmir"
+ selanik_trade:0 "Selanik"
+ edirne_trade:0 "Edirne"
+ silistre_trade:0 "Silistre"
+ sofia_trade:0 "Sofia"
+ ankara_trade:0 "Ankara"
+ karaman_trade:0 "Karaman"
+ sinop_trade:0 "Sinop"
+ buda_trade:0 "Budapest"
+ temes_trade:0 "Temes"
 
  #################################################################################
  #################################################################################
