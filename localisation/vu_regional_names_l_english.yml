@@ -170,13 +170,17 @@
  izmir_trade:0 "Izmir"
  selanik_trade:0 "Selanik"
  edirne_trade:0 "Edirne"
- silistre_trade:0 "Silistre"
+ tirgoviste_trade:0 "Tîrgoviste"
  sofia_trade:0 "Sofia"
  ankara_trade:0 "Ankara"
  karaman_trade:0 "Karaman"
  sinop_trade:0 "Sinop"
  buda_trade:0 "Budapest"
  temes_trade:0 "Temes"
+ tbilisi_trade:0 "Tbilisi"
+ jaffa_trade:0 "Jaffa"
+ makkah_trade:0 "Makkah"
+ baghdad_trade:0 "Baghdad"
 
  #################################################################################
  #################################################################################

@@ -13,7 +13,7 @@ objectTypes = {
 		animation = { id = "walk"	type = "gisp_SPA_carrack_walk_animation" }
 		animation = { id = "attack"	type = "gisp_SPA_carrack_attack_animation" }
 	}	
-		pdxmesh = {
+	pdxmesh = {
 		name = "gisp_SPA_heavy_02_mesh"
 		file = "gfx\models\ships\gisp_SPA_gallean.mesh"
 		scale = 0.7
@@ -22,7 +22,7 @@ objectTypes = {
 		animation = { id = "walk"	type = "gisp_SPA_gallean_walk_animation" }
 		animation = { id = "attack"	type = "gisp_SPA_gallean_attack_animation" }
 	}	
-		pdxmesh = {
+	pdxmesh = {
 		name = "gisp_SPA_heavy_03_mesh"
 		file = "gfx\models\ships\gisp_SPA_war_gallean.mesh"
 		scale = 0.7
@@ -31,7 +31,7 @@ objectTypes = {
 		animation = { id = "walk"	type = "gisp_SPA_war_gallean_walk_animation" }
 		animation = { id = "attack"	type = "gisp_SPA_war_gallean_attack_animation" }
 	}
-		pdxmesh = {
+	pdxmesh = {
 		name = "gisp_SPA_heavy_04_mesh"
 		file = "gfx\models\ships\gisp_SPA_twodecker.mesh"
 		scale = 0.7
@@ -40,7 +40,7 @@ objectTypes = {
 		animation = { id = "walk"	type = "gisp_SPA_twodecker_walk_animation" }
 		animation = { id = "attack"	type = "gisp_SPA_twodecker_attack_animation" }
 	}	
-		pdxmesh = {
+	pdxmesh = {
 		name = "gisp_SPA_heavy_05_mesh"
 		file = "gfx\models\ships\gisp_SPA_threedecker.mesh"
 		scale = 0.7
@@ -49,6 +49,43 @@ objectTypes = {
 		animation = { id = "walk"	type = "gisp_SPA_threedecker_walk_animation" }
 		animation = { id = "attack"	type = "gisp_SPA_threedecker_attack_animation" }
 	}
+	
+	#pdxmesh = {
+	#	name = "74iberian"
+	#	file = "gfx\models\ships\gisp_SPA_twodecker.mesh"
+	#	scale = 0.7
+	#	
+	#	animation = { id = "idle"	type = "gisp_SPA_twodecker_idle_animation" }
+	#	animation = { id = "walk"	type = "gisp_SPA_twodecker_walk_animation" }
+	#	animation = { id = "attack"	type = "gisp_SPA_twodecker_attack_animation" }
+	#}
+	#pdxmesh = {
+	#	name = "ironclad_iberian"
+	#	file = "gfx\models\ships\gisp_SPA_twodecker.mesh"
+	#	scale = 0.7
+	#	
+	#	animation = { id = "idle"	type = "gisp_SPA_twodecker_idle_animation" }
+	#	animation = { id = "walk"	type = "gisp_SPA_twodecker_walk_animation" }
+	#	animation = { id = "attack"	type = "gisp_SPA_twodecker_attack_animation" }
+	#}
+	#pdxmesh = {
+	#	name = "cruiser_iberian"
+	#	file = "gfx\models\ships\gisp_SPA_twodecker.mesh"
+	#	scale = 0.7
+	#	
+	#	animation = { id = "idle"	type = "gisp_SPA_twodecker_idle_animation" }
+	#	animation = { id = "walk"	type = "gisp_SPA_twodecker_walk_animation" }
+	#	animation = { id = "attack"	type = "gisp_SPA_twodecker_attack_animation" }
+	#}
+	#pdxmesh = {
+	#	name = "dreadnought_iberian"
+	#	file = "gfx\models\ships\gisp_SPA_twodecker.mesh"
+	#	scale = 0.7
+	#	
+	#	animation = { id = "idle"	type = "gisp_SPA_twodecker_idle_animation" }
+	#	animation = { id = "walk"	type = "gisp_SPA_twodecker_walk_animation" }
+	#	animation = { id = "attack"	type = "gisp_SPA_twodecker_attack_animation" }
+	#}
 	
 #######################
 ###		Light		###
@@ -62,7 +99,7 @@ objectTypes = {
 		animation = { id = "walk"	type = "gisp_SPA_barque_walk_animation" }
 		animation = { id = "attack"	type = "gisp_SPA_barque_attack_animation" }
 	}	
-		pdxmesh = {
+	pdxmesh = {
 		name = "gisp_SPA_light_02_mesh"
 		file = "gfx\models\ships\gisp_SPA_caravel.mesh"
 		scale = 0.7
@@ -71,7 +108,7 @@ objectTypes = {
 		animation = { id = "walk"	type = "gisp_SPA_caravel_walk_animation" }
 		animation = { id = "attack"	type = "gisp_SPA_caravel_attack_animation" }
 	}	
-		pdxmesh = {
+	pdxmesh = {
 		name = "gisp_SPA_light_03_mesh"
 		file = "gfx\models\ships\gisp_SPA_frigate.mesh"
 		scale = 0.7
@@ -80,7 +117,7 @@ objectTypes = {
 		animation = { id = "walk"	type = "gisp_SPA_frigate_walk_animation" }
 		animation = { id = "attack"	type = "gisp_SPA_frigate_attack_animation" }
 	}
-		pdxmesh = {
+	pdxmesh = {
 		name = "gisp_SPA_light_04_mesh"
 		file = "gfx\models\ships\gisp_SPA_heavy_frigate.mesh"
 		scale = 0.7

@@ -12,8 +12,8 @@ objectTypes = {
 		animation = { id = "idle"	type = "gbsp_MOR_carrack_idle_animation" }
 		animation = { id = "walk"	type = "gbsp_MOR_carrack_walk_animation" }
 		animation = { id = "attack"	type = "gbsp_MOR_carrack_attack_animation" }
-	}	
-		pdxmesh = {
+	}
+	pdxmesh = {
 		name = "turkishgfx_heavy_02_mesh"
 		file = "gfx\models\ships\gbsp_MOR_gallean.mesh"
 		scale = 1
@@ -21,8 +21,8 @@ objectTypes = {
 		animation = { id = "idle"	type = "gbsp_MOR_gallean_idle_animation" }
 		animation = { id = "walk"	type = "gbsp_MOR_gallean_walk_animation" }
 		animation = { id = "attack"	type = "gbsp_MOR_gallean_attack_animation" }
-	}	
-		pdxmesh = {
+	}
+	pdxmesh = {
 		name = "turkishgfx_heavy_03_mesh"
 		file = "gfx\models\ships\gbsp_MOR_war_gallean.mesh"
 		scale = 1
@@ -31,7 +31,7 @@ objectTypes = {
 		animation = { id = "walk"	type = "gbsp_MOR_war_gallean_walk_animation" }
 		animation = { id = "attack"	type = "gbsp_MOR_war_gallean_attack_animation" }
 	}
-		pdxmesh = {
+	pdxmesh = {
 		name = "turkishgfx_heavy_04_mesh"
 		file = "gfx\models\ships\gbsp_MOR_twodecker.mesh"
 		scale = 1
@@ -39,8 +39,8 @@ objectTypes = {
 		animation = { id = "idle"	type = "gbsp_MOR_twodecker_idle_animation" }
 		animation = { id = "walk"	type = "gbsp_MOR_twodecker_walk_animation" }
 		animation = { id = "attack"	type = "gbsp_MOR_twodecker_attack_animation" }
-	}	
-		pdxmesh = {
+	}
+	pdxmesh = {
 		name = "turkishgfx_heavy_05_mesh"
 		file = "gfx\models\ships\gbsp_MOR_threedecker.mesh"
 		scale = 1
@@ -49,6 +49,42 @@ objectTypes = {
 		animation = { id = "walk"	type = "gbsp_MOR_threedecker_walk_animation" }
 		animation = { id = "attack"	type = "gbsp_MOR_threedecker_attack_animation" }
 	}
+	#pdxmesh = {
+	#	name = "74muslim"
+	#	file = "gfx\models\ships\gbsp_MOR_twodecker.mesh"
+	#	scale = 1
+	#	
+	#	animation = { id = "idle"	type = "gbsp_MOR_twodecker_idle_animation" }
+	#	animation = { id = "walk"	type = "gbsp_MOR_twodecker_walk_animation" }
+	#	animation = { id = "attack"	type = "gbsp_MOR_twodecker_attack_animation" }
+	#}
+	#pdxmesh = {
+	#	name = "ironclad_muslim"
+	#	file = "gfx\models\ships\gbsp_MOR_twodecker.mesh"
+	#	scale = 1
+	#	
+	#	animation = { id = "idle"	type = "gbsp_MOR_twodecker_idle_animation" }
+	#	animation = { id = "walk"	type = "gbsp_MOR_twodecker_walk_animation" }
+	#	animation = { id = "attack"	type = "gbsp_MOR_twodecker_attack_animation" }
+	#}
+	#pdxmesh = {
+	#	name = "cruiser_muslim"
+	#	file = "gfx\models\ships\gbsp_MOR_twodecker.mesh"
+	#	scale = 1
+	#	
+	#	animation = { id = "idle"	type = "gbsp_MOR_twodecker_idle_animation" }
+	#	animation = { id = "walk"	type = "gbsp_MOR_twodecker_walk_animation" }
+	#	animation = { id = "attack"	type = "gbsp_MOR_twodecker_attack_animation" }
+	#}
+	#pdxmesh = {
+	#	name = "dreadnought_muslim"
+	#	file = "gfx\models\ships\gbsp_MOR_twodecker.mesh"
+	#	scale = 1
+	#	
+	#	animation = { id = "idle"	type = "gbsp_MOR_twodecker_idle_animation" }
+	#	animation = { id = "walk"	type = "gbsp_MOR_twodecker_walk_animation" }
+	#	animation = { id = "attack"	type = "gbsp_MOR_twodecker_attack_animation" }
+	#}
 	
 #######################
 ###		Light		###
@@ -62,7 +98,7 @@ objectTypes = {
 		animation = { id = "walk"	type = "gbsp_MOR_barque_walk_animation" }
 		animation = { id = "attack"	type = "gbsp_MOR_barque_attack_animation" }
 	}	
-		pdxmesh = {
+	pdxmesh = {
 		name = "turkishgfx_light_02_mesh"
 		file = "gfx\models\ships\gbsp_MOR_caravel.mesh"
 		scale = 1
@@ -71,7 +107,7 @@ objectTypes = {
 		animation = { id = "walk"	type = "gbsp_MOR_caravel_walk_animation" }
 		animation = { id = "attack"	type = "gbsp_MOR_caravel_attack_animation" }
 	}	
-		pdxmesh = {
+	pdxmesh = {
 		name = "turkishgfx_light_03_mesh"
 		file = "gfx\models\ships\gbsp_MOR_frigate.mesh"
 		scale = 1
@@ -80,7 +116,7 @@ objectTypes = {
 		animation = { id = "walk"	type = "gbsp_MOR_frigate_walk_animation" }
 		animation = { id = "attack"	type = "gbsp_MOR_frigate_attack_animation" }
 	}
-		pdxmesh = {
+	pdxmesh = {
 		name = "turkishgfx_light_04_mesh"
 		file = "gfx\models\ships\gbsp_MOR_heavy_frigate.mesh"
 		scale = 1

@@ -537,6 +537,10 @@ technology = { #Joint Stock Companies
 	naval_maintenance		= 	0.1
 
 	enable = 74s
+	#enable = 74iberian
+	#enable = 74muslim
+	#enable = 74eastern
+	#enable = 74asian
 }
 
 technology = { #Midshipmen Cadets
@@ -704,6 +708,10 @@ technology = {
 	naval_morale		= 0.5
 
 	enable = ironclad
+	#enable = ironclad_iberian
+	#enable = ironclad_muslim
+	#enable = ironclad_eastern
+	#enable = ironclad_asian
 }
 
 technology = {
@@ -728,6 +736,11 @@ technology = {
 	global_colonial_growth  = 25
 
 	enable = cruiser
+	#enable = cruiser_iberian
+	#enable = cruiser_muslim
+	#enable = cruiser_eastern
+	#enable = cruiser_asian
+	
 	enable = destroyer
 	enable = torpedo_boat
 }
@@ -796,5 +809,10 @@ technology = {
 
 	naval_maintenance = 0.1
 	naval_morale 	  = 0.5
+	
 	enable = dreadnought
+	#enable = dreadnought_iberian
+	#enable = dreadnought_muslim
+	#enable = dreadnought_eastern
+	#enable = dreadnought_asian
 }

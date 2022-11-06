@@ -12,7 +12,7 @@ trade_goods = pottery #Known for producing pottery and ceramics (by San Felipe).
 base_manpower = 2
 capital = "Copenhagen"
 is_city = yes
-center_of_trade = 2
+center_of_trade = 3
 
 discovered_by = eastern
 discovered_by = western

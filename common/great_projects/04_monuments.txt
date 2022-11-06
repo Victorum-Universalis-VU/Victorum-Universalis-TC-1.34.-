@@ -10413,7 +10413,7 @@ princeton_university = {
 	start = 6019
 	
 	# date built in real life 
-	date = 1444.01.01 #1746.01.01
+	date = 1746.01.01
 	
 	#time to build
 	time = {
@@ -15665,7 +15665,7 @@ statue_of_liberty = {
 	start = 965
 	
 	# date built in real life 
-	date = 1444.01.01 
+	date = 1836.01.01 #Supposed to be 1876 but I've decided to move the date 40 back because they did already have the technology available in the early 1830s.
 	
 	#time to build
 	time = {
@@ -15689,7 +15689,7 @@ statue_of_liberty = {
 
 	#can we build it?
 	build_trigger = {
-		
+		is_year = 1836
 	}
 
 	#what to do when it's built
