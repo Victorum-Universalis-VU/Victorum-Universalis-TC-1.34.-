@@ -167,7 +167,23 @@
 		position = 3
 		provinces_to_highlight = {
 			OR = {
-				area = hudson_valley_area
+			    province_id = 959
+				province_id = 960
+				province_id = 961
+				province_id = 963
+				province_id = 964
+				province_id = 965
+				province_id = 2558
+				province_id = 2559
+				province_id = 4912
+				province_id = 5714
+				province_id = 5920
+				province_id = 5921
+				province_id = 5922
+				province_id = 5923
+				province_id = 5924
+				province_id = 5925
+				#area = hudson_valley_area
 				area = delaware_valley_area
 				area = south_iroquoisia_area
 			}
@@ -178,11 +194,27 @@
 				
 		}
 		trigger = { 
-			hudson_valley_area = {
-				type = all
-				owned_by = ROOT
-				is_city = yes
-			}
+		    owns = 959
+			owns = 960
+			owns = 961
+			owns = 963
+			owns = 964
+			owns = 965
+			owns = 2558
+			owns = 2559
+			owns = 4912
+			owns = 5714
+			owns = 5920
+			owns = 5921
+			owns = 5922
+			owns = 5923
+			owns = 5924
+			owns = 5925
+			#hudson_valley_area = {
+			#	type = all
+			#	owned_by = ROOT
+			#	is_city = yes
+			#}
 			delaware_valley_area = {
 				type = all
 				owned_by = ROOT

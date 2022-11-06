@@ -538,6 +538,7 @@
  urban_zurich:0 "Zurich"
  urban_geneva:0 "Geneva"
  urban_berlin:0 "Berlin"
+ urban_wittenberg:0 "Wittenberg"
  urban_hamburg:0 "Hamburg"
  urban_frankfurt:0 "Frankfurt"
  urban_bremerhaven:0 "Bremerhaven"
@@ -669,7 +670,7 @@
  urban_bessarabia:0 "Bessarabia"
  urban_cetatea_alba:0 "Cetatea Alba"
  urban_bran:0 "Bran"
- urban_tirgoviste:0 "Tirgoviste"
+ urban_tirgoviste:0 "Tîrgoviste"
  urban_thessaloniki:0 "Thessaloniki"
  urban_xanthi:0 "Xanthi"
  urban_patras:0 "Patras"
@@ -3689,4 +3690,8 @@
  #flavor_spa.EVTNAME3715:0 "Isabella of Castile"
  #flavor_spa.EVTDESC3715:0 "With King Enrique IV's reign coming to an end and the death of his half-brother Alfonso has left the kingdom with no other choice but to proclaime Isabella as heir presumptive and successor to the throne of Castile and although King Enrique remains doubtful of her abilities, the cortes are confident Isabela will usher in a new era that will see Castile triumph in splendor. Rumours have already begun to circulate court that an everlasting treaty or peace, stability and union with our long time rival Aragon maybe on the horizon and that the Aragonese King himself has already offerred the hand of his son Ferdinand to Isabella should she become Queen. Let us hope this is so."
  #flavor_spa.EVTOPTA3715:0 "Let us go with Isabella"
+ 
+ #VU - New units
+ western_hussar:0 "Western Hussar"
+ western_hussarDESCR:0 "A more modern version of the Hussar class of light cavalry, originating in Central Europe during the 15th and 16th centuries."
  

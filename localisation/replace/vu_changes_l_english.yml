@@ -39,6 +39,7 @@
  #Trade Nodes
  wien:0 "Vienna"
  pest:0 "Belgrade"            #Changed in BT12 from Danube.
+ alexandria:0 "Alexandria"
  
  #Trade Goods
  grain:0 "Wheat"
@@ -737,10 +738,9 @@
  ivoryDESC:0 "Ivory, the bone of large animals like elephants or whales, was highly sought after for use in various manufactured goods such as cutlery, scrimshaw, small pieces of art, furniture, etc."
 
  #TCP - Tag Changes
-  ZUL:0 "Zulu"
-  ZUL_ADJ:0 "Zulu"
-
-
+ ZUL:0 "Zulu"
+ ZUL_ADJ:0 "Zulu"
+  
  #Tag Changes
  CNN:0 "Connacht"
  CNN_ADJ:0 "Connachtan"
@@ -1390,14 +1390,51 @@
 
  74s:0 "Seventy-Four"
  74sDESCR:0 "The Seventy-four was a type of two-decked sailing ship of the line which nominally carried 74 guns. The design was considered a good balance between firepower and sailing qualities, but more importantly, it was an appealing ideal for naval administrators and bureaucrats."
- cruiser:0 "Cruiser"
- cruiserDESCR:0 "Modern armored cruisers were almost as powerful as battleships and were also fast enough to outrun older protected and unarmored ships."
- destroyer:0 "Destroyer"
- destroyerDESCR:0 "Prior to World War II, destroyers were light vessels with little endurance for unattended ocean operations. Typically a number of destroyers and a single destroyer tender operated together."
- dreadnought:0 "Dreadnought"
- dreadnoughtDESCR:0 "The dreadnought was the predominant type of battleship in the early 20th century. As dreadnoughts became a crucial symbol of national power, the arrival of these new warships renewed the naval arms race."
+ #74iberian:0 "Seventy-Four"
+ #74iberianDESCR:0 "The Seventy-four was a type of two-decked sailing ship of the line which nominally carried 74 guns. The design was considered a good balance between firepower and sailing qualities, but more importantly, it was an appealing ideal for naval administrators and bureaucrats."
+ #74muslim:0 "Seventy-Four"
+ #74muslimDESCR:0 "The Seventy-four was a type of two-decked sailing ship of the line which nominally carried 74 guns. The design was considered a good balance between firepower and sailing qualities, but more importantly, it was an appealing ideal for naval administrators and bureaucrats."
+ #74eastern:0 "Seventy-Four"
+ #74easternDESCR:0 "The Seventy-four was a type of two-decked sailing ship of the line which nominally carried 74 guns. The design was considered a good balance between firepower and sailing qualities, but more importantly, it was an appealing ideal for naval administrators and bureaucrats."
+ #74asian:0 "Seventy-Four"
+ #74asianDESCR:0 "The Seventy-four was a type of two-decked sailing ship of the line which nominally carried 74 guns. The design was considered a good balance between firepower and sailing qualities, but more importantly, it was an appealing ideal for naval administrators and bureaucrats."
+ 
  ironclad:0 "Ironclad"
  ironcladDESCR:0 "An ironclad was a steam-propelled warship protected by iron or steel armour plates. The ironclad was developed as a result of the vulnerability of wooden warships to explosive or incendiary shells."
+ #ironclad_iberian:0 "Ironclad"
+ #ironclad_iberianDESCR:0 "An ironclad was a steam-propelled warship protected by iron or steel armour plates. The ironclad was developed as a result of the vulnerability of wooden warships to explosive or incendiary shells."
+ #ironclad_muslim:0 "Ironclad"
+ #ironclad_muslimDESCR:0 "An ironclad was a steam-propelled warship protected by iron or steel armour plates. The ironclad was developed as a result of the vulnerability of wooden warships to explosive or incendiary shells."
+ #ironclad_eastern:0 "Ironclad"
+ #ironclad_easternDESCR:0 "An ironclad was a steam-propelled warship protected by iron or steel armour plates. The ironclad was developed as a result of the vulnerability of wooden warships to explosive or incendiary shells."
+ #ironclad_asian:0 "Ironclad"
+ #ironclad_asianDESCR:0 "An ironclad was a steam-propelled warship protected by iron or steel armour plates. The ironclad was developed as a result of the vulnerability of wooden warships to explosive or incendiary shells."
+ 
+ cruiser:0 "Cruiser"
+ cruiserDESCR:0 "Modern armored cruisers were almost as powerful as battleships and were also fast enough to outrun older protected and unarmored ships."
+ #cruiser_iberian:0 "Cruiser"
+ #cruiser_iberianDESCR:0 "Modern armored cruisers were almost as powerful as battleships and were also fast enough to outrun older protected and unarmored ships."
+ #cruiser_muslim:0 "Cruiser"
+ #cruiser_muslimDESCR:0 "Modern armored cruisers were almost as powerful as battleships and were also fast enough to outrun older protected and unarmored ships."
+ #cruiser_eastern:0 "Cruiser"
+ #cruiser_easternDESCR:0 "Modern armored cruisers were almost as powerful as battleships and were also fast enough to outrun older protected and unarmored ships."
+ #cruiser_asian:0 "Cruiser"
+ #cruiser_asianDESCR:0 "Modern armored cruisers were almost as powerful as battleships and were also fast enough to outrun older protected and unarmored ships."
+ 
+ dreadnought:0 "Dreadnought"
+ dreadnoughtDESCR:0 "The dreadnought was the predominant type of battleship in the early 20th century. As dreadnoughts became a crucial symbol of national power, the arrival of these new warships renewed the naval arms race."
+ #dreadnought_iberian:0 "Dreadnought"
+ #dreadnought_iberianDESCR:0 "The dreadnought was the predominant type of battleship in the early 20th century. As dreadnoughts became a crucial symbol of national power, the arrival of these new warships renewed the naval arms race."
+ #dreadnought_muslim:0 "Dreadnought"
+ #dreadnought_muslimDESCR:0 "The dreadnought was the predominant type of battleship in the early 20th century. As dreadnoughts became a crucial symbol of national power, the arrival of these new warships renewed the naval arms race."
+ #dreadnought_eastern:0 "Dreadnought"
+ #dreadnought_easternDESCR:0 "The dreadnought was the predominant type of battleship in the early 20th century. As dreadnoughts became a crucial symbol of national power, the arrival of these new warships renewed the naval arms race."
+ #dreadnought_asian:0 "Dreadnought"
+ #dreadnought_asianDESCR:0 "The dreadnought was the predominant type of battleship in the early 20th century. As dreadnoughts became a crucial symbol of national power, the arrival of these new warships renewed the naval arms race."
+ 
+ destroyer:0 "Destroyer" 
+ destroyerDESCR:0 "Prior to World War II, destroyers were light vessels with little endurance for unattended ocean operations. Typically a number of destroyers and a single destroyer tender operated together."
+ 
  sloop_of_war:0 "Sloop of War"
  sloop_of_warDESCR:0 "a sloop-of-war in the Royal Navy was a warship with a single gun deck that carried up to eighteen guns. The rating system covered all vessels with 20 guns and above; thus, the term sloop-of-war encompassed all the unrated combat vessels, including the very small gun-brigs and cutters."
  steam_frigate:0 "Steam Frigate"
