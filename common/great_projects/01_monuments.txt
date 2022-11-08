@@ -16982,7 +16982,7 @@ swayambhunath = {
 
 white_house = {
 	start = 953 #Washington
-	date = 1444.01.01	#1800.01.01
+	date = 1800.01.01 #Was 1444.01.01
 	time = { months = 0	}
 	build_cost = 0
 	can_be_moved = no
@@ -16991,6 +16991,7 @@ white_house = {
 	type = monument
 
 	build_trigger = {
+	    is_year = 1800
 		owner = {
 			OR = {
 				is_former_colonial_nation = yes

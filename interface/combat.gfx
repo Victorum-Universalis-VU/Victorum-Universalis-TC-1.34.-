@@ -1176,6 +1176,10 @@ spriteTypes = {
         name = "GFX_combat_terrain_urban_berlin"
         texturefile = "gfx/interface/berlin.dds"
     }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_wittenberg"
+        texturefile = "gfx/interface/wittenberg.dds"
+    }
     spriteType = {                                                        
         name = "GFX_combat_terrain_urban_berliner_stadtschloss"
         texturefile = "gfx/interface/berliner_stadtschloss.dds"

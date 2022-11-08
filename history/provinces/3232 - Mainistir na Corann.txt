@@ -13,6 +13,13 @@ trade_goods = whiskey #Irish Whiskey (by San Felipe).
 add_core = DMS
 hre = no
 
+#Special Modifiers
+
+add_permanent_province_modifier = {
+    name = rich_black_soil
+    duration = -1
+}
+
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman

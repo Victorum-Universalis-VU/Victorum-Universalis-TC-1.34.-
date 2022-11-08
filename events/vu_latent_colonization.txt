@@ -1,0 +1,58 @@
+namespace = vu_latent_colonization
+
+#Non-African tag owns malaria province
+province_event = {
+	id = vu_latent_colonization.1
+	title = vu_latent_colonization.1.t
+	desc = vu_latent_colonization.1.d
+	picture = BANKRUPTCY_eventPicture
+	
+	trigger = {
+		has_province_modifier = vu_malaria_present
+		owner = {
+			NOT = { dip_tech = 35 }
+			NOT = {
+				OR = { 
+					technology_group = east_african
+					technology_group = central_african
+					technology_group = sub_saharan
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 6
+	}
+	
+	immediate = {		#Choosees random previous owner of the core
+		hidden_effect = {
+			random_core_country = {
+				limit = { NOT = { tag = owner } }
+				save_event_target_as = original_core_target
+			}
+			owner = { save_event_target_as = current_owner_target }
+		}
+	}
+	
+	option = {	#Cede province back
+		name = vu_latent_colonization.1.a
+		ai_chance = { factor = 100 }
+		remove_core = event_target:current_owner_target
+		cede_province = event_target:original_core_target
+	}
+	
+	option = {	#Abandon
+		name = vu_latent_colonization.1.b
+		ai_chance = { factor = 0 }
+		remove_core = event_target:current_owner_target
+		decolonize = THIS
+	}
+	
+	after = {
+		if = {	#Just in case there is no previous owner
+			limit = { owned_by = event_target:current_owner_target }
+			decolonize = THIS
+		}
+	}
+}

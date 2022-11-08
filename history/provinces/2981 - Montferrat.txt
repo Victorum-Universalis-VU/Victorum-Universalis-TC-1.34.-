@@ -13,7 +13,12 @@ capital = "Casale"
 is_city = yes
 add_core = MFA
 
+#Special Modifiers
 
+add_permanent_province_modifier = {
+    name = rich_black_soil
+    duration = -1
+}
 
 discovered_by = western
 discovered_by = eastern

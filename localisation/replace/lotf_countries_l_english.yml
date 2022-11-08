@@ -246,7 +246,7 @@
  TRE:0 "Trebizond"
  TRI:0 "Trier"
  TRP:0 "Tripoli"
- TRV:0 "Travanacore"
+ TRV:0 "Treviso" #Was Travanacore
  TUN:0 "Tunis"
  TUR:0 "Ottomans"
  TUS:0 "Tuscany"
@@ -645,7 +645,7 @@
  CZH_ADJ:0 "Zhou"
  CSH_ADJ:0 "Shun"
  CXI_ADJ:0 "Xi"
- PLC:0 "Commonwealth"
+ PLC:0 "Polish-Lithuanian Commonwealth"
  PLC_ADJ:0 "Commonwealth"
  PRM:0 "Perm"
  PRM_ADJ:0 "Permian"

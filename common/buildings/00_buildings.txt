@@ -2829,7 +2829,7 @@ temple = {
 	}
 	
 	keep_trigger = {
-	    always = no
+	    always = yes
 	}
 	
 	modifier = {
@@ -4689,6 +4689,7 @@ textile = {
 			trade_goods = silk
 			trade_goods = uniforms 
 			trade_goods = wool
+			trade_goods = lace
 		}
 	}
 
