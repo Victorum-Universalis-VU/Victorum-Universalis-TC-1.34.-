@@ -598,7 +598,7 @@
 7821 = { "Santoch" "Santoch" }
 7823 = "Bialogard"
 7824 = "Slawno"
-7825 = "Lebork"
+7825 = { "Lebork" "Lebork" }
 7826 = "Bytów"
 7827 = "Czluchów"
 7828 = "Puck"

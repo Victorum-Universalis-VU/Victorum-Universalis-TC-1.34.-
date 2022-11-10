@@ -3,7 +3,7 @@
 owner = WRT
 controller = WRT
 add_core = WRT
-capital = "Wertheim"
+capital = "Alzenau"
 culture = franconian
 religion = catholic
 trade_goods = wine
