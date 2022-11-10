@@ -651,7 +651,7 @@ technology = {
 		enlightenment = 1
 		industrialization = 1
 		imperialism = 1
-		nationalism_institution = 0.5
+		nationalism_institution = 0.75
 	}
 
 	#Repleceable Parts
@@ -692,7 +692,7 @@ technology = {
 		enlightenment = 1
 		industrialization = 1
 		imperialism = 1
-		nationalism_institution = 1
+		nationalism_institution = 1.25
 	}
 
 	#Progressivism
@@ -712,7 +712,7 @@ technology = {
 		enlightenment = 1
 		industrialization = 1
 		imperialism = 1
-		nationalism_institution = 1
+		nationalism_institution = 1.5
 	}
 
 	#Electrification

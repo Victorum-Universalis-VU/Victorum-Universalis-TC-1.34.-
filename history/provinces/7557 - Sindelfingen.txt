@@ -1,0 +1,32 @@
+#7557 - Sindelfingen
+#Region - Germany
+#Area - Lower Swabia
+
+owner = HAB
+controller = HAB
+add_core = HAB
+culture = swabian
+religion = catholic
+base_tax = 4
+base_production = 3
+trade_goods = cloth	#fustians
+base_manpower = 2
+capital = "Sindelfingen"
+is_city = yes
+hre = yes
+
+discovered_by = english
+discovered_by = french
+discovered_by = german_group
+discovered_by = italian
+discovered_by = russian
+discovered_by = scandinavian
+discovered_by = spanish
+discovered_by = western
+discovered_by = muslim
+discovered_by = ottoman
+discovered_by = eastern
+
+#Documented 961 AD
+1530.1.1 = { religion = protestant }
+1806.7.12 = { hre = no } # The Holy Roman Empire is dissolved

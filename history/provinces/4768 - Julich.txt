@@ -1,16 +1,16 @@
 #4768 - Jülich
 
-owner = GEL
-controller = GEL
-culture = limburgish
+owner = JUL
+controller = JUL
+culture = hessian
 religion = catholic
-trade_goods = beer
-capital = "Heinsberg"
-base_tax = 2
-base_production = 2			#Region (Rur river valley) was rather rich, but the city itself appears to have straddled 1.5k population since the Roman period, not breaking 2k until 18th century, if not later. Going for a compromise, actually, leaving it how it was.
+trade_goods = zinc
+capital = "Jülich"
+base_tax = 6
+base_production = 6			#Region (Rur river valley) was rather rich, but the city itself appears to have straddled 1.5k population since the Roman period, not breaking 2k until 18th century, if not later. Going for a compromise, actually, leaving it how it was.
 is_city = yes
-add_core = GEL
-base_manpower = 1
+add_core = JUL
+base_manpower = 4 
 hre = yes
 
 discovered_by = western
@@ -22,7 +22,7 @@ discovered_by = eastern
 	owner = KLE
 	controller = KLE
 	add_core = KLE
-	remove_core = BRG
+	remove_core = JUL
 }
 1545.1.1 = { fort_15th = yes }
 1584.1.1 = { fort_15th = no fort_16th = yes }

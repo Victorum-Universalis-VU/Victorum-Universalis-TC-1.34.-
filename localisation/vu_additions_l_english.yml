@@ -3718,4 +3718,8 @@
  construct_vu_red_bay_title: "Experience the tranquil waters of Red Bay"
  construct_vu_red_bay_desc: "Red Bay is a natural harbour residing in the bay that gives it its name and is surrounded by red granite cliffs that when combined lend their names to this part of the world.; Costs 4000."
  #
+ #VU German Nation
+ german_nation_militarily_title:0 "Form German Nation Militarily"
+ german_nation_militarily_desc:0 "Let us unite and form the German Empire."
+ 
  
