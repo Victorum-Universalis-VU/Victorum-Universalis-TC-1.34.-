@@ -1,4 +1,4 @@
-# 2190 - Qaraqorum
+# 4678 - East Qaraqorum
 
 owner = OIR
 controller = OIR
@@ -9,11 +9,14 @@ capital = "Sain Noyon"
 trade_goods = horses
 
 hre = no
-base_tax = 4
-base_production = 2
-base_manpower = 4
+base_tax = 6
+base_production = 6
+base_manpower = 8
 is_city = yes
+extra_cost = 8
+center_of_trade = 2
 
+add_province_triggered_modifier = mongol_kurultai
 
 
 discovered_by = chinese

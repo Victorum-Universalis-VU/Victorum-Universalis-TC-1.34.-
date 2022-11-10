@@ -13203,7 +13203,7 @@ ellora_caves = {
 }
 
 erdene_zuu = {
-	start = 2190 #Qaraqorum
+	start = 4678 #Qaraqorum
 	date = 1444.01.01	#1585.01.01
 	time = { months = 0	}
 	build_cost = 0
