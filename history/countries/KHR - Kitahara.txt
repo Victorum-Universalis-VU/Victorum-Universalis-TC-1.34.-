@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = kyushuan
 religion = shinto
 technology_group = japanese
-capital = 5276	# Nishi Morokata
+capital = 6453	# Nishi Morokata
 	
 1444.6.15 = { 
 	monarch = {

@@ -7527,7 +7527,7 @@ modernized_fire_ranks_modifier = {
 	own_territory_dice_roll_bonus = 1
 }
 pol_cavalry_with_state_modifier = {
-	cav_to_inf_ratio = 0.5 
+	cav_to_inf_ratio = 0.7
 	cossacks_loyalty_modifier = 0.1 
 	cavalry_cost = -0.1
 }
