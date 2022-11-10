@@ -197,7 +197,7 @@
 2897 = "Presidente Prudente"
 2898 = "Diamantina"
 2899 = "Juiz de Fora"
-2900 = "Porto Velho"
+2900 = { "Guajará" "Porto Velho" }
 2901 = "Ji-Paraná"
 2902 = "Sinop"
 2904 = "Tangará da Serra"

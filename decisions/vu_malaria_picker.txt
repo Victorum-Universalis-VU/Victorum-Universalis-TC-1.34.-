@@ -1,0 +1,24 @@
+#Originally written by Doge and further ellaborated by San Felipe
+country_decisions = {
+
+    vu_malaria_picker_decision = {
+        major = yes
+        potential = {
+            NOT = { 
+                has_global_flag = vu_malaria_picker_decision_hide_global_flag
+            }
+        }
+
+        allow = {
+
+        }
+
+        effect = {
+            country_event = { id = vu_malaria_picker.1 days = 0 }
+        }
+        
+        ai_will_do = {
+            factor = 0
+        }
+    }    
+}

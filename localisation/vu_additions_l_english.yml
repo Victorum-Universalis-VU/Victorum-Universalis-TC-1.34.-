@@ -3686,6 +3686,10 @@
  refuge_of_the_unification:0 "Free Thinker's Refuge"
  refuge_of_the_unification_desc:0 "As the peninsula became embroiled in rebellion, with many Italians desiring a true Italian state, San Marino became a place of refuge for those who spoke the loudest."
  
+ #Malaria Picker
+ vu_malaria_picker_decision_title:0 "Malaria Picker"
+ vu_malaria_picker_decision_desc:0 "Simply choose whether to have Malaria turned on or off via the event."
+ 
  #VU - New Castilian event
  #flavor_spa.EVTNAME3715:0 "Isabella of Castile"
  #flavor_spa.EVTDESC3715:0 "With King Enrique IV's reign coming to an end and the death of his half-brother Alfonso has left the kingdom with no other choice but to proclaime Isabella as heir presumptive and successor to the throne of Castile and although King Enrique remains doubtful of her abilities, the cortes are confident Isabela will usher in a new era that will see Castile triumph in splendor. Rumours have already begun to circulate court that an everlasting treaty or peace, stability and union with our long time rival Aragon maybe on the horizon and that the Aragonese King himself has already offerred the hand of his son Ferdinand to Isabella should she become Queen. Let us hope this is so."
@@ -3694,4 +3698,24 @@
  #VU - New units
  western_hussar:0 "Western Hussar"
  western_hussarDESCR:0 "A more modern version of the Hussar class of light cavalry, originating in Central Europe during the 15th and 16th centuries."
+ 
+ #VU - Monuments
+ great_project_vu_el_morro: "El Morro"
+ vu_el_morro: "El Morro"
+ vu_el_morro_title: "View the majesty of El Morro"
+ construct_vu_el_morro_title: "View the majesty of El Morro"
+ construct_vu_el_morro_desc: "El Morro is a national wonder located on an ancient east–west trail and preserves the remains of a large ancient pueblo atop a great sandstone promontory with a pool of water at its base alongside inscriptions left by travellers of a bygone age.; Costs 4000."
+ #
+ great_project_vu_gros_morne: "Mt. Gros Morne"
+ vu_gros_morne: "Mt. Gros Morne"
+ vu_gros_morne_title: "View the majesty of Mt. Gros Morne"
+ construct_vu_gros_morne_title: "View the majesty of Mt. Gros Morne"
+ construct_vu_gros_morne_desc: "Mt. Gros Morne is Newfoundland's second-highest mountain peak, measuring at 806 m or 2,644 ft tall. The French call it "large mountain standing alone" or more literally "great sombre." Gros Morne is a member of the Long Range Mountains, an outlying part of the Appalachian Mountain range that stretches the length of the island's west coast.; Costs 4000."
+ #
+ great_project_vu_red_bay: "Red Bay"
+ vu_red_bay: "Red Bay"
+ vu_red_bay_title: "Experience the tranquil waters of Red Bay"
+ construct_vu_red_bay_title: "Experience the tranquil waters of Red Bay"
+ construct_vu_red_bay_desc: "Red Bay is a natural harbour residing in the bay that gives it its name and is surrounded by red granite cliffs that when combined lend their names to this part of the world.; Costs 4000."
+ #
  

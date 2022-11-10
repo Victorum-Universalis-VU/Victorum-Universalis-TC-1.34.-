@@ -1,0 +1,15 @@
+#VU additions by San Felipe
+spriteTypes = {
+	spriteType = {
+		name = "GFX_great_project_vu_el_morro"
+		texturefile = "gfx//interface//great_projects//VU//great_project_vu_el_morro.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_vu_gros_morne"
+		texturefile = "gfx//interface//great_projects//VU//great_project_vu_gros_morne.dds"
+	}
+	spriteType = {
+		name = "GFX_great_project_vu_red_bay"
+		texturefile = "gfx//interface//great_projects//VU//great_project_vu_red_bay.dds"
+	}
+}

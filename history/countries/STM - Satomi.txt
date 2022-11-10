@@ -4,7 +4,7 @@ government_rank = 1
 primary_culture = togoku
 religion = shinto
 technology_group = japanese
-capital = 3258 # Asai
+capital = 6424 # Asai
 	
 1444.6.15 = { 
 	monarch = {
