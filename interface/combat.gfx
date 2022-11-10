@@ -1176,6 +1176,10 @@ spriteTypes = {
         name = "GFX_combat_terrain_urban_berlin"
         texturefile = "gfx/interface/berlin.dds"
     }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_wittenberg"
+        texturefile = "gfx/interface/wittenberg.dds"
+    }
     spriteType = {                                                        
         name = "GFX_combat_terrain_urban_berliner_stadtschloss"
         texturefile = "gfx/interface/berliner_stadtschloss.dds"
@@ -5812,6 +5816,38 @@ spriteTypes = {
         name = "GFX_combat_terrain_urban_kohlm"
         texturefile = "gfx/interface/kohlm.dds"
     }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_aviles"
+        texturefile = "gfx/interface/aviles.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_cuenca"
+        texturefile = "gfx/interface/cuenca.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_soria"
+        texturefile = "gfx/interface/soria.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_zamora"
+        texturefile = "gfx/interface/zamora.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_carmona"
+        texturefile = "gfx/interface/carmona.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_alicante"
+        texturefile = "gfx/interface/alicante.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_barbastro"
+        texturefile = "gfx/interface/barbastro.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_tortosa"
+        texturefile = "gfx/interface/tortosa.dds"
+    }
 	
 #############################################
 
@@ -5823,6 +5859,6 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_combat_modifier_small_strip"	
 		texturefile = "gfx\\interface\\combat_modifier_small_strip.dds"
-		noOfFrames = 5
+		noOfFrames = 8
 	}
 }

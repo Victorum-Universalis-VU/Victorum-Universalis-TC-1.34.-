@@ -3521,48 +3521,17 @@ mount_fuji = {
 		OR = {
 			AND = {
 		   
-		   
 				religion = shinto
 				has_owner_religion = yes
 			}
 			AND = {
-						
-							 
-	 
-		   
-		   
 				religion = state_shinto
-							  
-	  
-											 
-	 
-		   
-			  
-									  
-								 
-	  
-		   
-					   
 				has_owner_religion = yes
 			}
-	 
 			AND = {
 		   
 				religion = mahayana
-							  
-	  
-											   
-	 
-		   
-			  
-									  
-								   
-	  
-		   
-						 
 				has_owner_religion = yes
-	  
-	 
 			}
 		}
 	}
@@ -3581,106 +3550,39 @@ mount_fuji = {
 	can_use_modifiers_trigger = {
 		OR = {
 			AND = {
-		   
-		   
 				religion = shinto
 				has_owner_religion = yes
 			}
 			AND = {
-						
-							 
-	 
-		   
-		   
 				religion = state_shinto
-							  
-	  
-											 
-	 
-		   
-			  
-									  
-								 
-	  
-		   
-					   
 				has_owner_religion = yes
 			}
-	 
 			AND = {
 		   
 				religion = mahayana
-							  
-	  
-											   
-	 
-		   
-			  
-									  
-								   
-	  
-		   
-						 
 				has_owner_religion = yes
-	  
-	 
 			}
 		}
 	}
 
 	#can our country upgrade it?
 	can_upgrade_trigger = {
-		OR = {
-			AND = {
-		   
-		   
-				religion = shinto
-							 
-	 
-		   
-						
-				has_owner_religion = yes
-			}
-			AND = {
-		   
-					   
-							  
-	  
-											 
-	 
-		   
-			  
-				religion = mahayana
-								 
-	  
-		   
-					   
-							  
-	  
-	 
-		   
-		   
-						 
-							  
-	  
-											   
-	 
-		   
-			  
-									  
-								   
-	  
-		   
-						 
-				has_owner_religion = yes
-	  
-	 
-			}
-		}
+		always = no
+		#OR = {
+		#	AND = {
+		#		religion = shinto
+		#		has_owner_religion = yes
+		#	}
+		#	AND = {
+		#		religion = mahayana
+		#		has_owner_religion = yes
+		#	}
+		#}
 	}
 
 	#can our country keep it or is it destroyed when we get hold of it?
 	keep_trigger = {
+	    always = yes
 	}
 
 	#tier data
@@ -16677,7 +16579,7 @@ spiral_minaret_samarra = {
 
 sultan_ahmed_mosque = {
 	start = 151 #Constantinople
-	date = 1444.01.01	#1616.01.01
+	date = 1616.01.01	#Was 1444.01.01
 	time = { months = 0	}
 	build_cost = 0
 	can_be_moved = no
@@ -17080,7 +16982,7 @@ swayambhunath = {
 
 white_house = {
 	start = 953 #Washington
-	date = 1444.01.01	#1800.01.01
+	date = 1800.01.01 #Was 1444.01.01
 	time = { months = 0	}
 	build_cost = 0
 	can_be_moved = no
@@ -17089,6 +16991,7 @@ white_house = {
 	type = monument
 
 	build_trigger = {
+	    is_year = 1800
 		owner = {
 			OR = {
 				is_former_colonial_nation = yes
@@ -17999,113 +17902,113 @@ zacatecas_mine_city = {
 	}
 }
 
-falun_copper_mine = {
-	start = 8 #Dalaskogen
-	date = 1000.01.01
-	time = { months = 0	}
-	build_cost = 0
-	can_be_moved = no
-	move_days_per_unit_distance = 10
-	starting_tier = 1
-	type = monument
-
-	build_trigger = {
-	}
-
-	on_built = {
-	}
-
-	on_destroyed = {
-	}
-
-	can_use_modifiers_trigger = {
-	}
-
-	can_upgrade_trigger = {
-	}
-
-	keep_trigger = {
-	}
-
-	tier_0 = {
-		upgrade_time = {
-			months = 0
-		}
-		cost_to_upgrade = {
-			factor = 0
-		}
-		province_modifiers = {
-		}
-		area_modifier = {
-		}
-		country_modifiers = {
-		}
-		on_upgraded = {
-		}
-	}
-
-	tier_1 = {
-		upgrade_time = {
-			months = 120
-		}
-		cost_to_upgrade = {
-			factor = 1000
-		}
-		province_modifiers = {
-			trade_goods_size = 3.0
-		}
-		area_modifier = {
-			local_build_cost = -0.05
-			local_build_time = -0.05
-		}
-		country_modifiers = {			
-		}
-		on_upgraded = {
-		}
-	}
-
-	tier_2 = {
-		upgrade_time = {
-			months = 240
-		}
-		cost_to_upgrade = {
-			factor = 2500
-		}
-		province_modifiers = {
-			trade_goods_size = 6.0
-		}
-		area_modifier = {
-			local_build_cost = -0.1
-			local_build_time = -0.1
-		}
-		country_modifiers = {
-			artillery_cost = -0.1
-		}
-		on_upgraded = {
-		}
-	}
-
-	tier_3 = {
-		upgrade_time = {
-			months = 480
-		}
-		cost_to_upgrade = {
-			factor = 5000
-		}
-		province_modifiers = {
-			trade_goods_size = 9.0
-		}
-		area_modifier = {
-			local_build_cost = -0.2
-			local_build_time = -0.2
-		}
-		country_modifiers = {
-			artillery_cost = -0.2
-		}
-		on_upgraded = {
-		}
-	}
-}
+#falun_copper_mine = {		#Disabled, as identical monument was earlier added by VU
+#	start = 8 #Dalaskogen
+#	date = 1000.01.01
+#	time = { months = 0	}
+#	build_cost = 0
+#	can_be_moved = no
+#	move_days_per_unit_distance = 10
+#	starting_tier = 1
+#	type = monument
+#
+#	build_trigger = {
+#	}
+#
+#	on_built = {
+#	}
+#
+#	on_destroyed = {
+#	}
+#
+#	can_use_modifiers_trigger = {
+#	}
+#
+#	can_upgrade_trigger = {
+#	}
+#
+#	keep_trigger = {
+#	}
+#
+#	tier_0 = {
+#		upgrade_time = {
+#			months = 0
+#		}
+#		cost_to_upgrade = {
+#			factor = 0
+#		}
+#		province_modifiers = {
+#		}
+#		area_modifier = {
+#		}
+#		country_modifiers = {
+#		}
+#		on_upgraded = {
+#		}
+#	}
+#
+#	tier_1 = {
+#		upgrade_time = {
+#			months = 120
+#		}
+#		cost_to_upgrade = {
+#			factor = 1000
+#		}
+#		province_modifiers = {
+#			trade_goods_size = 3.0
+#		}
+#		area_modifier = {
+#			local_build_cost = -0.05
+#			local_build_time = -0.05
+#		}
+#		country_modifiers = {			
+#		}
+#		on_upgraded = {
+#		}
+#	}
+#
+#	tier_2 = {
+#		upgrade_time = {
+#			months = 240
+#		}
+#		cost_to_upgrade = {
+#			factor = 2500
+#		}
+#		province_modifiers = {
+#			trade_goods_size = 6.0
+#		}
+#		area_modifier = {
+#			local_build_cost = -0.1
+#			local_build_time = -0.1
+#		}
+#		country_modifiers = {
+#			artillery_cost = -0.1
+#		}
+#		on_upgraded = {
+#		}
+#	}
+#
+#	tier_3 = {
+#		upgrade_time = {
+#			months = 480
+#		}
+#		cost_to_upgrade = {
+#			factor = 5000
+#		}
+#		province_modifiers = {
+#			trade_goods_size = 9.0
+#		}
+#		area_modifier = {
+#			local_build_cost = -0.2
+#			local_build_time = -0.2
+#		}
+#		country_modifiers = {
+#			artillery_cost = -0.2
+#		}
+#		on_upgraded = {
+#		}
+#	}
+#}
 
 kronborg = {
 	start = 12 #Sjaelland

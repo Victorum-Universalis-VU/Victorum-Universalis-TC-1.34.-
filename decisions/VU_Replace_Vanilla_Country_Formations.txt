@@ -672,7 +672,7 @@ country_decisions = {
 	}
 
 ###################################################################################################
-################################		Britain (miltary)			 ##############################################
+################################		Britain (military)			 ##############################################
 ###################################################################################################
 	british_nation = { #BritishNation.txt
 		major = yes
@@ -680,6 +680,7 @@ country_decisions = {
 			bt_generic_can_form_potential_check = yes
 			NOT = { has_country_flag = formed_great_britain_flag }
 			NOT = { tag = GBR }
+			NOT = { tag = UNK }
 			OR = {
 				tag = ENG
 				tag = SCO
@@ -698,6 +699,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = GBR }
+			NOT = { exists = UNK }
 			NOT = { exists = WLS }
 			NOT = { exists = WMC }
 			NOT = { exists = DBT }
@@ -803,6 +805,7 @@ country_decisions = {
 			bt_generic_can_form_potential_check = yes
 			NOT = { has_country_flag = formed_great_britain_flag }
 			NOT = { tag = GBR }
+			NOT = { tag = UNK }
 			OR = {
 				tag = ENG
 				tag = SCO
@@ -821,6 +824,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = GBR }
+			NOT = { exists = UNK }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -1049,6 +1053,7 @@ country_decisions = {
 			NOT = { has_country_flag = formed_england_flag }
 			NOT = { tag = ENG }
 			NOT = { tag = GBR }
+			NOT = { tag = UNK }
 			OR = {
 				primary_culture = english
 				primary_culture = northumbrian
@@ -1163,19 +1168,20 @@ country_decisions = {
 		potential = {
 			bt_generic_can_form_potential_check = yes
 			NOT = { has_country_flag = formed_france_flag }
-			NOT = { 
-			    tag = FRA
-				tag = BFR
-				tag = CEL
-				tag = RVF
-				tag = FSR
-				tag = FSE
-				tag = TFR 
-				tag = BSP
-				tag = SPB
-				tag = BBS
-				tag = CSP
-			}
+			NOT = { tag = FRA }
+			NOT = { tag = BFR }
+			NOT = { tag = CEL }
+			NOT = { tag = RVF }
+			NOT = { tag = NPF }
+			NOT = { tag = OFR }
+			NOT = { tag = FSR }
+			NOT = { tag = FSE }
+			NOT = { tag = TFR }
+			NOT = { tag = SPA }
+			NOT = { tag = BSP }
+			NOT = { tag = SPB }
+			NOT = { tag = BBS }
+			NOT = { tag = CSP }
 			OR = { 
 				culture_group = french
 				primary_culture = basque
@@ -3871,6 +3877,7 @@ country_decisions = {
 			NOT = { has_country_flag = formed_scotland_flag }
 			NOT = { tag = SCO }			#Hide this decision for Scotland... duh....
 			NOT = { tag = GBR }			#Scottish GBR shouldn't see this
+			NOT = { tag = UNK }
 			NOT = { tag = TNA }			#Prevent any possible exploit of tag switching
 			OR = {
 				primary_culture = scottish

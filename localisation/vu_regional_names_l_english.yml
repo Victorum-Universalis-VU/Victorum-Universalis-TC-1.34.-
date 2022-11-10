@@ -34,6 +34,9 @@
  philippines_region_name:0 "Philippines"
  philippines_region_adj:0 "Filipino"
  #TCOP additions
+ polesie_area:0 "Polesie"
+ polesie_area_name:0 "Polesie"
+ polesie_area_adj:0 "Polesien"
  bar_area:0 "Bar"
  bar_area_name:0 "Bar"
  bar_area_adj:0 "Barroisan"
@@ -94,9 +97,6 @@
  slovenia_area:0 "Slovenia"
  slovenia_area_name:0 "Slovenia"
  slovenia_area_adj:0 "Slovenian"
- bohemia_area:0 "Bohemia"
- bohemia_area_name:0 "Bohemia"
- bohemia_area_adj:0 "Bohemian"
  prague_area:0 "Prague"
  prague_area_name:0 "Prague"
  prague_area_adj:0 "Prazan"
@@ -165,8 +165,22 @@
  moscow_trade:0 "Zalesye"           #Or Opolye, or simply Moscow
  namibia_trade:0 "Namibia"
  aegean_trade:0 "Aegean"
-
-
+ #VU Additions by San Felipe
+ gallipoli_trade:0 "Bursa"
+ izmir_trade:0 "Izmir"
+ selanik_trade:0 "Selanik"
+ edirne_trade:0 "Edirne"
+ tirgoviste_trade:0 "Tîrgoviste"
+ sofia_trade:0 "Sofia"
+ ankara_trade:0 "Ankara"
+ karaman_trade:0 "Karaman"
+ sinop_trade:0 "Sinop"
+ buda_trade:0 "Budapest"
+ temes_trade:0 "Temes"
+ tbilisi_trade:0 "Tbilisi"
+ jaffa_trade:0 "Jaffa"
+ makkah_trade:0 "Makkah"
+ baghdad_trade:0 "Baghdad"
 
  #################################################################################
  #################################################################################

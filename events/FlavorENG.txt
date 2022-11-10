@@ -137,6 +137,20 @@ country_event = {
 		}
 		if = {
 			limit = {
+				BFR = {
+					exists = yes
+					religion = catholic
+				}
+			}
+			BFR ={
+				add_opinion = {
+					who = ROOT
+					modifier = eng_tolerates_lollards
+				}
+			}
+		}
+		if = {
+			limit = {
 				BUR = {
 					exists = yes
 					religion = catholic
@@ -2532,6 +2546,21 @@ country_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				BFR = {
+					exists = yes
+					religion = catholic
+				}
+			}
+			BFR = {
+				add_opinion = {
+					who = ROOT
+					modifier = eng_harsh_punishment_of_catholics
+					years = 10
+				}
+			}
+		}
 	}
 	option = {		# Punish conspirators
 		name = "flavor_eng.EVTOPTB9182"
@@ -3406,7 +3435,9 @@ country_event = {
 		name = "flavor_eng.100.a"
 		ai_chance = { factor = 90 }
 		if = {
-			limit = { tag = GBR }
+			limit = {
+			    tag = GBR
+			}
 			create_union = IRE
 			add_opinion = {
 				who = IRE
@@ -3519,6 +3550,7 @@ country_event = {
 				tag = ENG
 				num_of_cities = SCO
 				NOT = { war_with = SCO }
+				is_subject = no          #Added this to test by San Felipe
 				SCO = {
 					exists = yes
 					ai = yes
@@ -3527,12 +3559,13 @@ country_event = {
 					is_neighbor_of = ROOT
 					is_at_war = no
 				}
-				num_of_cities = 25
+				num_of_cities = 25 #Min of cities CAS has
 			}
 			AND = {
 				tag = SCO
 				num_of_cities = ENG
 				NOT = { war_with = ENG }
+				is_subject = no          #Added this to test by San Felipe
 				ai = no
 				ENG = {
 					exists = yes
@@ -3542,7 +3575,7 @@ country_event = {
 					is_neighbor_of = ROOT
 					is_at_war = no
 				}
-				num_of_cities = 16
+				num_of_cities = 16 #Max of cities SCO has
 			}
 		}		
 		is_year = 1603
@@ -3569,7 +3602,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 120
+		months = 12
 		modifier = {
 			factor = 0.1
 			OR = {

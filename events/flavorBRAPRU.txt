@@ -1311,8 +1311,13 @@ country_event = {
 		months = 150
 		modifier = {
 			factor = 0.6
-			FRA = {
-				has_country_flag = revoked_the_edict_of_nantes
+			OR = {
+			    FRA = {
+			    	has_country_flag = revoked_the_edict_of_nantes
+			    }
+				BFR = {
+			    	has_country_flag = revoked_the_edict_of_nantes
+			    }
 			}
 		}
 	}

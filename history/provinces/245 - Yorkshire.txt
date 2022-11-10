@@ -14,7 +14,7 @@ is_city = yes
 add_core = ENG
 add_core = NOL
 #fort_15th = yes
-center_of_trade = 1
+center_of_trade = 2
 extra_cost = 8
 
 

@@ -1605,7 +1605,8 @@ spectacle_factory = {
 			#}
 			check_variable = {
 				which = glass
-				value = 0.6
+				value = 1.0
+				#value = 0.6
 			}
 		}
 		AND = {	

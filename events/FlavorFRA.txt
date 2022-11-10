@@ -16,7 +16,10 @@ country_event = {
 
 
 	trigger = {
-		tag = FRA
+	    OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		NOT = { is_year = 1500 }
 		owns = 183
 	}
@@ -69,7 +72,10 @@ country_event = {
 		OR = {
 			has_global_flag = hyw_mission_resolution
 			AND = {
-				tag = FRA
+			    OR = {
+				    tag = FRA
+					tag = BFR
+				}
 				NOT = { is_year = 1500 }
 				NOT = { has_country_flag = had_end_of_HYW_france }
 				NOT = {
@@ -78,14 +84,24 @@ country_event = {
 				NOT = {
 					france_region = { owned_by = GBR }
 				}
+				NOT = {
+					france_region = { owned_by = UNK }
+				}
 				ENG = {
 					NOT = { war_with = FRA }
+					NOT = { war_with = BFR }
 				}
 				NOT = { is_subject_of = ENG }
 				GBR = {
 					NOT = { war_with = FRA }
+					NOT = { war_with = BFR }
 				}
 				NOT = { is_subject_of = GBR }
+				UNK = {
+					NOT = { war_with = FRA }
+					NOT = { war_with = BFR }
+				}
+				NOT = { is_subject_of = UNK }
 			}
 		}
 	}
@@ -101,6 +117,7 @@ country_event = {
 				limit = {
 					exists = ENG
 					NOT = { exists = GBR }
+					NOT = { exists = UNK }
 					NOT = { has_global_flag = eng_had_end_of_hundred_years_war }
 				}
 				ENG = { country_event = { id = flavor_eng.9104 days = 1 } }
@@ -111,6 +128,13 @@ country_event = {
 					NOT = { has_global_flag = eng_had_end_of_hundred_years_war }
 				}
 				GBR = { country_event = { id = flavor_eng.9104 days = 1 } }
+			}
+			if = {
+				limit = {
+					exists = UNK
+					NOT = { has_global_flag = eng_had_end_of_hundred_years_war }
+				}
+				UNK = { country_event = { id = flavor_eng.9104 days = 1 } }
 			}
 		}
 	}
@@ -143,7 +167,10 @@ country_event = {
 	
 	fire_only_once = yes
 	trigger = {
-		tag = FRA
+	    OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		NOT = { is_year = 1550 }
 		NOT = { senior_union_with = NAP }
 		NOT = { exists = PRO }
@@ -166,7 +193,6 @@ country_event = {
 				tag = BSP
 				tag = SPB
 				tag = BBS
-				tag = CSP
 			}
 			any_owned_province = {
 				OR = {
@@ -198,6 +224,29 @@ country_event = {
 				target = NAP
 			}
 		}
+		if = {
+			every_province = {
+				limit = {
+					OR = {
+						area = sicily_area
+						area = naples_area
+						area = apulia_area
+						area = calabria_area
+						province_id = 120
+					}
+					OR = {
+						owned_by = NAP 
+						owned_by = ARA
+						owned_by = CAS
+						owned_by = SPA
+						owned_by = BSP
+						owned_by = SPB
+						owned_by = BBS
+					}
+				}
+				add_claim = FRA
+			}
+		}
 		else = {
 			every_province = {
 				limit = {
@@ -216,10 +265,9 @@ country_event = {
 						owned_by = BSP
 						owned_by = SPB
 						owned_by = BBS
-						owned_by = CSP
 					}
 				}
-				add_claim = FRA
+				add_claim = BFR
 			}
 		}
 		every_known_country = {
@@ -232,7 +280,6 @@ country_event = {
 					tag = BSP
 					tag = SPB
 					tag = BBS
-					tag = CSP
 				}
 				any_owned_province = {
 					OR = {
@@ -263,7 +310,6 @@ country_event = {
 					tag = BSP
 					tag = SPB
 					tag = BBS
-					tag = CSP
 				}
 				any_owned_province = {
 					OR = {
@@ -292,7 +338,10 @@ country_event = {
 	
 	fire_only_once = yes
 	trigger = {
-		tag = FRA
+	    OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		NOT = { is_year = 1550 }
 	}
 	
@@ -1442,14 +1491,20 @@ country_event = {
 			AND = {
 				exists = ENG
 				NOT = { exists = GBR }
+				NOT = { exists = UNK }
 			}
 			AND = {
 				exists = GBR
 				NOT = { exists = ENG }
 			}
+			AND = {
+				exists = UNK
+				NOT = { exists = ENG }
+			}
 		}
 		NOT = { war_with = ENG }
 		NOT = { war_with = GBR }
+		NOT = { war_with = UNK }
 	}
 
 	mean_time_to_happen = {
@@ -1482,6 +1537,17 @@ country_event = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				exists = UNK
+			}
+			UNK = {
+				add_opinion = {
+					who = ROOT
+					modifier = the_eden_agreement
+				}
+			}
+		}
 	}
 	option = {		# Refuse to sign it
 		name = "flavor_fra.EVTOPTB3143"
@@ -1502,6 +1568,17 @@ country_event = {
 				exists = GBR
 			}
 			GBR = {
+				add_opinion = {
+					who = ROOT
+					modifier = refusal_of_the_eden_agreement
+				}
+			}
+		}
+		if = {
+			limit = {
+				exists = UNK
+			}
+			UNK = {
 				add_opinion = {
 					who = ROOT
 					modifier = refusal_of_the_eden_agreement
@@ -2593,10 +2670,16 @@ country_event = {
             }		
             if = {
                 limit = {
-                    exists = GBR
-                    GBR = {
-                        is_subject = no
-                    }
+				    OR = {
+                        exists = GBR
+						exists = UNK
+                        GBR = {
+                            is_subject = no
+                        }
+						UNK = {
+                            is_subject = no
+                        }
+					}
                 }
                 NPF = { country_event = { id = flavor_fra.9514 } }
             }
@@ -2629,11 +2712,16 @@ country_event = {
 		    }
 			UNK = { set_ruler = napoleon_in_exile }
 		}
-		else = {
+		else_if = {
 		    limit = {
 			    exists = ENG
 			}
 			ENG = { set_ruler = napoleon_in_exile }
+		}
+		else = { #Napoleon is executed turning him into a martyr by San Felipe
+			kill_ruler = yes
+			add_nationalism = 50
+			add_unrest = 50
 		}
 		BFR = { 
 		    set_ruler = louis_xviii
@@ -2715,7 +2803,7 @@ country_event = {
 		random_owned_province = {
 			spawn_rebels = {
 				type = pretender_rebels
-				size = 8
+				size = 6
 				leader = "Legitimist"
 			}
 		}

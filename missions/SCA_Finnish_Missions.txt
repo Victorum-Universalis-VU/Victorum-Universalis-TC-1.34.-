@@ -283,7 +283,7 @@ fin_missions_2 = {
 					8 = { 
 						NOT = { 	
 							has_great_project = {
-								type = falun_copper_mine 
+								type = stora_kopparberget #Was falun_copper_mine but changed by San Felipe
 								tier = 3 
 							}
 						}
@@ -291,7 +291,7 @@ fin_missions_2 = {
 				}
 				8 = {
 					add_great_project_tier = {
-						type = falun_copper_mine
+						type = stora_kopparberget #Was falun_copper_mine but changed by San Felipe
 						tier = 1 
 					}
 				}

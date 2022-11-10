@@ -2828,6 +2828,10 @@ temple = {
 		}
 	}
 	
+	keep_trigger = {
+	    always = yes
+	}
+	
 	modifier = {
 		local_missionary_strength = 0.01
 		#BTAddOn new effect. Giving the temple the same bonus of this building's upgrade, simply weaker. Makes it more useful when it is too late in the game to make money back from building cost.
@@ -4685,6 +4689,7 @@ textile = {
 			trade_goods = silk
 			trade_goods = uniforms 
 			trade_goods = wool
+			trade_goods = lace
 		}
 	}
 

@@ -5007,7 +5007,13 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = SPA
+	    OR = {
+		    tag = SPA
+			tag = BBS
+			tag = BSP
+			tag = CSP
+			tag = SPB
+		}
 	}
 	
 	mean_time_to_happen = {
@@ -5028,10 +5034,16 @@ country_event = {
 	picture = WESTERNISATION_eventPicture
 	
 	fire_only_once = yes
-
+	
 	trigger = {
-		tag = SPA
-		absolutism = 50
+	    OR = {
+		    tag = SPA
+			tag = BBS
+			tag = BSP
+			tag = CSP
+			tag = SPB
+			absolutism = 50
+		}
 	}
 	
 	mean_time_to_happen = {

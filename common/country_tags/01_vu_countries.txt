@@ -244,12 +244,12 @@ SVL = "countries/Seville.txt"
 TLD = "countries/Toledo.txt"
 
 #VU - Must remember to look at this again later.
-BSP = "countries/Burgundian_Spain.txt"
-#ISP = "countries/Imperial_Spain.txt"
-SPB = "countries/Bourbon_Spain_SPB.txt"
 BBS = "countries/Bourbon_Spain_BBS.txt"
 #BSH = "countries/Bourbon_Spain_BSH.txt"
+BSP = "countries/Burgundian_Spain.txt"
 CSP = "countries/Carlist_Spain.txt"
+#ISP = "countries/Imperial_Spain.txt"
+SPB = "countries/Bourbon_Spain_SPB.txt"
 
 #VU - Must remember to look at this again later.
 TZR = "countries/Imperial_Russia.txt"

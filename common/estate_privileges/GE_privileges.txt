@@ -733,8 +733,7 @@ estate_nobles_imperial_court = {
 	benefits = {
 		ae_impact = -0.05
 	}
-	conditional_modifier = {
-	}
+	
 	cooldown_years = 10
 	on_cooldown_expires = {
 		reapply_estate_privilege = { privilege = estate_nobles_imperial_court }
@@ -783,8 +782,7 @@ estate_nobles_imperial_marshall = {
 	benefits = {
 		land_forcelimit_modifier = 0.10
 	}
-	conditional_modifier = {
-	}
+
 	cooldown_years = 10
 	on_cooldown_expires = {
 		reapply_estate_privilege = { privilege = estate_nobles_imperial_marshall }
@@ -828,8 +826,7 @@ estate_nobles_kreditwerk_appointment = {
 	}
 	benefits = {
 	}
-	conditional_modifier = {
-	}
+
 	ai_will_do = {
 		factor = 1000
 	}
@@ -1066,8 +1063,7 @@ estate_nobles_anatolian_theme = {
 	}
 	benefits = {
 	}
-	conditional_modifier = {
-	}
+
 	ai_will_do = {
 		factor = 1000
 	}
@@ -1093,16 +1089,14 @@ estate_nobles_establish_serfdom = {
 	}
 	modifier_by_land_ownership = {
 	}
-	conditional_modifier = {
-	}
+
 	penalties = {
 		rural_goods_produced_modifier = -0.10
 	}
 	benefits = {
 		governing_capacity_modifier = 0.10
 	}
-	conditional_modifier = {
-	}
+
 	ai_will_do = {
 		factor = 1
 	}

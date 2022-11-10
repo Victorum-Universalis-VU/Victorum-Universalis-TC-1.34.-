@@ -13,10 +13,12 @@ hre = no
 base_tax = 6 
 base_production = 6
 
-
-
 discovered_by = sub_saharan
 
+add_permanent_province_modifier = {
+    name = vu_malaria_present
+    duration = -1
+}
 
 1500.1.1 = { capital = "Zaria" } # establishment of new capital
 1550.1.1 = { unrest = 6 } # Kano raids into Zaria territory

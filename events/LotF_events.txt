@@ -22,6 +22,7 @@ country_event = { #Changes to USA tag from colonial
 			}
 			remove_country_modifier = navigation_acts_1
 			GBR = { remove_country_modifier = navigation_acts_2 }
+			UNK = { remove_country_modifier = navigation_acts_2 }
 			remove_country_modifier = lotf_events.7_modifier
 		}
         swap_free_idea_group = yes #Swap Ideas
@@ -118,7 +119,9 @@ country_event = { #Revolution event chain begins FOR 13 COLONIES BOSTON TEA PART
 	major_trigger = { 
 		OR = { 
 			colonial_parent = { tag = GBR }
+			colonial_parent = { tag = UNK }
 			tag = GBR
+			tag = UNK
 		}
 	}
 	option = {
@@ -147,7 +150,9 @@ country_event = { #Revolution event chain continue FOR 13 COLONIES BATTLES OF LE
 	major_trigger = { 
 		OR = { 
 			colonial_parent = { tag = GBR }
+			colonial_parent = { tag = UNK }
 			tag = GBR
+			tag = UNK
 		}
 	}
     fire_only_once = yes
@@ -198,7 +203,9 @@ country_event = { #Revolution event chain continue FOR BRITIAN
 	major_trigger = { 
 		OR = { 
 			colonial_parent = { tag = GBR }
+			colonial_parent = { tag = UNK }
 			tag = GBR
+			tag = UNK
 		}
 	}
     fire_only_once = yes

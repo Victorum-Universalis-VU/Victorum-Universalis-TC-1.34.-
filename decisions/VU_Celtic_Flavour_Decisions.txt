@@ -44,6 +44,17 @@ country_decisions = {
 					modifier = opinion_insulted
 				}
 			}
+			BFR = {
+				add_casus_belli = {
+					target = ROOT
+					type = cb_insult
+					months = 12
+				}
+				add_opinion = {
+					who = ROOT
+					modifier = opinion_insulted
+				}
+			}
 			SCO = {
 				add_opinion = {
 					who = ROOT

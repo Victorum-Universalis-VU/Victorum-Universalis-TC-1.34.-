@@ -175,6 +175,46 @@ objectTypes = {
 		scale = 1.2			#BTAddOn changed from scale 1.5 as part of a comprehensive unit size adjustment
 	}
 	
+	pdxmesh = {
+		name = "74s"
+		file = "gfx\models\ships\twodecker.mesh"
+
+		animation = { id = "idle"	type = "twodecker_idle" }
+		animation = { id = "walk"	type = "twodecker_walk" }
+		animation = { id = "attack"	type = "twodecker_attack"}
+		scale = 1.13			#BTAddOn changed from scale 1.5 as part of a comprehensive unit size adjustment
+	}
+	
+	pdxmesh = {
+		name = "ironclad"
+		file = "gfx\models\ships\twodecker.mesh"
+
+		animation = { id = "idle"	type = "twodecker_idle" }
+		animation = { id = "walk"	type = "twodecker_walk" }
+		animation = { id = "attack"	type = "twodecker_attack"}
+		scale = 1.13			#BTAddOn changed from scale 1.5 as part of a comprehensive unit size adjustment
+	}
+	
+	pdxmesh = {
+		name = "cruiser"
+		file = "gfx\models\ships\twodecker.mesh"
+
+		animation = { id = "idle"	type = "twodecker_idle" }
+		animation = { id = "walk"	type = "twodecker_walk" }
+		animation = { id = "attack"	type = "twodecker_attack"}
+		scale = 1.13			#BTAddOn changed from scale 1.5 as part of a comprehensive unit size adjustment
+	}
+	
+	pdxmesh = {
+		name = "dreadnought"
+		file = "gfx\models\ships\twodecker.mesh"
+
+		animation = { id = "idle"	type = "twodecker_idle" }
+		animation = { id = "walk"	type = "twodecker_walk" }
+		animation = { id = "attack"	type = "twodecker_attack"}
+		scale = 1.13			#BTAddOn changed from scale 1.5 as part of a comprehensive unit size adjustment
+	}
+	
 	###########################################################################
 	############												###############
 	############                     Transports                 ###############

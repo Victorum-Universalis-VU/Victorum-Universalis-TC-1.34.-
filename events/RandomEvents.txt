@@ -9669,7 +9669,13 @@ country_event = {
 		days = 1
 		modifier = {
 			factor = 2.5
-			tag = FRA
+			OR = {
+				tag = FRA
+				tag = BFR
+				tag = NPF
+				tag = OFR
+				tag = FSE
+			}
 		}
 	}
 	
@@ -12603,7 +12609,12 @@ country_event = {
 				tag = ENG
 				NOT = { exists = GBR }
 			}
+			AND = {
+				tag = ENG
+				NOT = { exists = UNK }
+			}
 			tag = GBR
+			tag = UNK
 		}
 		is_free_or_tributary_trigger = yes
 		government = monarchy

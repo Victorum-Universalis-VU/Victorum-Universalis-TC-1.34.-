@@ -11,6 +11,9 @@
  skeleton_coast_area:0 "Skeleton Coast"
  skeleton_coast_area_name:0 "Skeleton Coast"
  skeleton_coast_area_adj:0 "Skeletonian Coast"
+ bohemia_area:0 "Pardubice"
+ bohemia_area_name:0 "Pardubice"
+ bohemia_area_adj:0 "Pardubician"
  #NEW VU Additions by San Felipe
  #SEA AREAS
  gulf_of_siam_area:0 "Gulf of Siam"

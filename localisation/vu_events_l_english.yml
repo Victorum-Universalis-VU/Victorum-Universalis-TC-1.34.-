@@ -353,6 +353,11 @@
  canal_events.30.t:0 "Chott El-Djerid terraformed"
  canal_events.30.d:0 "Cutting a canal across the narrow strip of desert to link Chott El Djerid salt lake and Mediterranean Sea is truly a great engineering project that once completed will permanently flood the salty periodic Chott and create a permanent body of water. This new body of water - Chott El Djerid Basin will bring humidity to otherwise deserted region and create a large area avaliable for forestation and development. This dream is now reality. Such project is the first successful terraforming project humanity has seen. Salinity levels in newly created lake have stabilized after mixing with sea waters. The area is ready for excessive development now that strong evaporation from the lake brings humidity around the region."
  canal_events.30.a:0 "Excellent accomplishment"
+ #Latent Colonization
+ vu_latent_colonization.1.t:0 "Colony cannot be governed!"
+ vu_latent_colonization.1.d:0 "We have come into ownership of the province that lies within malaria infested region. We do not have the technology yet to adapt our people to administrating this land. All efforts of establishing our rule there fail due to dangerous disease killing our men. As we cannot extort our control over it yet, the land unfortunately slips away from our realm. \n \n \nNOTE: Do not conquer provinces that have malaria from African nations unless you also can colonize provinces with malaria."
+ vu_latent_colonization.1.a:0 "Pack your things, the locals will take care."
+ vu_latent_colonization.1.b:0 "Abandon the colony for good"
 
  #Override country names
  ZAZ_WILD_FIELDS: "Wild Fields"

@@ -277,9 +277,16 @@ country_event = {
 		tag = GEN
 		government = republic
 		NOT = { is_year = 1550 }
-		exists = FRA
+		OR = {
+		    exists = FRA
+			exists = BFR
+		}
 		hre_size = 10
 		FRA = {
+			is_emperor = no
+			num_of_cities = 15
+		}
+		BFR = {
 			is_emperor = no
 			num_of_cities = 15
 		}
@@ -291,11 +298,27 @@ country_event = {
 	option = {
 		name = flavor_gen.9.a
 		add_republican_tradition = 1
-		FRA = {
-			add_opinion = {
-				who = root
-				modifier = gen_pro_guelph
-			} 
+		if = {
+		   limit = {
+		      exists = FRA
+		   }
+		   FRA = {
+		   	   add_opinion = {
+		   	   	    who = root
+		   	   	    modifier = gen_pro_guelph
+		   	   } 
+		   }
+		}
+		if = {
+		   limit = {
+		      exists = BFR
+		   }
+		   BFR = {
+		   	   add_opinion = {
+		   	   	    who = root
+		   	   	    modifier = gen_pro_guelph
+		   	   } 
+		   }
 		}
 		emperor = {
 			add_opinion = {
@@ -313,13 +336,29 @@ country_event = {
 				who = root
 				modifier = gen_pro_ghibellines
 			} 
-		}	
-		FRA = {
-			add_opinion = {
-				who = root
-				modifier = gen_anti_guelph
-			} 
-		}			
+		}
+		if = {
+		   limit = {
+		      exists = FRA
+		   }
+		   FRA = {
+		   	   add_opinion = {
+		   	   	    who = root
+		   	   	    modifier = gen_anti_guelph
+		   	   } 
+		   }
+		}
+		if = {
+		   limit = {
+		      exists = BFR
+		   }
+		   BFR = {
+		   	   add_opinion = {
+		   	   	    who = root
+		   	   	    modifier = gen_anti_guelph
+		   	   } 
+		   }
+		}
 	}	
 	option = {
 		name = flavor_gen.9.c
@@ -442,6 +481,17 @@ country_event = {
                     }
                 }
 				AND = {
+                    exists = BFR
+                    BFR = {
+				        num_of_cities = 20
+                        AND = {
+                            italy_region = {
+						        owned_by = BFR
+						    }
+                        }
+                    }
+                }
+				AND = {
                     exists = SPA
                     SPA = {
 				        num_of_cities = 20
@@ -506,45 +556,86 @@ country_event = {
 	
 	option = {
 		name = flavor_gen.12.a	
-		FRA = {
-			add_opinion = {
-				who = root
-				modifier = gen_andrea_doria_reform
-			}
-		}	
+		if = {
+		    limit = {
+		        exists = FRA
+		    }
+		    FRA = {
+		    	add_opinion = {
+		    		who = root
+		    		modifier = gen_andrea_doria_reform
+		    	}
+		    }
+		}
+		if = {
+		    limit = {
+		        exists = BFR
+		    }
+		    BFR = {
+		    	add_opinion = {
+		    		who = root
+		    		modifier = gen_andrea_doria_reform
+		    	}
+		    }
+		}
 		add_prestige = 5
 	}
 	option = {
 		name = flavor_gen.12.b
-		SPA = {
-			add_opinion = {
-				who = root
-				modifier = gen_andrea_doria_reform
-			}
+		if = {
+		    limit = {
+		        exists = SPA
+		    }
+		    SPA = {
+		    	add_opinion = {
+		    		who = root
+		    		modifier = gen_andrea_doria_reform
+		    	}
+		    }
 		}
-		BSP = {
-			add_opinion = {
-				who = root
-				modifier = gen_andrea_doria_reform
-			}
+		if = {
+		    limit = {
+		        exists = BBS
+		    }
+		    BBS = {
+		    	add_opinion = {
+		    		who = root
+		    		modifier = gen_andrea_doria_reform
+		    	}
+		    }
 		}
-		SPB = {
-			add_opinion = {
-				who = root
-				modifier = gen_andrea_doria_reform
-			}
+		if = {
+		    limit = {
+		        exists = BSP
+		    }
+		    BSP = {
+		    	add_opinion = {
+		    		who = root
+		    		modifier = gen_andrea_doria_reform
+		    	}
+		    }
 		}
-		BBS = {
-			add_opinion = {
-				who = root
-				modifier = gen_andrea_doria_reform
-			}
+		if = {
+		    limit = {
+		        exists = SPB
+		    }
+		    SPB = {
+		    	add_opinion = {
+		    		who = root
+		    		modifier = gen_andrea_doria_reform
+		    	}
+		    }
 		}
-		CSP = {
-			add_opinion = {
-				who = root
-				modifier = gen_andrea_doria_reform
-			}
+		if = {
+		    limit = {
+		        exists = CSP
+		    }
+		    CSP = {
+		    	add_opinion = {
+		    		who = root
+		    		modifier = gen_andrea_doria_reform
+		    	}
+		    }
 		}
 		add_papal_influence = 10
 	}

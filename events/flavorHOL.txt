@@ -448,6 +448,7 @@ country_event = {
 	trigger = {
 		tag = NED
 		NOT = { exists = FRA }
+		NOT = { exists = BFR }
 		revolution_target_exists = yes
 		OR = {
 			government = monarchy
@@ -1149,6 +1150,7 @@ country_event = {
 	trigger = {
 		OR = {
 			tag = GBR
+			tag = UNK
 			tag = ENG
 		}
 		is_year = 1600
@@ -1199,7 +1201,10 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.8
-			alliance_with = FRA
+			OR = {
+			    alliance_with = FRA
+				alliance_with = BFR
+			}
 		}
 	}
 	
@@ -1314,13 +1319,23 @@ country_event = {
 	
 	trigger = {
 		tag = NED
-		exists = FRA
+		OR = {
+		    exists = FRA
+			exists = BFR
+		}
 		is_year = 1650
 		OR = {
 			religion = protestant
 			religion = reformed
 		}
 		FRA = {
+			religion = catholic
+			OR = {
+				NOT = { has_country_modifier = edict_de_nantes }
+				is_neighbor_of = NED
+			}
+		}
+		BFR = {
 			religion = catholic
 			OR = {
 				NOT = { has_country_modifier = edict_de_nantes }
@@ -1335,36 +1350,83 @@ country_event = {
 	
 	option = {
 		name = flavor_hol.18.a #Our policy must be to contain the French
-		FRA = {
-			country_event = { id = flavor_hol.19 }
-			every_rival_country = {
-				limit = {
-					NOT = { tag = NED }
-					knows_country = NED
-				}
-				add_opinion = {
-					who = NED
-					modifier = ned_anti_french_policy
-				}
+		if = {
+		    limit = {
+			    exists = FRA
 			}
-			add_opinion = {
-				who = NED
-				modifier = fra_dutch_friction
+		    FRA = {
+		    	country_event = { id = flavor_hol.19 }
+		    	every_rival_country = {
+		    		limit = {
+		    			NOT = { tag = NED }
+		    			knows_country = NED
+		    		}
+		    		add_opinion = {
+		    			who = NED
+		    			modifier = ned_anti_french_policy
+		    		}
+		    	}
+		    	add_opinion = {
+		    		who = NED
+		    		modifier = fra_dutch_friction
+		    	}
+		    }
+		}
+		if = {
+		    limit = {
+			    exists = BFR
 			}
+		    BFR = {
+		    	country_event = { id = flavor_hol.19 }
+		    	every_rival_country = {
+		    		limit = {
+		    			NOT = { tag = NED }
+		    			knows_country = NED
+		    		}
+		    		add_opinion = {
+		    			who = NED
+		    			modifier = ned_anti_french_policy
+		    		}
+		    	}
+		    	add_opinion = {
+		    		who = NED
+		    		modifier = fra_dutch_friction
+		    	}
+		    }
 		}
 	}
 	
 	option = {
 		name = flavor_hol.18.b #Pursue a friendly policy towards the French
-		FRA = {
-			add_opinion = {
-				who = NED
-				modifier = ned_friendly_towards_france
-			}
+		if = {
+		    limit = {
+		        exists = FRA
+		    }
+		    FRA = {
+		    	add_opinion = {
+		    		who = NED
+		    		modifier = ned_friendly_towards_france
+		    	}
+		    }
+		}
+		if = {
+		    limit = {
+		        exists = BFR
+		    }
+		    BFR = {
+		    	add_opinion = {
+		    		who = NED
+		    		modifier = ned_friendly_towards_france
+		    	}
+		    }
 		}
 		hidden_effect = {
 			add_opinion = {
 				who = FRA
+				modifier = ned_friendly_towards_france
+			}
+			add_opinion = {
+				who = BFR
 				modifier = ned_friendly_towards_france
 			}
 		}

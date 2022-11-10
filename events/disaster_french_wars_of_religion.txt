@@ -682,7 +682,10 @@ province_event = {
 			factor = 2.0
 			NOT = {
 				any_neighbor_province = {
-					owned_by = FRA
+					OR = {
+					    owned_by = FRA
+						owned_by = BFR
+                    }
 					has_owner_religion = yes
 				}
 			}
@@ -690,7 +693,10 @@ province_event = {
 		modifier = {
 			factor = 0.95
 			any_neighbor_province = {
-				owned_by = FRA
+				OR = {
+				    owned_by = FRA
+					owned_by = BFR
+                }
 				has_owner_religion = yes
 			}
 		}
@@ -887,16 +893,22 @@ province_event = {
 			factor = 2.0
 			NOT = {
 				any_neighbor_province = {
-					owned_by = FRA
-					has_owner_religion = yes
+				    OR = {
+                        owned_by = FRA
+                        owned_by = BFR
+                    }
+                    has_owner_religion = yes
 				}
 			}
 		}
 		modifier = {
 			factor = 0.95
 			any_neighbor_province = {
-				owned_by = FRA
-				has_owner_religion = yes
+			    OR = {
+                    owned_by = FRA
+                    owned_by = BFR
+                }
+                has_owner_religion = yes
 			}
 		}
 		# Revolt risk
@@ -1034,16 +1046,24 @@ country_event  = {
 	
 	trigger = {
 		NOT = { has_country_flag = foreign_support_for_france }
-		FRA = {
-			has_disaster = french_wars_of_religion
-			any_owned_province = {
-				region = france_region
-				has_owner_religion = no
-			}
+		OR = {
+		    FRA = {
+		    	has_disaster = french_wars_of_religion
+		    	any_owned_province = {
+		    		region = france_region
+		    		has_owner_religion = no
+		    	}
+		    }
+			BFR = {
+		    	has_disaster = french_wars_of_religion
+		    	any_owned_province = {
+		    		region = france_region
+		    		has_owner_religion = no
+		    	}
+		    }
 		}
-		NOT = {
-			war_with = FRA
-		}
+		NOT = {	war_with = FRA }
+		NOT = {	war_with = BFR }
 		OR = {
 			tag = BUR
 			tag = CAS
@@ -1051,16 +1071,34 @@ country_event  = {
 			tag = BSP
 			tag = SPB
 			tag = BBS
-			tag = CSP
 			tag = NAV
 			tag = ENG
 			tag = GBR
+			tag = UNK
 			tag = NED
 			any_neighbor_country = {
-				tag = FRA
+				OR = {
+				    tag = FRA
+					tag = BFR
+				}
 			}
 			AND = {
 				FRA = {
+					NOT = { religion = catholic }
+					religion = PREV
+				}
+				capital_scope = {
+					OR = {
+						area = bourgogne_area
+						area = lorraine_area
+						area = palatinate_area
+						area = hesse_area
+						area = north_rhine_area
+					}
+				}
+			}
+			AND = {
+				BFR = {
 					NOT = { religion = catholic }
 					religion = PREV
 				}
@@ -1084,9 +1122,15 @@ country_event  = {
 		months = 300
 		modifier = {
 			factor = 0.75
-			FRA = {
-				NOT = { religion = catholic }
-				religion = PREV
+			OR = {
+			    FRA = {
+				    NOT = { religion = catholic }
+				    religion = PREV
+			    }
+				BFR = {
+				    NOT = { religion = catholic }
+				    religion = PREV
+			    }
 			}
 		}
 	}
@@ -1102,10 +1146,20 @@ country_event  = {
 			# Same religion
 			modifier = {
 				factor = 0
-				FRA = { religion = PREV }
+			    FRA = { religion = PREV }
 				NOT = {
 					has_opinion = {
 						who = FRA
+						value = 50
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				BFR = { religion = PREV }
+				NOT = {
+					has_opinion = {
+						who = BFR
 						value = 50
 					}
 				}
@@ -1121,12 +1175,29 @@ country_event  = {
 					}
 				}
 			}
+			modifier = {
+				factor = 0
+				BFR = { NOT = { religion = PREV } }
+				NOT = {
+					has_opinion = {
+						who = BFR
+						value = 75
+					}
+				}
+			}
 			# Opinion
 			modifier = {
 				factor = 1.25
 				has_opinion = {
 					who = FRA
 					value = 50
+				}
+			}
+			modifier = {
+				factor = 1.25
+				has_opinion = {
+				   	who = BFR
+				   	value = 50
 				}
 			}
 			modifier = {
@@ -1137,10 +1208,24 @@ country_event  = {
 				}
 			}
 			modifier = {
+				factor = 1.5
+				has_opinion = {
+				   	who = BFR
+				   	value = 75
+				}
+			}
+			modifier = {
 				factor = 2.0
 				has_opinion = {
 					who = FRA
 					value = 100
+				}
+			}
+			modifier = {
+				factor = 2.0
+				has_opinion = {
+				   	who = BFR
+				   	value = 100
 				}
 			}
 		}
@@ -1158,6 +1243,14 @@ country_event  = {
 				set_country_flag = foreign_support_for_france_5
 				country_event = { id = french_wars_of_religion.11 days = 10 tooltip = "flavor_fra.EVTTOOLTIP3002" }
 			}
+			BFR = {
+			  	add_opinion = {
+			  		who = ROOT
+			  		modifier = supported_france_military
+			  	}
+			  	set_country_flag = foreign_support_for_france_5
+			  	country_event = { id = french_wars_of_religion.11 days = 10 tooltip = "flavor_fra.EVTTOOLTIP3002" }
+			}
 		}
 		if = {
 			limit = {
@@ -1172,6 +1265,14 @@ country_event  = {
 				set_country_flag = foreign_support_for_france_3
 				country_event = { id = french_wars_of_religion.11 days = 10 tooltip = "flavor_fra.EVTTOOLTIP3002" }
 			}
+			BFR = {
+			   	add_opinion = {
+			   		who = ROOT
+			   		modifier = supported_france_military
+			   	}
+			   	set_country_flag = foreign_support_for_france_3
+			   	country_event = { id = french_wars_of_religion.11 days = 10 tooltip = "flavor_fra.EVTTOOLTIP3002" }
+			}
 		}
 	}
 	option = {		# Send troops to fight France
@@ -1181,47 +1282,85 @@ country_event  = {
 			# Same religion
 			modifier = {
 				factor = 0
-				FRA = { religion = PREV }
-				has_opinion = {
-					who = FRA
-					value = 0
+				OR = {
+				    FRA = { religion = PREV }
+					BFR = { religion = PREV }
+					has_opinion = {
+					    who = FRA
+					    value = 0
+				    }
+					has_opinion = {
+					    who = BFR
+					    value = 0
+				    }
 				}
 			}
 			# Not same religion
 			modifier = {
 				factor = 0
-				FRA = { NOT = { religion = PREV } }
-				has_opinion = {
-					who = FRA
-					value = 75
+				OR = {
+				    FRA = { NOT = { religion = PREV } }
+				    BFR = { NOT = { religion = PREV } }
+				    has_opinion = {
+				    	who = FRA
+				    	value = 75
+				    }
+					has_opinion = {
+				    	who = BFR
+				    	value = 75
+				    }
 				}
 			}
 			# Opinion
 			modifier = {
 				factor = 1.25
-				NOT = {
-					has_opinion = {
-						who = FRA
-						value = 0
-					}
+				OR = {
+				    NOT = {
+				    	has_opinion = {
+				    		who = FRA
+				    		value = 0
+				    	}
+				    }
+					NOT = {
+				    	has_opinion = {
+				    		who = BFR
+				    		value = 0
+				    	}
+				    }
 				}
 			}
 			modifier = {
 				factor = 1.5
-				NOT = {
-					has_opinion = {
-						who = FRA
-						value = -25
-					}
+				OR = {
+				    NOT = {
+					    has_opinion = {
+						   who = FRA
+						   value = -25
+					    }
+				    }
+					NOT = {
+				    	has_opinion = {
+				    		who = BFR
+				    		value = -25
+				    	}
+				    }
 				}
 			}
 			modifier = {
 				factor = 2.0
-				NOT = {
-					has_opinion = {
-						who = FRA
-						value = -50
-					}
+				OR = {
+				    NOT = {
+					    has_opinion = {
+						   who = FRA
+						   value = -50
+					    }
+				    }
+					NOT = {
+				    	has_opinion = {
+				    		who = BFR
+				    		value = -50
+				    	}
+				    }
 				}
 			}
 		}
@@ -1232,6 +1371,14 @@ country_event  = {
 			}
 			add_manpower = -3
 			FRA = {
+				add_opinion = {
+					who = ROOT
+					modifier = supported_french_rebels_military
+				}
+				set_country_flag = foreign_support_for_french_rebels_3
+				country_event = { id = french_wars_of_religion.12 days = 10 tooltip = "flavor_fra.EVTTOOLTIP3002" }
+			}
+			BFR = {
 				add_opinion = {
 					who = ROOT
 					modifier = supported_french_rebels_military
@@ -1253,6 +1400,14 @@ country_event  = {
 				set_country_flag = foreign_support_for_french_rebels_5
 				country_event = { id = french_wars_of_religion.12 days = 10 tooltip = "flavor_fra.EVTTOOLTIP3002" }
 			}
+			BFR = {
+				add_opinion = {
+					who = ROOT
+					modifier = supported_french_rebels_military
+				}
+				set_country_flag = foreign_support_for_french_rebels_5
+				country_event = { id = french_wars_of_religion.12 days = 10 tooltip = "flavor_fra.EVTTOOLTIP3002" }
+			}
 		}
 	}
 	option = {		# Ignore the Wars in France
@@ -1261,20 +1416,36 @@ country_event  = {
 			factor = 50
 			modifier = {
 				factor = 2.0
-				NOT = {
-					any_neighbor_country = {
-						tag = FRA
-					}
+				OR = {
+				    NOT = {
+				    	any_neighbor_country = {
+				    		tag = FRA
+				    	}
+				    }
+					NOT = {
+				    	any_neighbor_country = {
+				    		tag = BFR
+				    	}
+				    }
 				}
 			}
 			modifier = {
 				factor = 0.5
-				truce_with = FRA
-				NOT = {
-					has_opinion = {
-						who = FRA
-						value = 0
-					}
+				OR = {
+				    truce_with = FRA
+					truce_with = BFR
+				    NOT = {
+				    	has_opinion = {
+				    		who = FRA
+				    		value = 0
+				    	}
+				    }
+					NOT = {
+				    	has_opinion = {
+				    		who = BFR
+				    		value = 0
+				    	}
+				    }
 				}
 			}
 		}
@@ -1673,7 +1844,10 @@ province_event = {
 	
 	trigger = {
 		is_capital = yes
-		owned_by = FRA
+		OR = {
+		     owned_by = FRA
+			 owned_by = BFR
+		}
 		NOT = { has_province_modifier = religious_fanatics }
 		NOT = { owner = { has_country_flag = FRA_had_event_3196 } }
 		NOT = { units_in_province = 1 }
@@ -1916,7 +2090,10 @@ country_event = {
 	trigger = {
 		NOT = { has_country_flag = FRA_had_event_3190 }
 		had_country_flag = { flag = FRA_wars_of_religion_ended days = 30 }
-		tag = FRA
+		OR = {
+		     tag = FRA
+			 tag = BFR
+		}
 		stability = 1
 	}
 
@@ -1936,26 +2113,53 @@ country_event = {
 		set_country_flag = FRA_had_event_3190
 	}
 	
-	option = {		# 
-		name = "flavor_fra.EVTOPTA3190"
-		every_known_country = {
-			limit = {
-				FRA = {
-					has_opinion_modifier = {
-						who = PREV
-						modifier = supported_french_rebels_military
-					}
-				}
-			}
-			FRA = {
-				add_casus_belli = {
-					type = cb_insult
-					months = 24
-					target = PREV
-				}
-			}
-		}
-	}
+	option = {        # 
+        name = "flavor_fra.EVTOPTA3190"
+        if = {
+            limit = {
+                exists = FRA
+            }
+            every_known_country = {
+                limit = {
+                    FRA = {
+                        has_opinion_modifier = {
+                            who = PREV
+                            modifier = supported_french_rebels_military
+                        }
+                    }
+                }
+                FRA = {
+                    add_casus_belli = {
+                        type = cb_insult
+                        months = 24
+                        target = PREV
+                    }
+                }
+            }
+        }
+        if = {
+            limit = {
+                exists = BFR
+            }
+            every_known_country = {
+                limit = {
+                    BFR = {
+                        has_opinion_modifier = {
+                            who = PREV
+                            modifier = supported_french_rebels_military
+                        }
+                    }
+                }
+                BFR = {
+                    add_casus_belli = {
+                        type = cb_insult
+                        months = 24
+                        target = PREV
+                    }
+                }
+            }
+        }
+    }
 }
 
 # The Assassination of the King by Daniel Tolman

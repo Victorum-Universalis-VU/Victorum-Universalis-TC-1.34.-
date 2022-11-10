@@ -586,7 +586,6 @@ roman_diarchy = {
 		NOT = { has_reform = frequent_elections_reform }
 		NOT = { has_reform = consolidation_of_power_reform }
 		NOT = { has_reform = consolidate_power_into_different_candidates_reform }
-		}
 	}
 	
 	republic = yes
