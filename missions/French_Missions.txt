@@ -4,7 +4,10 @@ french_missions_north = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = FRA
+		OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		NOT = {
 			has_dlc = "Emperor"
 		}
@@ -196,7 +199,10 @@ french_mission_slot_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = FRA
+		OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		NOT = {
 			has_dlc = "Emperor"
 		}
@@ -248,7 +254,10 @@ french_missions_colonial = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = FRA
+		OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		is_random_new_world = no
 		NOT = {
 			has_dlc = "Emperor"
@@ -583,7 +592,10 @@ france_expand_south = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = FRA
+		OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		NOT = {
 			has_dlc = "Emperor"
 		}
@@ -787,7 +799,10 @@ france_expand_south_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		tag = FRA
+		OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		NOT = {
 			has_dlc = "Emperor"
 		}
