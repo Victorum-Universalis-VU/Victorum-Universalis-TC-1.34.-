@@ -8,6 +8,7 @@ province_event = {
 	picture = BANKRUPTCY_eventPicture
 	
 	trigger = {
+	    NOT = { has_global_flag = malaria_turned_off_global_flag }
 		has_province_modifier = vu_malaria_present
 		owner = {
 			NOT = { dip_tech = 35 }
