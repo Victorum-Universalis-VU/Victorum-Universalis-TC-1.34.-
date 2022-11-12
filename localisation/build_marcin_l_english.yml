@@ -23,7 +23,7 @@
  building_stop_import_from_subjects_desc: "§TProvince Requirements:§!\n-Owned by your subject\n-Overlord Is Importing Resources\n\n§TEffects:§!\n-Resources will stop being transferred to your Resource Pool\n\n"
   
  building_mine: "Mine"
- building_mine_desc: "Requires Terrain Hills, Highlands, Mountains, Extreme Mountains, Tropical Highlands, Desert Ranges or Dry Highlands\n\nChance to success: §Y70.00%§!\nChance to fail: §Y30.00%§!\n\nOn success:\n -Copper: §O30.00%§!\n -Tin/Zinc: §O25.00%§!\n -Iron: §O15.00%§!\n -Lead: §O10.00%§!\n -Gold/Silver: §O5.00%§!"
+ building_mine_desc: "Requires §G100§! dip points for the event that follows, Terrain §YHills§!, §YHighlands§!, §YMountains§!, §YExtreme Mountains§!, §YTropical Highlands§!, §YDesert Ranges§! or §YDry Highlands§!\n\nChance to success: §Y70.00%§!\nChance to fail: §Y30.00%§!\n\nOn success:\n -Copper: §O30.00%§!\n -Tin/Zinc: §O25.00%§!\n -Iron: §O15.00%§!\n -Lead: §O10.00%§!\n -Gold/Silver: §O5.00%§!"
  
  #TGE Manufactories
  building_wood_workshop: "Woodworking Workshop"
@@ -54,7 +54,7 @@
  building_chocolate_factory_desc: "§TResources Requirements:§!\n-Cocoa: 0.6\n\n§TEffects:§!\n-Trade good change to: §YChocolate§!\n"
   
  #building_steam_factory: "Steam Factory"
- #building_steam_factory_desc: "Requires Administrative Technology (24)\nRequires Innovativeness 35£ino_icon£\n-Has Embraced §YEnlightenment§!\nRequires At Least One §YSteam Engine§! Province\n"
+ #building_steam_factory_desc: "Requires §TAdministrative Technology§! §T24§!\nRequires Innovativeness 35£ino_icon£\n-Has Embraced §YEnlightenment§!\nRequires At Least One §BSteam Engine§! Province\n"
   
  SPECIALMANUFACTORY: "Special Manufactory"
  INNOVATION: "Innovation"
