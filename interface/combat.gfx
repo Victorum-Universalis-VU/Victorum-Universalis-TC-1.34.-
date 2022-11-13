@@ -5848,6 +5848,10 @@ spriteTypes = {
         name = "GFX_combat_terrain_urban_tortosa"
         texturefile = "gfx/interface/tortosa.dds"
     }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_nicobar_island"
+        texturefile = "gfx/interface/nicobar_island.dds"
+    }
 	
 #############################################
 
