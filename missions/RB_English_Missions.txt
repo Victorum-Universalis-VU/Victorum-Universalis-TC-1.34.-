@@ -1063,7 +1063,7 @@ eng_rb_take_baleares = {
 	    }
 
 	    trigger = {
-	        owns = 8649
+	        8649 = { country_or_non_sovereign_subject_holds = ROOT }
 	    }
 
 	    effect = {
@@ -1112,7 +1112,7 @@ eng_rb_take_baleares = {
 	    }
 
 	    trigger = {
-	        owns = 636
+			636 = { country_or_non_sovereign_subject_holds = ROOT }
 	    }
 
 	    effect = {
@@ -1442,7 +1442,7 @@ eng_rb_slot_5 = {
 	    }
 
 	    trigger = {
-	        owns = 7164
+			7164 = { country_or_non_sovereign_subject_holds = ROOT }
 	    }
 
 	    effect = {
