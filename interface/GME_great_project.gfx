@@ -23,10 +23,10 @@ spriteTypes = {
 	}
 
 #Baltic
-	spriteType = {
-		name = "GFX_great_project_gme_dlugi_targ"
-		texturefile = "gfx//interface//great_projects//GME//great_project_gme_dlugi_targ.dds"
-	}
+	#spriteType = {
+	#	name = "GFX_great_project_gme_dlugi_targ"
+	#	texturefile = "gfx//interface//great_projects//GME//great_project_gme_dlugi_targ.dds"
+	#}
 	spriteType = {
 		name = "GFX_great_project_gme_petersburg_admiralty"
 		texturefile = "gfx//interface//great_projects//GME//great_project_gme_petersburg_admiralty.dds"
