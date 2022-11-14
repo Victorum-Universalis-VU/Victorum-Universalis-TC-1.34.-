@@ -1,12 +1,19 @@
 gme_reichstag = {
 	start = 50
-	date = 1.01.01
+	date = 1884.01.01
 	time = { months = 120 }
 	build_cost = 1000
 	starting_tier = 0
 	type = monument
 	can_be_moved = no
-	build_trigger = { }
+	build_trigger = {
+	    is_year = 1884
+        culture_group = germanic
+		OR = {
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}
+	}
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
@@ -40,6 +47,7 @@ gme_reichstag = {
 		}
 	}
 	can_upgrade_trigger = {
+	    is_year = 1885
 		FROM = { adm_tech = 20 }
 		FROM = {
 			OR = {
