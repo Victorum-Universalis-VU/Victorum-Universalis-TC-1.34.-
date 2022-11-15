@@ -38,14 +38,14 @@ province_event = {
 	
 	option = {	#Cede province back
 		name = vu_latent_colonization.1.a
-		ai_chance = { factor = 100 }
+		ai_chance = { factor = 75 }		#AI always prefers to return it
 		remove_core = event_target:current_owner_target
 		cede_province = event_target:original_core_target
 	}
 	
 	option = {	#Abandon
 		name = vu_latent_colonization.1.b
-		ai_chance = { factor = 0 }
+		ai_chance = { factor = 25 }		#AI will eventually decolonize this (prevents dangerous loops of shifting ownership)
 		remove_core = event_target:current_owner_target
 		decolonize = THIS
 	}

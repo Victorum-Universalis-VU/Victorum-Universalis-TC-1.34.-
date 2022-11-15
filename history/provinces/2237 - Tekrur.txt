@@ -7,10 +7,10 @@ is_city = yes
 base_manpower = 2
 religion = shamanism #Fetishism
 capital = "Tekrur"
-trade_goods = slaves
+trade_goods = livestock
 hre = no
-base_tax = 6 
-base_production = 6
+base_tax = 3
+base_production = 2
 add_core = JOL
 
 discovered_by = sub_saharan

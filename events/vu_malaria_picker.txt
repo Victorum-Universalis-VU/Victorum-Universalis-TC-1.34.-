@@ -13,7 +13,12 @@ country_event = {
     # Turn off malaria and the decision
     option = {
         name = vu_malaria_picker.1.a
-        set_global_flag = malaria_turned_off_global_flag
+        hidden_effect = {
+			every_province = {
+				limit = { has_province_modifier = vu_malaria_present }
+				remove_province_modifier = vu_malaria_present
+			}
+		}
         set_global_flag = vu_malaria_picker_decision_hide_global_flag
 		custom_tooltip = vu_malaria_picker_on_custom_tooltip
     }
