@@ -169,6 +169,7 @@
 4769 = "Ryssel"
 4770 = "Herzogenbusch"
 7825 = { "Lauenburg in Pommern" "Lauenburg" }
+7830 = { "Löbau" "Löbau" }
 7944 = { "Niederrhein" "Hagenau" }
 7949 = { "Saargemünd" "Saargemünd" }
 8459 = { "Amenweiler" "Amenweiler" }
