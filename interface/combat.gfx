@@ -1188,6 +1188,10 @@ spriteTypes = {
         name = "GFX_combat_terrain_urban_hamburg"
         texturefile = "gfx/interface/hamburg.dds"
     }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_schlesvig"
+        texturefile = "gfx/interface/schlesvig.dds"
+    }
     spriteType = {                                                        
         name = "GFX_combat_terrain_urban_frankfurt"
         texturefile = "gfx/interface/frankfurt.dds"
@@ -1277,8 +1281,8 @@ spriteTypes = {
         texturefile = "gfx/interface/krakow.dds"
     }
     spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_lublin"
-        texturefile = "gfx/interface/lublin.dds"
+        name = "GFX_combat_terrain_urban_chelm"
+        texturefile = "gfx/interface/chelm.dds"
     }
     spriteType = {                                                        
         name = "GFX_combat_terrain_urban_lwow"
@@ -1591,6 +1595,22 @@ spriteTypes = {
     spriteType = {                                                        
         name = "GFX_combat_terrain_urban_memel"
         texturefile = "gfx/interface/memel.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_tilsit"
+        texturefile = "gfx/interface/tilsit.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_klum"
+        texturefile = "gfx/interface/klum.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_liepaja"
+        texturefile = "gfx/interface/liepaja.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_ventspils"
+        texturefile = "gfx/interface/ventspils.dds"
     }
     spriteType = {                                                        
         name = "GFX_combat_terrain_urban_minsk"
@@ -5847,6 +5867,10 @@ spriteTypes = {
 	spriteType = {                                                        
         name = "GFX_combat_terrain_urban_tortosa"
         texturefile = "gfx/interface/tortosa.dds"
+    }
+	spriteType = {                                                        
+        name = "GFX_combat_terrain_urban_nicobar_island"
+        texturefile = "gfx/interface/nicobar_island.dds"
     }
 	
 #############################################

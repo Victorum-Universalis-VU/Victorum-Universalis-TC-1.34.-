@@ -1,0 +1,32 @@
+#Originally written by Doge and further ellaborated by San Felipe
+namespace = vu_malaria_picker
+
+country_event = {
+    # Event for choosing Malaria or not
+    id = vu_malaria_picker.1
+    title = vu_malaria_picker.1.t
+    desc = vu_malaria_picker.1.d
+    picture = INVENTION_eventPicture
+
+    is_triggered_only = yes
+    
+    # Turn on malaria and turn off the decision
+    option = {
+        name = vu_malaria_picker.1.a
+        set_global_flag = vu_malaria_picker_decision_hide_global_flag
+		custom_tooltip = vu_malaria_picker_on_custom_tooltip
+    }
+    
+    # Malaria is off and the decision is gone
+    option = {
+        name = vu_malaria_picker.1.b
+		hidden_effect = {
+			every_province = {
+				limit = { has_province_modifier = vu_malaria_present }
+				remove_province_modifier = vu_malaria_present
+			}
+		}
+        set_global_flag = vu_malaria_picker_decision_hide_global_flag
+		custom_tooltip = vu_malaria_picker_off_custom_tooltip
+    }
+}

@@ -674,17 +674,41 @@ gme_wawel = {
 }
 gme_zamosc_city = {
 	start = 4538
-	date = 1.01.01
+	date = 1580.01.01
 	time = { months = 0 }
 	build_cost = 1000
 	starting_tier = 1
 	type = monument
 	can_be_moved = no
-	build_trigger = { }
+	build_trigger = {
+	    is_year = 1580
+        culture_group = west_slavic
+		OR = {
+			has_owner_culture = yes
+			has_owner_accepted_culture = yes
+		}
+	}
 	on_built = { }
 	on_destroyed = { }
-	can_use_modifiers_trigger = { }
-	can_upgrade_trigger = { }
+	can_use_modifiers_trigger = {
+	    owner = {
+			culture_group = west_slavic 
+		}
+		OR = {
+			ROOT = { has_owner_accepted_culture = yes }
+			ROOT = { has_owner_culture = yes }
+		}
+	}
+	can_upgrade_trigger = {
+	    is_year = 1581
+		owner = {
+			culture_group = west_slavic 
+		}
+		OR = {
+			ROOT = { has_owner_accepted_culture = yes }
+			ROOT = { has_owner_culture = yes }
+		}
+	}
 	keep_trigger = { }
 	tier_0 = {
 		upgrade_time = { months = 0 }

@@ -431,7 +431,7 @@ austrian_italian_ambition_provinces = { #Why the hell did Draiocht change my tri
 reclaim_neumark_provinces = {
 	OR = {
 		province_id = 49
-		province_id = 7821
+		province_id = 7819
 		province_id = 4747
 	}
 }

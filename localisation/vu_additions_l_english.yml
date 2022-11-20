@@ -540,6 +540,9 @@
  urban_berlin:0 "Berlin"
  urban_wittenberg:0 "Wittenberg"
  urban_hamburg:0 "Hamburg"
+ urban_schlesvig:0 "Schlesvig"
+ urban_liepaja:0 "Liepaja"
+ urban_ventspils:0 "Ventspils"
  urban_frankfurt:0 "Frankfurt"
  urban_bremerhaven:0 "Bremerhaven"
  urban_dresden:0 "Dresden"
@@ -571,6 +574,7 @@
  urban_tallinn:0 "Tallinn"
  urban_riga:0 "Riga"
  urban_memel:0 "Memel"
+ urban_tilsit:0 "Tilsit"
  urban_vilnius:0 "Vilnius"
  urban_plock:0 "Plock"
  urban_kaunas:0 "Kaunas"
@@ -600,6 +604,7 @@
  urban_tarnow:0 "Tarnow"
  urban_krakow:0 "Krakow"
  urban_lublin:0 "Lublin"
+ urban_chelm:0 "Chelm"
  urban_lwow:0 "Lwow"
  urban_poznan:0 "Poznan"
  urban_podole:0 "Podole"
@@ -3579,11 +3584,11 @@
  
  #Transportation
  building_road_system:0 "Roads"
- building_road_system_desc:0 "A network of narrow and wide paths, compacted with earth and stones, sometimes topped with a layer of tarmac in urban areas. These road networks allow modes of transportation a flat and fairly even surface on which to traverse on, thus avoiding dangerous and unstable routes from point A to B. Can be built anywhere."
+ building_road_system_desc:0 "A network of narrow and wide paths, compacted with earth and stones, sometimes topped with a layer of tarmac in urban areas. These road networks allow modes of transportation a flat and fairly even surface on which to traverse on, thus avoiding dangerous and unstable routes from point §OA§! to §OB§!. Can be built §Yanywhere§!."
  building_canal_system:0 "Roads & Waterways"
- building_canal_system_desc:0 "A network of narrow and wide paths, with the additon of medium birth, yet shallow waterways that allow for the transportation of goods at a slightly faster speed from point A to B. Can only be built on coastal land and on provinces adjacent to land that already has an existing Road & Waterways system. Can only be built on coast or adjacent to itself.\nCan't be built on Hills, Highlands, Mountains, Cold Mountains, Desert Ranges, Dry Highlands or Glaciers."                                                                                                                                                                                          
+ building_canal_system_desc:0 "A network of narrow and wide paths, with the additon of medium birth, yet shallow waterways that allow for the transportation of goods at a slightly faster speed from point §OA§! to §OB§!. Can only be built on §Ycoastal§! and on §Yadjacent§! provinces that already has an existing §TRoad & Waterways§! system. Can't be built on §YHills§!, §YHighlands§!, §YMountains§!, §YCold Mountains§!, §YDesert Ranges§!, §YDry Highlands§! or §YGlaciers§!."                                                                                                                                                                                          
  building_railway_system:0 "Railroads"
- building_railway_system_desc:0 "A network of narrow steel, held together by wooden or concrete bases that allow for the delivering at high-speed of goods and armies across several provinces from point A to B.\nCan't be built on mountain, cold mountains, glacier, swamp, tropical highlands and desert ranges terrain."
+ building_railway_system_desc:0 "A network of narrow steel, held together by wooden or concrete bases that allow for the delivering at high-speed of goods and armies across several provinces from point §OA§! to §OB§!.\nCan't be built on §Ymountain§!, §Ycold mountains§!, §Yglacier§!, §Yswamp§!, §Ytropical highlands§! and §Ydesert ranges§! terrain."
  
  #Coastal
  naval_base:0 "Naval Base"
@@ -3686,6 +3691,10 @@
  refuge_of_the_unification:0 "Free Thinker's Refuge"
  refuge_of_the_unification_desc:0 "As the peninsula became embroiled in rebellion, with many Italians desiring a true Italian state, San Marino became a place of refuge for those who spoke the loudest."
  
+ #Malaria Picker
+ vu_malaria_picker_decision_title:0 "Malaria Picker"
+ vu_malaria_picker_decision_desc:0 "Simply choose whether to have Malaria turned on or off via the event."
+ 
  #VU - New Castilian event
  #flavor_spa.EVTNAME3715:0 "Isabella of Castile"
  #flavor_spa.EVTDESC3715:0 "With King Enrique IV's reign coming to an end and the death of his half-brother Alfonso has left the kingdom with no other choice but to proclaime Isabella as heir presumptive and successor to the throne of Castile and although King Enrique remains doubtful of her abilities, the cortes are confident Isabela will usher in a new era that will see Castile triumph in splendor. Rumours have already begun to circulate court that an everlasting treaty or peace, stability and union with our long time rival Aragon maybe on the horizon and that the Aragonese King himself has already offerred the hand of his son Ferdinand to Isabella should she become Queen. Let us hope this is so."
@@ -3694,4 +3703,28 @@
  #VU - New units
  western_hussar:0 "Western Hussar"
  western_hussarDESCR:0 "A more modern version of the Hussar class of light cavalry, originating in Central Europe during the 15th and 16th centuries."
+ 
+ #VU - Monuments
+ great_project_vu_el_morro: "El Morro"
+ vu_el_morro: "El Morro"
+ vu_el_morro_title: "View the majesty of El Morro"
+ construct_vu_el_morro_title: "View the majesty of El Morro"
+ construct_vu_el_morro_desc: "El Morro is a national wonder located on an ancient east–west trail and preserves the remains of a large ancient pueblo atop a great sandstone promontory with a pool of water at its base alongside inscriptions left by travellers of a bygone age.; Costs 4000."
+ #
+ great_project_vu_gros_morne: "Mt. Gros Morne"
+ vu_gros_morne: "Mt. Gros Morne"
+ vu_gros_morne_title: "View the majesty of Mt. Gros Morne"
+ construct_vu_gros_morne_title: "View the majesty of Mt. Gros Morne"
+ construct_vu_gros_morne_desc: "Mt. Gros Morne is Newfoundland's second-highest mountain peak, measuring at 806 m or 2,644 ft tall. The French call it "large mountain standing alone" or more literally "great sombre." Gros Morne is a member of the Long Range Mountains, an outlying part of the Appalachian Mountain range that stretches the length of the island's west coast.; Costs 4000."
+ #
+ great_project_vu_red_bay: "Red Bay"
+ vu_red_bay: "Red Bay"
+ vu_red_bay_title: "Experience the tranquil waters of Red Bay"
+ construct_vu_red_bay_title: "Experience the tranquil waters of Red Bay"
+ construct_vu_red_bay_desc: "Red Bay is a natural harbour residing in the bay that gives it its name and is surrounded by red granite cliffs that when combined lend their names to this part of the world.; Costs 4000."
+ #
+ #VU German Nation
+ german_nation_militarily_title:0 "Form German Nation Militarily"
+ german_nation_militarily_desc:0 "Let us unite and form the German Empire."
+ 
  

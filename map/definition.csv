@@ -2898,7 +2898,7 @@ province;red;green;blue;x;x
 2897;116;224;158;Araraquara;x
 2898;237;44;0;Serro;x
 2899;232;197;34;Vila Rica;x
-2900;213;84;63;Guapore;x
+2900;213;84;63;Guajara;x
 2901;219;210;106;Cerejeiras;x
 2902;30;80;222;Vila Bela;x
 2903;225;47;5;Caceres Mato Grosso;x
@@ -3195,7 +3195,7 @@ province;red;green;blue;x;x
 3194;191;26;111;Usora;x
 3195;35;136;30;Lemnos;x
 3196;184;132;206;Modrus;x
-3197;212;255;62;Julich;x
+3197;212;255;62;Heinsberg;x
 3198;96;222;71;Saarland;x
 3199;217;141;59;Essen;x
 3200;27;126;16;Mark;x
@@ -3211,7 +3211,7 @@ province;red;green;blue;x;x
 3210;36;157;26;Fulda;x
 3211;91;195;244;ReplacedBy4716;x
 3212;117;81;236;ReplacedBy4717;x
-3213;80;147;75;Weimar;x
+3213;80;147;75;Meiningen;x
 3214;212;143;33;Saale;x
 3215;218;141;105;Göttingen;x
 3216;237;235;59;Prignitz;x
@@ -3256,7 +3256,7 @@ province;red;green;blue;x;x
 3255;195;65;108;Khoy;x
 3256;86;189;113;Syunik;x
 3257;239;161;37;Talysh;x
-3258;239;101;101;Awa;x
+3258;239;101;101;Guapore;x
 3259;65;89;195;Sheki;x
 3260;203;75;107;Lakia;x
 3261;178;65;195;Derbent;x
@@ -7546,7 +7546,7 @@ province;red;green;blue;x;x
 7545;10;70;124;Langenselbold;
 7546;48;173;174;Hanau;
 7547;86;230;60;Russelsheim;
-7548;197;178;248;Aschaffenburg;
+7548;197;178;248;Wertheim;
 7549;54;193;26;Klingenberg;
 7550;79;93;251;Erbach;
 7551;199;247;239;Moers;
@@ -7555,7 +7555,7 @@ province;red;green;blue;x;x
 7554;63;181;96;Rastatt;
 7555;198;30;140;Alzenau;
 7556;179;98;39;Pforzheim;
-7557;147;11;7;Ehingen;
+7557;147;11;7;Sindelfingen;
 7558;251;192;78;Freudenstadt;
 7559;200;128;40;Herrenberg;
 7560;44;20;63;Tubingen;
@@ -7589,20 +7589,20 @@ province;red;green;blue;x;x
 7588;154;185;6;Neresheim;
 7589;3;86;40;Dischingen;
 7590;34;118;210;Helfenstein;
-7591;92;160;61;Altenmuhr;
+7591;92;160;61;Rain;
 7592;148;91;252;Kirchberg;
 7593;194;139;92;Schwangau;
-7594;55;11;162;Lindau;
+7594;55;11;162;Erolzheim;
 7595;144;138;1;Erlangen;
 7596;91;177;232;Aalen;
-7597;13;148;110;Leutkirch;
+7597;13;148;110;Lindau;
 7598;185;221;189;Kempten;
-7599;110;36;81;Oberdischingen;
-7600;122;186;173;Gaimersheim;
+7599;110;36;81;Schrobenhausen;
+7600;122;186;173;Gersthofen;
 7601;237;44;43;Mittenwald;
 7602;158;161;61;Starnberg;
 7603;206;115;36;Kalkar;
-7604;39;101;84;Neustadt;
+7604;39;101;84;Offenbach;
 7605;46;149;62;Engen;
 7606;232;226;107;Dornstadt;
 7607;67;77;114;Hjørring;
@@ -7655,8 +7655,8 @@ province;red;green;blue;x;x
 7654;253;183;173;Kulmbach;
 7655;217;125;237;Plauen;
 7656;5;106;169;Iphofen;
-7657;169;187;156;Neustadt;
-7658;131;36;193;Crailsheim;
+7657;169;187;156;Rimpar;
+7658;131;36;193;Dillingen;
 7659;104;29;48;Leuchtenberg;
 7660;133;121;100;Eichstatt;
 7661;195;212;102;Gremesdorf;
@@ -7684,7 +7684,7 @@ province;red;green;blue;x;x
 7683;238;173;135;Berehove;
 7684;2;201;159;Trinec;
 7685;57;74;128;Ostrava;
-7686;103;250;162;Zwickau;
+7686;103;250;162;Gotha;
 7687;72;182;217;Hildesheim;
 7688;252;231;21;Gerolzhofen;
 7689;147;195;11;Wanzleben;
@@ -8471,7 +8471,7 @@ province;red;green;blue;x;x
 8470;99;145;79;Homburg ;
 8471;19;38;56;Kaiserslautern ;
 8472;231;117;138;Kreuznach ;
-8473;219;243;184;Kusel ;
+8473;219;243;184;Neustadt ;
 8474;4;253;144;St Wendel ;
 8475;6;187;170;Mannheim ;
 8476;4;199;65;Leiningen ;

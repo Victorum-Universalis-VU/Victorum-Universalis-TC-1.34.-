@@ -1,9 +1,9 @@
-#6410 - Neustadt
+#7604 - Offenbach
 
 owner = FKS
 controller = FKS
 add_core = FKS
-capital = "Neustadt"
+capital = "Offenbach"
 culture = hessian
 religion = catholic
 trade_goods = fruit
@@ -14,13 +14,6 @@ is_city = yes
 hre = yes
 
 discovered_by = eastern
-discovered_by = english
-discovered_by = french
-discovered_by = german_group
-discovered_by = italian
-discovered_by = russian
-discovered_by = scandinavian
-discovered_by = spanish
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman

@@ -7,7 +7,10 @@ emp_france_missions_1 = {
 	}
 	potential = {
 		has_dlc = "Emperor"
-		tag = FRA
+		OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -264,7 +267,10 @@ emp_france_missions_1_b = {
 	}
 	potential = {
 		has_dlc = "Emperor"
-		tag = FRA
+		OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = no 
 	}
@@ -427,7 +433,10 @@ emp_france_missions_2 = {
 	}
 	potential = {
 		has_dlc = "Emperor"
-		tag = FRA
+		OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -913,7 +922,10 @@ emp_france_missions_2_b = {
 	}
 	potential = {
 		has_dlc = "Emperor"
-		tag = FRA
+		OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		NOT = { map_setup = map_setup_random }
 		is_random_new_world = no 
 	}
@@ -1006,7 +1018,10 @@ emp_france_missions_2_c = {
 	}
 	potential = {
 		has_dlc = "Emperor"
-		tag = FRA
+		OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1028,6 +1043,7 @@ emp_france_missions_2_c = {
 				type = all
 				OR = {
 					owned_by = FRA
+					owned_by = BFR
 					owner = {
 						NOT = {
 							technology_group = western
@@ -1065,7 +1081,10 @@ emp_france_missions_3 = {
 	}
 	potential = {
 		has_dlc = "Emperor"
-		tag = FRA
+		OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1252,7 +1271,10 @@ emp_france_missions_3 = {
 		trigger = {
 			OR = {
 				SWI = {
-					is_subject_of = FRA
+				    OR = {
+					    is_subject_of = FRA
+						is_subject_of = BFR
+					}
 				}
 				AND = {
 					switzerland_area = {
@@ -1410,7 +1432,10 @@ emp_france_missions_4 = {
 	}
 	potential = {
 		has_dlc = "Emperor"
-		tag = FRA
+		OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1745,7 +1770,10 @@ emp_france_missions_5 = {
 	}
 	potential = {
 		has_dlc = "Emperor"
-		tag = FRA
+		OR = {
+		    tag = FRA
+			tag = BFR
+		}
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes

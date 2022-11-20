@@ -6,14 +6,13 @@ add_core = BTS
 culture = madagasque
 religion = shamanism #Fetishism
 capital = "Vatomandry"
-trade_goods = slaves
+trade_goods = exotic_animals
 hre = no
 base_tax = 6 
 base_production = 4
 base_manpower = 4
 discovered_by = east_african
 extra_cost = 8
-
 
 
 1500.8.20 = { discovered_by = POR } #Diego Dias

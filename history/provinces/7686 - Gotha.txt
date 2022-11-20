@@ -1,11 +1,11 @@
-#7686 - Zerbst
+#7686 - Gotha
 
 owner = SAX
 controller = SAX
 add_core = SAX 
 culture = saxon
 religion = catholic
-capital = "Zwickau"
+capital = "Gotha"
 trade_goods = cloth
 hre = yes
 base_tax = 3

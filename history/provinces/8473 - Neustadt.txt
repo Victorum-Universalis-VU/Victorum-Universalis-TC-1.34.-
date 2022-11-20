@@ -1,4 +1,4 @@
-#6418 - Kusel
+#8473 - Neustadt
 #Region - Germany
 #Area - Palatinate
 
@@ -15,15 +15,7 @@ controller = PAL
 add_core = PAL
 hre = yes
 
-
 discovered_by = eastern
-discovered_by = english
-discovered_by = french
-discovered_by = german_group
-discovered_by = italian
-discovered_by = russian
-discovered_by = scandinavian
-discovered_by = spanish
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman

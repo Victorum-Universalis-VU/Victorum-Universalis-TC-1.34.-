@@ -1,11 +1,11 @@
-#6600 - Altenmuhr
+#7591 - Rain
 
 owner = OET
 controller = OET
 add_core = OET 
 culture = bavarian
 religion = catholic
-capital = "Altenmuhr"
+capital = "Rain"
 trade_goods = lumber
 hre = yes
 base_tax = 2 
@@ -13,19 +13,11 @@ base_production = 4
 base_manpower = 2 
 is_city = yes
 
-discovered_by = english
-discovered_by = french
-discovered_by = german_group
-discovered_by = italian
-discovered_by = russian
-discovered_by = scandinavian
-discovered_by = spanish
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
 discovered_by = eastern
 
-#Documented 888 AD as Altenmuhr
 1539.1.1 = { religion = protestant } #Reformation
 1790.8.1 = { unrest = 5 } # Peasant revolt
 1791.1.1 = { unrest = 0 }

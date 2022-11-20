@@ -1,4 +1,4 @@
-#6361 - Oberdischingen
+#7599 - Schrobenhausen
 #Region - Germany
 #Area - Lower Swabia
 
@@ -11,17 +11,10 @@ base_tax = 4
 base_production = 3
 trade_goods = cloth	#fustians
 base_manpower = 2
-capital = "Oberdischingen"
+capital = "Schrobenhausen"
 is_city = yes
 hre = yes
 
-discovered_by = english
-discovered_by = french
-discovered_by = german_group
-discovered_by = italian
-discovered_by = russian
-discovered_by = scandinavian
-discovered_by = spanish
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman

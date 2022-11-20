@@ -536,7 +536,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 20
+			adm_tech = 36
 			NOT = { exists = GER }
 			government = monarchy
 			is_free_or_tributary_trigger = yes
@@ -670,7 +670,7 @@ country_decisions = {
 			}
 		}
 		allow = {
-			adm_tech = 36
+			adm_tech = 32
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -1849,9 +1849,9 @@ country_decisions = {
 	}
 
 
-###################################################################################################
-################################           Neo-Assyria		 ##################################
-###################################################################################################
+###########################################################################################
+################################         Assyria		 ##################################
+###########################################################################################
 
 	assyria_nation = {
 		major = yes
@@ -1918,6 +1918,8 @@ country_decisions = {
 				religion = zoroastrian
 				religion = nestorian
 				religion = miaphysite
+				religion = monothelite
+				religion = orthodox
 				religion = coptic
 				religion = druze_new
 			}

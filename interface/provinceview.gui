@@ -6828,13 +6828,13 @@ guiTypes = {
 		
 		checkboxType = {
 			name = "build_mine"
-			position = { x = 244 y = 517 }
+			position = { x = 244 y = 494 }
 			quadTextureSprite = "GFX_furnace"
 		}
 
 		instantTextBoxType={
 			name = "mine_cost"
-			position = {x = 244 y = 567 }
+			position = {x = 244 y = 544 }
 			font = "vic_18"
 			borderSize = {x = 0 y = 0}
 			maxWidth = 128
@@ -6844,13 +6844,13 @@ guiTypes = {
 		
 		checkboxType = {
 			name = "build_furnace"
-			position = { x = 296 y = 517 }
+			position = { x = 296 y = 494 }
 			quadTextureSprite = "GFX_furnace"
 		}
 
 		instantTextBoxType={
 			name = "furnace_cost"
-			position = { x = 296 y = 567 }
+			position = { x = 296 y = 544 }
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
 			maxWidth = 128
@@ -6860,13 +6860,13 @@ guiTypes = {
 		
 		checkboxType = {
 			name = "build_oil_well"
-			position = { x = 348 y = 517 }
+			position = { x = 348 y = 494 }
 			quadTextureSprite = "GFX_courthouse_muslimgfx" #Placeholder, real sprite is decided by game (based on button name).
 		}
 
 		instantTextBoxType={
 			name = "oil_well_cost"
-			position = { x = 348 y = 567 }
+			position = { x = 348 y = 544 }
 			font = "vic_18"
 			borderSize = { x = 0 y = 0 }
 			maxWidth = 128
