@@ -103,7 +103,7 @@ gme_bretagne_castles = {
 }
 gme_chambord = {
 	start = 4776
-	date = 1.01.01
+	date = 1519.01.01
 	time = { months = 120 }
 	build_cost = 1000
 	starting_tier = 0
@@ -176,7 +176,7 @@ gme_chambord = {
 }
 gme_chenonceau = {
 	start = 4389
-	date = 1.01.01
+	date = 1514.01.01
 	time = { months = 120 }
 	build_cost = 1000
 	starting_tier = 0
