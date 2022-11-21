@@ -11448,7 +11448,7 @@ categories =  {
         local_build_time = -0.30
         local_build_cost = -0.25
 		terrain_override = {
-			6445
+			1028
 		}
     }
     # Japan
@@ -16785,7 +16785,7 @@ categories =  {
         local_build_time = -0.30
         local_build_cost = -0.25
 		terrain_override = {
-			1028
+			6445
 		}
     }
 	# Japan

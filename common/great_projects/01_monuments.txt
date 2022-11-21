@@ -9420,7 +9420,7 @@ belem_tower = {
 
 sankin_kotai_palaces = {
 	#province it starts in
-	start = 6445
+	start = 1028
 
 	#date built in real life (so anything built during game time will be there if you start a game after that date)
 	date = 1582.01.01 #Osaka Castle
@@ -16013,6 +16013,7 @@ royal_palace_caserta = {
 	type = monument
 
 	build_trigger = {
+		is_year = 1752
 		culture = neapolitan
 	}
 
@@ -16027,6 +16028,7 @@ royal_palace_caserta = {
 	}
 
 	can_upgrade_trigger = {
+	    is_year = 1753
 		culture = neapolitan
 	}
 

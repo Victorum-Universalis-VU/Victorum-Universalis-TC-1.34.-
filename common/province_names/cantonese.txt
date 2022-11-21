@@ -82,7 +82,7 @@
 2175 = "Yu-ning" #Runing
 2176 = "Seungyau" #Shangqiu
 2177 = "Ningmo" #Ningwu
-2178 = "Low-on" #Lu'an
+2178 = "Lintong" #Used to be Lu'an
 2179 = "Yin-on" #Yan'an
 2180 = "Tinsui" #Tianshui
 2181 = "Pingleung" #Pingliang
@@ -94,7 +94,7 @@
 4194 = "Wingping" #Yongping
 4195 = "Chunding" #Zhending
 4196 = "Hoichow" #Haizhou
-4197 = "Wongchow" #Huangzhou
+4197 = "Tiananmen" #Was Wongchow
 4198 = "Fungcheung" #Fengxiang
 4199 = "Tongyen" #Tongren
 
