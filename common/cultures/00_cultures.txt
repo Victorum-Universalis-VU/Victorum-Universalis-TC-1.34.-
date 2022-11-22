@@ -2303,7 +2303,8 @@ latin = {
 	}
 	#BtPLegacy Culture
 	romanch_culture = {
-		#primary = XXX
+	    graphical_culture = westerngfx
+		primary = TTL
 	}
 	#BtPLegacy Culture
 	corsican_culture = {			#Personally, I'm not 100 percent sold on this idea, but a couple researchers want this, and it would help keep cores and such, so here we go.
@@ -2710,7 +2711,7 @@ french	= {
 	graphical_culture = westerngfx
 
 	cosmopolitan_french = {
-            graphical_culture = westerngfx
+        graphical_culture = westerngfx
 		primary = FRA
 		dynasty_names = {
 			"de Valois" "de Bourbon" Bonaparte "de la Tour" "d'Anjou" "d'Orléans" "de Borbón"
@@ -2719,11 +2720,11 @@ french	= {
 		}
 	}
 	gascon = {
-            graphical_culture = westerngfx
+        graphical_culture = latingfx
 		primary = GUY
 	}
 	normand = {
-            graphical_culture = westerngfx
+        graphical_culture = westerngfx
 		primary = NRM
 	}
 	#Removed aquitanian culture on Neprut's suggestion. Appears to have only been a minor dialect, at most, nowhere near
@@ -2735,15 +2736,15 @@ french	= {
 		primary = ANJ
 	}
 	burgundian = {
-            graphical_culture = westerngfx
+        graphical_culture = westerngfx
 		primary = BUR
 	}
 	occitain = {
-            graphical_culture = westerngfx
+        graphical_culture = latingfx
 		primary = TOU
 	}
 	picard_culture = {
-            graphical_culture = westerngfx
+        graphical_culture = westerngfx
 		primary = PIC
 		dynasty_names = {
 			"de Laval" "de la Tour du Pin" "de Broglie" "de Montesquiou" "de Courtenay" "d'Harcourt" "de La Croix" "Le Tellier" "de Rochechouart" "d'Aumont" "de Vergy" "de Saboulin" "de Gramont" "de Bissy" "de Barrau" "de La Fayette" "d'Armagnac" "du Quenoy" "de Ficquelmont" "de Talleyrand" "de Saintignon" "von Luxemburg" "de Montmorency" "de Savoie" "de Vaudemont"
@@ -2778,6 +2779,7 @@ french	= {
 	}
 	#Beyond the Pale Culture
 	arpitan = {
+	    graphical_culture = westerngfx
 		primary = DAU
 	}
 	#BtPLegacy Culture
@@ -2786,10 +2788,12 @@ french	= {
 	}
 	#BtPLegacy Culture BtPLegacy Culture
 	angevin_culture = {
+	    graphical_culture = westerngfx
 		primary = PRO
 	}
 	#BtPLegacy Culture
 	lorraine_culture = {
+	    graphical_culture = westerngfx
 		primary = LOR
 	}
 	#BtPLegacy Culture
