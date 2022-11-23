@@ -774,7 +774,7 @@ karlstejn_castle = {
 liverpool_docks = {
     start = 7427
     
-    date = 1444.01.01 #1715.01.01 First commercial dock
+    date = 1715.01.01 #First commercial dock
     
     time = {
         months = 0

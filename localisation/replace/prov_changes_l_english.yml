@@ -159,6 +159,7 @@
  PROV658:0 "Catagayan" #Formerly Cagayan
  PROV665:0 "Kongmoon" #Formerly Shiuhing
  PROV695:0 "Tientsin" #Formerly Shiuhing
+ PROV736:0 "Andong"
  PROV738:0 "Siraya"
  PROV743:0 "Barima" #Formerly Essequibo
  PROV745:0 "Brokopondo" #Formerly Paramaribo
@@ -418,6 +419,8 @@
  PROV2023:0 "Lackawanna 
  PROV2143:0 "Huainan"
  PROV2154:0 "Ketangalan"
+ PROV2178:0 "Lintong"
+ PROV_ADJ2178:0 "Lintong"
  PROV2241:0 "Kindia"
  PROV2251:0 "Bagoe"
  PROV2288:0 "Kanem"
@@ -835,6 +838,7 @@
  PROV4174:0 "Durazzo"         #Formerly 3181
  PROV4175:0 "Alessio"         #Formerly 3182
  PROV4176:0 "Branicevo"         #Formerly 3186
+ PROV4197:0 "Tianmen"
  #1.21 changes
  PROV4236:0 "Trencín"                 #Formerly 3145
  #PROV4237:0 "Olomouc"         #Formerly 3144

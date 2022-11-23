@@ -1968,7 +1968,7 @@ globe_theatre = {
 }
 
 kokyo = { #TÅkei Castle
-    start = 6445
+    start = 1028
     
     date = 1868.01.01
     

@@ -159,13 +159,15 @@ ship_names = {
 	Tiger Tilbury Torbay Torrington Towey Tramontana Tredagh "Trego Ronnyger" Tremendous Trident Trinity "Trinity Henry" "Trinity Royal" Triton
 	Triumph Trusty Trywright "Two Lions" Unicorn Union Unity Valiant Vanguard Venerable Vestal Veteran Victory Vigo Vindictive Violet Volage Warrior
 	Warspite Warwick Westergate Weymouth "White Bear" "White Raven" Winchester Windsor "Windsor Castle" Wivern Woolwich Worcester Yarmouth York
-	"Young Prince" Zealous
+	"Young Prince" Zealous "$PROVINCE$"
 }
 
 army_names = {
-	"Royal Army" "Army of Scotland" "Army of Ireland"
+	"Royal Army" "Army of Scotland" "Army of Ireland" "Northern Army" "$PROVINCE$ Regiment"
 }
 
 fleet_names = {
-	"Royal Navy" "Blue Squadron" "Red Squadron" "White Squadron" "North Sea Squadron" "Channel Squadron"
+	"Royal Navy" "Blue Squadron" "Red Squadron" "White Squadron" "Channel Squadron" "North Sea Squadron" "North Sea Fleet" "Channel Fleet" "Atlantic Fleet" 
+	"Baltic Fleet" "Pacific Fleet" "East Indies Fleet" "Home Fleet" "Mediterranean Fleet" "Reserve Fleet" "Eastern Fleet" "Grand Fleet" "Far East Fleet" 
+	"First Fleet" "Second Fleet" "Third Fleet" "Western Fleet"
 }

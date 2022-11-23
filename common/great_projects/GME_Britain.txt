@@ -66,8 +66,8 @@ gme_blarney_castle = {
 	}
 }
 gme_kilkenny_castle = {
-	start = 374
-	date = 1.01.01
+	start = 8165
+	date = 1192.01.01
 	time = { months = 0 }
 	build_cost = 1000
 	starting_tier = 1

@@ -109,7 +109,7 @@
 697 = Daedong #Datong
 2177 = Yeongmu #Ningwu
 693 = Taewon #Taiyuan
-2178 = Yukan #Lu'an
+2178 = Lin Tong #Used to be Yukan
 694 = Aneup #Pingyang
 
 2179 = Yeonan #Yan'an
@@ -179,7 +179,7 @@
 2147 = Hwiju #Huizhou
 686 = Angyeong #Anqing
 
-4197 = Hwanggang #Huangzhou
+4197 = Ti uli #Was Hwanggang
 682 = Muchang #Wuchang
 2171 = Yangyang #Xiangyang
 2172 = Hyeongju #Jingzhou
@@ -232,7 +232,6 @@
 2147 = Hwiju #Huizhou
 686 = Angyeong #Anqing
 
-4197 = Hwanggang #Huangzhou
 682 = Muchang #Wuchang
 2171 = Yangyang #Xiangyang
 2172 = Hyeongju #Jingzhou
