@@ -237,7 +237,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }		
 		
-		scale = 0.5
+		scale = 0.35
 	}
 	
 	pdxmesh = {
@@ -259,7 +259,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }		
 		
-		scale = 0.5
+		scale = 0.35
 	}
 	
 	pdxmesh = {
@@ -281,7 +281,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }		
 		
-		scale = 0.5
+		scale = 0.35
 	}
 
 		pdxmesh = {
@@ -303,7 +303,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }		
 		
-		scale = 0.5
+		scale = 0.35
 	}
 	
 	pdxmesh = {
@@ -325,7 +325,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }		
 		
-		scale = 0.5
+		scale = 0.35
 	}
 
 	pdxmesh = {
@@ -347,7 +347,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }		
 		
-		scale = 0.5
+		scale = 0.35
 	}
 
 	pdxmesh = {
@@ -369,7 +369,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }		
 		
-		scale = 0.5
+		scale = 0.35
 	}
 
 	pdxmesh = {
@@ -391,7 +391,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }		
 		
-		scale = 0.5
+		scale = 0.35
 	}
 
 
@@ -419,7 +419,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }				
 		
-		scale = 0.5
+		scale = 0.35
 	}
 	
 	pdxmesh = {
@@ -440,7 +440,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }				
 		
-		scale = 0.5
+		scale = 0.35
 	}
 	
 	pdxmesh = {
@@ -461,7 +461,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }				
 		
-		scale = 0.5
+		scale = 0.35
 	}
 
 		pdxmesh = {
@@ -482,7 +482,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }				
 		
-		scale = 0.5
+		scale = 0.35
 	}
 
 		pdxmesh = {
@@ -503,7 +503,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }				
 		
-		scale = 0.5
+		scale = 0.35
 	}
 
 	pdxmesh = {
@@ -524,7 +524,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }				
 		
-		scale = 0.5
+		scale = 0.35
 	}
 
 	pdxmesh = {
@@ -545,7 +545,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }				
 		
-		scale = 0.5
+		scale = 0.35
 	}
 
 		pdxmesh = {
@@ -566,7 +566,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }				
 		
-		scale = 0.5
+		scale = 0.35
 	}
 
 	###################################################################################################################
@@ -593,7 +593,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }			
 		
-		scale = 0.5
+		scale = 0.35
 	}
 	
 	pdxmesh = {
@@ -614,7 +614,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }			
 		
-		scale = 0.5
+		scale = 0.35
 	}	
 	
 	pdxmesh = {
@@ -635,7 +635,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }			
 		
-		scale = 0.5
+		scale = 0.35
 	}	
 	
 	pdxmesh = {
@@ -656,7 +656,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }			
 		
-		scale = 0.5
+		scale = 0.35
 	}	
 
 	pdxmesh = {
@@ -677,7 +677,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }			
 		
-		scale = 0.5
+		scale = 0.35
 	}	
 
 	pdxmesh = {
@@ -698,7 +698,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }			
 		
-		scale = 0.5
+		scale = 0.35
 	}	
 
 	pdxmesh = {
@@ -719,7 +719,7 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }			
 		
-		scale = 0.5
+		scale = 0.35
 	}	
 
 	pdxmesh = {
@@ -740,6 +740,6 @@ objectTypes = {
 		
 		animation = { id = "artillery_attack"	type = "rifleman_attack_animation" }			
 		
-		scale = 0.5
+		scale = 0.35
 	}	
 }

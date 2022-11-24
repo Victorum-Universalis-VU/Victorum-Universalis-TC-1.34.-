@@ -8,7 +8,7 @@ objectTypes = {
 		name = "murican_saber"
 		file = "gfx/models/Units/murican_saber.mesh"			
 		
-		scale = 0.5
+		scale = 0.35
 	}
 
 
@@ -27,7 +27,7 @@ objectTypes = {
 		animation = { id = "horse_walk"			type = "cavalry_horse_moving_animation" }
 		animation = { id = "horse_retreat"		type = "cavalry_horse_moving_animation" }
 		
-		scale = 0.48
+		scale = 0.34
 	}
 
 
@@ -47,7 +47,7 @@ objectTypes = {
 		animation = { id = "horse_walk"			type = "cavalry_horse_moving_animation" }
 		animation = { id = "horse_retreat"		type = "cavalry_horse_moving_animation" }
 		
-		scale = 0.48
+		scale = 0.34
 	}
 
 
@@ -63,7 +63,7 @@ objectTypes = {
 		name = "murica_USA_rifle_03"
 		file = "gfx/models/Units/murica_USA_rifle_03.mesh"			
 		
-		scale = 0.5
+		scale = 0.35
 	}
 
 
@@ -80,7 +80,7 @@ objectTypes = {
 		name = "murica_USA_rifle_04"
 		file = "gfx/models/Units/murica_USA_rifle_04.mesh"			
 		
-		scale = 0.5
+		scale = 0.35
 	}
 
 
