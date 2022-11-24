@@ -30,6 +30,7 @@
 #indian	-	original penalty was 50 percent more than western, or 66.667 percent of 100 compared to western			-			now generally 75 percent of western (-25 percent)
 #east_african	-	original penalty was 50 percent more than western, or 66.667 percent of 100 compared to western	-			now generally 75 percent of western (-25 percent)
 #chinese	-	original penalty was 60 percent more than western, or 62.5 percent of 100 compared to western				-			now generally 70 percent of western (-30 percent)
+#japanese	-	original penalty was 60 percent more than western, or 62.5 percent of 100 compared to western				-			now generally 70 percent of western (-30 percent)
 #sub_saharan	-	original penalty was 60 percent more than western, or 62.5 percent of 100 compared to western		-			now generally 70 percent of western (-30 percent)
 #central_african	-	original penalty was 65 percent more than western, or 60.606 percent of 100 compared to western	-		now generally 70 percent of western (-30 percent)
 #nomad_group	-	original penalty was 75 percent more than western, or 57.143 percent of 100 compared to western	-		now generally 65 percent of western (-35 percent)
@@ -74,6 +75,7 @@ feudalism = {
 						technology_group = muslim
 						technology_group = indian
 						technology_group = chinese
+						technology_group = japanese
 						#technology_group = high_american #Is listed below as High Americans get it regardless of if Nation Designer is used.
 					}
 				}
@@ -365,13 +367,16 @@ feudalism = {
 			}
 		}
 		#########################################################################
-		###BT Chinese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
+		###BT Chinese/Japanese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
 		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = { owner = { technology_group = chinese } }
+			potential = { 
+				owner = { technology_group = chinese } 
+				owner = { technology_group = japanese }
+			}
 			custom_trigger_tooltip = {
 				tooltip = FRIENDLY_NEIGHBOR_OR_COAST_PROVINCE_HAS_EMBRACED
 				any_friendly_coast_border_province = { feudalism = 100 }
@@ -383,6 +388,7 @@ feudalism = {
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				owner = { technology_group = chinese }
+				owner = { technology_group = japanese }
 				NOT = { any_friendly_coast_border_province = { feudalism = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -885,6 +891,7 @@ renaissance = {
 				OR = {
 					owner = { technology_group = indian }
 					owner = { technology_group = chinese }
+					owner = { technology_group = japanese }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
 
@@ -1173,13 +1180,16 @@ renaissance = {
 			}
 		}
 		#########################################################################
-		### BT Chinese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
+		### BT Chinese/Japanese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
 		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = { owner = { technology_group = chinese } }
+			potential = { 
+				owner = { technology_group = chinese }
+				owner = { technology_group = japanese }
+			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_renaissance
 				any_friendly_coast_border_province = { renaissance = 100 }
@@ -1191,6 +1201,7 @@ renaissance = {
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				owner = { technology_group = chinese }
+				owner = { technology_group = japanese }
 				NOT = { any_friendly_coast_border_province = { renaissance = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -1531,6 +1542,7 @@ renaissance = {
 				OR = {
 					owner = { technology_group = indian }
 					owner = { technology_group = chinese }
+					owner = { technology_group = japanese }
 				}
 				continent = asia
 			}
@@ -1539,6 +1551,7 @@ renaissance = {
 				OR = {
 					owner = { technology_group = indian }
 					owner = { technology_group = chinese }
+					owner = { technology_group = japanese }
 				}
 				is_year = 1600			#50 year greater delay introduced in 1.22, based on China being massively and unrealistically OPed in 1.20 and 1.21
 				development = 32
@@ -1887,6 +1900,7 @@ new_world_i = {
 				OR = {
 					owner = { technology_group = indian }
 					owner = { technology_group = chinese }
+					owner = { technology_group = japanese }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
 
@@ -2221,13 +2235,16 @@ new_world_i = {
 			}
 		}
 		#########################################################################
-		###BT Chinese Tech Spreads - dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers). Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
+		###BT Chinese/Japanese Tech Spreads - dev doubled adjusted Vanilla speed was spreading too quickly, so reducing by half (to the same spread speed as the other tiers). Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
 		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = { owner = { technology_group = chinese } }
+			potential = { 
+				owner = { technology_group = chinese }
+				owner = { technology_group = japanese }
+			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_colonialism
 				any_friendly_coast_border_province = { new_world_i = 100 }
@@ -2239,6 +2256,7 @@ new_world_i = {
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				owner = { technology_group = chinese }
+				owner = { technology_group = japanese }
 				NOT = { any_friendly_coast_border_province = { new_world_i = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -2892,6 +2910,7 @@ printing_press = {
 				OR = {
 					owner = { technology_group = indian }
 					owner = { technology_group = chinese }
+					owner = { technology_group = japanese }
 				}
 			}	#BTMiscAddonChange - Slows spread slightly for later start dates
 		}
@@ -3143,13 +3162,16 @@ printing_press = {
 			}
 		}
 		#########################################################################
-		###BT Chinese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
+		###BT Chinese/Japanese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
 		#########################################################################
 		modifier = {
 			factor = 0.25
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = { owner = { technology_group = chinese } }
+			potential = {
+				owner = { technology_group = chinese }
+				owner = { technology_group = japanese }
+			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_printing_press
 				any_friendly_coast_border_province = { printing_press = 100 }
@@ -3161,6 +3183,7 @@ printing_press = {
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				owner = { technology_group = chinese }
+				owner = { technology_group = japanese }
 				NOT = { any_friendly_coast_border_province = { printing_press = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -3487,6 +3510,7 @@ printing_press = {
 				OR = {
 					owner = { technology_group = indian }
 					owner = { technology_group = chinese }
+					owner = { technology_group = japanese }
 				}
 				continent = asia
 			}
@@ -3496,6 +3520,7 @@ printing_press = {
 				OR = {
 					owner = { technology_group = indian }
 					owner = { technology_group = chinese }
+					owner = { technology_group = japanese }
 				}
 				continent = asia
 				is_year = 1700			#50 year greater delay introduced in 1.22, based on China being massively and unrealistically OPed in 1.20 and 1.21
@@ -3781,6 +3806,7 @@ global_trade = {
 				is_year = 1800
 				OR = {
 					owner = { technology_group = chinese }
+					owner = { technology_group = japanese }
 					owner = { technology_group = sub_saharan }
 					owner = { technology_group = central_african }
 					owner = { technology_group = sub_saharan }
@@ -4082,16 +4108,15 @@ global_trade = {
 			}
 		}
 		#########################################################################
-		###BT Chinese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
+		###BT Chinese/Japanese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
 		#########################################################################
 		modifier = {
 			factor = 0.21
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = {
-					technology_group = chinese
-				}
+				owner = { technology_group = chinese }
+				owner = { technology_group = japanese }
 				has_port = yes
 			}
 			custom_trigger_tooltip = {
@@ -4104,9 +4129,8 @@ global_trade = {
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
-				owner = {
-					technology_group = chinese
-				}
+				owner = { technology_group = chinese }
+				owner = { technology_group = japanese }
 				OR = {
 					has_port = no
 					NOT = { any_friendly_coast_border_province = { global_trade = 100 } }
@@ -4903,6 +4927,10 @@ manufactories = {
 						development = 40
 					}
 					AND = {
+						owner = { technology_group = japanese }
+						development = 40
+					}
+					AND = {
 						owner = { technology_group = sub_saharan }
 						development = 40
 					}
@@ -4931,6 +4959,10 @@ manufactories = {
 					}
 					AND = {
 						owner = { technology_group = chinese }
+						development = 32
+					}
+					AND = {
+						owner = { technology_group = japanese }
 						development = 32
 					}
 					AND = {
@@ -5203,13 +5235,16 @@ manufactories = {
 			}
 		}
 		#########################################################################
-		###BT Chinese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
+		###BT Chinese/Japanese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
 		#########################################################################
 		modifier = {
 			factor = 0.14
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = { owner = { technology_group = chinese } }
+			potential = { 
+				owner = { technology_group = chinese }
+				owner = { technology_group = japanese }
+			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_manufactories
 				any_friendly_coast_border_province = { manufactories = 100 }
@@ -5221,6 +5256,7 @@ manufactories = {
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				owner = { technology_group = chinese }
+				owner = { technology_group = japanese }
 				NOT = { any_friendly_coast_border_province = { manufactories = 100 } }
 			}
 			custom_trigger_tooltip = {
@@ -6052,13 +6088,16 @@ enlightenment = {
 			}
 		}
 		#########################################################################
-		###BT Chinese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
+		###BT Chinese/Japanese Tech Spreads - dev doubled adjusted Vanilla speed. No new provinces, so normal spread speed. Then x 0.70 based on original tech group's 60 percent penalty (i.e. 63 percent of normal speed)
 		#########################################################################
 		modifier = {
 			factor = 0.05
 			scale = yes
 			force_potential = yes	# Hide the this modifier when potential is false
-			potential = { owner = { technology_group = chinese } }
+			potential = { 
+				owner = { technology_group = chinese }
+				owner = { technology_group = japanese }
+			}
 			custom_trigger_tooltip = {
 				tooltip = tooltip_any_friendly_coast_border_province_has_embraced_enlightenment
 				any_friendly_coast_border_province = { enlightenment = 100 }
@@ -6070,6 +6109,7 @@ enlightenment = {
 			force_potential = yes	# Hide the this modifier when potential is false
 			potential = {
 				owner = { technology_group = chinese }
+				owner = { technology_group = japanese }
 				NOT = { any_friendly_coast_border_province = { enlightenment = 100 } }
 			}
 			custom_trigger_tooltip = {
