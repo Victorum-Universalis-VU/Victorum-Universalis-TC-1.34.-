@@ -1,10 +1,10 @@
-#4606 - Bone
+#8611 - Sengkang
 
 owner = BNE
 controller = BNE
 culture = sulawesi
 religion = animism
-capital = "Bone"
+capital = "Sengkang"
 trade_goods = fish
 hre = no
 base_tax = 4
