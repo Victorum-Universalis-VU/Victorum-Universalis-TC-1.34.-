@@ -4670,7 +4670,8 @@ textile = {
 		dyes
 		indigo
 		silk
-		uniforms 
+		uniforms
+		wool
 		lace
 	}
 	modifier = {
@@ -5165,6 +5166,7 @@ farm_estate = {
 		rice
 		tomato
 		vodka
+		wine
 		whiskey
 	}
 	modifier = {
@@ -5217,6 +5219,7 @@ farm_estate = {
 			trade_goods = tomato
 			trade_goods = vodka
 			trade_goods = wine
+			trade_goods = whiskey
 		}
 	}
 
@@ -5339,6 +5342,8 @@ mills = {
 			trade_goods = pearls
 			trade_goods = steam_engine
 			trade_goods = tropical_wood
+			trade_goods = bamboo
+			trade_goods = pottery
 		}
 	}
 
@@ -5575,7 +5580,9 @@ soldier_households = {
 		olive_oil
 		potato
 		rice
+		vodka
 		wine
+		whiskey
 	}
 
 	modifier = {
@@ -5703,6 +5710,10 @@ oil_well = {
 
 	potential = {
 		has_dlc = "Rule Britannia"
+	}
+	
+	keep_trigger = {
+		trade_goods = oil
 	}
 
 	modifier = {
