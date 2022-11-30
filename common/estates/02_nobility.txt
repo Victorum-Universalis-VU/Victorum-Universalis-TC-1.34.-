@@ -15,6 +15,7 @@ estate_nobles = {
 				NOT = { has_government_attribute = is_pirate_republic_reform }
 				NOT = { has_reform = cossacks_reform }
 				NOT = { government = native }
+				NOT = { has_reform = trading_city }
 				NOT = { has_reform = siberian_tribe }
 				NOT = { is_revolutionary_republic_trigger = yes }
 				NOT = { has_reform = revolutionary_empire_reform }
@@ -22,8 +23,6 @@ estate_nobles = {
 				NOT = { has_reform = kongsi_federation }
 				NOT = { has_reform = american_republic }
 				NOT = { has_reform = federal_republic }
-				is_nomad = no
-				is_colonial_nation = no
 				if = {
 					limit = {
 						NOT = { religion_group = muslim }
@@ -35,20 +34,42 @@ estate_nobles = {
 					NOT = { has_estate = estate_maratha }
 					NOT = { has_estate = estate_rajput }
 				}
+				#OR = {
+				#	NOT = { has_reform = celestial_empire }
+				#	has_dlc = "Mandate of Heaven"
+				#}
 				OR = {
-					NOT = { has_country_flag = ikko_ikki_peasants_flag }
+					is_nomad = no
+					has_government_attribute = enables_noble_estate 
+				}
+				is_colonial_nation = no
+				OR = {
+					NOT = { has_dlc = "Common Sense" }
 					AND = {
-						NOT = { has_reform = leading_clergy_reform }
-						NOT = { has_reform = monastic_order_reform }
-						NOT = { has_reform = peasants_republic }
+						NOT = { has_reform = parliamentary_reform }
+						NOT = { has_reform = theocratic_democracy_reform }
+						NOT = { has_reform = regionally_elected_commanders }
+						NOT = { has_reform = protectorate_parliament_reform }
 					}
 				}
 			}
+			has_government_attribute = enables_noble_estate 
 		}
-		#OR = {
-		#	NOT = { has_reform = celestial_empire }
-		#	has_dlc = "Mandate of Heaven"
-		#}
+		if = {
+			limit = {
+				NOT = { has_dlc = "Dharma" }
+			}
+			has_parliament = no
+		}
+		NOT = { has_reform = revolutionary_empire_reform }
+		AND = {
+			NOT = { has_country_flag = ikko_ikki_peasants_flag }
+			OR = {
+				NOT = { has_reform = leading_clergy_reform }
+				NOT = { has_reform = monastic_order_reform }
+				NOT = { has_reform = peasants_republic }
+			}
+		}
 	}
 
 	country_modifier_happy = {

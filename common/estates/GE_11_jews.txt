@@ -1,5 +1,4 @@
-estate_jews =
-{
+estate_jews = {
 	icon = 7
 	
 	# If true, country will get estate
