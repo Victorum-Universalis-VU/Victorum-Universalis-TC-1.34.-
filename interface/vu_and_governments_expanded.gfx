@@ -864,10 +864,10 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//arch_monarchy.dds"
 	}
 	
-	spriteType = {
-		name = "government_reform_parliamentary_monarchy"
-		texturefile = "gfx//interface//government_reform_icons//parliamentary_monarchy.dds"
-	}
+	#spriteType = {
+	#	name = "government_reform_parliamentary_monarchy"
+	#	texturefile = "gfx//interface//government_reform_icons//parliamentary_monarchy.dds"
+	#}
 	
 	spriteType = {
 		name = "government_reform_royal_decree"

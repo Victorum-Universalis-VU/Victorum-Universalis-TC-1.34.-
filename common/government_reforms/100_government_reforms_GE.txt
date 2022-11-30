@@ -363,37 +363,136 @@
 		}
 	}
 
-	portuguese_empire_reform = {
-		icon = king
+	aragonese_cortes_reform = {
+		icon = aragonese_cortes_reform
 		allow_normal_conversion = yes
+		effect = {
+			change_variable = {
+				which = Burgher_Influence
+				value = 1
+			}
+		}
+		removed_effect = {
+			change_variable = {
+				which = Burgher_Influence
+				value = -1
+			}
+		}
 		potential = {
 			OR = {
-				tag = POR
-				has_reform = portuguese_empire_reform
+				primary_culture = aragonese 
+				primary_culture = catalan
+				has_reform = aragonese_cortes_reform
 			}
 		}
 		trigger = {
 			OR = {
-				has_reform = portuguese_empire_reform
-				AND = {
-					has_reform = kingdom_of_portugal_and_azures
-					absolutism = 50
-				}
+				primary_culture = aragonese 
+				primary_culture = catalan
+				has_reform = aragonese_cortes_reform
 			}
 		}
-		valid_for_nation_designer = yes
-		nation_designer_cost = 60
 		modifiers = {
-			trade_efficiency = 0.10
-			num_accepted_cultures = 2
-			trade_company_investment_cost = -0.25
-			navy_tradition = 1
+			legitimacy = 0.5
+			possible_policy = 1
 		}
 		custom_attributes = {
-			enables_kingdom_of_brazil = yes
-		}
+			enables_cortes = yes #pseudoparliament
+		}#fixdis every option is the same
 		ai = {
-			factor = 102
+			factor = 100
+		}
+	}
+
+	portuguese_cortes_reform = {
+		icon = portuguese_cortes_reform
+		allow_normal_conversion = yes
+		effect = {
+			change_variable = {
+				which = Burgher_Influence
+				value = 1
+			}
+		}
+		removed_effect = {
+			change_variable = {
+				which = Burgher_Influence
+				value = -1
+			}
+		}
+		potential = {
+			OR = {
+				tag = POR
+				primary_culture = brazilian
+				primary_culture = portugese
+				has_reform = portuguese_cortes_reform
+			}
+		}
+		trigger = {
+			OR = {
+				tag = POR
+				primary_culture = brazilian
+				primary_culture = portugese
+				has_reform = portuguese_cortes_reform
+			}
+		}
+		modifiers = {
+			legitimacy = 0.5
+			possible_policy = 1
+		}
+		custom_attributes = {
+			enables_cortes = yes #pseudoparliament
+		}#fixdis every option is the same
+		ai = {
+			factor = 100
+		}
+	}
+	
+	spanish_parliamentary_monarchy = {
+		icon = spanish_parliamentary_monarchy
+		allow_normal_conversion = yes
+		effect = {
+			change_variable = {
+				which = Burgher_Influence
+				value = 1
+			}
+		}
+		removed_effect = {
+			change_variable = {
+				which = Burgher_Influence
+				value = -1
+			}
+		}
+		potential = {
+			OR = {
+				primary_culture = andalucian 
+				primary_culture = castillian 
+				primary_culture = galician 
+				primary_culture = katsila 
+				primary_culture = leonese 
+				primary_culture = mexican
+				has_reform = spanish_parliamentary_monarchy
+			}
+		}
+		trigger = {
+			OR = {
+				primary_culture = andalucian 
+				primary_culture = castillian 
+				primary_culture = galician 
+				primary_culture = katsila 
+				primary_culture = leonese 
+				primary_culture = mexican
+				has_reform = spanish_parliamentary_monarchy
+			}
+		}
+		modifiers = {
+			legitimacy = 0.5
+			possible_policy = 1
+		}
+		custom_attributes = {
+			enables_cortes = yes #pseudoparliament
+		}#fixdis every option is the same
+		ai = {
+			factor = 100
 		}
 	}
 
@@ -1546,39 +1645,39 @@
 		#
 	}
 
-	papal_embassy_reform = {
-		icon = papal_embassy
-		allow_normal_conversion = yes
-		potential = {
-			religion = catholic
-		}
-		trigger = {
-			religion = catholic
-		}
-		modifiers = {
-			papal_influence = 1.5
-			church_privilege_slots = 0.01
-			church_influence_modifier = 0.05
-		}
-		effect = {
-			change_variable = {
-				which = Clergy_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Clergy_Influence
-				value = -1
-			}
-		}
-		custom_attributes = {
-			enables_papal_delegation = yes #25 opinion with the pope
-		}
-		ai = {
-			factor = 1
-		}
-	}
+	#papal_embassy_reform = {
+	#	icon = papal_embassy
+	#	allow_normal_conversion = yes
+	#	potential = {
+	#		religion = catholic
+	#	}
+	#	trigger = {
+	#		religion = catholic
+	#	}
+	#	modifiers = {
+	#		papal_influence = 1.5
+	#		church_privilege_slots = 0.01
+	#		church_influence_modifier = 0.05
+	#	}
+	#	effect = {
+	#		change_variable = {
+	#			which = Clergy_Influence
+	#			value = 1
+	#		}
+	#	}
+	#	removed_effect = {
+	#		change_variable = {
+	#			which = Clergy_Influence
+	#			value = -1
+	#		}
+	#	}
+	#	custom_attributes = {
+	#		enables_papal_delegation = yes #25 opinion with the pope
+	#	}
+	#	ai = {
+	#		factor = 1
+	#	}
+	#}
 
 	metropolian_bishop_reform = {
 		icon = church
@@ -2356,7 +2455,7 @@
 	}
 
 	constitutio_valdemariana_reform = {
-		icon = nobleman
+		icon = constitutio_valdemariana_reform
 		allow_normal_conversion = yes
 		effect = {
 			change_variable = {
@@ -4230,23 +4329,13 @@
 		}
 		potential = {
 			OR = {
-				tag = CAS
-				tag = SPA
-				tag = BSP
-				tag = SPB
-				tag = BBS
-				tag = CSP
+				primary_culture = castillian 
 				has_reform = casa_de_contraction_reform
 			}
 		}
 		trigger = {
 			OR = {
-				tag = CAS
-				tag = SPA
-				tag = BSP
-				tag = SPB
-				tag = BBS
-				tag = CSP
+				primary_culture = castillian 
 				has_reform = casa_de_contraction_reform
 			}
 		}
@@ -9283,7 +9372,7 @@
 	}
 
 	pospolite_ruszenie_reform = {
-		icon = national_guard
+		icon = pospolite_ruszenie_reform
 		allow_normal_conversion = yes
 		effect = {
 			change_variable = {

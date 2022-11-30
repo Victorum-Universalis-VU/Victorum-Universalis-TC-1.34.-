@@ -3248,92 +3248,108 @@ lithuanian_grand_duchy_legacy = {			#New in BT 10.0, this is a unique non Dharma
 }
 
 ##############################
-#                            #
 # Victorian Government Types #
-#                            #
 ##############################
-
-parliamentary_monarchy = {
-	# government mechanics flags go here
-	icon = "parliamentary_monarchy"
-	allow_normal_conversion = yes
-	legacy_government = yes
-	valid_for_new_country = yes
-	valid_for_nation_designer = no
-	monarchy = yes
-	modifiers = {
-    	governing_capacity = 150
-		years_of_nationalism = -10
-		legitimacy = 1
-		global_unrest = -2
-		global_autonomy = -0.075
-		max_absolutism = -60
-	}
-
-	conditional = {
-		allow = {
-			has_dlc = "Common Sense"
-		}
-		has_parliament = yes
-	}
-
-	ai = {
-		factor = 2
-		modifier = {
-			factor = 2
-			has_idea_group = humanist_ideas
-		}
-		modifier = {
-			factor = 2
-			has_idea_group = innovativeness_ideas
-		}
-	}
-}
-
-parliamentary_democracy = {
-	# government mechanics flags go here
-	icon = "constitution"
-	allow_normal_conversion = yes
-	legacy_government = yes
-	valid_for_new_country = yes
-	valid_for_nation_designer = no
-	duration = 4
-
-	republican_name = yes
-	royal_marriage = no
-
-	republic = yes
-	modifiers = {
-    	governing_capacity = 150
-		production_efficiency = 0.15
-		trade_efficiency = 0.15
-		global_unrest = -1
-		global_autonomy = -0.075
-		max_absolutism = -60
-	}
-
-	conditional = {
-		allow = {
-			has_dlc = "Common Sense"
-		}
-		has_parliament = yes
-	}
-
-	ai = {
-		factor = 1
-		modifier = {
-			factor = 2
-			AND = {
-				has_idea_group = humanist_ideas
-				has_idea_group = innovativeness_ideas
-			}
-		}
-	}
-}
-
 #############################
 # VU - San Felipe Additions #
 #############################
+
+#parliamentary_monarchy = {
+#	# government mechanics flags go here
+#	icon = "parliamentary_monarchy"
+#	allow_normal_conversion = yes
+#	legacy_government = yes
+#	valid_for_new_country = yes
+#	valid_for_nation_designer = no
+#	monarchy = yes
+#	
+#	potential = {
+#		NOT = { primary_culture = andalucian }
+#		NOT = { primary_culture = aragonese }
+#		NOT = { primary_culture = brazilian }
+#		NOT = { primary_culture = castillian }
+#		NOT = { primary_culture = catalan }
+#		NOT = { primary_culture = galician }
+#		NOT = { primary_culture = katsila }
+#		NOT = { primary_culture = leonese }
+#		NOT = { primary_culture = mexican }
+#		NOT = { primary_culture = portugese }
+#	}
+#	
+#	modifiers = {
+#    	governing_capacity = 200
+#		years_of_nationalism = -10
+#		legitimacy = 1
+#		global_unrest = -2
+#		global_autonomy = -0.075
+#		max_absolutism = -50
+#	}
+#
+#	conditional = {
+#		allow = { has_dlc = "Common Sense" }
+#		has_parliament = yes
+#		custom_attributes = {
+#			disables_estate_nobles = yes
+#			blocked_call_diet = yes
+#		}
+#	}
+#
+#	ai = {
+#		factor = 2
+#		modifier = {
+#			factor = 2
+#			has_idea_group = humanist_ideas
+#		}
+#		modifier = {
+#			factor = 2
+#			has_idea_group = innovativeness_ideas
+#		}
+#	}
+#}
+#
+#parliamentary_democracy = {
+#	# government mechanics flags go here
+#	icon = "constitution"
+#	allow_normal_conversion = yes
+#	legacy_government = yes
+#	valid_for_new_country = yes
+#	valid_for_nation_designer = no
+#	duration = 4
+#
+#	republican_name = yes
+#	royal_marriage = no
+#
+#	republic = yes
+#	modifiers = {
+#    	governing_capacity = 150
+#		production_efficiency = 0.15
+#		trade_efficiency = 0.15
+#		global_unrest = -2.5
+#		global_autonomy = -0.05
+#		max_absolutism = -60
+#	}
+#
+#	conditional = {
+#		allow = { has_dlc = "Common Sense" }
+#		has_parliament = yes
+#		custom_attributes = {
+#			disables_estate_nobles = yes
+#			blocked_call_diet = yes
+#		}
+#	}
+#
+#	ai = {
+#		factor = 1
+#		modifier = {
+#			factor = 2
+#			AND = {
+#				has_idea_group = humanist_ideas
+#				has_idea_group = innovativeness_ideas
+#			}
+#		}
+#	}
+#}
+
 ##################
 # PRINCIPALITIES #
 ##################
