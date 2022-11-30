@@ -63,7 +63,7 @@ estate_peasants =
 
 	# For province assignment
 
-	color = { 250 200 0 }
+	color = { 128 128 128 }
 	
 	privileges = {
 		estate_peasants_land_rights

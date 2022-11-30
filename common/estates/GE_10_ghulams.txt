@@ -1,5 +1,4 @@
-estate_ghulams =
-{
+estate_ghulams = {
 	icon = 13
 	
 	# If true, country will get estate
