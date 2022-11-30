@@ -1020,6 +1020,54 @@ spriteTypes = {
 ## VU Additions by San Felipe ##
 ################################
 	spriteType = {
+		name = "government_reform_spanish_parliamentary_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//spanish_parliamentary_monarchy.dds"
+	}
+	spriteType = {
+		name = "government_reform_portuguese_cortes_reform"
+		texturefile = "gfx//interface//government_reform_icons//portuguese_cortes_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_aragonese_cortes_reform"
+		texturefile = "gfx//interface//government_reform_icons//aragonese_cortes_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_limit_imperial_court_reform"
+		texturefile = "gfx//interface//government_reform_icons//limit_imperial_court_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_pospolite_ruszenie_reform"
+		texturefile = "gfx//interface//government_reform_icons//pospolite_ruszenie_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_portuguese_empire_reform"
+		texturefile = "gfx//interface//government_reform_icons//portuguese_empire_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_free_trade_reform"
+		texturefile = "gfx//interface//government_reform_icons//free_trade_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_curtail_the_burghers_reform"
+		texturefile = "gfx//interface//government_reform_icons//curtail_the_burghers_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_parliamentary_reform"
+		texturefile = "gfx//interface//government_reform_icons//parliamentary_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_regional_council_reform"
+		texturefile = "gfx//interface//government_reform_icons//regional_council_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_commoner_officials_reform"
+		texturefile = "gfx//interface//government_reform_icons//commoner_officials_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_constitutio_valdemariana_reform"
+		texturefile = "gfx//interface//government_reform_icons//constitutio_valdemariana_reform.dds"
+	}
+	spriteType = {
 		name = "government_reform_self_governing_dominion_vu_government"
 		texturefile = "gfx/interface/government_reform_icons/self_governing_dominion_vu_government.dds"
 	}

@@ -93,7 +93,7 @@ monarchy = {
 				french_monarchic_restoration_reform
 				french_orleanist_restoration_reform
 				second_french_empire_reform
-				parliamentary_monarchy
+				#parliamentary_monarchy
 				restoration_reform
 				late_byzantine_gov_reform
 				crusader_state_vu_reform
@@ -209,7 +209,10 @@ monarchy = {
 				guild_dominance_reform
 				growth_signoria_reform
 				akritai_privileges_reform
+				#VU additions
+				aragonese_cortes_reform
 				portuguese_cortes_reform
+				spanish_parliamentary_monarchy
 				crusader_orders_reform
 				old_world_privileges_reform
 				#respect_union_reform
@@ -533,7 +536,7 @@ monarchy = {
 			reforms = {
 				parliamentary_reform
 				royal_decree_reform
-				aristocratic_court_reform
+				aristocratic_court_reform		
 				general_estates_reform
 				states_general_reform
 				legislative_sejm
@@ -742,7 +745,7 @@ monarchy = {
 		french_kingdom_legacy
 		first_french_empire_legacy
 		second_french_empire_legacy
-		parliamentary_monarchy
+		#parliamentary_monarchy
 		#End of VU additions
 		#ME Legacy Governments
 		#crusader_kingdom_legacy
@@ -767,7 +770,7 @@ monarchy = {
 		tsardom
 		principality
 		parliamentary_reform
-		parliamentary_monarchy
+		#parliamentary_monarchy
 		english_monarchy
 		states_general_reform
 		#Start of Lions of the North Dlc
@@ -2144,19 +2147,19 @@ pre_dharma_mapping = {
 #                            #
 ##############################
 
-pre_dharma_mapping = {
-	parliamentary_monarchy = {
-		government = monarchy
-		legacy_government = parliamentary_monarchy
-	}
-	parliamentary_democracy = {
-		government = republic
-		legacy_government = parliamentary_democracy
-	}
-
+#pre_dharma_mapping = {
+#	parliamentary_monarchy = {
+#		government = monarchy
+#		legacy_government = parliamentary_monarchy
+#	}
+#	parliamentary_democracy = {
+#		government = republic
+#		legacy_government = parliamentary_democracy
+#	}
+#
 #Special for Soviet Union
-	proletarian_dictatorship = {
-		government = monarchy
-		legacy_government = proletarian_dicatorship
-	}
-}
+#	proletarian_dictatorship = {
+#		government = monarchy
+#		legacy_government = proletarian_dictatorship
+#	}
+#}
