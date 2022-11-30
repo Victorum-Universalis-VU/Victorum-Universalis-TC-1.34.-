@@ -45,10 +45,8 @@ united_cantons_reform = {
 }
 
 parliamentary_reform = {
-	icon = "judge"
-	modifiers = {
-		global_unrest = -1
-	}
+	icon = "parliamentary_reform"
+	
 	potential = {
 		is_revolutionary = no
 		NOT = { has_government_attribute = is_pirate_republic_reform }
@@ -62,7 +60,7 @@ parliamentary_reform = {
 				crown_stronger_than_estate = { estate = estate_nobles }
 				has_reform = parliamentary_reform
 			}
-		}	
+		}
 		if = {
 			limit = { has_dlc = "Res Publica" }
 			NOT = { has_reform = elective_monarchy }
@@ -76,6 +74,15 @@ parliamentary_reform = {
 			NOT = { has_reform = celestial_empire }
 			NOT = { is_revolutionary_republic_trigger = yes }
 		}
+	}
+	
+	modifiers = {
+		governing_capacity = 200
+		years_of_nationalism = -10
+		legitimacy = 1
+		global_unrest = -2
+		global_autonomy = -0.075
+		max_absolutism = -50
 	}
 
 	conditional = {
@@ -302,7 +309,8 @@ holy_state_reform = {
 # State and Religion
 
 papal_embassy_reform = {
-	icon = "pope"
+	icon = "papal_embassy"
+	#icon = "pope"
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
@@ -1096,7 +1104,7 @@ empower_the_burghers_reform = {
 }
 
 curtail_the_burghers_reform = {
-	icon = "assembly_hall"
+	icon = "curtail_the_burghers_reform"
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
@@ -1213,7 +1221,7 @@ mercantilistic_approach_reform = {
 }
 
 free_trade_reform = {
-	icon = "merchant"
+	icon = "free_trade_reform"
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }

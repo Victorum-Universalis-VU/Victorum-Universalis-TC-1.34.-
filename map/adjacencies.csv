@@ -42,7 +42,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 6983;8282;sea;1395;-1;-1;-1;-1;Bataan-Cavite
 1146;1145;sea;7303;-1;-1;-1;-1;Ife-Nupe
 988;944;sea;7342;-1;-1;-1;-1;Simcoe-Detroit
-2584;993;sea;7340;-1;-1;-1;-1;Osheaga-Weskarini
+2584;993;sea;6037;-1;-1;-1;-1;Osheaga-Weskarini
+5060;993;sea;7340;-1;-1;-1;-1;Ktineketolekwac-Weskarini
 994;2583;sea;7340;-1;-1;-1;-1;Quebec-Shawenigane
 961;989;sea;7340;-1;-1;-1;-1;Fort Stanwix-Cataraqui
 8434;4111;sea;1275;-1;-1;-1;-1;Saint Georges d'Oleron-Aunis
