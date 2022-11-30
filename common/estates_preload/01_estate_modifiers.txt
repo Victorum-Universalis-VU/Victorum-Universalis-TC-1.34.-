@@ -94,6 +94,12 @@ estate_peasants = {
 			always = yes
 		}
 	}
+	modifier_definition = {
+		key = total_liberalism_modifier
+		trigger = {
+			always = yes
+		}
+	}
 }
 estate_ghulams = {
 	modifier_definition = {
