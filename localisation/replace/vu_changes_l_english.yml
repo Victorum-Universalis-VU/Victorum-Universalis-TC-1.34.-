@@ -1255,6 +1255,14 @@
  SOCIALIST_FEDERATION:0 "Socialist Federation"
  GENERAL_SECRETARY:0 "General Secretary"
  GENERAL_SECRETARY_F:0 "General Secretary"
+ 
+ #VU addition by San Felipe
+ scottish_monarchy_legacy:0 "Scottish Monarchy"
+ scottish_monarchy_legacy_desc:0 "The Scottish Monarchy is a feudal monarchy, with a privy council called regularly that advise the ruling monarch on administrative, economic and the social affairs of Scotland. It is based on the King's Council or curia regis."
+ scottish_monarchy:0 "Scottish Monarchy"
+ scottish_monarchy_desc:0 "The Scottish Monarchy is a feudal monarchy, with a privy council called regularly that advise the ruling monarch on administrative, economic and the social affairs of Scotland. It is based on the King's Council or curia regis."
+ scottish_monarchy_ruler:0 "King of Scots"
+ scottish_monarchy_ruler_female:0 "Queen of Scots"
 
  #SOCIAL REFORMS - Added in TCOP by San Felipe
  #HEADER_SOCIAL_REFORMS:0 "Decisions and Social Reforms"

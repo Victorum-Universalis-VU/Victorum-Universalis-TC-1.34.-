@@ -8561,6 +8561,7 @@ estate_nobles_strong_duchies = {
 				    tag = NPF
 				    tag = OFR
 					has_reform = english_monarchy # BT
+					has_reform = scottish_monarchy # VU
 				}
 				NOT = { has_estate_privilege = estate_nobles_strong_duchies }
 			}

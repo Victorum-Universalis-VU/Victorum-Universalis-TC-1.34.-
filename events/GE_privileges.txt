@@ -816,3 +816,24 @@ country_event = {
 		add_legitimacy = -10
 	}
 }
+
+country_event = {
+	id = GE_privileges.17
+	title = GE_privileges.17.t
+	desc = GE_privileges.17.d
+	picture = TRADEGOODS_eventPicture
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+	option = {
+		name = GE_privileges.17.a
+		reapply_estate_privilege = { privilege = estate_nobles_call_privy_council }
+	}
+	option = {
+		name = GE_privileges.17.b
+		add_legitimacy = -10
+	}
+}

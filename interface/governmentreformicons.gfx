@@ -1068,6 +1068,14 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//constitutio_valdemariana_reform.dds"
 	}
 	spriteType = {
+		name = "government_reform_scottish_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//scottish_monarchy.dds"
+	}
+	spriteType = {
+		name = "government_reform_english_monarchy"
+		texturefile = "gfx//interface//government_reform_icons//english_monarchy.dds"
+	}
+	spriteType = {
 		name = "government_reform_self_governing_dominion_vu_government"
 		texturefile = "gfx/interface/government_reform_icons/self_governing_dominion_vu_government.dds"
 	}

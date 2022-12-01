@@ -316,6 +316,7 @@ pretender_rebels = {
 						government = native
 						has_reform = elective_monarchy
 						has_reform = english_monarchy
+						has_reform = scottish_monarchy
 						has_reform = ottoman_government
 						has_reform = tribal_federation
 						has_reform = feudal_theocracy

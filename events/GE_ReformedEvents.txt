@@ -17973,3 +17973,162 @@ country_event = {
 		
 	}
 }
+
+#VU addition by San Felipe
+country_event = {
+	id = reform_me_events.247
+	title = reform_me_events.247.t
+	desc = reform_me_events.247.d
+	picture = LIBERIUM_VETO_eventPicture
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			random_list = {
+				10 = { set_country_flag = Privy_Council_Navy }
+				10 = { set_country_flag = Privy_Council_Trade }
+				10 = { set_country_flag = Privy_Council_Goods }
+			}
+			random_list = {
+				10 = { set_country_flag = Privy_Council_Manpower }
+				10 = { set_country_flag = Privy_Council_Morale }
+				10 = { set_country_flag = Privy_Council_Discipline }
+			}
+			random_list = {
+				10 = { set_country_flag = Privy_Council_Piety }
+				10 = { set_country_flag = Privy_Council_Gold }
+				10 = { set_country_flag = Privy_Council_Pope }
+			}
+		}
+	}
+	
+	option = {
+		name = reform_me_events.247.a
+		
+		trigger_switch = {
+			on_trigger = has_country_flag
+			Privy_Council_Navy = {
+				add_country_modifier = {
+					name = "Privy_Council_Navy"
+					duration = 3650
+				}
+				clr_country_flag = Privy_Council_Navy
+			}
+			Privy_Council_Trade = {
+				add_country_modifier = {
+					name = "Privy_Council_Trade"
+					duration = 3650
+				}
+				clr_country_flag = Privy_Council_Trade
+			}
+			Privy_Council_Goods = {
+				add_country_modifier = {
+					name = "Privy_Council_Goods"
+					duration = 3650
+				}
+				clr_country_flag = Privy_Council_Goods
+			}
+		}
+		add_estate_influence_modifier = {
+			estate = estate_burghers
+			desc = EST_VAL_BURGHERS_ADVANCES
+			influence = 10
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_burghers
+			loyalty = 10
+		}
+		clr_country_flag = Privy_Council_Manpower
+		clr_country_flag = Privy_Council_Morale
+		clr_country_flag = Privy_Council_Discipline
+		clr_country_flag = Privy_Council_Piety
+		clr_country_flag = Privy_Council_Pope
+		clr_country_flag = Privy_Council_Gold
+	}
+	
+	option = {
+		name = reform_me_events.247.b
+		
+		trigger_switch = {
+			on_trigger = has_country_flag
+			Privy_Council_Manpower = {
+				add_country_modifier = {
+					name = "Privy_Council_Manpower"
+					duration = 7300
+				}
+				clr_country_flag = Privy_Council_Manpower
+			}
+			Privy_Council_Morale = {
+				add_country_modifier = {
+					name = "Privy_Council_Morale"
+					duration = 7300
+				}
+				clr_country_flag = Privy_Council_Morale
+			}
+			Privy_Council_Discipline = {
+				add_country_modifier = {
+					name = "Privy_Council_Discipline"
+					duration = 7300
+				}
+				clr_country_flag = Privy_Council_Discipline
+			}
+		}
+		add_estate_influence_modifier = {
+			estate = estate_nobles
+			desc = EST_VAL_NOBILITY_ADVANCES
+			influence = 10
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_nobles
+			loyalty = 10
+		}
+		clr_country_flag = Privy_Council_Trade
+		clr_country_flag = Privy_Council_Navy
+		clr_country_flag = Privy_Council_Goods
+		clr_country_flag = Privy_Council_Piety
+		clr_country_flag = Privy_Council_Pope
+		clr_country_flag = Privy_Council_Gold
+	}
+	
+	option = {
+		name = reform_me_events.247.c
+		
+		trigger_switch = {
+			on_trigger = has_country_flag
+			Privy_Council_Piety = {
+				add_country_modifier = {
+					name = "Privy_Council_Piety"
+					duration = 7300
+				}
+				clr_country_flag = Privy_Council_Piety
+			}
+			Privy_Council_Pope = {
+				add_papal_influence = 10
+				clr_country_flag = Privy_Council_Pope
+			}
+			Privy_Council_Gold = {
+				add_years_of_income = 0.8
+				clr_country_flag = Privy_Council_Gold
+			}
+		}
+		add_estate_influence_modifier = {
+			estate = estate_church
+			desc = EST_VAL_CHURCH_ADVANCE
+			influence = 10
+			duration = 7300
+		}
+		add_estate_loyalty = {
+			estate = estate_church
+			loyalty = 10
+		}
+		clr_country_flag = Privy_Council_Manpower
+		clr_country_flag = Privy_Council_Morale
+		clr_country_flag = Privy_Council_Discipline
+		clr_country_flag = Privy_Council_Trade
+		clr_country_flag = Privy_Council_Navy
+		clr_country_flag = Privy_Council_Goods
+	}
+}
