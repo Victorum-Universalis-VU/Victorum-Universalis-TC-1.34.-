@@ -2102,46 +2102,6 @@
 		}
 	}
 
-	portuguese_cortes_reform = {
-		icon = assembly_hall
-		allow_normal_conversion = yes
-		effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = 1
-			}
-		}
-		removed_effect = {
-			change_variable = {
-				which = Burgher_Influence
-				value = -1
-			}
-		}
-		potential = {
-			OR = {
-				tag = POR
-				primary_culture = portugese
-				has_reform = portuguese_cortes_reform
-			}
-		}
-		trigger = {
-			OR = {
-				tag = POR
-				primary_culture = portugese
-				has_reform = portuguese_cortes_reform
-			}
-		}
-		modifiers = {
-			legitimacy = 0.5
-		}
-		custom_attributes = {
-			enables_cortes = yes #pseudoparliament
-		}#fixdis every option is the same
-		ai = {
-			factor = 100
-		}
-	}
-
 	respect_union_reform = {
 		icon = Spanish_Crown
 		allow_normal_conversion = yes

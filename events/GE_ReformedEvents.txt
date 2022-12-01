@@ -4,7 +4,7 @@ country_event = {
 	id = reform_me_events.1
 	title = reform_me_events.1.t
 	desc = reform_me_events.1.d
-	picture = LIBERIUM_VETO_eventPicture
+	picture = CORTES_GENERALES_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -17979,7 +17979,7 @@ country_event = {
 	id = reform_me_events.247
 	title = reform_me_events.247.t
 	desc = reform_me_events.247.d
-	picture = LIBERIUM_VETO_eventPicture
+	picture = WILLIAM_WALLACE_eventPicture
 	
 	is_triggered_only = yes
 	
@@ -18132,3 +18132,4 @@ country_event = {
 		clr_country_flag = Privy_Council_Goods
 	}
 }
+

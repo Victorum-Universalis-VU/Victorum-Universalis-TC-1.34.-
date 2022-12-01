@@ -1239,11 +1239,11 @@
 
  #GOVERNMENT REFORMS - Added in TCOP by San Felipe
  spanish_parliamentary_monarchy:0 "Cortes Generales"
- spanish_parliamentary_monarchy_desc:0 "A "Corte" is an advisory council made up of the most powerful feudal lords or dons who are closest to the reigning monarch. The corte has however since the 12th century been dimished in power and stature to a point that recent Iberian monarchs can simply rubber stamp monarchial acts and pay off those who would otherwise challenge them."
+ spanish_parliamentary_monarchy_desc:0 "The 'Cortes Generales' is an advisory council made up of the most powerful dons who are closest to our reigning monarch, to which he or she can call, coerce, manipulate, bribe and dismiss at their behest, rubber stamping any monarchial acts without the need of their approval."
  portuguese_cortes_reform:0 "Cortes Gerais"
- portuguese_cortes_reform_desc:0 "A "Corte" is an advisory council made up of the most powerful feudal lords or dons who are closest to the reigning monarch. Prior to the 18th century, Portuguese monarchs would call and dismiss Cortes at will and at a place of their choosing."
+ portuguese_cortes_reform_desc:0 "The 'Cortes Gerais' is an assembly of representatives made up of the most powerful senhors who are closest to our reigning monarch, to which he or she can call and dismiss at their behest."
  aragonese_cortes_reform:0 "Cortz d'Aragón"
- aragonese_cortes_reform_desc:0 "A "Corte" is an advisory council made up of the most powerful feudal lords or dons who are closest to the reigning monarch. Prior to recent times, the monarchs of Aragon were bound to summon the Cortz at least once every five years and then annually following the union with Catalonia."
+ aragonese_cortes_reform_desc:0 "The'Cortz d'Aragón' is a pseudo Parliamentary body made up of the most powerful senyors who are closest to our reigning monarch, to which he or she is bound by law to summon on an annual basis." 
  #parliamentary_monarchy:0 "Parliamentary Monarchy"
  #parliamentary_monarchy_desc:0 "A Parliamentary monarchy is a state headed by a monarch who is not actively involved in policy formation or implementation. True governmental leadership is carried out by a cabinet headed by a prime minister, premier or chancellor who is drawn from the legislature."
  #parliamentary_democracy:0 "Parliamentary Democracy"
@@ -1263,6 +1263,7 @@
  scottish_monarchy_desc:0 "The Scottish Monarchy is a feudal monarchy, with a privy council called regularly that advise the ruling monarch on administrative, economic and the social affairs of Scotland. It is based on the King's Council or curia regis."
  scottish_monarchy_ruler:0 "King of Scots"
  scottish_monarchy_ruler_female:0 "Queen of Scots"
+ 
 
  #SOCIAL REFORMS - Added in TCOP by San Felipe
  #HEADER_SOCIAL_REFORMS:0 "Decisions and Social Reforms"
