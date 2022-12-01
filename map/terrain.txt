@@ -297,7 +297,8 @@ categories =  {
 	}
 
 	coastline = {
-		color = { 00 55 70 }
+		color = { 83 170 200 }
+		#color = { 33 145 200 } alternative
 		#color = { 49 175 191 } old colour
 		type = coastline
 		sound_type = sea
