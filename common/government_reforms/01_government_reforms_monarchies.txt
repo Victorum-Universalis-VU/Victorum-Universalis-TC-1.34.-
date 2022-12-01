@@ -701,12 +701,13 @@ scottish_monarchy = {
 		nobles_influence_modifier = -0.075
 	}
 	
-	custom_attributes = {
-		enables_privy_council = yes #pseudoparliament and a development of the King's Council
-	}#fixdis every option is the same
-	
 	conditional = {
-		allow = { has_dlc = "Common Sense" }
+		allow = {
+			has_dlc = "Common Sense"
+		}
+		custom_attributes = {
+			enables_privy_council = yes #pseudoparliament and a development of the King's Council
+		}#fixdis every option is the same
 	}
 }
 

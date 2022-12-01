@@ -1,6 +1,6 @@
 ﻿l_english:
  reform_me_events.1.t:0 "The Cortes of [GetYear]"
- reform_me_events.1.d: "The King has summoned the annual Cortes, how should he spend his time?"
+ reform_me_events.1.d: "Our Monarch has summoned the annual Cortes, how should he spend his time?"
  reform_me_events.1.a: "Listen to the burghers"
  reform_me_events.1.b: "Debate the nobles"
  reform_me_events.1.c: "Convince the clergy"
@@ -184,7 +184,7 @@
  GE_privileges.17.d: "Let us hearby summon the Privy Council and see what they have to say."
  GE_privileges.17.a: "Lets play some politics."
  GE_privileges.17.b: "Let them rot."
-
+ 
  GE_electoral_monarchy.1.t: "Imperial Succession"
  GE_electoral_monarchy.1.d: "With the death of Basileus [ROOT.Monarch.GetName] all influential people from across the empire have gathered to witness the succession. The designated heir of [ROOT.Dynasty.GetName] dynasty is legitimate by Imperial decree, however the army, the senate and the pentarchy have vied for influence and only one of them has come on top. We can either choose our heir apparent to rule normally or cave to the pressure and appoint the candidate from highest influence faction as [ROOT.Monarch.GetTitle]."
  GE_electoral_monarchy.1.a: "The Heir Apparent"
