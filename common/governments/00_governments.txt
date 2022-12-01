@@ -37,6 +37,7 @@ monarchy = {
 				celestial_empire
 				shogunate
 				english_monarchy
+				scottish_monarchy
 				mandala_reform
 				revolutionary_empire_reform
 				holy_state_reform
@@ -711,6 +712,7 @@ monarchy = {
 		enlightened_despotism
 		revolutionary_empire
 		english_monarchy_legacy
+		scottish_monarchy_legacy
 		mamluk_government_legacy
 		feudal_theocracy_legacy
 		elective_monarchy_legacy
@@ -772,6 +774,7 @@ monarchy = {
 		parliamentary_reform
 		#parliamentary_monarchy
 		english_monarchy
+		scottish_monarchy
 		states_general_reform
 		#Start of Lions of the North Dlc
 		polish_elective_monarchy
@@ -1961,6 +1964,10 @@ pre_dharma_mapping = {
 	english_monarchy = {
 		government = monarchy
 		legacy_government = english_monarchy_legacy
+	}
+	scottish_monarchy = {
+		government = monarchy
+		legacy_government = scottish_monarchy_legacy
 	}
 	mamluk_government = {
 		government = monarchy

@@ -280,7 +280,10 @@ estate_nobles = {
 	custom_name = {
 		desc = estate_marchers
 		trigger = {
-			has_reform = english_monarchy
+			OR = {
+				has_reform = english_monarchy 
+				has_reform = scottish_monarchy
+			}
 		}
 	}
 	#End of VU-specific
@@ -496,6 +499,7 @@ estate_nobles = {
 		estate_nobles_noble_officer_privilege
 		estate_nobles_grand_captain_privilege
 		estate_nobles_call_cortez
+		estate_nobles_call_privy_council
 		estate_nobles_white_knights
 		estate_noble_land_privileges
 		estate_nobles_kreditwerk_appointment

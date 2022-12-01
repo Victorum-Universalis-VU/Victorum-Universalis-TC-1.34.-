@@ -618,6 +618,39 @@ estate_nobles_grand_captain_privilege = {
 	}
 }
 
+estate_nobles_call_privy_council = {
+	icon = privilege_empty_throne
+	land_share = 0
+	max_absolutism = -15
+	loyalty = 0.00
+	influence = 0.00
+	is_valid = {
+		has_government_attribute = enables_privy_council
+	}
+	can_select = {
+		has_government_attribute = enables_privy_council
+	}
+	on_granted = {
+		country_event = { id = reform_me_events.247 }
+	}
+	on_revoked = {
+	}
+	on_invalid = {
+	}
+	penalties = {
+	}
+	benefits = {
+		prestige = -0.5
+	}
+	cooldown_years = 20
+	on_cooldown_expires = {
+		country_event = { id = GE_privileges.17 }
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
 estate_nobles_call_cortez = {
 	icon = privilege_empty_throne
 	land_share = 0
