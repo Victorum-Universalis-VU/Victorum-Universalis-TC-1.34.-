@@ -23,11 +23,39 @@ discovered_by = eastern
 discovered_by = western
 
 1430.1.1 = { owner = TUR add_core = TUR controller = TUR capital = "Janina" }
-1502.1.1 = { remove_core = BYZ remove_core = EPI }
+1525.1.1 = { remove_core = BYZ remove_core = EPI }
 1555.1.1 = { unrest = 5 } # General discontent against the Janissaries' dominance
 1556.1.1 = { unrest = 0 }
 1611.1.1 = { unrest = 3 } # Revolutionary movement of Dionysios, Christians are driven away
 1612.1.1 = { unrest = 0 }
+1647.1.1 = { base_tax = 5 } #School founded, greek enlightment
+1676.1.1 = {
+	temple = yes
+	base_manpower = 4
+}
+1700.1.1 = {
+	base_production = 5
+	marketplace = yes
+}
 1750.1.1 = { add_core = GRE }
 1797.1.1 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Suliot uprising
 1803.12.17 = { revolt = {} controller = TUR } # The Suliots are defeated
+1821.2.21 = { unrest = 10 } #Greek uprising
+1829.9.12 = {
+	unrest = 0
+} #Greece idependent, town not in Greek belongings
+1869.1.1 = {
+	base_production = 4
+	base_tax = 4
+} #Great fire, marketplace quickly rebuilt
+1885.1.1 = {
+	base_tax = 6
+	base_production = 5
+}
+1912.11.26 = { controller = GRE } #Balkan Wars
+1913.5.30 = {
+	owner = GRE
+	controller = GRE
+	add_core = GRE
+	remove_core = TUR
+}

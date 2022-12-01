@@ -21,52 +21,23 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
-
-#Province history completed by - Draiocht
-#1291.5.21 = { #BeyondTypus batch edit shortcut the first shattering begins
-#	owner = XXX
-#	controller = XXX
-#	add_core = XXX
-#	remove_core = XXX
-#} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
-#1291.5.23 = { #BeyondTypus batch edit shortcut the first shattering ends
-#	owner = XXX
-#	controller = XXX
-#	add_core = XXX
-#	remove_core = XXX
-#} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
-#1291.5.24 = { #BeyondTypus batch edit shortcut first performance start begins
-#	owner = XXX
-#	controller = XXX
-#	add_core = XXX
-#} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
-#1291.5.26 = { #BeyondTypus batch edit shortcut first performance start ends
-#	owner = XXX
-#	controller = XXX
-#	remove_core = XXX
-#} #Return to proper mod added owners and cuts vanilla core, typically.
-
-#1291 - 1444
-
-#1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
-#	owner = XXX
-#	controller = XXX
-#	add_core = XXX
-#} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
-#1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
-#	owner = XXX
-#	controller = XXX
-#	remove_core = XXX
-#} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
-#1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
-#	owner = XXX
-#	controller = XXX
-#	add_core = XXX
-#} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
-#1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
-#	owner = XXX
-#	controller = XXX
-#	remove_core = XXX
-#} #Return to proper mod added owners and cuts vanilla core, typically.
-
-#1444 on
+1555.1.1 = { unrest = 5 } # General discontent against the Janissaries' dominance
+1556.1.1 = { unrest = 0 }
+1611.1.1 = { unrest = 3 } # Revolutionary movement of Dionysios, Christians are driven away
+1612.1.1 = { unrest = 0 }
+1750.1.1 = { add_core = GRE }
+1797.1.1 = { revolt = { type = revolutionary_rebels size = 0 } controller = REB } # Suliot uprising
+1803.12.17 = { revolt = {} controller = TUR } # The Suliots are defeated
+1821.2.21 = { unrest = 10 } #Greek uprising
+1829.9.12 = {
+	unrest = 0
+} #Greece idependent, town not in Greek belongings
+1854.1.1 = { unrest = 5 }
+1856.1.1 = { unrest = 0 }
+1912.10.20 = { controller = GRE } #Balkan Wars
+1913.5.30 = {
+	owner = GRE
+	controller = GRE
+	add_core = GRE
+	remove_core = TUR
+}
