@@ -16662,6 +16662,40 @@ GE_cultural_supremacy = {
 	local_governing_cost = -0.15
 }
 	
+#Privy_Council
+Privy_Council_Piety = {
+	tolerance_own = 1
+	global_missionary_strength = 0.01
+}
+Privy_Council_Discipline = {
+	discipline = 0.025
+}
+Privy_Council_Morale = {
+	land_morale = 0.05
+}
+Privy_Council_Manpower = {
+	global_manpower_modifier = 0.10
+	reinforce_speed = 0.1
+}
+Privy_Council_Goods = {
+	global_trade_goods_size_modifier = 0.1
+}
+Privy_Council_Trade = {
+	trade_efficiency = 0.1
+	trade_range_modifier = 0.25
+}
+Privy_Council_Navy = {
+	global_ship_trade_power = 0.25
+	naval_maintenance_modifier = -0.1
+}
+Privy_Council_Pope = {
+	religious_unity = 0.5
+	missionaries = 1
+}
+Privy_Council_Gold = {
+	global_tax_income = 12
+	inflation_action_cost = 0.1
+}
 	
 #Cortez
 Cortes_Piety = {
@@ -16689,9 +16723,14 @@ Cortes_Navy = {
 	global_ship_trade_power = 0.25
 	naval_maintenance_modifier = -0.1
 }
-
-
-
+Cortes_Pope = {
+	religious_unity = 0.5
+	missionaries = 1
+}
+Cortes_Gold = {
+	global_tax_income = 12
+	inflation_action_cost = 0.1
+}
 
 #Royal Council
 Bad_Admin = {

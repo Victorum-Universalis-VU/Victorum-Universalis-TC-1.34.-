@@ -365,7 +365,10 @@
  vu_malaria_picker_on_custom_tooltip: "Let's keep it On."
  vu_malaria_picker.1.b:0 "No, we must face and eliminate it!"
  vu_malaria_picker_off_custom_tooltip: "Turn it off for goodness sakes!"
-
+ #Addition to Burgundian Inheritance
+ incidents_bur_inheritance.1.f:0 "Salic law shall prevail! To the heirs of England thus go our lands!"
+ marry_england_tt:0 "We will pass the crown to the English monarch, effectively falling under personal union with them. Our current unions will seek to break free after realizing what we've done. Our decision will greatly upset both the Emperor and the French but to hell with those sausage and frog eating scoundrels! Quick men, get to the boats!" 
+ 
  #Override country names
  ZAZ_WILD_FIELDS: "Wild Fields"
  ZAZ_WILD_FIELDS_ADJ: "Wild Fields's"

@@ -895,6 +895,19 @@ restore_old_nation_on_formation_effect = {
 			}
 			else_if = {
 				limit = {
+					has_reform = scottish_monarchy
+				}
+				event_target:old_tag_target = {
+					change_government = monarchy
+					add_government_reform = scottish_monarchy
+					define_ruler = {
+						dynasty = ROOT
+						claim = 95
+					}
+				}
+			}
+			else_if = {
+				limit = {
 					has_reform = elective_monarchy
 				}
 				event_target:old_tag_target = {

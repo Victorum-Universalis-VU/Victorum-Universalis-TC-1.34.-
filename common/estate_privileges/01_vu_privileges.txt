@@ -117,7 +117,10 @@ estate_nobles_british_strong_marches = {
 		OR = {
 			has_estate_privilege = estate_nobles_british_strong_marches
 			AND = {
-				has_reform = english_monarchy
+				OR = {
+				    has_reform = english_monarchy
+					has_reform = scottish_monarchy
+				}
 				NOT = { has_estate_privilege = estate_nobles_strong_duchies }
 			}
 		}
