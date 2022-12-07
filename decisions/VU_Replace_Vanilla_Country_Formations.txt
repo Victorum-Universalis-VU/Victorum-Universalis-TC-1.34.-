@@ -1197,6 +1197,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = FRA }
+			NOT = { exists = BFR }
 			is_nomad = no
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
@@ -1602,6 +1603,8 @@ country_decisions = {
 			was_never_german_regional_tag_trigger = yes
 			NOT = { has_country_flag = formed_hannover_flag }
 			NOT = { tag = HAN }
+			NOT = { tag = HLR }
+			NOT = { tag = PAP }
 			NOT = { tag = GER }
 			NOT = { tag = PRU }
 			NOT = { tag = HSA }
@@ -2004,6 +2007,92 @@ country_decisions = {
 		}
 		ai_importance = 400 #
 	}
+
+	#Italy but for the Pope
+	gods_kingdom = {
+		major = yes
+		potential = {			
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			NOT = { tag = ITL }
+			NOT = { tag = ITA }
+			tag = PAP
+			NOT = { has_country_flag = is_kingdom_of_god_flag }
+		}
+		provinces_to_highlight = {
+			region = italy_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			#Ecclesiastical provinces of Northern Italy
+			owns_core_province = 101	# Genoa
+			owns_core_province = 103	# Torino
+			owns_core_province = 104	# Milano
+			owns_core_province = 105	# Parma
+			owns_core_province = 106	# Modena
+			owns_core_province = 107	# Brescia
+			owns_core_province = 108	# Verona
+			owns_core_province = 109	# Mantua
+			owns_core_province = 110	# Trento
+			owns_core_province = 111	# Udine / Aquileia
+			owns_core_province = 112	# Venice
+			owns_core_province = 113	# Ferrara
+			owns_core_province = 114	# Bologna + Ravenna
+			owns_core_province = 116	# Firenze
+			owns_core_province = 117	# Siena
+			owns_core_province = 115	# Pisa
+			owns_core_province = 119	# Ancona + Fermo
+			owns_core_province = 2976	# Perugia
+			owns_core_province = 2977	# Pesaro
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = italy_region
+				is_core = owner
+				value = 106			#At least 65 percent of N Italy's 163 provinces. Also note this is 90 percent of continental, non-Neapolitan Italy's 118 provinces. (Italy has 34 in Naples-Sicily and 11 in Sardinia-Corsica)
+			}
+			total_development = 250			#Normal requirement for rank 2 is 500 dev, so this is 50 percent discounted
+			prestige = 25			#Normal requirement for rank 2 is 50 prestige, so this is 50 percent discounted
+		}
+		effect = {
+			add_country_modifier = {
+				name = "btp_kingdom_of_god"
+				duration = -1
+			}
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			country_event  = { id = catholic_flavor.2 }
+            every_province = {
+				limit = {
+					region = italy_region
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			override_country_name = KINGDOM_OF_GOD
+			set_country_flag = is_kingdom_of_god_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
 
 ###################################################################################################
 ################################			Jerusalem			 ##############################################			#Not actually done, other than to prevent end-game tags from forming it
