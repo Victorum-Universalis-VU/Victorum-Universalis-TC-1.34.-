@@ -2452,7 +2452,7 @@
 	}
 
 	riksradet_norway_reform = {
-		icon = nobleman
+		icon = riksradet_norway_reform
 		allow_normal_conversion = yes
 		effect = {
 			change_variable = {
@@ -4551,7 +4551,7 @@
 	}
 
 	commoner_officials_reform = {
-		icon = peasants
+		icon = commoner_officials_reform
 		allow_normal_conversion = yes
 		effect = {
 			change_variable = {
@@ -6892,7 +6892,7 @@
 	}
 
 	german_aristocracy_reform = {
-		icon = szlachta
+		icon = german_aristocracy_reform
 		allow_normal_conversion = yes
 		effect = {
 			change_variable = {
@@ -7881,7 +7881,7 @@
 	}
 
 	restored_land_establishment_reform = {
-		icon = szlachta
+		icon = restored_land_establishment_reform
 		allow_normal_conversion = yes
 		effect = {
 			change_variable = {
@@ -8113,7 +8113,7 @@
 	}
 
 	abolish_the_haandfaestning_reform = {
-		icon = paper_with_seal
+		icon = abolish_the_haandfaestning_reform
 		allow_normal_conversion = yes
 		potential = {
 			OR = {

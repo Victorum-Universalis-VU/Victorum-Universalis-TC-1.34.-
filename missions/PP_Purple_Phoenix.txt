@@ -2064,13 +2064,6 @@ byz_pp_maritime = {
 				}
 				add_permanent_claim = ROOT
 			}
-			djerba_area = {
-				limit = {
-					NOT = { owned_by = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
 			kabylia_area = {
 				limit = {
 					NOT = { owned_by = ROOT	}
@@ -2103,7 +2096,6 @@ byz_pp_maritime = {
 		provinces_to_highlight = {
 			OR = {
 			    area = barbary_coast_area
-				area = djerba_area
 				area = kabylia_area
 				area = ouled_nail_area
 				area = tunisia_area
@@ -2112,10 +2104,6 @@ byz_pp_maritime = {
 		}
 		trigger = {
 		    barbary_coast_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			djerba_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -2675,6 +2663,8 @@ byz_pp_religion = {
 		provinces_to_highlight = {
 			OR = {
 				area = aleppo_area
+				area = al_jazira_area
+				area = rakka_area
 				area = syria_area
 				area = tripoli_area
 			}
@@ -2682,6 +2672,14 @@ byz_pp_religion = {
 		}
 		trigger = {
 			aleppo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			al_jazira_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			rakka_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -2811,8 +2809,8 @@ byz_pp_religion = {
 		icon = mission_recover_alexandria
 		provinces_to_highlight = {
 			OR = {
-				area = delta_area
 				area = bahari_area
+				area = delta_area
 				area = vostani_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -2821,11 +2819,11 @@ byz_pp_religion = {
 			recover_jerusalem
 		}
 		trigger = {
-			delta_area = {
+			bahari_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			bahari_area = {
+			delta_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -2970,16 +2968,11 @@ byz_pp_east = {
 			recover_the_coast_of_asia_minor
 		}
 		provinces_to_highlight = {
-			OR = {
+			OR = {				
 				area = germiyan_area
-				area = ankara_area
-				area = kastamonu_area
-				area = pamphylia_area
 				area = karaman_area
-				area = cukurova_area
-				area = dulkadir_area
 				area = lydia_area
-				area = aeolia_area
+				area = pisidia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -2988,27 +2981,7 @@ byz_pp_east = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			ankara_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			kastamonu_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			pamphylia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			karaman_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			cukurova_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			dulkadir_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -3016,20 +2989,34 @@ byz_pp_east = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			aeolia_area = {
+			pisidia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			pontus_area = {
+			ankara_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
-			rum_area = {
+			cataonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dulkadir_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			new_rum_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }
@@ -3038,36 +3025,40 @@ byz_pp_east = {
 			}
 		}
 	}
-	recover_central_anatolia = {
+	#Trebizond
+	recover_central_anatolia = { 
 		icon = mission_pf_soldier
 		required_missions = {
 			recover_west_anatolia
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = pontus_area
-				area = rum_area
+			    area = ankara_area
+				area = cataonia_area
+				area = dulkadir_area
+				area = new_rum_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			pontus_area = {
+			ankara_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			rum_area = {
+			cataonia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dulkadir_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			new_rum_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
-			dulkadir_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			erzurum_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -3100,7 +3091,6 @@ byz_pp_east = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				area = dulkadir_area
 				area = erzurum_area
 				area = mardin_area
 				area = north_kurdistan_area
@@ -3108,10 +3098,6 @@ byz_pp_east = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			dulkadir_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
 			erzurum_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT

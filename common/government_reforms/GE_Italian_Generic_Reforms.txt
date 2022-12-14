@@ -1256,7 +1256,7 @@ advanced_bookkeeping_reform = {
 
 #Tier 6
 the_consigliere_reform = {
-	icon = nobleman
+	icon = the_consigliere_reform
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = latin
@@ -1288,7 +1288,7 @@ the_consigliere_reform = {
 	}
 }
 council_of_petitions_reform = {
-	icon = man_on_podium
+	icon = council_of_petitions_reform
 	allow_normal_conversion = yes
 	potential = {
 		culture_group = latin

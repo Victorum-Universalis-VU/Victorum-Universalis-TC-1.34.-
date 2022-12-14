@@ -4527,13 +4527,21 @@ belgian_kingdom_reform = {
 	}
 }
 
+##################################################################
+# VU - San Felipe Additions - START OF UNIQUE FRENCH GOV REFORMS # 
+##################################################################
+# These steps are connected with 02_government_reforms_republic #
+#################################################################
+
 #Step 1
 french_kingdom_reform = {
 	icon = "bourbon_dynasty"
 	allow_normal_conversion = no
 	potential = {
+		culture_group = french
 		have_had_reform = french_kingdom_reform
 	}
+	
 	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 15
@@ -4568,10 +4576,17 @@ french_kingdom_reform = {
 french_consulate_reform = { #consulate_reform
 	icon = "consulate"
 	allow_normal_conversion = yes
+	
 	potential = {
-	    has_reform = directory_republic_reform
+		culture_group = french
+		is_revolutionary = no
 	}
-	revolutionary = no
+	
+	trigger = {
+		culture_group = french
+		has_reform = directory_republic_reform
+	}
+	
 	modifiers = {
 		global_autonomy = -0.05
 		governing_capacity = 300  #No change in VU
@@ -4586,13 +4601,26 @@ first_french_empire_reform = { #revolutionary_empire_reform
 	lock_level_when_selected = yes
 	icon = "napoleonic_dynasty"
 	allow_normal_conversion = no
-	potential = {
+	
+	potential = { 
+		OR = {
+		    tag = NPF
+			culture_group = french
+		}
+		is_revolutionary = no
+	}
+	
+	trigger = {
+		OR = {
+		    tag = NPF
+			culture_group = french
+		}
 		has_reform = french_consulate_reform
 	}
+	
 	legacy_equivalent = first_french_empire_legacy #revolutionary_empire
 	valid_for_new_country = no
 	uses_revolutionary_zeal = no
-	revolutionary = no
 	fixed_rank = 3
 	modifiers = {
 		global_manpower_modifier = 0.25
@@ -4611,9 +4639,23 @@ first_french_empire_reform = { #revolutionary_empire_reform
 french_monarchic_restoration_reform = { #revolutionary_empire_reform
 	icon = "bourbon_dynasty"
 	allow_normal_conversion = no
-	potential = {
+	
+	potential = { 
+		OR = {
+		    tag = BFR
+			culture_group = french
+		}
+		is_revolutionary = no
+	}
+	
+	trigger = {
+		OR = {
+		    tag = BFR
+			culture_group = french
+		}
 		has_reform = french_kingdom_reform
 	}
+	
 	maintain_dynasty = yes
 	royal_marriage = no
 	valid_for_nation_designer = no
@@ -4639,9 +4681,23 @@ french_monarchic_restoration_reform = { #revolutionary_empire_reform
 french_orleanist_restoration_reform = { #revolutionary_empire_reform
 	icon = "orleanist_dynasty"
 	allow_normal_conversion = no
-	potential = {
+	
+	potential = { 
+		OR = {
+		    tag = OFR
+			culture_group = french
+		}
+		is_revolutionary = no
+	}
+	
+	trigger = {
+		OR = {
+		    tag = OFR
+			culture_group = french
+		}
 		has_reform = french_monarchic_restoration_reform
 	}
+	
 	maintain_dynasty = yes
 	royal_marriage = no
 	valid_for_nation_designer = no
@@ -4668,9 +4724,23 @@ french_first_empire_restoration_reform = { #revolutionary_empire_reform
     # French unique gov 1814 – 1815, France is ruled by Napoleon III
 	icon = "napoleonic_dynasty"
 	allow_normal_conversion = no
-	potential = {
+	
+	potential = { 
+		OR = {
+		    tag = NPF
+			culture_group = french
+		}
+		is_revolutionary = no
+	}
+	
+	trigger = {
+		OR = {
+		    tag = NPF
+			culture_group = french
+		}
 		has_reform = french_monarchic_restoration_reform
 	}
+	
 	maintain_dynasty = yes
 	royal_marriage = no
 	valid_for_nation_designer = no
@@ -4696,9 +4766,23 @@ second_french_empire_reform = { #revolutionary_empire_reform
 	lock_level_when_selected = yes
 	icon = "napoleonic_dynasty"
 	allow_normal_conversion = no
-	potential = {
+	
+	potential = { 
+		OR = {
+		    tag = FSE
+			culture_group = french
+		}
+		is_revolutionary = no
+	}
+	
+	trigger = {
+		OR = {
+		    tag = FSE
+			culture_group = french
+		}
 		has_reform = french_second_republic_reform
 	}
+	
 	legacy_equivalent = second_french_empire_legacy #revolutionary_empire
 	valid_for_new_country = no
 	uses_revolutionary_zeal = no

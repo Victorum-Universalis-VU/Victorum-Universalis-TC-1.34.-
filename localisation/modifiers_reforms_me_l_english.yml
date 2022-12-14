@@ -7,6 +7,18 @@
  Cortes_Morale: "Hightened Spritis"
  Cortes_Discipline: "Tougher Drills"
  Cortes_Piety: "Special Ceremonies"
+ Cortes_Pope: "Holy Smokes"
+ Cortes_Gold: "Gold, beautiful GOLD!"
+ 
+ Privy_Council_Navy: "Naval Concessions"
+ Privy_Council_Trade: "Promoted Trade"
+ Privy_Council_Goods: "Streamlined Production"
+ Privy_Council_Manpower: "Extra Recruits"
+ Privy_Council_Morale: "Hightened Spritis"
+ Privy_Council_Discipline: "Tougher Drills"
+ Privy_Council_Piety: "Special Ceremonies"
+ Privy_Council_Pope: "Holy Smokes"
+ Privy_Council_Gold: "Gold, beautiful GOLD!"
  
  Adm_Stabcost: "Stable Election"
  Adm_Advisor: "Friends in high places"

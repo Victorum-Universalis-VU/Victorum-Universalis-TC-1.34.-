@@ -1072,8 +1072,68 @@ spriteTypes = {
 		texturefile = "gfx//interface//government_reform_icons//scottish_monarchy.dds"
 	}
 	spriteType = {
-		name = "government_reform_english_monarchy"
-		texturefile = "gfx//interface//government_reform_icons//english_monarchy.dds"
+		name = "government_reform_riksradet_norway_reform"
+		texturefile = "gfx//interface//government_reform_icons//riksradet_norway_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_german_aristocracy_reform"
+		texturefile = "gfx//interface//government_reform_icons//german_aristocracy_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_restored_land_establishment_reform"
+		texturefile = "gfx//interface//government_reform_icons//restored_land_establishment_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_nunziatella_reform"
+		texturefile = "gfx//interface//government_reform_icons//nunziatella_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_mercantilistic_approach_reform"
+		texturefile = "gfx//interface//government_reform_icons//mercantilistic_approach_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_noble_elite_reform"
+		texturefile = "gfx//interface//government_reform_icons//noble_elite_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_common_republic_reform"
+		texturefile = "gfx//interface//government_reform_icons//common_republic_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_mixed_republic_reform"
+		texturefile = "gfx//interface//government_reform_icons//mixed_republic_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_lottery_reform"
+		texturefile = "gfx//interface//government_reform_icons//lottery_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_the_consigliere_reform"
+		texturefile = "gfx//interface//government_reform_icons//the_consigliere_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_council_of_petitions_reform"
+		texturefile = "gfx//interface//government_reform_icons//council_of_petitions_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_citizenry_reform"
+		texturefile = "gfx//interface//government_reform_icons//citizenry_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_dynastic_rulership_reform"
+		texturefile = "gfx//interface//government_reform_icons//dynastic_rulership_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_supreme_court_reform"
+		texturefile = "gfx//interface//government_reform_icons//supreme_court_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_federal_senate_reform"
+		texturefile = "gfx//interface//government_reform_icons//federal_senate_reform.dds"
+	}
+	spriteType = {
+		name = "government_reform_abolish_the_haandfaestning_reform"
+		texturefile = "gfx//interface//government_reform_icons//abolish_the_haandfaestning_reform.dds"
 	}
 	spriteType = {
 		name = "government_reform_self_governing_dominion_vu_government"

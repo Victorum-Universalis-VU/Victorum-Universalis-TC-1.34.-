@@ -9,4 +9,4 @@ sail_speed = 9
 
 sailors = 900
 
-sprite_level = 6
+sprite_level = 5

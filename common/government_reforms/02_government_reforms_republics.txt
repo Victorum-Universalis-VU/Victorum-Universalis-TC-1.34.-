@@ -456,7 +456,7 @@ pirate_republic_reform = {
 }
 
 noble_elite_reform = {
-	icon = "nobleman"
+	icon = "noble_elite_reform"
 	allow_normal_conversion = yes
 	legacy_equivalent = noble_republic
 	valid_for_nation_designer = yes
@@ -2123,7 +2123,7 @@ consolidation_of_power_reform = {
 }
 
 lottery_reform = {
-	icon = "paper_with_seal_3"
+	icon = "lottery_reform"
 	allow_normal_conversion = yes
 	potential = {
 		is_colonial_nation = no
@@ -3264,7 +3264,7 @@ landholders_reform = {
 }
 
 citizenry_reform = {
-	icon = "people_walking"
+	icon = "citizenry_reform"
 	allow_normal_conversion = yes
 	potential = {
 		OR = {
@@ -3332,7 +3332,7 @@ military_rulership_reform = {
 }
 
 dynastic_rulership_reform = {
-	icon = "king"
+	icon = "dynastic_rulership_reform"
 	allow_normal_conversion = yes
 	potential = {
 		is_revolutionary = no
@@ -3590,7 +3590,7 @@ reinforce_republican_values_reform = {
 }
 
 federal_senate_reform = {
-	icon = "judge"
+	icon = "federal_senate_reform"
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }
@@ -3820,11 +3820,14 @@ transitional_government_reform = {
 	}
 }
 
-#############################
-# VU - San Felipe Additions #
-#############################
+##################################################################
+# VU - San Felipe Additions - START OF UNIQUE FRENCH GOV REFORMS # 
+###################################################################
+# These steps are connected with 01_government_reforms_monarchies #
+###################################################################
+
 #############
-# REPUBLICS # Putin 02_government_reforms_republics
+# REPUBLICS # Put in 02_government_reforms_republics
 #############
 
 #Step 2 - 02_government_reforms_republics
@@ -3832,9 +3835,17 @@ national_assembly_republic_reform = { #revolutionary_republic_reform/french_firs
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	icon = "national_assembly"
+	
 	potential = {
+		culture_group = french
+		is_revolutionary = yes
+	}
+	
+	trigger = {
+		culture_group = french
 		has_reform = national_assembly_republic_reform
 	}
+	
 	legacy_equivalent = national_assembly_republic_legacy #revolutionary_republic
 	valid_for_new_country = no
 	duration = 4
@@ -3842,7 +3853,6 @@ national_assembly_republic_reform = { #revolutionary_republic_reform/french_firs
 	republican_name = yes
 	royal_marriage = no
 	uses_revolutionary_zeal = yes
-	revolutionary = yes
 
 	modifiers = {
 		tolerance_heretic = 2
@@ -3875,9 +3885,17 @@ french_second_republic_reform = { #revolutionary_republic_reform/french_second_r
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	icon = "second_republic"
+	
 	potential = {
+		culture_group = french
+		is_revolutionary = no
+	}
+	
+	trigger = {
+		culture_group = french
 		has_reform = french_second_republic_reform
 	}
+	
 	legacy_equivalent = french_second_republic_legacy #revolutionary_republic
 	valid_for_new_country = no
 	duration = 4
@@ -3885,7 +3903,6 @@ french_second_republic_reform = { #revolutionary_republic_reform/french_second_r
 	republican_name = yes
 	royal_marriage = no
 	uses_revolutionary_zeal = no
-	revolutionary = no
 
 	modifiers = {
 		tolerance_heretic = 2
@@ -3917,9 +3934,17 @@ french_third_republic_reform = { #revolutionary_republic_reform/french_third_rep
 	allow_normal_conversion = no
 	lock_level_when_selected = yes
 	icon = "third_republic"
+	
 	potential = {
+		culture_group = french
+		is_revolutionary = no
+	}
+	
+	trigger = {
+		culture_group = french
 		has_reform = french_third_republic_reform
 	}
+	
 	legacy_equivalent = french_third_republic_legacy #revolutionary_republic
 	valid_for_new_country = no
 	duration = 4
@@ -3927,7 +3952,6 @@ french_third_republic_reform = { #revolutionary_republic_reform/french_third_rep
 	republican_name = yes
 	royal_marriage = no
 	uses_revolutionary_zeal = no
-	revolutionary = no
 
 	modifiers = {
 		tolerance_heretic = 2
@@ -3966,18 +3990,18 @@ directory_republic_reform = { #oligarchic_republic
 	legacy_equivalent = directory_republic_legacy #oligarchic_republic
 	valid_for_nation_designer = no
 	potential = {
+		culture_group = french
 		is_revolutionary = yes
 	}
 	trigger = {
 		has_reform = national_assembly_republic_reform
-		if = {
-			limit = {
-				has_dlc = "Rights of Man"
-			}
-		}
-		else = {
-			NOT = { republican_tradition = 40 }
-		}
+		OR = {
+            has_dlc = "Rights of Man"
+            AND = {
+                NOT = { has_dlc = "Rights of Man" }
+                NOT = { republican_tradition = 40 }
+            }
+        }
 	}
 	modifiers = {
 		global_tax_modifier = 0.05
@@ -4003,19 +4027,19 @@ become_first_french_empire_reform = { #become_rev_empire_reform
 	allow_normal_conversion = yes
 
 	potential = { 
+		culture_group = french
 		is_revolutionary = no
 	}
 	
 	trigger = {
 		has_reform = french_consulate_reform
-		if = {
-			limit = {
-				has_dlc = "Rights of Man"
-			}
-		}
-		else = {
-			NOT = { republican_tradition = 40 }
-		}
+		OR = {
+            has_dlc = "Rights of Man"
+            AND = {
+                NOT = { has_dlc = "Rights of Man" }
+                NOT = { republican_tradition = 40 }
+            }
+        }
 	}
 
 	modifiers = {
@@ -4047,19 +4071,19 @@ become_second_french_empire_reform = { #become_rev_empire_reform
 	allow_normal_conversion = yes
 
 	potential = { 
+	    culture_group = french
 		is_revolutionary = no
 	}
 	
 	trigger = {
 		has_reform = french_second_republic_reform
-		if = {
-			limit = {
-				has_dlc = "Rights of Man"
-			}
-		}
-		else = {
-			NOT = { republican_tradition = 40 }
-		}
+		OR = {
+            has_dlc = "Rights of Man"
+            AND = {
+                NOT = { has_dlc = "Rights of Man" }
+                NOT = { republican_tradition = 40 }
+            }
+        }
 	}
 
 	modifiers = {

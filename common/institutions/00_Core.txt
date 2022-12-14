@@ -7390,7 +7390,7 @@ imperialism = {
 	start_chance = 100		#in 100 for when a province can_start
 	
 	
-	on_start = tcpa_institutions.1
+	on_start = institution_events.90
 	
 	
 	can_embrace = {
@@ -7753,7 +7753,7 @@ nationalism_institution = {
 	start_chance = 100		#in 100 for when a province can_start
 	
 	
-	on_start = tcpa_institutions.3
+	on_start = institution_events.99
 	
 	
 	can_embrace = {

@@ -462,11 +462,13 @@ byz_east = {
 		required_missions = {  }
 		provinces_to_highlight = {
 			OR = {
+				area = aeolia_area
 				area = aydin_area
 				area = cukurova_area
 				area = hudavendigar_area
 				area = karasi_area
 				area = kastamonu_area
+				area = lycia_area
 				area = pamphylia_area
 				area = pontus_area
 				area = rum_area
@@ -474,6 +476,10 @@ byz_east = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
+			aeolia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
 			aydin_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
@@ -491,6 +497,10 @@ byz_east = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			kastamonu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lycia_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
