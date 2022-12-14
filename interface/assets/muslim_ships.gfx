@@ -1,103 +1,19 @@
 objectTypes = {
 
-	###########################################################################
-	############							  					###############
-	############                    MUSLIM SHIPS                ###############
-	############											    ###############
-	###########################################################################
-	
-	
-			
-	###########################################################################
-	############												###############
-	############                    Light ships                 ###############
-	############												###############
-	###########################################################################
-	
-		
-	pdxmesh = {
-		name = "muslim_barque"
-		file = "gfx\models\ships\muslim_barque.mesh"
-
-		animation = { id = "idle"	type = "muslim_barque_idle" }
-		animation = { id = "walk"	type = "muslim_barque_walk" }
-		animation = { id = "attack"	type = "muslim_barque_attack"}
-		scale = 0.6			#BTAddOn changed from 1.5
-	}
-
-	pdxmesh = {
-		name = "muslim_caravel"
-		file = "gfx\models\ships\muslim_caravel.mesh"
-
-		animation = { id = "idle"	type = "muslim_caravel_idle" }
-		animation = { id = "walk"	type = "muslim_caravel_walk" }
-		animation = { id = "attack"	type = "muslim_caravel_attack"}
-		scale = 0.68			#BTAddOn changed from 1.5
-	}
-	
-	pdxmesh = {
-		name = "muslim_early_frigate"
-		file = "gfx\models\ships\muslim_early_frigate.mesh"
-
-		animation = { id = "idle"	type = "muslim_early_frigate_idle" }
-		animation = { id = "walk"	type = "muslim_early_frigate_walk" }
-		animation = { id = "attack" type = "muslim_early_frigate_attack"}
-		scale = 0.70			#BTAddOn changed from 1.4
-	}
-	
-
-	###########################################################################
-	############												###############
-	############                     Galleys                    ###############
-	############												###############
-	###########################################################################
-
-
-	
-	pdxmesh = {
-		name = "muslim_galley"
-		file = "gfx\models\ships\muslim_galley.mesh"
-
-		animation = { id = "idle"	type = "muslim_galley_idle" }
-		animation = { id = "walk"	type = "muslim_galley_walk" }
-		animation = { id = "attack"	type = "muslim_galley_attack"}
-		scale = 0.68			#BTAddOn changed from 1.5
-	}
-	
-	pdxmesh = {
-		name = "muslim_war_galley"
-		file = "gfx\models\ships\muslim_war_galley.mesh"
-
-		animation = { id = "idle"	type = "muslim_war_galley_idle" }
-		animation = { id = "walk"	type = "muslim_war_galley_walk" }
-		animation = { id = "attack"	type = "muslim_war_galley_attack"}
-		scale = 0.80			#BTAddOn changed from 1.6
-	}
-	
-	pdxmesh = {
-		name = "muslim_galleass"
-		file = "gfx\models\ships\muslim_galleass.mesh"
-
-		animation = { id = "idle"	type = "muslim_galleass_idle" }
-		animation = { id = "walk"	type = "muslim_galleass_walk" }
-		animation = { id = "attack"	type = "muslim_galleass_attack"}
-		scale = 0.83			#BTAddOn changed from 1.5
-	}
-
-	###########################################################################
-	############												###############
-	############                     Big Ships                  ###############
-	############												###############
-	###########################################################################
+	#VU amendments by San Felipe
+	###################
+	###    Heavy    ###
+	###################
 
 	pdxmesh = {
 		name = "muslim_early_carrack"
-		file = "gfx\models\ships\muslim_early_carrack.mesh"
+		file = "gfx\models\ships\muslim_carrack.mesh"
 
-		animation = { id = "idle"	type = "muslim_early_carrack_idle" }
-		animation = { id = "walk"	type = "muslim_early_carrack_walk" }
-		animation = { id = "attack"	type = "muslim_early_carrack_attack"}
-		scale = 0.83			#BTAddOn changed from 1.5
+		animation = { id = "idle"	type = "muslim_carrack_idle" }
+		animation = { id = "walk"	type = "muslim_carrack_walk" }
+		animation = { id = "attack"	type = "muslim_carrack_attack"}
+		
+		scale = 0.55			#VUAddOn changed from 1.5
 	}	
 	
 	pdxmesh = {
@@ -108,7 +24,7 @@ objectTypes = {
 		animation = { id = "walk"	type = "muslim_carrack_walk" }
 		animation = { id = "attack"	type = "muslim_carrack_attack"}
 
-		scale = 0.90			#BTAddOn changed from 1.5
+		scale = 0.6			#VUAddOn changed from 1.5
 	}		
 	pdxmesh = {
 		name = "muslim_galleon"
@@ -117,15 +33,98 @@ objectTypes = {
 		animation = { id = "idle"	type = "muslim_galleon_idle" }
 		animation = { id = "walk"	type = "muslim_galleon_walk" }
 		animation = { id = "attack"	type = "muslim_galleon_attack"}
-		scale = 1.04			#BTAddOn changed from 1.6
+		
+		scale = 0.625			#VUAddOn changed from 1.6
 	}
 	
+	pdxmesh = {
+		name = "muslim_ironclad"
+		file = "gfx\models\ships\ironclad.mesh"
+		
+		animation = { id = "idle"	type = "war_galleon_idle" }
+		animation = { id = "walk"	type = "war_galleon_walk" }
+		animation = { id = "attack"	type = "war_galleon_attack" }
+		
+		scale = 0.725
+	}
+			
+	###################
+	###    Light    ###
+	###################
 	
-	###########################################################################
-	############												###############
-	############                     Transports                 ###############
-	############												###############
-	###########################################################################
+	pdxmesh = {
+		name = "muslim_barque"
+		file = "gfx\models\ships\muslim_barque.mesh"
+
+		animation = { id = "idle"	type = "muslim_barque_idle" }
+		animation = { id = "walk"	type = "muslim_barque_walk" }
+		animation = { id = "attack"	type = "muslim_barque_attack"}
+		
+		scale = 0.455			#VUAddOn changed from 1.5
+	}
+
+	pdxmesh = {
+		name = "muslim_caravel"
+		file = "gfx\models\ships\muslim_caravel.mesh"
+
+		animation = { id = "idle"	type = "muslim_caravel_idle" }
+		animation = { id = "walk"	type = "muslim_caravel_walk" }
+		animation = { id = "attack"	type = "muslim_caravel_attack"}
+		
+		scale = 0.505			#VUAddOn changed from 1.5
+	}
+	
+	pdxmesh = {
+		name = "muslim_early_frigate"
+		file = "gfx\models\ships\muslim_early_frigate.mesh"
+
+		animation = { id = "idle"	type = "muslim_early_frigate_idle" }
+		animation = { id = "walk"	type = "muslim_early_frigate_walk" }
+		animation = { id = "attack" type = "muslim_early_frigate_attack"}
+		
+		scale = 0.515			#VUAddOn changed from 1.4
+	}
+
+	####################
+	###    Galley    ###
+	####################
+
+	pdxmesh = {
+		name = "muslim_galley"
+		file = "gfx\models\ships\muslim_galley.mesh"
+
+		animation = { id = "idle"	type = "muslim_galley_idle" }
+		animation = { id = "walk"	type = "muslim_galley_walk" }
+		animation = { id = "attack"	type = "muslim_galley_attack"}
+		
+		scale = 0.445			#VUAddOn changed from 1.5
+	}
+	
+	pdxmesh = {
+		name = "muslim_war_galley"
+		file = "gfx\models\ships\muslim_war_galley.mesh"
+
+		animation = { id = "idle"	type = "muslim_war_galley_idle" }
+		animation = { id = "walk"	type = "muslim_war_galley_walk" }
+		animation = { id = "attack"	type = "muslim_war_galley_attack"}
+		
+		scale = 0.455			#VUAddOn changed from 1.6
+	}
+	
+	pdxmesh = {
+		name = "muslim_galleass"
+		file = "gfx\models\ships\muslim_galleass.mesh"
+
+		animation = { id = "idle"	type = "muslim_galleass_idle" }
+		animation = { id = "walk"	type = "muslim_galleass_walk" }
+		animation = { id = "attack"	type = "muslim_galleass_attack"}
+		
+		scale = 0.465			#VUAddOn changed from 1.5
+	}
+	
+	#######################
+	###    Transport    ###
+	#######################
 	
 	pdxmesh = {
 		name = "muslim_cog"
@@ -134,7 +133,8 @@ objectTypes = {
 		animation = { id = "idle"	type = "muslim_cog_idle" }
 		animation = { id = "walk"	type = "muslim_cog_walk" }
 		animation = { id = "attack"	type = "muslim_cog_attack" }
-		scale = 0.75			#BTAddOn changed from 1.5
+		
+		scale = 0.425			#VUAddOn changed from 1.5
 	}		
 
 	pdxmesh = {
@@ -144,8 +144,8 @@ objectTypes = {
 		animation = { id = "attack"	type = "muslim_flute_attack" }
 		animation = { id = "idle"	type = "muslim_flute_idle" }
 		animation = { id = "walk"	type = "muslim_flute_walk" }
-		scale = 0.83			#BTAddOn changed from 1.5
 		
+		scale = 0.435		    #VUAddOn changed from 1.5
 	}
 	
 	pdxmesh = {
@@ -155,7 +155,7 @@ objectTypes = {
 		animation = { id = "attack"	type = "muslim_brig_attack" }
 		animation = { id = "idle"	type = "muslim_brig_idle" }
 		animation = { id = "walk"	type = "muslim_brig_walk" }
-		scale = 0.90			#BTAddOn changed from 1.5
+		
+		scale = 0.445			#VUAddOn changed from 1.5
 	}
-	
 }

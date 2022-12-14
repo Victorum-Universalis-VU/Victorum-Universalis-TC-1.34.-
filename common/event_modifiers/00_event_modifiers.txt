@@ -4,6 +4,14 @@
 #######################################
 # Country Modifiers #
 #####################
+birthplace_of_imperialism_modifier = {
+	ae_impact = -0.3
+}
+
+birthplace_of_nationalism_modifier = {
+	global_unrest = -2
+}
+
 anarchic_riever_modifier = {
 	may_perform_slave_raid = yes
 	may_perform_slave_raid_on_same_religion = yes

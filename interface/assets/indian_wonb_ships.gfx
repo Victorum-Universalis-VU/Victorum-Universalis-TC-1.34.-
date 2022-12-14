@@ -1,31 +1,31 @@
 objectTypes = {
 
-	###########################################################################
-	############												###############
-	############                    Heavy ships                 ###############
-	############												###############
-	###########################################################################
+	#VU amendments by San Felipe
+	###################
+	###    Heavy    ###
+	###################
 	
-		pdxmesh = {
+	pdxmesh = {
 		name = "indian_heavy_1_mesh"
 		file = "gfx\models\ships\indian_heavy_1.mesh"
 
 		animation = { id = "idle"	type = "indian_heavy_1_idle_animation" }
 		animation = { id = "walk"	type = "indian_heavy_1_walk_animation" }
 		animation = { id = "attack"	type = "indian_heavy_1_attack_animation"}
-		scale = 0.82			#BTAddOn changed from 1.5
+		
+		scale = 0.55
 	}
 	
-		pdxmesh = {
+	pdxmesh = {
 		name = "indian_heavy_2_mesh"
 		file = "gfx\models\ships\indian_heavy_2.mesh"
 
 		animation = { id = "idle"	type = "indian_heavy_2_idle_animation" }
 		animation = { id = "walk"	type = "indian_heavy_2_walk_animation" }
 		animation = { id = "attack"	type = "indian_heavy_2_attack_animation"}
-		scale = 0.90			#BTAddOn changed from 1.5
+		
+		scale = 0.6
 	}
-	
 	
 	pdxmesh = {
 		name = "indian_heavy_3_mesh"
@@ -34,36 +34,46 @@ objectTypes = {
 		animation = { id = "idle"	type = "indian_heavy_3_idle_animation" }
 		animation = { id = "walk"	type = "indian_heavy_3_walk_animation" }
 		animation = { id = "attack"	type = "indian_heavy_3_attack_animation"}
-		scale = 1.0			#BTAddOn changed from 1.5
+		
+		scale = 0.625
 	}
 	
+	pdxmesh = {
+		name = "indian_heavy_6_mesh"
+		file = "gfx\models\ships\ironclad.mesh"
+		
+		animation = { id = "idle"	type = "war_galleon_idle" }
+		animation = { id = "walk"	type = "war_galleon_walk" }
+		animation = { id = "attack"	type = "war_galleon_attack" }
+		
+		scale = 0.725
+	}
 
-	###########################################################################
-	############												###############
-	############                    light ships                 ###############
-	############												###############
-	###########################################################################
+	###################
+	###    Light    ###
+	###################
 	
-		pdxmesh = {
+	pdxmesh = {
 		name = "indian_light_1_mesh"
 		file = "gfx\models\ships\indian_light_1.mesh"
 
 		animation = { id = "idle"	type = "indian_light_1_idle_animation" }
 		animation = { id = "walk"	type = "indian_light_1_walk_animation" }
 		animation = { id = "attack"	type = "indian_light_1_attack_animation"}
-		scale = 0.60			#BTAddOn changed from 1.5
+		
+		scale = 0.455
 	}
 	
-		pdxmesh = {
+	pdxmesh = {
 		name = "indian_light_2_mesh"
 		file = "gfx\models\ships\indian_light_2.mesh"
 
 		animation = { id = "idle"	type = "indian_light_2_idle_animation" }
 		animation = { id = "walk"	type = "indian_light_2_walk_animation" }
 		animation = { id = "attack"	type = "indian_light_2_attack_animation"}
-		scale = 0.68			#BTAddOn changed from 1.5
+		
+		scale = 0.505
 	}
-	
 	
 	pdxmesh = {
 		name = "indian_light_3_mesh"
@@ -72,57 +82,13 @@ objectTypes = {
 		animation = { id = "idle"	type = "indian_light_3_idle_animation" }
 		animation = { id = "walk"	type = "indian_light_3_walk_animation" }
 		animation = { id = "attack"	type = "indian_light_3_attack_animation"}
-		scale = 0.75			#BTAddOn changed from 1.5
+		
+		scale = 0.515
 	}	
-	
-	
-	
-	
-	
-	
-	###########################################################################
-	############												###############
-	############                    Transports                  ###############
-	############												###############
-	###########################################################################
-	
 
-	
-		pdxmesh = {
-		name = "indian_transport_1_mesh"
-		file = "gfx\models\ships\indian_transport_1.mesh"
-
-		animation = { id = "idle"	type = "indian_transport_1_idle_animation" }
-		animation = { id = "walk"	type = "indian_transport_1_walk_animation" }
-		animation = { id = "attack"	type = "indian_transport_1_attack_animation"}
-		scale = 0.95			#BTAddOn changed from 1.5
-	}
-	
-	pdxmesh = {
-		name = "indian_transport_2_mesh"
-		file = "gfx\models\ships\indian_transport_2.mesh"
-
-		animation = { id = "idle"	type = "indian_transport_2_idle_animation" }
-		animation = { id = "walk"	type = "indian_transport_2_walk_animation" }
-		animation = { id = "attack"	type = "indian_transport_2_attack_animation"}
-		scale = 1.05			#BTAddOn changed from 1.5
-	}
-
-		pdxmesh = {
-		name = "indian_transport_3_mesh"
-		file = "gfx\models\ships\indian_transport_3.mesh"
-
-		animation = { id = "idle"	type = "indian_transport_3_idle_animation" }
-		animation = { id = "walk"	type = "indian_transport_3_walk_animation" }
-		animation = { id = "attack"	type = "indian_transport_3_attack_animation"}
-		scale = 1.15			#BTAddOn changed from 1.5
-	}
-
-	###########################################################################
-	############												###############
-	############                    Galleys                     ###############
-	############												###############
-	###########################################################################
+	####################
+	###    Galley    ###
+	####################
 
 	pdxmesh = {
 		name = "indian_galley_1_mesh"
@@ -131,7 +97,8 @@ objectTypes = {
 		animation = { id = "idle"	type = "indian_galley_1_idle_animation" }
 		animation = { id = "walk"	type = "indian_galley_1_walk_animation" }
 		animation = { id = "attack"	type = "indian_galley_1_attack_animation"}
-		scale = 0.67			#BTAddOn changed from 1.5
+		
+		scale = 0.445
 	}
 
 	pdxmesh = {
@@ -141,11 +108,10 @@ objectTypes = {
 		animation = { id = "idle"	type = "indian_galley_2_idle_animation" }
 		animation = { id = "walk"	type = "indian_galley_2_walk_animation" }
 		animation = { id = "attack"	type = "indian_galley_2_attack_animation"}
-		scale = 0.75			#BTAddOn changed from 1.5
+		
+		scale = 0.455
 	}
 
-
-	
 	pdxmesh = {
 		name = "indian_galley_3_mesh"
 		file = "gfx\models\ships\indian_galley_3.mesh"
@@ -153,9 +119,44 @@ objectTypes = {
 		animation = { id = "idle"	type = "indian_galley_3_idle_animation" }
 		animation = { id = "walk"	type = "indian_galley_3_walk_animation" }
 		animation = { id = "attack"	type = "indian_galley_3_attack_animation"}
-		scale = 0.83			#BTAddOn changed from 1.5
+		
+		scale = 0.465
+	}
+	
+	#######################
+	###    Transport    ###
+	#######################
+	
+	pdxmesh = {
+		name = "indian_transport_1_mesh"
+		file = "gfx\models\ships\indian_transport_1.mesh"
+
+		animation = { id = "idle"	type = "indian_transport_1_idle_animation" }
+		animation = { id = "walk"	type = "indian_transport_1_walk_animation" }
+		animation = { id = "attack"	type = "indian_transport_1_attack_animation"}
+		
+		scale = 0.425
+	}
+	
+	pdxmesh = {
+		name = "indian_transport_2_mesh"
+		file = "gfx\models\ships\indian_transport_2.mesh"
+
+		animation = { id = "idle"	type = "indian_transport_2_idle_animation" }
+		animation = { id = "walk"	type = "indian_transport_2_walk_animation" }
+		animation = { id = "attack"	type = "indian_transport_2_attack_animation"}
+		
+		scale = 0.435
 	}
 
+	pdxmesh = {
+		name = "indian_transport_3_mesh"
+		file = "gfx\models\ships\indian_transport_3.mesh"
 
-
+		animation = { id = "idle"	type = "indian_transport_3_idle_animation" }
+		animation = { id = "walk"	type = "indian_transport_3_walk_animation" }
+		animation = { id = "attack"	type = "indian_transport_3_attack_animation"}
+		
+		scale = 0.445
+	}
 }

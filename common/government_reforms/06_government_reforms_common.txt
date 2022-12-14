@@ -1190,7 +1190,7 @@ new_world_exploitation_reform = {
 }
 
 mercantilistic_approach_reform = {
-	icon = "paper_with_seal"
+	icon = "mercantilistic_approach_reform"
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_government_attribute = is_pirate_republic_reform }

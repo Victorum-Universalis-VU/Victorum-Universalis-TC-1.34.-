@@ -188,7 +188,7 @@ caucasian_republic = {
 }
 
 common_republic_reform = {
-	icon = peasants
+	icon = common_republic_reform
 	allow_normal_conversion = yes
 	potential = {
 	}
@@ -306,7 +306,7 @@ hanseatic_ties_reform = {
 }
 
 mixed_republic_reform = {
-	icon = peasants
+	icon = mixed_republic_reform
 	allow_normal_conversion = yes
 	potential = {
 		NOT = { has_reform = pirate_republic_reform }
@@ -1294,7 +1294,7 @@ confederate_nations_reform = {
 #T6
 
 supreme_court_reform = {
-	icon = judge
+	icon = supreme_court_reform
 	allow_normal_conversion = yes
 	potential = {
 		always = yes

@@ -247,43 +247,63 @@
  desc_industrialization:0 "The Industrial Revolution was the transition to new manufacturing processes in the period from about 1750 to sometime between 1820 and 1840. This transition included going from hand production methods to machines, new chemical manufacturing and iron production processes, improved efficiency of water power, the increasing use of steam power, the development of machine tools and the rise of the factory system. Textiles were the dominant industry of the Industrial Revolution in terms of employment, value of output and capital invested; the textile industry was also the first to use modern production methods. The Industrial Revolution began in Great Britain and most of the important technological innovations were British."
  desc_nationalism_institution:0 "Nationalism is a shared group feeling in the significance of a geographical and sometimes demographic region seeking independence for its culture or ethnicity that holds that group together. This can be expressed as a belief or political ideology that involves an individual identifying with or becoming attached to one's nation. The early emergence of a popular patriotic nationalism took place in the first half of the 19th century, and was actively promoted by the European governments and by the writers and intellectuals of the time. National symbols, anthems, myths, flags and narratives were assiduously constructed and adopted. The political development of nationalism and the push for popular sovereignty culminated with the national revolutions of Europe, such as the Greek War of Independence of 1821–1829. Since that time, nationalism has become one of the most significant political and social forces in history."
  
-
- tcpa_institutions.1.t:0 "Birth of Imperialism"
- vic_institutions.1.d:0 "With several countries competing over world dominance the posession of overseas territories has become a defining feature of a great empire. The competition over the control of distant lands is being called imperialism after the ancient Roman Empire and the Latin word imperium, which means to rule over large territories."
- vic_institutions.1.a:0 "This changes everything..."
- vic_institutions.1.a.tt:0 "Countries that have not yet fully §YEmbraced§! the §YImperialism§! Institution will recieve an increasing technology cost penalty of §R1%§! per year up to at most §R50%§!."
- vic_institutions.100.d:0 "With several countries competing over world dominance the posession of overseas territories has become a defining feature of a great empire. The competition over the control of distant lands is being called imperialism after the ancient Roman Empire and the Latin word imperium, which means to rule over large territories."
- vic_institutions.101.d:0 "Travellers speak of the great powers of the world competing over control of overseas territories and are calling this the age of Imperialism."
-
- birthplace_of_imperialism:0 "Capital of Imperialism"
- desc_birthplace_of_imperialism:0 "This province is the capital of an empire that spans several continents. It's one of the first places where the idea of imperialism developed."
-
- vic_institutions.2.t:0 "The Industrial Revolution"
- vic_institutions.2.d:0 "A number of technical innovations during the late 18th century such as steam power has greatly increased the output of production for some products such as iron or cloth. By building large factories the capitalists can concentrate the large machinery as well as the specialized of labour in one place. This is a huge change over the old system where all work had to be done manually by people or animals and together other recent technical advances this new mode of production will definitely revolutionize society."
- vic_institutions.2.a:0 "This changes everything..."
- vic_institutions.2.a.tt:0 "Countries that have not yet fully §YEmbraced§! the §YIndustrialisation§! Institution will recieve an increasing technology cost penalty of §R1%§! per year up to at most §R50%§!."
- vic_institutions.200.d:0 "A number of technical innovations during the late 18th century such as steam power has greatly increased the output of production for some products such as iron or cloth. By building large factories the capitalists can concentrate the large machinery as well as the specialized of labour in one place. This is a huge change over the old system where all work had to be done manually by people or animals and together other recent technical advances this new mode of production will definitely revolutionize society."
- vic_institutions.201.d:0 "Merchants are reporting an influx of greater and greater numbers of foreign goods into our markets. Their point of origin is unclear but it is clear that somewhere production of refined goods has greatly increased."
+ #VU - Institutions by San Felipe
+ institution_events.90.t:0 "Imperialism!"
+ institution_events.90.d:0 "Since the age of discovery, our monarchs have dreamt to spread further our people, culture, influence and power to every corner of the earth whether it be through diplomacy or conquest. Finally, our scientific and technological prowess at the turn of $YEAR$ will allow us to pursue this imperialistic goal as we send forth our people to conquer what was once unconquerable."
+ institution_events.90.a:0 "This changes everything..."
+ institution_events.90.a.tt:1 "§YEmbracing§! the §Imperialism§! Institution will be vital for future advancements in §YTechnology§!."
+ institution_events.900.d:0 "We must strive to fulfill our aims and goals by the turn of $YEAR$ so that our imperialistic aims and ambitions can fully take shape and form if we are to benefit from it."
+ institution_events.901.d:0 "Travelers from far away lands speak of a great storm coming our way. A storm that will come in many shapes and forms, disguised as flattery, bribary and in the worse case scenario blatant and obvious. It is hard to treat such rumors seriously since we have lived in peace for many decades, without a care in the world to meddle in affairs that are no concern of to our people. However, we must not take these rumours forgranted, nor should we ignore them incase they turn out to be true. In that instance, then may the Gods help us and grant us strength, fortitude and courage to bear against this so-called 'Imperialism' once it arrives on our shores."
+ #
+ birthplace_of_imperialism:0 "Imperialism"
+ desc_birthplace_of_imperialism:0 "This province is the birthplace of Imperialism."
+ #
+ institution_events.99.t:0 "Nationalism!"
+ institution_events.99.d:0 "The long and historic thoughts concerning unification of our lands and people has long been in the minds of our monarchs since time immemorial, despite our ethnically diverse and multi-cultural society. Finally, at the turn of $YEAR$ our nation will be one step closer to that allowing us to pursue a homogeneous society of one flag, one people and one national government."
+ institution_events.99.a:0 "This changes everything..."
+ institution_events.99.a.tt:1 "§YEmbracing§! the §Nationalism§! Institution will be vital for future advancements in §YTechnology§!."
+ institution_events.902.d:0 "We must strive to fulfill our aims and goals by the turn of $YEAR$ so that our nationalistic aims and ambitions can fully take shape and form if we are to benefit from it."
+ institution_events.903.d:0 "Travelers speak of a great sense of national identity, unification and of one national government in faraway lands. It is hard to treat such rumors seriously, though according to the reporters strides have been taken by these people through protests, revolution, diplomacy and conquest in order for them to bring about a more homogeneous society through this so-called 'Nationalism'. Let us hope that the positives and not the negatives of this ideal spread to our lands."
+ #
+ birthplace_of_nationalism:0 "Nationalism"
+ desc_birthplace_of_nationalism:0 "This province is the birthplace of Nationalism."
  
- birthplace_of_industrialization:0 "Industrial Center"
- desc_birthplace_of_industrialization:0 "This province was one of the early industrial centers during the industrial revolution."
-
- tcpa_institutions.3.t:0 "Rise of Nationalism"
- vic_institutions.3.d:0 "In old times people used to swear loyalty to their king or emperor, but now they are starting to identify themselves with their country or culture and are developing a national identity. This trend is further encouraged by artists who are constructing national symbols, anthems, myths, flags and narratives. These new personal behaviours that support a state's decisions and actions could be very beneficial, but on the other hand this could lead to increased separatism among those who do not identify with our culture."
- vic_institutions.3.a:0 "This changes everything..."
- vic_institutions.3.a.tt:0 "Countries that have not yet fully §YEmbraced§! the §YNationalism§! Institution will recieve an increasing technology cost penalty of §R1%§! per year up to at most §R50%§!."
- vic_institutions.300.d:0 "In old times people used to swear loyalty to their king or emperor, but now they are starting to identify themselves with their country or culture and are developing a national identity. This trend is further encouraged by artists who are constructing national symbols, anthems, myths, flags and narratives. These new personal behaviours that support a state's decisions and actions could be very beneficial, but on the other hand this could lead to increased separatism among those who do not identify with our culture."
- vic_institutions.301.d:0 "In old times people used to swear loyalty to their king or emperor, but now they are starting to identify themselves with their country or culture and are developing a national identity. This trend is further encouraged by artists who are constructing national symbols, anthems, myths, flags and narratives. These new personal behaviours that support a state's decisions and actions could be very beneficial, but on the other hand this could lead to increased separatism among those who do not identify with our culture."
-
- birthplace_of_nationalism:0 "Birthplace of Nationalism"
- desc_birthplace_of_nationalism:0 "This province is home to the very first centers of the Nationalist movement."
-
- tcpa_institutions.4.t:0 "Early Globalism"
- tcpa_institutions.4.d:0 "With the world's foremost empires now firmly in-place, newly founded corporations harvest resources and exploit local inhabitants of subjugated countries for profit and greed. Liberalism has also spread and morphed into several other new ideologies, socialism and marxism. These new global corporations and socialist organisations may have their differences but are in bo doubt controlled and influenced by very powerful inidividuals, most of whom are rooted in the governance and day to day operations of our nation, some even subverting our military industrial complex and threatening the established status quo."
- tcpa_institutions.4.a:0 "This changes everything..."
- tcpa_institutions.4.a.tt:0 "Countries that have not yet fully §YEmbraced§! the §YGlobalism§! Institution will recieve an increasing technology cost penalty of §R1%§! per year up to at most §R50%§!."
- tcpa_institutions.400.d:0 "With the world's foremost empires now firmly in-place, newly founded corporations harvest resources and exploit local inhabitants of subjugated countries for profit and greed. Liberalism has also spread and morphed into several other new ideologies, socialism and marxism. These new global corporations and socialist organisations may have their differences but are in bo doubt controlled and influenced by very powerful inidividuals, most of whom are rooted in the governance and day to day operations of our nation, some even subverting our military industrial complex and threatening the established status quo."
- tcpa_institutions.401.d:0 "With the world's foremost empires now firmly in-place, newly founded corporations harvest resources and exploit local inhabitants of subjugated countries for profit and greed. Liberalism has also spread and morphed into several other new ideologies, socialism and marxism. These new global corporations and socialist organisations may have their differences but are in bo doubt controlled and influenced by very powerful inidividuals, most of whom are rooted in the governance and day to day operations of our nation, some even subverting our military industrial complex and threatening the established status quo."
-
- birthplace_of_globalism:0 "Birthplace of Globalism"
- desc_birthplace_of_globalism:0 "This province is home to the very first centers of the Globalist movement."
+ #tcpa_institutions.1.t:0 "Birth of Imperialism"
+ #vic_institutions.1.d:0 "With several countries competing over world dominance the posession of overseas territories has become a defining feature of a great empire. The competition over the control of distant lands is being called imperialism after the ancient Roman Empire and the Latin word imperium, which means to rule over large territories."
+ #vic_institutions.1.a:0 "This changes everything..."
+ #vic_institutions.1.a.tt:0 "Countries that have not yet fully §YEmbraced§! the §YImperialism§! Institution will recieve an increasing technology cost penalty of §R1%§! per year up to at most §R50%§!."
+ #vic_institutions.100.d:0 "With several countries competing over world dominance the posession of overseas territories has become a defining feature of a great empire. The competition over the control of distant lands is being called imperialism after the ancient Roman Empire and the Latin word imperium, which means to rule over large territories."
+ #vic_institutions.101.d:0 "Travellers speak of the great powers of the world competing over control of overseas territories and are calling this the age of Imperialism."
+ #
+ #birthplace_of_imperialism:0 "Capital of Imperialism"
+ #desc_birthplace_of_imperialism:0 "This province is the capital of an empire that spans several continents. It's one of the first places where the idea of imperialism developed."
+ #
+ #vic_institutions.2.t:0 "The Industrial Revolution"
+ #vic_institutions.2.d:0 "A number of technical innovations during the late 18th century such as steam power has greatly increased the output of production for some products such as iron or cloth. By building large factories the capitalists can concentrate the large machinery as well as the specialized of labour in one place. This is a huge change over the old system where all work had to be done manually by people or animals and together other recent technical advances this new mode of production will definitely revolutionize society."
+ #vic_institutions.2.a:0 "This changes everything..."
+ #vic_institutions.2.a.tt:0 "Countries that have not yet fully §YEmbraced§! the §YIndustrialisation§! Institution will recieve an increasing technology cost penalty of §R1%§! per year up to at most §R50%§!."
+ #vic_institutions.200.d:0 "A number of technical innovations during the late 18th century such as steam power has greatly increased the output of production for some products such as iron or cloth. By building large factories the capitalists can concentrate the large machinery as well as the specialized of labour in one place. This is a huge change over the old system where all work had to be done manually by people or animals and together other recent technical advances this new mode of production will definitely revolutionize society."
+ #vic_institutions.201.d:0 "Merchants are reporting an influx of greater and greater numbers of foreign goods into our markets. Their point of origin is unclear but it is clear that somewhere production of refined goods has greatly increased."
+ #
+ #birthplace_of_industrialization:0 "Industrial Center"
+ #desc_birthplace_of_industrialization:0 "This province was one of the early industrial centers during the industrial revolution."
+ #
+ #tcpa_institutions.3.t:0 "Rise of Nationalism"
+ #vic_institutions.3.d:0 "In old times people used to swear loyalty to their king or emperor, but now they are starting to identify themselves with their country or culture and are developing a national identity. This trend is further encouraged by artists who are constructing national symbols, anthems, myths, flags and narratives. These new personal behaviours that support a state's decisions and actions could be very beneficial, but on the other hand this could lead to increased separatism among those who do not identify with our culture."
+ #vic_institutions.3.a:0 "This changes everything..."
+ #vic_institutions.3.a.tt:0 "Countries that have not yet fully §YEmbraced§! the §YNationalism§! Institution will recieve an increasing technology cost penalty of §R1%§! per year up to at most §R50%§!."
+ #vic_institutions.300.d:0 "In old times people used to swear loyalty to their king or emperor, but now they are starting to identify themselves with their country or culture and are developing a national identity. This trend is further encouraged by artists who are constructing national symbols, anthems, myths, flags and narratives. These new personal behaviours that support a state's decisions and actions could be very beneficial, but on the other hand this could lead to increased separatism among those who do not identify with our culture."
+ #vic_institutions.301.d:0 "In old times people used to swear loyalty to their king or emperor, but now they are starting to identify themselves with their country or culture and are developing a national identity. This trend is further encouraged by artists who are constructing national symbols, anthems, myths, flags and narratives. These new personal behaviours that support a state's decisions and actions could be very beneficial, but on the other hand this could lead to increased separatism among those who do not identify with our culture."
+ #
+ #birthplace_of_nationalism:0 "Birthplace of Nationalism"
+ #desc_birthplace_of_nationalism:0 "This province is home to the very first centers of the Nationalist movement."
+ #
+ #tcpa_institutions.4.t:0 "Early Globalism"
+ #tcpa_institutions.4.d:0 "With the world's foremost empires now firmly in-place, newly founded corporations harvest resources and exploit local inhabitants of subjugated countries for profit and greed. Liberalism has also spread and morphed into several other new ideologies, socialism and marxism. These new global corporations and socialist organisations may have their differences but are in bo doubt controlled and influenced by very powerful inidividuals, most of whom are rooted in the governance and day to day operations of our nation, some even subverting our military industrial complex and threatening the established status quo."
+ #tcpa_institutions.4.a:0 "This changes everything..."
+ #tcpa_institutions.4.a.tt:0 "Countries that have not yet fully §YEmbraced§! the §YGlobalism§! Institution will recieve an increasing technology cost penalty of §R1%§! per year up to at most §R50%§!."
+ #tcpa_institutions.400.d:0 "With the world's foremost empires now firmly in-place, newly founded corporations harvest resources and exploit local inhabitants of subjugated countries for profit and greed. Liberalism has also spread and morphed into several other new ideologies, socialism and marxism. These new global corporations and socialist organisations may have their differences but are in bo doubt controlled and influenced by very powerful inidividuals, most of whom are rooted in the governance and day to day operations of our nation, some even subverting our military industrial complex and threatening the established status quo."
+ #tcpa_institutions.401.d:0 "With the world's foremost empires now firmly in-place, newly founded corporations harvest resources and exploit local inhabitants of subjugated countries for profit and greed. Liberalism has also spread and morphed into several other new ideologies, socialism and marxism. These new global corporations and socialist organisations may have their differences but are in bo doubt controlled and influenced by very powerful inidividuals, most of whom are rooted in the governance and day to day operations of our nation, some even subverting our military industrial complex and threatening the established status quo."
+ #
+ #birthplace_of_globalism:0 "Birthplace of Globalism"
+ #desc_birthplace_of_globalism:0 "This province is home to the very first centers of the Globalist movement."

@@ -1,11 +1,11 @@
-#Malang
+#8718 - Lumajang
 
 owner = MAJ
 controller = MAJ
 add_core = MAJ
 culture = javanese
 religion = hinduism
-capital = "Malang"
+capital = "Lumajang"
 trade_goods = incense
 hre = no
 base_tax = 3 

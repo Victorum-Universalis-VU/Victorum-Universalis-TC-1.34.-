@@ -514,7 +514,7 @@ customs_house_of_apena_sheep_reform = {
 
 #Tier 4
 nunziatella_reform = {
-	icon = king
+	icon = nunziatella_reform
 	allow_normal_conversion = yes
 	effect = {
 		change_variable = {
