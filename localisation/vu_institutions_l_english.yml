@@ -255,8 +255,8 @@
  institution_events.900.d:0 "We must strive to fulfill our aims and goals by the turn of $YEAR$ so that our imperialistic aims and ambitions can fully take shape and form if we are to benefit from it."
  institution_events.901.d:0 "Travelers from far away lands speak of a great storm coming our way. A storm that will come in many shapes and forms, disguised as flattery, bribary and in the worse case scenario blatant and obvious. It is hard to treat such rumors seriously since we have lived in peace for many decades, without a care in the world to meddle in affairs that are no concern of to our people. However, we must not take these rumours forgranted, nor should we ignore them incase they turn out to be true. In that instance, then may the Gods help us and grant us strength, fortitude and courage to bear against this so-called 'Imperialism' once it arrives on our shores."
  #
- birthplace_of_imperialism:0 "Imperialism"
- desc_birthplace_of_imperialism:0 "This province is the birthplace of Imperialism."
+ birthplace_of_imperialism_modifier:0 "Imperialism"
+ desc_birthplace_of_imperialism_modifier:0 "This province is the birthplace of Imperialism."
  #
  institution_events.99.t:0 "Nationalism!"
  institution_events.99.d:0 "The long and historic thoughts concerning unification of our lands and people has long been in the minds of our monarchs since time immemorial, despite our ethnically diverse and multi-cultural society. Finally, at the turn of $YEAR$ our nation will be one step closer to that allowing us to pursue a homogeneous society of one flag, one people and one national government."
@@ -265,8 +265,8 @@
  institution_events.902.d:0 "We must strive to fulfill our aims and goals by the turn of $YEAR$ so that our nationalistic aims and ambitions can fully take shape and form if we are to benefit from it."
  institution_events.903.d:0 "Travelers speak of a great sense of national identity, unification and of one national government in faraway lands. It is hard to treat such rumors seriously, though according to the reporters strides have been taken by these people through protests, revolution, diplomacy and conquest in order for them to bring about a more homogeneous society through this so-called 'Nationalism'. Let us hope that the positives and not the negatives of this ideal spread to our lands."
  #
- birthplace_of_nationalism:0 "Nationalism"
- desc_birthplace_of_nationalism:0 "This province is the birthplace of Nationalism."
+ birthplace_of_nationalism_modifier:0 "Nationalism"
+ desc_birthplace_of_nationalism_modifier:0 "This province is the birthplace of Nationalism."
  
  #tcpa_institutions.1.t:0 "Birth of Imperialism"
  #vic_institutions.1.d:0 "With several countries competing over world dominance the posession of overseas territories has become a defining feature of a great empire. The competition over the control of distant lands is being called imperialism after the ancient Roman Empire and the Latin word imperium, which means to rule over large territories."
