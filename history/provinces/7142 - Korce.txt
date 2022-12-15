@@ -22,41 +22,52 @@ discovered_by = ottoman
 discovered_by = eastern
 discovered_by = western
 
-1550.1.1 = {
-	base_tax = 2
-	base_production = 2
-	base_manpower = 2
-}
-1650.1.1 = {
-	base_tax = 4
-	base_manpower = 3
-}
-1700.1.1 = { religion = sunni } #Ottoman settlement and conversion of Albanians
-1833.1.1 = { unrest = 5 } #Albanian revolt
-1835.1.1 = { unrest = 2 }
-1845.1.1 = { unrest = 0 }
-1908.6.1 = { unrest = 10 }
-1912.1.1 = { unrest = 5 }
-1912.11.28 = { add_core = ALB }
-1912.12.4 = {
-	owner = ALB
-	controller = ALB
-	unrest = 0
-	remove_core = TUR
-} #Albanian Independence recognized
-1913.6.1 = { unrest = 5 } #Local Greeks outraged
-1914.3.1 = {
-	owner = EPI
-	controller = EPI
-	add_core = EPI
-	unrest = 2
-} #Autonomous Republic of Northern Epirus
-1914.10.27 = {
-	owner = GRE
-	controller = GRE
-} #Greek occupation during war
-1921.11.1 = {
-	owner = ALB
-	controller = ALB
-	remove_core = GRE
-}
+
+#Province history completed by - Draiocht
+#1291.5.21 = { #BeyondTypus batch edit shortcut the first shattering begins
+#	owner = XXX
+#	controller = XXX
+#	add_core = XXX
+#	remove_core = XXX
+#} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+#1291.5.23 = { #BeyondTypus batch edit shortcut the first shattering ends
+#	owner = XXX
+#	controller = XXX
+#	add_core = XXX
+#	remove_core = XXX
+#} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+#1291.5.24 = { #BeyondTypus batch edit shortcut first performance start begins
+#	owner = XXX
+#	controller = XXX
+#	add_core = XXX
+#} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+#1291.5.26 = { #BeyondTypus batch edit shortcut first performance start ends
+#	owner = XXX
+#	controller = XXX
+#	remove_core = XXX
+#} #Return to proper mod added owners and cuts vanilla core, typically.
+
+#1291 - 1444
+
+#1444.11.13 = { #BeyondTypus batch edit shortcut the second shattering begins
+#	owner = XXX
+#	controller = XXX
+#	add_core = XXX
+#} #Fantasy/alt-history tags for gameplay & multiplayer balance in SE. Please also remember to cut any cores from original larger tags then readd below.
+#1444.11.15 = { #BeyondTypus batch edit shortcut the second shattering ends
+#	owner = XXX
+#	controller = XXX
+#	remove_core = XXX
+#} #End of shattered history. Please revert owner to historical and cut any fantasy cores. Also don't forget to readd any cut historical cores
+#1444.11.16 = { #BeyondTypus batch edit shortcut second performance start begins
+#	owner = XXX
+#	controller = XXX
+#	add_core = XXX
+#} #Cut all mod added tags, reverting to nearest or most logical vanilla tag owner. I think it is safe to leave cores, though.
+#1444.11.18 = { #BeyondTypus batch edit shortcut second performance start ends
+#	owner = XXX
+#	controller = XXX
+#	remove_core = XXX
+#} #Return to proper mod added owners and cuts vanilla core, typically.
+
+#1444 on
