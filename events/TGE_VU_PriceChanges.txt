@@ -27,7 +27,7 @@ country_event = {
 		change_price = {
 			trade_goods = beer
 			key = REIN
-			value = 0.20
+			value = 0.30 #Was 0.20 but changed by San Felipe
 			duration = -1
 		}
 		set_global_flag = beerislove
