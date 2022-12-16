@@ -1,66 +1,66 @@
 namespace = PriceChanges_BeyondTypus
 
-#Dub's 1st beer event, all credit to Dub
-#Reinheitsgebot
-province_event = {
-	id = PriceChanges_BeyondTypus.1
-	title = "PriceChanges_BeyondTypus.EVTNAME1"
-	desc = "PriceChanges_BeyondTypus.EVTDESC1"
-	picture = TRADEGOODS_eventPicture
-
-	fire_only_once = yes
-
-	major = yes
-
-	trigger = {
-		trade_goods = beer #Produces beer.
-		OR = {
-			owner = { #Should only occur for Bavaria for now, but will likely include all 4 Bavarian duchies later.
-				has_idea = bavarian_purity_law
-			}
-			AND = { #Failsafe if any such country doesn't exist.
-				OR = {
-					culture = bavarian
-					culture = austrian
-				}
-				NOT = {
-					any_country = {
-						has_idea_group = BAV_ideas
-					}
-				}
-				is_year = 1475 #It was passed in 1487 in the Duchy of Munich and the Bavarian one in 1516 was due to the reunification of Bavaria in 1515.
-			}
-		}
-	}
-
-	mean_time_to_happen = {
-		years = 50
-		modifier = {
-			factor = 0.9
-			owner = {
-				has_estate = estate_nobles
-			}
-		}
-	}
-
-	option = { #Ok.
-		name = "PriceChanges_BeyondTypus.EVTOPTA1"
-		ai_chance = { factor = 1 }
-		set_global_flag = BT_reinheitsgebot_happened
-		owner = {
-			add_prestige = 10
-		}
-		add_base_production = 3
-		owner = {
-			change_price = {
-				trade_goods = beer
-				key = BT_reinheitsgebot
-				value = 0.1 #2.5 -> 2.75
-				duration = -1
-			}
-		}
-	}
-}
+##Dub's 1st beer event, all credit to Dub
+##Reinheitsgebot
+#province_event = {
+#	id = PriceChanges_BeyondTypus.1
+#	title = "PriceChanges_BeyondTypus.EVTNAME1"
+#	desc = "PriceChanges_BeyondTypus.EVTDESC1"
+#	picture = TRADEGOODS_eventPicture
+#
+#	fire_only_once = yes
+#
+#	major = yes
+#
+#	trigger = {
+#		trade_goods = beer #Produces beer.
+#		OR = {
+#			owner = { #Should only occur for Bavaria for now, but will likely include all 4 Bavarian duchies later.
+#				has_idea = bavarian_purity_law
+#			}
+#			AND = { #Failsafe if any such country doesn't exist.
+#				OR = {
+#					culture = bavarian
+#					culture = austrian
+#				}
+#				NOT = {
+#					any_country = {
+#						has_idea_group = BAV_ideas
+#					}
+#				}
+#				is_year = 1475 #It was passed in 1487 in the Duchy of Munich and the Bavarian one in 1516 was due to the reunification of Bavaria in 1515.
+#			}
+#		}
+#	}
+#
+#	mean_time_to_happen = {
+#		years = 50
+#		modifier = {
+#			factor = 0.9
+#			owner = {
+#				has_estate = estate_nobles
+#			}
+#		}
+#	}
+#
+#	option = { #Ok.
+#		name = "PriceChanges_BeyondTypus.EVTOPTA1"
+#		ai_chance = { factor = 1 }
+#		set_global_flag = BT_reinheitsgebot_happened
+#		owner = {
+#			add_prestige = 10
+#		}
+#		add_base_production = 3
+#		owner = {
+#			change_price = {
+#				trade_goods = beer
+#				key = BT_reinheitsgebot
+#				value = 0.1 #2.5 -> 2.75
+#				duration = -1
+#			}
+#		}
+#	}
+#}
 
 #Dub's 2nd beer event, all credit to Dub
 #Top or Bottom
@@ -92,7 +92,7 @@ province_event = {
 				}
 			}
 		}
-		has_global_flag = BT_reinheitsgebot_happened #Happens after the Reinheitsgebot
+		has_global_flag = beerislove_happened #Used to be BT_reinheitsgebot_happened #Happens after the Reinheitsgebot
 		province_without_special_goods_produced_trigger = yes #Can't fire for a province with special goods.
 	}
 
