@@ -419,7 +419,7 @@ entity = {
 	name = "asiangfx_GALLEY_2"
 	pdxmesh = "asian_galley_02_mesh"
 	version = 1
-	scale = 0.45
+	scale = 0.455
 	
 	state = { name = "idle" 		animation = "idle" }
 	state = { name = "walk" 		animation = "walk" }

@@ -1,0 +1,17 @@
+#The war that Kickstarted the Conquest of Constantinople
+name = "Ottoman-Peloponnesian Incursion"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 4701 # The Destruction of the Hexamillion Wall
+}
+
+1424.1.1 = {
+	add_attacker = TUR
+	add_defender = BYZ
+}
+
+1453.05.21 = {
+	rem_attacker = TUR
+	rem_defender = BYZ
+}

@@ -6,21 +6,56 @@ gme_altare_patria = {
 	starting_tier = 0
 	type = monument
 	can_be_moved = no
-	build_trigger = { }
+	build_trigger = { 
+	    OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
+    }
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		owner = {
-			culture_group = latin
+		OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
 		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	can_upgrade_trigger = {
-		owner = {
-			culture_group = latin
+		OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
 		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	keep_trigger = { }
 	tier_0 = {
 		upgrade_time = { months = 0 }
@@ -267,25 +302,59 @@ gme_basilica_san_nicola = {
 	starting_tier = 2
 	type = monument
 	can_be_moved = no
-	build_trigger = { }
+	build_trigger = {
+	    OR = {
+			AND = {
+				religion_group = christian
+				has_owner_religion = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
+    }
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		religion_group = christian
-		owner = {
-			culture_group = latin
+	    OR = {
+			AND = {
+				religion_group = christian
+				has_owner_religion = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
 		}
-		has_owner_accepted_culture = yes
-		has_owner_religion = yes
-	}
+    }
 	can_upgrade_trigger = {
-		religion_group = christian
-		owner = {
-			culture_group = latin
+		OR = {
+			AND = {
+				religion_group = christian
+				has_owner_religion = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
 		}
-		has_owner_accepted_culture = yes
-		has_owner_religion = yes
-	}
+    }
 	keep_trigger = { }
 	tier_0 = {
 		upgrade_time = { months = 0 }
@@ -350,21 +419,44 @@ gme_castello_estense = {
 	starting_tier = 1
 	type = monument
 	can_be_moved = no
-	build_trigger = { }
+	build_trigger = {
+	    OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
+    }
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		owner = {
-			culture_group = latin
+		OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
 		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	can_upgrade_trigger = {
-		owner = {
-			culture_group = latin
+		OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
 		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	keep_trigger = { }
 	tier_0 = {
 		upgrade_time = { months = 0 }
@@ -430,21 +522,44 @@ gme_castelvecchio = {
 	starting_tier = 1
 	type = monument
 	can_be_moved = no
-	build_trigger = { }
+	build_trigger = {
+	    OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
+    }
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		owner = {
-			culture_group = latin
+		OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
 		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	can_upgrade_trigger = {
-		owner = {
-			culture_group = latin
+		OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
 		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	keep_trigger = { }
 	tier_0 = {
 		upgrade_time = { months = 0 }
@@ -510,35 +625,86 @@ gme_duomo_monreale = {
 	starting_tier = 2
 	type = monument
 	can_be_moved = no
-	build_trigger = { }
+	build_trigger = {
+	    OR = {
+			AND = {
+				religion_group = christian
+				has_owner_religion = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				religion_group = muslim
+				has_owner_religion = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = french }
+			}
+		}
+    }
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		OR = {
-			religion = catholic
-			religion_group = muslim
+	    OR = {
+			AND = {
+				religion_group = christian
+				has_owner_religion = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				religion_group = muslim
+				has_owner_religion = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = french }
+			}
 		}
-		has_owner_religion = yes
-		OR = {
-			culture = neapolitan
-			culture = sicilian
-			culture = normand
-		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	can_upgrade_trigger = {
 		OR = {
-			religion = catholic
-			religion_group = muslim
+			AND = {
+				religion_group = christian
+				has_owner_religion = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				religion_group = muslim
+				has_owner_religion = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = french }
+			}
 		}
-		has_owner_religion = yes
-		OR = {
-			culture = neapolitan
-			culture = sicilian
-			culture = normand
-		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	keep_trigger = { }
 	tier_0 = {
 		upgrade_time = { months = 0 }
@@ -595,21 +761,59 @@ gme_federico_II = {
 	starting_tier = 1
 	type = monument
 	can_be_moved = no
-	build_trigger = { }
+	build_trigger = {
+	    OR = {
+			AND = {
+				religion_group = christian
+				has_owner_religion = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
+    }
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		owner = {
-			culture_group = latin
+		OR = {
+			AND = {
+				religion_group = christian
+				has_owner_religion = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
 		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	can_upgrade_trigger = {
-		owner = {
-			culture_group = latin
+		OR = {
+			AND = {
+				religion_group = christian
+				has_owner_religion = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
 		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	keep_trigger = { }
 	tier_0 = {
 		upgrade_time = { months = 0 }
@@ -781,21 +985,44 @@ gme_lanterna_genova = {
 	starting_tier = 2
 	type = monument
 	can_be_moved = no
-	build_trigger = { }
+	build_trigger = {
+	    OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
+    }
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		owner = {
-			culture_group = latin
+		OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
 		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	can_upgrade_trigger = {
-		owner = {
-			culture_group = latin
+		OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
 		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	keep_trigger = { }
 	tier_0 = {
 		upgrade_time = { months = 0 }
@@ -1024,25 +1251,56 @@ gme_parramentu_sicilianu = {
 	starting_tier = 2
 	type = monument
 	can_be_moved = no
-	build_trigger = { }
+	build_trigger = { 
+	    OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = french }
+			}
+		}
+    }
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
 		OR = {
-			culture = neapolitan
-			culture = sicilian
-			culture = normand
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = french }
+			}
 		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	can_upgrade_trigger = {
 		OR = {
-			culture = neapolitan
-			culture = sicilian
-			culture = normand
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = french }
+			}
 		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	keep_trigger = { }
 	tier_0 = {
 		upgrade_time = { months = 0 }
@@ -1105,21 +1363,56 @@ gme_sala_dei_cavalli = {
 	starting_tier = 1
 	type = monument
 	can_be_moved = no
-	build_trigger = { }
+	build_trigger = {
+	    OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = french }
+			}
+		}
+    }
 	on_built = { }
 	on_destroyed = { }
 	can_use_modifiers_trigger = {
-		owner = {
-			culture_group = latin
+		OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = french }
+			}
 		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	can_upgrade_trigger = {
-		owner = {
-			culture_group = latin
+		OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = french }
+			}
 		}
-		has_owner_accepted_culture = yes
-	}
+    }
 	keep_trigger = { }
 	tier_0 = {
 		upgrade_time = { months = 0 }

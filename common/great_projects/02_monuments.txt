@@ -251,7 +251,7 @@ gelata_tower = {
     type = monument
 
     build_trigger = {
-	    OR = {
+		OR = {
 			AND = {
 				religion = orthodox
 				has_owner_religion = yes
@@ -275,6 +275,14 @@ gelata_tower = {
 				owner = { culture_group = latin }
 				owner = { government = republic }
 			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+			AND = {
+				owner = { culture_group = old_latin }
+				owner = { government = republic }
+			}
 		}
     }
 
@@ -285,7 +293,7 @@ gelata_tower = {
     }
 
     can_use_modifiers_trigger = {
-        OR = {
+		OR = {
 			AND = {
 				religion = orthodox
 				has_owner_religion = yes
@@ -307,6 +315,14 @@ gelata_tower = {
 			}
 			AND = {
 				owner = { culture_group = latin }
+				owner = { government = republic }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+			AND = {
+				owner = { culture_group = old_latin }
 				owner = { government = republic }
 			}
 		}
@@ -335,6 +351,14 @@ gelata_tower = {
 			}
 			AND = {
 				owner = { culture_group = latin }
+				owner = { government = republic }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+			AND = {
+				owner = { culture_group = old_latin }
 				owner = { government = republic }
 			}
 		}	
@@ -1165,11 +1189,20 @@ venetian_arsenal = {
     type = monument
 
     build_trigger = {
-        culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     on_built = {
@@ -1181,17 +1214,36 @@ venetian_arsenal = {
     can_use_modifiers_trigger = {
         culture_group = latin
 		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}    
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     can_upgrade_trigger = {
         is_year = 1460
-		culture_group = latin
 		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
 		}
     }
 
@@ -3780,11 +3832,20 @@ universita_di_bologna = {
     type = monument
 
     build_trigger = {
-        culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     on_built = {
@@ -3794,11 +3855,20 @@ universita_di_bologna = {
     }
 
     can_use_modifiers_trigger = {
-        culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}		
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     can_upgrade_trigger = {
@@ -4392,11 +4462,20 @@ torre_pendente_di_pisa = {
     type = monument
 
     build_trigger = {
-        culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     on_built = {
@@ -4406,20 +4485,38 @@ torre_pendente_di_pisa = {
     }
 
     can_use_modifiers_trigger = {
-        culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}		
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     can_upgrade_trigger = {
 	    is_year = 1654
-		culture_group = latin
 		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     keep_trigger = {
@@ -4548,11 +4645,20 @@ colosseum = {
     type = monument
 
     build_trigger = {
-        culture_group = latin
 		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}		
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     on_built = {
@@ -4562,19 +4668,37 @@ colosseum = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+	    OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     can_upgrade_trigger = {
-		culture_group = latin
 		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     keep_trigger = {
@@ -7215,11 +7339,20 @@ castel_del_monte = {
     type = monument
 
     build_trigger = {
-        culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}		
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     on_built = {
@@ -7229,19 +7362,37 @@ castel_del_monte = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+	    OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     can_upgrade_trigger = {
-		culture_group = latin
 		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     keep_trigger = {
@@ -7727,11 +7878,20 @@ certosa_di_padula = {
     type = monument
 
     build_trigger = {
-        culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}		
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     on_built = {
@@ -7741,19 +7901,37 @@ certosa_di_padula = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+	    OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     can_upgrade_trigger = {
-		culture_group = latin
 		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     keep_trigger = {
@@ -8224,11 +8402,20 @@ trevi_fountain = {
 
     build_trigger = {
 	    is_year = 1732
-        culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}		
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     on_built = {
@@ -8238,19 +8425,37 @@ trevi_fountain = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+	   OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     can_upgrade_trigger = {
-		culture_group = latin
 		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     keep_trigger = {
@@ -8389,11 +8594,20 @@ ponte_vecchio = {
     type = monument
 
     build_trigger = {
-        culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}		
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     on_built = {
@@ -8403,20 +8617,38 @@ ponte_vecchio = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+	    OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     can_upgrade_trigger = {
-		culture_group = latin
 		is_year = 1565
 		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     keep_trigger = {
@@ -10085,11 +10317,20 @@ castello_sforzesco = {
     type = monument
 
     build_trigger = {
-        culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}		
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     on_built = {
@@ -10099,19 +10340,37 @@ castello_sforzesco = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+	    OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     can_upgrade_trigger = {
-		culture_group = latin
 		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     keep_trigger = {
@@ -11266,11 +11525,20 @@ palazzo_pitti = {
 
     build_trigger = {
 	    is_year = 1458
-        culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}		
+        OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     on_built = {
@@ -11280,20 +11548,38 @@ palazzo_pitti = {
     }
 
     can_use_modifiers_trigger = {
-	    culture_group = latin
-		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+	    OR = {
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     can_upgrade_trigger = {
-		culture_group = latin
 		is_year = 1618
 		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     keep_trigger = {

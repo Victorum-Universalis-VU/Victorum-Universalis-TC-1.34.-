@@ -1858,6 +1858,7 @@ country_decisions = {
 		potential = {
 			bt_generic_can_form_potential_check = yes
 			NOT = { has_country_flag = formed_neo_assyria }
+			NOT = { tag = PER }
 			OR = {
 				any_owned_province = { culture = assyrian }
 				culture_group = mesopotamian_group

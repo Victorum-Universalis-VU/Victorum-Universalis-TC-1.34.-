@@ -10078,7 +10078,7 @@ categories =  {
 		}
     }
     # India
-	urban_nicobar_island = {
+	urban_andaman_island = {
 		color = { 177 156 217 }
         type = coastline
         sound_type = sea

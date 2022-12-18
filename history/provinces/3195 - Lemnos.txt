@@ -8,12 +8,17 @@ capital = "Myrina"
 trade_goods = cheese			#Lemnos became a crucial source of food and very important holding in the later days of the Byzantine empire, apparently, supplying grain and livestock to the capital. Going with livestock because of the famous cheese.
 hre = no
 base_tax = 3
-base_production = 3
-base_manpower = 1
+base_production = 4
+base_manpower = 2
 is_city = yes
 add_core = BYZ
 add_local_autonomy = 50
+fort_15th = yes
 
+add_permanent_province_modifier = {
+    name = navalbase_modifier
+    duration = -1
+}
 
 1444.1.1 = { discovered_by = KAZ } 1444.1.1 = { discovered_by = CRI } 1444.1.1 = { discovered_by = GOL } 1444.1.1 = { discovered_by = AST } 1444.1.1 = { discovered_by = QAS } 
 discovered_by = muslim

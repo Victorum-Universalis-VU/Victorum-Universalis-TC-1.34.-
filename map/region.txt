@@ -1908,6 +1908,12 @@ baltic_sea_region = {
 	}
 }
 
+caspian_sea_region = {
+	areas = {
+		caspian_sea_area
+	}
+}
+
 north_atlantic_region = {
 	areas = {
 		north_sea_area
