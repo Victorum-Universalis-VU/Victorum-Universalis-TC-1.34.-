@@ -13,6 +13,9 @@
  black_sea_region:0 "Black Sea"
  
 #Areas
+ caspian_sea_area:0 "Caspian Sea"
+ caspian_sea_area_name:0 "Caspian Sea"
+ caspian_sea_area_adj:0 "Caspian Sea"
  siberian_lakes_area:0 "Siberian Lakes"
  siberian_lakes_area_name:0 "Siberian Lakes"
  siberian_lakes_area_adj:0 "Siberian Lakes"

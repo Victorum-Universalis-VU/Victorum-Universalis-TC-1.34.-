@@ -72,7 +72,7 @@ entity = {
 entity = {
 	name = "muslimgfx_HEAVY_SHIP_4"
 	pdxmesh = "muslim_galleon"
-	scale = 0.655
+	scale = 0.65
 	
 	state = { name = "idle" 		animation = "idle" }
 	state = { name = "walk" 		animation = "walk" }

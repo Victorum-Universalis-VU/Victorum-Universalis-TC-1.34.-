@@ -891,7 +891,7 @@
  urban_allahabad:0 "Allahabad"
  urban_varanasi:0 "Varanasi"
  urban_chittagong:0 "Chittagong"
- urban_nicobar_island:0 "Nicobar Island"
+ urban_andaman_island:0 "Andaman Islands"
  urban_rangoon:0 "Rangoon"
  urban_mrauk:0 "Mrauk"
  urban_mandalay:0 "Mandalay"
@@ -3727,3 +3727,5 @@
  german_nation_militarily_title:0 "Form German Nation Militarily"
  german_nation_militarily_desc:0 "Let us unite and form the German Empire."
  
+ #VU Religions
+ xxxx:0 "Orthodox"

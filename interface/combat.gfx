@@ -2353,8 +2353,8 @@ spriteTypes = {
         texturefile = "gfx/interface/chittagong.dds"
     }
     spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_nicobar_island"
-        texturefile = "gfx/interface/nicobar_island.dds"
+        name = "GFX_combat_terrain_urban_andaman_island"
+        texturefile = "gfx/interface/andaman_islands.dds"
     }
     spriteType = {                                                        
         name = "GFX_combat_terrain_urban_sassoor"
@@ -5867,10 +5867,6 @@ spriteTypes = {
 	spriteType = {                                                        
         name = "GFX_combat_terrain_urban_tortosa"
         texturefile = "gfx/interface/tortosa.dds"
-    }
-	spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_nicobar_island"
-        texturefile = "gfx/interface/nicobar_island.dds"
     }
 	
 #############################################

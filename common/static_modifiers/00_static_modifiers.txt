@@ -257,7 +257,7 @@ blockaded = {
 	ship_recruit_speed = 0.5			#BTAddOn changed from 0.2. Inspired by the Rule the Waves mod, which has some really good ideas but is just a bit much for me.
 	#trade_goods_size_modifier = -0.5
 	#province_trade_power_modifier = -0.9			#BTAddOn changed from -0.75. Inspired by the Rule the Waves mod, which has some really good ideas but is just a bit much for me.
-	local_monthly_devastation = 0.1
+	local_monthly_devastation = 0.25 #VU change up from 0.1
 }
 
 no_adjacent_controlled = {

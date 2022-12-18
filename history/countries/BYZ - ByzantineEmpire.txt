@@ -4,7 +4,10 @@ government_rank = 3
 primary_culture = greek
 religion = orthodox
 technology_group = eastern
+historical_friend = GEN
+historical_friend = HUN
 historical_rival = TUR
+historical_rival = VEN
 capital = 151 # Constantinople
 fixed_capital = 151 # Cannot move capital away from this province & no power cost to move to it
 
