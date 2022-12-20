@@ -2633,8 +2633,8 @@ spriteTypes = {
         texturefile = "gfx/interface/mindanao_tribe.dds"
     }
     spriteType = {                                                        
-        name = "GFX_combat_terrain_urban_coastal_tribe"
-        texturefile = "gfx/interface/coastal_tribe.dds"
+        name = "GFX_combat_terrain_urban_panay"
+        texturefile = "gfx/interface/panay.dds"
     }
     spriteType = {                                                        
         name = "GFX_combat_terrain_urban_negros"

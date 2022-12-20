@@ -253,11 +253,6 @@ gelata_tower = {
     build_trigger = {
 		OR = {
 			AND = {
-				religion = orthodox
-				has_owner_religion = yes
-				has_owner_culture = yes
-			}
-			AND = {
 				religion_group = christian
 				has_owner_religion = yes
 				has_owner_culture = yes
@@ -272,16 +267,8 @@ gelata_tower = {
 				owner = { culture_group = latin }
 			}
 			AND = {
-				owner = { culture_group = latin }
-				owner = { government = republic }
-			}
-			AND = {
 				has_owner_accepted_culture = yes
 				owner = { culture_group = old_latin }
-			}
-			AND = {
-				owner = { culture_group = old_latin }
-				owner = { government = republic }
 			}
 		}
     }
@@ -295,11 +282,6 @@ gelata_tower = {
     can_use_modifiers_trigger = {
 		OR = {
 			AND = {
-				religion = orthodox
-				has_owner_religion = yes
-				has_owner_culture = yes
-			}
-			AND = {
 				religion_group = christian
 				has_owner_religion = yes
 				has_owner_culture = yes
@@ -314,16 +296,8 @@ gelata_tower = {
 				owner = { culture_group = latin }
 			}
 			AND = {
-				owner = { culture_group = latin }
-				owner = { government = republic }
-			}
-			AND = {
 				has_owner_accepted_culture = yes
 				owner = { culture_group = old_latin }
-			}
-			AND = {
-				owner = { culture_group = old_latin }
-				owner = { government = republic }
 			}
 		}
     }
@@ -331,11 +305,6 @@ gelata_tower = {
     can_upgrade_trigger = {
 		OR = {
 			AND = {
-				religion = orthodox
-				has_owner_religion = yes
-				has_owner_culture = yes
-			}
-			AND = {
 				religion_group = christian
 				has_owner_religion = yes
 				has_owner_culture = yes
@@ -350,18 +319,10 @@ gelata_tower = {
 				owner = { culture_group = latin }
 			}
 			AND = {
-				owner = { culture_group = latin }
-				owner = { government = republic }
-			}
-			AND = {
 				has_owner_accepted_culture = yes
 				owner = { culture_group = old_latin }
 			}
-			AND = {
-				owner = { culture_group = old_latin }
-				owner = { government = republic }
-			}
-		}	
+		}
     }
 
     keep_trigger = {
@@ -3872,11 +3833,20 @@ universita_di_bologna = {
     }
 
     can_upgrade_trigger = {
-		culture_group = latin
 		OR = {
-			has_owner_culture = yes
-			has_owner_accepted_culture = yes
-		}	
+			AND = {
+				has_owner_accepted_culture = yes
+				has_owner_culture = yes
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = latin }
+			}
+			AND = {
+				has_owner_accepted_culture = yes
+				owner = { culture_group = old_latin }
+			}
+		}
     }
 
     keep_trigger = {

@@ -33,35 +33,16 @@ hagia_sophia = {
 	build_trigger = {
 		OR = {
 			AND = {
-		 
-		   
-		   
 				religion = orthodox
-					   
-						 
-							 
-	  
 				has_owner_religion = yes
 			}
-			AND = {
-			  
-			
-									
-				religion = coptic
-									
-				has_owner_religion = yes
-								  
-								 
+			AND = {			
+				religion = coptic	
+				has_owner_religion = yes 
 			}
-	  
 			AND = {
 				religion = miaphysite
-					   
-						 
-							 
 				has_owner_religion = yes
-	  
-	 
 			}
 			AND= {
 				religion_group = muslim
@@ -96,38 +77,25 @@ hagia_sophia = {
 	#can our country use it?
 	can_use_modifiers_trigger = {
 		OR = {
-							
 			AND = {
-		   
-		   
 				religion = orthodox
 				has_owner_religion = yes
 			}
-			AND = {
-				religion = coptic
-	  
-				has_owner_religion = yes
+			AND = {			
+				religion = coptic	
+				has_owner_religion = yes 
 			}
 			AND = {
 				religion = miaphysite
-			
 				has_owner_religion = yes
 			}
 			AND= {
 				religion_group = muslim
-								 
-								  
 				has_owner_religion = yes
 			}
-	  
 			AND = {
-						 
-					   
 				religion = catholic
-							 
 				has_owner_religion = yes
-	  
-	 
 			}
 		}
 	}
@@ -135,38 +103,25 @@ hagia_sophia = {
 	#can our country upgrade it?
 	can_upgrade_trigger = {
 		OR = {
-							
 			AND = {
-		   
-		   
 				religion = orthodox
 				has_owner_religion = yes
 			}
-			AND = {
-				religion = coptic
-	  
-				has_owner_religion = yes
+			AND = {			
+				religion = coptic	
+				has_owner_religion = yes 
 			}
 			AND = {
 				religion = miaphysite
-			
 				has_owner_religion = yes
 			}
 			AND= {
 				religion_group = muslim
-								 
-								  
 				has_owner_religion = yes
 			}
-	  
 			AND = {
-						 
-					   
 				religion = catholic
-							 
 				has_owner_religion = yes
-	  
-	 
 			}
 		}
 	}
