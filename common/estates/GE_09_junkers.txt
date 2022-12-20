@@ -97,7 +97,6 @@ estate_junkers = {
 		estate_nobles_regain_liberty
 		estate_nobles_convert_province_culture
 		estate_nobles_protect_our_culture
-		estate_nobles_vassalise_vulnerable_country
 		estate_nobles_expand_into_x
 		estate_nobles_complete_conquest_of_x
 		estate_nobles_annex_subject

@@ -178,11 +178,11 @@ ship_names = {
 army_names = {
 	"Royal Army" "Army of Scotland" "Army of Ireland" "$PROVINCE$ Regiment" "Northern Army" "Coldstream Guards" "King's Own" "Royal Grenadiers" "Royal Welch Fusiliers" 
 	"Scots Guards" "Duke of Cumberland" "Duke of Norfolk" "Duke of Buckingham's" "Expiditionary Force" "Royal Welsh" "Royal Irish Fusiliers" "Guards Brigade" 
-	"Queen's Own" "Prince Rupert's" "Duke of Wellington's" "Earl of Gloucester's" "Lord Cornwallis" "Black "Carabiniers and Greys" "Royal Dragoon Guards" 
+	"Queen's Own" "Prince Rupert's" "Duke of Wellington's" "Earl of Gloucester's" "Lord Cornwallis" Black "Carabiniers and Greys" "Royal Dragoon Guards" 
 	"Royal Irish" "Royal Hussars" "Light Dragoons" "Royal Lancers" "The Life Guards" "Royal Horse Guards" "Royal Yeomanry" "Irish Guards" "Welsh Guards" 
 	"Regiment of Scotland" "Royal Hampshires" "Princess of Wales's" "Duke of Lancaster's" "Royal Fusiliers" "Anglian Regiment" "Yorkshire Regiment" 
 	"Mercian Regiment" "Royal Inniskilling Fusiliers" "The Rifles" "Wiltshire Regiment" "Royal Engineers" "Royal Monmouthshire" "Honourable Artillery Company" 
-	"King's German Legion‎" "North Irish Horse‎" "Argyll & Sutherland Highlanders‎" "Earl of Carrick's" "Scottish Rifles" "Fife & Forfar Yeomanry" "Cameronians" 
+	"King's German Legion‎" "North Irish Horse‎" "Argyll & Sutherland Highlanders‎" "Earl of Carrick's" "Scottish Rifles" "Fife & Forfar Yeomanry" Cameronians 
 	"Earl of Angus's" "Earl of Dumbarton's" "Scots Dragoons" "Manus O'Cahan's" "Black Watch" "Royal Highlanders" "Breadalbane Regiment" "Volunteer Battalion" 
 	"Caithness Legion" "Princess Mary's" "Cumberland Highlanders" "Clan-Alpine Fencibles" "Fraser Regiment" "Fifeshire Militia" "Fincastle's Horse" "Scottish Horse" 
 	"Scottish Guards" "Gordon Highlanders" "Glengarry Fencibles" "Scottish Borderers" "Atholl Highlanders" "Argyle Fencibles" "Duke of Argyle's" "Lovat Scouts" 
@@ -192,7 +192,7 @@ army_names = {
 	"Irish Guards" "Royal Ulster Rifles‎" "South Irish Horse‎" "Connaught Rangers‎‎" "Liverpool Irish" "Royal Irish Rangers" "Royal Munster Fusiliers" 
 	"Royal Ulster Rifles" "Queen's Royal Irish" "Kings's Royal Irish" "Royal Irish Lancers" "Duke of Shrewsbury's" "Earl of Bath's" "Earl of Plymouth's" 
 	"King's Regiment" "Lord Cavendish's" "Lord Herbert's" "Queen Dowager's" "Earl of Granard's" "Royal Artillery‎" "Manx Regiment" "Lincolnshire Regiment‎"
-	"Cheshire Regiment" "Green Howards" "King's Royal Rifle Corps" "Lancashire Fusiliers" "Buffs" "Royal Warwickshire" "Royal Leicestershire" 
+	"Cheshire Regiment" "Green Howards" "King's Royal Rifle Corps" "Lancashire Fusiliers" Buffs "Royal Warwickshire" "Royal Leicestershire" 
 	"Liverpool Volunteers" "King's American Regiment" "British Legion" "New York Volunteers" "Volunteers of Ireland" "Foot Guards" "Kentish Regiment" 
 	"Royal Northumberland Fusiliers" "Norfolk Regiment" "Prince of Wales's Own" "Enniskillen Regiment" "Royal Highland" "Frasers Highlanders" 
 	"Glasgow Volunteers" "Jamaica Regiment" "Shropshire Volunteers" "Yorkshire Volunteers" "King's Rangers" "King's Orange Rangers" "King's Carolina Rangers" 
