@@ -1534,6 +1534,11 @@ dharmapuri_mango = { #Dharmapuri 8429
 	trade_goods_size_modifier = 0.1
 }
 
+eye_of_sahara = {	#Richat Structure
+	trade_value = 0.5
+	local_unrest = -0.5
+}
+
 ##############################################
 # Malaria stopping colonisation by docRobert #
 ##############################################
