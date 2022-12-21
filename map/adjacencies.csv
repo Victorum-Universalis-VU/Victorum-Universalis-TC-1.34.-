@@ -539,5 +539,16 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 7455;5548;sea;2334;-1;-1;-1;-1;Rutba-Al Jibab
 7455;3963;sea;2334;-1;-1;-1;-1;Rutba-Kasrah
 3963;409;sea;2334;-1;-1;-1;-1;Kasrah-Karbala
+3968;3962;sea;7479;-1;-1;-1;-1;Tichla-Bir Gandouz
+6969;2244;sea;1793;-1;-1;-1;-1;Choum-Tagant
+1132;1129;sea;3961;-1;-1;-1;-1;Timbuktu-Azawad
+6953;1129;sea;3961;-1;-1;-1;-1;Walatah-Azawad
+1129;3960;sea;3961;-1;-1;-1;-1;Azawad-Taghaza
+3960;2247;sea;3961;-1;-1;-1;-1;Taghaza-Hodh
+1130;1128;sea;3961;-1;-1;-1;-1;Tadmekka-Taudeni
+6967;6966;sea;1793;-1;-1;-1;-1;Zoueart-Bir Moghrein
+6966;6961;sea;1793;-1;-1;-1;-1;Bir Moghrein-Chegga
+3959;6967;sea;1793;-1;-1;-1;-1;Wadan-Zoueart
+3041;3957;sea;1793;-1;-1;-1;-1;Kiffa-Atar
 
 -1;-1;;-1;-1;-1;-1;-1;-1;
