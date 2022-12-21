@@ -5,9 +5,10 @@ primary_culture = greek
 religion = orthodox
 technology_group = eastern
 historical_friend = GEN
-historical_friend = HUN
+historical_friend = TRE
 historical_rival = TUR
 historical_rival = VEN
+historical_rival = BUL
 capital = 151 # Constantinople
 fixed_capital = 151 # Cannot move capital away from this province & no power cost to move to it
 
@@ -73,4 +74,5 @@ fixed_capital = 151 # Cannot move capital away from this province & no power cos
 	}
 }
 
-1452.1.1 = { leader = {	name = "Giovanni Giustiniani"	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1453.5.29 } }
+1450.1.1 = { leader = {	name = "Theophilos Palaiologos"	type = general	fire = 3	shock = 1	manuever = 2	siege = 3	death_date = 1453.5.29 } }
+1451.1.1 = { leader = {	name = "Giovanni Giustiniani"	type = admiral	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1453.5.29 } }

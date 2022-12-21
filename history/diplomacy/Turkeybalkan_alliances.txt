@@ -207,6 +207,19 @@ vassal = {
 ######################## Turkey (TCOP) #########################
 ################################################################
 
+###############
+# Tributaries #
+###############
+
+#Byzantines forced to pay tribute since 1424
+dependency = {
+	subject_type = "tributary_state"
+	first = TUR
+	second = BYZ
+	start_date = 1424.2.1
+	end_date = 1451.1.1
+}
+
 ##############
 # Guarantees #
 ##############
