@@ -13,6 +13,9 @@
  black_sea_region:0 "Black Sea"
  
 #Areas
+ ahaggar_area:0 "Ahaggar Area"
+ ahaggar_area_name:0 "Ahaggar Mountains"
+ ahaggar_area_adj:0 "Ahaggaran Mountains"
  tademait_area:0 "Tademait Area"
  tademait_area_name:0 "Tuat"
  tademait_area_adj:0 "Tuat"
