@@ -1,4 +1,4 @@
-# No previous file for Air
+#2274 - Air
 
 owner = AIR
 controller = AIR
@@ -18,7 +18,7 @@ base_manpower = 2
 discovered_by = sub_saharan
 fort_15th = yes
 
-1449.1.1 = { capital = "Agades" }
+#1449.1.1 = { capital = "Agades" }
 1500.1.1 = {
 	owner = SON
 	controller = SON 
