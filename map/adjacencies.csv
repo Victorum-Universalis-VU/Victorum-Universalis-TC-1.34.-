@@ -554,6 +554,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1128;1127;sea;1794;-1;-1;-1;-1;Taudeni-Tuat
 5222;3956;sea;1794;-1;-1;-1;-1;Talbalbala-Tamentit
 3955;2472;sea;1794;-1;-1;-1;-1;Adrar-Ouargla
-3954;2475;sea;1794;-1;-1;-1;-1;Ain Salih-Djado
+3954;3952;sea;1794;-1;-1;-1;-1;Ain Salih-Alabessa
+3953;3951;sea;1794;-1;-1;-1;-1;Tamanrasset-Djanet
+3953;3950;sea;1794;-1;-1;-1;-1;Tamanrasset-In Guezzam
 
 -1;-1;;-1;-1;-1;-1;-1;-1;
