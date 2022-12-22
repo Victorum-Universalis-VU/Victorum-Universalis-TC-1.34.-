@@ -1,9 +1,9 @@
-#1127 - Tuat
+#3956 - Tamentit
 
 is_city = no
 culture = tuareg
-religion = sunni
-capital = "Tawat"
+religion = ibadi
+capital = "Tamentit"
 trade_goods = unknown
 hre = no
 base_tax = 1

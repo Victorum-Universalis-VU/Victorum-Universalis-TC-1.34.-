@@ -13,6 +13,12 @@
  black_sea_region:0 "Black Sea"
  
 #Areas
+ tademait_area:0 "Tademait Area"
+ tademait_area_name:0 "Tuat"
+ tademait_area_adj:0 "Tuat"
+ adrar_area:0 "Adrar Area"
+ adrar_area_name:0 "Adrar Plateau"
+ adrar_area_adj:0 "Adraran Plateau"
  caspian_sea_area:0 "Caspian Sea"
  caspian_sea_area_name:0 "Caspian Sea"
  caspian_sea_area_adj:0 "Caspian Sea"
