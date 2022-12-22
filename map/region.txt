@@ -459,6 +459,7 @@ maghreb_region = {
 		barbary_coast_area			#New in 1.28 vanilla, repurposing this into BT's old Oran area
 		southern_morocco_area			#repurposed into tagmudant for BT
 		ouled_nail_area			#repurposed into Aures area for BT
+		tademait_area
 	}
 }
 
@@ -628,6 +629,7 @@ sahel_region = {
 		azbin_area
 		dendi_area
 		baghena_area
+		adrar_area
 		niger_bend_area
 		east_azbin_area
 		wadai_area
