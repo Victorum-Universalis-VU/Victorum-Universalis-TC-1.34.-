@@ -3649,7 +3649,6 @@
  imperial_navy:0 "Opening Japan"
  imperial_navy_desc:0 "The newly arrived 'Nanban' and foreigners on our shores have given us and our nation two choices. Either we open up its doors to trade with the West or keep it shut and incurr the wrath of the Great Powers. Instead of seeing these demands as threats, let us open up Japan and invite nanban innovators and scientist so that we too can build up our defences in order to avert any more possible humiliation and potential defeat."
  
- 
  #VU - Missing Mission Locs by San Felipe
  roman_unification_of_italy:0 "Italia"
  desc_roman_unification_of_italy:0 "For generations we have seen the slow yet steady demise of our once lush heartlands, overrun by barbarians and neglected by the so-called 'Christian' church; enough is enough. Let us no go forth with are resurrected legions to conquer and unify these lands so that we may once again rise as a nation and cilivilisation that is feared and respected by all."
@@ -3714,11 +3713,53 @@
  #flavor_spa.EVTNAME3715:0 "Isabella of Castile"
  #flavor_spa.EVTDESC3715:0 "With King Enrique IV's reign coming to an end and the death of his half-brother Alfonso has left the kingdom with no other choice but to proclaime Isabella as heir presumptive and successor to the throne of Castile and although King Enrique remains doubtful of her abilities, the cortes are confident Isabela will usher in a new era that will see Castile triumph in splendor. Rumours have already begun to circulate court that an everlasting treaty or peace, stability and union with our long time rival Aragon maybe on the horizon and that the Aragonese King himself has already offerred the hand of his son Ferdinand to Isabella should she become Queen. Let us hope this is so."
  #flavor_spa.EVTOPTA3715:0 "Let us go with Isabella"
- 
+ #
+ flavor_byz.EVTNAME7:0 "Conversion of Egypt"
+ flavor_byz.EVTDESC7:0 "Our Byzantine rulers after retaking long lost lands have decided that it is time to finally evaluate the Islamic peoples of the Egypt, taking special considerations with regards to Alexandria's Muslim population. This has resulted in the renewed vigor of missionaries and inquisitors to forcefully and rapidly convert the heathen peoples there to the one true faith, with the worst case scenario resulting in their torture, enslavement, execution and/or expulsion." 
+ flavor_byz.EVTOPTA7:0 "Let us be rid of those we cannot trust"
+ flavor_byz.EVTOPTB7:0 "Let us make a clean sweep for the Glory of God"
+ flavor_byz.EVTOPTC7:0 "Toleration is key to the nation's prosperity"
+ flavor_byz.EVTTOOLTIP7:0 "The Muslims turn to [This.GetName]"
+ #
+ flavor_byz.c.7.tt:0 "By embarking on a policy of toleration we are promising not to try to convert the muslims of Egypt. Should we backtrack on this promise we can expect consequences."
+ #
+ flavor_byz.EVTNAME8:0 "Fate of Egyptian Muslims"
+ flavor_byz.EVTDESC8:0 "In a foolish decision of faith over economy, [From.GetName] have caused many of the Muslims still living in their lands to leave."
+ flavor_byz.EVTOPTA8:0 "They are a welcome addition to our country."
+ flavor_byz.EVTOPTB8:0 "No, close our borders"
+ #
+ flavor_byz.EVTNAME9:0 "Conversion of Anatolia"
+ flavor_byz.EVTDESC9:0 "Our Byzantine rulers after retaking long lost lands have decided that it is time to finally evaluate the Islamic peoples of the Anatolia, taking special considerations with regards to Bursa's Muslim population. This has resulted in the renewed vigor of missionaries and inquisitors to forcefully and rapidly convert the heathen peoples there to the one true faith, with the worst case scenario resulting in their torture, enslavement, execution and/or expulsion." 
+ flavor_byz.EVTOPTA9:0 "Let us be rid of those we cannot trust"
+ flavor_byz.EVTOPTB9:0 "Let us make a clean sweep for the Glory of God"
+ flavor_byz.EVTOPTC9:0 "Toleration is key to the nation's prosperity"
+ flavor_byz.EVTTOOLTIP9:0 "The Muslims turn to [This.GetName]"
+ #
+ flavor_byz.c.9.tt:0 "By embarking on a policy of toleration we are promising not to try to convert the muslims of Anatolia. Should we backtrack on this promise we can expect consequences."
+ #
+ flavor_byz.EVTNAME10:0 "Fate of Anatolian Muslims"
+ flavor_byz.EVTDESC10:0 "In a foolish decision of faith over economy, [From.GetName] have caused many of the Muslims still living in their lands to leave."
+ flavor_byz.EVTOPTA10:0 "They are a welcome addition to our country."
+ flavor_byz.EVTOPTB10:0 "No, close our borders"
+ #
+ flavor_byz.EVTNAME11:0 "Conversion of the Levant"
+ flavor_byz.EVTDESC11:0 "Our Byzantine rulers after retaking long lost lands have decided that it is time to finally evaluate the Islamic peoples of the Levant, taking special considerations with regards to Jerusalem's Muslim population. This has resulted in the renewed vigor of missionaries and inquisitors to forcefully and rapidly convert the heathen peoples there to the one true faith, with the worst case scenario resulting in their torture, enslavement, execution and/or expulsion." 
+ flavor_byz.EVTOPTA11:0 "Let us be rid of those we cannot trust"
+ flavor_byz.EVTOPTB11:0 "Let us make a clean sweep for the Glory of God"
+ flavor_byz.EVTOPTC11:0 "Toleration is key to the nation's prosperity"
+ flavor_byz.EVTTOOLTIP11:0 "The Muslims turn to [This.GetName]"
+ #
+ flavor_byz.c.11.tt:0 "By embarking on a policy of toleration we are promising not to try to convert the muslims of the Levant. Should we backtrack on this promise we can expect consequences."
+ #
+ flavor_byz.EVTNAME12:0 "Fate of Levantine Muslims"
+ flavor_byz.EVTDESC12:0 "In a foolish decision of faith over economy, [From.GetName] have caused many of the Muslims still living in their lands to leave."
+ flavor_byz.EVTOPTA12:0 "They are a welcome addition to our country."
+ flavor_byz.EVTOPTB12:0 "No, close our borders"
+ #
  #VU - New units
  western_hussar:0 "Western Hussar"
  western_hussarDESCR:0 "A more modern version of the Hussar class of light cavalry, originating in Central Europe during the 15th and 16th centuries."
- 
+ #
  #VU - Monuments
  great_project_vu_el_morro: "El Morro"
  vu_el_morro: "El Morro"

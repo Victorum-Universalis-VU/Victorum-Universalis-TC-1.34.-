@@ -1,0 +1,287 @@
+#########################
+# Events for Byzantium  #
+#                       #
+# written by San Felipe #
+#########################
+
+# Conversion of Egypt
+country_event = {
+	id = flavor_byz.7
+	title = "flavor_byz.EVTNAME7"
+	desc = "flavor_byz.EVTDESC7"
+	picture = BYZ_ORTHODOX_CONVERSION_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BYZ
+        NOT = { exists = MAM }
+		religion = orthodox
+		is_at_war = no
+		any_owned_province = {
+			region = egypt_region
+			religion_group = muslim
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = byz_egyptian_inquisition
+		}
+	}
+	#Let us make a clean sweep for the Glory of God
+	option = {
+		name = "flavor_byz.EVTOPTA7"
+		
+		every_owned_province = {
+			limit = {
+				region = egypt_region
+				religion_group = muslim
+			}
+			change_religion = orthodox
+			add_province_modifier = {
+				name = forced_conversion
+				duration = 3650
+			}
+		}	
+		random_country = {
+			limit = {
+				religion_group = muslim
+				any_owned_province = {
+					sea_zone = {
+						any_neighbor_province = {
+							owned_by = ROOT
+						}
+					}
+				}
+			}
+			country_event = {  id = flavor_byz.8 days = 10 tooltip = "flavor_byz.EVTTOOLTIP7" }
+		}
+		set_country_flag = egyptian_muslims_expelled
+		add_reform_desire = 0.02
+
+	}
+	#Toleration is key to the nation's prosperity
+	option = {
+		name = "flavor_byz.EVTOPTC7"
+		ai_chance = { factor = 0 }
+		custom_tooltip = flavor_byz.c.7.tt
+		add_reform_desire = -0.01
+		add_stability_or_adm_power = yes
+		add_ruler_modifier = {
+			name = religious_tolerance
+		}
+	}
+}
+
+# Fate of Egyptian Muslims
+country_event = {
+	id = flavor_byz.8
+	title = "flavor_byz.EVTNAME8"
+	desc = "flavor_byz.EVTDESC8"
+	picture = ECONOMY_eventPicture
+
+	is_triggered_only = yes
+	
+	#They are a welcome addition
+	option = {
+		name = "flavor_byz.EVTOPTA8"
+		ai_chance = { factor = 90 }
+		random_owned_province = {
+			add_base_tax = 1
+		}
+	}
+}
+
+# Conversion of Anatolia
+country_event = {
+	id = flavor_byz.9
+	title = "flavor_byz.EVTNAME9"
+	desc = "flavor_byz.EVTDESC9"
+	picture = BYZ_ORTHODOX_CONVERSION_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BYZ
+		NOT = { exists = TUR }
+        NOT = { exists = MAM }
+		religion = orthodox
+		is_at_war = no
+		any_owned_province = {
+			region = anatolia_region
+			religion_group = muslim
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = byz_anatolian_inquisition
+		}
+	}
+	#Let us make a clean sweep for the Glory of God
+	option = {
+		name = "flavor_byz.EVTOPTA9"
+		
+		every_owned_province = {
+			limit = {
+				region = anatolia_region
+				religion_group = muslim
+			}
+			change_religion = orthodox
+			add_province_modifier = {
+				name = forced_conversion
+				duration = 3650
+			}
+		}	
+		random_country = {
+			limit = {
+				religion_group = muslim
+				any_owned_province = {
+					sea_zone = {
+						any_neighbor_province = {
+							owned_by = ROOT
+						}
+					}
+				}
+			}
+			country_event = {  id = flavor_byz.10 days = 10 tooltip = "flavor_byz.EVTTOOLTIP9" }
+		}
+		set_country_flag = anatolian_muslims_expelled
+		add_reform_desire = 0.02
+
+	}
+	#Toleration is key to the nation's prosperity
+	option = {
+		name = "flavor_byz.EVTOPTC9"
+		ai_chance = { factor = 0 }
+		custom_tooltip = flavor_byz.c.9.tt
+		add_reform_desire = -0.01
+		add_stability_or_adm_power = yes
+		add_ruler_modifier = {
+			name = religious_tolerance
+		}
+	}
+}
+
+# Fate of Anatolian Muslims
+country_event = {
+	id = flavor_byz.10
+	title = "flavor_byz.EVTNAME10"
+	desc = "flavor_byz.EVTDESC10"
+	picture = ECONOMY_eventPicture
+
+	is_triggered_only = yes
+	
+	#They are a welcome addition
+	option = {
+		name = "flavor_byz.EVTOPTA10"
+		ai_chance = { factor = 90 }
+		random_owned_province = {
+			add_base_tax = 1
+		}
+	}
+
+}
+
+# Conversion of the Levant
+country_event = {
+	id = flavor_byz.11
+	title = "flavor_byz.EVTNAME11"
+	desc = "flavor_byz.EVTDESC11"
+	picture = BYZ_ORTHODOX_CONVERSION_eventPicture
+	
+	fire_only_once = yes
+
+	trigger = {
+		tag = BYZ
+		NOT = { exists = TUR }
+        NOT = { exists = MAM }
+		religion = orthodox
+		is_at_war = no
+		any_owned_province = {
+			region = mashriq_region
+			religion_group = muslim
+		}
+	}
+
+	mean_time_to_happen = {
+		months = 12
+	}
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = byz_levantine_inquisition
+		}
+	}
+	#Let us make a clean sweep for the Glory of God
+	option = {
+		name = "flavor_byz.EVTOPTA11"
+		
+		every_owned_province = {
+			limit = {
+				region = mashriq_region
+				religion_group = muslim
+			}
+			change_religion = orthodox
+			add_province_modifier = {
+				name = forced_conversion
+				duration = 3650
+			}
+		}	
+		random_country = {
+			limit = {
+				religion_group = muslim
+				any_owned_province = {
+					sea_zone = {
+						any_neighbor_province = {
+							owned_by = ROOT
+						}
+					}
+				}
+			}
+			country_event = {  id = flavor_byz.12 days = 10 tooltip = "flavor_byz.EVTTOOLTIP11" }
+		}
+		set_country_flag = levatine_muslims_expelled
+		add_reform_desire = 0.02
+
+	}
+	#Toleration is key to the nation's prosperity
+	option = {
+		name = "flavor_byz.EVTOPTC11"
+		ai_chance = { factor = 0 }
+		custom_tooltip = flavor_byz.c.11.tt
+		add_reform_desire = -0.01
+		add_stability_or_adm_power = yes
+		add_ruler_modifier = {
+			name = religious_tolerance
+		}
+	}
+}
+
+# Fate of Levantine Muslims
+country_event = {
+	id = flavor_byz.12
+	title = "flavor_byz.EVTNAME12"
+	desc = "flavor_byz.EVTDESC12"
+	picture = ECONOMY_eventPicture
+
+	is_triggered_only = yes
+	
+	#They are a welcome addition
+	option = {
+		name = "flavor_byz.EVTOPTA12"
+		ai_chance = { factor = 90 }
+		random_owned_province = {
+			add_base_tax = 1
+		}
+	}
+}
