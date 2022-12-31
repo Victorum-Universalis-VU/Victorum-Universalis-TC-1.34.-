@@ -1724,7 +1724,7 @@
 
  #Byzantine Stuff - all pretty horrible & needs to be redone.
  restore_constantinople_decision_title:0 "Restore Constantinople"
- restore_constantinople_decision_desc:0 "The people of the great city of Constantinople have turned their backs on the one true faith and one of the greatest churches in Christianity, the Hagia Sofia, has been converted into a Mosque. This simply will not do! As residents of the capital of the former Roman Empire these citizens must set an example to all of Christendom, we must bring these errant subjects back into the fold of Christianity and restore the Hagia Sofia to a church!"
+ restore_constantinople_decision_desc:0 "The people of the great city of Constantinople have turned their backs on the one true faith and one of the greatest churches in Christianity, the Hagia Sofia by converting it to a Mosque; This is an outrage! As residents of the capital of the former Roman Empire these citizens must set an example to all of Christendom. Thus, must bring these misguided peoples back into the fold of Christianity and restore the Hagia Sofia to a church!"
  restore_theme_graecia_title:0 "Restore the Theme of Greece"
  restore_theme_graecia_desc:0 "Now that we have restored the Theme system, we may set about reclaiming and reorganising the Theme themselves. One of our first priorities must be to reorganise and gather our forces in our core territories in the Peloponnesos, Hellas, Epirus, Macedonia, and Thrace."
  restore_theme_west_anatolia_title:0 "Restore the Theme of Western Anatolia"
@@ -1752,21 +1752,21 @@
  
  #Misc additions by Doc Robert
  remove_primitive_nations_all_title:0 "Remove Primitive Nations"
- remove_primitive_nations_all_desc:0 "Removes all Primitive Nations that should not be considered a proper state at this moment. This applies to most of America and Oceania but not only. Will also reduce lag of the game!"
+ remove_primitive_nations_all_desc:0 "Removes all Primitive Nations that should not be considered a proper state at this moment. This mostly applies to America and Oceania but not only. Will also reduce in-game lag."
  restore_vanilla_status_title:0 "Restore Vanilla Setup"
  restore_vanilla_status_desc:0 "Resets the map removing nearly all non-vanilla nations. Tags added by the mod will be carved up and integrated to vanilla countries. This drastically reduces amount of nations and units on the map, therefore this decision is meant for those wishing to reduce lag and improve game performance at the cost of accuracy and realism. MAKE SURE YOU ARE NOT PLAYING ONE OF THOSE NATIONS OR WILL TOO DISAPPEAR!"
  vu_restore_country_name_title:0 "Restore Country Name"
  vu_restore_country_name_desc:0 "If your country has assigned custom name to it, this button will remove it. DO NOT SPAM!"
  vu_restore_byz_name_title:0 "Reclaim the Basileia Title"
- vu_restore_byz_name_desc:0 "We are not the ''Byzantine''. It's a fake term given to us by western usurpators. We are the Greek Romans and our caountry shall be properly called Basileia Rhomaion!" \n \n \nChanges country name to Basileia Rhomaion. Will not change tag. It is mostly cosmetic change."
+ vu_restore_byz_name_desc:0 "We are not the 'Byzantines'. It is a fake term given to us by western usurpers; No! We are Greco Romans and our country shall properly be called 'Basileía Rhomaíon!'" \n \n \nChanges country name to Basileía Rhomaíon. This is mostly a cosmetic change and will not change the country tag."
  VU_NAME_BYZ:0 "Basileía Rhomaíon"
- VU_NAME_BYZ_ADJ:0 "Basileían Rhomaíon"
+ VU_NAME_BYZ_ADJ:0 "Rhomaíon"
  vu_restore_tun_name_title:0 "Revert name to Tunisia"
- vu_restore_tun_name_desc:0 "Your nation will no longer be called Ifriqiya but a more uniform name of 'Tunis' will be given to it. \n \n \nDoes not change country tag. It is mostly cosmetic change."
+ vu_restore_tun_name_desc:0 "Your nation will no longer be called Ifriqiya but will be given the more uniformed name of 'Tunis'. \n \n \nChanges country name to Tunis. This is mostly a cosmetic change and will not change the country tag."
  VU_NAME_TUN:0 "Tunis"
  VU_NAME_TUN_ADJ:0 "Tunisian"
  VU_NAME_AVAR_KHAGANATE:0 "Avar Khaganate"
- VU_NAME_AVAR_KHAGANATE_ADJ:0 "Avarian Khaganate"
+ VU_NAME_AVAR_KHAGANATE_ADJ:0 "Avarian"
 
 
 
