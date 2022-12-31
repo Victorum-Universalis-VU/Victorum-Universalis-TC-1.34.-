@@ -501,7 +501,10 @@ mnd_siam_3 = {
 					any_country = {
 						primary_culture = vietnamese
 						capital_scope = {
-							region = indo_china_region
+							OR = {
+							    region = indo_china_region
+								region = south_china_sea_islands_region
+							}
 						}
 						is_free_or_tributary_trigger = yes
 					}
@@ -510,7 +513,10 @@ mnd_siam_3 = {
 					limit = {
 						primary_culture = vietnamese
 						capital_scope = {
-							region = indo_china_region
+							OR = {
+							    region = indo_china_region
+								region = south_china_sea_islands_region
+							}
 						}
 						is_free_or_tributary_trigger = yes
 					}

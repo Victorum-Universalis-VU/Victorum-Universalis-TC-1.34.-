@@ -46,6 +46,10 @@ country_event = {
 				NOT = { capital_scope = { region = malaya_region } }
 				NOT = { capital_scope = { region = moluccas_region } }
 				NOT = { capital_scope = { region = indonesia_region } }
+				NOT = { capital_scope = { region = riau_islands_region } }
+				NOT = { capital_scope = { region = nusa_tenggara_region } }
+				NOT = { capital_scope = { region = borneo_region } }
+				NOT = { capital_scope = { region = celebes_region } }
 			}
 			add_opinion = { who = ZAN modifier = zan_shirazi_islam }
 		}
@@ -72,6 +76,10 @@ country_event = {
 				NOT = { capital_scope = { region = malaya_region } }
 				NOT = { capital_scope = { region = moluccas_region } }
 				NOT = { capital_scope = { region = indonesia_region } }
+				NOT = { capital_scope = { region = riau_islands_region } }
+				NOT = { capital_scope = { region = nusa_tenggara_region } }
+				NOT = { capital_scope = { region = borneo_region } }
+				NOT = { capital_scope = { region = celebes_region } }
 			}
 			add_opinion = { who = ZAN modifier = zan_religious_orthodoxy }
 		}
@@ -208,6 +216,10 @@ country_event = {
 				NOT = { capital_scope = { region = malaya_region } }
 				NOT = { capital_scope = { region = moluccas_region } }
 				NOT = { capital_scope = { region = indonesia_region } }
+				NOT = { capital_scope = { region = riau_islands_region } }
+				NOT = { capital_scope = { region = nusa_tenggara_region } }
+				NOT = { capital_scope = { region = borneo_region } }
+				NOT = { capital_scope = { region = celebes_region } }
 			}
 			add_opinion = { who = ZAN modifier = zan_religious_orthodoxy }
 		}

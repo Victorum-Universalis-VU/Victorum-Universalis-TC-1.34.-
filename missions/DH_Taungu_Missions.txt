@@ -500,15 +500,20 @@ tau_slot_2 = {
 		required_missions = { tau_conquer_siam tau_conquer_lxa }
 		position = 6
 		provinces_to_highlight = {
-			region = indo_china_region
-			NOT = {
-				country_or_non_sovereign_subject_holds = ROOT
+			OR = {
+			    region = indo_china_region
+				region = south_china_sea_islands_region
 			}
+			NOT = {	country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
 			legitimacy = 90
 			indo_china_region = {
-				type = all
+			    type = all
+				country_or_non_sovereign_subject_holds = ROOT	
+			}
+			south_china_sea_islands_region = {
+			    type = all
 				country_or_non_sovereign_subject_holds = ROOT	
 			}
 		}

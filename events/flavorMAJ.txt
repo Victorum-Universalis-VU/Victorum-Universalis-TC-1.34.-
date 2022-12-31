@@ -211,9 +211,15 @@ country_event = {
 			owned_by = ROOT
 		}
 		num_of_owned_provinces_with = {
+			OR = {
+			    region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
+				region = borneo_region
+				region = celebes_region
+			}
 			value = 4
 			religion = sunni
-			region = indonesia_region
 		}
 	}
 
@@ -277,7 +283,13 @@ country_event = {
 		name = majapahit.5.a
 		every_owned_province = {
 			limit = {
-				region = indonesia_region
+				OR = {
+			        region = indonesia_region
+				    region = riau_islands_region
+				    region = nusa_tenggara_region
+				    region = borneo_region
+				    region = celebes_region
+			    }
 			}
 			add_claim = DMK
 		}
@@ -325,9 +337,15 @@ country_event = {
 			owned_by = ROOT
 		}
 		num_of_owned_provinces_with = {
+			OR = {
+			    region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
+				region = borneo_region
+				region = celebes_region
+			}
 			value = 4
 			religion = sunni
-			region = indonesia_region
 		}
 	}
 
@@ -380,7 +398,13 @@ country_event = {
 		name = majapahit.5.a
 		every_owned_province = {
 			limit = {
-				region = indonesia_region
+				OR = {
+			        region = indonesia_region
+				    region = riau_islands_region
+				    region = nusa_tenggara_region
+				    region = borneo_region
+				    region = celebes_region
+				}
 			}
 			add_claim = MTR
 		}
@@ -498,7 +522,13 @@ country_event = {
 		has_disaster = fall_of_majapahit
 		NOT = { has_country_flag = maj_no_more_pretenders }
 		any_owned_province = {
-			region = indonesia_region
+			OR = {
+			    region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
+				region = borneo_region
+				region = celebes_region
+			}
 			controlled_by = ROOT
 		}
 	}
@@ -510,7 +540,13 @@ country_event = {
 			}
 			random_owned_province = {
 				limit = {
-					region = indonesia_region
+					OR = {
+					    region = indonesia_region
+						region = riau_islands_region
+						region = nusa_tenggara_region
+						region = borneo_region
+						region = celebes_region
+					}
 					controlled_by = ROOT
 				}
 				save_event_target_as = maj_pretender_province
@@ -612,7 +648,13 @@ country_event = {
 		}
 		has_country_flag = maj_accepted_muslim_help
 		any_owned_province = {
-			region = indonesia_region
+			OR = {
+			    region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
+				region = borneo_region
+				region = celebes_region
+			}
 			NOT = { religion = sunni }
 			OR = {
 				has_port = yes
@@ -627,7 +669,13 @@ country_event = {
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
-					region = indonesia_region
+					OR = {
+					    region = indonesia_region
+						region = riau_islands_region
+						region = nusa_tenggara_region
+						region = borneo_region
+						region = celebes_region
+					}
 					NOT = { religion = sunni }
 					OR = {
 						has_port = yes

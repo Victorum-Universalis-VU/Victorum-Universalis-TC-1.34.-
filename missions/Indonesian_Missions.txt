@@ -113,7 +113,10 @@ indonesians_3 = {
 		icon = mission_asian_cannon
 		required_missions = { indonesia_unite_nusantara }
 		provinces_to_highlight = {
-			region = indo_china_region
+			OR = {
+			    region = indo_china_region
+			    region = south_china_sea_islands_region
+			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
@@ -121,7 +124,10 @@ indonesians_3 = {
 				amount = 50
 				all_province = {
 					country_or_non_sovereign_subject_holds = ROOT
-					region = indo_china_region
+					OR = { 
+					    region = indo_china_region 
+						region = south_china_sea_islands_region
+					}
 				}
 			}
 		}
@@ -245,6 +251,7 @@ indonesians_4 = {
 								area = north_tenasserim_area
 								area = malaya_area
 								area = indonesian_islands_area
+								area = riau_islands_area
 								area = kedah_area
 								area = malacca_area
 							}
@@ -255,6 +262,7 @@ indonesians_4 = {
 						area = north_tenasserim_area
 						area = malaya_area
 						area = indonesian_islands_area
+						area = riau_islands_area
 						area = kedah_area
 						area = malacca_area
 					}
@@ -426,6 +434,7 @@ indonesians_4 = {
 								area = north_tenasserim_area
 								area = malaya_area
 								area = indonesian_islands_area
+								area = riau_islands_area
 								area = kedah_area
 								area = malacca_area
 							}
@@ -444,6 +453,10 @@ indonesians_4 = {
 						religion = ROOT
 					}
 					indonesian_islands_area = {
+						type = all
+						religion = ROOT
+					}
+					riau_islands_area = {
 						type = all
 						religion = ROOT
 					}
@@ -570,6 +583,10 @@ indonesians_4 = {
 			OR = {
 				region = moluccas_region
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
+				region = borneo_region
+				region = celebes_region
 				region = malaya_region
 			}
 		}
@@ -583,6 +600,10 @@ indonesians_4 = {
 						OR = {
 							region = moluccas_region
 							region = indonesia_region
+							region = riau_islands_region
+							region = nusa_tenggara_region
+							region = borneo_region
+							region = celebes_region
 							region = malaya_region
 						}
 					}
@@ -622,6 +643,13 @@ indonesians_4 = {
 		}
 		effect = {
 			indo_china_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_china_sea_islands_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }

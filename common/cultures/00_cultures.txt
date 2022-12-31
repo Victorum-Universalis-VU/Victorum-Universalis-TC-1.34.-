@@ -1393,7 +1393,7 @@ scandinavian = { #Nordic
 	graphical_culture = westerngfx
 
 	swedish = {
-        graphical_culture = westerngfx
+	    graphical_culture = westerngfx
 		primary = SWE
 		country = {  }
 		province = { local_has_carolean = yes }
@@ -1474,7 +1474,7 @@ british	= {
 	graphical_culture = westerngfx
 
 	english = {
-            graphical_culture = westerngfx
+        graphical_culture = westerngfx
 		primary = ENG
 		dynasty_names = {
 			Plantagenet Lancaster York Tudor Dudley Mowbray Beaufort Neville Percy Howard Seymour Holland 
@@ -1502,7 +1502,86 @@ british	= {
 		}
 	}
 	american = {
-            graphical_culture = westerngfx
+        graphical_culture = westerngfx
+		primary = USA
+		male_names = {
+			Abraham Aaron Alexander Atticus August Andrew Anthony Angus Allen Alvin Albert Ambrose Arthur
+			Buford Benjamin Benedict Bernard Bartholomew Brigham Braxton Barnabas
+			Charles Christopher Casey Clarence Clark Calvin Chester
+			David Donald Daniel Duncan
+			Eric Elbridge Eugene Ernest Edmund Earl Ezra
+			Francis Frederick Ferdinand
+			George Gregory Gerald Grover Gordon
+			Humphrey Howard Hector Harold Horatio Henry
+			Isaac Ian Irving
+			Joseph Jeffrey John Jebediah James Jacob Julius Julian Justin Josiah Joshua
+			Leonard Louis Lawrence Leland Luke Lionel Lorenzo Lamont Lyman
+			Moses Michael Mark Martin Milton Merriweather
+			Nathaniel Noah Nehemiah Nicholas
+			Oliver Obadiah Orville Owen
+			Philip Peter Paul Patrick
+			Rutherford Robert Richard Ronald Rufus Rhett
+			Samuel Stephen Sampson Sylvester
+			Theodore Thomas Timothy
+			Upton Ulysses
+			Victor Vincent
+			William Walter Winfield Wilbur Wallace Walker
+			Zachary
+		}
+		female_names = {
+			Anne Amanda Ada April Amphyllis Abigail Alice Adell Amelia Antoinette Arabella Alma Agnes Agatha
+			Barbara Brigit Blanche Bertha Belle
+			Caroline Charlotte Christine Catharine Clementine Clara Constance Claudia Carrie Cora
+			Dolley Dorothy Deborah Daisy Doris
+			Edith Evangeline Elizabeth Esther Emily Emma Ernestine Ethel
+			Flora Frances Florence
+			Gladys Gloria Grace Gertrude
+			Heather Hannah Hermina Harriet Helen Hortense Hope
+			Ida Isabella
+			Joan Jane Julia Josephine
+			Laura Lucy Lydia Lillie Lena
+			Michelle Mary Marta Muriel Mildred Margaret Mercy Mathilda Marion Madeline Marilla Mabel
+			Nancy Noami Nell
+			Olympia
+			Prudence Patricia Pauline Patience Pamela Phoebe Paula
+			Rachel Rebecca Rhoda Rosalie Ruth Rosa
+			Scarlett Sarah Sally Sylvia Susanna Sybil Susa Sophia
+			Tabitha Theodora
+			Victoria Virginia Verina Valeria
+			Winifred
+			Zerelda
+		}
+		dynasty_names = {
+			Austin Anderson Adams Armstrong Astor Albright Ayers Arnold Armistead
+			Boone Bannister Brown Buchanan Bacon Bryant Barclay Butler Brooks Bowie Bagge Berlin Baird Baker
+			Banks Banning Bailey Booth Barnum Barlett Bates Boyle Buell Burnside Burr
+			Coolidge Chamberlain Crockett Cooper Carpenter Coles Coffey Clemens Cleveland Cass Curley 
+			Custis Curtiss Clinch Cranston Call Canby Crawford Corbin Clothsoff Chapman Chesterfield Chester
+			Davis Daniels Dolan Durant Dewitt Dent Drake Dilworth Drake Dillard
+			Early Evans Eppes Edwards Edward Ellington
+			Findlay Franklin Ford Featherstone Fitzgerald Firefly Fox Fillmore
+			Garrett Gurney Grant Gibson Garfield Gage Gallatin Gorslin
+			Harding Hayes Hamilton Hughes Hart Harrison Hannegan Hill Hicks Holly Hammer Harney
+			Hancock Hawkins Harris Hunt Hunter Huntington
+			Jackson Jefferson Jones Jennings Johnson Jessup Jay Joslyn
+			Kirkpatrick Key Kent Kearney Knight
+			Lee Lincoln Langley Lovelace London Larned Lewis
+			Monroe Madison McKinley Meade Morganson McNeely Miller McClellan Mulhouse May Malone McCarthy
+			McGivney McGregor Morris Mason McCauley McCockiner McRory McGowan McCallister
+			Owens "O'Hara" Oswald "O'Neill"
+			Peck Peterson Peel Poole Pierce Pickett Palmer Payne Penn Parton Parker
+			Rogers Richardson Roberts Reed Rice Ratliffe Randolph Revere Ross
+			Scott Stevens Smith Sanders Simmons Stuart Stewart Sousa
+			Sullivan Sherman Sheridan Stuyvesant Short Shaftoe
+			Taft Thompson Tweed Taylor Todd Temple Trump Twiggs Totten Tuttle Twigden
+			Vane Vance Victor Vayne Viktor
+			Washington Wayne Wilson Wood Williams Whitney Waldron Wolfe Wright Wyatt Worsam Wilkes Wythe
+			Waterhouse
+			Young Yelverton Youngs
+		}
+	}
+	dixie = { #Dixie
+        graphical_culture = westerngfx
 		primary = USA
 		male_names = {
 			Abraham Aaron Alexander Atticus August Andrew Anthony Angus Allen Alvin Albert Ambrose Arthur
@@ -1581,7 +1660,7 @@ british	= {
 		}
 	}
 	scottish = {
-            graphical_culture = westerngfx
+        graphical_culture = westerngfx
 		primary = SCO
 		dynasty_names = { 
 			Stuart Stewart Campbell Lennox Murray Graham Gordon Erskine Leslie
@@ -1731,6 +1810,726 @@ british	= {
 		female_names = {
 			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
 			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria Jacinda Helen Jenny
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_tanzanian = { #Tanzanian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_kenyan = { #Kenyan
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_nigerian = { #Nigerian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_ivorian = { #Ivorian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_sierra_leonean = { #Sierra Leonean
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_gambian = { #Gambian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_indian = { #Indian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_malayan = { #Malayan
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_indochinese = { #Indochinese
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_ghanaian = { #Ghanaian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_rhodesian = { #Rhodesian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_indonesian = { #Indonesian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_trinidad_and_tobago = { #Trinbagonians
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_jamaican = { #Jamaican
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_barbadian = { #Barbadian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_bahamian = { #Bahamian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_st_lucians = { #Lucians
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_st_vincent_and_the_grenadines = { #Vincentians
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_antiguan = { #Antiguan
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_anguillan = { #Anguillian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_turks_and_caicos = { #Belongers
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_belizeans = { #Belizeans
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_papuan = { #Papuan
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_burman = { #Burman
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_arabian = { #Arabian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_egyptian = { #Egyptian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_palestinian = { #Palestinian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_fijian = { #Fijian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_togo = { #Togolese
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_samoan = { #Samoan
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_hawaiian = { #Hawaiian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_gibraltarian = { #Gibraltarian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_cyprian = { #Cyprian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_cretan = { #Cretan
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_guyanese = { #Guyanese
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_liberian = { #Liberian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
 		}
 	}
 	#ME additions
@@ -12875,7 +13674,7 @@ lost_cultures_group = {
 		}
 	}
 	norse = {
-		country = {  }
+	    country = {  }
 		province = { local_has_carolean = yes }
 		male_names = {
 			Adhalsteinn Aghi Agmundr Agnarr Áki Áleifr Alfarr Alfvin Algautr Ari Arnfinnr Árni Arnórr Arnthórr Arnvidhr Ásbjorn Ásgeirr Ásketill Ásmundr Ásvaldr Audhr Baggi Bárdhr Birgir Bjarni Bjartr Bjorn Brandr Bródhir 

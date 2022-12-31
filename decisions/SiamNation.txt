@@ -15,6 +15,7 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				region = indo_china_region
+				region = south_china_sea_islands_region
 				area = tenasserim_area
 			}
 			OR = {
@@ -38,6 +39,7 @@ country_decisions = {
 					is_core = ROOT
 					OR = {
 						region = indo_china_region
+						region = south_china_sea_islands_region
 						area = tenasserim_area
 					}
 				}
@@ -61,6 +63,13 @@ country_decisions = {
 				set_government_rank = 2
 			}
 			indo_china_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SIA
+			}
+			south_china_sea_islands_region = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { owned_by = ROOT }

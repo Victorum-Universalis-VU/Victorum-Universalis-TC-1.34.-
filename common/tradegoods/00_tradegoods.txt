@@ -523,6 +523,8 @@ fish = {
 				region = malaya_region
 				region = moluccas_region
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
 				region = borneo_region
 				region = sumatran_region
 				region = celebes_region
@@ -1553,6 +1555,8 @@ ivory = {
 				region = malaya_region
 				region = moluccas_region
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
 				region = borneo_region
 				region = sumatran_region
 				region = celebes_region
@@ -1587,7 +1591,10 @@ tea = {
 			NOT = {	region = malaya_region }
 			NOT = {	region = moluccas_region }
 			NOT = {	region = indonesia_region }
+			NOT = {	region = riau_islands_region }
+			NOT = {	region = nusa_tenggara_region }
 			NOT = { region = indo_china_region }
+			NOT = { region = south_china_sea_islands_region }
 			NOT = { region = south_china_region }
 			NOT = { region = xinan_region }
 			NOT = { region = japan_region }
@@ -1685,6 +1692,8 @@ chinaware = {
 			factor = 0
 			NOT = {	region = malaya_region }
 			NOT = {	region = indonesia_region }
+			NOT = {	region = riau_islands_region }
+			NOT = {	region = nusa_tenggara_region }
 			NOT = { region = south_china_region }
 			NOT = { region = japan_region }
 			NOT = { region = borneo_region }
@@ -1724,6 +1733,8 @@ spices = {
 			NOT = {	region = malaya_region }
 			NOT = {	region = moluccas_region }
 			NOT = {	region = indonesia_region }
+			NOT = {	region = riau_islands_region }
+			NOT = {	region = nusa_tenggara_region }
 			NOT = { region = deccan_region }
 			NOT = { region = bengal_region }
 			NOT = { region = coromandel_region }
@@ -1752,6 +1763,8 @@ spices = {
 				region = malaya_region
 				region = moluccas_region
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
 				region = borneo_region
 				region = sumatran_region
 				region = celebes_region
@@ -1781,6 +1794,8 @@ coffee = {
 			NOT = { area = shewa_area }
 			NOT = {	region = malaya_region }
 			NOT = { region = indonesia_region }
+			NOT = {	region = riau_islands_region }
+			NOT = {	region = nusa_tenggara_region }
 			NOT = { region = moluccas_region }
 			NOT = { region = la_plata_region }
 			NOT = { region = peru_region }
@@ -2231,6 +2246,8 @@ tropical_wood = {
 				region = malaya_region
 				region = moluccas_region
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
 				region = borneo_region
 				region = sumatran_region
 				region = celebes_region
@@ -2377,6 +2394,8 @@ incense = {
 			NOT = {	region = malaya_region }
 			NOT = {	region = moluccas_region }
 			NOT = {	region = indonesia_region }
+			NOT = {	region = riau_islands_region }
+			NOT = {	region = nusa_tenggara_region }
 			NOT = { region = deccan_region }
 			NOT = { region = bengal_region }
 			NOT = { region = coromandel_region }
@@ -2498,6 +2517,8 @@ gems = {
 			NOT = { region = upper_peru_region }
 			NOT = { region = colombia_region }
 			NOT = { region = indonesia_region }
+			NOT = {	region = riau_islands_region }
+			NOT = {	region = nusa_tenggara_region }
 			NOT = { region = moluccas_region }
 			NOT = { region = hindusthan_region }
 			NOT = { region = west_india_region }
@@ -2505,6 +2526,7 @@ gems = {
 			NOT = { region = deccan_region }
 			NOT = { region = coromandel_region }
 			NOT = { region = indo_china_region }
+			NOT = { region = south_china_sea_islands_region }
 			NOT = { region = borneo_region }
 			NOT = { region = sumatran_region }
 			NOT = { region = celebes_region }
@@ -2619,6 +2641,8 @@ gems = {
 			factor = 0.75
 			OR = {
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
 				continent = oceania
 				continent = north_america			#Gems were occuring far too often without this
 			}

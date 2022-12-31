@@ -1,8 +1,8 @@
 government = monarchy
 add_government_reform = nayankara_reform
-primary_culture = kannada
-religion = hinduism
 technology_group = indian
+religion = hinduism
+primary_culture = kannada
 capital = 541	# Vijayanagara
 
 change_brahmins_or_church_land_share_effect = {

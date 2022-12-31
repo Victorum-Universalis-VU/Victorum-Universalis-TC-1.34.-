@@ -418,6 +418,7 @@ mug_towards_china = {
 				area = yun_gui_borderland_area
 				area = yun_gui_area
 				area = vietnam_area
+				area = south_china_sea_islands_area
 				area = guangxi_area
 				area = west_guangdong_area
 				area = guangdong_area
@@ -435,6 +436,10 @@ mug_towards_china = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			vietnam_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_china_sea_islands_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -910,6 +915,24 @@ mug_ganges_branch = {
 				}
 				add_permanent_claim = ROOT
 			}
+			riau_islands_area = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
+			south_china_sea_islands_area = {
+				limit = {
+					NOT = {
+						is_permanent_claim = ROOT
+						is_core = ROOT
+					}
+				}
+				add_permanent_claim = ROOT
+			}
 			vietnam_area = {
 				limit = {
 					NOT = {
@@ -966,6 +989,7 @@ mug_ganges_branch = {
 				area = kedah_area
 				area = malacca_area
 				area = indonesian_islands_area
+				area = riau_islands_area				
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -983,6 +1007,10 @@ mug_ganges_branch = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			indonesian_islands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			riau_islands_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}

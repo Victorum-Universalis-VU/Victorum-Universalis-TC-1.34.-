@@ -231,6 +231,16 @@ merchants_reform = {
 	modifiers = {
 		max_absolutism = -50
 		merchants = 1
+		trade_deals_slots = 0.01
+		total_liberalism_modifier = 0.20
+	}
+	effect = {
+		GE_remove_liberalism = yes
+		GE_set_liberalism = yes
+	}
+	removed_effect = {
+		GE_remove_liberalism = yes
+		GE_set_liberalism = yes
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -242,10 +252,9 @@ merchants_reform = {
 				NOT = { map_setup = map_setup_random }
 			}
 		}
-		# Same as above - disabled unless needed.
-		# NOT = { has_reform = crown_colony_government }
-		# NOT = { has_reform = private_enterprise_colony_government }
-		# NOT = { has_reform = self_governing_colony_government }
+		NOT = { has_reform = crown_colony_government }
+		NOT = { has_reform = private_enterprise_colony_government }
+		NOT = { has_reform = self_governing_colony_government }
 	}
 	trigger = {
 		OR = {
@@ -288,7 +297,6 @@ merchants_reform = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
 		is_merchant_republic = yes
-		elections_increase_factions_influence = yes
 	}
 	ai = {
 		factor = 0.75 #generic
@@ -321,9 +329,19 @@ venice_merchants_reform = {
 	icon = "trading_city"
 	allow_normal_conversion = yes
 	modifiers = {
-		max_absolutism = -50
+		max_absolutism = -10
 		merchants = 1
 		yearly_corruption = -0.1
+		trade_deals_slots = 0.02
+		total_liberalism_modifier = 0.20
+	}
+	effect = {
+		GE_remove_liberalism = yes
+		GE_set_liberalism = yes
+	}
+	removed_effect = {
+		GE_remove_liberalism = yes
+		GE_set_liberalism = yes
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -374,8 +392,6 @@ venice_merchants_reform = {
 		lottery_election = yes
 		election_on_death = yes
 		is_merchant_republic = yes
-		elections_increase_factions_influence = yes
-		bonus_stats_for_elected_ruler = yes
 	}
 	has_term_election = no
 }
@@ -838,8 +854,9 @@ free_city = {
 	modifiers = {
 		trade_efficiency = 0.1
 		development_cost = -0.1
-		diplomatic_upkeep = 1
+		max_absolutism = 20
 		burghers_influence_modifier = 0.15
+		trade_deals_slots = 0.01
 	}
 	fixed_rank = 1
 
@@ -950,8 +967,18 @@ veche_republic = {
 	}
 	modifiers = {
 		merchants = 1
-		governing_capacity = 100 # Vanilla: 50
-		max_absolutism = -50
+		governing_capacity = 50
+		max_absolutism = -10
+		trade_deals_slots = 0.01
+		total_liberalism_modifier = 0.20
+	}
+	effect = {
+		GE_remove_liberalism = yes
+		GE_set_liberalism = yes
+	}
+	removed_effect = {
+		GE_remove_liberalism = yes
+		GE_set_liberalism = yes
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -967,7 +994,6 @@ veche_republic = {
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
-		elections_increase_factions_influence = yes
 	}
 	conditional = {
 		allow = {
@@ -1640,18 +1666,26 @@ dutch_republic = {
 	modifiers = {
 		heavy_ship_power = 0.1
 		trade_efficiency = 0.1
-		governing_capacity = 100 #Vanilla: 50
-		max_absolutism = -30
+		governing_capacity = 50
+		max_absolutism = 10
+		trade_deals_slots = 0.01
+		total_liberalism_modifier = 0.20
 	}
-	
+	effect = {
+		GE_remove_liberalism = yes
+		GE_set_liberalism = yes
+	}
+
 	removed_effect = {
+		GE_remove_liberalism = yes
+		GE_set_liberalism = yes
 		if = {
 			# Monarchs seize power
 			limit = { government = monarchy }
 			country_event = { id = dutch_republic.33 }
 		}
 	}
-
+	
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
@@ -1674,10 +1708,6 @@ dutch_republic = {
 				republican_tradition = -1
 			}
 		}
-	}
-	conditional = {
-		allow = { has_dlc = "Common Sense" }
-		has_parliament = yes
 	}
 	duration = 4
 }
@@ -2521,22 +2551,23 @@ administrative_divisions_reform = {
 union_of_states_reform = {
 	icon = "merchant_ship"
 	allow_normal_conversion = yes
-	potential = {
-		NOT = { has_government_attribute = is_pirate_republic_reform }
+	effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Plutocrat_Influence
+			value = -1
+		}
 	}
 	modifiers = {
 		global_trade_power = 0.1
+		merchants = 1
+		trade_deals_slots = 0.01
 	}
-	conditional = {
-		allow = {
-			has_dlc = "Res Publica"
-		}
-		can_use_trade_post = yes
-	}
-	trigger = {
-		NOT = { has_government_attribute = is_pirate_republic_reform }
-	}
-	boost_income = yes
 	ai = {
 		factor = 1
 		modifier = {

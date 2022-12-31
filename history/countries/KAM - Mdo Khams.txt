@@ -1,5 +1,5 @@
 government = tribal
-add_government_reform = tribal_kingdom
+add_government_reform = life_on_the_plateau_reform
 primary_culture = tibetan
 religion = tantra
 technology_group = chinese

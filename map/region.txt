@@ -1434,13 +1434,10 @@ malaya_region = {	#Western Indonesia Malaya.
 	}
 }
 
-
 moluccas_region = {
 	areas = {
 		molluca_area
-		timor_area
 		spice_islands_area
-		lesser_sunda_islands_area			#Moved from Indonesia
 	}
 	monsoon = {
 		00.10.01
@@ -1452,7 +1449,26 @@ moluccas_region = {
 	}
 }
 
+nusa_tenggara_region = {
+	areas = {
+		timor_area
+		lesser_sunda_islands_area
+	}
+	monsoon = {
+		00.10.01
+		00.12.30
+	}
+	monsoon = {
+		00.01.01
+		00.03.30
+	}
+}
 
+south_china_sea_islands_region = {
+	areas = {
+	    south_china_sea_islands_area
+	}
+}
 
 indonesia_region = { #Eastern Indonesian/Malayan Islands.
 	areas = {
@@ -1831,10 +1847,10 @@ new_zealand_region = {
 
 borneo_region = {
 	areas = {
-		kutai_area
 		brunei_area
 		kalimantan_area
 		sabah_area #TCOP addition 1.31.2
+		kutai_area
 		#BTADDITIONS
 		kapuas_area
 	}
@@ -1847,6 +1863,22 @@ borneo_region = {
 		00.03.30
 	}
 }
+
+#VU Addition
+riau_islands_region = {
+	areas = {
+		riau_islands_area
+	}
+	monsoon = {
+		00.10.01
+		00.12.30
+	}
+	monsoon = {
+		00.01.01
+		00.03.30
+	}
+}
+
 
 sumatran_region = {
 	areas = {
@@ -2031,7 +2063,7 @@ south_indian_ocean_region = {
 
 south_china_sea_region = {
 	areas = {
-	    south_china_sea_area
+		south_china_sea_area
 	}
 }
 

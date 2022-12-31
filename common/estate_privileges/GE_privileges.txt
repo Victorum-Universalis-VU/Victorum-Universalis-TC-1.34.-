@@ -1596,35 +1596,41 @@ estate_jews_jewish_quarters = {
 	on_granted = {
 		custom_tooltip = estate_jews_jewish_quarters_effect_tooltip
 	}
-	#on_granted_province = { #commented out for now by San Felipe
-	#	limit = {
-	#		OR = {
-	#			development = 20
-	#			is_capital = yes
-	#		}
-	#	}
-	#	add_base_tax = 1
-	#	add_province_modifier = {
-	#		name = GE_jewish_quarter #+2.5 Base Trade Power, 
-	#		duration = -1
-	#	}
-	#}
+	on_granted_province = {
+		if = {
+		    limit = {
+				OR = {
+		    	   	development = 20
+		    	   	is_capital = yes
+		    	}
+		    }
+			add_base_tax = 1
+			add_province_modifier = {
+				name = GE_jewish_quarter
+				duration = -1
+			}
+		}
+	}
 	on_revoked = {
 		custom_tooltip = estate_jews_jewish_quarters_revoke_tooltip
 	}
 	on_revoked_province= {
-		limit = {
-			has_province_modifier = GE_jewish_quarter
+		if = {
+		    limit = {
+				has_province_modifier = GE_jewish_quarter
+		    }
+			add_base_tax = -1
+			remove_province_modifier = GE_jewish_quarter
 		}
-		add_base_tax = -1
-		remove_province_modifier = GE_jewish_quarter
 	}
 	on_invalid_province = {
-		limit = {
-			has_province_modifier = GE_jewish_quarter
+		if = {
+		    limit = {
+				has_province_modifier = GE_jewish_quarter
+		    }
+			add_base_tax = -1
+		    remove_province_modifier = GE_jewish_quarter
 		}
-		add_base_tax = -1
-		remove_province_modifier = GE_jewish_quarter
 	}
 	penalties = {
 	}

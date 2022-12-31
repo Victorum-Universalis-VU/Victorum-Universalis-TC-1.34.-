@@ -152,6 +152,8 @@ whaling = {
 					NOT = { region = cascadia_region }
 					NOT = { region = moluccas_region }
 					NOT = { region = indonesia_region }
+					NOT = {	region = riau_islands_region }
+					NOT = {	region = nusa_tenggara_region }
 					NOT = { region = carribeans_region }
 					NOT = { region = northeast_america_region }
 					NOT = { region = southeast_america_region }
@@ -179,6 +181,8 @@ whaling = {
 			OR = {
 				region = moluccas_region
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
 			}
 		}
 
@@ -381,6 +385,7 @@ opium = {
 					region = khorasan_region
 					region = burma_region
 					region = indo_china_region
+					region = south_china_sea_islands_region
 					region = xinan_region
 				}
 			}
@@ -1097,6 +1102,8 @@ seafood = {
 				region = malaya_region
 				region = moluccas_region
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
 			}
 		}
 		modifier = {
@@ -1281,6 +1288,8 @@ pearls = {
 				OR = {
 					region = moluccas_region
 					region = indonesia_region
+					region = riau_islands_region
+					region = nusa_tenggara_region
 					continent = oceania
 				}
 			}
@@ -1294,6 +1303,14 @@ pearls = {
 		modifier = {
 			factor = 0.75
 			region = indonesia_region
+		}
+		modifier = {
+			factor = 0.75
+			region = riau_islands_region
+		}
+		modifier = {
+			factor = 0.75
+			region = nusa_tenggara_region
 		}
 		modifier = {
 			factor = 0.5
@@ -1466,6 +1483,8 @@ ebony = {
 				region = malaya_region
 				region = moluccas_region
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
 
 				AND = {
 					continent = africa
@@ -1480,6 +1499,8 @@ ebony = {
 				region = malaya_region
 				region = moluccas_region
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
 
 				AND = {
 					continent = africa
@@ -2091,6 +2112,8 @@ sea_turtle = {
 				region = malaya_region
 				region = moluccas_region
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
 			}
 		}
 		modifier = {
@@ -2466,6 +2489,8 @@ copra = {
 				region = malaya_region
 				region = moluccas_region
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
 				region = borneo_region
 				region = sumatran_region
 				region = celebes_region
@@ -2706,6 +2731,8 @@ diamonds = {
 			NOT = { region = upper_peru_region }
 			NOT = { region = colombia_region }
 			NOT = { region = indonesia_region }
+			NOT = {	region = riau_islands_region }
+			NOT = {	region = nusa_tenggara_region }
 			NOT = { region = moluccas_region }
 			NOT = { region = hindusthan_region }
 			NOT = { region = west_india_region }
@@ -2713,6 +2740,7 @@ diamonds = {
 			NOT = { region = deccan_region }
 			NOT = { region = coromandel_region }
 			NOT = { region = indo_china_region }
+			NOT = { region = south_china_sea_islands_region }
 			NOT = { region = borneo_region }
 			NOT = { region = sumatran_region }
 			NOT = { region = celebes_region }
@@ -2827,6 +2855,8 @@ diamonds = {
 			factor = 0.75
 			OR = {
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
 				continent = oceania
 				continent = north_america			#Gems were occuring far too often without this
 			}

@@ -80,6 +80,7 @@ plutocratic_reform = {
 		nobles_influence_modifier = -0.05
 		burghers_influence_modifier = 0.05
 		vaisyas_influence_modifier = 0.05
+		trade_deals_slots = 0.01
 	}
 	custom_attributes = {
 		enables_plutocratic_idea_group = yes
@@ -2825,6 +2826,18 @@ blackmail_nobility_reform = {
 enforce_trader_privileges_reform = {
 	icon = "paper_money_map"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		is_reform_available = plutocratic_reform
 		OR = {
@@ -2840,6 +2853,7 @@ enforce_trader_privileges_reform = {
 	modifiers = {
 		trade_range_modifier = 0.3
 		trade_efficiency = 0.05
+		trade_deals_slots = 0.01
 	}
 	ai = {
 		factor = 2
@@ -2859,6 +2873,18 @@ enforce_trader_privileges_reform = {
 bengali_reform = {
 	icon = "merchant_ship"
 	allow_normal_conversion = yes
+	effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = 1
+		}
+	}
+	removed_effect = {
+		change_variable = {
+			which = Burgher_Influence
+			value = -1
+		}
+	}
 	potential = {
 		has_dlc = "Dharma"
 		primary_culture = bengali
@@ -2867,6 +2893,7 @@ bengali_reform = {
 	modifiers = {
 		merchants = 1
 		trade_efficiency = 0.1
+		trade_deals_slots = 0.01
 	}
 	ai = {
 		factor = 5

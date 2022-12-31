@@ -131,6 +131,7 @@ mnd_maj_1 = {
 						area = malaya_area
 						area = tenasserim_area
 						area = indonesian_islands_area
+						area = riau_islands_area
 					}
 					NOT = {
 						country_or_non_sovereign_subject_holds = ROOT
@@ -163,6 +164,7 @@ mnd_maj_1 = {
 						area = malaya_area
 						area = tenasserim_area
 						area = indonesian_islands_area
+						area = riau_islands_area
 					}
 				}
 			}
@@ -380,6 +382,7 @@ mnd_maj_2 = {
 		provinces_to_highlight = {
 			OR = {
 				region = indo_china_region
+				region = south_china_sea_islands_region
 				region = burma_region
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -391,6 +394,7 @@ mnd_maj_2 = {
 					country_or_non_sovereign_subject_holds = ROOT
 					OR = {
 						region = indo_china_region
+						region = south_china_sea_islands_region
 						region = burma_region
 					}
 				}
