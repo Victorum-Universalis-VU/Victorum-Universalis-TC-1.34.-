@@ -1907,25 +1907,25 @@ dan_sweden_and_great_power_mission_slot = {
 			hidden_effect = {
 				1361 = {
 					every_trade_node_member_country = {
-						limit = { 1361 = { trade_share = { country = PREV share = 5 } } NOT = { tag = ROOT } capital_scope = { OR = { region = malaya_region region = indonesia_region region = moluccas_region } } }
+						limit = { 1361 = { trade_share = { country = PREV share = 5 } } NOT = { tag = ROOT } capital_scope = { OR = { region = malaya_region region = indonesia_region region = moluccas_region region = riau_islands_region region = nusa_tenggara_region region = borneo_region region = celebes_region } } }
 						country_event = { id = flavor_dan.108 }
 					}
 				}
 				1365 = {
 					every_trade_node_member_country = {
-						limit = { 1365 = { trade_share = { country = PREV share = 5 } } NOT = { tag = ROOT } capital_scope = { OR = { region = malaya_region region = indonesia_region region = moluccas_region } } }
+						limit = { 1365 = { trade_share = { country = PREV share = 5 } } NOT = { tag = ROOT } capital_scope = { OR = { region = malaya_region region = indonesia_region region = moluccas_region region = riau_islands_region region = nusa_tenggara_region region = borneo_region region = celebes_region } } }
 						country_event = { id = flavor_dan.108 }
 					}
 				}
 				1357 = {
 					every_trade_node_member_country = {
-						limit = { 1357 = { trade_share = { country = PREV share = 5 } } NOT = { tag = ROOT } capital_scope = { OR = { region = malaya_region region = indonesia_region region = moluccas_region } } }
+						limit = { 1357 = { trade_share = { country = PREV share = 5 } } NOT = { tag = ROOT } capital_scope = { OR = { region = malaya_region region = indonesia_region region = moluccas_region region = riau_islands_region region = nusa_tenggara_region region = borneo_region region = celebes_region } } }
 						country_event = { id = flavor_dan.108 }
 					}
 				}
 				1397 = {
 					every_trade_node_member_country = {
-						limit = { 1397 = { trade_share = { country = PREV share = 5 } } NOT = { tag = ROOT } capital_scope = { OR = { region = malaya_region region = indonesia_region region = moluccas_region } } }
+						limit = { 1397 = { trade_share = { country = PREV share = 5 } } NOT = { tag = ROOT } capital_scope = { OR = { region = malaya_region region = indonesia_region region = moluccas_region region = riau_islands_region region = nusa_tenggara_region region = borneo_region region = celebes_region } } }
 						country_event = { id = flavor_dan.108 }
 					}
 				}

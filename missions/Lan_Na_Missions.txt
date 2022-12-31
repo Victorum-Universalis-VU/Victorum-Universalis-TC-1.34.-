@@ -99,7 +99,10 @@ lna_1 = {
 		icon = mission_rice_field
 		required_missions = { }
 		provinces_to_highlight = {
-			region = indo_china_region
+			OR = {
+			    region = indo_china_region
+				region = south_china_sea_islands_region
+			}
 			trade_goods = grain
 			OR = {
 				NOT = { has_building = farm_estate }
@@ -109,7 +112,10 @@ lna_1 = {
 		trigger = {
 			num_of_owned_provinces_with = {
 				value = 4
-				region = indo_china_region
+				OR = {
+				    region = indo_china_region
+					region = south_china_sea_islands_region
+				}
 				has_building = farm_estate
 				trade_goods = grain
 			}

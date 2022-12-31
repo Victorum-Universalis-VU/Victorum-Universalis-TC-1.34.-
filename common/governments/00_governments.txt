@@ -6,10 +6,14 @@
 #respective gov file. It should also not crash the game if reforms are not being used in-game.
 #Many thanks to you all - San Felipe.
 
+#reforms turned off for VU
+#parliamentary_monarchy
+
 monarchy = {
 	reform_levels = {
 		feudalism_vs_autocracy = {
 			reforms = {
+		    #   Start_Of_EU4_Vanilla_additions
 				feudalism_reform
 				autocracy_reform
 				plutocratic_reform
@@ -19,9 +23,7 @@ monarchy = {
 				rajput_kingdom
 				negusa_nagast
 				solomonic_empire
-				#Specific:
 				chinese_warlord
-				american_monarchy
 				grand_duchy_reform
 				daimyo
 				indep_daimyo
@@ -37,31 +39,17 @@ monarchy = {
 				celestial_empire
 				shogunate
 				english_monarchy
-				scottish_monarchy
 				mandala_reform
 				revolutionary_empire_reform
 				holy_state_reform
 				austrian_archduchy_reform
-				#Start of BT additions
-				irish_clann_reform
-				provincial_kingdom_reform
-				norman_lordship_reform
-				norman_duchy_reform
-				anglo_irish_monarchy_reform
-				tanistry_reform
-				bt_ayyubid_sultanate_reform
-				#End of BT Additions
-				#Start of EU4 Leviathan Dlc additions
 				siamese_absolutism
 				confucian_bureaucracy
 				musa_rule
 				mossi_federal_kingdom
-				#End of EU4 Leviathan Dlc additions
-				#Start of Lions of the North Dlc
 				kalmar_union
 				danish_archkingdom
 				norwegian_parliamentary_monarchy
-				#Never again
 				livonian_military_monarchy
 				livonian_naval_monarchy
 				livonian_trade_monarchy
@@ -77,14 +65,23 @@ monarchy = {
 				livonian_general_controlled_monarchy
 				livonian_absolute_monarchy
 				livonian_enlightened_monarchy
-				#Again
 				polish_great_sejm
 				polish_elective_monarchy
 				polish_autocratic_monarchy
 				lithuanian_grand_kingdom
 				lithuanian_grand_empire
-				#End of Lions of the North Dlc
-				#Start of VU Additions
+				polynesian_kingdom
+		    #   End_of_EU4_Vanilla_additions
+		    #	Start_of_BT_VU_and_other_additions
+				irish_clann_reform
+				provincial_kingdom_reform
+				norman_lordship_reform
+				norman_duchy_reform
+				anglo_irish_monarchy_reform
+				tanistry_reform
+				bt_ayyubid_sultanate_reform
+				scottish_monarchy
+		        american_monarchy
 				welsh_principality
 				western_principality
 				belgian_kingdom_reform
@@ -94,24 +91,15 @@ monarchy = {
 				french_monarchic_restoration_reform
 				french_orleanist_restoration_reform
 				second_french_empire_reform
-				#parliamentary_monarchy
+		    #	parliamentary_monarchy
 				restoration_reform
 				late_byzantine_gov_reform
 				crusader_state_vu_reform
-				#End of VU Additions
-				#ME
-				#crusader_kingdom
-				#khaganate
-				#athenian_monarchy
-				#german_kaiserreich
-				#caliphate_reform_sunni
-				#west_slavic_monarchy
-				#GE
-				#Generics
+		    #	End_of_BT_VU_and_other_additions
+		    #	GE
 				elective_monarchy_reform
 				arch_monarchy_reform
 				french_feudalism
-				#french_reformed_feudalism
 				ancien_regime_reform
 				french_absolutism
 				lithuania_warlord_duke
@@ -135,8 +123,8 @@ monarchy = {
 				habsburg_monarchy_reform
 				austrian_empire_reform
 				polish_constitutionalism_reform
-				granadan_iqta_reform 
-				#achaemenid_empire_reform
+				granadan_iqta_reform
+				achaemenid_empire_reform
 				hessian_militarized_monarchy_reform
 				hessian_modern_militarized_monarchy_reform
 				edo_empire_reform
@@ -147,26 +135,30 @@ monarchy = {
 				despotate_of_caucasia_reform
 				sharifate_reform
 				rum_eagle_reform
-				#high_king_of_ireland_reform
+		    	high_king_of_ireland_reform
 				hermit_kingdom_reform
 				consulate_of_the_malay
 				basic_reformed_mandala_reform
 				solar_kingdom_reform
 				despotate_of_serbia_reform
 				serbian_empire_reform
-				#1.13
+		    #	1.13
 				kingdom_of_sicily_reform
 				tsardom_of_bulgaria_reform
 				united_holy_roman_empire_reform
-				#1.14
+		    #	1.14
 				duchy_of_luxembourg_reform
 				emirate_of_andalusia_reform
-				#1.15
+		    #	1.15
 				mantua_house_of_gonzaga_reform
 				tanistry_reform
-				#1.16
+		    #	1.16
 				kingdom_of_gao_reform
-				#ML8991
+				kingdom_of_sardinia_reform
+			#   1.18
+				klever_union_reform
+				life_on_the_plateau_reform
+		    #	ML8991
 				anglois_dual_monarchy
 			}
 		}
@@ -184,39 +176,32 @@ monarchy = {
 				black_army_reform
 				legion_of_honor_reform
 				imperial_nobility_reform
-				#Start of EU4 Leviathan Dlc additions
 				uparaja_reform
-				#End of EU4 Leviathan Dlc
-				#Start of Lions of the North Dlc
 				grant_noble_castle_rights_reform
 				maintain_nobles_status_quo_reform
 				grant_nobles_electorate_reform
 				blackmail_nobility_reform
 				grant_military_command_reform
-				#End of Lions of the North Dlc
-				#ME
-				#sharia_reform
-				#GE
-				#Religous
+		    #	GE
+				papal_embassy_GE_reform
 				state_church_reform
 				metropolian_bishop_reform
 				elevated_landed_gentry_reform
-				#Generic
-				city_privileges_reform #1.15
+		    #   1.15
+				city_privileges_reform
 				nobi_jongmobub_reform
 				nobi_jongbubub_reform
-				#diplomatic_positions_reform
+				diplomatic_positions_reform
 				lithuania_law_reform
 				guild_dominance_reform
 				growth_signoria_reform
 				akritai_privileges_reform
-				#VU additions
 				aragonese_cortes_reform
 				portuguese_cortes_reform
 				spanish_parliamentary_monarchy
 				crusader_orders_reform
 				old_world_privileges_reform
-				#respect_union_reform
+		    	respect_union_reform
 				trade_princes_reform
 				dhimmi_nobles_reform
 				council_of_sheikhs_reform
@@ -238,7 +223,7 @@ monarchy = {
 				curia_regis_reform
 				taha_divisions_reform 
 				unite_the_royal_houses_reform
-				#words_of_cyrus_reform
+		    	words_of_cyrus_reform
 				support_ghibbelline_reform
 				support_guelphs_reform
 				franconian_salic_law_reform
@@ -249,54 +234,47 @@ monarchy = {
 				sayyid_privileges_reform
 				timariot_domains_reform
 				qadi_authority_reform
-				#clans_of_ireland_reform
+		    	clans_of_ireland_reform
 				mint_towns_reform
 				order_of_the_dragon_reform
 				buddhist_nation_reform
-				#1.13
+		    #	1.13
 				angevin_nobles_reform
 				parliament_of_sicily_reform
 				nationalized_cetas_reform
 				hussite_reform
-				#1.14
+		    #	1.14
 				gibraltar_of_the_north_reform
-				#1.15
+		    #	1.15
 				wattasid_viziers_reform
 				tribal_tribute_reform
 				guild_dominance_reform_upgrade
-				#1.16
+		    #	1.16
 				slave_farmer_reform
 				carriers_of_the_quiver_reform
+		    #   1.17
+				generic_nobles_priests_reform
 			}
 		}
 		bureaucracy = {
 			reforms = {
 				centralize_reform
-				#Start of Lions of the North Dlc
 				centralize_empire_reform
-				#End of Lions of the North Dlc
 				decentralize_reform
 				sidhi_recruitment
 				mansabdari_reform
 				council_of_the_indies_reform
 				penal_colonies_reform
 				liberte_reform
-				egalite_reform
-				#Start of EU4 Leviathan Dlc additions
 				fraternite_reform
 				examination_system_reform
 				corvee_reform
-				#Start of Lions of the North Dlc
 				expand_imperial_court_reform
 				limit_imperial_court_reform
 				regional_council_reform
 				representation_of_the_crown_reform
-				#End of Lions of the North Dlc
-				#ME
-				#tur_reform_beylerbeys
-				#tur_reform_eyalets
-				#GE
-				#Generics
+		    #	GE
+		    #	Generics
 				regional_forts_reform
 				theocratic_bureacrats_reform
 				ulema_guidance_reform 
@@ -315,7 +293,6 @@ monarchy = {
 				millet_reform
 				kaza_system_reform
 				great_law_of_peace_reform
-				#ancien_regime_reform #FRA
 				independent_vassals_reform
 				generalites_reform
 				abolish_local_parliaments_reform
@@ -330,7 +307,7 @@ monarchy = {
 				abolish_bastard_feudalism_reform
 				taifa_governors_reform 
 				union_of_italian_states_reform
-				#persian_satrapies_reform
+		    	persian_satrapies_reform
 				imperial_circles_administration_reform
 				hessian_military_complex_reform
 				office_of_vitztum_reform
@@ -343,27 +320,99 @@ monarchy = {
 				bangyesurok_reform
 				levy_the_thirthieth_reform
 				vlast_voivodes_reform
-				#1.13
+		    #	1.13
 				customs_house_of_apena_sheep_reform
 				krums_code_reform
 				vladislavs_provincial_establishment_reform
 				nahuatl_blood_sacrifices_reform
 				inti_sun_god_centralization_reform
 				inti_huaca_regionalism_reform
-				#1.14
+		    #	1.14
 				crossroads_of_cultures_reform
-				#1.15
+		    #	1.15
 				regional_kasbah_reform
 				exiled_qaids_reform
 				kingdom_of_cities_reform
-				#1.16
+		    #	1.16
 				kinsmen_governors_reform
 				farba_system_reform
+			#   1.17
+				inca_mountain_farms
+			#   1.18
+				renaissance_forts_reform
+			}
+		}
+		military_organisation = {
+			reforms = {
+				feudal_levies_reform
+				national_guard_reform
+				mercenary_corps_reform
+				landsknecht_captains_reform
+				professional_army_reform
+				empowered_royal_guard_reform
+				empowered_mercenary_corps_reform
+				empowered_heavy_knights_reform
+				italian_mercenaries_reform
+				imperial_circles_reform
+				expanded_devshirme_reform
+				tatar_mercenaries_reform
+				south_east_asian_elephants_reform
+				portugese_marines_reform
+				compagnies_dordonnance_reform
+				abolish_the_patronage_system_reform
+				royal_training_reform
+				abolish_manrent_reform
+				permanent_marathas_council_reform
+				governmental_purbias_register_reform
+				foreign_formation_regiments_reform
+				general_war_commissariat_reform
+				gustavan_artillery_reform
+				reorganize_the_imperial_army
+				arabian_horses_reform
+				pospolite_ruszenie_reform
+				polish_national_guard_reform
+				henry_reforms_reform
+				berber_cavalry_reform
+				mongol_ties_reform
+				subotai_lessons_reform
+				jinetes_reform
+				miquelet_militia_reform
+				royal_ordinances_reform
+				hessian_elite_jaegers_reform
+				warrior_kings_reform
+				snaphaner_reform
+				redcoats_reform
+				recruit_ronin_reform
+				ashigaru_generals_reform
+				wei_suo_reform
+				reforms_of_abbas_reform
+				sherifan_levies_reform
+				restore_the_komnenoid_army_reform
+				jaeseungbangryak_reform
+				five_military_force_reform
+				honor_of_thai_kingdoms_reform
+				form_the_vojstatic_reform
+		    #	1.13
+				almogavars_reform
+				nunziatella_reform
+				milizia_nationale_reform
+				strenghten_the_haeren_reform
+		    #	1.14
+				army_of_flanders_reform
+		    #	1.15
+				jayish_al_malik_reform
+				mantua_knightly_orders_reform
+				bedouin_reserves_reform
+		    #	1.16
+				slave_soldiers_reform
+				farari_commanders_reform
+		    #   1.18
+				wacht_am_rhein_reform
+				monastic_temples_reform
 			}
 		}
 		state_and_religion = {
 			reforms = {
-			    #Start of Lions of the North Dlc
 				papal_embassy_reform
 				lands_for_the_monasteries_reform
 				focus_of_the_patriarchy_reform
@@ -388,76 +437,6 @@ monarchy = {
 				restoration_of_clergy_reform
 				cult_of_reason_reform
 				secularization_of_the_state_reform
-				#End of Lions of the North Dlc
-			}
-		}
-		military_organisation = {
-			reforms = {
-				feudal_levies_reform
-				national_guard_reform
-				mercenary_corps_reform
-				landsknecht_captains_reform
-				professional_army_reform
-				empowered_royal_guard_reform
-				empowered_mercenary_corps_reform
-				empowered_heavy_knights_reform
-				italian_mercenaries_reform
-				imperial_circles_reform
-				expanded_devshirme_reform
-				tatar_mercenaries_reform
-				south_east_asian_elephants_reform
-				portugese_marines_reform
-				#les_vieux_corps_reform
-				compagnies_dordonnance_reform
-				abolish_the_patronage_system_reform
-				royal_training_reform
-				abolish_manrent_reform
-				permanent_marathas_council_reform
-				governmental_purbias_register_reform
-				foreign_formation_regiments_reform
-				general_war_commissariat_reform
-				gustavan_artillery_reform
-				#the_black_guard_reform
-				reorganize_the_imperial_army
-				arabian_horses_reform
-				pospolite_ruszenie_reform
-				polish_national_guard_reform
-				henry_reforms_reform
-				berber_cavalry_reform
-				mongol_ties_reform
-				subotai_lessons_reform
-				jinetes_reform
-				miquelet_militia_reform
-				royal_ordinances_reform
-				#expand_the_immortals_reform
-				hessian_elite_jaegers_reform
-				warrior_kings_reform
-				snaphaner_reform
-				redcoats_reform
-				recruit_ronin_reform
-				ashigaru_generals_reform
-				wei_suo_reform
-				reforms_of_abbas_reform
-				sherifan_levies_reform
-				restore_the_komnenoid_army_reform
-				jaeseungbangryak_reform
-				five_military_force_reform
-				honor_of_thai_kingdoms_reform
-				form_the_vojstatic_reform
-				#1.13
-				almogavars_reform
-				nunziatella_reform
-				milizia_nationale_reform
-				strenghten_the_haeren_reform
-				#1.14
-				army_of_flanders_reform
-				#1.15
-				jayish_al_malik_reform
-				mantua_knightly_orders_reform
-				bedouin_reserves_reform
-				#1.16
-				slave_soldiers_reform
-				farari_commanders_reform
 			}
 		}
 		growth_of_administration = {
@@ -466,23 +445,15 @@ monarchy = {
 				of_noble_bearing_reform
 				meritocratic_focus_reform
 				dakhni_culture_reform
-				zabt_reform
-				#Start of Lions of the North Dlc
 				dyanstic_administration_reform
-				#End of Lions of the North Dlc
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
 				revolutionary_principle_reform
 				equality_principle_reform
-				imperial_principle_reform
-				#Start of EU4 Leviathan Dlc additions
-				sakdina_system_reform
-				#End of EU4 Leviathan Dlc additions
-				#Start of Lions of the North Dlc
-				allotment_system
-				#End of Lions of the North Dlc
-				#ME
-				#GE
+				imperial_principle_reform				 
+				sakdina_system_reform	
+				allotment_system	  
+		    #	GE
 				integrate_moneyloaners_reform
 				advanced_bookkeeping_reform
 				colonial_govenors_reform
@@ -490,10 +461,8 @@ monarchy = {
 				academy_of_science_reform
 				koprulu_dynasty_reform
 				kreditwerk_reform
-				#conseil_du_roi_reform #FRA
 				parisian_court_reform
-				corps_diplomatique_reform
-				table_of_ranks_reform
+				corps_diplomatique_reform 
 				the_judicature_ordinance_reform
 				christian_four_merchantile_reform
 				declario_ferdinandei_reform
@@ -506,7 +475,7 @@ monarchy = {
 				empowered_of_noble_bearing_reform
 				empowered_clergy_in_administration_reform
 				adoption_of_christianity_reform
-				#justice_and_truth_reform
+		    	justice_and_truth_reform
 				found_the_rothschilds_reform
 				ottonian_handfeste_reform
 				reestablish_the_kuge_reform
@@ -519,18 +488,19 @@ monarchy = {
 				korean_bureaucracy_reform
 				decretum_maius_reform
 				grand_logothete_reform
-				#1.13
+		    #	1.13
 				neapolitan_renaissance_reform
 				drastic_control_of_the_boyars_reform
 				german_aristocracy_reform
-				#1.14
+		    #	1.14
 				hof_van_brabant_reform
-				#1.15
+		    #	1.15
 				doctrines_of_al_jazuli_reform
 				mantua_mecenatismo_mantovano_reform
 				italian_merchants_reform
-				#1.16
+		    #	1.16
 				graduates_from_timbuktu_reform
+				via_media_reform
 			}
 		}
 		deliberative_assembly = {
@@ -547,10 +517,8 @@ monarchy = {
 				imperial_decree_reform
 				become_a_republic_reform
 				install_theocratic_government_reform
-				#Start of Lions of the North Dlc
 				become_rev_republic_reform
-				#End of Lions of the North Dlc
-				#GE
+		    #	GE
 				haudenosaunee_reform
 				parliamentary_order_reform
 				king_and_duke_reform
@@ -570,7 +538,7 @@ monarchy = {
 				royal_society_reform
 				legacy_of_constitutionalism_reform
 				freie_landtage_reform
-				#preeminent_padishah_reform
+		    	preeminent_padishah_reform
 				empowered_aristocratic_court_reform
 				empowered_german_aristocratic_court_reform
 				empowered_royal_decree_reform
@@ -585,22 +553,22 @@ monarchy = {
 				sultanate_of_women_reform
 				euijung_bu_seosajae_reform
 				tripartum_reform
-				#1.13
+				table_of_ranks_reform
+		    #	1.13
 				theatines_reform
 				restored_land_establishment_reform
 				representative_electors_reform
-				#1.15
+		    #	1.15
 				nomad_councils_reform
 				office_of_kanzler_reform
 				diamond_of_the_earth_reform
-				#1.16
+		    #	1.16
 				secure_the_succession_reform
 				gbara_reform
 			}
 		}
 		economical_matters = {
 			reforms = {
-			    #Start of Lions of the North Dlc
 			    empower_the_burghers_reform
 				curtail_the_burghers_reform
 				reestablish_the_burgeoisie_reform
@@ -609,7 +577,6 @@ monarchy = {
 				free_trade_reform
 				embrace_the_economic_theory_reform
 				lockean_proviso_reform
-				#End of Lions of the North Dlc
 				strenghten_industry_reform
 				mercantilism_reform
 				noble_taxes_reform
@@ -626,56 +593,47 @@ monarchy = {
 				reinforce_the_hwangog_reform
 				bureaucratic_economy_reform
 				fredrickan_reforms_reform
-				#1.13
+		    #	1.13
 				danske_besiddelser_reform
-				#1.15
+		    #	1.15
 				expand_the_trans_saharan_trade_reform
 				customs_duties_reform
 			}
 		}
 		legitimation_of_power = {
 			reforms = {
-			    #Start of Lions of the North Dlc
 				machiavellianistic_rule_reform
 				six_livres_reform
 				two_treatises_reform
 				the_leviathan_reform
 				the_social_contract_reform
-				#End of Lions of the North Dlc
 			}
 		}
 		absolute_rule_vs_constitutional = {
 			reforms = {
 				letat_cest_moi_reform
 				regional_representation_reform
-				#Start of Lions of the North Dlc
-				peoples_kingdom_reform
-				deified_monarchy_reform
-				#End of Lions of the North Dlc
-				consulate_reform
-				#Start of VU additions
-				french_consulate_reform
-				#End of VU additions
-				military_electorate_reform
-				#Start of Lions of the North Dlc
-				revolutionary_council_reform
-				#End of Lions of the North Dlc
-				#ME
-				#GE
-				freedom_of_religion_reform
-				constitutional_equality_reform
-				nueva_planta_decrees_reform
-				toleration_of_all_faiths_edict_reform
-				abolish_the_haandfaestning_reform
-				revoke_reichsfreiheit_reform
-				constitution_third_may_reform
-				bill_of_rights_reform
-				droit_divine_reform
-				principle_of_fiqh_reform
-				absolutist_administration_reform
-				permanent_regency_reform
-				tanzimat_reforms_reform
-				#1.13
+		    	peoples_kingdom_reform
+		    	deified_monarchy_reform
+		    	consulate_reform
+		    	french_consulate_reform
+		    	military_electorate_reform
+		    	revolutionary_council_reform
+		    #	GE
+		    	freedom_of_religion_reform
+		    	constitutional_equality_reform
+		    	nueva_planta_decrees_reform
+		    	toleration_of_all_faiths_edict_reform
+		    	abolish_the_haandfaestning_reform
+		    	revoke_reichsfreiheit_reform
+		    	constitution_third_may_reform
+		    	bill_of_rights_reform
+		    	droit_divine_reform
+		    	principle_of_fiqh_reform
+		    	absolutist_administration_reform
+		    	permanent_regency_reform
+		    	tanzimat_reforms_reform
+		    #	1.13
 				constitution_of_melfi_reform
 			}
 		}
@@ -683,17 +641,13 @@ monarchy = {
 			reforms = {
 				political_absolutism_reform
 				legislative_houses_reform
-				#Start of Lions of the North Dlc
-				presidential_monarchy_reform
-				#End of Lions of the North Dlc
-				emperor_of_the_revolution_reform
-				enlightened_monarchy_reform
-				become_rev_republic_reform
-				#Start of VU additions
-				become_french_second_republic_reform
-				become_french_third_republic_reform
-				#End of VU additions
-				#GE
+		    	presidential_monarchy_reform
+		    	emperor_of_the_revolution_reform
+		    	enlightened_monarchy_reform
+		    	become_rev_republic_reform
+		    	become_french_second_republic_reform
+		    	become_french_third_republic_reform
+		    #	GE
 				abolish_clergy_privileges_reform
 				peters_council_reform
 				nizam_i_jedid_reform
@@ -730,7 +684,6 @@ monarchy = {
 		solomonic_empire_legacy
 		musa_rule_legacy
 		mossi_federal_kingdom_legacy
-		#Start of BT additions
 		irish_clann_legacy
 		norman_lordship_legacy
 		provincial_kingdom_legacy
@@ -739,23 +692,13 @@ monarchy = {
 		anglo_irish_monarchy_legacy
 		florence_republic_legacy
 		lithuanian_grand_duchy_legacy
-		#End of BT additions
-		#Start of VU additions
 		welsh_principality_legacy
 		western_principality_legacy
 		belgian_kingdom_legacy
 		french_kingdom_legacy
 		first_french_empire_legacy
 		second_french_empire_legacy
-		#parliamentary_monarchy
-		#End of VU additions
-		#ME Legacy Governments
-		#crusader_kingdom_legacy
-		#khaganate_legacy
-		#athenian_monarchy_legacy
-		#german_kaiserreich_legacy
-		#caliphate_sunni_legacy
-		#west_slavic_legacy
+	#	parliamentary_monarchy
 	}
 
 	# Each group of exclusive reforms are mutually exclusive to each other
@@ -772,27 +715,21 @@ monarchy = {
 		tsardom
 		principality
 		parliamentary_reform
-		#parliamentary_monarchy
+	#	parliamentary_monarchy
 		english_monarchy
 		scottish_monarchy
 		states_general_reform
-		#Start of Lions of the North Dlc
 		polish_elective_monarchy
 		polish_great_sejm
-		#End of Lions of the North Dlc
-		#Start of BT additions
 		anglo_irish_monarchy_reform
-		#End of BT additions
-		#Start of VU additions
 		welsh_principality
 		western_principality
 		belgian_kingdom_reform
 		french_kingdom_reform
-		#End of VU additions
-		#GE
+	#	GE
 		granadan_iqta_reform
 		crown_of_saint_wenceslaus
-		#khaganate
+	#   ME
 		empire_of_japan_reform
 	}
 
@@ -819,20 +756,15 @@ monarchy = {
 		revolutionary_empire_reform
 		prussian_monarchy
 		elective_monarchy
-		kalmar_union
 		celestial_empire
-		#Start of BT additions
 		tanistry_reform
 		anglo_irish_monarchy_reform
-		#End of BT additions
-		#Start of VU additions
 		first_french_empire_reform
 		french_first_empire_restoration_reform
 		french_monarchic_restoration_reform
 		french_orleanist_restoration_reform
 		second_french_empire_reform
-		#End of VU additions
-		#GE
+	#	GE
 		crown_of_saint_wenceslaus
 		elective_monarchy_reform
 		polish_constitutionalism_reform
@@ -853,11 +785,12 @@ monarchy = {
 	}
 	
     #Military
-	exclusive_reforms = {
-	    #Start of Lions of the North Dlc
+	exclusive_reforms = {			 
 	    allotment_system
 		prussian_monarchy
-		#End of Lions of the North Dlc
+	}
+	
+	exclusive_reforms = {
 		professional_army_reform
 		hessian_militarized_monarchy_reform
 		hessian_modern_militarized_monarchy_reform
@@ -888,9 +821,7 @@ republic = {
 		republican_dictatorship
 		administrative_republic
 		noble_republic
-		#start of VU additions by San Felipe
 		althing_republic
-		#End of VU additions by San Felipe
 		oligarchic_republic
 		pirate_republic
 		merchant_republic
@@ -914,19 +845,13 @@ republic = {
 		protectorate_parliament_legacy
 		prussian_republic
 		united_cantons_legacy
-		#Start of BT additions
 		puppet_kingdom_of_ireland
 		transitional_government_ireland_legacy
-		#End of BT additions
-		#Start of VU additions
 		national_assembly_republic_legacy
 		directory_republic_legacy
 		french_second_republic_legacy
 		french_third_republic_legacy
-		#End of VU additions
 		prussian_republic_reform
-		#ME
-		#caliphate_sunni_legacy
 	}
 	reform_levels = {
 		oligarchy_merchant_class_noble_elite = {
@@ -937,62 +862,48 @@ republic = {
 				venice_merchants_reform
 				pirate_republic_reform
 				noble_elite_reform
-				#start of VU additions by San Felipe
-				althing_elite_reform
-				#End of VU additions by San Felipe
-				free_city
-				trading_city
-				ambrosian_republic
-				veche_republic
-				improved_veche_republic
-				great_veche_republic
-				american_republic
-				federal_republic
-				colonial_government
-				#Start of EU4 Leviathan Dlc additions
-				crown_colony_government
-				private_enterprise_colony_government
-				self_governing_colony_government
-				#End of EU4 Leviathan Dlc additions
-				dutch_republic
-				peasants_republic
-				revolutionary_republic_reform
-				junior_revolutionary_republic_reform
-				presidential_despot_reform
-				cossacks_reform
-				military_dictatorship_reform
-				signoria_reform
-				roman_diarchy_reform
-				protectorate_parliament_reform
-				prussian_republic_reform
-				united_cantons_reform
-				#Start of EU4 Leviathan Dlc additions
-				kongsi_federation
-				millenarian_theocracy_reform
-				#End of EU4 Leviathan Dlc additions
-				#Start of BT additions
-				puppet_kingdom_reform
-				transitional_government_reform
-				#End of BT additions
-				#Start of VU additions
-				national_assembly_republic_reform
-				french_second_republic_reform
-				french_third_republic_reform
-				self_governing_dominion_vu_government
-				self_governing_super_dominion_vu_government
-				#End of VU additions
-				#ME
-				#caliphate_reform_sunni
-				#GE
-				florentine_republic
-				#american_government
-				genoan_republic_reform
-				old_swiss_confederation_reform
-				russian_republic_republic
-				caucasian_republic
-				common_republic_reform
-				lombardy_venetia_reform
-				#constitutional_republic_reform
+		    	althing_elite_reform
+		    	free_city
+		    	trading_city
+		    	ambrosian_republic
+		    	veche_republic
+		    	improved_veche_republic
+		    	great_veche_republic
+		    	american_republic
+		    	federal_republic
+		    	colonial_government
+		    	crown_colony_government
+		    	private_enterprise_colony_government
+		    	self_governing_colony_government
+		    	dutch_republic
+		    	peasants_republic
+		    	revolutionary_republic_reform
+		    	junior_revolutionary_republic_reform
+		    	presidential_despot_reform
+		    	cossacks_reform
+		    	military_dictatorship_reform
+		    	signoria_reform
+		    	roman_diarchy_reform
+		    	protectorate_parliament_reform
+		    	prussian_republic_reform
+		    	united_cantons_reform
+		    	kongsi_federation
+		    	millenarian_theocracy_reform
+		    	puppet_kingdom_reform
+		    	transitional_government_reform
+		    	national_assembly_republic_reform
+		    	french_second_republic_reform
+		    	french_third_republic_reform
+		    	self_governing_dominion_vu_government
+		    	self_governing_super_dominion_vu_government
+		    #	GE
+		    	florentine_republic
+		    	american_government
+		    	genoan_republic_reform
+		    	old_swiss_confederation_reform
+		    	russian_republic_republic
+		    	caucasian_republic
+		    	common_republic_reform
 			}
 		}
 		republican_virtues = {
@@ -1000,37 +911,30 @@ republic = {
 				republican_authoritarianism_reform
 				nepotism_reform
 				republicanism_reform
-				#Start of Lions of the North Dlc
-				democratic_values_reform
-				aristocratic_values_reform
-				religious_values_reform
-				#End of Lions of the North Dlc
-				articles_of_agreement_reform
-				smugglers_haven_reform
-				council_of_captains_reform
-				#Start of Lions of the North Dlc
-				the_pirate_ways_reform
-				#End of Lions of the North Dlc
-				liberte_reform
-				egalite_reform
-				fraternite_reform
-				#ME
-				#sharia_reform
-				#GE
-				demedici_dynasty_reform
-				support_borghese_reform
-				#guild_dominance_reform
-				rule_by_consent_reform
-				moedernegotie_reform
-				mixed_republic_reform
-				independence_reform
-				sovereignity_reform
-				support_ghibbelline_republic_reform
-				support_guelphs_republic_reform
-				legacy_of_st_ambrose_reform
-				hanseatic_ties_reform
-				archdiocese_of_pisa_reform
-				#republican_virtues_reform
+		    	democratic_values_reform
+		    	aristocratic_values_reform
+		    	religious_values_reform
+		    	articles_of_agreement_reform
+		    	smugglers_haven_reform
+		    	council_of_captains_reform
+		    	the_pirate_ways_reform
+		    	liberte_reform
+		    	egalite_reform
+		    	fraternite_reform
+		    #	GE
+		    	demedici_dynasty_reform
+		    	support_borghese_reform
+		    	rule_by_consent_reform
+		    	moedernegotie_reform
+		    	mixed_republic_reform
+		    	independence_reform
+		    	sovereignity_reform
+		    	support_ghibbelline_republic_reform
+		    	support_guelphs_republic_reform
+		    	legacy_of_st_ambrose_reform
+		    	hanseatic_ties_reform
+		    	archdiocese_of_pisa_reform
+				genoa_merchants_reform
 			}
 		}
 		frequent_elections_vs_consolidation_of_power = {
@@ -1039,22 +943,16 @@ republic = {
 				consolidation_of_power_reform
 				consolidate_power_in_doge_reform
 				consolidate_power_in_cities_reform
-				#Start of Lions of the North Dlc
 				force_reelection_reform
 				devotee_to_the_people_reform
-				#End of Lions of the North Dlc
 				permanent_marathas_council_reform
 				governmental_purbias_register_reform
 				lottery_reform
 				council_of_the_indies_reform
 				legislative_assembly_reform
 				national_constituent_reform
-				#Start of Lions of the North Dlc
 				national_assembly_reform
-				#End of Lions of the North Dlc
-				#permanent_marathas_council_reform
-				#governmental_purbias_register_reform
-				#GE
+			#	GE
 				factional_elections_reform
 				vroedschappen_reform
 				peasant_council_reform
@@ -1090,7 +988,7 @@ republic = {
 				jinetes_reform
 				miquelet_militia_reform
 				royal_ordinances_reform
-				#expand_the_immortals_reform
+				expand_the_immortals_reform
 				hessian_elite_jaegers_reform
 				warrior_kings_reform
 				snaphaner_reform
@@ -1112,18 +1010,14 @@ republic = {
 				subotai_lessons_reform
 				peasant_militia_reform
 				russian_republic_army_reform
-				#1.13
+			#	1.13
 				almogavars_reform
 				republican_guard_reform_republic
 				crusading_tradition_reform
-				teulie_reform_republic_reform
-				#citizen_soldiers_reform
-				#institutionalized_repbulican_army_reform
 			}
 		}
 		republic_and_religion = {
 			reforms = {
-			    #Start of Lions of the North Dlc
 				papal_embassy_reform
 				lands_for_the_monasteries_reform
 				focus_of_the_patriarchy_reform
@@ -1152,7 +1046,6 @@ republic = {
 				relgious_freedom_reform
 				respect_for_the_sea_reform
 				establish_religious_institution_for_pirates_reform
-				#End of Lions of the North Dlc
 			}
 		}
 		federalism_vs_unitarism_vs_confederacy = {
@@ -1160,22 +1053,19 @@ republic = {
 				provincial_governments_reform
 				administrative_divisions_reform
 				union_of_states_reform
+				confederate_nations_reform			  
 				penal_colonies_reform
-				#Start of Lions of the North Dlc
-				cultural_administration_reform
-				#End of Lions of the North Dlc
-				advanced_bookkeeping_reform_republic
-				advanced_bookkeeping_reform_republic_venice
-				communal_territories_reform
-				united_indian_companies_reform
-				confederation_of_cantons_reform
-				clergical_administration_reform
-				union_of_italian_states_reform
-				volost_colonies_reform
-				novgorod_prince_federation_reform
-				island_republic_reform
-				#federalism_reform
-				#supremacy_constitution_reform
+		    	cultural_administration_reform
+		    	advanced_bookkeeping_reform_republic
+		    	advanced_bookkeeping_reform_republic_venice
+		    	communal_territories_reform
+		    	united_indian_companies_reform
+		    	confederation_of_cantons_reform
+		    	clergical_administration_reform
+		    	union_of_italian_states_reform
+		    	volost_colonies_reform
+		    	novgorod_prince_federation_reform
+		    	island_republic_reform
 			}
 		}
 		parliamentary_vs_presidential = {
@@ -1194,24 +1084,18 @@ republic = {
 				seize_executive_power_reform
 				proclaim_divine_guidance_reform
 				become_rev_empire_reform
-				#Start of VU additions
-				#End of VU additions
-				# ME Reforms:
-				#GE
-				stadholder_reform
-				andrea_doria_constitution_reform
-				ware_vrijheid_reform
-				the_consigliere_reform
-				council_of_petitions_reform
-				hansa_representatives_reform
-				council_of_lords_reform
-				#primacy_legislature_reform
-				#judicial_review_reform
+		    #	GE
+		    	stadholder_reform
+		    	andrea_doria_constitution_reform
+		    	ware_vrijheid_reform
+		    	the_consigliere_reform
+		    	council_of_petitions_reform
+		    	hansa_representatives_reform
+		    	council_of_lords_reform
 			}
 		}
 		economical_matters_republic = {
 			reforms = {
-				#Start of Lions of the North Dlc
 				empower_the_burghers_reform
 				curtail_the_burghers_reform
 				new_world_exploitation_reform
@@ -1223,56 +1107,48 @@ republic = {
 				master_smugglers_reform
 				cutthroat_approach_reform
 				empowered_quartermasters_reform
-				#End of Lions of the North Dlc
 			}
 		}
 		consolidation_of_power_category = {
 			reforms = {
 				broaden_executive_powers_reform
 				devolution_of_powers_reform
-				#Start of Lions of the North Dlc
-				consolidate_power_to_the_ruler_reform
-				consolidate_power_into_different_candidates_reform
-				power_to_the_raiders_reform
-				power_to_the_smugglers_reform
-				power_to_the_captains_reform
-				#End of Lions of the North Dlc
-				absolute_president_reform
-				revolutionary_council_reform
-				#Start of Lions of the North Dlc
-				allotment_system
-				#End of Lions of the North Dlc
-				#GE
-				supreme_court_reform
-				confederation_of_states_reform
-				hansa_domination_reform
-				empowered_aristocratic_courts_reform
-				empowered_sovereign_trade_companies_reform
-				empowered_consolidation_of_power_reform
-				#imperial_executive_branch_power_reform
-				#federal_governorship_reform
+		    	consolidate_power_to_the_ruler_reform
+		    	consolidate_power_into_different_candidates_reform
+		    	power_to_the_raiders_reform
+		    	power_to_the_smugglers_reform
+		    	power_to_the_captains_reform
+		    	absolute_president_reform
+		    	revolutionary_council_reform
+		    	allotment_system
+		    #	GE
+		    	supreme_court_reform
+		    	confederation_of_states_reform
+		    	hansa_domination_reform
+		    	empowered_aristocratic_courts_reform
+		    	empowered_sovereign_trade_companies_reform
+		    	empowered_consolidation_of_power_reform
+				empowered_senate_reform
 			}
 		}
 		guiding_principle_of_administration = {
 			reforms = {
 				political_principle_reform
 				moral_principle_reform
-				#Start of Lions of the North Dlc
-				stability_principle_reform
-				enlightened_principle_reform
-				military_principle_reform
-				#End of Lions of the North Dlc
-				revolutionary_principle_reform
-				equality_principle_reform
-				imperial_principle_reform
-				#GE
-				national_principle_reform
-				tolerant_principle_reform
-				independent_principle_reform
-				empowered_principle_of_heritage_reform
-				empowered_principle_of_profit_reform
-				empowered_principle_of_power_reform
-				#amendable_constitution_reform
+		    	stability_principle_reform
+		    	enlightened_principle_reform
+		    	military_principle_reform
+		    	revolutionary_principle_reform
+		    	equality_principle_reform
+		    	imperial_principle_reform
+		    #	GE
+		    	national_principle_reform
+				liberal_principle_reform
+		    	tolerant_principle_reform
+		    	independent_principle_reform
+		    	empowered_principle_of_heritage_reform
+		    	empowered_principle_of_profit_reform
+		    	empowered_principle_of_power_reform
 			}
 		}
 		electorate = {
@@ -1280,22 +1156,16 @@ republic = {
 				landholders_reform
 				citizenry_reform
 				admiralty_reform
-				#Start of Lions of the North Dlc
-				military_rulership_reform
-				dynastic_rulership_reform
-				#End of Lions of the North Dlc
-				equal_electorate_reform
-				three_classes_reform
-				military_electorate_reform
-				#Start of Lions of the North Dlc
-				rule_through_plunder_reform
-				#End of Lions of the North Dlc
-				#GE
-				one_man_one_vote_reform
-				regents_reform
-				peasantry_reform
-				#electoral_college_reform
-				#direct_majority_rule_reform
+		    	military_rulership_reform
+		    	dynastic_rulership_reform
+		    	equal_electorate_reform
+		    	three_classes_reform
+		    	military_electorate_reform
+		    	rule_through_plunder_reform
+		    #	GE
+		    	one_man_one_vote_reform
+		    	regents_reform
+		    	peasantry_reform
 			}
 		}
 		office_selection = {
@@ -1303,32 +1173,24 @@ republic = {
 				appointment_by_committee_reform
 				bureaucratic_aparatus_reform
 				universal_suffrage_reform
-				#Start of Lions of the North Dlc
-				pirate_representation_reform
-				#End of Lions of the North Dlc
-				#GE
-				cultural_judges_reform
-				raadspensionaris_reform
-				hansa_universities_reform
-				#vice_presidential_system_reform
-				#legislative_office_selection_reform
+		    	pirate_representation_reform
+		    #	GE
+		    	cultural_judges_reform
+		    	raadspensionaris_reform
+		    	hansa_universities_reform
 			}
 		}
 		question_of_dictatorship = {
 			reforms = {
 				strengthen_executive_powers_reform
 				reinforce_republican_values_reform
-				#Start of Lions of the North Dlc
-				federal_senate_reform
-				#End of Lions of the North Dlc
-				pirates_become_republic_reform
-				president_for_life_reform
-				government_for_people_reform
-				#Start of Lions of the North Dlc
-				unified_piratical_confederacy_reform
-				neutral_ground_reform
-				scourge_of_the_seven_sea_reform
-				#End of Lions of the North Dlc
+		    	federal_senate_reform
+		    	pirates_become_republic_reform
+		    	president_for_life_reform
+		    	government_for_people_reform
+		    	unified_piratical_confederacy_reform
+		    	neutral_ground_reform
+		    	scourge_of_the_seven_sea_reform
 				become_rev_empire_reform
 				become_first_french_empire_reform
 				become_second_french_empire_reform
@@ -1340,9 +1202,7 @@ republic = {
 		dutch_republic
 		merchants_reform
 		veche_republic
-		#Start of Lions of the North Dlc
 		great_veche_republic
-		#End of Lions of the North Dlc
 		federal_republic
 		lottery_reform
 		reinforced_republic
@@ -1355,16 +1215,12 @@ republic = {
 		pirate_republic_reform
 		protectorate_parliament_reform
 		prussian_republic_reform
-		#Start of BT additions
 		puppet_kingdom_reform
 		transitional_government_reform
-		#End of BT additions
-		#Stary of VU additions
 		national_assembly_republic_reform
 		directory_republic_reform
 		french_second_republic_reform
 		french_third_republic_reform
-		#End of VU additions
 	}
 	exclusive_reforms = {
 		lottery_reform
@@ -1372,15 +1228,11 @@ republic = {
 		dutch_republic
 		pirate_republic_reform
 		admiralty_reform
-		#Start of Lions of the North Dlc
 		military_rulership_reform
-		#End of Lions of the North Dlc
 		prussian_republic_reform
 		military_dictatorship_reform
-		#Start of BT additions
 		puppet_kingdom_reform
 		transitional_government_reform
-		#End of BT additions
 	}
 	exclusive_reforms = {
 		free_city
@@ -1430,40 +1282,39 @@ tribal = {
 				siberian_tribe
 				gond_kingdom
 				great_mongol_state_reform
-				#Start of EU4 Leviathan Dlc additions
-				stateless_society
-				polynesian_kingdom
-				polynesian_tribe
-				sacred_kingdom
-				tribal_confederacy
-				shaka_regime
-				matrilineal_system
-				feudal_tribe
-				#End of EU4 Leviathan Dlc additions
-				#GE
+		    	stateless_society
+		    	polynesian_kingdom
+		    	polynesian_tribe
+		    	sacred_kingdom
+		    	tribal_confederacy
+		    	shaka_regime
+		    	matrilineal_system
+		    	feudal_tribe
+	            great_man
+		    #	GE
 				eghaevbo_administration_reform
+				siberian_tribal_confederation_reform
 			}
 		}
 		tribal_cultural_values = {
 			reforms = {
 				martial_society_reform
 				civil_society_reform
-				# ME Reforms:
-				#sharia_reform
-				#GE
+		    #	GE
 				great_law_of_peace_reform
 				royal_society_reform
 				slave_raids_reform
 				herders_of_the_steppe
 				legacy_of_pax_mongolia
 				three_jurchen_tribes_reform
+				snow_life_reform
 			}
 		}
 		tribal_religion = {
 			reforms = {
 				religious_societies_reform
 				lip_service_reform
-				#GE
+			#	GE
 				sheikhdom_reform
 				adoption_of_christianity_reform
 				great_code_of_nomads
@@ -1471,6 +1322,7 @@ tribal = {
 				maintain_charade_reform
 				tolerance_of_the_church_reform
 				children_of_osanobua_reform
+				one_on_high_reform
 			}
 		}
 		military_organisation = {
@@ -1492,7 +1344,7 @@ tribal = {
 			reforms = {
 				centralize_tribal_power_reform
 				retain_tribal_hierarchy_reform
-				#GE
+			#	GE
 				unite_the_royal_houses_reform
 				iranian_bureacracy_reform
 				reintroduce_the_dirham
@@ -1525,8 +1377,6 @@ native = {
 		native_council_legacy
 	}
 	color = { 194 127 209 }
-
-  #Start of EU4 Leviathan Dlc additions
 
 	reform_levels = {
 		tribe_organization = {
@@ -1574,18 +1424,14 @@ native = {
 	}
 }
 
-#End of EU4 Leviathan Dlc additions
-
 theocracy = {
 	color = { 75 170 75 }
 	basic_reform = theocracy_mechanic
 
 	legacy_government = {
 		papal_government
-		#Start of VU additions
 		church_of_france
 		church_of_england
-		#End of VU additions
 		theocratic_government
 		monastic_order_government
 		holy_state_legacy
@@ -1595,26 +1441,21 @@ theocracy = {
 			reforms = {
 				leading_clergy_reform
 				monastic_order_reform
-				#Start of Lions of the North Dlc
-				crusading_kingdom_reform
-				#End of Lions of the North Dlc
-				#Start of VU additions
-				church_of_france_reform
-				church_of_england_reform
-				#End of VU additions
-				papacy_reform
-				holy_state_reform
-				united_cantons_reform
-				#Start of Lions of the North Dlc
-				holy_horde_reform
-				teutonic_bishopric_reform
-				prussian_theocratic_reform
-				militarized_crusader_order_reform
-				merchant_theocracy_reform
-				reformer_state_reform
-				#End of Lions of the North Dlc
+		    	crusading_kingdom_reform
+		    	church_of_france_reform
+		    	church_of_england_reform
+		    	papacy_reform
+		    	holy_state_reform
+		    	united_cantons_reform
+		    	holy_horde_reform
+		    	teutonic_bishopric_reform
+		    	prussian_theocratic_reform
+		    	militarized_crusader_order_reform
+		    	merchant_theocracy_reform
+		    	reformer_state_reform
 				ajuraan_theocracy_reform
 				dynastic_theocracy_reform
+				life_on_the_plateau_reform
 			}
 		}
 		internal_vs_external_mission = {
@@ -1624,25 +1465,20 @@ theocracy = {
 				colonial_mission_reform
 				mission_to_civilize_reform
 				mission_to_kill_pirates_reform
-				#Start of Lions of the North Dlc
-				balanced_mission_reform
-				commercial_mission_reform
-				mission_to_protect_reform
-				#End of Lions of the North Dlc
-				#teuton_drill
-				#ME Reforms
-				#sharia_reform
+		    	balanced_mission_reform
+		    	commercial_mission_reform
+		    	mission_to_protect_reform
+			    yak_provvision_reform
+		    	teuton_drill
 			}
 		}
 		education_of_the_state = {
 			reforms = {
 				kingdom_of_god_reform
-				#Start of Lions of the North Dlc
-				education_of_the_bishop_reform
-				education_of_the_advisors_reform
-				education_of_the_missionaries_reform
-				education_of_the_people_reform
-				#End of Lions of the North Dlc
+		    	education_of_the_bishop_reform
+		    	education_of_the_advisors_reform
+		    	education_of_the_missionaries_reform
+		    	education_of_the_people_reform
 				the_holy_office_reform
 				teuton_priest
 				fighting_for_israel_reform
@@ -1650,29 +1486,27 @@ theocracy = {
 		}
 		religoius_doctrine = {
 			reforms = {
-			    #Start of Lions of the North Dlc
-				i_am_the_church_reform
-				papal_embassy_reform
-				lands_for_the_monasteries_reform
-				focus_of_the_patriarchy_reform
-				zoroastrian_focus_reform
-				power_to_the_synagogoues_reform
-				head_of_the_reformed_church_reform
-				confucian_governing_reform
-				empower_buddhist_temples_reform
-				public_hindu_practices_reform
-				strengthen_shaman_privileges_reform
-				abolished_caste_system_reform
-				strengthen_the_ulema_reform
-				strengthen_the_dhimmi_reform
-				legacy_of_the_steppes_reform
-				state_and_shrines_intertwined_reform
-				embedded_norse_government_reform
-				strengthen_clergy_reform
-				curtail_clergy_power_reform
-				secure_clergy_power_reform
-				maintain_clergy_balance_of_power_reform
-				#End of Lions of the North Dlc
+		    	i_am_the_church_reform
+		    	papal_embassy_reform
+		    	lands_for_the_monasteries_reform
+		    	focus_of_the_patriarchy_reform
+		    	zoroastrian_focus_reform
+		    	power_to_the_synagogoues_reform
+		    	head_of_the_reformed_church_reform
+		    	confucian_governing_reform
+		    	empower_buddhist_temples_reform
+		    	public_hindu_practices_reform
+		    	strengthen_shaman_privileges_reform
+		    	abolished_caste_system_reform
+		    	strengthen_the_ulema_reform
+		    	strengthen_the_dhimmi_reform
+		    	legacy_of_the_steppes_reform
+		    	state_and_shrines_intertwined_reform
+		    	embedded_norse_government_reform
+		    	strengthen_clergy_reform
+		    	curtail_clergy_power_reform
+		    	secure_clergy_power_reform
+		    	maintain_clergy_balance_of_power_reform
 			}
 		}
 		clergy_in_administration = {
@@ -1710,7 +1544,6 @@ theocracy = {
 		}
 		economical_matters = {
 			reforms = {
-			    #Start of Lions of the North Dlc
 				empower_the_burghers_reform
 				curtail_the_burghers_reform
 				new_world_exploitation_reform
@@ -1718,7 +1551,6 @@ theocracy = {
 				free_trade_reform
 				embrace_the_economic_theory_reform
 				lockean_proviso_reform
-				#End of Lions of the North Dlc
 			}
 		}
 		divine_cause = {
@@ -1727,9 +1559,11 @@ theocracy = {
 				combat_heresy_reform
 				expel_heathens_reform
 				guru_advisors_reform
-				#Start of Lions of the North Dlc
                 pursuit_of_knowledge_reform
-                #End of Lions of the North Dlc
+				kingdom_of_god_reform
+				the_holy_office_reform
+				fighting_for_israel_reform
+				monastic_temples_reform
 			}
 		}
 		separation_of_power_theocracy = {
@@ -1750,20 +1584,16 @@ theocracy = {
 				religious_harmony_reform
 				god_and_man_reform
 				organising_our_religion_reform
-				#Start of Lions of the North Dlc
 				faith_and_power_reform
 				belief_and_unity_reform
-				#End of Lions of the North Dlc
 			}
 		}
 		culture_within_the_state = {
 			reforms = {
-				#Start of Lions of the North Dlc
 				religious_culture_reform
 				harmonization_of_cultures_reform
 				cultural_safe_haven_reform
 				taxation_of_the_foreigners_reform
-				#End of Lions of the North Dlc
 			}
 		}
 		faith_and_the_world = {
@@ -1774,10 +1604,8 @@ theocracy = {
 				priestly_autonomy_reform
 				proclaim_religious_head_reform
 				all_under_tengri_reform
-				#Start of Lions of the North Dlc
 				state_of_theologians_reform
 				divinity_through_craftsmanship_reform
-				#End of Lions of the North Dlc
 			}
 		}
 		mobilize_the_faithful = {
@@ -1965,10 +1793,12 @@ pre_dharma_mapping = {
 		government = monarchy
 		legacy_government = english_monarchy_legacy
 	}
+	#Start of additions by other contributors
 	scottish_monarchy = {
 		government = monarchy
 		legacy_government = scottish_monarchy_legacy
 	}
+	#End of additions by other contributors
 	mamluk_government = {
 		government = monarchy
 		legacy_government = mamluk_government_legacy
@@ -2045,7 +1875,7 @@ pre_dharma_mapping = {
 		government = republic
 		legacy_government = veche_republic_legacy
 	}
-	#Start of VU additions by San Felipe ###############################################################
+	#Start of VU additions by San Felipe
 	welsh_principality = {
 		government = monarchy
 		legacy_government = welsh_principality_legacy
@@ -2071,7 +1901,7 @@ pre_dharma_mapping = {
 		government = monarchy
 		legacy_government = western_principality_legacy
 	}
-	#End of VU additions by San Felipe #################################################################
+	#End of VU additions by San Felipe
 	principality = {
 		government = monarchy
 		legacy_government = principality_legacy
@@ -2088,19 +1918,6 @@ pre_dharma_mapping = {
 		government = monarchy
 		legacy_government = despotic_monarchy
 	}
-	# ME Legacy Governments:
-	#crusader_kingdom = { #added for religious missions (catholic)
-	#	government = monarchy
-	#	legacy_government = crusader_kingdom_legacy
-	#}
-	#caliphate_reform_sunni = { #added for religious missions (sunni)
-	#	government = republic
-	#	legacy_government = caliphate_sunni_legacy
-	#}
-	#khaganate = { #added for tartarstan
-	#	government = monarchy
-	#	legacy_government = khaganate_legacy
-	#}
 	#Added by Beyond Typus
 	irish_clann = {
 		government = monarchy

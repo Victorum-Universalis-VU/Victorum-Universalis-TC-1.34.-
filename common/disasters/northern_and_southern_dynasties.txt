@@ -42,6 +42,11 @@ northern_and_southern_dynasties = {
 					area = degar_highlands_area
 					region = malaya_region
 					region = indonesia_region
+					region = riau_islands_region
+					region = nusa_tenggara_region
+					region = borneo_region
+					region = celebes_region
+					region = south_china_sea_islands_region
 				}
 			}
 		}

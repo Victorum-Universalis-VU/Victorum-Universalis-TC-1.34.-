@@ -990,7 +990,10 @@ country_event = {
 		has_discovered = 646	# Ambon
 		religion = catholic
 		num_of_owned_provinces_with = {
-			region = moluccas_region
+			OR = {
+			   region = moluccas_region
+			   region = nusa_tenggara_region
+			}
 			NOT = { religion = catholic }
 			value = 2
 		}
@@ -1012,7 +1015,7 @@ country_event = {
 		}
 		random_owned_province = {
 			limit = {
-				region = moluccas_region
+				region = nusa_tenggara_region
 				NOT = { religion = catholic }
 			}
 			change_religion = catholic
@@ -1096,6 +1099,10 @@ country_event = {
 					region = malaya_region
 					region = moluccas_region
 					region = indonesia_region
+					region = riau_islands_region
+					region = nusa_tenggara_region
+					region = borneo_region
+					region = celebes_region
 					region = oceanea_region
 				}
 			}
@@ -1111,6 +1118,10 @@ country_event = {
 						region = malaya_region
 						region = moluccas_region
 						region = indonesia_region
+						region = riau_islands_region
+						region = nusa_tenggara_region
+						region = borneo_region
+						region = celebes_region
 						region = oceanea_region
 					}
 				}

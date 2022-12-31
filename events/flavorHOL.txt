@@ -945,6 +945,10 @@ country_event = {
 				region = malaya_region
 				region = moluccas_region
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
+				region = borneo_region
+				region = celebes_region
 				region = coromandel_region
 				region = deccan_region
 				region = west_india_region
@@ -952,6 +956,7 @@ country_event = {
 				region = bengal_region
 				region = burma_region
 				region = indo_china_region
+				region = south_china_sea_islands_region
 			}
 			is_owned_by_trade_company = yes
 		}
@@ -1001,6 +1006,10 @@ country_event = {
 				region = malaya_region
 				region = moluccas_region
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
+				region = borneo_region
+				region = celebes_region
 				region = coromandel_region
 				region = deccan_region
 				region = west_india_region
@@ -1008,6 +1017,7 @@ country_event = {
 				region = bengal_region
 				region = burma_region
 				region = indo_china_region
+				region = south_china_sea_islands_region
 			}
 			is_owned_by_trade_company = yes
 		}
@@ -1054,6 +1064,10 @@ country_event = {
 				region = malaya_region
 				region = moluccas_region
 				region = indonesia_region
+				region = riau_islands_region
+				region = nusa_tenggara_region
+				region = borneo_region
+				region = celebes_region
 				region = coromandel_region
 				region = deccan_region
 				region = west_india_region
@@ -1061,6 +1075,7 @@ country_event = {
 				region = bengal_region
 				region = burma_region
 				region = indo_china_region
+				region = south_china_sea_islands_region
 			}
 		}
 	}

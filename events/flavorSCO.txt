@@ -386,6 +386,10 @@ country_event = {
 						region = malaya_region
 						region = moluccas_region
 						region = indonesia_region
+						region = riau_islands_region
+						region = nusa_tenggara_region
+						region = borneo_region
+						region = celebes_region
 						region = oceanea_region
 					}
 				}
@@ -410,7 +414,19 @@ country_event = {
 			}			
 			indonesia_region = {
 				owned_by = SCO
-			}			
+			}
+			riau_islands_region = {
+				owned_by = SCO
+			}
+			nusa_tenggara_region = {
+				owned_by = SCO
+			}
+			borneo_region = {
+				owned_by = SCO
+			}
+			celebes_region = {
+				owned_by = SCO
+			}
 			oceanea_region = {
 				owned_by = SCO
 			}

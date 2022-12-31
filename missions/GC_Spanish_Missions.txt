@@ -2088,9 +2088,15 @@ gc_spain_4_d = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = cas_spice_islands_tooltip
-				moluccas_region = {
-					type = all
-					has_discovered = ROOT
+				OR = {
+				    moluccas_region = {
+					    type = all
+					    has_discovered = ROOT
+				    }
+					nusa_tenggara_region = {
+					    type = all
+					    has_discovered = ROOT
+				    }
 				}
 			}
 		}

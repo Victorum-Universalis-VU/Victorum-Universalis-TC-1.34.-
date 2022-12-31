@@ -1219,10 +1219,9 @@ merc_mongol_mercenaries = {
 		OR = {
 			any_neighbor_country = {
 				culture_group = altaic
-				
 			}
 			culture_group = altaic
-			primary_culture = altaic_new 
+			primary_culture = altaic_new
 			any_owned_province = {
 				OR = {
 					culture_group = altaic
@@ -1498,7 +1497,13 @@ merc_kutai_company = {
 				superregion = east_indies_superregion
 			}
 			any_owned_province = {
-				region = indonesia_region
+				OR = {
+				    region = indonesia_region
+					region = riau_islands_region
+					region = nusa_tenggara_region
+					region = borneo_region
+					region = celebes_region
+				}
 			}
 			has_country_modifier = mercenaries_to_the_standard
 			has_country_modifier = glut_of_mercs

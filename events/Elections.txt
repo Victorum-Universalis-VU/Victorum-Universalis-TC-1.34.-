@@ -372,6 +372,7 @@ country_event = {
 				mil = 1
 				adm = 4
 				dip = 1
+			    #fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -380,6 +381,7 @@ country_event = {
 				mil = 1
 				adm = 4
 				dip = 1
+			    #fixed = yes
 			}
 		}
 		if = {
@@ -472,6 +474,7 @@ country_event = {
 				dip = 4
 				adm = 1
 				mil = 1
+			    #fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -480,6 +483,7 @@ country_event = {
 				dip = 4
 				adm = 1
 				mil = 1
+			    #fixed = yes
 			}
 		}
 		if = {
@@ -568,6 +572,7 @@ country_event = {
 				mil = 4
 				adm = 1
 				dip = 1
+			    #fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -576,6 +581,7 @@ country_event = {
 				mil = 4
 				adm = 1
 				dip = 1
+			    #fixed = yes
 			}
 		}
 		if = {
@@ -702,6 +708,12 @@ country_event = {
 				max_age = 50
 				name = "lastname"
 			}
+        }
+		if = {
+			limit = {
+				has_government_attribute = enables_princes_of_novogorod
+			}
+			create_general = { tradition = 50 }						  
 		}
 		if = {
 			limit = { 
@@ -712,13 +724,347 @@ country_event = {
 				influence = 10
 			}				
 		}
-		if = {
-			limit = { has_government_attribute = elections_influence_estates }
-			add_estate_loyalty = {
-				estate = all
-				loyalty = 10
+		hidden_effect = {
+			if = {
+				limit = { 
+					OR = {
+						has_government_attribute = enable_factional_elections 
+						 has_government_attribute = enables_veche_parties 
+					}
+				}
+				random_list = {
+					10 = { set_ruler_flag = adm_ruler }
+					10 = { set_ruler_flag = dip_ruler }
+					10 = { set_ruler_flag = mil_ruler }
+				}
 			}
 		}
+	}
+	option = { # Nepotism choice, de'Medici
+		name = "EVTOPTF700"
+		trigger = {
+			has_government_attribute = enables_demedici
+		}
+		ai_chance = { factor = 10 }
+		add_scaled_republican_tradition = -5
+
+		define_ruler = {
+			change_dip = 1
+			min_age = 40
+			max_age = 50
+			dynasty = "de' Medici"
+		}
+		if = {
+			limit = { has_government_attribute = enable_factional_elections }
+			trigger_switch = {
+				on_trigger = has_country_flag
+				adm_advisor = {
+					add_ruler_modifier = {
+						name = "Dip_Trade"
+						duration = -1
+					}
+				}
+				adm_stabcost = {
+					add_ruler_modifier = {
+						name = "Dip_Invest"
+						duration = -1
+					}
+				}
+				adm_pope = {
+					add_ruler_modifier = {
+						name = "Adm_Advisor"
+						duration = -1
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_government_attribute = enable_factional_elections }
+				random_list = {
+					10 = { set_ruler_flag = adm_ruler }
+					10 = { set_ruler_flag = dip_ruler }
+					10 = { set_ruler_flag = mil_ruler }
+				}
+			}
+		}
+	}
+	
+	option = { # dictator #Sforza 
+		name = "EVTOPTG700"
+		trigger = {
+			has_government_attribute = enables_sforza
+		}
+		ai_chance = { factor = 100 }
+		add_republican_tradition = -25
+
+		define_ruler = {
+			change_mil = 2
+			min_age = 30
+			max_age = 50
+		}
+		add_ruler_modifier = {
+			name = "Sforza_Lifetime"
+			duration = -1
+		}
+		if = {
+			limit = {
+				has_country_flag = sforza_1
+			}
+			define_ruler_to_general = {
+				fire = 3
+				shock = 4
+				manuever = 3
+				siege = 1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = sforza_2
+			}
+			define_ruler_to_general = {
+				fire = 4
+				shock = 2
+				manuever = 1
+				siege = 3
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = sforza_3
+			}
+			define_ruler_to_general = {
+				fire = 2
+				shock = 2
+				manuever = 6
+				siege = 2
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = sforza_4
+			}
+			define_ruler_to_general = {
+				fire = 5
+				shock = 3
+				manuever = 1
+				siege = 1
+			}
+		}
+		if = {
+			limit = {
+				has_country_flag = sforza_5
+			}
+			define_ruler_to_general = {
+				fire = 5
+				shock = 4
+				manuever = 1
+				siege = 1
+			}
+		}
+	}
+
+	
+	option = { #Caucasus Elections
+		name = "EVTOPTH700"
+		trigger = {
+			has_government_attribute = enables_caucasus_candidates
+		}
+		ai_chance = { factor = 10 }
+
+		define_ruler = {
+			min_age = 30
+			max_age = 50
+			ADM = 3
+			DIP = 3
+			MIL = 3
+			#fixed = yes
+			culture = georgian
+		}
+		add_ruler_modifier = {
+			name = "Georgian_Ruler" #-25% State Maintenance, +1 Diprep
+			duration = -1
+		}
+		hidden_effect = {
+			if = {
+				limit = { has_government_attribute = enable_factional_elections }
+				random_list = {
+					10 = { set_ruler_flag = adm_ruler }
+					10 = { set_ruler_flag = dip_ruler }
+					10 = { set_ruler_flag = mil_ruler }
+				}
+			}
+		}
+	}
+	
+	option = { #Caucasus Elections
+		name = "EVTOPTI700"
+		trigger = {
+			has_government_attribute = enables_caucasus_candidates
+		}
+		ai_chance = { factor = 10 }
+
+		define_ruler = {
+			min_age = 30
+			max_age = 50
+			ADM = 2
+			DIP = 5
+			MIL = 2
+			#fixed = yes
+			culture = circassian
+		}
+		add_ruler_modifier = {
+			name = "Circassian_Ruler" #25% Improve Relations
+			duration = -1
+		}
+		if = {
+			limit = { has_government_attribute = enable_factional_elections }
+			trigger_switch = {
+				on_trigger = has_country_flag
+				dip_trade = {
+					add_ruler_modifier = {
+						name = "Dip_Trade"
+						duration = -1
+					}
+				}
+				dip_gold = {
+					add_years_of_income = 0.4
+				}
+				dip_invest = {
+					add_ruler_modifier = {
+						name = "Dip_Invest"
+						duration = -1
+					}
+				}
+			}
+			set_ruler_flag = dip_ruler
+		}
+	}
+	
+	option = { #Caucasus Elections
+		name = "EVTOPTJ700"
+		trigger = {
+			has_government_attribute = enables_caucasus_candidates
+		}
+		ai_chance = { factor = 10 }
+
+		define_ruler = {
+			min_age = 30
+			max_age = 50
+			ADM = 2
+			DIP = 2
+			MIL = 5
+			#fixed = yes
+			culture = dagestani
+		}
+		add_ruler_modifier = {
+			name = "Dagestani_Ruler" #20% Force Limit
+			duration = -1
+		}
+		if = {
+			limit = { has_government_attribute = enable_factional_elections }
+			trigger_switch = {
+				on_trigger = has_country_flag
+				mil_army = {
+					add_ruler_modifier = {
+						name = "Mil_Tradition"
+						duration = -1
+					}
+				}
+				mil_republic = {
+					add_republican_tradition = 3
+				}
+				mil_infantry = {
+					add_ruler_modifier = {
+						name = "Mil_Infantry"
+						duration = -1
+					}
+				}
+			}
+			set_ruler_flag = mil_ruler
+		}
+	}
+	option = { #Caucasus Elections
+		name = "EVTOPTK700"
+		trigger = {
+			has_government_attribute = enables_caucasus_candidates
+		}
+		ai_chance = { factor = 10 }
+
+		define_ruler = {
+			min_age = 30
+			max_age = 50
+			ADM = 5
+			DIP = 2
+			MIL = 2
+			#fixed = yes
+			culture = armenian
+		}
+		if = {
+			limit = { religion_group = christian }
+			add_ruler_modifier = {
+				name = "Armenian_Zealous_Ruler" #+1 Tolerance of the True Faith
+				duration = -1
+			}
+		}
+		if = {
+			limit = { NOT = { religion_group = christian } }
+			add_ruler_modifier = {
+				name = "Armenian_Tolerant_Ruler" #+1 Tolerance of Heretics and Heathens
+				duration = -1
+			}
+		}
+		if = {
+			limit = { has_government_attribute = enable_factional_elections }
+			trigger_switch = {
+				on_trigger = has_country_flag
+				adm_advisor = {
+					add_ruler_modifier = {
+						name = "Adm_Advisor"
+						duration = -1
+					}
+				}
+				adm_stabcost = {
+					add_ruler_modifier = {
+						name = "Adm_Stabcost"
+						duration = -1
+					}
+				}
+				adm_pope = {
+					add_papal_influence = 10
+					add_church_power = 15
+					add_fervor = 20
+				}
+			}
+			set_ruler_flag = adm_ruler
+		}
+	}
+	
+	after = {
+		clr_country_flag = adm_advisor
+		clr_country_flag = adm_pope
+		clr_country_flag = adm_stabcost
+		clr_country_flag = dip_invest
+		clr_country_flag = dip_trade
+		clr_country_flag = dip_gold
+		clr_country_flag = mil_republic
+		clr_country_flag = mil_infantry
+		clr_country_flag = mil_army
+		clr_ruler_flag = adm_2_dev
+		clr_ruler_flag = adm_2_pope
+		clr_ruler_flag = adm_2_tax
+		clr_ruler_flag = dip_2_merc
+		clr_ruler_flag = dip_2_ship
+		clr_ruler_flag = dip_2_trade
+		clr_ruler_flag = mil_2_army
+		clr_ruler_flag = mil_2_leader
+		clr_ruler_flag = mil_2_main
+		clr_ruler_flag = rul_2_stab
+		clr_country_flag = sforza_1
+		clr_country_flag = sforza_2
+		clr_country_flag = sforza_3
+		clr_country_flag = sforza_4
+		clr_country_flag = sforza_5
 	}
 }
 
@@ -813,6 +1159,7 @@ country_event = {
 				mil = 1
 				adm = 4
 				dip = 1
+			    #fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -821,6 +1168,7 @@ country_event = {
 				mil = 1
 				adm = 4
 				dip = 1
+			    #fixed = yes
 			}
 		}
 		if = {
@@ -900,6 +1248,7 @@ country_event = {
 				dip = 4
 				adm = 1
 				mil = 1
+			    #fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -908,6 +1257,7 @@ country_event = {
 				dip = 4
 				adm = 1
 				mil = 1
+			    #fixed = yes
 			}
 		}
 		if = {
@@ -989,6 +1339,7 @@ country_event = {
 				mil = 4
 				adm = 1
 				dip = 1
+			    #fixed = yes
 				random_gender = yes # Allows random gender for republics
 			}
 		}
@@ -997,6 +1348,7 @@ country_event = {
 				mil = 4
 				adm = 1
 				dip = 1
+			    #fixed = yes
 			}
 		}
 		if = {
@@ -1259,6 +1611,7 @@ country_event = {
 			ADM = 3
 			DIP = 3
 			MIL = 3
+			#fixed = yes
 			culture = georgian
 		}
 		add_ruler_modifier = {
@@ -1290,6 +1643,7 @@ country_event = {
 			ADM = 2
 			DIP = 5
 			MIL = 2
+			#fixed = yes
 			culture = circassian
 		}
 		add_ruler_modifier = {
@@ -1333,6 +1687,7 @@ country_event = {
 			ADM = 2
 			DIP = 2
 			MIL = 5
+			#fixed = yes
 			culture = dagestani
 		}
 		add_ruler_modifier = {
@@ -1376,6 +1731,7 @@ country_event = {
 			ADM = 5
 			DIP = 2
 			MIL = 2
+			#fixed = yes
 			culture = armenian
 		}
 		if = {
@@ -1468,6 +1824,7 @@ country_event = {
 				adm = 4
 				mil = 2
 				dip = 2
+			    #fixed = yes
 			}
 			set_ruler_flag = appointed_by_overlord
 		}
@@ -1480,6 +1837,7 @@ country_event = {
 				adm = 2
 				dip = 4
 				mil = 2
+			    #fixed = yes
 			}
 			set_ruler_flag = appointed_by_overlord
 		}
@@ -1492,6 +1850,7 @@ country_event = {
 				adm = 2
 				dip = 2
 				mil = 4
+			    #fixed = yes
 			}	
 			set_ruler_flag = appointed_by_overlord
 		}

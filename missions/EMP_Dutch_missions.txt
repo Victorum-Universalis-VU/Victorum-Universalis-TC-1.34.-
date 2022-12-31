@@ -109,6 +109,13 @@ emp_ned_slot1_branch = {
 				}
 				add_permanent_claim = ROOT
 			}
+			south_china_sea_islands_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	
@@ -118,7 +125,10 @@ emp_ned_slot1_branch = {
 		position = 9
 
 		provinces_to_highlight = {
-			area = taiwan_area
+			OR = {
+			    area = taiwan_area
+			    area = south_china_sea_islands_area
+			}
 			NOT = { owned_by = ROOT }
 			has_discovered = ROOT
 		}
@@ -126,10 +136,17 @@ emp_ned_slot1_branch = {
 		trigger = {
 			custom_trigger_tooltip = {
 				tooltip = ned_taiwan.tooltip
-				taiwan_area = {
-					type = all
-					owned_by = ROOT
-					is_city = yes
+				OR = {
+				    taiwan_area = {
+				    	type = all
+				    	owned_by = ROOT
+				    	is_city = yes
+				    }
+				    south_china_sea_islands_area = {
+				    	type = all
+				    	owned_by = ROOT
+				    	is_city = yes
+				    }
 				}
 			}
 		}
@@ -143,6 +160,15 @@ emp_ned_slot1_branch = {
 				add_base_tax = 2
 				add_base_production = 2
 				add_base_manpower = 2
+			}
+			south_china_sea_islands_area = {
+				add_province_modifier = { #Dev boost unchanged as there's twice as many provinces.
+					name = "ned_zeelandia_mod"
+					duration = "-1"
+				}
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
 			}
 		}
 	}

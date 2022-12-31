@@ -1,17 +1,17 @@
 #Sambas
 
-owner = SMB
-controller = SMB
+owner = SKD
+controller = SKD
+add_core = SKD
 culture = bornean
 religion = hinduism
 capital = "Sambas"
 trade_goods = pearls
 hre = no
-base_tax = 3
-base_production = 3
-base_manpower = 2
+base_tax = 1
+base_production = 2
+base_manpower = 1
 is_city = yes
-add_core = SMB
 
 discovered_by = chinese
 discovered_by = indian

@@ -313,6 +313,13 @@ atj_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
+			riau_islands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 		}
 	}
 	atj_peninsula_campaign = {
@@ -321,6 +328,7 @@ atj_2 = {
 		provinces_to_highlight = {
 			OR = {
 				area = indonesian_islands_area
+				area = riau_islands_area
 				area = kedah_area
 				area = malaya_area
 				area = malacca_area
@@ -333,6 +341,7 @@ atj_2 = {
 				all_province = {
 					OR = {
 						area = indonesian_islands_area
+						area = riau_islands_area
 						area = kedah_area
 						area = malaya_area
 						area = malacca_area

@@ -6,6 +6,8 @@ color = { 140  220  230 }
 
 revolutionary_colors = { 5  13  0 }
 
+preferred_religion = protestant
+
 historical_idea_groups = {
 	expansion_ideas
 	plutocracy_ideas

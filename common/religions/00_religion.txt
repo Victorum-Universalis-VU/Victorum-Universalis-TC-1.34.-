@@ -3543,12 +3543,6 @@ dharmic = {
 
 						development_cost = -0.1
 					}
-					divine_justice = {
-						type = DIP
-						cost = 50
-
-						trade_efficiency = 0.1
-					}
 					the_unchanging_writing = {
 						type = MIL
 						cost = 50
