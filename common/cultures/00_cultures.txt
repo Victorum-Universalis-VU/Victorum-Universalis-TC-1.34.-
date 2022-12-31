@@ -1393,11 +1393,13 @@ scandinavian = { #Nordic
 	graphical_culture = westerngfx
 
 	swedish = {
-            graphical_culture = westerngfx
+        graphical_culture = westerngfx
 		primary = SWE
+		country = {  }
+		province = { local_has_carolean = yes }
 	}
 	danish = {
-            graphical_culture = westerngfx
+        graphical_culture = westerngfx
 		primary = DAN
 		male_names = {
 			Anders Andrew Anund Asger Balder Benedikt Benedict Bjørn Beorn Bo Christopher Edvard Edward Einar Ernest Fredrik Frederick Frej Glum Gorm Gotfred Godfrey Gregers Gregory Grim Hårik Halfdan Halvor Harold Helge Hemming Henry Hjalmar Ingolf Jørn Jakob Jacob Jens Joakim Johann John Charles Knut Kristian Leif Lennart Ludvig Louis Malthe Mads Matthew Mikkel Michael Mogens Nicholas Odd Olav Olaf Peder Pridbjørn Ragnar Ragnvald Rolf Rune Rørik Rurik Severin Sigfred Sigtryg Sigurd Sivard Steen Svend Sven Sämund Thorolf Thorvald Torben Torbjørn Torbjörn Tord Torfinn Torgils Torkel Ture Ubbe Uffe Ulf Vladimir Valentin Yngvar Ingvar Christian Frederik Erik Christoffer Adolf Niels Karl Magnus Maximilian Ulrik Abel Vilhelm Knud Valdemar Harald Oluf Alfred Anton Bent Emanuel Esben Fritjof Frode Gunnar Hans Henrik Holger Jørgen Kasper Peter Poul Rudolf Stefan Tobias Torbald Viktor Vilfred Joachim Ernst Frans Gnupa
@@ -2890,8 +2892,10 @@ finno_ugric = { #Ugric
 	graphical_culture = westerngfx
 
 	finnish = {
-            graphical_culture = westerngfx
+        graphical_culture = westerngfx
 		primary = FIN
+		country = {  }
+		province = { local_has_carolean = yes }
 		dynasty_names = {
 			Bielke Horn Tott Fleming Paijkull Bonde Wrede Soop
 			Mannerheim Furuhjelm Aminoff Armfelt Carpelan Rehbinder Schulman
@@ -4158,7 +4162,7 @@ caucasian = {
 		}
 	}
 	circassian = {
-            graphical_culture = greekgfx
+        graphical_culture = greekgfx
 		primary = CIR
 		male_names = {
 			Petrezok Verzacht Belzebuk Parsabok Smbat Stepanos Stephen Tachat Taniel Daniel Tatoul Tigran Tornik
@@ -12871,6 +12875,8 @@ lost_cultures_group = {
 		}
 	}
 	norse = {
+		country = {  }
+		province = { local_has_carolean = yes }
 		male_names = {
 			Adhalsteinn Aghi Agmundr Agnarr Áki Áleifr Alfarr Alfvin Algautr Ari Arnfinnr Árni Arnórr Arnthórr Arnvidhr Ásbjorn Ásgeirr Ásketill Ásmundr Ásvaldr Audhr Baggi Bárdhr Birgir Bjarni Bjartr Bjorn Brandr Bródhir 
 			Brynjarr Búi Dagfinnr Dagr Danr Egill Eileifr Einarr Eindridhi Eiríkr Erlendr Erlingr Eysteinn Eyvindr Félagi Finnr Flæmingr Fólki Fridhthjófr Fródhi Gauti Gautstafr Geirr Gormr Gudhbrandr Gudhfridhr Gudhini 

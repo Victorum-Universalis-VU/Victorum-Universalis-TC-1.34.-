@@ -89,7 +89,6 @@ estate_nobles = {
 		global_unrest = 2
 		rr_royalists_influence = -0.1
 	}
-
 	land_ownership_modifier = {
 		nobles_loyalty_modifier = 0.2
 	}

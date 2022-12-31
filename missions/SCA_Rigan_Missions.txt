@@ -67,10 +67,20 @@ rig_hansa_mission_slot = {
 		position = 2
 		required_missions = { rig_riga_in_the_hansa }
 		provinces_to_highlight = {
-			province_id = 1926
+			province_id = 43
+			province_id = 1
 		}
 		trigger = {
-			1926 = {
+			43 = {
+				OR = {
+					is_strongest_trade_power = ROOT
+					trade_share = {
+						country = ROOT
+						share = 10
+					}
+				}
+			}
+			1 = {
 				OR = {
 					is_strongest_trade_power = ROOT
 					trade_share = {

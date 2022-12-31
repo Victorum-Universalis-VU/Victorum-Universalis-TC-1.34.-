@@ -636,6 +636,7 @@ sahel_region = {
 		bagirmi_area
 		bahr_salamat_area
 		central_africa_area
+		ahaggar_area
 		#BTADDITIONS
 	}
 	monsoon = {
