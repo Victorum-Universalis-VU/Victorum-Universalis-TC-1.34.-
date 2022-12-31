@@ -2158,19 +2158,19 @@ byz_pp_maritime = {
 			}
 			341 = {
 				change_culture = karchidoniac
-				change_religion = ROOT
+				#change_religion = ROOT
 			}
 			5224 = {
 				change_culture = karchidoniac
-				change_religion = ROOT
+				#change_religion = ROOT
 			}
 			2455 = {
 				change_culture = karchidoniac
-				change_religion = ROOT
+				#change_religion = ROOT
 			}
 			5317 = {
 				change_culture = karchidoniac
-				change_religion = ROOT
+				#change_religion = ROOT
 			}
 		}
 	}
@@ -2713,15 +2713,15 @@ byz_pp_religion = {
 			add_claim = 4292
 			3991 = {
 				change_culture = anatolian_greek
-				change_religion = ROOT
+				#change_religion = ROOT
 			}
 			2313 = {
 				change_culture = anatolian_greek
-				change_religion = ROOT
+				#change_religion = ROOT
 			}
 			3981 = {
 				change_culture = cypriot
-				change_religion = ROOT
+				#change_religion = ROOT
 			}
 		}
 	}
@@ -2788,19 +2788,19 @@ byz_pp_religion = {
 			add_claim = 6550
 			1854 = {
 				change_culture = cypriot
-				change_religion = ROOT
+				#change_religion = ROOT
 			}
 			5180 = {
 				change_culture = cypriot
-				change_religion = ROOT
+				#change_religion = ROOT
 			}
 			7446 = {
 				change_culture = cypriot
-				change_religion = ROOT
+				#change_religion = ROOT
 			}
 			1855 = {
 				change_culture = anatolian_greek
-				change_religion = ROOT
+				#change_religion = ROOT
 			}
 		}
 	}
@@ -2864,11 +2864,11 @@ byz_pp_religion = {
 			}
 			362 = {
 				change_culture = egyptian_greek
-				change_religion = ROOT
+				#change_religion = ROOT
 			}
 			6525 = {
 				change_culture = egyptian_greek
-				change_religion = ROOT
+				#change_religion = ROOT
 			}
 		}
 	}
