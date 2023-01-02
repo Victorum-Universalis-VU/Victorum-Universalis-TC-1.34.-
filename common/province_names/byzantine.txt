@@ -215,6 +215,7 @@
 1110 = "Gytta"
 1111 = { "Slathina Occidentalis" "Arguinion" }
 1220 = "Boron"
+1127 = { "Montes Tautricium" }
 1228 = { "Zamnes" "Satachtha" }
 1231 = { "Syene" "Syene" }
 1233 = { "Megale" "Tchonemyris" }
@@ -428,6 +429,15 @@
 3256 = { "Syiunion" "Saganmos" }
 3294 = "Valetlisum"
 3295 = { "Etruria Orientalis" "Tarchuna" }
+3942 = "Qaratia"
+3943 = "Brak"
+3945 = { "Ubari" "Ubari" }
+3951 = "Dianetta"
+3952 = "Abalessa"
+3953 = "Mons Tamanran"
+3954 = "Salaeale"
+3955 = "Adraropolis"
+3956 = "Tamentios"
 3963 = { "Kasra" "Kasra" }
 3964 = { "Basie" "Qasr Basie" } #Azraq
 3966 = { "Sophene" "Sophene Minor" } #Dersim

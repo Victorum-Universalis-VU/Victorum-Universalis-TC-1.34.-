@@ -1,0 +1,4 @@
+#3944 - Lybian Desert
+
+discovered_by = muslim
+discovered_by = ottoman
