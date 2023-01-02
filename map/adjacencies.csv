@@ -561,5 +561,12 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2275;2475;sea;3947;-1;-1;-1;-1;Tenere-Djado
 2284;2277;sea;3947;-1;-1;-1;-1;Manga-Kawar
 2277;2475;sea;3947;-1;-1;-1;-1;Kawar-Djado
+2474;2475;sea;3944;-1;-1;-1;-1;Murzuq-Djado
+5307;3945;sea;3944;-1;-1;-1;-1;Ghat-Awbari
+3945;2448;sea;3944;-1;-1;-1;-1;Awbari-Sabha
+2448;2449;sea;3944;-1;-1;-1;-1;Sabha-Jurfa
+2448;3943;sea;3944;-1;-1;-1;-1;Sabha-Biraq
+3943;3942;sea;3944;-1;-1;-1;-1;Biraq-Ash Shwayrif
+3942;5306;sea;3944;-1;-1;-1;-1;Ash Shwayrif-Mizda
 
 -1;-1;;-1;-1;-1;-1;-1;-1;
