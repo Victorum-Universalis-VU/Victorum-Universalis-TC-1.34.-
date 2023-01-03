@@ -534,6 +534,57 @@ country_decisions = {
 			5393 = {
 				cede_province = ---
 			}
+			2534 = {
+				cede_province = ---
+			}
+			1084 = {
+				cede_province = ---
+			}
+			4863 = {
+				cede_province = ---
+			}
+			6197 = {
+				cede_province = ---
+			}
+			6188 = {
+				cede_province = ---
+			}
+			6211 = {
+				cede_province = ---
+			}
+			6212 = {
+				cede_province = ---
+			}
+			2729 = {
+				cede_province = ---
+			}
+			2730 = {
+				cede_province = ---
+			}
+			6200 = {
+				cede_province = ---
+			}
+			1094 = {
+				cede_province = ---
+			}
+			4869 = {
+				cede_province = ---
+			}
+			1242 = {
+				cede_province = ---
+			}
+			4937 = {
+				cede_province = ---
+			}
+			2737 = {
+				cede_province = ---
+			}
+			4939 = {
+				cede_province = ---
+			}
+			1108 = {
+				cede_province = ---
+			}
 			}
 		}
 	}
