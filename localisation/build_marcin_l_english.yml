@@ -47,7 +47,7 @@
  building_steam_engine_manu: "Steam Engine Assembly Line"
  building_steam_engine_manu_desc: "§TResources Requirements:§!\n-Copper: 0.4\n-Zinc: 0.3\n\n§TEffects:§!\n-Trade good change to: §YSteam Engine§!\n"
  building_spectacle_factory: "Spectacle Factory"
- building_spectacle_factory_desc: "§TResources Requirements:§!\n-Glass: 0.6\n\n§TEffects:§!\n-Trade good change to: §YOptics§!\n"
+ building_spectacle_factory_desc: "§TResources Requirements:§!\n-Glass: 0.8\n\n§TEffects:§!\n-Trade good change to: §YOptics§!\n"
  building_cigars_factory: "Cigars Factory"
  building_cigars_factory_desc: "§TResources Requirements:§!\n-Tobacco: 0.6\n\n§TEffects:§!\n-Trade good change to: §YCigars§!\n"
  building_chocolate_factory: "Chocolate Factory"

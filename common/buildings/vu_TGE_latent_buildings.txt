@@ -1605,7 +1605,7 @@ spectacle_factory = {
 			#}
 			check_variable = {
 				which = glass
-				value = 1.0
+				value = 0.8
 				#value = 0.6
 			}
 		}
@@ -1623,12 +1623,12 @@ spectacle_factory = {
 			FROM = {
 				subtract_variable = {            
 					which = glass
-					value = 0.6
+					value = 0.8
 				}
 						
 				change_variable = {            
 					which = glass_used
-					value = 0.6
+					value = 0.8
 				}
 		
 				change_variable = {            
@@ -1665,12 +1665,12 @@ spectacle_factory = {
 				FROM = {
 					change_variable = {            
 						which = glass
-						value = 0.6
+						value = 0.8
 					}
 				
 					subtract_variable = {            
 						which = glass_used
-						value = 0.6
+						value = 0.8
 					}
 				}
 			}
