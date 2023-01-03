@@ -1790,6 +1790,8 @@
  #New World
  
  #Misc additions by Doc Robert
+ unite_latvian_tribes_title:0 "Unite Latvian Tribes"
+ unite_latvian_tribes_desc:0 "Untite fractured Latvian tribes into one coherent culture."
  remove_primitive_nations_all_title:0 "Remove Primitive Nations"
  remove_primitive_nations_all_desc:0 "Removes all Primitive Nations that should not be considered a proper state at this moment. This mostly applies to America and Oceania but not only. Will also reduce in-game lag."
  restore_vanilla_status_title:0 "Restore Vanilla Setup"
