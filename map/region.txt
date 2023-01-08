@@ -638,6 +638,7 @@ sahel_region = {
 		central_africa_area
 		ahaggar_area
 		#BTADDITIONS
+		tanezrouft_area
 	}
 	monsoon = {
 		00.06.01
@@ -1983,7 +1984,6 @@ western_atlantic_region = { #New VU
 central_atlantic_region = { #New VU
 	areas = {
 		sargasso_sea_area
-		coast_of_guyana_area
 	}
 }
 
@@ -2177,6 +2177,7 @@ atlantic_south_america_region = {
 	areas = {
 		coast_of_brazil_sea_area
 		argentine_sea_area
+		coast_of_guyana_area
 	}
 }
 

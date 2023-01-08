@@ -133,9 +133,6 @@ technology = { #Naval Ambitions
 	range					= 115
 	impressment_offices 	= yes
 	naval_engagement_width = 10
-	
-	#Canal System Building
-	canal_system = yes
 }
 
 technology  = { #Docks
@@ -293,6 +290,9 @@ technology = { #Development of Maritime Law
 	
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
+	
+	#Canal System Building
+	canal_system = yes
 }
 
 technology = { #Merchantman
