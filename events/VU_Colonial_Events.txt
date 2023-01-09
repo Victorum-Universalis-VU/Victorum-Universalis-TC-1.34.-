@@ -1,0 +1,105 @@
+namespace = VU_COL_Events
+
+#Colonial Land Transfer
+country_event = {
+	id = VU_COL_Events.01
+	title = VU_COL_Events.01.t
+	desc = VU_COL_Events.01.d
+	picture = COURT_eventPicture
+	
+	trigger = {
+		FROM = { is_colonial_nation = yes }
+		any_owned_province = {
+			NOT = { colonial_region = capital }
+		}
+	}
+
+	mean_time_to_happen = { months = 1 }
+
+	#Transfer
+	option = {
+		name = VU_COL_Events.01.a
+		
+		hidden_effect = {
+			capital_scope = {
+				save_event_target_as = colonial_capital
+			}
+			overlord = {
+				save_event_target_as = overlord_country
+			}
+			every_owned_province = {
+				limit = {
+					NOT = { colonial_region = event_target:colonial_capital }
+				}
+				remove_core = ROOT
+				add_core = event_target:overlord_country
+				cede_province = event_target:overlord_country
+			}
+		}
+	}
+}
+
+#Achieved Self-Governance
+#country_event = {
+#	id = VU_COL_Events.02
+#	title = VU_COL_Events.02.t
+#	desc = VU_COL_Events.02.d
+#	picture = DIPLOMACY_eventPicture
+#	
+#	trigger = {
+#		OR = {
+#			is_subject_of_type = crown_colony
+#			is_subject_of_type = private_enterprise
+#		}
+#		num_of_owned_provinces_with = {
+#			value = 50
+#			is_core = ROOT
+#		}
+#	}
+#
+#	mean_time_to_happen = { months = 1 }
+#
+#	#Great news!
+#	option = {
+#		name = VU_COL_Events.02.a
+#		
+#		change_subject_type = {
+#			subject_type = self_governing_colony
+#		}
+#		add_liberty_desire = -25
+#	}
+#}
+
+#Grant Dominion Status
+#country_event = {
+#	id = VU_COL_Events.03
+#	title = VU_COL_Events.03.t
+#	desc = VU_COL_Events.03.d
+#	picture = DIPLOMACY_eventPicture
+#	
+#	trigger = {
+#		is_subject_of_type = self_governing_colony
+#		num_of_owned_provinces_with = {
+#			value = 75
+#			is_core = ROOT
+#		}
+#		liberty_desire = 75
+#	}
+#
+#	#Grant it.
+#	option = {
+#		name = VU_COL_Events.03.a
+#		
+#		change_subject_type = {
+#			subject_type = self_governing_dominion_vu
+#		}
+#		add_liberty_desire = -25
+#	}
+#
+#	#Deny it.
+#	option = {
+#		name = VU_COL_Events.03.b
+#		
+#		add_liberty_desire = 50
+#	}
+#}

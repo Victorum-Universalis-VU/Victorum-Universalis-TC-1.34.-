@@ -2981,7 +2981,7 @@ cathedral = {
 	make_obsolete = temple
 	modifier = {
 		local_missionary_strength = 0.02
-		local_tax_modifier = 1.0
+		local_tax_modifier = 0.75
 	}
 
 	ai_will_do = {
@@ -3122,7 +3122,7 @@ grand_cathedral = {
 	make_obsolete = cathedral
 	modifier = {
 		local_missionary_strength = 0.05
-		local_tax_modifier = 2.0
+		local_tax_modifier = 1.0
 	}
 
 	ai_will_do = {
@@ -3208,34 +3208,25 @@ road_system = {
 	
 	modifier = {
 		local_friendly_movement_speed = 0.15
-		#Changed from 0.2 so it combines nicely with roads and railways for 50% and 100% bonuses.
+		#Transportation infrastructure was made, first and foremost, to allow faster movement of armies across long distances.
 		
 		local_institution_spread = 0.1
 		#Any infrastructure that allows for an easier flow of people and goods subsequently allows for an easier flow of information. This should represent that.
 		
 		local_development_cost = -0.1
-		#Roads moderately improved the development of any cities it connected to by facilitating the transport of people and goods substantially.
+		#Roads moderately improved the development of any cities it connected to by facilitating the transport of people and goods.
 		
 		allowed_num_of_buildings = 1
 		#This allows for improved transportation between urban and rural areas, so buildings can be made when otherwise they would be too far to get to.
+		#Also serves the gameplay function of tecnically not costing a building slot.
 	}
 
 	ai_will_do = {
-		factor = 50
-		modifier = {
-			factor = 0.1
-			is_overseas = yes
-			NOT = { development = 10 }
-		}
+		factor = 75 #Previously 50
 		
-		modifier = {
-			factor = 0.1
-			is_overseas = yes
-			NOT = { development = 10 }
-		}
+		### ECONOMY
 		
-		#ECONOMY 101
-		#AI avoids building with loans
+		#AI avoids building with loans.
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
@@ -3249,59 +3240,149 @@ road_system = {
 			owner = { num_of_loans = 1 }
 		}
 		
-		#AI avoids building when in deficit
+		#AI avoids building when in deficit.
 		modifier = {
 			factor = 0.75
 			owner = { is_in_deficit = yes }
 		}
 		
-		#AI will try to stockpile some amount of money
+		#AI will try to stockpile some amount of money.
 		modifier = {
 			factor = 0.75
 			owner = { NOT = { treasury = 100 } }
 		}
 		
-		#SPECIFIC
-		#AI more likely to build in provinces with high development
+		### GENERAL
+		
+		#AI is encouraged to build in its capital.
 		modifier = {
-			factor = 2.5
-			development = 15
-		}
-		modifier = {
-			factor = 2.5
-			development = 21
-		}
-		modifier = {
-			factor = 2.5
-			development = 30
+			factor = 15
+			is_capital = yes
 		}
 		
-		#GENERAL
-		#AI is encouraged to build nearby others, this is done to avoid roads that lead nowhere.
+		#AI is encouraged to build in capital area.
+		modifier = {
+			factor = 10
+			is_in_capital_area = yes
+		}
+		
+		#AI is encouraged to build in coastal provinces.
+		modifier = {
+			factor = 2
+			has_port = yes
+		}
+		
+		#AI is encouraged to build in provinces with primary culture.
+		modifier = {
+			factor = 3
+			has_owner_culture = yes
+		}
+		
+		#AI is encouraged to build in provinces with high development.
+		modifier = {
+			factor = 2
+			development = 15 #5/5/5
+		}
+		modifier = {
+			factor = 4
+			development = 21 #7/7/7
+		}
+		modifier = {
+			factor = 6
+			development = 30 #10/10/10
+		}
+		modifier = {
+			factor = 8
+			development = 36 #12/12/12
+		}
+		modifier = {
+			factor = 10
+			development = 45 #15/15/15
+		}
+		
+		#AI is discouraged to build in provinces with unaccepted cultures.
+		modifier = {
+			factor = 0.5
+			has_owner_culture = no
+			has_owner_accepted_culture = no
+		}
+		
+		#AI is discouraged to build in provinces with different religion.
+		modifier = {
+			factor = 0.3
+			has_owner_religion = no
+		}
+		
+		#AI is discouraged to build in territories.
+		modifier = {
+			factor = 0.3
+			is_state = no
+		}
+		
+		#AI is discouraged to build in overseas provinces.
+		modifier = {
+			factor = 0.1
+			is_overseas = yes
+		}
+		
+		### ADJACENT
+		
+		#AI is encouraged to build nearby other infrastructure buildings.
 		modifier = {
 			factor = 2
 			any_neighbor_province = {
 				has_building = road_system
 			}
 		}
-		
-		#AI is encouraged to build in capitals.
 		modifier = {
-			factor = 2.5
-			is_capital = yes
+			factor = 4
+			any_neighbor_province = {
+				has_building = canal_system
+			}
+		}
+		modifier = {
+			factor = 6
+			any_neighbor_province = {
+				has_building = railway_system
+			}
+		}
+		
+		#AI is encouraged to build in provinces with forts.
+		modifier = {
+			factor = 3
+			OR = {
+				has_building = fort_15th
+				has_building = fort_16th
+				has_building = fort_17th
+				has_building = fort_18th
+			}
+		}
+		
+		#AI is encouraged to build nearby forts.
+		modifier = {
+			factor = 2
+			any_neighbor_province = {
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
 		}
 	}
 }
 
-#Tier 1 Transportation - Canal System
+#Tier 2 Transportation - Canal System
 canal_system = {
 	cost = 100
 	time = 12
 	
 	make_obsolete = road_system
+	
 	modifier = {
 		local_friendly_movement_speed = 0.25
-		#Changed from 0.2 so it combines nicely with canals and railways for 50% and 100% bonuses.
+		#Transportation infrastructure was made, first and foremost, to allow faster movement of armies across long distances.
 		
 		local_institution_spread = 0.2
 		#Any infrastructure that allows for an easier flow of people and goods subsequently allows for an easier flow of information. This should represent that.
@@ -3309,8 +3390,9 @@ canal_system = {
 		local_development_cost = -0.15
 		#Canals significantly improved the development of any cities it connected to by facilitating the transport of people and goods substantially.
 		
-		allowed_num_of_buildings = 2
+		allowed_num_of_buildings = 1
 		#This allows for improved transportation between urban and rural areas, so buildings can be made when otherwise they would be too far to get to.
+		#Also serves the gameplay function of tecnically not costing a building slot.
 	}
 	
 	build_trigger = {
@@ -3323,30 +3405,23 @@ canal_system = {
 				}
 			}
 			
-			#Can't build if province has a terrain not suitable for canals
+			#Can't build if province has a terrain not suitable for canals.
 			NOT = {
-				has_terrain = hills
-				has_terrain = highlands
 				has_terrain = mountain
 				has_terrain = cold_mountains
 				has_terrain = desert_ranges
-				has_terrain = dry_highlands
+				has_terrain = tundra
 				has_terrain = glacier
-				#has_terrain = woods
 			}
 		}
 	}
 
 	ai_will_do = {
-		factor = 50
-		modifier = {
-			factor = 0.1
-			is_overseas = yes
-			NOT = { development = 10 }
-		}
+		factor = 100 #Previously 75
 		
-		#ECONOMY 101
-		#AI avoids building with loans
+		### ECONOMY
+		
+		#AI avoids building with loans.
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
@@ -3360,54 +3435,151 @@ canal_system = {
 			owner = { num_of_loans = 1 }
 		}
 		
-		#AI avoids building when in deficit
+		#AI avoids building when in deficit.
 		modifier = {
 			factor = 0.75
 			owner = { is_in_deficit = yes }
 		}
 		
-		#AI will try to stockpile some amount of money
+		#AI will try to stockpile some amount of money.
 		modifier = {
 			factor = 0.75
 			owner = { NOT = { treasury = 200 } }
 		}
 		
-		#SPECIFIC
-		#AI more likely to build in provinces with high development
+		### GENERAL
+		
+		#AI is encouraged to build in its capital.
 		modifier = {
-			factor = 2.5
-			development = 15
-		}
-		modifier = {
-			factor = 2.5
-			development = 21
-		}
-		modifier = {
-			factor = 2.5
-			development = 30
+			factor = 15
+			is_capital = yes
 		}
 		
-		#GENERAL
-		#AI is encouraged to build nearby others, this is done to avoid roads that lead nowhere.
+		#AI is encouraged to build in capital area.
+		modifier = {
+			factor = 10
+			is_in_capital_area = yes
+		}
+		
+		#AI is encouraged to build in coastal provinces.
 		modifier = {
 			factor = 2
+			has_port = yes
+		}
+		
+		#AI is encouraged to build in provinces with primary culture.
+		modifier = {
+			factor = 3
+			has_owner_culture = yes
+		}
+		
+		#AI is encouraged to build in provinces with high development.
+		modifier = {
+			factor = 2
+			development = 15 #5/5/5
+		}
+		modifier = {
+			factor = 4
+			development = 21 #7/7/7
+		}
+		modifier = {
+			factor = 6
+			development = 30 #10/10/10
+		}
+		modifier = {
+			factor = 8
+			development = 36 #12/12/12
+		}
+		modifier = {
+			factor = 10
+			development = 45 #15/15/15
+		}
+		
+		#AI is discouraged to build in provinces with unaccepted cultures.
+		modifier = {
+			factor = 0.5
+			has_owner_culture = no
+			has_owner_accepted_culture = no
+		}
+		
+		#AI is discouraged to build in provinces with different religion.
+		modifier = {
+			factor = 0.3
+			has_owner_religion = no
+		}
+		
+		#AI is discouraged to build in territories.
+		modifier = {
+			factor = 0.3
+			is_state = no
+		}
+		
+		#AI is discouraged to build in overseas provinces.
+		modifier = {
+			factor = 0.1
+			is_overseas = yes
+		}
+		
+		### ADJACENT
+		
+		#AI is encouraged to build nearby other infrastructure buildings.
+		modifier = {
+			factor = 2
+			any_neighbor_province = {
+				has_building = road_system
+			}
+		}
+		modifier = {
+			factor = 4
 			any_neighbor_province = {
 				has_building = canal_system
 			}
 		}
-		
-		#AI is encouraged to build in capitals.
 		modifier = {
-			factor = 2.5
-			is_capital = yes
+			factor = 6
+			any_neighbor_province = {
+				has_building = railway_system
+			}
+		}
+		
+		#AI is encouraged to upgrade infrastructure buildings.
+		modifier = {
+			factor = 3
+			has_building = road_system
+		}
+		
+		#AI is encouraged to build in provinces with forts.
+		modifier = {
+			factor = 3
+			OR = {
+				has_building = fort_15th
+				has_building = fort_16th
+				has_building = fort_17th
+				has_building = fort_18th
+			}
+		}
+		
+		#AI is encouraged to build nearby forts.
+		modifier = {
+			factor = 2
+			any_neighbor_province = {
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
 		}
 	}
 }
 
-#Tier 1 Transportation - Railway System
+#Tier 3 Transportation - Railway System
 railway_system = {
 	cost = 200
 	time = 24
+	
+	make_obsolete = canal_system
 	
 	#Changed cost from 400. While railways should be expensive, they shouldn't be as expensive as entire buildings.
 	#Changed time from 12 because railways are significantly better than roads and canals.
@@ -3416,19 +3588,19 @@ railway_system = {
 	#Change the building triggers to favour terrain restrictions instead of coal production, railway adjacency or rail boom.
 	
 	build_trigger = {
-		#Can't build if province has a terrain not suitable for railways
-		#I decided to make that only mountains and glaciers because adding the other canal terrains would make railways worthless in many parts of the world.
-		NOT = { has_terrain = mountain }
-		NOT = {	has_terrain = cold_mountains }
-		NOT = {	has_terrain = glacier }
-		NOT = {	has_terrain = swamp }
-		NOT = {	has_terrain = tropical_highlands_terrain }
-		NOT = {	has_terrain = desert_ranges }
+		#Can't build if province has a terrain not suitable for railways.
+		NOT = {
+				has_terrain = mountain
+				has_terrain = cold_mountains
+				has_terrain = desert_ranges
+				has_terrain = tundra
+				has_terrain = glacier
+			}
 	}
 	
 	modifier = {
 		local_friendly_movement_speed = 0.5
-		#Changed from 0.4 so it combines nicely with roads and canals for 50% and 100% bonuses.
+		#Transportation infrastructure was made, first and foremost, to allow faster movement of armies across long distances.
 		#Should go without saying that railways were the best infrastructure possible at the time, so they have the largest bonus to movement speed.
 		
 		local_institution_spread = 0.4
@@ -3437,26 +3609,16 @@ railway_system = {
 		local_development_cost = -0.25
 		#Railways drastically improved the development of any cities it connected to by facilitating the transport of people and goods substantially.
 		
-		allowed_num_of_buildings = 3
+		allowed_num_of_buildings = 2
 		#This allows for improved transportation between urban and rural areas, so buildings can be made when otherwise they would be too far to get to.
 	}
 
 	ai_will_do = {
-		factor = 100
-		modifier = {
-			factor = 0.1
-			is_overseas = yes
-			NOT = { development = 10 }
-		}
+		factor = 125 #Previously 100
 		
-		modifier = {
-			factor = 0.1
-			is_overseas = yes
-			NOT = { development = 10 }
-		}
+		### ECONOMY
 		
-		#ECONOMY 101
-		#AI avoids building with loans
+		#AI avoids building with loans.
 		modifier = {
 			factor = 0
 			owner = { num_of_loans = 3 }
@@ -3470,46 +3632,145 @@ railway_system = {
 			owner = { num_of_loans = 1 }
 		}
 		
-		#AI avoids building when in deficit
+		#AI avoids building when in deficit.
 		modifier = {
 			factor = 0.75
 			owner = { is_in_deficit = yes }
 		}
 		
-		#AI will try to stockpile some amount of money
+		#AI will try to stockpile some amount of money.
 		modifier = {
 			factor = 0.75
 			owner = { NOT = { treasury = 400 } }
 		}
 		
-		#SPECIFIC
-		#AI more likely to build in provinces with high development
+		### GENERAL
+		
+		#AI is encouraged to build in its capital.
 		modifier = {
-			factor = 2.5
-			development = 15
-		}
-		modifier = {
-			factor = 2.5
-			development = 21
-		}
-		modifier = {
-			factor = 2.5
-			development = 30
+			factor = 15
+			is_capital = yes
 		}
 		
-		#GENERAL
-		#AI is encouraged to build nearby others, this is done to avoid roads that lead nowhere.
+		#AI is encouraged to build in capital area.
+		modifier = {
+			factor = 10
+			is_in_capital_area = yes
+		}
+		
+		#AI is encouraged to build in coastal provinces.
 		modifier = {
 			factor = 2
+			has_port = yes
+		}
+		
+		#AI is encouraged to build in provinces with primary culture.
+		modifier = {
+			factor = 3
+			has_owner_culture = yes
+		}
+		
+		#AI is encouraged to build in provinces with high development.
+		modifier = {
+			factor = 2
+			development = 15 #5/5/5
+		}
+		modifier = {
+			factor = 4
+			development = 21 #7/7/7
+		}
+		modifier = {
+			factor = 6
+			development = 30 #10/10/10
+		}
+		modifier = {
+			factor = 8
+			development = 36 #12/12/12
+		}
+		modifier = {
+			factor = 10
+			development = 45 #15/15/15
+		}
+		
+		#AI is discouraged to build in provinces with unaccepted cultures.
+		modifier = {
+			factor = 0.5
+			has_owner_culture = no
+			has_owner_accepted_culture = no
+		}
+		
+		#AI is discouraged to build in provinces with different religion.
+		modifier = {
+			factor = 0.3
+			has_owner_religion = no
+		}
+		
+		#AI is discouraged to build in territories.
+		modifier = {
+			factor = 0.3
+			is_state = no
+		}
+		
+		#AI is discouraged to build in overseas provinces.
+		modifier = {
+			factor = 0.1
+			is_overseas = yes
+		}
+		
+		### ADJACENT
+		
+		#AI is encouraged to build nearby other infrastructure buildings.
+		modifier = {
+			factor = 2
+			any_neighbor_province = {
+				has_building = road_system
+			}
+		}
+		modifier = {
+			factor = 4
+			any_neighbor_province = {
+				has_building = canal_system
+			}
+		}
+		modifier = {
+			factor = 6
 			any_neighbor_province = {
 				has_building = railway_system
 			}
 		}
 		
-		#AI is encouraged to build in capitals.
+		#AI is encouraged to upgrade infrastructure buildings.
 		modifier = {
-			factor = 2.5
-			is_capital = yes
+			factor = 2
+			has_building = road_system
+		}
+		modifier = {
+			factor = 4
+			has_building = canal_system
+		}
+		
+		#AI is encouraged to build in provinces with forts.
+		modifier = {
+			factor = 3
+			OR = {
+				has_building = fort_15th
+				has_building = fort_16th
+				has_building = fort_17th
+				has_building = fort_18th
+			}
+		}
+		
+		#AI is encouraged to build nearby forts.
+		modifier = {
+			factor = 2
+			any_neighbor_province = {
+				OR = {
+					has_building = fort_15th
+					has_building = fort_16th
+					has_building = fort_17th
+					has_building = fort_18th
+				}
+			}
 		}
 	}
 }
@@ -4447,6 +4708,34 @@ wharf = {
 		factor = 12			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses. Note vanilla was 1750, but considering this building had the same effect as other manufacturies and they all have factors of 1, I assumed this was a vanilla oversight.
 		#BT Addon removed a bunch of modifiers for the same reason as directly above.
 		#BT Addon New factors, range 2 percent to about 425 percent
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
+		
 		modifier = {
 			factor = 0.9
 			FROM = { technology_group = eastern }
@@ -4577,6 +4866,34 @@ weapons = {
 	ai_will_do = {
 		factor = 12			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
+		
 		modifier = {
 			factor = 0.9
 			FROM = { technology_group = eastern }
@@ -4697,6 +5014,34 @@ textile = {
 	ai_will_do = {
 		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
+		
 		modifier = {
 			factor = 0.9
 			FROM = { technology_group = eastern }
@@ -4869,6 +5214,34 @@ plantations = {
 	ai_will_do = {
 		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
+		
 		modifier = {
 			factor = 0.9
 			FROM = { technology_group = eastern }
@@ -5052,6 +5425,34 @@ tradecompany = {
 	ai_will_do = {
 		factor = 7			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
+		
 		modifier = {
 			factor = 0.9
 			FROM = { technology_group = eastern }
@@ -5226,6 +5627,34 @@ farm_estate = {
 	ai_will_do = {
 		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
+		
 		modifier = {
 			factor = 0.9
 			FROM = { technology_group = eastern }
@@ -5350,6 +5779,34 @@ mills = {
 	ai_will_do = {
 		factor = 8			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
+		
 		modifier = {
 			factor = 0.9
 			FROM = { technology_group = eastern }
@@ -5464,6 +5921,34 @@ furnace = {
 	ai_will_do = {
 		factor = 15			#BT Addon changed from 1. Changing all base factors to price divided by 100. AI apparently doesn't factor the modifier, just the raw size increase, so also increasing weight beyond that by 20 percent for manufacturies with other bonuses, and 60 for non-factored bonuses.
 		#BT Addon New factors, range 2 percent to about 425 percent
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
+		
 		modifier = {
 			factor = 0.9
 			FROM = { technology_group = eastern }
@@ -5555,6 +6040,33 @@ ramparts = {
 
 	ai_will_do = {
 		factor = 1
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
 	}
 }
 
@@ -5596,6 +6108,33 @@ soldier_households = {
 
 	ai_will_do = {
 		factor = 1
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
 	}
 }
 
@@ -5631,6 +6170,33 @@ impressment_offices = {
 
 	ai_will_do = {
 		factor = 1
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
 	}
 }
 
@@ -5699,6 +6265,33 @@ state_house = {
 
 	ai_will_do = {
 		factor = 1
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
 	}
 }
 
@@ -5724,5 +6317,32 @@ oil_well = {
 	
 	ai_will_do = {
 		factor = 1
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
 	}
 }

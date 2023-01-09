@@ -3599,11 +3599,11 @@
  
  #Transportation
  building_road_system:0 "Roads"
- building_road_system_desc:0 "A network of narrow and wide paths, compacted with earth and stones, sometimes topped with a layer of tarmac in urban areas. These road networks allow modes of transportation a flat and fairly even surface on which to traverse on, thus avoiding dangerous and unstable routes from point §OA§! to §OB§!. Can be built §Yanywhere§!."
- building_canal_system:0 "Roads & Waterways"
- building_canal_system_desc:0 "A network of narrow and wide paths, with the additon of medium birth, yet shallow waterways that allow for the transportation of goods at a slightly faster speed from point §OA§! to §OB§!. Can only be built on §Ycoastal§! and on §Yadjacent§! provinces that already has an existing §TRoad & Waterways§! system. Can't be built on §YHills§!, §YHighlands§!, §YMountains§!, §YCold Mountains§!, §YDesert Ranges§!, §YDry Highlands§! or §YGlaciers§!."                                                                                                                                                                                          
+ building_road_system_desc:0 "A network of narrow and wide paths, compacted with earth and stones, sometimes topped with a layer of tarmac in urban areas. These road networks allow modes of transportation a flat and fairly even surface on which to traverse on, thus avoiding dangerous and unstable routes from point §OA§! to §OB§!.\n\nCan be built §Yanywhere§!."
+ building_canal_system:0 "Canals"
+ building_canal_system_desc:0 "A network of medium birth, yet shallow waterways that allow for the transportation of goods at a slightly faster speed from point §OA§! to §OB§!. Can only be built on §Ycoastal§! and on §Yadjacent§! provinces that already have an existing §TCanals§! system.\n\nCan't be built on §YMountain§!, §YCold Mountain§!, §YDesert Range§!, §YTundra§!, or §YGlacier§! terrain."
  building_railway_system:0 "Railroads"
- building_railway_system_desc:0 "A network of narrow steel, held together by wooden or concrete bases that allow for the delivering at high-speed of goods and armies across several provinces from point §OA§! to §OB§!.\nCan't be built on §Ymountain§!, §Ycold mountains§!, §Yglacier§!, §Yswamp§!, §Ytropical highlands§! and §Ydesert ranges§! terrain."
+ building_railway_system_desc:0 "A network of narrow steel, held together by wooden or concrete bases that allow for the delivering at high-speed of goods and armies across several provinces from point §OA§! to §OB§!.\n\nCan't be built on §YMountain§!, §YCold Mountain§!, §YDesert Range§!, §YTundra§!, or §YGlacier§! terrain."
  
  #Coastal
  naval_base:0 "Naval Base"

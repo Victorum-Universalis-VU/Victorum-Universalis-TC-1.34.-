@@ -1004,6 +1004,12 @@ guiTypes = {
 			maxHeight = 18
 			text = "2000¤"
 		}
+		
+		iconType = {
+			name = "canal_to_railroad_arrow"
+			position = { x = 340 y = 235 }
+			spriteType = "GFX_building_upgrade_icon"
+		}
 
 		checkboxType = {
 			name = "build_railway_system"
