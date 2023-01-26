@@ -17,8 +17,6 @@
 # FROM = owner
 # ROOT = province
 
-
-
 native_earthwork = {
 	cost = 100
 	time = 12
@@ -39,6 +37,33 @@ native_earthwork = {
 			factor = 2.0
 			is_capital = yes
 		}				
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
 	}
 }
 
@@ -65,6 +90,33 @@ native_palisade = {
 			factor = 2.0
 			is_capital = yes
 		}				
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
 	}
 }
 
@@ -89,10 +141,35 @@ native_fortified_house = {
 			factor = 2.0
 			is_capital = yes
 		}				
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
 	}
 }
-
-
 
 native_ceremonial_fire_pit = {
 	cost = 200
@@ -116,6 +193,33 @@ native_ceremonial_fire_pit = {
 			factor = 2.0
 			is_capital = yes
 		}				
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
 	}
 }
 
@@ -139,6 +243,33 @@ native_irrigation = {
 			factor = 2.0
 			is_capital = yes
 		}				
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
 	}
 }
 
@@ -162,6 +293,33 @@ native_storehouse = {
 			factor = 2.0
 			is_capital = yes
 		}				
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
 	}
 }
 
@@ -185,6 +343,33 @@ native_longhouse = {
 			factor = 2.0
 			is_capital = yes
 		}				
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
 	}
 }
 
@@ -209,6 +394,33 @@ native_sweat_lodge = {
 			factor = 2.0
 			is_capital = yes
 		}				
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
 	}
 }
 
@@ -233,9 +445,35 @@ native_great_trail = {
 			factor = 2.0
 			is_capital = yes
 		}				
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
 	}
 }
-
 
 native_three_sisters_field = {
 	cost = 100
@@ -257,5 +495,32 @@ native_three_sisters_field = {
 			factor = 2.0
 			is_capital = yes
 		}				
+		
+		#ECONOMY 101
+		#AI avoids building with loans
+		modifier = {
+			factor = 0
+			owner = { num_of_loans = 3 }
+		}
+		modifier = {
+			factor = 0.3
+			owner = { num_of_loans = 2 }
+		}
+		modifier = {
+			factor = 0.5
+			owner = { num_of_loans = 1 }
+		}
+		
+		#AI avoids building when in deficit
+		modifier = {
+			factor = 0.75
+			owner = { is_in_deficit = yes }
+		}
+		
+		#AI will try to stockpile some amount of money
+		modifier = {
+			factor = 0.75
+			owner = { NOT = { treasury = 400 } }
+		}
 	}
 }

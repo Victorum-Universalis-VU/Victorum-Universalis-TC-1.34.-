@@ -504,6 +504,7 @@ colony = {
 		other_overlord = crown_colony
 		other_overlord = private_enterprise
 		other_overlord = self_governing_colony
+		other_overlord = self_governing_dominion_vu
 		neighboring_primitives = yes
 		colonial_region_nations = yes
 	}
@@ -512,6 +513,7 @@ colony = {
 		other_overlord = crown_colony
 		other_overlord = private_enterprise
 		other_overlord = self_governing_colony
+		other_overlord = self_governing_dominion_vu
 		neighboring_primitives = yes
 		colonial_region_nations = yes
 	}
@@ -590,8 +592,8 @@ private_enterprise = {
 	is_colony_subtype = yes
 	count = colony
 
-	forcelimit_to_overlord = 0.0
-	manpower_to_overlord = 0.0
+	forcelimit_to_overlord = 0.0 			#Changed from 0.0 so it works as an opposite to crown colonies
+	manpower_to_overlord = 0.0 				#Changed from 0.0
 	naval_forcelimit_to_overlord = 0.3
 	sailors_to_overlord = 0.3
 
@@ -621,10 +623,10 @@ self_governing_colony = {
 	is_colony_subtype = yes
 	count = colony
 
-	forcelimit_to_overlord = 0.002
-	manpower_to_overlord = 0.002
-	naval_forcelimit_to_overlord = 0.002
-	sailors_to_overlord = 0.002
+	forcelimit_to_overlord = 0.05 			#Changed from 0.002 to match previous dominion values
+	manpower_to_overlord = 0.05 			#Changed from 0.002
+	naval_forcelimit_to_overlord = 0.05 	#Changed from 0.002
+	sailors_to_overlord = 0.05 				#Changed from 0.002
 
 	# Subject Interactions:
 	customize_subject = yes
@@ -646,6 +648,7 @@ self_governing_colony = {
 }
 
 #VU addition by San Felipe with input from Letole & Piano
+#Reworked by OnlyKarlos as part of the colonial rework
 self_governing_dominion_vu = {
 
 	copy_from = self_governing_colony
@@ -658,18 +661,19 @@ self_governing_dominion_vu = {
 	count = colony
 	
 	# Properties:
-	forcelimit_to_overlord = 0.05
-	manpower_to_overlord = 0.05
-	naval_forcelimit_to_overlord = 0.05
-	sailors_to_overlord = 0.05
-	transfer_trade_power = no
+	forcelimit_to_overlord = 0.0 			#Changed from 0.05 to reflect a dominion's much greater autonomy
+	manpower_to_overlord = 0.0 				#Changed from 0.05
+	naval_forcelimit_to_overlord = 0.0 		#Changed from 0.05
+	sailors_to_overlord = 0.0 				#Changed from 0.05
 
 	# Subject Interactions:
 	customize_subject = yes
-	replace_governor = yes
+	replace_governor = no
 	block_settlement_growth = no
 	allow_settlement_growth = no
 	press_sailors = no
+	enforce_culture = yes #Although it doesn't make much sense, it functions as a workaround to colonial nations switching to native cultures
+	transfer_trade_power = no
 	
 	is_potential_overlord = {
         is_subject = no
@@ -695,53 +699,54 @@ self_governing_dominion_vu = {
 }
 
 #VU addition by San Felipe with input from Letole & Piano
-self_governing_super_dominion_vu = {
-
-	copy_from = self_governing_dominion_vu
-
-	sprite = GFX_super_dominion_icon
-
-	change_colonial_type = yes
-	upgrade_subject_type = yes
-	is_colony_subtype = yes
-	count = colony
-	
-	# Properties:
-	forcelimit_to_overlord = 0.075
-	manpower_to_overlord = 0.075
-	naval_forcelimit_to_overlord = 0.075
-	sailors_to_overlord = 0.075
-	transfer_trade_power = no
-
-	# Subject Interactions:
-	customize_subject = yes
-	replace_governor = yes
-	block_settlement_growth = no
-	allow_settlement_growth = no
-	press_sailors = no
-	
-	is_potential_overlord = {
-        is_subject = no
-        OR = {
-            is_year = 1600
-        }
-    }
-	
-	can_fight = {
-        independent_nations = yes
-        same_overlord = tributary_state
-        other_overlord = all
-    }
-	
-	# Modifiers:		
-	modifier_overlord = {
-		modifier = self_governing_super_dominion_vu_overlord
-	}
-	
-	modifier_subject = {
-		modifier = self_governing_super_dominion_vu_subject
-	}
-}
+#Temporarily removed by OnlyKarlos as part of the colonial rework
+#self_governing_super_dominion_vu = {
+#
+#	copy_from = self_governing_dominion_vu
+#
+#	sprite = GFX_super_dominion_icon
+#
+#	change_colonial_type = yes
+#	upgrade_subject_type = yes
+#	is_colony_subtype = yes
+#	count = colony
+#	
+#	# Properties:
+#	forcelimit_to_overlord = 0.075
+#	manpower_to_overlord = 0.075
+#	naval_forcelimit_to_overlord = 0.075
+#	sailors_to_overlord = 0.075
+#	transfer_trade_power = no
+#
+#	# Subject Interactions:
+#	customize_subject = yes
+#	replace_governor = yes
+#	block_settlement_growth = no
+#	allow_settlement_growth = no
+#	press_sailors = no
+#	
+#	is_potential_overlord = {
+#        is_subject = no
+#        OR = {
+#            is_year = 1600
+#        }
+#    }
+#	
+#	can_fight = {
+#        independent_nations = yes
+#        same_overlord = tributary_state
+#        other_overlord = all
+#    }
+#	
+#	# Modifiers:		
+#	modifier_overlord = {
+#		modifier = self_governing_super_dominion_vu_overlord
+#	}
+#	
+#	modifier_subject = {
+#		modifier = self_governing_super_dominion_vu_subject
+#	}
+#}
 
 
 tributary_state = {

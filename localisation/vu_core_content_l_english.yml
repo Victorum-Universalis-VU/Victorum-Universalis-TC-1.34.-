@@ -1324,13 +1324,8 @@
  vu_djerid_canal:0 "Terraformed Chott El-Djerid"
  desc_vu_djerid_canal:0 "Chott El-Djerid has been turned into permanent lake. This allows for hostile desert to thrive once again."
  
- #Malaria preventing early colonization in Africa
- vu_malaria_present:0 "Dangerous Malaria Region"
- desc_vu_malaria_present:0 "This province is infested with malaria-carrying mosquitos. This dangerous disease kills those without natural immunity, shattering any attempts at permanent settlement of those who are strange to the region."
- VU_province_cant_be_colonized_1:0 "This province cannot be effectively colonized due to large presence of malaria-carrying mosquitos that will shatter any non-native migrants. The disease issue prevents you from colonizing this province. \nIn order to be able to colonize it you must either: \n - You must find a cure first and unlock Scramble for Africa. This means reaching \nDIPLOMATIC TECHNOLOGY 35 \n - Have technology group of either §YEast African§!, §YCentral African§!, §YEast African§!"
-
-
-
+ 
+ 
  #################################################################################
  #################################################################################
  #################################################################################
