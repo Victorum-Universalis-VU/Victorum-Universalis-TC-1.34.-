@@ -2106,6 +2106,7 @@ lighthouse_of_alexandria = {
 		province_modifiers = {
 			province_trade_power_value = 20
 			local_sailors = 750
+			supply_limit = 0.5		#Actually +3 base value
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2139,7 +2140,7 @@ lighthouse_of_alexandria = {
 		province_modifiers = {
 			province_trade_power_value = 30
 			local_sailors = 1000
-			supply_limit = 10
+			supply_limit = 2		#Actually +12 base value
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier

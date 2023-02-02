@@ -1787,10 +1787,6 @@
  #Misc additions by Doc Robert
  unite_latvian_tribes_title:0 "Unite Latvian Tribes"
  unite_latvian_tribes_desc:0 "Untite fractured Latvian tribes into one coherent culture."
- remove_primitive_nations_all_title:0 "Remove Primitive Nations"
- remove_primitive_nations_all_desc:0 "Removes all Primitive Nations that should not be considered a proper state at this moment. This mostly applies to America and Oceania but not only. Will also reduce in-game lag."
- restore_vanilla_status_title:0 "Restore Vanilla Setup"
- restore_vanilla_status_desc:0 "Resets the map removing nearly all non-vanilla nations. Tags added by the mod will be carved up and integrated to vanilla countries. This drastically reduces amount of nations and units on the map, therefore this decision is meant for those wishing to reduce lag and improve game performance at the cost of accuracy and realism. MAKE SURE YOU ARE NOT PLAYING ONE OF THOSE NATIONS OR WILL TOO DISAPPEAR!"
  vu_restore_country_name_title:0 "Restore Country Name"
  vu_restore_country_name_desc:0 "If your country has assigned custom name to it, this button will remove it. DO NOT SPAM!"
  vu_restore_byz_name_title:0 "Reclaim the Basileia Title"

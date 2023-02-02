@@ -121,6 +121,7 @@ regional_market = { #Regional Bazaar
 		regiment_recruit_speed = -0.15
 		local_build_time = -0.1
 		allowed_num_of_buildings = 1
+		supply_limit = 0.5				#Actually +3 ; Supply limit is multiplied by 6 (from defines) and then added to BASE VALUE. Use with caution.
 	}
 	state_modifiers = {
 		local_development_cost = -0.05
@@ -137,7 +138,7 @@ world_trade_center = { #Grand Emporium
 		local_development_cost = -0.05
 		local_institution_spread = 0.25
 		local_prosperity_growth = 0.1
-		supply_limit = 2.5                      #Lowered it down from 4. However, we cannot remove this because doing so makes no sense since the larger the cot becomes, the better it is able to handle the importing and exporting of goods and service. So, naturally supply is going to improve from this.
+		supply_limit = 1				#Actually +6 ; Supply limit is multiplied by 6 (from defines) and then added to BASE VALUE. Use with caution.
 		trade_goods_size = 0.5
 	}
 	state_modifiers = {

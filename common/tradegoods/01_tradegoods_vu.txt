@@ -601,7 +601,15 @@ marble = {
 		local_development_cost = -0.1
 	}
 	chance = {
-		factor = 0
+		factor = 2
+		modifier = {
+			factor = 0
+			NOT = { has_terrain = mountains }
+		}
+		modifier = {
+			factor = 4
+			has_terrain = mountains
+		}
 	}
 }
 
@@ -1411,7 +1419,12 @@ exotic_animals = {
 			NOT = { superregion = central_america_superregion }
 			NOT = { superregion = south_america_superregion }
 			NOT = { continent = oceania }
-
+			NOT = { region = niger_region }
+			NOT = { region = angola_region }
+			NOT = { region = central_africa_region }
+			NOT = { region = kongo_region }
+			NOT = { region = zambia_region }
+			NOT = { region = zimbabwe_region }
 		}
 	}
 }
@@ -1488,7 +1501,10 @@ ebony = {
 
 				AND = {
 					continent = africa
-					has_terrain = jungle
+					OR = {
+						has_terrain = jungle
+						has_terrain = jungle_highlands
+					}
 				}
 			}
 		}
@@ -1504,7 +1520,10 @@ ebony = {
 
 				AND = {
 					continent = africa
-					has_terrain = jungle
+					OR = {
+						has_terrain = jungle
+						has_terrain = jungle_highlands
+					}
 				}
 			}
 		}
@@ -1602,7 +1621,7 @@ sulfur = {
 		local_hostile_attrition = 1
 	}
 	chance = {
-		factor = 25
+		factor = 40
 
 		modifier = {
 			factor = 0
@@ -1729,6 +1748,8 @@ potato = {
 				has_terrain = glacier
 				has_terrain = coastline
 				has_terrain = jungle
+				has_terrain = extreme_mountains
+				has_terrain = jungle_highlands
 				has_climate = arctic
 				has_climate = arid
 				NOT = {
@@ -1748,11 +1769,13 @@ potato = {
 				has_terrain = forest
 				has_terrain = woods
 				has_terrain = hills
+				has_terrain = tundra
 			}
 		}
 		modifier = {
 			factor = 0.25
 			OR = {
+				has_terrain = dry_highlands
 				has_terrain = highlands
 				has_terrain = marsh
 				has_climate = tropical
@@ -1777,7 +1800,11 @@ potato = {
 		}
 		modifier = {
 			factor = 1.5
-			has_terrain = farmlands
+			OR = {
+				has_terrain = farmlands
+				has_terrain = alluvial_plains
+				has_terrain = mediterranean_grasslands
+			}
 		}
 		modifier = {
 			factor = 2
@@ -1944,6 +1971,10 @@ tomato = {
 			}
 		}
 		modifier = {
+			factor = 1.25
+			has_terrain = dry_highlands
+		}
+		modifier = {
 			factor = 0
 			NOT = {
 				OR = {
@@ -1993,6 +2024,7 @@ alpaca_wool = {
 				has_terrain = farmlands
 				has_terrain = forest
 				has_terrain = woods
+				has_terrain = extreme_mountains
 				has_climate = tropical
 				has_climate = arctic
 				has_winter = severe_winter
@@ -2013,6 +2045,14 @@ alpaca_wool = {
 				continent = oceania
 			}
 			NOT = { has_terrain = mountain }
+		}
+		modifier = {
+			factor = 0
+			OR = {
+				continent = africa
+				continent = europe
+				continent = asia
+			}
 		}
 		modifier = {
 			factor = 0.15
@@ -2061,6 +2101,7 @@ indigo = {
 		modifier = {
 			factor = 0
 			NOT = { has_terrain = jungle }
+			NOT = { has_terrain = jungle_highlands }
 		}
 		modifier = {
 			factor = 0
@@ -2104,6 +2145,14 @@ sea_turtle = {
 		modifier = {
 			factor = 0
 			NOT = { has_port = yes }
+		}
+		modifier = {
+			factor = 0
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0
+			has_winter = severe_winter
 		}
 		modifier = {
 			factor = 0.65
@@ -2194,6 +2243,13 @@ sweet_confectioneries = {
 	}
 	province = {
 		local_culture_conversion_cost = -0.15
+	}
+	chance = {
+		factor = 5
+		modifier = {
+			factor = 0
+			NOT = { development = 20 }
+		}
 	}
 }
 
@@ -2333,6 +2389,15 @@ llama = {
 		modifier = {
 			factor = 0
 			OR = {
+				continent = africa
+				continent = europe
+				continent = asia
+				continent = oceania
+			}
+		}
+		modifier = {
+			factor = 0
+			OR = {
 				region = brazil_region
 				region = amazon_region
 				region = mato_grosso_region
@@ -2388,7 +2453,6 @@ agave = {
 				has_terrain = coastline
 				has_terrain = jungle
 				has_climate = arctic
-				has_climate = arid
 				NOT = {
 					OR = {
 						continent = new_world
@@ -2397,6 +2461,14 @@ agave = {
 					}
 				}
 			}
+		}
+		modifier = {
+			factor = 0
+			has_climate = arctic
+		}
+		modifier = {
+			factor = 0
+			has_winter = severe_winter
 		}
 		modifier = {
 			factor = 0.15
@@ -2644,9 +2716,11 @@ vodka = { #Limited to Russia and Eastern Europe
 		factor = 25
 		modifier = {
 			factor = 0
-			OR = {
-				NOT = { superregion = eastern_europe_superregion }
-				NOT = { superregion = tartary_superregion }
+			NOT = {
+				OR = {
+					superregion = eastern_europe_superregion
+					superregion = tartary_superregion
+				}
 			}
 		}
 		modifier = {
@@ -2670,6 +2744,12 @@ vodka = { #Limited to Russia and Eastern Europe
 			OR = {
 				has_terrain = mountain
 				has_terrain = marsh
+			}
+		}
+		modifier = {
+			factor = 0.2
+			OR = {
+				has_terrain = tundra
 			}
 		}
 		modifier = {
@@ -2964,7 +3044,12 @@ bamboo = {
 		local_build_cost = -0.2
 	}
 	chance = {
-		factor = 0
+		factor = 4
+		modifier = {
+			factor = 0
+			NOT = { has_climate = tropical }
+			NOT = { continent = asia }
+		}
 	}
 }
 
@@ -3160,11 +3245,11 @@ books = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { development = 99 }	#Lower average dev in BT, so lowering from 18 to 12
+			NOT = { development = 18 }
 		}
 		modifier = {
 			factor = 2.0
-			development = 100	#Lower average dev in BT, so lowering from 22 to 16
+			development = 25
 		}
 	}
 }

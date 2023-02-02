@@ -1309,7 +1309,7 @@ country_event = {
 		name = VU_SET_Events.03.a
 	}
 	
-	#Remove them
+	#Remove all of them them
 	option = {
 		name = VU_SET_Events.03.b
 		
@@ -1355,7 +1355,12 @@ country_event = {
 					country_event = { id = vu_remove_country.1 }
 				}
 			}
-		}
+		}		
+	}
+	
+	#Remove only the primitive ones
+	option = {
+		name = VU_SET_Events.03.c
 		
 		#Remove Primitive nations
 		hidden_effect = {
@@ -1795,7 +1800,7 @@ country_event = {
 			5393 = {
 				cede_province = ---
 			}
-		}		
+		}
 	}
 	
 	after = {
@@ -1887,11 +1892,11 @@ country_event = {
 		}
 	}
 	
-	after = {
-		country_event = {
-			id = VU_SET_Events.07
-		}
-	}
+	#after = {
+	#	country_event = {
+	#		id = VU_SET_Events.07
+	#	}
+	#}
 }
 
 #New Trade Goods

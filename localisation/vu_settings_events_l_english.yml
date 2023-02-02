@@ -16,9 +16,10 @@
  VU_SET_Events.02.b: "Vanilla Nations §T(Performance)§!" #'Enable Vanilla Setup' decision
 
  VU_SET_Events.03.t: "Natives & Primitives"
- VU_SET_Events.03.d: "Would you like to keep or remove the primitive and native nations from the Americas and Oceania?\n\nIt's recommended to keep them to enrich those regions, but the game may run faster without them."
+ VU_SET_Events.03.d: "Would you like to keep or remove the primitive and native nations from the Americas, Africa and Oceania?\n\nIt's recommended to keep them to enrich those regions, but the game may run faster without them.\nAlternatively, you can leave only the most advanced among them while deleting all the primitive tribes."
  VU_SET_Events.03.a: "Keep them §G(Recommended)§!" #Nothing happens
- VU_SET_Events.03.b: "Remove them §T(Performance)§!" #Removes all native and primitive nations
+ VU_SET_Events.03.b: "Remove them all §T(Performance)§!" #Removes ALL native and primitive nations
+ VU_SET_Events.03.c: "Remove insignificant natives §T(Compromise)§!" #Removes most of primitive nations, while leaving only some like Aztecs, Mayas, Incas, etc.
 
  VU_SET_Events.04.t: "Historical Colonisation"
  VU_SET_Events.04.d: "Historical Colonisation will prevent AI-controlled nations from colonizing places they didn't colonize in real life. This helps prevent ahistorical colonies from constantly appearing, like Portuguese La Plata or English Mexico.\nIt won't, however, outright prevent ahistorical nations/colonies from forming - it's still possible for the AI to take provinces/colonies in a war -, it just becomes rarer than usual.\n\nRecommended if you want more historically accurate colonies, but can be too 'railroaded' for some."
