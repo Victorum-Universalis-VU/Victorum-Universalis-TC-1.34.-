@@ -557,7 +557,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 3954;3952;sea;1794;-1;-1;-1;-1;Ain Salih-Alabessa
 3953;3951;sea;1794;-1;-1;-1;-1;Tamanrasset-Djanet
 3953;3950;sea;1794;-1;-1;-1;-1;Tamanrasset-In Guezzam
-3950;2274;sea;3949;-1;-1;-1;-1;In Guezzam-Air
+3941;2274;sea;3949;-1;-1;-1;-1;Assamaka-Air
 2275;2475;sea;3947;-1;-1;-1;-1;Tenere-Djado
 2284;2277;sea;3947;-1;-1;-1;-1;Manga-Kawar
 2277;2475;sea;3947;-1;-1;-1;-1;Kawar-Djado
@@ -568,5 +568,9 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 2448;3943;sea;3944;-1;-1;-1;-1;Sabha-Biraq
 3943;3942;sea;3944;-1;-1;-1;-1;Biraq-Ash Shwayrif
 3942;5306;sea;3944;-1;-1;-1;-1;Ash Shwayrif-Mizda
+6531;3940;sea;3939;-1;-1;-1;-1;Bahr El Ghazal-Bodele
+3940;6571;sea;3939;-1;-1;-1;-1;Bodele-Borkou
+6571;6957;sea;3939;-1;-1;-1;-1;Borkou-Ennedi
+3938;6959;sea;1795;-1;-1;-1;-1;Matan As Sarah-Wath
 
 -1;-1;;-1;-1;-1;-1;-1;-1;
