@@ -364,11 +364,19 @@ can_release_colonial_nation = {
     }
 }
 
-#By Karlos - Former vu_african_colonization file
-#Adds Scramble for Africa mechanic and such. Makes so that certain provinces cannot be 
-#colonized unless X conditions are met.
+#By Karlos - Former vu_historical_colonization file
+#Age Restrictions prevents AI and players from colonizing specific colonial regions until a certain age.
+#Can be disabled by the player.
+
+#Historical Colonization prevents AI from colonizing colonial regions they didn't colonise in real life.
+#Can be disabled by the player.
 
 can_colonize_province = {
+	
+	#
+	
+	#Scramble for Africa mechanic and such. Makes so that certain African provinces cannot be 
+	#colonized unless X conditions are met.
 	condition = { 						#Condition - disables colonize button for situations included in potential
 		tooltip = "VU_province_cant_be_colonized_1"
 		potential = {					#Potential - what causes the button to be disabled?
@@ -383,17 +391,8 @@ can_colonize_province = {
 			}
 		}
 	}
-	#If you want to add another mechanic that restricts colonization, add new condition = { } entry below; don't edit entry above.
-}
-
-#By Karlos - Former vu_historical_colonization file
-#Age Restrictions prevents AI and players from colonizing specific colonial regions until a certain age.
-#Can be disabled by the player.
-
-#Historical Colonization prevents AI from colonizing colonial regions they didn't colonise in real life.
-#Can be disabled by the player.
-
-can_colonize_province = {
+	
+	#
 
 	#Colonial Nations can't colonize other CRs
 	#Condition - disables colonize button for situations included in potential

@@ -68,6 +68,7 @@
 131 = "Zagrzeb"
 133 = "Linec"
 134 = "Wieden"
+135 = "Sopron"
 136 = "Split"
 137 = "Raguza"
 137 = { "Raguza" "Dubrownik" }
@@ -77,6 +78,7 @@
 146 = "Ateny"
 148 = "Saloniki"
 151 = "Konstantynopol"
+153 = { "Peszt" "Peszt" }
 154 = "Banska Szczawnica"
 159 = "Silistra"
 160 = "Krajowa"
@@ -96,6 +98,7 @@
 233 = "Kornwalia"
 236 = "Londyn"
 253 = "Hebrydy Zewnetrzne"
+261 = "Halicz"
 262 = "Kraków"
 263 = "Racibórz"
 264 = "Wroclaw"
@@ -248,7 +251,7 @@
 2957 = "Ratyzbona"
 2958 = "Ostróda"
 2959 = "Tarnów"
-2961 = "Lwów"
+2961 = { "Lwów" "Lwów" }
 2962 = "Równe"
 2963 = "Naklo"
 2964 = "Stara Marchia"
@@ -270,6 +273,8 @@
 3055 = "Bazylea"
 3058 = "Drente"
 3064 = "Dunkierka"
+3076 = "Tiszakeczeresnów"
+3094 = "Fehergyarmat"
 3110 = "Wyspy La Manche"
 3121 = "Olandia"
 3123 = "Uppsala"
@@ -286,6 +291,7 @@
 3178 = "Achaja"
 3179 = "Argos"
 3183 = "Bitola"
+3188 = { "Rachów" "Rachów" }
 3202 = "Minden"
 3224 = "Czerniachowsk"
 3225 = { "Jacwiez" "Mariampol" }
@@ -320,6 +326,7 @@
 4115 = "Mozyrz"
 4117 = "Biezeck"
 4122 = "Szenkursk"
+4125 = { "Eger" "Heves" }
 4128 = "Braszów"
 4129 = "Stary Perm"
 4140 = { "Oczaków" "Oczków" }
@@ -331,6 +338,7 @@
 4237 = "Olomuniec"
 4238 = "Lignica"
 4239 = "Belgrad"
+4240 = { "Fejer" "Bialogród Stoleczny" }
 4241 = "Kies"
 4242 = "Borysów"
 4243 = "Toropiec"
@@ -429,10 +437,12 @@
 6927 = "Wyspa Sródmiejska"
 6928 = { "Arsenal" "Bastylia" }
 6951 = { "Alkmar" "Horn" }
+6974 = "Buda"
 6975 = "Kreml"
 6976 = "Watykan"
 7010 = "Bucegia"
 7091 = "Tolomin"
+7092 = { "Wyszkowo" "Wyszkowo" }
 7100 = "Koronia"
 7101 = "Mesenia"
 7102 = "Arkadia"
@@ -564,6 +574,7 @@
 7677 = { "Katowice" "Katowice" }
 7678 = { "Oswiecim" "Oswiecim" }
 7680 = "Rymawska Sobota"
+7681 = "Sena"
 7682 = "Karolowski Chlmec"
 7683 = "Berehowe"
 7684 = "Trzyniec"
@@ -663,7 +674,13 @@
 8180 = "Piatra Neamt"
 8181 = "Liptow"
 8182 = "Zwolen"
+8183 = { "Nógrad" "Darmoty" }
+8184 = { "Ostrzychom" "Ostrzychom" }
+8185 = { "Jawaryn" "Jawaryn" }
+8186 = "Vesprym"
+8194 = { "Bolsod" "Miszkolc" }
 8195 = "Rudawy Slowackie"
+8196 = { "Abauj" "Gonc" }
 8197 = "Koszyce"
 8198 = "Chust"
 8204 = "Syhot"
@@ -672,6 +689,7 @@
 8236 = "Uniców"
 8238 = "Iglawa"
 8239 = "Osobloga"
+8244 = { "Sychot" "Sychot Marmaroski" }
 8252 = "Klodzko"
 8253 = "Liberec"
 8254 = "Boleslaw"
