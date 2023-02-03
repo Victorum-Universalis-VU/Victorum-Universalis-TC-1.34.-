@@ -153,6 +153,7 @@ tropical = {
 	local_colonial_growth = -10
 	supply_limit_modifier = -0.3
 	local_hostile_attrition = 2
+
 	#Removed because monsoons
 	#local_hostile_movement_speed = -0.35
 	#local_friendly_movement_speed = -0.35
@@ -1392,8 +1393,8 @@ trade_company_strong = {
 large_colonial_nation = {
 	merchants = 1
 	global_trade_power = 0.05
-	naval_forcelimit = 2		#VU changed from 3. #BTAddOn changed from 10. Naval forcelimits were getting obscene
-	land_forcelimit = 2		#BTAddOn changed from 5. Too large a bonus compared to vassals and marches
+	naval_forcelimit = 2					#VU changed from 3. #BTAddOn changed from 10. Naval forcelimits were getting obscene
+	land_forcelimit = 2						#BTAddOn changed from 5. Too large a bonus compared to vassals and marches
 }
 
 new_world_exploitation_modifier = {
@@ -1401,30 +1402,36 @@ new_world_exploitation_modifier = {
 }
 
 crown_colony_overlord = {
-	merchants = 2			#VU increase from 1
-	global_trade_power = 0.075	#VU increase from 0.05
-	naval_forcelimit = 2		#VU increase from 2
-	land_forcelimit = 2		#VU increase from 2
+	merchants = 2							#VU increase from 1
+	global_trade_power = 0.075				#VU increase from 0.05
+	naval_forcelimit = 2					#VU increase from 2
+	land_forcelimit = 2						#VU increase from 2
 }
 
 private_enterprise_overlord = {
-	global_tariffs = -0.025         #Added in VU and decreased from 0.05
-	global_trade_power = 0.025      #Added in VU and decreased from 0.05
-	naval_forcelimit = 1            #Added in VU.
-	land_forcelimit = 1             #Added in VU.
+	global_tariffs = -0.025         		#Added in VU and decreased from 0.05
+	global_trade_power = 0.025      		#Added in VU and decreased from 0.05
+	naval_forcelimit = 1            		#Added in VU
+	land_forcelimit = 1             		#Added in VU
 }
 
 self_governing_colony_overlord = {
-	global_tariffs = -0.05		# -5% per every existing colony like that
+	global_tariffs = -0.05					#-5% per every existing self-governing colony
 	merchants = 1
 	global_trade_power = 0.05
 	global_tariffs = -0.10
 }
 
+#VU - Addition by San Felipe
+self_governing_dominion_vu_overlord = {
+	governing_capacity_modifier = -0.05		#-5% per dominion, because granting a colony representation in government would reduce that government's power
+	global_tariffs = -0.075					#-7,5% per every colony of this type
+}
+
 crown_colony_subject = {
-	colonists = 1                   #Added in VU - The idea here is that once a colony is large enough, people then venture out to claim and settle new land.
+	colonists = 1                   		#Added in VU - The idea here is that once a colony is large enough, people then venture out to claim and settle new land.
 	global_autonomy = -0.05
-	global_colonial_growth = 10
+	global_colonial_growth = 25				#Increased from 10 so small colonies grow faster
 }
 
 private_enterprise_subject = {
@@ -1435,35 +1442,34 @@ private_enterprise_subject = {
 }
 
 self_governing_colony_subject = {
-	colonists = 1
+	colonists = 2							#Added in VU - The idea here is that a colony that can govern itself is large enough to grow much faster than a crown colony
+	global_colonial_growth = 50				#^
 	development_cost = -0.15
 	liberty_desire = 25
-}
-
-#VU - Addition by San Felipe
-self_governing_dominion_vu_overlord = {
-	global_tariffs = -0.075		# -7,5% per every colony of this type
-}
-
-#VU - Addition by San Felipe
-self_governing_super_dominion_vu_overlord = {
-	global_tariffs = -0.1		# -10% per every colony of this type
 }
 
 #VU - Addition by San Felipe
 self_governing_dominion_vu_subject = {
-	colonists = 1
-	development_cost = -0.15
-	liberty_desire = 25
+	colonists = 2					#Added in VU - The idea here is that a colony that can govern itself is large enough to grow much faster than a crown colony 
+	global_colonial_growth = 50		#^
+	development_cost = -0.25
+	liberty_desire = -50			#A dominion is basically a self-governing colony that was granted more autonomy and representation in its overlord's government
 }
 
+#Removed for now
 #VU - Addition by San Felipe
-self_governing_super_dominion_vu_subject = {
-	colonists = 1
-	development_cost = -0.15
-	global_tax_modifier = 0.05
-	liberty_desire = 25
-}
+#self_governing_super_dominion_vu_overlord = {
+#	global_tariffs = -0.1		# -10% per every colony of this type
+#}
+
+#Removed for now
+#VU - Addition by San Felipe
+#self_governing_super_dominion_vu_subject = {
+#	colonists = 1
+#	development_cost = -0.15
+#	global_tax_modifier = 0.05
+#	liberty_desire = 25
+#}
 
 march_subject = {
 	land_forcelimit = 2			#BTAddOn changed from 1. Uses up an dip upkeep slot, so might as well be useful

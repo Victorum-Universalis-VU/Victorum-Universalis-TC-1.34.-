@@ -1,0 +1,53 @@
+vu_big_colony = {
+	potential = {
+		is_colonial_nation = yes
+		is_former_colonial_nation = no
+	}	
+	trigger = {
+		total_development = 100
+		NOT = { total_development = 250 }
+	}	
+	global_colonial_growth = 50
+	culture_conversion_cost = -0.05
+}
+
+vu_large_colony = {
+	potential = {
+		is_colonial_nation = yes
+		is_former_colonial_nation = no
+	}	
+	trigger = {
+		total_development = 250
+		NOT = { total_development = 500 }
+	}
+	global_colonial_growth = 100
+	culture_conversion_cost = -0.1
+	global_missionary_strength = 0.01
+}
+
+vu_huge_colony = {
+	potential = {
+		is_colonial_nation = yes
+		is_former_colonial_nation = no
+	}	
+	trigger = {
+		total_development = 500
+		NOT = { total_development = 750 }
+	}
+	global_colonial_growth = 150
+	culture_conversion_cost = -0.25
+	global_missionary_strength = 0.02
+}
+
+vu_massive_colony = {
+	potential = {
+		is_colonial_nation = yes
+		is_former_colonial_nation = no
+	}	
+	trigger = {
+		total_development = 750
+	}
+	global_colonial_growth = 200
+	culture_conversion_cost = -0.5
+	global_missionary_strength = 0.03
+}
