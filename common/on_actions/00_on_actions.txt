@@ -6391,8 +6391,9 @@ on_regiment_recruited = {
 }
 
 # THIS = Province, FROM = Country, ROOT = Merc Unit
+#Vanilla
 on_mercenary_recruited = {
-    if = {
+	if = {
 		limit = {
 			FROM = { has_not_free_mercs_trait = yes }
 			is_not_free_merc_company = yes
@@ -6424,18 +6425,6 @@ on_mercenary_recruited = {
 	FROM = {
 		country_event = {
 			id = VU_MERCS.001
-		}
-	}
-	# Vanilla #
-	if = {
-		limit = {
-			OR = {
-				FROM = { NOT = { has_country_flag = oyo_cavalry_do_not_consume_ap } }
-				ROOT = { NOT = { mercenary_company = merc_oyo_cavalry } }
-			}
-		}
-		FROM = {
-			add_army_professionalism = -0.05
 		}
 	}
 }
