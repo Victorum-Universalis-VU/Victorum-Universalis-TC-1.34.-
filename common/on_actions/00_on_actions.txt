@@ -431,6 +431,77 @@ on_startup = {
             }
             set_variable = { which = num_of_cavalry value = 0 }
 		}
+
+		BFR = {
+            export_to_variable = { which = num_of_heavy_ship value = trigger_value:num_of_heavy_ship }
+            while = {
+                limit = {
+                    NOT = {
+                        check_variable = { which = num_of_heavy_ship value = 3 }
+                    }
+                }
+                heavy_ship = 6928
+                change_variable = { which = num_of_heavy_ship value = 1 }
+            }
+            set_variable = { which = num_of_heavy_ship value = 0 }
+			#
+			export_to_variable = { which = num_of_infantry value = trigger_value:num_of_infantry }
+            while = {
+                limit = {
+                    NOT = {
+                        check_variable = { which = num_of_infantry value = 32 }
+                    }
+                }
+                infantry = capital
+                change_variable = { which = num_of_infantry value = 1 }
+            }
+            while = {
+                limit = {
+                    check_variable = { which = num_of_infantry value = 33 }
+                }
+                random_owned_province = {
+                    limit = {
+                        infantry_in_province = PREV
+                    }
+                    kill_units = {
+                        who = PREV
+                        type = infantry
+                        amount = 1
+                    }
+                }
+                change_variable = { which = num_of_infantry value = -1 }
+            }
+            set_variable = { which = num_of_infantry value = 0 }
+			#
+			export_to_variable = { which = num_of_cavalry value = trigger_value:num_of_cavalry }
+            while = {
+                limit = {
+                    NOT = {
+                        check_variable = { which = num_of_cavalry value = 8 }
+                    }
+                }
+                cavalry = capital
+                change_variable = { which = num_of_cavalry value = 1 }
+            }
+            while = {
+                limit = {
+                    check_variable = { which = num_of_cavalry value = 9 }
+                }
+                random_owned_province = {
+                    limit = {
+                        cavalry_in_province = PREV
+                    }
+                    kill_units = {
+                        who = PREV
+                        type = cavalry
+                        amount = 1
+                    }
+                }
+                change_variable = { which = num_of_cavalry value = -1 }
+            }
+            set_variable = { which = num_of_cavalry value = 0 }
+		}
+
 		MAM = {
 			export_to_variable = { which = num_of_infantry value = trigger_value:num_of_infantry }
             while = {
@@ -978,10 +1049,10 @@ on_colonial_liberation = {
                 # colonial_region = colonial_eastern_america
             # }
             # colonial_parent = {
-			      #OR = {
-                      #tag = GBR
-				      #tag = UNK
-				  #}
+				    #OR = {
+                    	#tag = GBR
+				    	#tag = UNK
+					#}
             # }
 			# is_subject = no
         # }
@@ -1050,7 +1121,7 @@ on_war_won = {
 			}
 		}
 	}
-	
+
 	if = {
 		limit = {
 			is_part_of_hre = yes
@@ -4854,6 +4925,10 @@ on_death_election = {
 	if = {
 		limit = { has_reform = presidential_despot_reform }
 		remove_government_reform = presidential_despot_reform
+		if = {
+			limit = { NOT = { has_dlc = "Dharma" } }
+			set_legacy_government = oligarchic_republic
+		}
 	}
 	if = {
 		limit = {
@@ -4870,7 +4945,7 @@ on_death_election = {
 		elections.7002 #GE
 		#GE_electoral_monarchy.1
 		GE_electoral_monarchy.2
-		reform_me_events.11
+		#reform_me_events.11
 	}
 }
 
