@@ -1975,11 +1975,11 @@ american_east_coast_region = {
 	}
 }
 
-western_atlantic_region = { #New VU
-	areas = {
-		western_atlantic_area
-	}
-}
+#western_atlantic_region = { #New VU
+#	areas = {
+#		western_atlantic_area
+#	}
+#}
 
 central_atlantic_region = { #New VU
 	areas = {
