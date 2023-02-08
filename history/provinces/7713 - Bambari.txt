@@ -2,7 +2,7 @@
 
 culture = bilala 
 religion = shamanism #Fetishism
-capital = "Bambari"
+capital = "Mbato"
 native_size = 50
 native_ferocity = 4
 native_hostileness = 9 

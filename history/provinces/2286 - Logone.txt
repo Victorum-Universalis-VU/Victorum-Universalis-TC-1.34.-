@@ -1,18 +1,16 @@
-# No previous file for Logone
+#2286 - Logone
 
-owner = YAO
-controller = YAO
-add_core = YAO
-add_core = KBO
-culture = kanuri 
+culture = kanuri
 religion = shamanism #Fetishism
 capital = "Logone"
-trade_goods = ivory
+trade_goods = unknown
 hre = no
-base_tax = 4  
+base_tax = 4
 base_production = 4
-is_city = yes
-base_manpower = 2 
+base_manpower = 2
+native_size = 90
+native_ferocity = 2
+native_hostileness = 9
 
 discovered_by = sub_saharan
 
