@@ -163,7 +163,7 @@ west_american_sea_superregion = {
 
 east_american_sea_superregion = {
 	atlantic_south_america_region
-	western_atlantic_region    #New VU
+	#western_atlantic_region    #New VU
 	american_east_coast_region
 }
 

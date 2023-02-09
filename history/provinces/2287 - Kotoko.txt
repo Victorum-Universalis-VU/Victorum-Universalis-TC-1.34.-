@@ -1,8 +1,8 @@
-# No previous file for Kotoko
+#2287 - Kotoko
 
-owner = YAO
-controller = YAO
-add_core = YAO
+owner = SAO
+controller = SAO
+add_core = SAO
 add_core = KBO
 culture = kanuri 
 religion = sunni
