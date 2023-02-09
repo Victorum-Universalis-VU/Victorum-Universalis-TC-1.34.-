@@ -483,6 +483,9 @@ MUC = "countries/Mucubal.txt"
 MWI = "countries/Mwila.txt"
 MBU = "countries/Mbunda.txt"
 
+#Cameroon & Chad
+SAO = "countries/Sao.txt"
+
 #Egypt
 ABD = "countries/Abdallab.txt"
 DKK = "countries/Dahlak_Kebir.txt"

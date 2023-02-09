@@ -1,8 +1,8 @@
 #6541 - Mayo_Kebbi_Est
 
-owner = YAO
-controller = YAO
-add_core = YAO
+owner = SAO
+controller = SAO
+add_core = SAO
 culture = bilala 
 religion = sunni
 capital = "Bongor"
