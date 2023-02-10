@@ -446,6 +446,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 6603;6954;sea;1795;2994;1434;2998;1377;Jalu-Tazirbu
 6954;6955;sea;6671;2999;1372;3003;1358;Tazirbu-Buzaymah
 6955;6958;sea;6671;3004;1359;3014;1350;Buzaymah-Al-Jawf
+6958;3934;sea;6671;-1;-1;-1;-1;Al-Jawf-Al Kufrah
+3934;3935;sea;6671;-1;-1;-1;-1;Al Kufrah-At Tallab
 4270;2328;sea;8738;-1;-1;-1;-1;Maan-Tayma
 380;7458;sea;8738;-1;-1;-1;-1;Kerak-Al-Qurayyat
 7458;4272;sea;8739;3221;1513;3225;1510;Al-Qurayyat-Jawf
