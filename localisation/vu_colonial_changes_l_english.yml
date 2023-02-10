@@ -1,31 +1,62 @@
 ﻿l_english:
-
- ### Malaria preventing early colonization in Africa
- VU_province_cant_be_colonized_1:0 "This province is infested with malaria-carrying mosquitos and therefore can't be effectively colonized by those who aren't native to the region.\n\nIn order to be able to colonize it you must reach £dip£ Diplomatic Technology §!Y35§."
-
- ### Historical Colonisation & Age Restrictions
- VU_Colonial_Region_Colonisation:0 "A colonial nation can't colonise other colonial regions besides their own."
- VU_Age_Restriction_Reformation:0 "You can only colonise this province during or after the §YAge of Reformation§!."
- VU_Age_Restriction_Absolutism:0 "You can only colonise this province during or after the §YAge of Absolutism§!."
- VU_Age_Restriction_Revolutions:0 "You can only colonise this province during or after the §YAge of Revolutions§!."
- VU_Historical_Colonization:0 "You can't colonise this province because of §GHistorical Colonisation§!."
  
- ### Province Modifiers
- vu_malaria_present:0 "Dangerous Malaria Region"
- desc_vu_malaria_present:0 "This province is infested with malaria-carrying mosquitos. This dangerous disease kills those without natural immunity, shattering any attempts at permanent settlement of those who aren't native to the region."
- vu_jungle_pm:0 "Jungle"
- desc_vu_jungle_pm:0 "The dense jungle and tropical climate makes it very hard for new cities to grow, as diseases and heat are large obstacles."
+ ### Historical Colonisation & Age Restrictions
+ VU_Age_Restriction_Reformation: "You can only colonise this province during or after the §YAge of Reformation§!."
+ VU_Age_Restriction_Absolutism: "You can only colonise this province during or after the §YAge of Absolutism§!."
+ VU_Age_Restriction_Revolutions: "You can only colonise this province during or after the §YAge of Revolutions§!."
+ VU_Historical_Colonization: "You can't colonise this province because of §GHistorical Colonisation§!."
+ 
+ ### Restricted Colonisation
+ VU_Colonial_Region_Colonisation: "As a colonial nation, we can't colonise other colonial regions besides our own."
+ VU_No_Frontier_Colonisation: "As a colonial nation, we can't establish Siberian Frontiers."
+ VU_Subject_Colonisation: "As a subject nation in the Americas, we can't colonise other continents."
+ 
+ ### Hard to Colonize (former Malaria)
+ vu_malaria_present: "Hard to Colonize"
+ desc_vu_malaria_present: "This province has extremely harsh climate, difficult terrain or deadly diseases, making it impossible to permanently settle it until 1856."
+ VU_malaria_province_cant_be_colonized: "This province has extremely harsh climate, difficult terrain or deadly diseases, making it impossible to permanently settle it until 1856."
  
  ### Triggered Modifiers
- vu_big_colony:0 "Big Colony"
- vu_large_colony:0 "Large Colony"
- vu_huge_colony:0 "Huge Colony"
- vu_massive_colony:0 "Massive Colony"
+ vu_tiny_colony: "Tiny Colonial Nation"
+ vu_small_colony: "Small Colonial Nation"
+ vu_medium_colony: "Medium Colonial Nation"
+ vu_large_colony: "Large Colonial Nation"
+ vu_huge_colony: "Huge Colonial Nation"
+ vu_massive_colony: "Massive Colonial Nation"
  
  ### Events
+ vu_latent_colonization.1.t: "Hard to Colonise"
+ vu_latent_colonization.1.d: "It seems that, through military conquest or other means, we've come to own one or more provinces that are Hard to Colonise - we can't keep them yet. Unfortunately we will have to return them to their previous owners or abandon them if there's no owner to return it to.\n\nNOTE: Don't take provinces that have the province modifier 'Hard to Colonise' before Diplomatic Tech 35 (Year 1856) unless you're a native african/american/aboriginal/polynesian."
+ vu_latent_colonization.1.a: "Return it to the previous owners."
+ vu_latent_colonization.1.b: "Abandon it."
+ 
  VU_COL_Events.01.t: "Colonial Land Transfer"
  VU_COL_Events.01.d: "It seems that, through military conquest or other means, we've come to own provinces outside our own colonial region. Now the time has come to grant them to our overlord so it may be later granted to another colonial nation."
  VU_COL_Events.01.a: "Fair enough, transfer them."
  
- ### Other stuff
- self_governing_dominion_vu:0 "Dominion"
+ VU_COL_Events.02.t: "Cultural Divergence"
+ VU_COL_Events.02.d: "After decades of living in another continent, the culture of our people has started to diverge from that of our colonisers.\nWhile we can still understand each other, differences in dialect and behaviour have made it very noticable that we're forming a completely distinct culture."
+ VU_COL_Events.02.a: "Let's make the most of this New World!"
+ 
+ VU_COL_Events.03.t: "Cultural Divergence - Hidden"
+ VU_COL_Events.03.d: "You shouldn't be able to see this lol\n\nAre you using console commands? If not, you might want to report this as a bug."
+ VU_COL_Events.03.a: "Huh?"
+ 
+ ### Cultures
+ greenlandic:0 "Greenlandic"
+ californio:0 "Californio"
+ centroamerican:0 "Centroamerican"
+ colombian:0 "Colombian"
+ cuban:0 "Cuban"
+ dominican:0 "Dominican"
+ floridan:0 "Floridan"
+ iberian_caribbean:0 "Caribbean"
+ peruvian:0 "Peruvian"
+ tejano:0 "Tejano"
+ french_guyanese:0 "Guyanese"
+ haitian:0 "Haitian"
+ martinique:0 "Martinique"
+ russo_alaskan:0 "Alaskan"
+ british_south_african:0 "South African"
+ aussie:0 "Australian"
+ kiwi:0 "New Zealander"
