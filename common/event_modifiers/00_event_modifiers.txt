@@ -1543,8 +1543,10 @@ eye_of_sahara = {	#Richat Structure
 # Malaria stopping colonisation by docRobert #
 ##############################################
 
+#Hard to Colonize
 vu_malaria_present = {		#ADD THIS MODIFIER TO PROVINCE, TO PREVENT EARLY COLONIZATION (LIKE INLAND AFRICA)
 	picture = "vu_malaria_icon"
+	global_colonial_growth = -100
 }
 
 ##################################

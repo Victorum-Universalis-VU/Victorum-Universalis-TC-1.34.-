@@ -369,18 +369,6 @@
  canal_events.30.t:0 "Chott El-Djerid terraformed"
  canal_events.30.d:0 "Cutting a canal across the narrow strip of desert to link Chott El Djerid salt lake and Mediterranean Sea is truly a great engineering project that once completed will permanently flood the salty periodic Chott and create a permanent body of water. This new body of water - Chott El Djerid Basin will bring humidity to otherwise deserted region and create a large area avaliable for forestation and development. This dream is now reality. Such project is the first successful terraforming project humanity has seen. Salinity levels in newly created lake have stabilized after mixing with sea waters. The area is ready for excessive development now that strong evaporation from the lake brings humidity around the region."
  canal_events.30.a:0 "Excellent accomplishment"
- #Latent Colonization
- vu_latent_colonization.1.t:0 "Colony cannot be governed!"
- vu_latent_colonization.1.d:0 "We have come into ownership of a province that lies within malaria infested region. We do not have the technology yet to adapt our people to administrating this land. All efforts of establishing our rule there fail due to dangerous disease killing our men. As we cannot extort our control over it yet, the land unfortunately slips away from our realm. \n \n \nNOTE: Do not conquer provinces that have malaria from African nations unless you also can colonize provinces with malaria."
- vu_latent_colonization.1.a:0 "Pack your things, the locals will take care."
- vu_latent_colonization.1.b:0 "Abandon the colony for good"
- #Malaria Picker
- vu_malaria_picker.1.t:0 "Malaria Picker"
- vu_malaria_picker.1.d:0 "Although we have come into ownership of a province that lies within malaria infested region, some in our close circles believe that benign neglect rather than focus and attention on the matter is the best way forward in order to deal with it. Now, we can choose the latter but that is of course at your discretion."
- vu_malaria_picker.1.a:0 "Benign Neglect it is."
- vu_malaria_picker_on_custom_tooltip: "Let's keep it On."
- vu_malaria_picker.1.b:0 "No, we must face and eliminate it!"
- vu_malaria_picker_off_custom_tooltip: "Turn it off for goodness sakes!"
  #Addition to Burgundian Inheritance
  incidents_bur_inheritance.1.f:0 "Salic law shall prevail! To the heirs of England thus go our lands!"
  marry_england_tt:0 "We will pass the crown to the English monarch, effectively falling under personal union with them. Our current unions will seek to break free after realizing what we've done. Our decision will greatly upset both the Emperor and the French but to hell with those sausage and frog eating scoundrels! Quick men, get to the boats!"

@@ -31,7 +31,7 @@
  VU_SET_Events.05.a: "Enabled §G(Recommended)§!" #Nothing happens
  VU_SET_Events.05.b: "Disabled" #Disables Age Restrictions
 
- VU_SET_Events.06.t: "Dangerous Malaria Regions"
- VU_SET_Events.06.d: "If any european or asian nation takes a province with the 'Dangerous Malaria Region' province modifier, then they will eventually be forced to give it away (if taken through war) or leave (if colonized). \nMalaria can be cured after reaching Diplomatic Technology 35.\n\nRecommended if you want a more historically accurate Africa, with no large african colonies far too early."
+ VU_SET_Events.06.t: "Hard to Colonise"
+ VU_SET_Events.06.d: "Provinces which were not colonised before the 1850s have the province modifier 'Hard to Colonise' and can't be colonised before Diplomatic Technology 35 (~1850s). If taken in a war they will be returned to the previous owner or abandoned it (if there is no previous owner).\nNative american, africans and aboriginals aren't affected by it.\n\nRecommended if you want to prevent europeans from taking large chunks of Africa in the 1500s."
  VU_SET_Events.06.a: "Enabled §G(Recommended)§!" #Nothing happens
- VU_SET_Events.06.b: "Disabled" #'Dangerous Malaria Region' province modifier is removed from all provinces
+ VU_SET_Events.06.b: "Disabled" #'Hard to Colonise' province modifier is removed from all provinces
