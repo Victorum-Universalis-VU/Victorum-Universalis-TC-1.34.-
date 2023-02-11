@@ -1878,10 +1878,9 @@ gc_tun_alexandria_provinces = {
 #Portugal, GC
 gc_por_bandeirantes_provinces = {
 	OR = {
-		province_id = 763
-		province_id = 765
-		province_id = 2898
-		province_id = 2903
+		area = minas_gerais_area
+		area = rio_de_janeiro_area
+		area = sao_paolo_area
 	}
 }
 gc_por_african_gold_provinces = {
