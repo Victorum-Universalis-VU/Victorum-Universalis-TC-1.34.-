@@ -1,17 +1,4 @@
-vu_tiny_colony = {
-	potential = {
-		is_colonial_nation = yes
-		is_former_colonial_nation = no
-	}	
-	trigger = {
-		NOT = { total_development = 100 }
-	}
-	global_tax_income = 48
-	global_colonial_growth = 25
-	liberty_desire = -100
-}
-
-vu_small_colony = {
+vu_big_colony = {
 	potential = {
 		is_colonial_nation = yes
 		is_former_colonial_nation = no
@@ -19,24 +6,9 @@ vu_small_colony = {
 	trigger = {
 		total_development = 100
 		NOT = { total_development = 250 }
-	}
-	global_tax_income = 24
-	global_colonial_growth = 50
-	liberty_desire = -50
-}
-
-vu_medium_colony = {
-	potential = {
-		is_colonial_nation = yes
-		is_former_colonial_nation = no
 	}	
-	trigger = {
-		total_development = 250
-		NOT = { total_development = 500 }
-	}
-	global_tax_income = 12
-	colonists = 1
-	global_colonial_growth = 100
+	global_colonial_growth = 50
+	culture_conversion_cost = -0.05
 }
 
 vu_large_colony = {
@@ -45,12 +17,12 @@ vu_large_colony = {
 		is_former_colonial_nation = no
 	}	
 	trigger = {
-		total_development = 500
-		NOT = { total_development = 750 }
+		total_development = 250
+		NOT = { total_development = 500 }
 	}
-	colonists = 1
-	global_colonial_growth = 200
-	liberty_desire = 25
+	global_colonial_growth = 100
+	culture_conversion_cost = -0.1
+	global_missionary_strength = 0.01
 }
 
 vu_huge_colony = {
@@ -59,12 +31,12 @@ vu_huge_colony = {
 		is_former_colonial_nation = no
 	}	
 	trigger = {
-		total_development = 750
-		NOT = { total_development = 1000 }
+		total_development = 500
+		NOT = { total_development = 750 }
 	}
-	colonists = 2
-	global_colonial_growth = 200
-	liberty_desire = 50
+	global_colonial_growth = 150
+	culture_conversion_cost = -0.25
+	global_missionary_strength = 0.02
 }
 
 vu_massive_colony = {
@@ -73,9 +45,9 @@ vu_massive_colony = {
 		is_former_colonial_nation = no
 	}	
 	trigger = {
-		total_development = 1000
+		total_development = 750
 	}
-	colonists = 3
-	global_colonial_growth = 250
-	liberty_desire = 75
+	global_colonial_growth = 200
+	culture_conversion_cost = -0.5
+	global_missionary_strength = 0.03
 }

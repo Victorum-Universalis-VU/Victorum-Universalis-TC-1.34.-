@@ -1228,6 +1228,31 @@ germanic = {
             graphical_culture = westerngfx
 		#primary = #no tag so no seperatists
 	}
+	#Colonial Cultures
+	alaskaner = {	#Alaska
+	}
+	kalifornier = {	#California
+	}
+	pennsilfaanisch = {	#American East Coast
+	}
+	mexikaner = {	#Mexico region
+	}
+	kubaner = {	#Carribean
+	}
+	neu_prussian = {	#Acadia, Canada, Newfoundland
+	}
+	deutschkolumbian = {	#Colombia
+	}
+	hunsrik = {		#Brazil
+	}
+	argentiner = {	#Argentina, La Plata,
+	}
+	australier = {	#Australia
+	}
+	seelander = {	#New Zealand
+	}
+	afrikaner = {	#Cape Africa
+	}
 }
 
 low_franconian = {
@@ -1317,7 +1342,6 @@ low_franconian = {
             graphical_culture = westerngfx
 		primary = EFR
 	}
-	#Cape CR
 	afrikaner_culture = {
 		#primary = XXX
             graphical_culture = westerngfx
@@ -1331,17 +1355,17 @@ low_franconian = {
 			"van Oranje" Nassau "van Wassenberg" "van Henegouwen" "de Friesland" "van Haspinga" "van Limburg" "von der Mark"	"van Leuven" "van Brabant" "van Egmont" "de Reginar" "De Boer" "De Verwoed"
 		}
 	}
-	#Dutch Guyana CR
 	surinamer = {
             graphical_culture = westerngfx
 	}
-	#Dutch Antilles CR
 	antillianen = {
-    		graphical_culture = westerngfx
+            graphical_culture = westerngfx
 	}
-	#Dutch Eastern America CR
 	jersey_dutch = {
-			graphical_culture = westerngfx
+            graphical_culture = westerngfx
+	}
+	indos = {
+            graphical_culture = westerngfx
 	}
 }
 #VU addition alemannic = { #Although is Germanic, I've decided to give this culture it's own group so as to better
@@ -1432,31 +1456,17 @@ scandinavian = { #Nordic
 			Hårfagreætta Bielke Bildt Galte Paus Smør Benkestok Kane Bonde Drake "av Hafrsfjord" Ytra "av Askø" Koss "av Røra" "av Nordland" Hylling Alfr Herja Vansö Flod "af Vendel" "av Alfheim" "af Åland" Vidfamne Bille Iuel Kaas Rosenkrantz Urne Adeler Blixenskiold Gyldenpalm Holberg Rosenheim Schouboe Tordenskiold Wessel Westervick Falsen Knagenhjelm Galtung Heubsch Kløcker Løvenskiold Rosenvinge Werenskiold Kruckow Mowat Rømer Handingmann Skaktavl Tordenstierne Roos Skanke Bolt Giske Brockenhuus Adelswärd Kane Blixen Løvendal Balke Vedel Bjelke Galle Griis
 		}
 	}
-	#Nordic Greenland CR
-	greenlandic = {
+	vinlandic = {	#Colonial Culture for Canada, Acadia and America
 		graphical_culture = westerngfx
-		male_names = {
-			Christian Christoph Oskar Adolf August Göran Sigismund Alfred Axel Edvard Gottfrid Jakob Ludvig Mikael Olof Patrik Rangvald Rettil Sigvard Simon Sture Svante Tomas Ulrik Albrikt Albert Alf Algot Anders Arne Arnfast Astrad Bengt Benedict Bertil Birger Björn Bo Borkvard Brage Bror Dag Dan Dyre Egil Einar Erik Eskild Faste Fredrik Frederick Filip Folke Georg Greger Gregory Gunnar Gustav Halsten Hans Harald Harold Helge Henrik Hjalmar Holmger Håkan Inge Ingemar Ingvar Edward Johan John Karl Klas Knut Lars Magnus Markus Marcus Mats Matthew Nils Nicholas Niklas Odd Olaf Peter Ragnar Rolf Ragnvald Sörkver Sigurd Starkad Sten Styrbjörn Sune Sven Sverker Sölve Thomas Tjudmund Toke Torbjörn Tord Torbrand Torkel Torolf Thorolf Torsten Toste Totil Tyke Ulf Valdemar Åke Östen 
-		}
-		female_names = {
-			Christina Ulrika Eleonora Hedwig Anna Asta Astrid Beata Birgitta Brigid Bothild Cecilia Elin Elisabet Gunhild Helena Holmfrid Iliana Inga Ingeborg Ingegerd Ingfrid Ingrid Karin Katarina Kristina Linda Margareta Märta Martha Ragnhild Sara Sarah Sigrid Sofia Sophia Thordis Ulvhilde Åsa
-		}
-		dynasty_names = {
-			Bonde Vasa "Tre Rosor" Oxenstierna Sparre Sture Tott Trolle Bielke Brahe Horn Ribbing Skytte Banér Fleming Gyllenstierna "de la Gardie" Leijonhufvud "Natt och Dag" Grip Stenbock Bure Drake Hand Burensköld Böllja Cruus Geete Grubbenhielm Soop Ekeblad Svinhufvud Hård Forstena Kurck Eka Hjort Jägerhorn Lilliehöök Porse Palme Gumsehuvud Bååt Ulv Sjöblad Läma Posse Rosenstråle Thott Bagge Bese Gädda Hatt Marsvin Oxhufvud Stake "Tre Rutor" Hästesko Ulfsax "Tre Sjöblad" Bratt Munk Eketrä Gera Gylta Lillie Puke Slatte Stiernkors Fincke Dufva Cronstedt
-		}
 	}
-	#Nordic Newfoundland CR
-	vinlandic = {
-		graphical_culture = westerngfx
-		male_names = {
-			Christian Christoph Oskar Adolf August Göran Sigismund Alfred Axel Edvard Gottfrid Jakob Ludvig Mikael Olof Patrik Rangvald Rettil Sigvard Simon Sture Svante Tomas Ulrik Albrikt Albert Alf Algot Anders Arne Arnfast Astrad Bengt Benedict Bertil Birger Björn Bo Borkvard Brage Bror Dag Dan Dyre Egil Einar Erik Eskild Faste Fredrik Frederick Filip Folke Georg Greger Gregory Gunnar Gustav Halsten Hans Harald Harold Helge Henrik Hjalmar Holmger Håkan Inge Ingemar Ingvar Edward Johan John Karl Klas Knut Lars Magnus Markus Marcus Mats Matthew Nils Nicholas Niklas Odd Olaf Peter Ragnar Rolf Ragnvald Sörkver Sigurd Starkad Sten Styrbjörn Sune Sven Sverker Sölve Thomas Tjudmund Toke Torbjörn Tord Torbrand Torkel Torolf Thorolf Torsten Toste Totil Tyke Ulf Valdemar Åke Östen 
-		}
-		female_names = {
-			Christina Ulrika Eleonora Hedwig Anna Asta Astrid Beata Birgitta Brigid Bothild Cecilia Elin Elisabet Gunhild Helena Holmfrid Iliana Inga Ingeborg Ingegerd Ingfrid Ingrid Karin Katarina Kristina Linda Margareta Märta Martha Ragnhild Sara Sarah Sigrid Sofia Sophia Thordis Ulvhilde Åsa
-		}
-		dynasty_names = {
-			Bonde Vasa "Tre Rosor" Oxenstierna Sparre Sture Tott Trolle Bielke Brahe Horn Ribbing Skytte Banér Fleming Gyllenstierna "de la Gardie" Leijonhufvud "Natt och Dag" Grip Stenbock Bure Drake Hand Burensköld Böllja Cruus Geete Grubbenhielm Soop Ekeblad Svinhufvud Hård Forstena Kurck Eka Hjort Jägerhorn Lilliehöök Porse Palme Gumsehuvud Bååt Ulv Sjöblad Läma Posse Rosenstråle Thott Bagge Bese Gädda Hatt Marsvin Oxhufvud Stake "Tre Rutor" Hästesko Ulfsax "Tre Sjöblad" Bratt Munk Eketrä Gera Gylta Lillie Puke Slatte Stiernkors Fincke Dufva Cronstedt
-		}
+	male_names = {
+		Christian Christoph Oskar Adolf August Göran Sigismund Alfred Axel Edvard Gottfrid Jakob Ludvig Mikael Olof Patrik Rangvald Rettil Sigvard Simon Sture Svante Tomas Ulrik Albrikt Albert Alf Algot Anders Arne Arnfast Astrad Bengt Benedict Bertil Birger Björn Bo Borkvard Brage Bror Dag Dan Dyre Egil Einar Erik Eskild Faste Fredrik Frederick Filip Folke Georg Greger Gregory Gunnar Gustav Halsten Hans Harald Harold Helge Henrik Hjalmar Holmger Håkan Inge Ingemar Ingvar Edward Johan John Karl Klas Knut Lars Magnus Markus Marcus Mats Matthew Nils Nicholas Niklas Odd Olaf Peter Ragnar Rolf Ragnvald Sörkver Sigurd Starkad Sten Styrbjörn Sune Sven Sverker Sölve Thomas Tjudmund Toke Torbjörn Tord Torbrand Torkel Torolf Thorolf Torsten Toste Totil Tyke Ulf Valdemar Åke Östen 
+	}
+	female_names = {
+		Christina Ulrika Eleonora Hedwig Anna Asta Astrid Beata Birgitta Brigid Bothild Cecilia Elin Elisabet Gunhild Helena Holmfrid Iliana Inga Ingeborg Ingegerd Ingfrid Ingrid Karin Katarina Kristina Linda Margareta Märta Martha Ragnhild Sara Sarah Sigrid Sofia Sophia Thordis Ulvhilde Åsa
+	}
+	dynasty_names = {
+		Bonde Vasa "Tre Rosor" Oxenstierna Sparre Sture Tott Trolle Bielke Brahe Horn Ribbing Skytte Banér Fleming Gyllenstierna "de la Gardie" Leijonhufvud "Natt och Dag" Grip Stenbock Bure Drake Hand Burensköld Böllja Cruus Geete Grubbenhielm Soop Ekeblad Svinhufvud Hård Forstena Kurck Eka Hjort Jägerhorn Lilliehöök Porse Palme Gumsehuvud Bååt Ulv Sjöblad Läma Posse Rosenstråle Thott Bagge Bese Gädda Hatt Marsvin Oxhufvud Stake "Tre Rutor" Hästesko Ulfsax "Tre Sjöblad" Bratt Munk Eketrä Gera Gylta Lillie Puke Slatte Stiernkors Fincke Dufva Cronstedt
 	}
 }
 
@@ -1491,46 +1501,6 @@ british	= {
 			Juliana Mahaut Margaret Mary Maria Maud Matilda Philippa Sybilla Sibylla
 		}
 	}
-	scottish = {
-        graphical_culture = westerngfx
-		primary = SCO
-		dynasty_names = { 
-			Stuart Stewart Campbell Lennox Murray Graham Gordon Erskine Leslie
-			Scott Douglas Hamilton Lindsay Ker Hay Sinclair Dunbar Kennedy
-			Fraser "Aois-dàna" Dishington Burnett "Bowes-Lyon" Lockhart Corbet
-			Mackintosh Dingwall Melville Corrie Aberach Cunningham Donald
-			Buchanan Menzies Moffat Malcolm 
-			#CK2
-			Cameron Forbes Arbuthnot Cockburn Adam Wallace Abernethy
-		}
-		male_names = {
-			James Robert Henry Alexander Arthur Walter John Charles Malcolm Donald David Duncan Andrea 
-			Alan Ailpein Archibald Barclay Beathan Bruce Cameron Cináed Conall Douglas Duff Edan Evander 
-			Fraser Garry Glen Ian Keir Kennedy Lennox Logan Micheil Mungo Munroe Scott Wallace Adam 
-			Alpin Alwin Alastair Andrew Angus Arran Aulay Olaf Brian Brice Cailean Calum Carbrey Colban 
-			Kolbein Colin Nicholas Conan Constantine Dermid Dugald Edgar Edward Edwin Eric Ivar Ewan 
-			Eugene Farquhar Fergus Fingal Finn Findlay Frang Francis Gavin Gilbride Gilbert Gilchrist 
-			Gillespie Gilpatrick Gilroy Giric Glenn Godfrey Gregor Gregory Hamish Hector Hugh Iain 
-			Indulf Jacob Kenneth Kentigern Lachlan Roland Laurence Lennon Lulach Macbeth Magnus Maldoven 
-			Maldred Malise Malmure Maoilios Marcas Marcus Matad Matthew Michael Morgan Muir Mungo 
-			Murdoch Murray Neil Nigel Ninian Oscar Patrick Paul Peter Philip Radulf Ralph Ranald 
-			Reginald Richard Ronald Ragnvald Rory Roderick Ross Roy Shaw Simon Somerled Stephan Stephen 
-			Sweeny Tadhg Tadg Talore Thomas Torquil Torkel Uhtred Uisdean Eysteinn Walan Valentin 
-			Waldeve Waltheof William
-		}
-		female_names = {
-			Mary Ada Affraic Agnes Aileen Alice Anna Annabella Aufrica Euphemia Barabal Barbara Beileag 
-			Beitris Beathoc Beatrice Bride Brigit Catriona Catherine Cecilia Deirdre Derilla Dervorgilla 
-			Donada Donella Edith Edna Effie Eilionoir Eimhir Emer Eithne Ela Eleanor Elspeth Euna Eva 
-			Fenella Fingola Flora Forflissa Galiena Glenna Gormelia Gormflaith Gruoch Helen Innes Iona 
-			Isabel Isla Isobel Jean Julia Juliana Kenna Kentigerna Kirstin Christina Lillias Elisabeth 
-			Lorna Malmure Maisie Malina Mariota Martha Marthoc Marjory Mary Maud Matilda Maura Maria 
-			Mirren Morag Mor Morna Moyna Mona Muriel Murron Nuala Finnguala Orabilia Peigi Margaret 
-			Rhonda Rodina Ronalda Ragnhild Ros Saundra Alexandra Sheena Shona Joan Sholto Slaine Sorcha 
-			Una
-		}
-	}
-	#British Eastern America, Great Lakes, Mississippi, Louisiana, Texas, California CR
 	american = {
         graphical_culture = westerngfx
 		primary = USA
@@ -1610,8 +1580,7 @@ british	= {
 			Young Yelverton Youngs
 		}
 	}
-	#British Eastern America, Great Lakes, Mississippi, Louisiana, Texas, California CR
-	dixie = {
+	dixie = { #Dixie
         graphical_culture = westerngfx
 		primary = USA
 		male_names = {
@@ -1690,6 +1659,45 @@ british	= {
 			Young Yelverton Youngs
 		}
 	}
+	scottish = {
+        graphical_culture = westerngfx
+		primary = SCO
+		dynasty_names = { 
+			Stuart Stewart Campbell Lennox Murray Graham Gordon Erskine Leslie
+			Scott Douglas Hamilton Lindsay Ker Hay Sinclair Dunbar Kennedy
+			Fraser "Aois-dàna" Dishington Burnett "Bowes-Lyon" Lockhart Corbet
+			Mackintosh Dingwall Melville Corrie Aberach Cunningham Donald
+			Buchanan Menzies Moffat Malcolm 
+			#CK2
+			Cameron Forbes Arbuthnot Cockburn Adam Wallace Abernethy
+		}
+		male_names = {
+			James Robert Henry Alexander Arthur Walter John Charles Malcolm Donald David Duncan Andrea 
+			Alan Ailpein Archibald Barclay Beathan Bruce Cameron Cináed Conall Douglas Duff Edan Evander 
+			Fraser Garry Glen Ian Keir Kennedy Lennox Logan Micheil Mungo Munroe Scott Wallace Adam 
+			Alpin Alwin Alastair Andrew Angus Arran Aulay Olaf Brian Brice Cailean Calum Carbrey Colban 
+			Kolbein Colin Nicholas Conan Constantine Dermid Dugald Edgar Edward Edwin Eric Ivar Ewan 
+			Eugene Farquhar Fergus Fingal Finn Findlay Frang Francis Gavin Gilbride Gilbert Gilchrist 
+			Gillespie Gilpatrick Gilroy Giric Glenn Godfrey Gregor Gregory Hamish Hector Hugh Iain 
+			Indulf Jacob Kenneth Kentigern Lachlan Roland Laurence Lennon Lulach Macbeth Magnus Maldoven 
+			Maldred Malise Malmure Maoilios Marcas Marcus Matad Matthew Michael Morgan Muir Mungo 
+			Murdoch Murray Neil Nigel Ninian Oscar Patrick Paul Peter Philip Radulf Ralph Ranald 
+			Reginald Richard Ronald Ragnvald Rory Roderick Ross Roy Shaw Simon Somerled Stephan Stephen 
+			Sweeny Tadhg Tadg Talore Thomas Torquil Torkel Uhtred Uisdean Eysteinn Walan Valentin 
+			Waldeve Waltheof William
+		}
+		female_names = {
+			Mary Ada Affraic Agnes Aileen Alice Anna Annabella Aufrica Euphemia Barabal Barbara Beileag 
+			Beitris Beathoc Beatrice Bride Brigit Catriona Catherine Cecilia Deirdre Derilla Dervorgilla 
+			Donada Donella Edith Edna Effie Eilionoir Eimhir Emer Eithne Ela Eleanor Elspeth Euna Eva 
+			Fenella Fingola Flora Forflissa Galiena Glenna Gormelia Gormflaith Gruoch Helen Innes Iona 
+			Isabel Isla Isobel Jean Julia Juliana Kenna Kentigerna Kirstin Christina Lillias Elisabeth 
+			Lorna Malmure Maisie Malina Mariota Martha Marthoc Marjory Mary Maud Matilda Maura Maria 
+			Mirren Morag Mor Morna Moyna Mona Muriel Murron Nuala Finnguala Orabilia Peigi Margaret 
+			Rhonda Rodina Ronalda Ragnhild Ros Saundra Alexandra Sheena Shona Joan Sholto Slaine Sorcha 
+			Una
+		}
+	}
 	#Beyond the Pale Culture
 	northumbrian = {
 		graphical_culture = westerngfx
@@ -1765,7 +1773,6 @@ british	= {
 		}
 	}
 	#VU - Cultures by Noobminer72
-	#Australia CR
 	aussie = {
 		graphical_culture = westerngfx
 		dynasty_names = {
@@ -1786,7 +1793,6 @@ british	= {
 		}
 	}
 	#VU - Cultures by Noobminer72
-	#New Zealand CR
 	kiwi= {
 		graphical_culture = westerngfx
 		dynasty_names = {
@@ -1807,7 +1813,306 @@ british	= {
 		}
 	}
 	#VU - Cultures by San Felipe
-	#British Antilles CR
+	british_tanzanian = { #Tanzanian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_kenyan = { #Kenyan
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_nigerian = { #Nigerian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_ivorian = { #Ivorian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_sierra_leonean = { #Sierra Leonean
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_gambian = { #Gambian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_indian = { #Indian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_malayan = { #Malayan
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_indochinese = { #Indochinese
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_ghanaian = { #Ghanaian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_rhodesian = { #Rhodesian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_indonesian = { #Indonesian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_trinidad_and_tobago = { #Trinbagonians
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_jamaican = { #Jamaican
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_barbadian = { #Barbadian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
 	british_bahamian = { #Bahamian
 		graphical_culture = westerngfx
 		dynasty_names = {
@@ -1828,7 +2133,106 @@ british	= {
 		}
 	}
 	#VU - Cultures by San Felipe
-	#British Central America CR
+	british_st_lucians = { #Lucians
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_st_vincent_and_the_grenadines = { #Vincentians
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_antiguan = { #Antiguan
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_anguillan = { #Anguillian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_turks_and_caicos = { #Belongers
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
 	british_belizeans = { #Belizeans
 		graphical_culture = westerngfx
 		dynasty_names = {
@@ -1849,8 +2253,7 @@ british	= {
 		}
 	}
 	#VU - Cultures by San Felipe
-	#British Guyana CR
-	british_guyanese = {
+	british_papuan = { #Papuan
 		graphical_culture = westerngfx
 		dynasty_names = {
 			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
@@ -1869,8 +2272,248 @@ british	= {
 			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
 		}
 	}
-	#British Cape CR
-	british_south_african = { #South African
+	#VU - Cultures by San Felipe
+	british_burman = { #Burman
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_arabian = { #Arabian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_egyptian = { #Egyptian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_palestinian = { #Palestinian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_fijian = { #Fijian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_togo = { #Togolese
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_samoan = { #Samoan
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_hawaiian = { #Hawaiian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_gibraltarian = { #Gibraltarian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_cyprian = { #Cyprian
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_cretan = { #Cretan
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_guyanese = { #Guyanese
+		graphical_culture = westerngfx
+		dynasty_names = {
+			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
+			Lyons Menzies Hawke Holt Hawke Fraser Gillard Morrison Turnbull Abbott Keating Whitlam Hughes 
+			McMahon Gorton Brisbane Chifley Curtin Rudd
+		}
+		male_names = {
+			Arthur Bertie Bert Darcy Hugh William Piers Raymond John Thomas
+			Aaron Abel Alwin Angus Augustine Walter Bran Kenneth Clemens Clement Nicholas Constantine
+			David Donald Duncan Douglas Eric Eugene Jacob Malcolm Nigel Oscar Peter Ernest
+			Paul Francis Roy Roderick Shaw Godfrey William Philip George Robert Jonathan Edmund Oliver
+			Gerald Richard Edward Augustus Henry
+		}
+		female_names = {
+			Alice Elizabeth Darcy Joan Eva Agnes Margaret Muriel Catherine Christina Eleanor Martha
+			Maria Matilda Mary Michelle Kylie Kayla Enid Ethel Hazel Victoria 
+		}
+	}
+	#VU - Cultures by San Felipe
+	british_liberian = { #Liberian
 		graphical_culture = westerngfx
 		dynasty_names = {
 			Macarthur Phillip Bligh Hunter Darling Macquarie King Wentworth Parks Barton Fisher Cooke Bruce 
@@ -2024,6 +2667,9 @@ british	= {
 	canadian = {
 		primary = CAN
 	}
+	#quebecois_eng = {
+	#	primary = QUE
+	#}
 	dynasty_names = {
 		"de Valois" "de Bourbon" "de la Tour" "d'Anjou" 
 		"de Lorraine" "de Foix" "de Montfort" "de Blois" "de Penthievre" "de Dreux"
@@ -2556,7 +3202,6 @@ iberian	= {
             graphical_culture = latingfx
 		primary = CAS
 	}
-	#Iberian Mexico CR
 	mexican = {
             graphical_culture = latingfx
 		primary = MEX
@@ -2588,298 +3233,9 @@ iberian	= {
 			Isabel
 		}
 	}
-	#Iberian La Plata, Chile CR
 	platinean = {
 		graphical_culture = latingfx
 		primary = LAP
-		dynasty_names = {
-			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
-			#CK2
-			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
-			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
-		}
-		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar 
-			Bernardo Bertrán Hernando
-			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo 
-			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
-			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco 
-			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil 
-			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan 
-			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono 
-			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho 
-			Suero Tello Vela Vela Suero Oveco John Enrique
-		}
-		female_names = {
-			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza 
-			Constance Elvira Elvira Estefanía Stephania Fronilda Fronilde Gontroda Gotruda Inés Agnes 
-			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda María Maria Marina Marine 
-			Mayor Mayor Mencía Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
-			Isabel
-		}
-	}
-	#Iberian Venezuela, Colombia, Ecuador CR
-	colombian = {
-		graphical_culture = latingfx
-		#primary = LAP
-		dynasty_names = {
-			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
-			#CK2
-			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
-			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
-		}
-		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar 
-			Bernardo Bertrán Hernando
-			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo 
-			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
-			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco 
-			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil 
-			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan 
-			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono 
-			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho 
-			Suero Tello Vela Vela Suero Oveco John Enrique
-		}
-		female_names = {
-			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza 
-			Constance Elvira Elvira Estefanía Stephania Fronilda Fronilde Gontroda Gotruda Inés Agnes 
-			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda María Maria Marina Marine 
-			Mayor Mayor Mencía Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
-			Isabel
-		}
-	}
-	#Iberian Peru, Bolovia CR
-	peruvian = {
-		graphical_culture = latingfx
-		#primary = LAP
-		dynasty_names = {
-			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
-			#CK2
-			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
-			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
-		}
-		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar 
-			Bernardo Bertrán Hernando
-			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo 
-			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
-			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco 
-			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil 
-			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan 
-			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono 
-			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho 
-			Suero Tello Vela Vela Suero Oveco John Enrique
-		}
-		female_names = {
-			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza 
-			Constance Elvira Elvira Estefanía Stephania Fronilda Fronilde Gontroda Gotruda Inés Agnes 
-			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda María Maria Marina Marine 
-			Mayor Mayor Mencía Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
-			Isabel
-		}
-	}
-	#Iberian Cuba CR
-	cuban = {
-            graphical_culture = latingfx
-		#primary = MEX
-		dynasty_names = {
-			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
-			#CK2
-			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
-			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
-		}
-		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar 
-			Bernardo Bertrán Hernando
-			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo 
-			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
-			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco 
-			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil 
-			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan 
-			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono 
-			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho 
-			Suero Tello Vela Vela Suero Oveco John Enrique
-		}
-		female_names = {
-			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza 
-			Constance Elvira Elvira Estefanía Stephania Fronilda Fronilde Gontroda Gotruda Inés Agnes 
-			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda María Maria Marina Marine 
-			Mayor Mayor Mencía Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
-			Isabel
-		}
-	}
-	#Iberian Hispaniola CR
-	dominican = {
-            graphical_culture = latingfx
-		#primary = MEX
-		dynasty_names = {
-			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
-			#CK2
-			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
-			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
-		}
-		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar 
-			Bernardo Bertrán Hernando
-			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo 
-			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
-			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco 
-			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil 
-			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan 
-			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono 
-			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho 
-			Suero Tello Vela Vela Suero Oveco John Enrique
-		}
-		female_names = {
-			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza 
-			Constance Elvira Elvira Estefanía Stephania Fronilda Fronilde Gontroda Gotruda Inés Agnes 
-			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda María Maria Marina Marine 
-			Mayor Mayor Mencía Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
-			Isabel
-		}
-	}
-	#Iberian Antilles CR
-	iberian_caribbean = {
-            graphical_culture = latingfx
-		#primary = MEX
-		dynasty_names = {
-			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
-			#CK2
-			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
-			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
-		}
-		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar 
-			Bernardo Bertrán Hernando
-			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo 
-			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
-			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco 
-			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil 
-			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan 
-			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono 
-			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho 
-			Suero Tello Vela Vela Suero Oveco John Enrique
-		}
-		female_names = {
-			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza 
-			Constance Elvira Elvira Estefanía Stephania Fronilda Fronilde Gontroda Gotruda Inés Agnes 
-			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda María Maria Marina Marine 
-			Mayor Mayor Mencía Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
-			Isabel
-		}
-	}
-	#Iberian Central America CR
-	centroamerican = {
-            graphical_culture = latingfx
-		#primary = MEX
-		dynasty_names = {
-			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
-			#CK2
-			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
-			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
-		}
-		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar 
-			Bernardo Bertrán Hernando
-			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo 
-			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
-			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco 
-			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil 
-			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan 
-			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono 
-			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho 
-			Suero Tello Vela Vela Suero Oveco John Enrique
-		}
-		female_names = {
-			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza 
-			Constance Elvira Elvira Estefanía Stephania Fronilda Fronilde Gontroda Gotruda Inés Agnes 
-			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda María Maria Marina Marine 
-			Mayor Mayor Mencía Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
-			Isabel
-		}
-	}
-	#Iberian Texas CR
-	tejano = {
-            graphical_culture = latingfx
-		#primary = MEX
-		dynasty_names = {
-			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
-			#CK2
-			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
-			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
-		}
-		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar 
-			Bernardo Bertrán Hernando
-			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo 
-			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
-			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco 
-			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil 
-			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan 
-			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono 
-			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho 
-			Suero Tello Vela Vela Suero Oveco John Enrique
-		}
-		female_names = {
-			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza 
-			Constance Elvira Elvira Estefanía Stephania Fronilda Fronilde Gontroda Gotruda Inés Agnes 
-			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda María Maria Marina Marine 
-			Mayor Mayor Mencía Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
-			Isabel
-		}
-	}
-	#Iberian California CR
-	californio = {
-            graphical_culture = latingfx
-		#primary = MEX
-		dynasty_names = {
-			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
-			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
-			#CK2
-			"de Menezes" "de Mendoza" "de Niebla" "de Silva" "de Alba" "de Borja"  
-			"de Medinaceli" "de Castro" "de Haro" "Santcliment" "de Altamira" Osorio
-			Zúñiga "de Villahermosa" Vilafermosa Garmendia "de Rocamora" "de Goyeneche"
-		}
-		male_names = {
-			Enrique Fernando Juan Felipe Alfonso Carlos Sancho Ramiro Pedro Alonso Álvaro Baltasar 
-			Bernardo Bertrán Hernando
-			Cristobal Diego Domingo Esteban Fadrique Francisco García Gómez Gonzalo Gutierre Hermenegildo 
-			Ignacio Laín Lope Miguel Nuño Odón Ramón Rodrigo Tomás Valeriano
-			Alfonso Alphonse Alonso Alphonse Álvar Oliver Álvaro Oliver Bermudo Vermudo Diego Diaco 
-			Henry Fadrique Frederick Felipe Philip Fernando Ferdinand Fruela Froila García Garcia Gil 
-			Egidius Gómez Gomez Gonzalo Gonzalo Guillén William Guillermo William Gutierre Walter Juan 
-			Lope Lupo Luis Louis Manrique Amalric Martín Martin Munio Munio Nuño Nuno Ordoño Ordono 
-			Obeko Pedro Peter Pelayo Pelagius Ramiro Ramiro Rodrigo Roderick Salvador Sancho Sancho 
-			Suero Tello Vela Vela Suero Oveco John Enrique
-		}
-		female_names = {
-			Aldonza Aldonza Anderquina Beatriz Beatrice Berenguela Berengaria Blanca Blanche Constanza 
-			Constance Elvira Elvira Estefanía Stephania Fronilda Fronilde Gontroda Gotruda Inés Agnes 
-			Elisabeth Jimena Ximena Juana Joan Leonor Eleanor Mafalda Matilda María Maria Marina Marine 
-			Mayor Mayor Mencía Mencia Milia Emily Sancha Sancha Teresa Teresa Toda Toda Urraca Urraca
-			Isabel
-		}
-	}
-	#Iberian Florida CR
-	floridan = {
-            graphical_culture = latingfx
-		#primary = MEX
 		dynasty_names = {
 			"de Trastámara" "de Guzmán" "Álvarez de Toledo" "de la Cerda" "de Castilla" "de Valencia"
 			Téllez-Girón "Manrique de Lara" "de Ávalos" Enríquez "Osuna" "Argavieso" Ruspoli "Lasso de la Vega" "de Hoyos" Zayas "de Alcalá"
@@ -2964,7 +3320,6 @@ iberian	= {
 			Maria Marquesa Marquise Sança Sancha Sibila Sibylla Teresa Teresa Toda Toda Violant Yolanda
 		}
 	}
-	#Iberian Brazil CR
 	brazilian = {
 		graphical_culture = latingfx
 		primary = BRZ
@@ -3215,30 +3570,13 @@ french	= {
 			Adalmode Adelaide Adelinde Agathe Alix Almodis Amelie Anne Antoinette Arsinde Aude Aurengarde Berthe Blanche Bonne Bourgogne Bourguigne Charlotte Constance Denise Douce Echive Eglantine Elisabeth Emma Ermengarde Ermessinde Esclarmonde Euphrosine Eustachie Eve Gerberge Guillaumette Helvis Hodierne Ide Ildégarde Isabeau Isabelle Jeanne Judith Julienne Mafalda Mahaut Margot Marguerite Marie Marthe Mascarose Mathilde Pernelle Perinne Pernette Plaisance Raymonde Sarrazine Sophie Sybille Tiburge Valence Yolande
 		}
 	}
-	#French Mississippi, Louisiana, Great Lakes CR
 	louisianans = {
         graphical_culture = westerngfx
 		primary = LOU
 	}
-	#French Acadia, Canada CR
 	quebecois = {
         graphical_culture = westerngfx
 		primary = QUE
-	}
-	#French Hispaniola CR
-	haitian = {
-        graphical_culture = westerngfx
-		#primary = QUE
-	}
-	#French Guyana CR
-	french_guyanese = {
-        graphical_culture = westerngfx
-		#primary = QUE
-	}
-	#French Antilles CR
-	martinique = {
-        graphical_culture = westerngfx
-		#primary = QUE
 	}
 	#Beyond the Pale Culture
 	arpitan = {
@@ -3274,30 +3612,30 @@ french	= {
 		}
 	}
 	#Beyond Typus Culture
-	#canadien = {
-	#	primary = CAN
-	#	dynasty_names = {
-	#		#Some extra naming specifically for Colonial French thanks to Perry
-	#		"de Chaplain" "de Mons" Goumard "de Poutrincourt" "de Biencourt" "de la Tour" 
-	#		"de Pons" "de Razilly" "de Launay-Razilly" "de Menou d'Aulnay" "de Charnizay" 
-	#		"Le Borgne" "de Belle-Isle" "de Grandfontaine" "de Chambly" "de Pouville" "de Tracy"
-	#		"de Québec" "de Montréal"
-	#		"de Chauvain" "de Tonnetuit" Gravé "Pont-Gravé" "de Pouville" "de Tracy" "de Rigaud" 
-	#		"de Vaudreuil" "de Cavagnial" Joybert "de Soulanges" "de Marson" Bécart "de Granville" 
-	#		"Le Moyne" "de Longueuil" "de Taffanel" "de La Jonquière" Rouillé "de Saguenay" 
-	#		"de Rigaud" "de Callière" Perrot
-	#		#Some archetypal names added By Draiocht
-	#		Tremblay Martin Cartier "la Fontaine" Chrétien Trudeau Mercier Marchand Bouchard Lévesque
-	#		Lapointe 
-	#	}
-	#	#Then some more Quebecker names by Draiocht
-	#	male_names = {
-	#		Yannick Jaques "Jean-Baptiste"Olivier René Alexis
-	#	}
-	#	female_names = {
-	#		Annick
-	#	}
-	#}
+	canadien = {
+		primary = CAN
+		dynasty_names = {
+			#Some extra naming specifically for Colonial French thanks to Perry
+			"de Chaplain" "de Mons" Goumard "de Poutrincourt" "de Biencourt" "de la Tour" 
+			"de Pons" "de Razilly" "de Launay-Razilly" "de Menou d'Aulnay" "de Charnizay" 
+			"Le Borgne" "de Belle-Isle" "de Grandfontaine" "de Chambly" "de Pouville" "de Tracy"
+			"de Québec" "de Montréal"
+			"de Chauvain" "de Tonnetuit" Gravé "Pont-Gravé" "de Pouville" "de Tracy" "de Rigaud" 
+			"de Vaudreuil" "de Cavagnial" Joybert "de Soulanges" "de Marson" Bécart "de Granville" 
+			"Le Moyne" "de Longueuil" "de Taffanel" "de La Jonquière" Rouillé "de Saguenay" 
+			"de Rigaud" "de Callière" Perrot
+			#Some archetypal names added By Draiocht
+			Tremblay Martin Cartier "la Fontaine" Chrétien Trudeau Mercier Marchand Bouchard Lévesque
+			Lapointe 
+		}
+		#Then some more Quebecker names by Draiocht
+		male_names = {
+			Yannick Jaques "Jean-Baptiste"Olivier René Alexis
+		}
+		female_names = {
+			Annick
+		}
+	}
 	#Note Perry and Cat Dad also contributed a number of Louisiana French names, though this culture does not exist yet.
 	#If it is ever added, here is the list Surnames Aigle Allain Allevin Augustine Barbin Bardon Baudemont Baudoin Baux
 	#Bellome Beaucher Bernard Bizoton Boyer Bouchanne Boucher Boyer Brazou Brosset Brunel Brunet Brusle Boisdore
@@ -4145,48 +4483,6 @@ east_slavic = {
 		}
 		female_names = {
 			Gavriila Larisa Aleksandra Alla Bronislava Svetlana Yuliya Yaroslava Vladislava Lyudmila Nadejda Rostislava
-		}
-	}
-	#East Slavic Alaska CR
-	russo_alaskan = {
-            graphical_culture = easterngfx
-		#primary = MOS
-		male_names = {
-			Vasiliy Ivan Dmitriy Yuriy Andrei Semen Fyodor Afanasiy Akim Aleksandr Alexei Anatoliy Arkadiy
-			Dorofey Feodosiy Feofilakt Gavriil Innokentiy Iosif Lavrentiy Makariy Matveiy Mikhail Nazariy
-			Onisim Pavel Prokopiy Pyotr Radomir Saveliy Sergei Terentiy Valeriy Yakim Yevgeniy
-			Afanasiy Athanasius Alexandr Alexander Alexei Alexis Andrei Andrew Boris Briachislav
-			Bretislaus Nikifor
-			Daniil Daniel Davyd David Demid Dmitriy Demetrius Dobrynia Fedot Theodat Feodor Theodore
-			Gavriil Gabriel Gleb
-			Grigoriy Gregory Iakov Jacob Igor Iliya Ingvar Ingvar Ivan John Iziaslav Kirill Cyril
-			Konstantin Constantine Koz'ma Cosma Lev Leo Matfei Matthew Mikhail Michael Mitrofan
-			Mstislav Nikita Oleg Helge Pavel Paul Putiata Radoslav Rodislav Rogvolod Roman
-			Rostislav Rurik
-			Rurik Ruslan Simeon Simon Stanislav Stanislav Stepan Stephen Sudislav
-			Svetozar Sviatopolk Svatopluk Sviatoslav Sviatoslav Terentiy Trifon Vasiliy Basil Vasilko
-			Viacheslav Vladimir Vladimir Vladislav Vladislav Voislav Volodar Vseslav
-			Vsevolod Vyshata Vysheslav Yaropolk Yaroslav Jaroslav Yefimiy Yelisey Yemelyan Emil Yeremey
-			Yevstafiy Yuriy George
-		}
-		female_names = {
-			Agafya Agatha Agrafena Alexandra Anastasia Anastasia Anna Anna Boleslava Darya Dobrava
-			Dobronega Dobroslava Yefimia Euphemia Yefrosinia Euphrosyne Yekaterina Catherine
-			Yelizaveta Elisabeth Yevdokia Eudocia Yevpraxia Feodora Theodora Feodosia Theodosia
-			Fevronia Gorislava Gradislava Gremislava Irina Irene Xenia Liubava
-			Liudmila Malfrida Malusha Maria Maria Marina Olena Helen Olga Pereyaslava Praskovya Praxida
-			Prebrana Predslava Premyslava Svetlana Yuliya
-			Pribislava Rogneda Rostislava Sbyslava Sofia Sophia Sviatoslava Tatyana Ulita Ulyana
-			Varvara Vasilisa Veleslava Verkhoslava Vseslava Viacheslava Yaroslava Zabava Zvenislava
-		}
-		dynasty_names = {
-			Rurikovich Godunov Shuisky Romanov Sheremetev Golitsyn Naryshkin Khilkov Gorchakov
-			Belosselsky Chelyadnin Potyomkin Poloch Izbor Tversky Lukisky Pleskov Toropetsky Dukhovsky
-			Koroviev Woland Tyvertsky Buzhansky Slutsky Pinesky Zhytomyrsky Vynnytsky Polan Ulich Drevl
-			Lyubech Roslavsky Turov
-			Dolgorukov Gagarin Galitzine Massalski Shuysky Gantimurov Sibirsky
-			# CKII
-			Demidov Lopukhin Tolstoy "Lobanov-Rostovsky" Menshikov Obolensky
 		}
 	}
 	dynasty_names = {

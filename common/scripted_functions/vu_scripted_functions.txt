@@ -57,6 +57,15 @@ can_move_capital = {
 #			is_node_in_trade_company_region = yes
 #		}
 #	}
+#	condition = {
+#		tooltip = NEED_TECH_TO_COLONIZE
+#		potential = {
+#			has_province_modifier = hard_to_colonize_modifier
+#		}
+#		allow = {
+#			FROM = { dip_tech = 78 }
+#		}
+#	}
 #}
 
 #can_colonize_province_siberian_frontier = {
@@ -91,6 +100,15 @@ can_move_capital = {
 #		}
 #		allow = {
 #			is_node_in_trade_company_region = yes
+#		}
+#	}
+#	condition = {
+#		tooltip = NEED_TECH_TO_COLONIZE
+#		potential = {
+#			has_province_modifier = hard_to_colonize_modifier
+#		}
+#		allow = {
+#			FROM = { dip_tech = 78 }
 #		}
 #	}
 #}
@@ -346,8 +364,7 @@ can_release_colonial_nation = {
     }
 }
 
-### By Karlos - Former vu_historical_colonization file
-
+#By Karlos - Former vu_historical_colonization file
 #Age Restrictions prevents AI and players from colonizing specific colonial regions until a certain age.
 #Can be disabled by the player.
 
@@ -356,9 +373,30 @@ can_release_colonial_nation = {
 
 can_colonize_province = {
 	
-	### Colonial Nations can't colonize other CRs
+	#
+	
+	#Scramble for Africa mechanic and such. Makes so that certain African provinces cannot be 
+	#colonized unless X conditions are met.
+	condition = { 						#Condition - disables colonize button for situations included in potential
+		tooltip = "VU_province_cant_be_colonized_1"
+		potential = {					#Potential - what causes the button to be disabled?
+			has_province_modifier = vu_malaria_present
+		}
+		allow = {					#Allow - what conditons must be met for the button to be enabled again?
+			OR = {
+				FROM = { dip_tech = 35 }	#Default for all, year 1856
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african } #Native African nations are naturally resiliant
+				FROM = { technology_group = sub_saharan }
+			}
+		}
+	}
+	
+	#
+
+	#Colonial Nations can't colonize other CRs
 	#Condition - disables colonize button for situations included in potential
-	condition = {					
+	condition = {						
 		tooltip = "VU_Colonial_Region_Colonisation"
 		
 		#Potential - what causes the button to be disabled?
@@ -372,56 +410,7 @@ can_colonize_province = {
 		}
 	}
 	
-	### American Subjects can't colonize other continents
-	condition = {					
-		tooltip = "VU_Subject_Colonisation"
-		
-		potential = {
-			FROM = { is_subject = yes }
-			FROM = { is_colonial_nation = no }
-			OR = {
-				FROM = { capital_scope = { continent = north_america } }
-				FROM = { capital_scope = { continent = south_america } }
-			}
-		}
-		
-		allow = {
-			FROM = { capital_scope = { continent = ROOT } }
-		}
-	}
-	
-	### Hard to Colonize
-	condition = {
-		tooltip = "VU_malaria_province_cant_be_colonized"
-		
-		potential = {
-			has_province_modifier = vu_malaria_present
-		}
-		
-		allow = {
-			FROM = { 
-				OR = {
-					technology_group = north_american
-					technology_group = mesoamerican
-					technology_group = south_american
-					technology_group = andean
-					technology_group = high_american
-					technology_group = east_african
-					technology_group = central_african
-					technology_group = sub_saharan
-					technology_group = aboriginal_tech
-					technology_group = rapanuan
-					technology_group = polynesian_tech
-					technology_group = papuan
-					dip_tech = 35 #After 1856 the restrictions are lifted
-				}
-			}
-		}
-	}
-	
-	### Age Restrictions
-	
-	#Age of Reformation (1550 to 1650)
+	#Age Restrictions - Age of Reformation
 	condition = {
 		tooltip = "VU_Age_Restriction_Reformation"
 		
@@ -434,6 +423,7 @@ can_colonize_province = {
 			}
 			
 			OR = {
+				#1550 to 1650
 				colonial_region = colonial_la_plata
 				colonial_region = colonial_guyana
 				colonial_region = colonial_florida
@@ -447,31 +437,27 @@ can_colonize_province = {
 		allow = {
 			OR = {
 				has_global_flag = vu_no_age_restrictions
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
 	}
 	
-	#Age of Absolutism (1650 to 1750)
+	#Age Restrictions - Age of Absolutism
 	condition = {
 		tooltip = "VU_Age_Restriction_Absolutism"
 		
-        potential = {
+        potential = {			
 			NOT = {
 				current_age = age_of_absolutism
 				current_age = age_of_revolutions
@@ -479,11 +465,13 @@ can_colonize_province = {
 			}
 			
 			OR = {
+				#1650 to 1750
 				colonial_region = colonial_texas
 				colonial_region = colonial_mississippi
 				colonial_region = colonial_louisiana
 				colonial_region = colonial_great_lakes
 				colonial_region = colonial_hudson_bay
+				colonial_region = colonial_greenland
 				colonial_region = colonial_california
 				colonial_region = colonial_cape
 			}
@@ -492,37 +480,34 @@ can_colonize_province = {
 		allow = {
 			OR = {
 				has_global_flag = vu_no_age_restrictions
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
 	}
 	
-	#Age of Revolutions (1750 onwards)
+	#Age Restrictions - Age of Revolutions
 	condition = {
 		tooltip = "VU_Age_Restriction_Revolutions"
 		
-        potential = {	
+        potential = {		
 			NOT = {
 				current_age = age_of_revolutions
 				current_age = age_of_change
 			}
 			
 			OR = {
+				#1750 onwards
 				colonial_region = colonial_cascadia
 				colonial_region = colonial_northwest_territories
 				colonial_region = colonial_alaska
@@ -539,39 +524,34 @@ can_colonize_province = {
 		allow = {
 			OR = {
 				has_global_flag = vu_no_age_restrictions
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
 	}
 	
-	### Historical Colonisation
-	
-	#Portuguese Only
+	#Historical Colonisation - Portuguese Only
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
         potential = {
-			NOT = {
+			NOT = {				
 				FROM = { primary_culture = portugese }
 				FROM = { primary_culture = brazilian }
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
 				#Portuguese America
@@ -610,31 +590,23 @@ can_colonize_province = {
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 	
-	#Spanish Only
+	#Historical Colonisation - Spanish Only
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
@@ -652,6 +624,7 @@ can_colonize_province = {
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
 				#Spanish America
@@ -684,67 +657,41 @@ can_colonize_province = {
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 	
-	#British Only
+	#Historical Colonisation - British Only
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
         potential = {
 			NOT = {				
-				FROM = { primary_culture = english }
-				FROM = { primary_culture = scottish }
-				FROM = { primary_culture = northumbrian }
-				FROM = { primary_culture = anglo_irish }
-				FROM = { primary_culture = aussie }
-				FROM = { primary_culture = kiwi }
-				FROM = { primary_culture = cosmopolitan_french_UKS }
-				FROM = { primary_culture = gascon_UKS }
-				FROM = { primary_culture = normand_UKS }
-				FROM = { primary_culture = aquitaine_UKS }
-				FROM = { primary_culture = burgundian_UKS }
-				FROM = { primary_culture = occitain_UKS }
-				FROM = { primary_culture = arpitan_UKS }
-				FROM = { primary_culture = poitevin_UKS }
-				FROM = { primary_culture = angevin_UKS }
-				FROM = { primary_culture = lorraine_UKS }
-				FROM = { primary_culture = auvergnat_UKS }
-				FROM = { primary_culture = gallo_UKS }
-				FROM = { primary_culture = wallonian_UKS }
-				FROM = { primary_culture = breton_UKS }
-				FROM = { primary_culture = canadian }
+				FROM = { culture_group = british }
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
 				#British America
+				colonial_region = colonial_cascadia
+				colonial_region = colonial_eastern_america
 				colonial_region = colonial_hudson_bay
+				colonial_region = colonial_newfoundland
 				colonial_region = colonial_northwest_territories
-				
-				area = guyana_area
 				
 				province_id = 481 #Bermuda
 				province_id = 1095 #Falklands
@@ -807,38 +754,33 @@ can_colonize_province = {
 				#British East Asia
 				province_id = 8559 #Natuna
 				
-				#New places that were colonised ONLY by Great Britain go here
+				#American Africa
+				area = grain_coast_area #Liberia
+				
+				#New places that were colonised ONLY by Great Britain or the United States go here
 			}
 		}
 		
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 	
-	#French Only
+	#Historical Colonisation - French Only
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
@@ -848,11 +790,9 @@ can_colonize_province = {
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
-				#French America
-				area = cayanne_area
-				
 				#French Oceania
 				colonial_region = colonial_new_caledonia
 				
@@ -930,31 +870,23 @@ can_colonize_province = {
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }	
 	
-	#German Only
+	#Historical Colonisation - German Only
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
@@ -964,6 +896,7 @@ can_colonize_province = {
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
 				#German Africa
@@ -988,31 +921,23 @@ can_colonize_province = {
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 	
-	#Nordic Only
+	#Historical Colonisation - Nordic Only
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
@@ -1022,6 +947,7 @@ can_colonize_province = {
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
 				#Nordic America
@@ -1036,31 +962,23 @@ can_colonize_province = {
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 	
-	#Japanese Only
+	#Historical Colonisation - Japanese Only
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
@@ -1070,6 +988,7 @@ can_colonize_province = {
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {				
 				#Japan
@@ -1086,31 +1005,64 @@ can_colonize_province = {
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 	
-	#Arabic Only
+	#Historical Colonisation - Russian Only
+	condition = {
+		tooltip = "VU_Historical_Colonization"
+		
+        potential = {
+			NOT = {				
+				FROM = { culture_group = east_slavic }
+			}
+			
+			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
+			
+			OR = {
+				#Siberia
+				region = ural_region
+				region = west_siberia_region
+				region = east_siberia_region
+				
+				#New places that were colonised ONLY by Russia go here
+			}
+		}
+		
+		allow = {
+			OR = {
+				has_global_flag = vu_no_historical_colonization
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
+			}
+		}
+    }
+	
+	#Historical Colonisation - Arabic Only
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
@@ -1120,6 +1072,7 @@ can_colonize_province = {
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
 				#Middle East
@@ -1133,31 +1086,23 @@ can_colonize_province = {
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 	
-	#Dutch Only
+	#Historical Colonisation - Dutch Only
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
@@ -1167,11 +1112,9 @@ can_colonize_province = {
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
-				#Dutch America
-				area = suriname_area
-				
 				#Belgian Africa
 				area = katanga_area
 				area = lower_kasai
@@ -1198,31 +1141,23 @@ can_colonize_province = {
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 	
-	#Chinese Only
+	#Historical Colonisation - Chinese Only
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
@@ -1232,6 +1167,7 @@ can_colonize_province = {
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
 				#Taiwan
@@ -1245,31 +1181,23 @@ can_colonize_province = {
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 	
-	#Italian Only
+	#Historical Colonisation - Italian Only
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
@@ -1279,6 +1207,7 @@ can_colonize_province = {
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
 				#Italian Africa
@@ -1308,87 +1237,77 @@ can_colonize_province = {
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 	
-	#British and American
+	#Historical Colonisation - Spanish and French
+	condition = {
+		tooltip = "VU_Historical_Colonization"
+		
+        potential = {
+			NOT = {				
+				FROM = { culture_group = french }
+				FROM = { primary_culture = castillian }
+				FROM = { primary_culture = leonese }
+				FROM = { primary_culture = aragonese }
+				FROM = { primary_culture = catalan }
+				FROM = { primary_culture = andalucian }
+				FROM = { primary_culture = galician }
+				FROM = { primary_culture = katsila }
+				FROM = { primary_culture = mexican }
+				FROM = { primary_culture = platinean }
+			}
+			
+			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
+			
+			OR = {
+				#Spanish-French America
+				colonial_region = colonial_hispaniola
+				
+				#New CRs that were colonised by Spain and France go here
+			}
+		}
+		
+		allow = {
+			OR = {
+				has_global_flag = vu_no_historical_colonization
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
+			}
+		}
+    }
+	
+	#Historical Colonisation - British and Spanish
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
         potential = {
 			NOT = {				
 				FROM = { culture_group = british }
-			}
-			
-			FROM = { ai = yes }
-			
-			OR = {
-				#British America
-				colonial_region = colonial_cascadia
-				colonial_region = colonial_eastern_america
-				
-				#American Africa
-				area = grain_coast_area #Liberia
-				
-				#New places that were colonised ONLY by Great Britain or the USA go here
-			}
-		}
-		
-		allow = {
-			OR = {
-				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
-			}
-		}
-    }
-	
-	#Spanish and French
-	condition = {
-		tooltip = "VU_Historical_Colonization"
-		
-        potential = {
-			NOT = {				
-				FROM = { culture_group = french }
 				FROM = { primary_culture = castillian }
 				FROM = { primary_culture = leonese }
 				FROM = { primary_culture = aragonese }
@@ -1401,249 +1320,94 @@ can_colonize_province = {
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
-				#Spanish-French America
-				colonial_region = colonial_hispaniola
-				
-				#New CRs that were colonised by Spain or France go here
-			}
-		}
-		
-		allow = {
-			OR = {
-				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
-			}
-		}
-    }
-	
-	#American and Spanish
-	condition = {
-		tooltip = "VU_Historical_Colonization"
-		
-        potential = {
-			NOT = {
-				FROM = { primary_culture = american }
-				FROM = { primary_culture = dixie }
-				FROM = { primary_culture = castillian }
-				FROM = { primary_culture = leonese }
-				FROM = { primary_culture = aragonese }
-				FROM = { primary_culture = catalan }
-				FROM = { primary_culture = andalucian }
-				FROM = { primary_culture = galician }
-				FROM = { primary_culture = katsila }
-				FROM = { primary_culture = mexican }
-				FROM = { primary_culture = platinean }
-			}
-			
-			FROM = { ai = yes }
-			
-			OR = {
-				#American-Spanish America
+				#British-Spanish America
 				colonial_region = colonial_texas
 				colonial_region = colonial_california
 				colonial_region = colonial_florida
 				
-				#New CRs that were colonised by the USA or Spain go here
+				#New CRs that were colonised by Great Britain and Spain go here
 			}
 		}
 		
 		allow = {
 			OR = {
-				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 	
-	#American and French
-	condition = {
-		tooltip = "VU_Historical_Colonization"
-		
-        potential = {
-			NOT = {
-				FROM = { primary_culture = american }
-				FROM = { primary_culture = dixie }
-				FROM = { culture_group = french }
-			}
-			
-			FROM = { ai = yes }
-			
-			OR = {
-				#American-French America
-				colonial_region = colonial_louisiana
-				
-				#New CRs that were colonised by the USA or France go here
-			}
-		}
-		
-		allow = {
-			OR = {
-				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
-			}
-		}
-    }
-	
-	#British and French
+	#Historical Colonisation - British and French
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
         potential = {
 			NOT = {				
-				FROM = { primary_culture = english }
-				FROM = { primary_culture = scottish }
-				FROM = { primary_culture = northumbrian }
-				FROM = { primary_culture = anglo_irish }
-				FROM = { primary_culture = aussie }
-				FROM = { primary_culture = kiwi }
-				FROM = { primary_culture = cosmopolitan_french_UKS }
-				FROM = { primary_culture = gascon_UKS }
-				FROM = { primary_culture = normand_UKS }
-				FROM = { primary_culture = aquitaine_UKS }
-				FROM = { primary_culture = burgundian_UKS }
-				FROM = { primary_culture = occitain_UKS }
-				FROM = { primary_culture = arpitan_UKS }
-				FROM = { primary_culture = poitevin_UKS }
-				FROM = { primary_culture = angevin_UKS }
-				FROM = { primary_culture = lorraine_UKS }
-				FROM = { primary_culture = auvergnat_UKS }
-				FROM = { primary_culture = gallo_UKS }
-				FROM = { primary_culture = wallonian_UKS }
-				FROM = { primary_culture = breton_UKS }
-				FROM = { primary_culture = canadian }
+				FROM = { culture_group = british }
 				FROM = { culture_group = french }
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
 				#British-French America
 				colonial_region = colonial_acadia
 				colonial_region = colonial_canada
+				colonial_region = colonial_great_lakes
+				colonial_region = colonial_louisiana
+				colonial_region = colonial_mississippi
 				
 				#British-French Oceania
 				colonial_region = colonial_vanuatu
-				#New CRs that were colonised by Great Britain or France go here
+				#New CRs that were colonised by Great Britain and France go here
 			}
 		}
 		
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 	
-	#British and Dutch
+	#Historical Colonisation - British and Dutch
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
         potential = {
 			NOT = {				
-				FROM = { primary_culture = english }
-				FROM = { primary_culture = scottish }
-				FROM = { primary_culture = northumbrian }
-				FROM = { primary_culture = anglo_irish }
-				FROM = { primary_culture = aussie }
-				FROM = { primary_culture = kiwi }
-				FROM = { primary_culture = cosmopolitan_french_UKS }
-				FROM = { primary_culture = gascon_UKS }
-				FROM = { primary_culture = normand_UKS }
-				FROM = { primary_culture = aquitaine_UKS }
-				FROM = { primary_culture = burgundian_UKS }
-				FROM = { primary_culture = occitain_UKS }
-				FROM = { primary_culture = arpitan_UKS }
-				FROM = { primary_culture = poitevin_UKS }
-				FROM = { primary_culture = angevin_UKS }
-				FROM = { primary_culture = lorraine_UKS }
-				FROM = { primary_culture = auvergnat_UKS }
-				FROM = { primary_culture = gallo_UKS }
-				FROM = { primary_culture = wallonian_UKS }
-				FROM = { primary_culture = breton_UKS }
-				FROM = { primary_culture = canadian }
+				FROM = { culture_group = british }
 				FROM = { culture_group = low_franconian } #Dutch
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {				
 				#British-Dutch Africa
@@ -1652,132 +1416,70 @@ can_colonize_province = {
 				#British-Dutch East Asia
 				colonial_region = colonial_papua
 				
-				#New CRs that were colonised by Great Britain or the Netherlands go here
+				#New CRs that were colonised by Great Britain and the Netherlands go here
 			}
 		}
 		
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 	
-	#American and Russian
+	#Historical Colonisation - British and Russian
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
         potential = {
 			NOT = {				
-				FROM = { primary_culture = american }
-				FROM = { primary_culture = dixie }
+				FROM = { culture_group = british }
 				FROM = { culture_group = east_slavic }
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
-				#American-Russian America
+				#British-Russian America
 				colonial_region = colonial_alaska
 				
-				#New CRs that were colonised by the USA or Russia go here
+				#New CRs that were colonised by Great Britain and Russia go here
 			}
 		}
 		
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 	
-	#British & Nordic
-	condition = {
-		tooltip = "VU_Historical_Colonization"
-		
-        potential = {
-			NOT = {				
-				FROM = { culture_group = scandinavian }
-			}
-			
-			FROM = { ai = yes }
-			
-			OR = {
-				#British-Nordic America
-				colonial_region = colonial_newfoundland
-				
-				#New places that were colonised by British or Nordic go here
-			}
-		}
-		
-		allow = {
-			OR = {
-				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
-			}
-		}
-    }
-	
-	#British, French and American
+	#Historical Colonisation - British, French and Dutch
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
@@ -1785,100 +1487,46 @@ can_colonize_province = {
 			NOT = {				
 				FROM = { culture_group = british }
 				FROM = { culture_group = french }
+				FROM = { culture_group = low_franconian } #Dutch
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
-				#British-French-American America
-				colonial_region = colonial_great_lakes
-				colonial_region = colonial_mississippi
+				#British-French-Dutch America
+				colonial_region = colonial_guyana
 				
-				#New CRs that were colonised by Great Britain, France or the USA go here
+				#New CRs that were colonised by Great Britain, France and the Netherlands go here
 			}
 		}
 		
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
-			}
-		}
-    }
-		
-		allow = {
-			OR = {
-				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 	
-	#British, Spanish and French
+	#Historical Colonisation - British, Spanish and French
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
         potential = {
 			NOT = {				
-				FROM = { primary_culture = english }
-				FROM = { primary_culture = scottish }
-				FROM = { primary_culture = northumbrian }
-				FROM = { primary_culture = anglo_irish }
-				FROM = { primary_culture = aussie }
-				FROM = { primary_culture = kiwi }
-				FROM = { primary_culture = cosmopolitan_french_UKS }
-				FROM = { primary_culture = gascon_UKS }
-				FROM = { primary_culture = normand_UKS }
-				FROM = { primary_culture = aquitaine_UKS }
-				FROM = { primary_culture = burgundian_UKS }
-				FROM = { primary_culture = occitain_UKS }
-				FROM = { primary_culture = arpitan_UKS }
-				FROM = { primary_culture = poitevin_UKS }
-				FROM = { primary_culture = angevin_UKS }
-				FROM = { primary_culture = lorraine_UKS }
-				FROM = { primary_culture = auvergnat_UKS }
-				FROM = { primary_culture = gallo_UKS }
-				FROM = { primary_culture = wallonian_UKS }
-				FROM = { primary_culture = breton_UKS }
-				FROM = { primary_culture = canadian }
+				FROM = { culture_group = british }
 				FROM = { primary_culture = castillian }
 				FROM = { primary_culture = leonese }
 				FROM = { primary_culture = aragonese }
@@ -1892,43 +1540,36 @@ can_colonize_province = {
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
 				#British-Spanish-French America
 				colonial_region = colonial_the_carribean
 				
-				#New CRs that were colonised by Great Britain, Spain or France go here
+				#New CRs that were colonised by Great Britain, Spain and France go here
 			}
 		}
 		
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 		
-	#French, Arabic and Berber
+	#Historical Colonisation - French, Arabic and Berber
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
@@ -1940,6 +1581,7 @@ can_colonize_province = {
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
 				#French-Arabic-Berber Africa
@@ -1955,38 +1597,30 @@ can_colonize_province = {
 				area = tafilalt_area
 				area = western_morocco_area
 
-				#New CRs that were colonised by Arabic, Berber or France go here
+				#New CRs that were colonised by Arabic, Berber and France go here
 			}
 		}
 		
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 		
-	#British, Arabic and Berber
+	#Historical Colonisation - British, Arabic and Berber
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
@@ -1994,67 +1628,40 @@ can_colonize_province = {
 			NOT = {				
 				FROM = { culture_group = berber_group }
 				FROM = { culture_group = turko_semitic } #Arabic
-				FROM = { primary_culture = english }
-				FROM = { primary_culture = scottish }
-				FROM = { primary_culture = northumbrian }
-				FROM = { primary_culture = anglo_irish }
-				FROM = { primary_culture = aussie }
-				FROM = { primary_culture = kiwi }
-				FROM = { primary_culture = cosmopolitan_french_UKS }
-				FROM = { primary_culture = gascon_UKS }
-				FROM = { primary_culture = normand_UKS }
-				FROM = { primary_culture = aquitaine_UKS }
-				FROM = { primary_culture = burgundian_UKS }
-				FROM = { primary_culture = occitain_UKS }
-				FROM = { primary_culture = arpitan_UKS }
-				FROM = { primary_culture = poitevin_UKS }
-				FROM = { primary_culture = angevin_UKS }
-				FROM = { primary_culture = lorraine_UKS }
-				FROM = { primary_culture = auvergnat_UKS }
-				FROM = { primary_culture = gallo_UKS }
-				FROM = { primary_culture = wallonian_UKS }
-				FROM = { primary_culture = breton_UKS }
-				FROM = { primary_culture = canadian }
+				FROM = { culture_group = british }
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
 				#British-Arabic-Berber Africa
 				region = egypt_region
 				
-				#New CRs that were colonised by Arabic, Berber or France go here
+				#New CRs that were colonised by Arabic, Berber and France go here
 			}
 		}
 		
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
 		
-	#Italian, Arabic and Berber
+	#Historical Colonisation - Italian, Arabic and Berber
 	condition = {
 		tooltip = "VU_Historical_Colonization"
 		
@@ -2066,122 +1673,31 @@ can_colonize_province = {
 			}
 			
 			FROM = { ai = yes }
+			FROM = { is_colonial_nation = no }
 			
 			OR = {
 				#Italian-Arabic-Berber Africa
 				region = libya_region
 				
-				#New CRs that were colonised by Arabic, Berber or France go here
+				#New CRs that were colonised by Arabic, Berber and France go here
 			}
 		}
 		
 		allow = {
 			OR = {
 				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
-			}
-		}
-    }
-}
-
-can_colonize_province_siberian_frontier = {
-	
-	### Colonial Nations can't use Siberian Frontier (added for balance)
-	condition = {					
-		tooltip = "VU_No_Frontier_Colonisation"
-		
-		potential = {
-			FROM = { is_colonial_nation = yes }
-		}
-		
-		allow = {
-			OR = {
-				FROM = { is_colonial_nation = no }
-				FROM = { is_former_colonial_nation = yes }
-			}
-		}
-	}
-	
-	### American Subjects can't colonize other continents
-	condition = {					
-		tooltip = "VU_Subject_Colonisation"
-		
-		potential = {
-			FROM = { is_subject = yes }
-			FROM = { is_colonial_nation = no }
-		}
-		
-		allow = {
-			
-			FROM = { capital_scope = { continent = ROOT } }
-		}
-	}
-	
-	### Historical Colonisation
-	
-	#Russian Only
-	condition = {
-		tooltip = "VU_Historical_Colonization"
-		
-        potential = {
-			NOT = {				
-				FROM = { culture_group = east_slavic }
-			}
-			
-			FROM = { ai = yes }
-			
-			OR = {
-				#Siberia
-				region = ural_region
-				region = west_siberia_region
-				region = east_siberia_region
-				
-				#New places that were colonised ONLY by Russia go here
-			}
-		}
-		
-		allow = {
-			OR = {
-				has_global_flag = vu_no_historical_colonization
-				FROM = { 
-					OR = {
-						technology_group = north_american
-						technology_group = mesoamerican
-						technology_group = south_american
-						technology_group = andean
-						technology_group = high_american
-						technology_group = east_african
-						technology_group = central_african
-						technology_group = sub_saharan
-						technology_group = aboriginal_tech
-						technology_group = rapanuan
-						technology_group = polynesian_tech
-						technology_group = papuan
-						AND = {
-							is_colonial_nation = yes
-							capital_scope = { colonial_region = ROOT }
-						}
-					}
-				}
+				FROM = { technology_group = north_american }
+				FROM = { technology_group = mesoamerican }
+				FROM = { technology_group = south_american }
+				FROM = { technology_group = andean }
+				FROM = { technology_group = high_american }
+				FROM = { technology_group = east_african }
+				FROM = { technology_group = central_african }
+				FROM = { technology_group = sub_saharan }
+				FROM = { technology_group = aboriginal_tech }
+				FROM = { technology_group = rapanuan }
+				FROM = { technology_group = polynesian_tech }
+				FROM = { technology_group = papuan }
 			}
 		}
     }
@@ -2201,3 +1717,4 @@ can_increase_stability = {
 		}
 	}
 }
+
